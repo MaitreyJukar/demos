@@ -34,6 +34,7 @@ function sortCards(sorted) {
         path.x = i * 20 + step;
 
         path.y = 200;
+        canvasInstance.bringToTop(path);
 
     }
     canvasInstance.draw();
@@ -84,6 +85,7 @@ function preloadCardImage() {
     cardSprite = new Image();
     cardSprite.onload = function() {
         drawCards();
+        canvasInstance.draw();
     };
     cardSprite.src = "./img/cards.png";
 }
