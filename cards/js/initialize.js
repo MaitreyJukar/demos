@@ -17,15 +17,15 @@ function() {
         deal();
     }
 
-function setupCanvas() {
-    var canvas = document.getElementById('card-game');
-    canvasInstance = new Canvas({
-        "canvas": canvas,
-        "ctx": canvas.getContext("2d"),
-        "height": canvas.height,
-        "width": canvas.width
-    });
-}
+    function setupCanvas() {
+        var canvas = document.getElementById('card-game');
+        canvasInstance = new Canvas({
+            "canvas": canvas,
+            "ctx": canvas.getContext("2d"),
+            "height": canvas.height,
+            "width": canvas.width
+        });
+    }
 
     function shuffle() {
 
