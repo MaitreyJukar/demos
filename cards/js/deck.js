@@ -1,18 +1,42 @@
+var cardRankValue = {
+        "A": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "J": 11,
+        "Q": 12,
+        "K": 13
+    },
+
+    cardSuitValue = {
+        "H": 1,
+        "D": 2,
+        "C": 3,
+        "S": 4
+    };
+
 function Card(rank, suit) {
 
     this.rank = rank;
     this.suit = suit;
 
     this.toString = cardToString;
-    this.createNode = getImgPosition;
+    this.imgPosition = getImgPosition(rank, suit);
 }
 
-//-----------------------------------------------------------------------------
-// cardToString(): Returns the name of a card (including rank and suit) as a
-// text string.
-//-----------------------------------------------------------------------------
 function getImgPosition(rank, suit) {
-
+    var height = 63,
+        width = 44;
+    return {
+        "y": cardRankValue[rank] * width,
+        "x": cardSuitValue[suit] * height
+    };
 }
 
 function cardToString() {
@@ -82,8 +106,9 @@ function cardToString() {
             break;
     }
 
-    if (rank == null || suit == null)
+    if (rank === null || suit === null) {
         return "";
+    }
 
     return rank + " of " + suit;
 }
@@ -109,10 +134,10 @@ function Stack() {
 
 function stackMakeDeck(n) {
 
-    var ranks = new Array("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K");
-    var suits = new Array("C", "D", "H", "S");
-    var i, j, k;
-    var m;
+    var ranks = new Array("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"),
+        suits = new Array("H", "D", "C", "S"),
+        i, j, k,
+        m;
 
     m = ranks.length * suits.length;
 
@@ -137,18 +162,18 @@ function stackMakeDeck(n) {
 
 function stackShuffle(n) {
 
-    var i, j, k;
-    var temp;
+    var i, j, k, temp;
 
     // Shuffle the stack 'n' times.
 
-    for (i = 0; i < n; i++)
+    for (i = 0; i < n; i++) {
         for (j = 0; j < this.cards.length; j++) {
             k = Math.floor(Math.random() * this.cards.length);
             temp = this.cards[j];
             this.cards[j] = this.cards[k];
             this.cards[k] = temp;
         }
+    }
 }
 
 //-----------------------------------------------------------------------------
@@ -157,10 +182,11 @@ function stackShuffle(n) {
 
 function stackDeal() {
 
-    if (this.cards.length > 0)
+    if (this.cards.length > 0) {
         return this.cards.shift();
-    else
+    } else {
         return null;
+    }
 }
 
 //-----------------------------------------------------------------------------
@@ -174,8 +200,9 @@ function stackDraw(n) {
     if (n >= 0 && n < this.cards.length) {
         card = this.cards[n];
         this.cards.splice(n, 1);
-    } else
+    } else {
         card = null;
+    }
 
     return card;
 }

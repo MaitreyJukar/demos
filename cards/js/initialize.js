@@ -8,6 +8,8 @@ function init() {
     hand = new Stack();
 
     deck.makeDeck(1);
+    shuffle();
+    deal();
 }
 
 function shuffle() {
