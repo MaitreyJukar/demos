@@ -1,15 +1,25 @@
-var deck, hand;
+var deck, hand, canvasInstance;
 
 window.onload = init;
 
 function init() {
-
+    setupCanvas();
     deck = new Stack();
     hand = new Stack();
 
     deck.makeDeck(1);
     shuffle();
     deal();
+}
+
+function setupCanvas() {
+    var canvas = document.getElementById('card-game');
+    canvasInstance = new Canvas({
+        "canvas": canvas,
+        "ctx": canvas.getContext("2d"),
+        "height": canvas.height,
+        "width": canvas.width
+    });
 }
 
 function shuffle() {
@@ -34,5 +44,4 @@ function deal() {
             hand.addCard(deck.deal());
         }
     }
-
 }
