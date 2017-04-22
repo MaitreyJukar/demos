@@ -1,8 +1,8 @@
 document.getElementsByClassName("btn")[0].addEventListener("click", function() {
-    canvasInstance.removeAllPaths();
+    //canvasInstance.removeAllPaths();
     hand.orderBySuit();
-    canvasInstance.clearCanvas();
-    drawCards(true);
+    //canvasInstance.clearCanvas();
+    sortCards(true);
 });
 var deck, hand, canvasInstance, cardSprite;
 
@@ -19,17 +19,32 @@ function init() {
     preloadCardImage();
 }
 
-function drawCards(sorted) {
+function sortCards(sorted) {
     var i = 0,
         prevSuit = "",
-        step = 0;
-
+        step = 0,
+        path;
     for (; i < hand.cards.length; i++) {
+
         if (sorted && prevSuit !== hand.cards[i].suit) {
             step += 50;
             prevSuit = hand.cards[i].suit;
         }
-        drawCard(hand.cards[i], i * 20 + step, 200)
+        path = canvasInstance.getPath(hand.cards[i].suit + hand.cards[i].rank)
+        path.x = i * 20 + step;
+
+        path.y = 200;
+
+    }
+    canvasInstance.draw();
+}
+
+function drawCards(sorted) {
+    var i = 0;
+
+    for (; i < hand.cards.length; i++) {
+
+        drawCard(hand.cards[i], i * 20, 200)
 
     }
 }
