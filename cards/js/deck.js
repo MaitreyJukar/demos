@@ -1,4 +1,4 @@
-function() {
+(function() {
     'use strict';
     var cardRankValue = {
             "A": 1,
@@ -36,8 +36,8 @@ function() {
         var height = 63,
             width = 44;
         return {
-            "y": cardRankValue[rank] * width,
-            "x": cardSuitValue[suit] * height
+            "x": cardRankValue[rank] * width,
+            "y": cardSuitValue[suit] * height
         };
     }
 
@@ -263,4 +263,4 @@ function() {
         this.cards = this.cards.concat(cCards);
         this.cards = this.cards.concat(sCards);
     }
-}();
+}());
