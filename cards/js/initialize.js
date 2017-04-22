@@ -1,7 +1,7 @@
 document.getElementsByClassName("btn")[0].addEventListener("click", function() {
     hand.orderBySuit();
 });
-var deck, hand, canvasInstance;
+var deck, hand, canvasInstance, cardSprite;
 
 window.onload = init;
 
@@ -13,12 +13,11 @@ function init() {
     deck.makeDeck(1);
     shuffle();
     deal();
-
-    drawCards();
+    preloadCardImage();
 }
 
 function drawCards() {
-    var i=0;
+    var i = 0;
 
     for (; i < hand.cards.length; i++) {
         drawCard(hand.cards[i], i * 50, 200)
@@ -34,7 +33,7 @@ function drawCard(card, x, y) {
         height: 63,
         width: 44,
         imgData: {
-            src: "./img/cards.png",
+            src: cardSprite,
             x: card.imgPosition.x,
             y: card.imgPosition.y,
             height: 63,
@@ -43,7 +42,7 @@ function drawCard(card, x, y) {
     }
 
 
-    canvasInstance.drawImage(new Path(argObj));
+    canvasInstance.addImage(new Path(argObj));
 }
 
 function setupCanvas() {
@@ -54,6 +53,14 @@ function setupCanvas() {
         "height": canvas.height,
         "width": canvas.width
     });
+}
+
+function preloadCardImage() {
+    cardSprite = new Image();
+    cardSprite.onload = function() {
+        drawCards();
+    };
+    cardSprite.src = "./img/cards.png";
 }
 
 function shuffle() {
@@ -79,4 +86,3 @@ function deal() {
         }
     }
 }
-

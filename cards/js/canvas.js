@@ -9,6 +9,7 @@ Canvas.prototype.setDefaultValues = function(params) {
     this.paths = {};
     this.listeners = {};
     this.stackingOrder = [];
+    this.activePath = null;
 };
 
 Canvas.prototype.init = function(params) {
@@ -28,11 +29,17 @@ Canvas.prototype.attachListeners = function() {
 };
 
 Canvas.prototype.mousedown = function(event) {
-    this.dragEnabled = true;
+    this.activePath = this.getActivePath(event);
+    this.dragEnabled = !!this.activePath;
     this.dispatchEvents("mousedown");
 };
 
-Canvas.prototype.mousemove = function() {
+Canvas.prototype.mousemove = function(event) {
+    if (this.dragEnabled) {
+        this.activePath.x = event.pageX - this.canvas.offsetLeft;
+        this.activePath.y = event.pageY - this.canvas.offsetTop;
+        this.draw();
+    }
     this.dispatchEvents("mousemove");
 };
 
@@ -67,6 +74,28 @@ Canvas.prototype.dispatchEvents = function(type) {
     }
 };
 
+
+/************** HELPERS *****************/
+
+
+Canvas.prototype.getActivePath = function(event) {
+    var i = this.stackingOrder.length - 1,
+        path;
+    for (; i >= 0; i--) {
+        path = this.stackingOrder[i];
+        if (this.isPointInPath(path, event.pageX, event.pageY)) {
+            return path;
+        }
+    }
+    return null;
+};
+
+Canvas.prototype.isPointInPath = function(path, x, y) {
+    return x < path.x + path.width + this.canvas.offsetLeft && x > path.x - path.width +
+        this.canvas.offsetLeft && y < path.y + path.height + this.canvas.offsetTop &&
+        y > path.y - path.height + this.canvas.offsetTop;
+};
+
 /***************** DRAWING METHODS ************************/
 
 Canvas.prototype.redraw = function() {
@@ -78,7 +107,10 @@ Canvas.prototype.redraw = function() {
 
 Canvas.prototype.draw = function() {
     this.clear();
-    this.stackingOrder.forEach(function(path, index, array) {
+    var i = this.stackingOrder.length - 1,
+        path;
+    for (; i >= 0; i--) {
+        path = this.stackingOrder[i];
         switch (path.type) {
             case Path.PATH_TYPES.IMAGE:
                 this.drawImage(path);
@@ -88,13 +120,25 @@ Canvas.prototype.draw = function() {
                 this.drawRectangle(path);
                 break;
         }
-    })
+    }
 };
 
 Canvas.prototype.clear = function() {
     this.ctx.clearRect(0, 0, this.width, this.height);
     this.ctx.fillStyle = this.backgroundColor;
-    this.drawRectangle(0, 0, this.width, this.height);
+    this.drawRectangle(new Path({
+        "x": 0,
+        "y": 0,
+        "width": this.width,
+        "height": this.height,
+        "name": 'background'
+    }));
+};
+
+Canvas.prototype.addRectangle = function(path) {
+    this.drawRectangle(path);
+    this.paths[path.name] = path;
+    this.stackingOrder.push(path);
 };
 
 Canvas.prototype.drawRectangle = function(path) {
@@ -104,23 +148,20 @@ Canvas.prototype.drawRectangle = function(path) {
     this.ctx.rect(path.x, path.y, path.width, path.height);
     this.ctx.closePath();
     this.ctx.fill();
-    this.paths[path.name] = path;
-    this.stackingOrder.push(path);
 };
 
 Canvas.prototype.getPath = function(name) {
     return this.paths[name];
 };
 
-Canvas.prototype.drawImage = function(imagePath) {
-    var img = new Image(),
-        self = this;
-    img.onload = function() {
-        self.ctx.drawImage(img, imagePath.imgX, imagePath.imgY, imagePath.imgWidth, imagePath.imgHeight, imagePath.x, imagePath.y, imagePath.width, imagePath.height);
-    };
-    img.src = imagePath.imgSrc;
+Canvas.prototype.addImage = function(imagePath) {
+    this.drawImage(imagePath);
     this.paths[imagePath.name] = imagePath;
     this.stackingOrder.push(imagePath);
+};
+
+Canvas.prototype.drawImage = function(imagePath) {
+    this.ctx.drawImage(imagePath.imgSrc, imagePath.imgX, imagePath.imgY, imagePath.imgWidth, imagePath.imgHeight, imagePath.x, imagePath.y, imagePath.width, imagePath.height);
 };
 
 Canvas.prototype.removePath = function(name) {
