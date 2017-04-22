@@ -1,16 +1,21 @@
-var deck, hand, canvasInstance;
+function() {
+    'use strict';
+    document.getElementsByClassName("btn").addEventListener("click", function() {
+        hand.orderBySuit();
+    });
+    var deck, hand, canvasInstance;
 
-window.onload = init;
+    window.onload = init;
 
-function init() {
-    setupCanvas();
-    deck = new Stack();
-    hand = new Stack();
+    function init() {
+        setupCanvas();
+        deck = new Stack();
+        hand = new Stack();
 
-    deck.makeDeck(1);
-    shuffle();
-    deal();
-}
+        deck.makeDeck(1);
+        shuffle();
+        deal();
+    }
 
 function setupCanvas() {
     var canvas = document.getElementById('card-game');
@@ -22,26 +27,27 @@ function setupCanvas() {
     });
 }
 
-function shuffle() {
+    function shuffle() {
 
-    if (deck == null) return;
+        if (deck == null) return;
 
-    deck.shuffle(1);
-}
-
-function deal() {
-
-    var i;
-
-    if (deck == null) {
-        return;
+        deck.shuffle(1);
     }
 
-    if (deck.cardCount() < 13) {
-        alert("Not enough cards.");
-    } else {
-        for (i = 0; i < 13; i++) {
-            hand.addCard(deck.deal());
+    function deal() {
+
+        var i;
+
+        if (deck == null) {
+            return;
+        }
+
+        if (deck.cardCount() < 13) {
+            alert("Not enough cards.");
+        } else {
+            for (i = 0; i < 13; i++) {
+                hand.addCard(deck.deal());
+            }
         }
     }
-}
+}();
