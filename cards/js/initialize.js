@@ -4,7 +4,7 @@ document.getElementsByClassName("btn")[0].addEventListener("click", function() {
     canvasInstance.clearCanvas();
     drawCards(true);
 });
-var deck, hand, canvasInstance;
+var deck, hand, canvasInstance, cardSprite;
 
 window.onload = init;
 
@@ -16,8 +16,7 @@ function init() {
     deck.makeDeck(1);
     shuffle();
     deal();
-
-    drawCards();
+    preloadCardImage();
 }
 
 function drawCards(sorted) {
@@ -44,7 +43,7 @@ function drawCard(card, x, y) {
         height: 63,
         width: 44,
         imgData: {
-            src: "./img/cards.png",
+            src: cardSprite,
             x: card.imgPosition.x,
             y: card.imgPosition.y,
             height: 63,
@@ -53,7 +52,7 @@ function drawCard(card, x, y) {
     }
 
 
-    canvasInstance.drawImage(new Path(argObj));
+    canvasInstance.addImage(new Path(argObj));
 }
 
 function setupCanvas() {
@@ -64,6 +63,14 @@ function setupCanvas() {
         "height": canvas.height,
         "width": canvas.width
     });
+}
+
+function preloadCardImage() {
+    cardSprite = new Image();
+    cardSprite.onload = function() {
+        drawCards();
+    };
+    cardSprite.src = "./img/cards.png";
 }
 
 function shuffle() {
