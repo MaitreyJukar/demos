@@ -2,50 +2,11 @@
 <html>
 
 <body>
-    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000000;">
         Your browser does not support the HTML5 canvas tag.
     </canvas>
     <script src="js/deck.js"></script>
-    <script type="text/javascript">
-    //<![CDATA[
-
-    var deck, hand;
-
-    window.onload = init;
-
-    function init() {
-
-        deck = new Stack();
-        hand = new Stack();
-
-        deck.makeDeck(1);
-    }
-
-    function shuffle() {
-
-        if (deck == null) return;
-
-        deck.shuffle(1);
-    }
-
-    function deal() {
-
-        var i;
-
-        if (deck == null) {
-            return;
-        }
-
-        if (deck.cardCount() < 13) {
-            alert("Not enough cards.");
-        } else {
-            for (i = 0; i < 13; i++) {
-                hand.addCard(deck.deal());
-            }
-        }
-
-    }
-    </script>
+    <script type="text/javascript" src="js/initialize.js"></script>
 </body>
 
 </html>
