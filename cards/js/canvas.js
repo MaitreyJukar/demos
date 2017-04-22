@@ -123,7 +123,11 @@ Canvas.prototype.removePath = function(name) {
     // find path by name from paths and stacking order and splice
 };
 
-Canvas.prototype.removeAllPaths = function(){
+Canvas.prototype.removeAllPaths = function() {
     this.paths.length = 0;
     this.stackingOrder.length = 0;
+}
+
+Canvas.prototype.clearCanvas = function() {
+    this.ctx.clearRect(0, 0, this.width, this.height);
 }
