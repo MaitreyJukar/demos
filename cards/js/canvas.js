@@ -32,6 +32,7 @@ Canvas.prototype.mousedown = function(event) {
     this.activePath = this.getActivePath(event);
     this.dragEnabled = !!this.activePath;
     this.downDelta = this.getDownDelta(event, this.activePath);
+    this.bringToTop(this.activePath);
     this.dispatchEvents("mousedown");
 };
 
@@ -117,9 +118,9 @@ Canvas.prototype.redraw = function() {
 
 Canvas.prototype.draw = function() {
     this.clear();
-    var i = this.stackingOrder.length - 1,
+    var i = 0,
         path;
-    for (; i >= 0; i--) {
+    for (; i < this.stackingOrder.length; i++) {
         path = this.stackingOrder[i];
         switch (path.type) {
             case Path.PATH_TYPES.IMAGE:
@@ -189,6 +190,8 @@ Canvas.prototype.clearCanvas = function() {
 };
 
 Canvas.prototype.bringToTop = function(path) {
-    this.stackingOrder.splice(this.stackingOrder.indexOf(path), 1);
-    this.stackingOrder.push(path);
+    if (path) {
+        this.stackingOrder.splice(this.stackingOrder.indexOf(path), 1);
+        this.stackingOrder.push(path);
+    }
 };
