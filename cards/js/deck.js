@@ -126,6 +126,7 @@ function Stack() {
     this.addCard = stackAddCard;
     this.combine = stackCombine;
     this.cardCount = stackCardCount;
+    this.orderBySuit = stackOrderBySuit;
 }
 
 //-----------------------------------------------------------------------------
@@ -234,4 +235,28 @@ function stackCombine(stack) {
 function stackCardCount() {
 
     return this.cards.length;
+}
+
+function stackOrderBySuit() {
+    var hCards = [],
+        dCards = [],
+        cCards = [],
+        sCards = [], i;
+
+    for (i = 0; i < this.cards.length; i++) {
+        if (this.cards[i].suit === "H") {
+            hCards.push();
+        } else if (this.cards[i].suit === "D") {
+            dCards.push();
+        } else if (this.cards[i].suit === "C") {
+            cCards.push();
+        } else if (this.cards[i].suit === "S") {
+            sCards.push();
+        }
+    }
+    this.cards = [];
+    this.cards = this.cards.concat(hCards);
+    this.cards = this.cards.concat(dCards);
+    this.cards = this.cards.concat(cCards);
+    this.cards = this.cards.concat(sCards);
 }
