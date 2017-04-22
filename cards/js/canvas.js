@@ -122,3 +122,8 @@ Canvas.prototype.drawImage = function(imagePath) {
 Canvas.prototype.removePath = function(name) {
     // find path by name from paths and stacking order and splice
 };
+
+Canvas.prototype.removeAllPaths = function(){
+    this.paths.length = 0;
+    this.stackingOrder.length = 0;
+}
