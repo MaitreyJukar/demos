@@ -246,13 +246,13 @@
 
         for (i = 0; i < this.cards.length; i++) {
             if (this.cards[i].suit === "H") {
-                hCards.push();
+                hCards.push(this.cards[i]);
             } else if (this.cards[i].suit === "D") {
-                dCards.push();
+                dCards.push(this.cards[i]);
             } else if (this.cards[i].suit === "C") {
-                cCards.push();
+                cCards.push(this.cards[i]);
             } else if (this.cards[i].suit === "S") {
-                sCards.push();
+                sCards.push(this.cards[i]);
             }
         }
         this.cards = [];

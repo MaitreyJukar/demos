@@ -183,3 +183,7 @@ Canvas.prototype.removeAllPaths = function() {
     this.paths = {};
     this.stackingOrder.length = 0;
 }
+
+Canvas.prototype.clearCanvas = function() {
+    this.ctx.clearRect(0, 0, this.width, this.height);
+}
