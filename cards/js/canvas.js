@@ -31,13 +31,15 @@ Canvas.prototype.attachListeners = function() {
 Canvas.prototype.mousedown = function(event) {
     this.activePath = this.getActivePath(event);
     this.dragEnabled = !!this.activePath;
+    this.downDelta = this.getDownDelta(event, this.activePath);
+    this.bringToTop(this.activePath);
     this.dispatchEvents("mousedown");
 };
 
 Canvas.prototype.mousemove = function(event) {
     if (this.dragEnabled) {
-        this.activePath.x = event.pageX - this.canvas.offsetLeft;
-        this.activePath.y = event.pageY - this.canvas.offsetTop;
+        this.activePath.x = event.pageX - this.canvas.offsetLeft - this.downDelta.x;
+        this.activePath.y = event.pageY - this.canvas.offsetTop - this.downDelta.y;
         this.draw();
     }
     this.dispatchEvents("mousemove");
@@ -91,9 +93,18 @@ Canvas.prototype.getActivePath = function(event) {
 };
 
 Canvas.prototype.isPointInPath = function(path, x, y) {
-    return x < path.x + path.width + this.canvas.offsetLeft && x > path.x - path.width +
+    return x < path.x + path.width + this.canvas.offsetLeft && x > path.x +
         this.canvas.offsetLeft && y < path.y + path.height + this.canvas.offsetTop &&
-        y > path.y - path.height + this.canvas.offsetTop;
+        y > path.y + this.canvas.offsetTop;
+};
+
+Canvas.prototype.getDownDelta = function(event) {
+    if (this.activePath) {
+        return {
+            "x": event.pageX - this.canvas.offsetLeft - this.activePath.x,
+            "y": event.pageY - this.canvas.offsetTop - this.activePath.y
+        }
+    }
 };
 
 /***************** DRAWING METHODS ************************/
@@ -107,9 +118,9 @@ Canvas.prototype.redraw = function() {
 
 Canvas.prototype.draw = function() {
     this.clear();
-    var i = this.stackingOrder.length - 1,
+    var i = 0,
         path;
-    for (; i >= 0; i--) {
+    for (; i < this.stackingOrder.length; i++) {
         path = this.stackingOrder[i];
         switch (path.type) {
             case Path.PATH_TYPES.IMAGE:
@@ -172,8 +183,15 @@ Canvas.prototype.removePath = function(name) {
 Canvas.prototype.removeAllPaths = function() {
     this.paths = {};
     this.stackingOrder.length = 0;
-}
+};
 
 Canvas.prototype.clearCanvas = function() {
     this.ctx.clearRect(0, 0, this.width, this.height);
-}
+};
+
+Canvas.prototype.bringToTop = function(path) {
+    if (path) {
+        this.stackingOrder.splice(this.stackingOrder.indexOf(path), 1);
+        this.stackingOrder.push(path);
+    }
+};
