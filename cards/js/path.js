@@ -1,6 +1,6 @@
 function Path(params) {
     this.init(params);
-}
+};
 
 Path.prototype.init = function(params) {
     this.name = params.name;
