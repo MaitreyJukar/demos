@@ -109,8 +109,13 @@ Canvas.prototype.drawRectangle = function(path) {
 };
 
 Canvas.prototype.drawImage = function(imagePath) {
-    this.ctx.drawImage(imagePath.imgSrc, imagePath.imgX, imagePath.imgY, imagePath.imgWidth, imagePath.imgHeight, imagePath.x, imagePath.y, imagePath.width, imagePath.height);
-    this.paths.push(path);
+    var img = new Image(),
+        self = this;
+    img.onload = function() {
+        self.ctx.drawImage(img, imagePath.imgX, imagePath.imgY, imagePath.imgWidth, imagePath.imgHeight, imagePath.x, imagePath.y, imagePath.width, imagePath.height);
+    };
+    img.src = imagePath.imgSrc;
+    this.paths.push(imagePath);
     this.stackingOrder.push(imagePath);
 };
 

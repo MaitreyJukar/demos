@@ -1,5 +1,3 @@
-(function() {
-    'use strict';
     var cardRankValue = {
             "A": 1,
             "2": 2,
@@ -36,8 +34,8 @@
         var height = 63,
             width = 44;
         return {
-            "x": cardRankValue[rank] * width,
-            "y": cardSuitValue[suit] * height
+            "x": (cardRankValue[rank] - 1) * width,
+            "y": (cardSuitValue[suit] - 1) * height
         };
     }
 
@@ -263,4 +261,3 @@
         this.cards = this.cards.concat(cCards);
         this.cards = this.cards.concat(sCards);
     }
-}());
