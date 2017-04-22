@@ -108,7 +108,7 @@ Canvas.prototype.drawRectangle = function(path) {
     this.stackingOrder.push(path);
 };
 
-Canvas.prototype.getPathByName = function(name) {
+Canvas.prototype.getPath = function(name) {
     return this.paths[name];
 };
 
