@@ -6,7 +6,7 @@ function Canvas(params) {
 
 Canvas.prototype.setDefaultValues = function(params) {
     this.dragEnabled = false;
-    this.paths = [];
+    this.paths = {};
     this.listeners = {};
     this.stackingOrder = [];
 };
@@ -104,8 +104,12 @@ Canvas.prototype.drawRectangle = function(path) {
     this.ctx.rect(path.x, path.y, path.width, path.height);
     this.ctx.closePath();
     this.ctx.fill();
-    this.paths.push(path);
+    this.paths[path.name] = path;
     this.stackingOrder.push(path);
+};
+
+Canvas.prototype.getPathByName = function(name) {
+    return this.paths[name];
 };
 
 Canvas.prototype.drawImage = function(imagePath) {
@@ -115,15 +119,16 @@ Canvas.prototype.drawImage = function(imagePath) {
         self.ctx.drawImage(img, imagePath.imgX, imagePath.imgY, imagePath.imgWidth, imagePath.imgHeight, imagePath.x, imagePath.y, imagePath.width, imagePath.height);
     };
     img.src = imagePath.imgSrc;
-    this.paths.push(imagePath);
+    this.paths[imagePath.name] = imagePath;
     this.stackingOrder.push(imagePath);
 };
 
 Canvas.prototype.removePath = function(name) {
-    // find path by name from paths and stacking order and splice
+    this.stackingOrder.splice(this.stackingOrder.indexOf(this.paths[name]), 1);
+    delete this.paths[name];
 };
 
-Canvas.prototype.removeAllPaths = function(){
-    this.paths.length = 0;
+Canvas.prototype.removeAllPaths = function() {
+    this.paths = {};
     this.stackingOrder.length = 0;
 }
