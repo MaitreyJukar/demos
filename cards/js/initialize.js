@@ -1,6 +1,7 @@
 document.getElementsByClassName("btn")[0].addEventListener("click", function() {
     //canvasInstance.removeAllPaths();
     hand.orderBySuit();
+    canvasInstance.sorted = true;
     //canvasInstance.clearCanvas();
     sortCards(true);
 });

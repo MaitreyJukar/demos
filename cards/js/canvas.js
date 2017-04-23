@@ -2,6 +2,7 @@ function Canvas(params) {
     this.setDefaultValues();
     this.init(params);
     this.attachListeners();
+    this.sorted = false;
 };
 
 Canvas.prototype.setDefaultValues = function(params) {
@@ -34,20 +35,51 @@ Canvas.prototype.mousedown = function(event) {
     this.downDelta = this.getDownDelta(event, this.activePath);
     this.bringToTop(this.activePath);
     this.dispatchEvents("mousedown");
+    this.activePath.lastCorrectPath = {
+        x: this.activePath.x,
+        y: this.activePath.y
+    }
 };
 
 Canvas.prototype.mousemove = function(event) {
+    var i, compare, arePathsIntersecting = false;
     if (this.dragEnabled) {
         this.activePath.x = event.pageX - this.canvas.offsetLeft - this.downDelta.x;
         this.activePath.y = event.pageY - this.canvas.offsetTop - this.downDelta.y;
+
+        arePathsIntersecting = this.arePathsIntersecting();
+        if (arePathsIntersecting) {
+
+            compare = function compare(a, b) {
+                if (a.x < b.x) {
+                    return -1;
+                }
+                if (a.x > b.x) {
+                    return 1;
+                }
+                return 0;
+            }
+            this.stackingOrder.sort(compare);
+            this.activePath.y = 200;
+            this.activePath.lastCorrectPath = {
+                x: this.activePath.x,
+                y: this.activePath.y
+            }
+        }
         this.draw();
     }
     this.dispatchEvents("mousemove");
 };
 
+
+
 Canvas.prototype.mouseup = function(event) {
     this.dragEnabled = false;
     this.dispatchEvents("mouseup");
+    this.activePath.x = this.activePath.lastCorrectPath.x;
+    this.activePath.y = this.activePath.lastCorrectPath.y;
+    delete this.activePath.lastCorrectPath;
+    this.drawFinal();
 };
 
 Canvas.prototype.addListener = function(type, callback, ctx, params, identifier) {
@@ -115,7 +147,32 @@ Canvas.prototype.redraw = function() {
         window.requestAnimationFrame(this.redraw, 10);
     }
 };
-
+Canvas.prototype.drawFinal = function() {
+    var i = 0,
+        increamentLeft = false;
+    if (!this.sorted) {
+        for (; i < this.stackingOrder.length; i++) {
+            this.stackingOrder[i].x = i * 20;
+            this.stackingOrder[i].y = 200;
+        }
+    } else {
+        for (; i < this.stackingOrder.length; i++) {
+            if (this.stackingOrder[i].name === this.activePath.name) {
+                if (this.stackingOrder[i].x - this.stackingOrder[i - 1].x > 30) {
+                    this.stackingOrder[i].x = this.stackingOrder[i + 1].x - 20;
+                    increamentLeft = true;
+                } else {
+                    this.stackingOrder[i].x = this.stackingOrder[i - 1].x;
+                    increamentLeft = true;
+                }
+            }
+            if (increamentLeft === true) {
+                this.stackingOrder[i].x += 20;
+            }
+        }
+    }
+    this.draw();
+}
 Canvas.prototype.draw = function() {
     this.clear();
     var i = 0,
@@ -169,6 +226,7 @@ Canvas.prototype.addImage = function(imagePath) {
     this.drawImage(imagePath);
     this.paths[imagePath.name] = imagePath;
     this.stackingOrder.push(imagePath);
+    this.draw();
 };
 
 Canvas.prototype.drawImage = function(imagePath) {
@@ -195,3 +253,35 @@ Canvas.prototype.bringToTop = function(path) {
         this.stackingOrder.push(path);
     }
 };
+
+Canvas.prototype.intersectRect = function(r1, r2) {
+    return !(r2.left > r1.right ||
+        r2.right < r1.left ||
+        r2.top > r1.bottom ||
+        r2.bottom < r1.top);
+}
+
+Canvas.prototype.arePathsIntersecting = function() {
+    var i = 0,
+        r1, r2;
+    r1 = {
+        "left": this.activePath.x,
+        "top": this.activePath.y,
+        "right": this.activePath.x + this.activePath.width,
+        "bottom": this.activePath.y + this.activePath.height
+    };
+    for (; i < this.stackingOrder.length; i++) {
+        if (this.activePath.name !== this.stackingOrder[i].name) {
+            r2 = {
+                "left": this.stackingOrder[i].x,
+                "top": this.stackingOrder[i].y,
+                "right": this.stackingOrder[i].x + this.stackingOrder[i].width,
+                "bottom": this.stackingOrder[i].y + this.stackingOrder[i].height
+            };
+            if (this.intersectRect(r1, r2)) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
