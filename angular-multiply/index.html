@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <style type="text/css">
+    input.ng-invalid.ng-invalid-value-err {
+        border: 1px solid red;
+    }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div class="question">
+        <p>Create an angular app to print the multiplication table for the number accepted as input from the user. </p>
+        <p>Apply validation for the user input of value of multiplication table to be within bounds of 11 to 19 </p>
+        <p>Show each multiplier result on a new row. Add result for new multiplier at the last row on the press of button "Next Product" </p>
+        <p>Custom directive has to be created for the purpose of displaying each multiplier result in the row. </p>
+        <p>This directive will be serving 2 purposes. </p>
+        <p>a) Making the product result for that particular multiplier editable (Double click on product number to edit) </p>
+        <p>b) Providing a delete button which can help remove that row entry without affecting the contents of rest of the table. </p>
+        <p>Using "compile" function within the custom directive is Mandatory</p>
+        <p>Try writing in the input field:</p>
+    </div>
+    <form name="myForm">
+        <input name="myInput" ng-model="myInput" required next-product>
+        <button ng-model="myInput" ng-disabled="myForm.myInput.$invalid">Next Product</button>
+<ul>
+  <li ng-repeat="x in names">
+    {{ x.name + ', ' + x.country }}
+  </li>
+</ul>
+    </form>
+    <script>
+    var app = angular.module('myApp', []);
+    app.directive('nextProduct', function() {
+        return {
+            require: 'ngModel',
+            link: function(scope, element, attr, mCtrl) {
+                function validateInput(value) {
+                    mCtrl.$setValidity('valueErr', (value >= 11 && value <= 19));
+                    return value;
+                }
+                mCtrl.$parsers.push(validateInput);
+            }
+        };
+    });
+    </script>
+</body>
+
+</html>
