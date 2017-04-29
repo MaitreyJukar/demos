@@ -10,7 +10,7 @@
     </style>
 </head>
 
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="numberCtrl">
     <div class="question">
         <p>Create an angular app to print the multiplication table for the number accepted as input from the user. </p>
         <p>Apply validation for the user input of value of multiplication table to be within bounds of 11 to 19 </p>
@@ -24,12 +24,11 @@
     </div>
     <form name="myForm">
         <input name="myInput" ng-model="myInput" required next-product>
-        <button ng-model="myInput" ng-disabled="myForm.myInput.$invalid">Next Product</button>
-<ul>
-  <li ng-repeat="x in names">
-    {{ x.name + ', ' + x.country }}
-  </li>
-</ul>
+        <button ng-click="addRow()" ng-model="myInput" ng-disabled="myForm.myInput.$invalid">Next Product</button>
+        <ul>
+            <input ng-repeat="x in numbers" ng-model="x.val" ng-change="updateProduct()">
+            <p>Product: {{product}}</p>
+        </ul>
     </form>
     <script>
     var app = angular.module('myApp', []);
@@ -44,6 +43,25 @@
                 mCtrl.$parsers.push(validateInput);
             }
         };
+    });
+    app.controller('numberCtrl', function($scope) {
+        $scope.numbers = [];
+        $scope.product = 0;
+        $scope.addRow = function() {
+            $scope.numbers.push({
+                val: parseInt($scope.myInput),
+                idx: $scope.numbers.length
+            });
+            $scope.updateProduct();
+        };
+
+        $scope.updateProduct = function() {
+            $scope.product = $scope.numbers.length ? 1 : 0;
+            for (var i = 0; i < $scope.numbers.length; i++) {
+                $scope.product *= $scope.numbers[i].val;
+            }
+        };
+
     });
     </script>
 </body>
