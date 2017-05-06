@@ -4,6 +4,6 @@ document.ready(function() {
     var Tasker = {};
     Tasker.Models = {};
     Tasker.Views = {};
-    Tasker.Collection = {};
+    Tasker.Collections = {};
     window.Tasker = Tasker;
 });
