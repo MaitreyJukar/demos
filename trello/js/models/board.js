@@ -10,8 +10,8 @@
                 "cardCollection": null
             }
         },
-        "initalize": function(options) {
-            this.set("cardCollection", new Tasker.Collections.Cards)
+        "initialize": function(options) {
+            this.set("cardCollection", new Tasker.Collections.Cards())
             this.populateTasks(options.cards);
         },
         "populateTasks": function(cards) {

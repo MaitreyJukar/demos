@@ -27,7 +27,7 @@ Tasker.Views.Board = Backbone.View.extend({
                 "title": title,
                 "order": order
             }),
-            cardEl = this.$el.append("<div id='card" + order + "' class='card'></div>");
+            cardEl = this.$el.find(".card-container").append("<div id='card" + order + "' class='card'></div>");
 
         return new Tasker.Views.Card({
             "model": cardModel,
@@ -35,8 +35,8 @@ Tasker.Views.Board = Backbone.View.extend({
         });
     },
     "makeCardsSortable": function() {
-        this.$el.sortable({
-
+        this.$el.find(".card-container").sortable({
+        	"items": "> .card"
         });
     }
 }, {

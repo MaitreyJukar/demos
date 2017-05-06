@@ -8,7 +8,7 @@
                 "order": 0,
             }
         },
-        "initalize": function(options) {
+        "initialize": function(options) {
         }
         
     });

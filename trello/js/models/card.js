@@ -12,8 +12,8 @@
                 "taskCollection": null
             }
         },
-        "initalize": function(options) {
-            this.set("taskCollection", new Tasker.Collections.Task)
+        "initialize": function(options) {
+            this.set("taskCollection", new Tasker.Collections.Tasks());
             this.populateTasks(options.tasks);
         },
         populateTasks: function(tasks) {

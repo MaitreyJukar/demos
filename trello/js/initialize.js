@@ -9,6 +9,7 @@ window.Tasker = Tasker;
 var initialize = function() {
     Tasker.Engine = new Engine();
     Tasker.Engine.fetchJSONData(onJSONDataSuccess.bind(this));
+    Tasker.Engine.parseJSONData();
 };
 
 
@@ -20,6 +21,6 @@ var saveAll = function() {
     Tasker.Engine.saveAllData();
 };
 
-document.ready(function() {
+$(document).ready(function() {
     initialize();
 });
