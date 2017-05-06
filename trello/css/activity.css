@@ -74,3 +74,8 @@
 	font-style: italic;
 	padding: 10px;
 }
+.card{
+    width:270px;
+    display: inline-block;
+    white-space: nowrap;
+}
