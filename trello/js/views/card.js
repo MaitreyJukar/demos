@@ -4,9 +4,9 @@ Tasker.Views.Card = Backbone.View.extend({
         this.taskCollectionView = [];
     },
     "render": function() {
-    	this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
+        this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
         this.$el.append("<div class='tasks-container'></div>");
-    	this.$(".card-title").html(this.model.get("title"))
+        this.$(".card-title").html(this.model.get("title"))
         this.createTasks();
     },
     "createTasks": function() {
@@ -15,8 +15,8 @@ Tasker.Views.Card = Backbone.View.extend({
         });
     },
     "createTask": function(model, title, order) {
-        var cardModel = model,
-            cardEl = this.$el.find(".task-container").append("<div id='task" + order + "' class='task'></div>");
+        var cardModel = model;
+        this.$el.find(".task-container").append("<div id='task" + order + "' class='task'></div>");
         if (!model) {
             cardModel = new Tasker.Models.task({
                 "title": title,
