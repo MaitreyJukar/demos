@@ -1,0 +1,37 @@
+Create a simple web app displaying a trello (https://trello.com/) like dashboard where following things happen:
+1. Existing cards are displayed with each card's tasks in it. 
+2. New cards can be added. 
+3. New tasks can be added to any card. 
+4. Cards can be re-ordered by dragging and dropping. 
+5. Tasks can be re-ordered by dragging and dropping within a card or between multiple cards. 
+6. Display number of tasks on the card header. 
+7. Cards and tasks can be edited and deleted.
+8. Comments can be added to each task. 
+9. Cards, tasks and comments can be edited and deleted as well. 
+10. Tasks can be assigned to users. 
+
+Sample screens are provided in the attachment. 
+
+Make this application using Backbone JS. Use MVC concepts.
+
+Example models: 
+1. Card model:
+    - Title
+    - Created At
+    - Created By (User Association)
+    - Has Many Tasks
+    - Order
+2. Task model:
+    - Text
+    - Created At
+    - Created By (User Association)
+    - Edited (Boolean)
+    - Assigned To (User Association)
+    - Has Many Comments
+    - Order
+
+You can display some cards and tasks using fixture data. 
+Write code which can save data to the backend. (Since there is no backend server, there can be dummy api calls). The save calls should take care of order based on the latest drag activity done by the user. You can use browser's local storage to persist the data. 
+
+Focus more on code structuring. 
+Take care of garbage collection when destroying views.
