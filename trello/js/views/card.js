@@ -39,8 +39,8 @@ Tasker.Views.Card = Backbone.View.extend({
         });
     },
     "createTask": function(model, content, order) {
-        var taskModel = model,
-            taskEl = this.$el.find(".tasks-container").append("<div id='task-" + order + "' class='task'></div>");
+        var taskModel = model;
+        this.$el.find(".tasks-container").append("<div id='task-" + order + "' class='task'></div>");
         if (!model) {
             taskModel = new Tasker.Models.Task({
                 "content": content,
@@ -55,7 +55,7 @@ Tasker.Views.Card = Backbone.View.extend({
     },
     "makeTaskSortable": function() {
         this.$el.find(".task-container").sortable({
-            "items": "> .task",
+            "items": ".task",
             "axis": "x",
             "connect-with": ".task"
         });

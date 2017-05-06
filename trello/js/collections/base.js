@@ -1,7 +1,7 @@
 /*globals Tasker*/
 (function() {
     "use strict";
-    Tasker.Collections.Base = Backbone.Collections.extend({
+    Tasker.Collections.Base = Backbone.Collection.extend({
 
         "initialize": function() {
             this.listenTo(this, 'remove', this._updateModels);
