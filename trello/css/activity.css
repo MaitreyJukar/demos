@@ -97,6 +97,7 @@
 .tasker .card-container .card .card-title {
     padding: 5px;
     font-weight: bold;
+    display: inline-block;
 }
 
 .tasker .card-container .card .task-container:empty {
