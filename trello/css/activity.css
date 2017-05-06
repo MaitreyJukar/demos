@@ -126,6 +126,7 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     margin-bottom: 10px;
+    position: relative;
     padding: 10px;
 }
 
