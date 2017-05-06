@@ -27,7 +27,7 @@ Tasker.Views.Board = Backbone.View.extend({
                 "title": title,
                 "order": order
             }),
-            cardEl = this.$el.find(".card-container").append("<div id='card" + order + "' class='card'></div>");
+            cardEl = this.$el.find(".card-container").append("<div id='card-" + order + "' class='card'><div class='card-title'>"+title+"</div><div class='tasks-container'></div></div>");
 
         return new Tasker.Views.Card({
             "model": cardModel,
