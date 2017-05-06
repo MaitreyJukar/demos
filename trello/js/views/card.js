@@ -4,33 +4,51 @@ Tasker.Views.Card = Backbone.View.extend({
         this.taskCollectionView = [];
     },
     "events": {
-    	"click .add-task": this.addTask
+        "click .add-task": "showNewTaskControl",
+        "click .delete-icon": "hideNewTaskControl",
+        "click .add-control": "addTask"
     },
     "render": function() {
-    	this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
+        this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
         this.$el.append("<div class='tasks-container'></div>");
-    	this.$el.append("<div class='add-task-control'><textarea class='task-content-control'></textarea><div class='add-control'>ADD</div></div>");
-    	this.$el.append("<div class='add-task'>Add Task...</div>");
-    	this.$(".card-title").html(this.model.get("title"))
+        this.$el.append("<div class='add-task-control'><div class='task-content-control' contenteditable></div><div class='add-control'>ADD</div><div class='delete-icon'>+</div></div>");
+        this.$el.append("<div class='add-task'>Add Task...</div>");
+        this.$(".card-title").html(this.model.get("title"))
         this.createTasks();
+    },
+    "showNewTaskControl": function() {
+        this.$el.find(".add-task-control").show();
+        this.$el.find(".add-task").hide();
+    },
+    "hideNewTaskControl": function() {
+        this.$el.find(".add-task-control .task-content-control").html('');
+        this.$el.find(".add-task-control").hide();
+        this.$el.find(".add-task").show();
+    },
+    "addTask": function() {
+        var content = this.$el.find(".task-content-control").html();
+        if (content) {
+            this.createTask(null, content, this.model.get("taskCollection").models.length);
+            this.hideNewTaskControl();
+        }
     },
     "createTasks": function() {
         _.each(this.model.get("taskCollection"), function(taskModel, index) {
             this.taskCollectionView.push(this.createTask(taskModel, null, index));
         });
     },
-    "createTask": function(model, title, order) {
-        var cardModel = model,
-            cardEl = this.$el.find(".task-container").append("<div id='task" + order + "' class='task'></div>");
+    "createTask": function(model, content, order) {
+        var taskModel = model,
+            taskEl = this.$el.find(".tasks-container").append("<div id='task-" + order + "' class='task'></div>");
         if (!model) {
-            cardModel = new Tasker.Models.task({
-                "title": title,
+            taskModel = new Tasker.Models.Task({
+                "content": content,
                 "order": order
             });
-            this.model.get("cardCollection").add(cardModel);
+            this.model.get("taskCollection").add(taskModel);
         }
-        return new Tasker.Views.task({
-            "model": cardModel,
+        return new Tasker.Views.Task({
+            "model": taskModel,
             "el": this.$(".task").last()
         });
     },

@@ -6,7 +6,7 @@ Tasker.Views.Task = Backbone.View.extend({
         this.createTask();
     },
     "createTask": function() {
-
+        this.$el.append("<div class='task-content'>" + this.model.get("content") + "</div>");
     }
 }, {
 

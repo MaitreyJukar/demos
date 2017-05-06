@@ -95,7 +95,7 @@
 }
 
 .tasker .card-container .card .card-title {
-    padding: 5px;
+    padding: 10px 10px 0;
     font-weight: bold;
     display: inline-block;
 }
@@ -111,13 +111,41 @@
     padding: 10px;
 }
 
+.tasker .card-container .card .tasks-container {
+    padding: 10px;
+}
+
+.tasker .card-container .card .tasks-container .task {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: -webkit-grab;
+    max-width: 270px;
+    min-height: 50px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
 .tasker .card-container .card .add-task-control {
     padding: 10px;
+    display: none;
 }
 
 .tasker .card-container .card .add-task-control .task-content-control {
     width: 100%;
     min-height: 50px;
+    background: #fff;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tasker .card-container .card .add-task-control .task-content-control:empty + .add-control {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .tasker .card-container .card .add-task-control .add-control {
@@ -128,9 +156,25 @@
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    float: left;
+}
+
+.tasker .card-container .card .add-task-control .delete-icon {
+    font-size: 30px;
+    cursor: pointer;
+    float: left;
+    transform: rotate(45deg);
 }
 
 .tasker .card-container .card .add-task {
     padding: 10px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.tasker .card-container .card .add-task:hover {
+    text-decoration: underline;
+    color: #ddd;
 }

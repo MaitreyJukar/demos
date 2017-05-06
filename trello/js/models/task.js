@@ -4,7 +4,7 @@
     Tasker.Models.Task = Backbone.Model.extend({
         "defaults": function() {
             return {
-                "title": "",
+                "content": "",
                 "order": 0,
             }
         },
