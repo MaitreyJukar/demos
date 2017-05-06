@@ -1,0 +1,53 @@
+.tasker {
+	font-family: Arial;
+}
+
+.tasker * {
+	box-sizing: border-box;
+}
+
+.tasker .header {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background: #7fffd4;
+    font: bold 20px Arial;
+    line-height: 40px;
+}
+
+.tasker .board {
+    min-height: 100px;
+    width: 100%;
+    background: #f32671;
+}
+
+.tasker .board-header {
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.tasker .add-card {
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    background: #ffe4c4;
+    float: right;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tasker .card-container {
+	text-align: center;
+}
+
+.tasker .card-container:empty:after {
+	content: "Nothing to show here";
+	opacity: 0.7;
+	font-style: italic;
+	padding: 10px;
+}
