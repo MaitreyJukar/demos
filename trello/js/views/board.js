@@ -35,7 +35,7 @@ Tasker.Views.Board = Backbone.View.extend({
         }
         return new Tasker.Views.Card({
             "model": cardModel,
-            "el": cardEl
+            "el": this.$(".card").last()
         });
     },
     "makeCardsSortable": function() {
