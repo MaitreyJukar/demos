@@ -100,18 +100,37 @@
     display: inline-block;
 }
 
-.tasker .card-container .card .task-container:empty {
-	text-align: center;
+.tasker .card-container .card .tasks-container:empty {
+    text-align: left;
 }
 
-.tasker .card-container .card .task-container:empty:after {
+.tasker .card-container .card .tasks-container:empty:after {
     content: "Nothing to show here";
     opacity: 0.7;
     font-style: italic;
     padding: 10px;
 }
-.card{
-    width:270px;
-    display: inline-block;
-    white-space: nowrap;
+
+.tasker .card-container .card .add-task-control {
+    padding: 10px;
+}
+
+.tasker .card-container .card .add-task-control .task-content-control {
+    width: 100%;
+    min-height: 50px;
+}
+
+.tasker .card-container .card .add-task-control .add-control {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    background: #00ff7f;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tasker .card-container .card .add-task {
+    padding: 10px;
+    font-size: 14px;
 }
