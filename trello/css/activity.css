@@ -1,9 +1,9 @@
 .tasker {
-	font-family: Arial;
+    font-family: Arial;
 }
 
 .tasker * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .tasker .header {
@@ -28,26 +28,26 @@
 }
 
 .tasker .card-control {
-	float: right;
-	display: inline-block;
-	border: 2px solid black;
-	margin: 10px;
+    float: right;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
 }
 
 .tasker .card-title-control {
-	width: 200px;
-	height: 40px;
-	margin: 10px;
-	float: left;
-	cursor: text;
-	font-size: 14px;
-	background: aliceblue;
-	overflow: auto;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    float: left;
+    cursor: text;
+    font-size: 14px;
+    background: aliceblue;
+    overflow: auto;
 }
 
 .tasker .card-title-control:empty + .add-card {
-	opacity: 0.5;
-	cursor: not-allowed;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .tasker .add-card {
@@ -64,15 +64,51 @@
     font-size: 14px;
 }
 
-.tasker .card-container {
-	text-align: center;
+.tasker .card-container:empty {
+    text-align: center;
 }
 
 .tasker .card-container:empty:after {
-	content: "Nothing to show here";
-	opacity: 0.7;
-	font-style: italic;
-	padding: 10px;
+    content: "Nothing to show here";
+    opacity: 0.7;
+    font-style: italic;
+    padding: 10px;
+}
+
+.tasker .card-container {
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+}
+
+.tasker .card-container .card {
+    width: 270px;
+    height: 100%;
+    margin: 0 5px;
+    display: inline-block;
+    white-space: nowrap;
+    background: #ff7f50;
+    border-radius: 5px;
+}
+
+.tasker .card-container .card .card-title {
+    padding: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.tasker .card-container .card .task-container:empty {
+	text-align: center;
+}
+
+.tasker .card-container .card .task-container:empty:after {
+    content: "Nothing to show here";
+    opacity: 0.7;
+    font-style: italic;
+    padding: 10px;
 }
 .card{
     width:270px;
