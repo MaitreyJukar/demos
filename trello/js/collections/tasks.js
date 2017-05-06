@@ -1,5 +1,5 @@
 /*globals Tasker*/
 (function() {
     "use strict";
-    Tasker.Collections.Tasks = Backbone.Collection.extend({});
+    Tasker.Collections.Tasks = Tasker.Collections.Base.extend({});
 })();
