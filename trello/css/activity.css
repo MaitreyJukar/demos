@@ -27,12 +27,35 @@
     position: relative;
 }
 
+.tasker .card-control {
+	float: right;
+	display: inline-block;
+	border: 2px solid black;
+	margin: 10px;
+}
+
+.tasker .card-title-control {
+	width: 200px;
+	height: 40px;
+	margin: 10px;
+	float: left;
+	cursor: text;
+	font-size: 14px;
+	background: aliceblue;
+	overflow: auto;
+}
+
+.tasker .card-title-control:empty + .add-card {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
 .tasker .add-card {
     height: 40px;
     width: 110px;
     border-radius: 5px;
     background: #ffe4c4;
-    float: right;
+    float: left;
     margin: 10px;
     text-align: center;
     line-height: 40px;
