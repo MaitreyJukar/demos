@@ -15,7 +15,8 @@ Tasker.Views.Board = Backbone.View.extend({
         if (title === '') {
             return;
         }
-        this.createCard(null, title, this.model.get("cardCollection").length)
+        this.createCard(null, title, this.model.get("cardCollection").length);
+        this.$(".card-title-control").html("");
     },
     "createCards": function() {
         _.each(this.model.get("cardCollection"), function(cardModel, index) {
@@ -23,12 +24,15 @@ Tasker.Views.Board = Backbone.View.extend({
         });
     },
     "createCard": function(model, title, order) {
-        var cardModel = model || new Tasker.Models.Card({
+        var cardModel = model,
+            cardEl = this.$el.find(".card-container").append("<div id='card-" + order + "' class='card'><div class='card-title'>"+title+"</div><div class='tasks-container'></div></div>");
+        if (!model) {
+            cardModel = new Tasker.Models.Card({
                 "title": title,
                 "order": order
-            }),
-            cardEl = this.$el.find(".card-container").append("<div id='card-" + order + "' class='card'><div class='card-title'>"+title+"</div><div class='tasks-container'></div></div>");
-
+            });
+            this.model.get("cardCollection").add(cardModel);
+        }
         return new Tasker.Views.Card({
             "model": cardModel,
             "el": cardEl
@@ -36,7 +40,7 @@ Tasker.Views.Board = Backbone.View.extend({
     },
     "makeCardsSortable": function() {
         this.$el.find(".card-container").sortable({
-        	"items": "> .card"
+            "items": "> .card"
         });
     }
 }, {
