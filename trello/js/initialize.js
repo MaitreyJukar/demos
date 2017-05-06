@@ -3,7 +3,7 @@
 var Tasker = {};
 Tasker.Models = {};
 Tasker.Views = {};
-Tasker.Collection = {};
+Tasker.Collections = {};
 window.Tasker = Tasker;
 
 var initialize = function() {
