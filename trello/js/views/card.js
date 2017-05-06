@@ -54,9 +54,8 @@ Tasker.Views.Card = Backbone.View.extend({
         });
     },
     "makeTaskSortable": function() {
-        this.$el.find(".task-container").sortable({
+        this.$el.find(".tasks-container").sortable({
             "items": ".task",
-            "axis": "x",
             "connect-with": ".task"
         });
     }
