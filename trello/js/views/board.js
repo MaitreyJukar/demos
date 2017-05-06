@@ -3,9 +3,19 @@ Tasker.Views.Board = Backbone.View.extend({
         this.render();
         this.cardCollectionView = [];
     },
+    "events": {
+        "click .add-card": "addCard"
+    },
     "render": function() {
         this.createCards();
         this.makeCardsSortable();
+    },
+    "addCard": function(event) {
+        var title = this.$(".card-title-control").html();
+        if (title === '') {
+            return;
+        }
+        this.createCard(null, title, this.model.get("cardCollection").length)
     },
     "createCards": function() {
         _.each(this.model.get("cardCollection"), function(cardModel, index) {
