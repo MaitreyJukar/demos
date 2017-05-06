@@ -13,3 +13,7 @@ Engine.prototype.fetchJSONData = function() {
 Engine.prototype.parseJSONData = function() {
 
 };
+
+Engine.prototype.saveAllData = function() {
+
+};
