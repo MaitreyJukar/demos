@@ -1,11 +1,11 @@
-Tasker.Views.Task = Backbone.View.extend({
+Tasker.Views.Card = Backbone.View.extend({
     "initialize": function() {
         this.render();
     },
     "render": function() {
-        this.createTask();
+        this.createTasks();
     },
-    "createTask": function() {
+    "createTasks": function() {
 
     }
 }, {
