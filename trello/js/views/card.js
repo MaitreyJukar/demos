@@ -2,7 +2,8 @@ Tasker.Views.Card = Backbone.View.extend({
     "initialize": function() {
         this.taskCollectionView = [];
         this.render();
-        this.listenTo(this.model.get("taskCollection"), "remove", this.deleteTask)
+        this.listenTo(this.model.get("taskCollection"), "remove", this.deleteTask);
+        this.listenTo(this.model, "change:activeTaskData", this.addTaskOnSort);
     },
     "events": {
         "click .add-task": "showNewTaskControl",
@@ -11,7 +12,7 @@ Tasker.Views.Card = Backbone.View.extend({
         "mousedown .task-content-control": "stopDragging",
         "click .delete-card": "deleteCard",
         "click .edit-title": "editTitle",
-        "blur .edit-title": "stopEditing",
+        "blur .card-title": "stopEditing",
         "mousedown .card-title": "stopDragging"
     },
     "render": function() {
@@ -77,26 +78,54 @@ Tasker.Views.Card = Backbone.View.extend({
             "items": ".task",
             "connectWith": ".tasks-container",
             "activate": function(event, ui) {
+                startIndex = -1;
+                stopIndex = -1;
                 numberOfItems = self.$el.find(".task:not(.ui-sortable-placeholder)").length;
                 if (ui.sender[0] === self.$el.find('.tasks-container')[0]) {
                     startIndex = $(ui.item).index();
+                    self.model.trigger('setActiveSortData', self.model.get("taskCollection").at(startIndex).toJSON());
                 }
             },
             "deactivate": function(event, ui) {
                 if (numberOfItems !== self.$el.find(".task:not(.ui-sortable-placeholder)").length) {
                     if (startIndex > -1) {
-                        //remove from list
+                        self.taskCollectionView[startIndex].deleteTask();
                     } else {
-                        //add to list
+                        self.stopIndex = $(ui.item).index();
+                        self.itemToRemove = $(ui.item);
+                        self.model.trigger("getActiveCardData", self.model);
                     }
                 } else if (ui.sender[0] === self.$el.find('.tasks-container')[0]) {
                     stopIndex = $(ui.item).index();
                     if (startIndex !== stopIndex) {
                         self.model.get("taskCollection").updateModelsOnSort(startIndex, stopIndex);
+                        self.updateViewsOnSort(startIndex, stopIndex);
                     }
                 }
             }
         });
+    },
+    "addTaskOnSort": function() {
+        var taskModel = new Tasker.Models.Task({
+            "content": this.model.get("activeTaskData").content,
+            "order": this.model.get("activeTaskData").order
+        });
+        this.itemToRemove.remove();
+        this.taskCollectionView.push(this.createTask(taskModel, null, this.model.get("taskCollection").length));
+        this.model.get("taskCollection").add(taskModel);
+        this.model.get("taskCollection").updateModelsOnSort(this.model.get("taskCollection").length - 1, this.stopIndex);
+        this.updateViewsOnSort(this.model.get("taskCollection").length - 1, this.stopIndex);
+        this.updateTaskOrder(this.model.get("taskCollection").length - 1, this.stopIndex);
+    },
+    "updateViewsOnSort": function(indexA, indexB) {
+        this.taskCollectionView.splice(indexB, 0, this.taskCollectionView.splice(indexA, 1)[0]);
+    },
+    "updateTaskOrder": function(indexA, indexB) {
+        if (indexB === 0) {
+            $(this.$('.task').eq(indexA)).insertBefore($(this.$('.task').eq(0)));
+            return;
+        }
+        $(this.$('.task').eq(indexA)).insertAfter($(this.$('.task').eq(indexB - 1)));
     },
     "deleteCard": function() {
         _.each(this.taskCollectionView, function(task) {
