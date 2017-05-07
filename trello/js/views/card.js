@@ -132,9 +132,10 @@ Tasker.Views.Card = Backbone.View.extend({
         $(this.$('.task').eq(indexA)).insertAfter($(this.$('.task').eq(indexB - 1)));
     },
     "deleteCard": function() {
-        _.each(this.taskCollectionView, function(task) {
-            task.deleteTask();
-        });
+
+        while (this.taskCollectionView.length) {
+            this.taskCollectionView[this.taskCollectionView.length - 1].deleteTask();
+        }
         this.model.destroy();
     },
     "editTitle": function() {
