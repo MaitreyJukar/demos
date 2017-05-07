@@ -10,7 +10,14 @@
             }
         },
         "initialize": function(options) {
+            this.populateComments(options.comments);
+        },
+        "populateComments": function(comments) {
+            var commentCollection = this.get("commentCollection");
+            _.each(comments, function(comment) {
+                commentCollection.add(new Tasker.Models.Comment(comment));
+            });
         }
-        
+
     });
 })();
