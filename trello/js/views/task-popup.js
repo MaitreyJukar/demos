@@ -1,5 +1,8 @@
 Tasker.Views.TaskPopup = Backbone.View.extend({
+    "commentViews": null,
+
     "initialize": function() {
+        this.commentViews = [];
         this.render();
     },
     "render": function() {
@@ -37,7 +40,7 @@ Tasker.Views.TaskPopup = Backbone.View.extend({
     "addComment": function(model) {
         var $comment = $("<div class='comment'></div>")
         this.$el.find(".comments").append($comment);
-        this.addCommentView($comment, model);
+        this.commentViews.push(this.addCommentView($comment, model));
     },
     "addCommentModel": function(params) {
         var commentModel = new Tasker.Models.Comment(params);
@@ -51,6 +54,9 @@ Tasker.Views.TaskPopup = Backbone.View.extend({
         });
     },
     "closePopup": function() {
+        while (this.commentViews.length) {
+            this.commentViews.pop().remove();
+        }
         this.remove();
     },
     'updateTaskContent': function() {
