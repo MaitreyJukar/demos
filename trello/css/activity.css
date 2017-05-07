@@ -103,10 +103,8 @@
 }
 
 .tasker .card-container .card .card-header {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: pre;
     position: relative;
+    padding: 10px 10px 0;
 }
 
 .tasker .card-container .card .card-header .edit-title {
@@ -140,9 +138,18 @@
 }
 
 .tasker .card-container .card .card-title {
-    padding: 10px 10px 0;
     font-weight: bold;
     display: inline-block;
+    width: 80%;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.tasker .card-container .card .card-title:focus {
+    background: #fff;
 }
 
 .tasker .card-container .card .tasks-container:empty {
