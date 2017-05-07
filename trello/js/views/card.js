@@ -7,16 +7,22 @@ Tasker.Views.Card = Backbone.View.extend({
         "click .add-task": "showNewTaskControl",
         "click .delete-icon": "hideNewTaskControl",
         "click .add-control": "addTask",
+        "mousedown .task-content-control": "stopDragging",
         "click .delete-card": "deleteCard"
     },
     "render": function() {
         this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
         this.$el.append("<div class='tasks-container'></div>");
-        this.$el.append("<div class='add-task-control'><div class='task-content-control' contenteditable></div><div class='add-control'>ADD</div><div class='delete-icon'>+</div></div>");
+        this.$el.append("<div class='add-task-control'><div class='task-content-control' contenteditable='true'></div><div class='add-control'>ADD</div><div class='delete-icon'>+</div></div>");
         this.$el.append("<div class='add-task'>Add Task...</div>");
         this.$(".card-title").html(this.model.get("title"))
         this.createTasks();
         this.makeTaskSortable();
+    },
+    "stopDragging": function(event) {
+        if ($(event.currentTarget).prop('contenteditable') === "true") {
+            event.stopPropagation();
+        }
     },
     "showNewTaskControl": function() {
         this.$el.find(".add-task-control").show();
