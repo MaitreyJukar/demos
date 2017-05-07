@@ -44,6 +44,7 @@ Tasker.Views.Board = Backbone.View.extend({
         this.$el.find(".card-container").sortable({
             "items": ".card",
             "axis": "x",
+            "scrollSensitivty": 50,
             "start": function(event, ui) {
                 startIndex = $(ui.item).index();
             },
