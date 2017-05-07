@@ -408,7 +408,11 @@
     color: #fff;
     background-color: #337ab7;
     border-color: #2e6da4;
+    border-radius: 5px;
+    font-size: 14px;
     margin: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 ::-webkit-scrollbar {
