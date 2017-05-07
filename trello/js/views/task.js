@@ -9,11 +9,15 @@ Tasker.Views.Task = Backbone.View.extend({
         "click .edit-task-content": "editTask",
         "mousedown .task-content": "stopDragging",
         "click": "openTaskView",
-        "blur .task-content": "stopEditing"
+        "blur .task-content": "stopEditing",
+        "click .delete-task": "deleteTask",
     },
     "createTask": function() {
         this.$el.append("<div class='task-content'>" + this.model.get("content") + "</div>");
         this.$el.append("<div class='edit-task-content'><div class='edit-icon'></div></div>");
+
+        this.$el.append("<div class='delete-task'><div class='delete-icon'>+</div></div>");
+
     },
     "stopDragging": function(event) {
         if ($(event.currentTarget).prop('contenteditable') === "true") {
@@ -42,7 +46,8 @@ Tasker.Views.Task = Backbone.View.extend({
         $content.prop("contenteditable", false);
         this.model.set('content', $content.html());
     },
-    "deleteTask": function() {
+    "deleteTask": function(event) {
+        event && event.stopPropagation();
         this.model.destroy();
     }
 }, {
