@@ -16,7 +16,7 @@
             this.set("taskCollection", new Tasker.Collections.Tasks());
             this.populateTasks(options.tasks);
         },
-        populateTasks: function(tasks) {
+        "populateTasks": function(tasks) {
             var taskCollection = this.get("taskCollection");
             _.each(tasks, function(task) {
                 taskCollection.add(new Tasker.Models.Task(task));

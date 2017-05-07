@@ -17,7 +17,7 @@
         "populateTasks": function(cards) {
             var cardCollection = this.get("cardCollection");
             _.each(cards, function(card) {
-                cardCollection.add(new Tasker.Models.Task(card));
+                cardCollection.add(new Tasker.Models.Card(card));
             });
         }
     });
