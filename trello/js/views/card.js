@@ -33,7 +33,7 @@ Tasker.Views.Card = Backbone.View.extend({
         }
     },
     "showNewTaskControl": function() {
-        this.$el.find(".add-task-control").show();
+        this.$el.find(".add-task-control").show().focus();
         this.$el.find(".add-task").hide();
     },
     "hideNewTaskControl": function() {
@@ -69,16 +69,32 @@ Tasker.Views.Card = Backbone.View.extend({
         });
     },
     "makeTaskSortable": function() {
-        var startIndex, stopIndex, self = this;
+        var startIndex = -1,
+            stopIndex = -1,
+            numberOfItems,
+            self = this;
         this.$el.find(".tasks-container").sortable({
             "items": ".task",
             "connectWith": ".tasks-container",
-            "start": function(event, ui) {
-                startIndex = $(ui.item).index();
+            "activate": function(event, ui) {
+                numberOfItems = self.$el.find(".task:not(.ui-sortable-placeholder)").length;
+                if (ui.sender[0] === self.$el.find('.tasks-container')[0]) {
+                    startIndex = $(ui.item).index();
+                }
             },
-            "stop": function(event, ui) {
-                stopIndex = $(ui.item).index();
-                self.model.get("taskCollection").updateModelsOnSort(startIndex, stopIndex);
+            "deactivate": function(event, ui) {
+                if (numberOfItems !== self.$el.find(".task:not(.ui-sortable-placeholder)").length) {
+                    if (startIndex > -1) {
+                        //remove from list
+                    } else {
+                        //add to list
+                    }
+                } else if (ui.sender[0] === self.$el.find('.tasks-container')[0]) {
+                    stopIndex = $(ui.item).index();
+                    if (startIndex !== stopIndex) {
+                        self.model.get("taskCollection").updateModelsOnSort(startIndex, stopIndex);
+                    }
+                }
             }
         });
     },
