@@ -1,12 +1,13 @@
 Tasker.Views.Card = Backbone.View.extend({
     "initialize": function() {
-        this.render();
         this.taskCollectionView = [];
+        this.render();
     },
     "events": {
         "click .add-task": "showNewTaskControl",
         "click .delete-icon": "hideNewTaskControl",
-        "click .add-control": "addTask"
+        "click .add-control": "addTask",
+        "click .delete-card": "deleteCard"
     },
     "render": function() {
         this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
@@ -34,9 +35,9 @@ Tasker.Views.Card = Backbone.View.extend({
         }
     },
     "createTasks": function() {
-        _.each(this.model.get("taskCollection"), function(taskModel, index) {
+        _.each(this.model.get("taskCollection").models, function(taskModel, index) {
             this.taskCollectionView.push(this.createTask(taskModel, null, index));
-        });
+        }, this);
     },
     "createTask": function(model, content, order) {
         var taskModel = model;
@@ -58,6 +59,9 @@ Tasker.Views.Card = Backbone.View.extend({
             "items": ".task",
             "connectWith": ".tasks-container"
         });
+    },
+    "deleteCard":function(){
+    	this.model.destroy();
     }
 }, {
 

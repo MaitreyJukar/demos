@@ -1,7 +1,8 @@
 Tasker.Views.Board = Backbone.View.extend({
     "initialize": function() {
-        this.render();
         this.cardCollectionView = [];
+        this.render();
+        this.listenTo(this.model.get("cardCollection"), "remove", this.deleteCard)
     },
     "events": {
         "click .add-card": "addCard"
@@ -19,9 +20,9 @@ Tasker.Views.Board = Backbone.View.extend({
         this.$(".card-title-control").html("");
     },
     "createCards": function() {
-        _.each(this.model.get("cardCollection"), function(cardModel, index) {
+        _.each(this.model.get("cardCollection").models, function(cardModel, index) {
             this.cardCollectionView.push(this.createCard(cardModel, null, index));
-        });
+        }, this);
     },
     "createCard": function(model, title, order) {
         var cardModel = model,
@@ -43,6 +44,11 @@ Tasker.Views.Board = Backbone.View.extend({
             "items": ".card",
             "axis": "x"
         });
+    },
+    "deleteCard": function(model) {
+        var cardIndex = model.get("order");
+        this.cardCollectionView[cardIndex].remove();
+        this.cardCollectionView.splice(cardIndex, 1);
     }
 }, {
 
