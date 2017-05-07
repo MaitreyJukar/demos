@@ -8,7 +8,9 @@ Tasker.Views.Card = Backbone.View.extend({
         "click .delete-icon": "hideNewTaskControl",
         "click .add-control": "addTask",
         "mousedown .task-content-control": "stopDragging",
-        "click .delete-card": "deleteCard"
+        "click .delete-card": "deleteCard",
+        "click .edit-title": "editTitle",
+        "blur .edit-title": "stopEditing"
     },
     "render": function() {
         this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
@@ -66,8 +68,20 @@ Tasker.Views.Card = Backbone.View.extend({
             "connectWith": ".tasks-container"
         });
     },
-    "deleteCard":function(){
-    	this.model.destroy();
+    "deleteCard": function() {
+        _.each(this.taskCollectionView, function(task) {
+            task.delete();
+        });
+        this.model.destroy();
+    },
+    "editTitle": function() {
+        event.stopPropagation();
+        this.$el.find(".card-title").prop("contenteditable", true).focus();
+    },
+    "stopEditing": function() {
+        var $title = this.$el.find(".card-title");
+        $title.prop("contenteditable", false);
+        this.model.set('title', $title.html());
     }
 }, {
 
