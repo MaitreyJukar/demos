@@ -127,7 +127,7 @@
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     border-radius: 3px;
-    cursor: -webkit-grab;
+    cursor: pointer;
     max-width: 270px;
     min-height: 50px;
     white-space: pre-wrap;
