@@ -313,6 +313,10 @@
     cursor: pointer;
     padding: 10px;
     min-height: 60px;
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 95%;
 }
 
 .tasker .popup-container .comment-section {}

@@ -7,7 +7,8 @@ Tasker.Views.TaskPopup = Backbone.View.extend({
     },
     "events": {
         "click .add-comment": "addNewComment",
-        "click .close-button": "closePopup"
+        "click .close-button": "closePopup",
+        "blur .task-popup-content": "updateTaskContent"
     },
     "createTaskPopup": function() {
         var $popupModal = $('<div class="popup-modal"></div>'),
@@ -39,7 +40,9 @@ Tasker.Views.TaskPopup = Backbone.View.extend({
         this.addCommentView($comment, model);
     },
     "addCommentModel": function(params) {
-        return new Tasker.Models.Comment(params);
+        var commentModel = new Tasker.Models.Comment(params);
+        this.model.get('commentCollection').add(commentModel);
+        return commentModel;
     },
     "addCommentView": function(comment, commentModel) {
         return new Tasker.Views.Comment({
@@ -49,6 +52,9 @@ Tasker.Views.TaskPopup = Backbone.View.extend({
     },
     "closePopup": function() {
         this.remove();
+    },
+    'updateTaskContent': function() {
+        this.model.set("content", this.$('.task-popup-content').html());
     }
 }, {
 
