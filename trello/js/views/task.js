@@ -8,7 +8,7 @@ Tasker.Views.Task = Backbone.View.extend({
     "events": {
         "click .edit-task-content": "editTask",
         "mousedown .task-content": "stopDragging",
-        "click .task-content": "openTaskView",
+        "click": "openTaskView",
         "blur .task-content": "stopEditing"
     },
     "createTask": function() {
@@ -21,8 +21,10 @@ Tasker.Views.Task = Backbone.View.extend({
         }
     },
     "openTaskView": function(event) {
-        event.stopPropagation();
-        this.createTaskPopup();
+        if (this.$('.task-content').prop('contenteditable') !== "true") {
+            event.stopPropagation();
+            this.createTaskPopup();
+        }
     },
     "createTaskPopup": function() {
         $('.tasker').append('<div class="task-popup"></div>');
