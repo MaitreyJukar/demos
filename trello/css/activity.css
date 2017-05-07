@@ -224,6 +224,10 @@
     text-decoration: underline;
 }
 
+.tasker .task-content[contenteditable=true] ~ div {
+    display: none;
+}
+
 .tasker .edit-task-content {
     position: absolute;
     top: 10px;
@@ -239,7 +243,7 @@
     background: rgba(80, 80, 80, 0.7);
 }
 
-.tasker .task:hover .edit-task-content {
+.tasker .task:hover .task-content:not([contenteditable=true]) + .edit-task-content {
     display: block;
 }
 
