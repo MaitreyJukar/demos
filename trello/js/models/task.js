@@ -6,6 +6,7 @@
             return {
                 "content": "",
                 "order": 0,
+                "commentCollection": new Tasker.Collections.Comments()
             }
         },
         "initialize": function(options) {

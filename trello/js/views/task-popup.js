@@ -6,33 +6,49 @@ Tasker.Views.TaskPopup = Backbone.View.extend({
         this.createTaskPopup();
     },
     "events": {
-        "click .add-comment": "addComment"
+        "click .add-comment": "addNewComment",
+        "click .close-button": "closePopup"
     },
     "createTaskPopup": function() {
-        var $popupContainer = $('<div class="popup-container"></div>'),
-            $commentSection = $("<div class='comment-section'></div>"),
-            $comment;
+        var $popupModal = $('<div class="popup-modal"></div>'),
+            $popupContainer = $('<div class="popup-container"><div class="close-button"><div class="delete-icon">+</div></div></div>'),
+            $commentSection = $("<div class='comment-section'></div>");
         $popupContainer.append("<div class='task-popup-content' contenteditable>" + this.model.get("content") + "</div>");
-        $commentSection.append("<div class='comment-data' contenteditable></div>");
-        $commentSection.append("<div class='add-comment'></div>");
-        _.each(this.model.get('commentCollection').models, function(model) {
-            $comment = $("<div class='comment'></div>");
-            Tasker.Views.Comment
-            $commentSection.append($comment);
-        });
+        $commentSection.append("<div class='comment-data-control' contenteditable></div>");
+        $commentSection.append("<div class='add-comment'>ADD COMMENT</div>");
+        $commentSection.append("<div class='comments'></div>");
         $popupContainer.append($commentSection);
+        $popupModal.append($popupContainer);
+        this.$el.append($popupModal);
+        _.each(this.model.get('commentCollection').models, function(model) {
+            this.addComment(model);
+        }, this);
     },
-    "addComment": function() {
-        this.$el.commentSection.append("<div class='comment'></div>")
-        this.addCommentView(this.addCommentModel());
+    "addNewComment": function() {
+        var comment = this.$('.comment-data-control').html();
+        if (comment) {
+            this.addComment(this.addCommentModel({
+                "comment": comment
+            }));
+            this.$('.comment-data-control').html("");
+        }
     },
-    "addCommentModel": function() {
-        return new Tasker.Models.Comment({});
+    "addComment": function(model) {
+        var $comment = $("<div class='comment'></div>")
+        this.$el.find(".comments").append($comment);
+        this.addCommentView($comment, model);
     },
-    "addCommentView": function(model) {
+    "addCommentModel": function(params) {
+        return new Tasker.Models.Comment(params);
+    },
+    "addCommentView": function(comment, commentModel) {
         return new Tasker.Views.Comment({
-            model: model
+            "model": commentModel,
+            "el": comment
         });
+    },
+    "closePopup": function() {
+        this.remove();
     }
 }, {
 
