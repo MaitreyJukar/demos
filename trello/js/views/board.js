@@ -5,7 +5,9 @@ Tasker.Views.Board = Backbone.View.extend({
         this.listenTo(this.model.get("cardCollection"), "remove", this.deleteCard)
     },
     "events": {
-        "click .add-card": "addCard"
+        "click .add-card": "addCard",
+        "click .save-btn": "saveData",
+        "click .clear-btn": "clearData"
     },
     "render": function() {
         this.createCards();
@@ -58,6 +60,12 @@ Tasker.Views.Board = Backbone.View.extend({
         var cardIndex = model.get("order");
         this.cardCollectionView[cardIndex].remove();
         this.cardCollectionView.splice(cardIndex, 1);
+    },
+    "saveData": function() {
+        this.model.saveData();
+    },
+    "clearData": function() {
+        localStorage.clear();
     }
 }, {
 

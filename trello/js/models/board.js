@@ -27,6 +27,11 @@
         },
         "getActiveCardData": function(model) {
             model.set("activeTaskData", this.get("activeSortData"));
+        },
+        "saveData": function() {
+            var taskerData = {};
+            taskerData.cards = this.get("cardCollection").saveData();
+            localStorage.setItem("trelloData", JSON.stringify(taskerData));
         }
     });
 })();
