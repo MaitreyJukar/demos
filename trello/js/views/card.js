@@ -106,10 +106,7 @@ Tasker.Views.Card = Backbone.View.extend({
         });
     },
     "addTaskOnSort": function() {
-        var taskModel = new Tasker.Models.Task({
-            "content": this.model.get("activeTaskData").content,
-            "order": this.model.get("activeTaskData").order
-        });
+        var taskModel = new Tasker.Models.Task(this.model.get("activeTaskData"));
         this.itemToRemove.remove();
         this.taskCollectionView.push(this.createTask(taskModel, null, this.model.get("taskCollection").length));
         this.model.get("taskCollection").add(taskModel);
