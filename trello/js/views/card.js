@@ -11,7 +11,11 @@ Tasker.Views.Card = Backbone.View.extend({
         "click .delete-card": "deleteCard"
     },
     "render": function() {
-        this.$el.append("<div class='card-header'><div class='card-title'></div><div class='edit-title'></div></div>")
+        var $cardHeader = $("<div class='card-header'></div>")
+        $cardHeader.append("<div class='card-title'></div>");
+        $cardHeader.append("<div class='edit-title'><div class='edit-icon'></div></div>");
+        $cardHeader.append("<div class='delete-card'><div class='delete-icon'>+</div></div>");
+        this.$el.append($cardHeader);
         this.$el.append("<div class='tasks-container'></div>");
         this.$el.append("<div class='add-task-control'><div class='task-content-control' contenteditable='true'></div><div class='add-control'>ADD</div><div class='delete-icon'>+</div></div>");
         this.$el.append("<div class='add-task'>Add Task...</div>");
@@ -66,8 +70,8 @@ Tasker.Views.Card = Backbone.View.extend({
             "connectWith": ".tasks-container"
         });
     },
-    "deleteCard":function(){
-    	this.model.destroy();
+    "deleteCard": function() {
+        this.model.destroy();
     }
 }, {
 
