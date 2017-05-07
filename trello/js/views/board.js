@@ -16,7 +16,7 @@ Tasker.Views.Board = Backbone.View.extend({
         if (title === '') {
             return;
         }
-        this.createCard(null, title, this.model.get("cardCollection").length);
+        this.cardCollectionView.push(this.createCard(null, title, this.model.get("cardCollection").length));
         this.$(".card-title-control").html("");
     },
     "createCards": function() {

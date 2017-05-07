@@ -40,7 +40,7 @@ Tasker.Views.Card = Backbone.View.extend({
     "addTask": function() {
         var content = this.$el.find(".task-content-control").html();
         if (content) {
-            this.createTask(null, content, this.model.get("taskCollection").models.length);
+            this.taskCollectionView.push(this.createTask(null, content, this.model.get("taskCollection").models.length));
             this.hideNewTaskControl();
         }
     },
