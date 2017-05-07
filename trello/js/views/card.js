@@ -80,10 +80,17 @@ Tasker.Views.Card = Backbone.View.extend({
             "activate": function(event, ui) {
                 startIndex = -1;
                 stopIndex = -1;
+                var setActiveSortData = {},
+                    currentTask;
                 numberOfItems = self.$el.find(".task:not(.ui-sortable-placeholder)").length;
                 if (ui.sender[0] === self.$el.find('.tasks-container')[0]) {
                     startIndex = $(ui.item).index();
-                    self.model.trigger('setActiveSortData', self.model.get("taskCollection").at(startIndex).toJSON());
+                    currentTask = self.model.get("taskCollection").at(startIndex);
+                    setActiveSortData.content = currentTask.get("content");
+                    setActiveSortData.order = currentTask.get("order");
+                    setActiveSortData.comments = currentTask.get("commentCollection").saveData();
+
+                    self.model.trigger('setActiveSortData', setActiveSortData);
                 }
             },
             "deactivate": function(event, ui) {
