@@ -100,7 +100,38 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre;
+    position: relative;
     padding: 5px;
+}
+
+.tasker .card-container .card .card-header .edit-title {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    height: 20px;
+    width: 20px;
+}
+
+.tasker .card-container .card .card-header .edit-title .edit-icon {
+    transform: scale(0.4);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.tasker .card-container .card .card-header .delete-card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.tasker .card-container .card .card-header .delete-icon {
+    font-size: 22px;
+    position: absolute;
+    top: -2px;
+    left: 2px;
 }
 
 .tasker .card-container .card .card-title {
@@ -128,7 +159,7 @@
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     border-radius: 3px;
-    cursor: -webkit-grab;
+    cursor: pointer;
     max-width: 270px;
     min-height: 50px;
     white-space: pre-wrap;
@@ -169,13 +200,6 @@
     cursor: pointer;
     margin-right: 10px;
     float: left;
-}
-
-.tasker .card-container .card .add-task-control .delete-icon {
-    font-size: 30px;
-    cursor: pointer;
-    float: left;
-    transform: rotate(45deg);
 }
 
 .tasker .card-container .card .add-task {
@@ -230,4 +254,11 @@
     display: block;
     transform: rotate(-45deg);
     transform-origin: left top;
+}
+
+.tasker .delete-icon {
+    font-size: 30px;
+    cursor: pointer;
+    float: left;
+    transform: rotate(45deg);
 }
