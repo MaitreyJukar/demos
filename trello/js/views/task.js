@@ -27,6 +27,9 @@ Tasker.Views.Task = Backbone.View.extend({
         var $content = this.$el.find(".task-content");
         $content.prop("contenteditable", false);
         this.model.set('content', $content.html());
+    },
+    "deleteTask": function() {
+        this.model.destroy();
     }
 }, {
 

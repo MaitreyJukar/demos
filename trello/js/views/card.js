@@ -2,6 +2,7 @@ Tasker.Views.Card = Backbone.View.extend({
     "initialize": function() {
         this.taskCollectionView = [];
         this.render();
+        this.listenTo(this.model.get("taskCollection"), "remove", deleteTask)
     },
     "events": {
         "click .add-task": "showNewTaskControl",
@@ -74,7 +75,7 @@ Tasker.Views.Card = Backbone.View.extend({
     },
     "deleteCard": function() {
         _.each(this.taskCollectionView, function(task) {
-            task.delete();
+            task.deleteTask();
         });
         this.model.destroy();
     },
@@ -86,6 +87,11 @@ Tasker.Views.Card = Backbone.View.extend({
         var $title = this.$el.find(".card-title");
         $title.prop("contenteditable", false);
         this.model.set('title', $title.html());
+    },
+    "deleteTask": function(model) {
+        var taskIndex = model.get("order");
+        this.taskCollectionView[taskIndex].remove();
+        this.taskCollectionView.splice(taskIndex, 1);
     }
 }, {
 
