@@ -2,13 +2,16 @@ Tasker.Views.Card = Backbone.View.extend({
     "initialize": function() {
         this.taskCollectionView = [];
         this.render();
+        this.listenTo(this.model.get("taskCollection"), "remove", deleteTask)
     },
     "events": {
         "click .add-task": "showNewTaskControl",
         "click .delete-icon": "hideNewTaskControl",
         "click .add-control": "addTask",
         "mousedown .task-content-control": "stopDragging",
-        "click .delete-card": "deleteCard"
+        "click .delete-card": "deleteCard",
+        "click .edit-title": "editTitle",
+        "blur .edit-title": "stopEditing"
     },
     "render": function() {
         var $cardHeader = $("<div class='card-header'></div>")
@@ -71,7 +74,24 @@ Tasker.Views.Card = Backbone.View.extend({
         });
     },
     "deleteCard": function() {
+        _.each(this.taskCollectionView, function(task) {
+            task.deleteTask();
+        });
         this.model.destroy();
+    },
+    "editTitle": function() {
+        event.stopPropagation();
+        this.$el.find(".card-title").prop("contenteditable", true).focus();
+    },
+    "stopEditing": function() {
+        var $title = this.$el.find(".card-title");
+        $title.prop("contenteditable", false);
+        this.model.set('title', $title.html());
+    },
+    "deleteTask": function(model) {
+        var taskIndex = model.get("order");
+        this.taskCollectionView[taskIndex].remove();
+        this.taskCollectionView.splice(taskIndex, 1);
     }
 }, {
 

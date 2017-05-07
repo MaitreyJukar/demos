@@ -103,6 +103,7 @@
     text-overflow: ellipsis;
     white-space: pre;
     position: relative;
+    padding: 5px;
 }
 
 .tasker .card-container .card .card-header .edit-title {
