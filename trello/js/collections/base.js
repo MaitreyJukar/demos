@@ -9,7 +9,7 @@
         "_updateModels": function() {
             _.each(this.models, function(model, index) {
                 model.set({
-                    "order": index + 1
+                    "order": index
                 });
             });
         },

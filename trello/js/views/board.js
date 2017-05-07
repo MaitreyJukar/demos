@@ -40,9 +40,17 @@ Tasker.Views.Board = Backbone.View.extend({
         });
     },
     "makeCardsSortable": function() {
+        var startIndex, stopIndex, self = this;
         this.$el.find(".card-container").sortable({
             "items": ".card",
-            "axis": "x"
+            "axis": "x",
+            "start": function(event, ui) {
+                startIndex = $(ui.item).index();
+            },
+            "stop": function(event, ui) {
+                stopIndex = $(ui.item).index();
+                self.model.get("cardCollection").updateModelsOnSort(startIndex, stopIndex);
+            }
         });
     },
     "deleteCard": function(model) {

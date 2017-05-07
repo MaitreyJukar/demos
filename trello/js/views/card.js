@@ -2,7 +2,7 @@ Tasker.Views.Card = Backbone.View.extend({
     "initialize": function() {
         this.taskCollectionView = [];
         this.render();
-        this.listenTo(this.model.get("taskCollection"), "remove", deleteTask)
+        this.listenTo(this.model.get("taskCollection"), "remove", this.deleteTask)
     },
     "events": {
         "click .add-task": "showNewTaskControl",
@@ -11,7 +11,8 @@ Tasker.Views.Card = Backbone.View.extend({
         "mousedown .task-content-control": "stopDragging",
         "click .delete-card": "deleteCard",
         "click .edit-title": "editTitle",
-        "blur .edit-title": "stopEditing"
+        "blur .edit-title": "stopEditing",
+        "mousedown .card-title": "stopDragging"
     },
     "render": function() {
         var $cardHeader = $("<div class='card-header'></div>")
@@ -68,9 +69,17 @@ Tasker.Views.Card = Backbone.View.extend({
         });
     },
     "makeTaskSortable": function() {
+        var startIndex, stopIndex, self = this;
         this.$el.find(".tasks-container").sortable({
             "items": ".task",
-            "connectWith": ".tasks-container"
+            "connectWith": ".tasks-container",
+            "start": function(event, ui) {
+                startIndex = $(ui.item).index();
+            },
+            "stop": function(event, ui) {
+                stopIndex = $(ui.item).index();
+                self.model.get("taskCollection").updateModelsOnSort(startIndex, stopIndex);
+            }
         });
     },
     "deleteCard": function() {
