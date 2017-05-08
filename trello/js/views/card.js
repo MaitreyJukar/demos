@@ -3,6 +3,7 @@ Tasker.Views.Card = Backbone.View.extend({
         this.taskCollectionView = [];
         this.render();
         this.listenTo(this.model.get("taskCollection"), "remove", this.deleteTask);
+        this.listenTo(this.model.get("taskCollection"), "add", this.updateTaskCount);
         this.listenTo(this.model, "change:activeTaskData", this.addTaskOnSort);
     },
     "events": {
@@ -16,7 +17,8 @@ Tasker.Views.Card = Backbone.View.extend({
         "mousedown .card-title": "stopDragging"
     },
     "render": function() {
-        var $cardHeader = $("<div class='card-header'></div>")
+        var $cardHeader = $("<div class='card-header'></div>");
+        $cardHeader.append("<div class='task-count'></div>");
         $cardHeader.append("<div class='card-title'></div>");
         $cardHeader.append("<div class='edit-title'><div class='edit-icon'></div></div>");
         $cardHeader.append("<div class='delete-card'><div class='delete-icon'>+</div></div>");
@@ -27,6 +29,10 @@ Tasker.Views.Card = Backbone.View.extend({
         this.$(".card-title").html(this.model.get("title"))
         this.createTasks();
         this.makeTaskSortable();
+        this.updateTaskCount();
+    },
+    "updateTaskCount": function() {
+        this.$(".task-count").html("Number of tasks: " + this.model.get("taskCollection").length)
     },
     "stopDragging": function(event) {
         if ($(event.currentTarget).prop('contenteditable') === "true") {
@@ -151,6 +157,8 @@ Tasker.Views.Card = Backbone.View.extend({
         var taskIndex = model.get("order");
         this.taskCollectionView[taskIndex].remove();
         this.taskCollectionView.splice(taskIndex, 1);
+        this.updateTaskCount();
+
     }
 }, {
 
