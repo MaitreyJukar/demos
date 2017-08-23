@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>My Trello</title>
+    <link rel="stylesheet" type="text/css" href="css/my-trello.css">
+    <script type="text/javascript" src="js/vendor/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="initialize.js"></script>
+    <script type="text/javascript" src="list.js"></script>
+    <script type="text/javascript" src="card.js"></script>
+    <script type="text/javascript" src="dashboard.js"></script>
+</head>
+
+<body>
+    <div class="my-trello">
+        <div class="header">
+            <div class="logo"></div>
+            <div class="title">My Trello</div>
+        </div>
+        <div class="content">
+            <div class="dashboard">
+                <div class="content-title"></div>
+                <div class="content-holder">
+                    <div class="list-holder"></div>
+                    <div class="add-list-box">
+                        <div class="add-list-button"></div>
+                        <div class="add-list-controls">
+                            <input type="text" name="add-list" />
+                            <div class="add-list-buttons">
+                                <div class="add-list-save"></div>
+                                <div class="add-list-cancel"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="templates">
+            <div class="list">
+                <div class="list-header">
+                    <textarea class="list-title"></textarea>
+                    <div class="list-menu-button"></div>
+                </div>
+                <div class="list-content">
+                    <div class="card-holder"></div>
+                    <div class="add-card-box">
+                        <div class="add-card-button"></div>
+                        <div class="add-card-controls">
+                            <textarea class="add-card"></textarea>
+                            <div class="add-card-buttons">
+                                <div class="add-card-save"></div>
+                                <div class="add-card-cancel"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+            	<div class="card-title"></div>
+            	<div class="card-menu-btn"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
