@@ -146,15 +146,18 @@ body * {
 }
 
 .my-trello .list-holder {
-    float: left;
+    display: inline-block;
+    white-space: nowrap;
+    width: auto;
+    overflow-x: auto;
+    vertical-align: top;
 }
 
 .my-trello .content-holder {
-    display: inline-block;
     height: calc(100% - 40px);
-    max-width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .my-trello .list-content {
@@ -164,8 +167,9 @@ body * {
 }
 
 .my-trello .add-list-box {
-    float: left;
+    vertical-align: top;
     width: 200px;
+    display: inline-block;
 }
 
 .my-trello .add-list-box.editing .add-list-button {
@@ -205,6 +209,8 @@ body * {
     margin-right: 10px;
     padding: 10px;
     width: 250px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .my-trello .list .list-title {
@@ -268,4 +274,11 @@ body * {
     min-height: 50px;
     position: relative;
     z-index: 0;
+}
+
+.my-trello .card-title {
+    white-space: normal;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
