@@ -92,6 +92,24 @@ body * {
     font-size: 14px;
 }
 
+.my-trello .mt-button.mt-delete-btn {
+    background: linear-gradient(to bottom, #bd4f4f 0, #ac4444 100%);
+    box-shadow: 0 1px 0 #6f2121;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    transform: translate(-5px, 5px);
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+}
+
+.my-trello .mt-button.mt-delete-btn:hover {
+    opacity: 1;
+}
 
 /** HEADER STYLES **/
 
@@ -122,6 +140,7 @@ body * {
 .my-trello .templates {
     display: none !important;
 }
+
 
 
 /** DASHBOARD STYLES **/
@@ -211,6 +230,8 @@ body * {
     width: 250px;
     display: inline-block;
     vertical-align: top;
+    position: relative;
+    cursor: pointer;
 }
 
 .my-trello .list .list-title {
@@ -227,6 +248,10 @@ body * {
 
 .my-trello .list.editing .list-title {
     display: block;
+}
+
+.my-trello .list.editing .list-delete-button {
+    display: none;
 }
 
 .my-trello .add-card-box.editing .add-card-button {

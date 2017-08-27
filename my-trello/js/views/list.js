@@ -10,7 +10,8 @@
             "click .add-card-save": "addNewCard",
             "click .add-card-cancel": "closeAddCardBox",
             "click .list-title-placeholder": "editListTitle",
-            "blur .list-title": "updateListTitle"
+            "blur .list-title": "updateListTitle",
+            "click .list-delete-button": "deleteList"
         },
 
         "setInitialValues": function() {
@@ -82,6 +83,12 @@
             this.model.set('name', this.$('.list-title').val());
             this.addName();
             this.$el.removeClass('editing');
+        },
+
+        "deleteList": function(){
+            this.model.deleteList();
+            this.stopListening();
+            this.remove();
         }
     }, {});
 

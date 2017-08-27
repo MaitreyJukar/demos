@@ -27,6 +27,10 @@
 
         "getCards": function() {
             return _.sortBy(this.get('cardCollection'), "position");
+        },
+
+        "deleteList": function(){
+            this.destroy();
         }
     }, {});
 
