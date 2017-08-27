@@ -1,8 +1,8 @@
 (function(MyTrello) {
-    var Communicator = Backbone.Model.extend({}, {
+    MyTrello.Communication = MyTrello.Models.Base.extend({}, {
         "EVENTS": {
-            "APPEND_TO_LIST": 1
+            "SAVE": 1
         }
     });
-    MyTrello.Communicator = new Communicator();
+    MyTrello.Communicator = new MyTrello.Communication();
 })(window.MyTrello)

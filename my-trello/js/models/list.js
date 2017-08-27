@@ -1,5 +1,5 @@
 (function(MyTrello) {
-    MyTrello.Models.List = Backbone.Model.extend({
+    MyTrello.Models.List = MyTrello.Models.Base.extend({
         "defaults": function() {
             return {
                 "listID": null,
@@ -22,14 +22,15 @@
         "addCard": function(cardData) {
             var model = new MyTrello.Models.Card(cardData);
             this.get('cardCollection').add(model);
+            this.save();
             return model;
         },
 
         "getCards": function() {
-            return _.sortBy(this.get('cardCollection'), "position");
+            return this.get('cardCollection').sortBy("position");
         },
 
-        "deleteList": function(){
+        "deleteList": function() {
             this.destroy();
         }
     }, {});

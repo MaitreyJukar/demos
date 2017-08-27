@@ -28,25 +28,27 @@
                 i = 0;
             if (lists && lists.length) {
                 for (; i < lists.length; i++) {
-                    this.addList(lists[i]);
+                    this.renderList(lists[i]);
                 }
             }
         },
 
-        "addList": function(listData) {
-            var model = this.model.addList(listData),
-                view = new MyTrello.Views.List({
-                    "model": model
-                });
+        "renderList": function(model) {
+            var view = new MyTrello.Views.List({
+                "model": model
+            });
             this.lists.push(view);
             this.$('.list-holder').append(view.$el)
         },
 
+        "addList": function(listData) {
+            var model = this.model.addList(listData);
+            this.renderList(model);
+        },
+
         /**** EVENT LISTENERS ****/
 
-        "attachListeners": function() {
-            $('body').on('removelist', this.removeList.bind(this));
-        },
+        "attachListeners": function() {},
 
         "makeListsSortable": function() {
             this.$(".list-holder").sortable({

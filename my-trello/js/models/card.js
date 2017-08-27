@@ -1,5 +1,5 @@
 (function(MyTrello) {
-    MyTrello.Models.Card = Backbone.Model.extend({
+    MyTrello.Models.Card = MyTrello.Models.Base.extend({
         "defaults": function() {
             return {
                 "cardID": null,
