@@ -51,15 +51,21 @@
         "attachListeners": function() {},
 
         "makeListsSortable": function() {
+            var startIndex,
+                stopIndex,
+                self = this;
+
             this.$(".list-holder").sortable({
                 "items": ".list",
                 "axis": "x",
                 "scrollSensitivty": 50,
                 "start": function(event, ui) {
-
+                    startIndex = $(ui.item).index();
                 },
                 "stop": function(event, ui) {
-
+                    stopIndex = $(ui.item).index();
+                    self.model.get("lists").updateModelsOnSort(startIndex, stopIndex);
+                    self.model.save();
                 }
             });
         },
@@ -77,7 +83,8 @@
             if (this.$('.add-list-name').val()) {
                 this.addList({
                     "name": this.$('.add-list-name').val(),
-                    "position": this.model.get("lists").length
+                    "position": this.model.get("lists").length,
+                    "listID": this.model.generateNewID()
                 });
                 this.closeAddListBox();
             }

@@ -255,6 +255,10 @@ body * {
     display: none;
 }
 
+.my-trello .card-holder {
+    min-height: 20px;
+}
+
 .my-trello .add-card-box.editing .add-card-button {
     display: none;
 }

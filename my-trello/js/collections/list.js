@@ -1,3 +1,3 @@
 (function(MyTrello) {
-    MyTrello.Collections.List = Backbone.Collection.extend({}, {});
+    MyTrello.Collections.List = MyTrello.Collections.Base.extend({}, {});
 })(window.MyTrello);

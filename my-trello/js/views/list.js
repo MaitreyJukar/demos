@@ -36,6 +36,7 @@
 
         "renderList": function() {
             this.setElement($('.templates .list').clone());
+            this.$el.attr('id', 'list-' + this.model.get('listID'));
         },
 
         "renderCards": function() {
@@ -50,14 +51,45 @@
         },
 
         "makeCardsSortable": function() {
+            var startIndex = -1,
+                stopIndex = -1,
+                totalItems,
+                self = this;
+
             this.$(".card-holder").sortable({
                 "items": ".card",
                 "connectWith": ".card-holder",
                 "activate": function(event, ui) {
-
+                    var currentModel;
+                    startIndex = -1;
+                    stopIndex = -1;
+                    totalItems = self.$el.find(".card:not(.ui-sortable-placeholder)").length;
+                    if (ui.sender[0] === self.$el.find('.card-holder')[0]) {
+                        startIndex = $(ui.item).index();
+                        currentModel = self.model.get("cardCollection").at(startIndex);
+                        MyTrello.Communicator.set('currentCardModel', currentModel);
+                        MyTrello.Communicator.set('currentCardView', self.cards[startIndex]);
+                    }
                 },
                 "deactivate": function(event, ui) {
-
+                    if (totalItems !== self.$el.find(".card:not(.ui-sortable-placeholder)").length) {
+                        if (startIndex > -1) {
+                            self.cards.splice(startIndex, 1);
+                            self.model.removeCardFromCollection(MyTrello.Communicator.get('currentCardModel'));
+                        } else {
+                            stopIndex = $(ui.item).index();
+                            self.cards.push(MyTrello.Communicator.get('currentCardView'))
+                            self.moveAtoB(self.cards.length - 1, stopIndex);
+                            self.model.addCardToCollection(stopIndex, MyTrello.Communicator.get('currentCardModel'));
+                        }
+                    } else if (ui.sender[0] === self.$el.find('.card-holder')[0]) {
+                        stopIndex = $(ui.item).index();
+                        if (startIndex !== stopIndex) {
+                            self.model.get("cardCollection").updateModelsOnSort(startIndex, stopIndex);
+                            self.moveAtoB(startIndex, stopIndex);
+                        }
+                    }
+                    self.model.save();
                 }
             });
         },
@@ -77,7 +109,8 @@
             if (this.$('.add-card-name').val()) {
                 this.addCard({
                     "name": this.$('.add-card-name').val(),
-                    "position": this.model.get("cardCollection").length
+                    "position": this.model.get("cardCollection").length,
+                    "listID": this.model.get("listID")
                 });
                 this.closeAddCardBox();
             }
@@ -99,7 +132,14 @@
             this.$el.removeClass('editing');
         },
 
+        "moveAtoB": function(idxA, idxB) {
+            this.cards.splice(idxB, 0, this.cards.splice(idxA, 1)[0]);
+        },
+
         "deleteList": function() {
+            for (var i = 0; i < this.cards.length; i++) {
+                this.cards[i].deleteCard();
+            }
             this.model.deleteList();
             this.stopListening();
             this.remove();

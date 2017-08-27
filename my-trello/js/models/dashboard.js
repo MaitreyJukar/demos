@@ -2,13 +2,20 @@
     MyTrello.Models.Dashboard = MyTrello.Models.Base.extend({
         "defaults": function() {
             return {
-                "lists": new MyTrello.Collections.List()
+                "lists": new MyTrello.Collections.List(),
+                "listIDGenerator": 0
             }
         },
 
         "initialize": function() {
             this.fetchSavedData();
             this.attachListeners();
+        },
+
+        "generateNewID": function() {
+            var ID = this.get('listIDGenerator');
+            this.set('listIDGenerator', ID + 1);
+            return ID;
         },
 
         /**** DATA FETCHING AND PARSING ****/
@@ -24,6 +31,7 @@
             for (; i < trelloData.lists.length; i++) {
                 this.addList(trelloData.lists[i]);
             }
+            this.set("listIDGenerator", trelloData.listIDGenerator || 0);
         },
 
         "dataParser": function(key, value) {

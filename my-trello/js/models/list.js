@@ -30,6 +30,16 @@
             return this.get('cardCollection').sortBy("position");
         },
 
+        "addCardToCollection": function(idx, model) {
+            var cardCollection = this.get("cardCollection");
+            cardCollection.add(model);
+            cardCollection.updateModelsOnSort(cardCollection.length - 1, idx);
+        },
+
+        "removeCardFromCollection": function(model) {
+            this.get("cardCollection").remove(model);
+        },
+
         "deleteList": function() {
             this.destroy();
         }
