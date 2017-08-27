@@ -20,8 +20,9 @@
         },
 
         "addCard": function(cardData) {
-            var cardCollection = this.get('cardCollection');
-            cardCollection.add(new MyTrello.Models.Card(cardData))
+            var model = new MyTrello.Models.Card(cardData);
+            this.get('cardCollection').add(model);
+            return model;
         },
 
         "getCards": function() {

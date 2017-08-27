@@ -10,6 +10,21 @@ body * {
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+
 .my-trello {
     height: 100%;
     width: 100%;
@@ -139,6 +154,13 @@ body * {
     height: calc(100% - 40px);
     max-width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.my-trello .list-content {
+    max-height: calc(100% - 50px);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .my-trello .add-list-box {
@@ -219,4 +241,31 @@ body * {
 
 .my-trello .add-card-box {
     margin-top: 10px;
+}
+
+.my-trello textarea.add-card-name {
+    height: auto;
+    border: none;
+    max-height: 162px;
+    min-height: 54px;
+    overflow-y: auto;
+    padding: 5px;
+    width: 100%;
+    outline: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    resize: none;
+}
+
+.my-trello .card {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    min-height: 50px;
+    position: relative;
+    z-index: 0;
 }
