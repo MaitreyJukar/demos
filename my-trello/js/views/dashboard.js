@@ -4,6 +4,7 @@
             this.initializeViewCollection();
             this.renderComponents();
             this.attachListeners();
+            this.makeListsSortable();
         },
 
         "events": {
@@ -45,6 +46,20 @@
 
         "attachListeners": function() {
             $('body').on('removelist', this.removeList.bind(this));
+        },
+
+        "makeListsSortable": function() {
+            this.$(".list-holder").sortable({
+                "items": ".list",
+                "axis": "x",
+                "scrollSensitivty": 50,
+                "start": function(event, ui) {
+
+                },
+                "stop": function(event, ui) {
+
+                }
+            });
         },
 
         "removeList": function(list) {

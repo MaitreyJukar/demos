@@ -11,6 +11,10 @@
 
         "initialize": function() {
 
+        },
+
+        "deleteCard": function() {
+            this.destroy();
         }
     }, {});
 })(window.MyTrello);

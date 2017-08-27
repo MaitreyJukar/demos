@@ -170,6 +170,7 @@ body * {
     width: auto;
     overflow-x: auto;
     vertical-align: top;
+    position: relative;
 }
 
 .my-trello .content-holder {

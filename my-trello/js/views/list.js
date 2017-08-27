@@ -3,6 +3,7 @@
         "initialize": function(options) {
             this.setInitialValues();
             this.render();
+            this.makeCardsSortable();
         },
 
         "events": {
@@ -48,6 +49,19 @@
             }
         },
 
+        "makeCardsSortable": function() {
+            this.$(".card-holder").sortable({
+                "items": ".card",
+                "connectWith": ".card-holder",
+                "activate": function(event, ui) {
+
+                },
+                "deactivate": function(event, ui) {
+
+                }
+            });
+        },
+
         "addName": function() {
             var name = this.model.get('name');
             this.$('.list-title').val(name);
@@ -85,7 +99,7 @@
             this.$el.removeClass('editing');
         },
 
-        "deleteList": function(){
+        "deleteList": function() {
             this.model.deleteList();
             this.stopListening();
             this.remove();
