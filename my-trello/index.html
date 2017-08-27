@@ -3,11 +3,21 @@
 <head>
     <title>My Trello</title>
     <link rel="stylesheet" type="text/css" href="css/my-trello.css">
-    <script type="text/javascript" src="js/vendor/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="initialize.js"></script>
-    <script type="text/javascript" src="list.js"></script>
-    <script type="text/javascript" src="card.js"></script>
-    <script type="text/javascript" src="dashboard.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+    <script type="text/javascript" src="js/initialize.js"></script>
+    <script type="text/javascript" src="js/models/list.js"></script>
+    <script type="text/javascript" src="js/models/card.js"></script>
+    <script type="text/javascript" src="js/models/dashboard.js"></script>
+    <script type="text/javascript" src="js/models/communicator.js"></script>
+    <script type="text/javascript" src="js/views/list.js"></script>
+    <script type="text/javascript" src="js/views/card.js"></script>
+    <script type="text/javascript" src="js/views/dashboard.js"></script>
+    <script type="text/javascript" src="js/collections/list.js"></script>
+    <script type="text/javascript" src="js/collections/card.js"></script>
 </head>
 
 <body>
@@ -18,16 +28,16 @@
         </div>
         <div class="content">
             <div class="dashboard">
-                <div class="content-title"></div>
+                <div class="content-title">Tasks</div>
                 <div class="content-holder">
                     <div class="list-holder"></div>
                     <div class="add-list-box">
-                        <div class="add-list-button"></div>
+                        <div class="add-list-button mt-textholder-button">Add a list...</div>
                         <div class="add-list-controls">
-                            <input type="text" name="add-list" />
+                            <input class="add-list-name" type="text" name="add-list" />
                             <div class="add-list-buttons">
-                                <div class="add-list-save"></div>
-                                <div class="add-list-cancel"></div>
+                                <div class="add-list-save mt-button">SAVE</div>
+                                <div class="add-list-cancel mt-button mt-icon">x</div>
                             </div>
                         </div>
                     </div>
@@ -37,13 +47,14 @@
         <div class="templates">
             <div class="list">
                 <div class="list-header">
-                    <textarea class="list-title"></textarea>
+                    <div class="list-title-placeholder mt-editbox"></div>
+                    <textarea class="list-title mt-editbox"></textarea>
                     <div class="list-menu-button"></div>
                 </div>
                 <div class="list-content">
                     <div class="card-holder"></div>
                     <div class="add-card-box">
-                        <div class="add-card-button"></div>
+                        <div class="add-card-button mt-textholder-button">Add a card...</div>
                         <div class="add-card-controls">
                             <textarea class="add-card"></textarea>
                             <div class="add-card-buttons">
