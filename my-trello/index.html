@@ -10,16 +10,19 @@
     <script type="text/javascript" src="js/vendor/backbone-min.js"></script>
     <script type="text/javascript" src="js/initialize.js"></script>
     <script type="text/javascript" src="js/models/base.js"></script>
+    <script type="text/javascript" src="js/models/dashboard.js"></script>
     <script type="text/javascript" src="js/models/list.js"></script>
     <script type="text/javascript" src="js/models/card.js"></script>
-    <script type="text/javascript" src="js/models/dashboard.js"></script>
+    <script type="text/javascript" src="js/models/comment.js"></script>
     <script type="text/javascript" src="js/models/communicator.js"></script>
+    <script type="text/javascript" src="js/views/dashboard.js"></script>
     <script type="text/javascript" src="js/views/list.js"></script>
     <script type="text/javascript" src="js/views/card.js"></script>
-    <script type="text/javascript" src="js/views/dashboard.js"></script>
+    <script type="text/javascript" src="js/views/card-details.js"></script>
     <script type="text/javascript" src="js/collections/base.js"></script>
     <script type="text/javascript" src="js/collections/list.js"></script>
     <script type="text/javascript" src="js/collections/card.js"></script>
+    <script type="text/javascript" src="js/collections/comment.js"></script>
 </head>
 
 <body>
@@ -46,6 +49,25 @@
                 </div>
             </div>
         </div>
+        <div class="card-details">
+            <div class="card-details-modal"> </div>
+            <div class="card-details-holder">
+                <div class="card-details-header">
+                    <textarea class="card-name mt-editbox"></textarea>
+                    <div class="card-details-close mt-button mt-icon mt-delete-btn">x</div>
+                </div>
+                <div class="card-details-content">
+                    <div class="add-comment-label">Add comment</div>
+                    <div class="add-comment-controls">
+                        <textarea class="add-comment mt-textarea"></textarea>
+                        <div class="add-comment-buttons">
+                            <div class="add-comment-save mt-button">SAVE</div>
+                        </div>
+                    </div>
+                    <div class="comment-holder"></div>
+                </div>
+            </div>
+        </div>
         <div class="templates">
             <div class="list">
                 <div class="list-header">
@@ -58,7 +80,7 @@
                     <div class="add-card-box">
                         <div class="add-card-button mt-textholder-button">Add a card...</div>
                         <div class="add-card-controls">
-                            <textarea class="add-card-name"></textarea>
+                            <textarea class="add-card-name mt-textarea"></textarea>
                             <div class="add-card-buttons">
                                 <div class="add-card-save mt-button">ADD</div>
                                 <div class="add-card-cancel mt-button mt-icon">x</div>
@@ -68,8 +90,12 @@
                 </div>
             </div>
             <div class="card">
-            	<div class="card-title"></div>
-            	<div class="card-delete-btn mt-button mt-icon mt-delete-btn" title="Delete Card">x</div>
+                <div class="card-title"></div>
+                <div class="card-delete-btn mt-button mt-icon mt-delete-btn" title="Delete Card">x</div>
+            </div>
+            <div class="comment">
+                <div class="comment-description"></div>
+                <div class="comment-delete-btn mt-button mt-icon mt-delete-btn" title="Delete Comment">x</div>
             </div>
         </div>
     </div>

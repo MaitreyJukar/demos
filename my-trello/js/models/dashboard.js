@@ -35,11 +35,20 @@
         },
 
         "dataParser": function(key, value) {
-            if (key === "cardCollection") {
-                this.cards = value;
-                return void(0);
+            switch (key) {
+                case "cardCollection":
+                    {
+                        this.cards = value;
+                        return void 0;
+                    }
+                case "commentCollection":
+                    {
+                        this.comments = value;
+                        return void 0;
+                    }
+                default:
+                    return value;
             }
-            return value;
         },
 
         "attachListeners": function() {

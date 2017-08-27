@@ -130,6 +130,7 @@
             this.model.set('name', this.$('.list-title').val());
             this.addName();
             this.$el.removeClass('editing');
+            this.model.save();
         },
 
         "moveAtoB": function(idxA, idxB) {

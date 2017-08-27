@@ -20,7 +20,14 @@
         /**** COMPONENT RENDERING ****/
 
         "renderComponents": function() {
+            this.initializeCardDetailsView();
             this.renderLists();
+        },
+
+        "initializeCardDetailsView": function(){
+            this.cardDetailsView = new MyTrello.Views.CardDetails({
+                "el": $('.card-details')
+            });
         },
 
         "renderLists": function() {
@@ -48,7 +55,9 @@
 
         /**** EVENT LISTENERS ****/
 
-        "attachListeners": function() {},
+        "attachListeners": function() {
+            this.listenTo(MyTrello.Communicator, MyTrello.Communication.EVENTS.SHOW_DETAILS, this.showCardDetails.bind(this));
+        },
 
         "makeListsSortable": function() {
             var startIndex,
@@ -93,7 +102,14 @@
         "closeAddListBox": function() {
             this.$('.add-list-box').removeClass('editing');
             this.$('.add-list-name').val('');
+        },
+
+        "showCardDetails": function(model){
+            this.cardDetailsView.model = model;
+            this.cardDetailsView.render();
+            this.cardDetailsView.show();
         }
+
     }, {});
 
 
