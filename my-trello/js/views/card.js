@@ -5,7 +5,7 @@
         },
 
         "events": {
-            "click .card": "openCardDetails",
+            "click": "openCardDetails",
             "click .card-delete-btn": "deleteCard"
         },
 
@@ -22,7 +22,7 @@
             this.$el.find('.card-title').html(this.model.get('name'));
         },
 
-        "openCardDetails": function() {
+        "openCardDetails": function(event) {
             if (!$(event.target).hasClass('card-delete-btn')) {
 
             }
