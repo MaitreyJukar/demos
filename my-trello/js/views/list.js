@@ -4,6 +4,7 @@
             this.setInitialValues();
             this.render();
             this.makeCardsSortable();
+            this.attachListeners();
         },
 
         "events": {
@@ -19,6 +20,10 @@
             this.cards = [];
         },
 
+        "attachListeners": function() {
+            this.listenTo(this.model.get("cardCollection"), "destroy", this.updateTaskCounter.bind(this));
+        },
+
         "addCard": function(cardData) {
             var model = this.model.addCard(cardData),
                 view = new MyTrello.Views.Card({
@@ -32,6 +37,7 @@
             this.renderList();
             this.addName();
             this.renderCards();
+            this.updateTaskCounter();
         },
 
         "renderList": function() {
@@ -89,6 +95,7 @@
                             self.moveAtoB(startIndex, stopIndex);
                         }
                     }
+                    self.updateTaskCounter();
                     self.model.save();
                 }
             });
@@ -113,6 +120,7 @@
                     "listID": this.model.get("listID")
                 });
                 this.closeAddCardBox();
+                this.updateTaskCounter();
             }
         },
 
@@ -144,6 +152,10 @@
             this.model.deleteList();
             this.stopListening();
             this.remove();
+        },
+
+        "updateTaskCounter": function() {
+            this.$(".task-counter").html(this.model.get("cardCollection").length);
         }
     }, {});
 
