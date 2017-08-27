@@ -217,6 +217,10 @@ body * {
     display: none;
 }
 
+.my-trello .list .list-title-placeholder {
+    cursor: pointer;
+}
+
 .my-trello .list.editing .list-title-placeholder {
     display: none;
 }

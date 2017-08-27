@@ -8,7 +8,9 @@
         "events": {
             "click .add-card-button": "showAddCardBox",
             "click .add-card-save": "addNewCard",
-            "click .add-card-cancel": "closeAddCardBox"
+            "click .add-card-cancel": "closeAddCardBox",
+            "click .list-title-placeholder": "editListTitle",
+            "blur .list-title": "updateListTitle"
         },
 
         "setInitialValues": function() {
@@ -32,6 +34,17 @@
 
         "renderList": function() {
             this.setElement($('.templates .list').clone());
+        },
+
+        "renderCards": function() {
+            var $cardHolder = this.$el.find('.card-holder'),
+                i = 0,
+                cards = this.model.getCards();
+            for (; i < cards.length; i++) {
+                $cardHolder.append(new MyTrello.Views.Card({
+                    "model": cards[i]
+                }).$el);
+            }
         },
 
         "addName": function() {
@@ -60,15 +73,15 @@
             this.$('.add-card-name').val('');
         },
 
-        "renderCards": function() {
-            var $cardHolder = this.$el.find('.card-holder'),
-                i = 0,
-                cards = this.model.getCards();
-            for (; i < cards.length; i++) {
-                $cardHolder.append(new MyTrello.Views.Card({
-                    "model": cards[i]
-                }).$el);
-            }
+        "editListTitle": function() {
+            this.$el.addClass('editing');
+            this.$('.list-title').focus();
+        },
+
+        "updateListTitle": function() {
+            this.model.set('name', this.$('.list-title').val());
+            this.addName();
+            this.$el.removeClass('editing');
         }
     }, {});
 
