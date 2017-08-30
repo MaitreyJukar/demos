@@ -1,0 +1,38 @@
+.board {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid #000;
+    border-radius: 5px;
+    background-color: #888;
+}
+
+.tile {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    float: left;
+    border: 2px solid #fff;
+    font-size: 150px;
+    line-height: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.tile.occupied {
+	cursor: not-allowed;
+}
+
+.tile.x:after {
+    content: 'x';
+}
+
+.tile.o:after {
+    content: 'o';
+}
