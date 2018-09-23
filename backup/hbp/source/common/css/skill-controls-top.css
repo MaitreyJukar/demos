@@ -1,0 +1,328 @@
+.skill-controls-top {
+    position: relative;
+}
+
+.skill-controls-top .aligner {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    width: 0;
+}
+
+.skill-controls-top .title-wrapper {
+    width: calc(100% - 613px);
+}
+
+.skill-controls-top .right-nodes-container {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.skill-controls-top .divider {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.12);
+    width: 1px;
+    height: 100%;
+}
+
+.skill-controls-top .right-nodes-container i,
+.skill-controls-top .right-nodes-container button {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    background-color: transparent;
+}
+
+.skill-controls-top .right-nodes-container i.icon-help,
+.skill-controls-top .right-nodes-container button.icon-help {
+    border-radius: 50%;
+}
+
+.skill-controls-top .right-nodes-container i::before,
+.skill-controls-top .right-nodes-container button::before {
+    display: block;
+}
+
+.skill-controls-top .right-nodes-container i[disabled],
+.skill-controls-top .right-nodes-container button[disabled] {
+    opacity: 0.3;
+}
+
+.skill-controls-top .right-nodes-container button:active,
+body:not(.touch-device) .skill-controls-top .right-nodes-container button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+body:not(.touch-device) .skill-controls-top .right-nodes-container button[disabled]:hover {
+    background-color: transparent;
+}
+
+.skill-controls-top .right-nodes-container i:not(.icon-replay):not(.icon-help) {
+    height: 30px;
+}
+
+.skill-controls-top .right-nodes-container .replay-holder,
+.skill-controls-top .right-nodes-container .hint-holder,
+.skill-controls-top .right-nodes-container .help-holder {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.skill-controls-top .right-nodes-container .help-holder .icon-help {
+    background-color: #fff;
+    color: #31363a;
+}
+
+.skill-controls-top .right-nodes-container .help-holder.active-help {
+    background-color: #840e20 !important;
+}
+
+.skill-controls-top .right-nodes-container .help-holder.active-help .icon-help {
+    background-color: #fff !important;
+    color: #840e20 !important;
+}
+
+.skill-controls-top .right-nodes-container .hint-holder.active-hint {
+    color: #edc87e;
+}
+
+.skill-controls-top.no-hint .right-nodes-container .hint-holder {
+    display: none;
+}
+
+.skill-controls-top .right-nodes-container .counters-holder {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.skill-controls-top.hide-counters .divider.divider-1,
+.skill-controls-top.hide-counters .icon-arrow-left,
+.skill-controls-top.hide-counters .icon-arrow-right,
+.skill-controls-top.hide-counters .right-nodes-container .counters-holder {
+    display: none;
+}
+
+.skill-controls-top .right-nodes-container .hint-holder .hint-text,
+.skill-controls-top .right-nodes-container .replay-holder .replay-text,
+.skill-controls-top .right-nodes-container .help-holder .help-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 16px;
+    margin-top: -2px;
+}
+
+.skill-controls-top .right-nodes-container .icon-arrow-left {
+    margin-left: 22px;
+    margin-right: 7px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.skill-controls-top .right-nodes-container .icon-arrow-right {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.skill-controls-top .right-nodes-container .replay-holder {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.skill-controls-top .right-nodes-container .hint-holder,
+.skill-controls-top .right-nodes-container .help-holder {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px;
+    height: 100%;
+}
+
+
+/* .skill-controls-top .title-wrapper {
+    max-width: calc(100% - 506px);
+    max-width: -webkit-calc(100% - 506px);
+    max-width: -moz-calc(100% - 506px);
+} */
+
+
+/* Extended animation START */
+
+.title-wrapper {
+    transition: left 0.5s, width 0.5s, height 0.5s;
+}
+
+.kepler-window.expanded .header-back {
+    height: 150px;
+}
+
+.kepler-window.expanded .header-back .skill-controls-top .title-wrapper,
+.kepler-window.expanded .header-back .title-wrapper {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: auto;
+    display: block !important;
+    top: 0;
+    left: 0;
+    background-color: #31363a;
+    z-index: 12;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.kepler-window.expanded .header-back .back-button-wrapper,
+.kepler-window.expanded .header-back .right-nodes-container {
+    display: none;
+}
+
+.kepler-window.expanded .wrapper-iframe {
+    position: absolute !important;
+    bottom: 0;
+}
+
+
+/* Extended animation  END  */
+
+.skill-controls-top.hide-counters .title-wrapper {
+    /* max-width: calc(100% - 245px);
+    max-width: -webkit-calc(100% - 245px);
+    max-width: -moz-calc(100% - 245px); */
+    width: calc(100% - 350px);
+}
+
+@media screen and (max-width: 767px) {
+    .skill-controls-top.header-back {
+        height: 80px;
+    }
+    .skill-controls-top .right-nodes-container {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        display: block;
+        height: 50%;
+        width: 100%;
+    }
+    .skill-controls-top .title-wrapper {
+        width: 1px;
+        min-width: calc(100% - 61px);
+        max-width: none;
+        padding: 0 16px 0 0;
+        left: 60px;
+    }
+    .skill-controls-top .right-nodes-container .hint-holder,
+    .skill-controls-top .right-nodes-container .replay-holder {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    .skill-controls-top .right-nodes-container .icon-arrow-left {
+        margin-left: 48px;
+        margin-right: 0;
+        padding: 0;
+    }
+    .skill-controls-top .right-nodes-container .counters-holder {
+        width: 45px;
+        text-align: center;
+    }
+    .skill-controls-top .right-nodes-container .icon-arrow-right {
+        margin-left: 0;
+        margin-right: 16px;
+        padding: 0;
+    }
+    .skill-controls-top .right-nodes-container .divider.divider-1 {
+        display: none;
+    }
+    .skill-controls-top .right-nodes-container .remaining-nodes {
+        height: 100%;
+        right: 0;
+        position: absolute;
+    }
+    .assessment-skill .skill-controls-top {
+        height: 40px;
+    }
+    .assessment-skill .skill-controls-top .right-nodes-container {
+        height: 100%;
+        width: 92px;
+        position: static;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .assessment-skill .skill-controls-top .title-wrapper {
+        width: 1px;
+        min-width: calc(100% - 155px);
+        max-width: none;
+        padding: 0 16px 0 0;
+    }
+    .assessment-skill .skill-controls-top .right-nodes-container .replay-holder {
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 50%;
+    }
+    .assessment-skill .skill-controls-top .right-nodes-container .replay-holder .replay-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skill-controls-top.header-back.hide-counters .title-wrapper .scroll-shadow-box {
+        right: 95px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skill-controls-top .right-nodes-container .replay-holder .replay-text,
+    .skill-controls-top .right-nodes-container .hint-holder .hint-text,
+    .skill-controls-top .right-nodes-container .help-holder .help-text {
+        display: none;
+    }
+    .skill-controls-top .right-nodes-container .icon-arrow-left {
+        margin-left: 16px;
+    }
+    .skill-controls-top .right-nodes-container .hint-holder,
+    .skill-controls-top .right-nodes-container .help-holder {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .skill-controls-top .right-nodes-container .replay-holder .replay-text,
+    .skill-controls-top .right-nodes-container .hint-holder .hint-text,
+    .skill-controls-top .right-nodes-container .help-holder .help-text {
+        display: none;
+    }
+    .skill-controls-top .title-wrapper {
+        width: calc(100% - 490px);
+    }
+    .skill-controls-top.hide-counters .title-wrapper {
+        width: calc(100% - 271px);
+    }
+    .skill-controls-top .right-nodes-container .icon-arrow-left {
+        margin-left: 7px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .skill-controls-top .right-nodes-container .replay-holder .replay-text,
+    .skill-controls-top .right-nodes-container .hint-holder .hint-text,
+    .skill-controls-top .right-nodes-container .help-holder .help-text {
+        display: none;
+    }
+    .skill-controls-top .title-wrapper {
+        width: calc(100% - 503px);
+    }
+    .skill-controls-top.hide-counters .title-wrapper {
+        width: calc(100% - 271px);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .skill-controls-top .right-nodes-container .help-holder .icon-help {
+        margin-right: 5px;
+    }
+}

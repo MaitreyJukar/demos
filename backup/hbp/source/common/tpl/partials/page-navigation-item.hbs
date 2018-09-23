@@ -1,0 +1,9 @@
+{{#if nextLinkText}}
+    {{#ifCond currLabel "!=" "Chapter"}}
+        <div class="item-link">
+            <div class="next-text item-text">
+                <span class="label-text">Next {{nextLabel}}: </span><span class="link-text">{{#ifCond nextLabel "==" "Topic"}}{{nextLinkIndex}}{{/ifCond}} {{nextLinkText}}</span>
+            </div>
+        </div>
+    {{/ifCond}}
+{{/if}}

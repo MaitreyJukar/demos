@@ -1,0 +1,29 @@
+/* Red color themeing for dialog view START */
+
+.dialog-wrapper.red-theme .dialog-main .title-holder .title-text {
+    color: #840e2a;
+}
+
+.dialog-wrapper.red-theme .dialog-main .title-holder .title-icon {
+    background-color: #840e2a;
+}
+
+.dialog-wrapper.red-theme .dialog-main .content-holder {
+    color: #505050;
+}
+
+.dialog-wrapper.red-theme .dialog-main .buttons-holder button {
+    background-color: #b01b3e;
+}
+
+body:not(.touch-device) .dialog-wrapper.red-theme .dialog-main .buttons-holder button:hover,
+body:not(.touch-device) .dialog-wrapper.red-theme .dialog-main .buttons-holder button:focus {
+    background-color: #a11738 !important;
+}
+
+body:not(.touch-device) .dialog-wrapper.red-theme .dialog-main .buttons-holder button:active {
+    background-color: #81132d !important;
+}
+
+
+/* Red color themeing for dialog view  END */

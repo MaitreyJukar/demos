@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Compare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table tr td {
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="mp3" src="" type="audio/mpeg"></audio>
+    <audio id="base64" src="" type="audio/mpeg"></audio>
+    <!-- <div>
+        <span style="width: 150px; display: inline-block;">MP3 Duration:</span>
+        <span id="mp3-duration" style="width: 100px; display: inline-block;"></span>
+    </div>
+    <div>
+        <span style="width: 150px; display: inline-block;">Base64 Duration:</span>
+        <span id="base64-duration" style="width: 100px; display: inline-block;"></span>
+    </div> -->
+    <table border="1">
+        <tr>
+            <th>Audio Type</th>
+            <th>Current Time</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>MP3</td>
+            <td id="mp3-ctime"></td>
+            <td id="mp3-duration"></td>
+        </tr>
+        <tr>
+            <td>Base64</td>
+            <td id="base64-ctime"></td>
+            <td id="base64-duration"></td>
+        </tr>
+    </table>
+    <button id="load-btn">Load</button>
+    <button id="play-btn" disabled>Play</button>
+    <button id="paws-btn" disabled>Paws</button>
+    <script src="compare.js"></script>
+</body>
+
+</html>

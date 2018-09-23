@@ -1,0 +1,6 @@
+{{#each this}}
+<span class="ui-slider-pip ui-slider-pip-{{this.value}} {{#if @first}}ui-slider-first-pip{{/if}}" style="left: {{this.percentage}}%">
+    <span class="ui-slider-line"></span>
+    <span class="ui-slider-label" data-value="{{this.value}}">{{this.value}}</span>
+</span>
+{{/each}}

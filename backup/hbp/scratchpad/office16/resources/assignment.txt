@@ -1,0 +1,11 @@
+{"parameters.assignmentname":"test",
+"parameters.assignmenttype":"0",
+"parameters.questionattemptcount":45,
+"parameters.totaltime":6000,
+"question.count":1,
+ "question.1.filename":"resources/scratchpad/scratchpad.json",
+ "question.1.questionaudiourl":"resources/scratchpad/scratchpad.json",
+ "question.1.questionid":"mgh_1_xl_02_01_01_t1",
+"question.1.questionname":"test",
+"question.1.itemattempts":3,
+"question.1.skipquestion":0}

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?><Tutorial copyright="2014 Harvard Business Publishing" title="Spreadsheet Modeling">
+    <Toolbar>
+        <Help/>
+        <Print/>
+        <Glossary/>
+        <Briefcase/>
+    </Toolbar>
+    <GlossaryTerm id="@risk" term="@RISK">
+        <![CDATA[An Excel add-in that enables the user to use Monte Carlo simulation to estimate probabilities for complex situations such determining the probability that a new drug will be profitable.]]>
+    </GlossaryTerm>
+    <GlossaryTerm id="alignment_tab" term="Alignment tab">
+        <![CDATA[The Alignment tab in the Format Cells dialog box allows for wrapping text within a cell, merging several cells into one, and setting vertical and horizontal alignment of text.]]>
+    </GlossaryTerm>
+    <GlossaryTerm id="apply_names" term="Apply Names">
+        <![CDATA[Use Apply Names If you create Range Names after setting up a spreadsheet and want the Range Names to replace cell addresses in your formulas.]]>
+    </GlossaryTerm>
+    <GlossaryTerm id="automatic_calculation_option" term="Automatic Calculation Option">
+        <![CDATA[When this option is selected all cells in the spreadsheet will recalculate whenever new information is entered into the spreadsheet.]]>
+    </GlossaryTerm>
+    <GlossaryTerm id="autocomplete" term="Autocomplete">
+        <![CDATA[When typing an Excel function, Range Name, or Table reference in a cell formula the Autocomplete feature anticipates what you want to type in next. After double clicking or hitting the tab key and clicking on the correct text, Excel enters the rest of the function, Range Name, or Table reference. For example, after typing =AVE you can double click on Autocomplete to enter =AVERAGE.]]>
+    </GlossaryTerm>
+    <GlossaryTerm id="auto_fill_handle" term="Auto Fill Handle">
+        <![CDATA[The area at the bottom-right corner of a cell, where the cursor turns into a thin crosshairs, allowing for click-and-drag copy operations.]]>
+    </GlossaryTerm>
+    <GlossaryTerm id="auto_fill_options" term="Auto Fill Options">
+        <![CDATA[The menu that appears immediately after an Auto Fill copy, which, depending on the context, might allow for defining a date series, creating an arithmetic series, filling formatting only (or filling all but formatting).]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="automatic_except_for_tables_calculation_option" term="Automatic Except for Tables Calculation Option">
+    <![CDATA[When this option is selected,  all cells in the spreadsheet  except those containing  output from data tables will recalculate whenever new information is entered into the spreadsheet.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="average_function" term="AVERAGE Function">
+    <![CDATA[Computes the average of a range of cells. For example, =AVERAGE(A1:A6) will average the contents of cells A1:A6, ignoring any cell entries that are not numbers.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="averageif_function" term="AVERAGEIF Function">
+    <![CDATA[Averages the values in one column of a spreadsheet if a given criteria is met in a different column. For example =AVERAGEIF(Name,"Jen", Dollars) will average all numbers in a column named Dollars for which the entry in the row of the Name column is Jen.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="averageifs_function" term="AVERAGEIFS Function">
+    <![CDATA[A generalization of the AVERAGEIF function which allows for multiple criteria. For example =AVERAGEIF(Dollars, Name,"Jen", Units,"&gt;=50") averages all entries in the column named Dollars for which the entry in the Name column is Jen and the number in the Units column is at least 50.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="cell" term="Cell">
+    <![CDATA[A single "block" on a worksheet, one column high and one row tall, referred to by the intersection of the column and row involved; e.g., "cell D7" (or, in R1C1 style, R7C4).]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="change_chart_type" term="Change Chart Type">
+    <![CDATA[A button on the Design tab (visible only when the chart is selected) that allows the user to change the type of chart being drawn without affecting other aspects of the chart.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="changing_cells" term="Changing Cells">
+    <![CDATA[Cells that can be changed in a Solver model to maximize or minimize the target cell. For example, product mix can be changed to maximize profit.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="chart_template" term="Chart Template">
+    <![CDATA[A file, by default stored in the Templates\Charts folder of the Office installation directory, that allows the user to reuse custom chart settings easily.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="color_scales" term="Color Scales">
+    <![CDATA[An instance of Conditional formatting which varies the fill color of a cell based on a comparison of the cell's value with other values in the selected range. For example, we may highlight large numbers in green, intermediate numbers in yellow and smaller numbers in red.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="column_labels" term="Column Labels">
+    <![CDATA[A column in a selected range which will have a column orientation in a Pivot Table. For example, if we choose Month to be a Column Label then we can see (going across a single row) a breakdown of sales by month.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="comments" term="Comments">
+    <![CDATA[Annotations placed in cells to document the meaning or development of a spreadsheet model. The presence of a comment in a cell is indicated by a small red triangle in the cell's upper right-hand corner.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="concatenation" term="Concatenation">
+    <![CDATA[A method (using the & sign) for joining the contents of different cells and/or text strings. For example, if A1 contains a 3 and B3 contains a 6 the formula =A1&B3&"New" will return 36New.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="conditional_formatting" term="Conditional Formatting">
+    <![CDATA[A tool that allows you to place a format in a cell that is based on the contents of the cell. For example, you can highlight in red all numbers that are above average and in green all numbers that are below average. Conditional formatting is dynamic in that if the contents of the spreadsheet changes, the formatting will update as appropriate.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="constraints" term="Constraints">
+    <![CDATA[Restrictions that must be satisfied by the changing cells in a Solver model. For example, labor used by products produced cannot exceed labor available.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="continuous_random_variable" term="Continuous Random Variable">
+    <![CDATA[An uncertain quantity that can assume an infinite number of values, usually all values on a line interval.  Examples include future stock prices, market share for a product, market size for a product, and cost of developing a product.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="control_z" term="Control Z">
+    <![CDATA[This is Excel's "undo" key. After making a mistake you can select Control Z to undo your error.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="copying_formulas" term="Copying Formulas">
+    <![CDATA[Copying formulas makes it easy to create thousands or millions of formulas. For example, if in cell D4 we compute sales revenue with the formula =B4*C4 for a product by multiplying  price in B4 and demand in C4 , then copying this formula down column D will quickly compute revenue for multiple products. Placing a dollar sign ($) before a row or column ensures that the row or column is anchored. For example if the cell address $B4 occurs in a copied formula, then when we copy the formula across a row the B remains unchanged. If the cell address B$4 is copied down a column, the 4 remains unchanged. If the cell reference $B$4 is copied then the address $B$4 will remain unchanged.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="count_function" term="COUNT Function">
+    <![CDATA[Counts the number of cells in a range containing numbers. For example, COUNT(A1:B5) counts the number of cells in the range A1:A5 that contain a number.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="counta_function" term="COUNTA Function">
+    <![CDATA[Counts the number of cells in a range that are not blank. For example, COUNTA(A1:B5) counts the number of cells in a range that are not blank.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="countblank_function" term="COUNTBLANK Function">
+    <![CDATA[Counts the number of cells in a range that are blank. For example, COUNTBLANK(A1:B5) counts the number of cells in a range that are blank.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="countif_function" term="COUNTIF Function">
+    <![CDATA[Counts the number of cells in a range meeting a given criteria. For example COUNTIF(A1:A10,4) counts the number  of 4's in the cell range A1:A10. COUNTIF(A1:A10,"Paris") counts the number of cells with the text entry Paris in cells A1:A10.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="countifs" term="COUNTIFS">
+    <![CDATA[Counts the number of cells in a range that meet <strong>multiple</strong> criteria. For example, COUNTIFS(A1:A100, "South", B1:B100,10) counts how many times in the first 100 rows of a spreadsheet that South occurs in Column A and a 10 occurs in Column B.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="create_from_selection" term="Create From Selection">
+    <![CDATA[Enables you to create range names based on text in a spreadsheet. For example, if cell A1:A10 contains product names and cells B1:B10 contains sales of each product then after selecting A1:B10 we can use Create from Selection from the Formula tab of the ribbon to assign a product's name to the sales of each product.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="data_bars" term="Data Bars">
+    <![CDATA[A type of conditional formatting that places larger "data bars" in cells containing larger numbers.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="data_labels" term="Data Labels">
+    <![CDATA[Values displayed on the plot area; e.g., numbers or percentages or both displayed on the individual pieces of a pie chart to indicate each piece's value.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="data_table" term="Data Table">
+    <![CDATA[A data table is Excel's best sensitivity tool.  A one way data table allows you to determine how multiple outputs (for example, profit and revenue) vary as a single input (for example price) changes. A two way data table allows you to determine how a single output (say profit) change as two inputs (say price and unit cost) vary.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="data_validation" term="Data Validation">
+    <![CDATA[An Excel tool that allows you to restrict the set of values that can be entered into a cell. For example, you can ensure Excel will return an error message if the number entered in a cell is greater than 1000.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="day_function" term="DAY function">
+    <![CDATA[Extracts the day of the month from a date. For example, if cell B2 contains the date 1/10/2005 then DAY(B2) will return 10.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="decision_variables" term="Decision Variables">
+    <![CDATA[In a spreadsheet model these are quantities that are controlled by the modeler. For example, each week's price and advertising level   may be decision variables for a soft drink manufacturer.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="design_tab" term="Design Tab">
+    <![CDATA[A tab that appears when an object such as a chart, PivotTable, or table is selected; this tab allows the user to configure aspects of the selected object.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="discrete_random_variable" term="Discrete Random Variable">
+    <![CDATA[An uncertain quantity that can assume a finite, easily listed set of values. Examples include number of dots showing when a die is tossed or number of competitors faced by a new drug.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="evaluate_formulas" term="Evaluate Formulas">
+    <![CDATA[After selecting Evaluate Formulas, clicking repeatedly on evaluate will let you see how Excel evaluates the formula.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="f2_key" term="F2 Key">
+    <![CDATA[When you click on F2, Excel will let you edit the contents of a cell. Double clicking on the cell will also let you edit a cell.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="f4_key" term="F4 Key">
+    <![CDATA[While entering cell addresses in a formula, selecting the F4 key makes it easy to put the $ signs where you want. For example, if you enter D10 into a formula, then repeatedly hitting the F4 key cycles through $D$10, D$10, $D10, D10.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="f9_key" term="F9 Key">
+    <![CDATA[If you select any part of a formula and select F9 Excel will show you what that portion of the formula evaluates to. If the cursor is in any cell and you hit F9 and all cells in the spreadsheet recalculate.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="filter" term="Filter">
+    <![CDATA[After selecting a data set and choosing Filter you can display only the rows in a data set that meet a given criteria. For example, we can easily display all rows of data where Wendy sold lipstick in Texas.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="find_function" term="Find Function">
+    <![CDATA[Allows you to find the location of a text string within a cell. For example,  =FIND("+",A1,2) will return a 4 if the first + sign in cell A1 after the 2<span style="vertical-align: super; font-size: 8px;">nd</span> character is the 4<span style="vertical-align: super; font-size: 8px;">th</span> character.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="format_painter" term="Format Painter">
+    <![CDATA[An icon on the Home tab that allows an existing format to be applied to another cell or cells quickly.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="gap_width" term="Gap Width">
+    <![CDATA[The amount of space between bars on a bar or column chart, expressed as a percentage of the width of the bar.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="goal_seek" term="Goal Seek">
+    <![CDATA[Goal seek lets you determine the value of a cell that makes a formula hit a given value. For example, we can use Goal Seek to determine the annual growth rate in Units sold that ensures that a project generates a Net Present Value of $100 million.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="go_to_dialog_box" term="Go To dialog box">
+    <![CDATA[A means of selecting cells or named ranges.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="go_to|special..." term="Go To|Special...">
+    <![CDATA[A means of criterion-based selection. Go To|Special... allows for easy selection of blank cells, cells containing formulas, cells containing data validation, cells containing comments, objects on the worksheet (e.g., shapes, text boxes, images), and so on.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="highlight_cells" term="Highlight Cells">
+    <![CDATA[An aspect of Conditional formatting which allows  you to format cells based on the numerical value of the cell, date in a cell, whether or not the cell is a duplicate of another cell in a range, or whether a cell contains a given text string.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="hlookup_function" term="HLOOKUP Function">
+    <![CDATA[Searches for a given value in the top row of a table and returns a value in a specified row of the table and the same column of the table as the given value.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="hour_function" term="HOUR Function">
+    <![CDATA[Given a time, this function extracts the hour of the day associated with that time. For example, if cell G14 contains 14:23:06 then =HOUR(G14) returns 14.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="icon_sets" term="Icon Sets">
+    <![CDATA[A type of conditional formatting that allows you to put symbols or Icons in a cell based on the contents of a cell relative to the values of other cells in a selected range. For example, we can use Icon Sets to highlight years in which stocks did very well with an Up arrow.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="if_functions" term="IF functions">
+    <![CDATA[Enables you to incorporate conditional logic and/or branching into spreadsheet formulas. For example, entering the formula =IF(A1&gt;10,"High","Low") into a cell returns a High in the cell if A1&gt;10 and returns a 0 otherwise.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="iferror_function" term="IFERROR Function">
+    <![CDATA[Used to error trap your formulas. If a formula evaluates without an error, then =IFERROR(formula, message) enters the value returned  by the formula; otherwise IFERROR returns the given message, For example, =IFERROR(VLOOKUP(A1,B2:C10,2,FALSE),"Not available") returns the result from the VLOOKUP formula if the result exists. Otherwise the formula returns Not Available.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="increase/decrease_decimal_button" term="Increase/Decrease Decimal Button">
+    <![CDATA[Buttons on the Home tab (and on the abbreviated formatting menu that appears when a cell is right-clicked) that allow for quick adjustment of decimal places displayed.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="index_function" term="INDEX Function">
+    <![CDATA[Returns the contents in a given row and column of an array. For example, =INDEX(A1:D4,2,3) returns the contents of cell B3, because cell B3 is in 2<span style="vertical-align: super; font-size: 8px;">nd</span> row and 3<span style="vertical-align: super; font-size: 8px;">rd</span> column of A1:D4.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="influence_chart" term="Influence Chart">
+    <![CDATA[A chart that helps us determine the logical relationships that relate model inputs, decision variables, outputs and calculated cells.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="inputs" term="Inputs">
+    <![CDATA[Model parameters for which the modeler assigns an assumed value. Common model inputs include Initial Market Size for a Product, Fixed Cost of Developing a Product, Annual Growth in Product Market Size.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="insert_function_dialog_box" term="Insert Function Dialog Box">
+    <![CDATA[By selecting f<span style="vertical-align: sub; font-size: 8px;">x</span> or Insert Function from the formula tab you bring up the Insert Function Dialog Box. You can now select any Excel function (they are grouped by categories) and choose the desired function. Excel will then guide you through the function's syntax and help you enter the function in your formula. The quickest way to find a function is to go to the Select a function portion of the dialog box and type the first few letters of the function's name. For example, if you go to the Select a Function portion of the dialog box and choose the category of All Functions and type MAT you will be sent to the syntax for the MATCH function.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="int_function" term="INT Function">
+    <![CDATA[Rounds a number downwards to the nearest integer. For example =INT(4.8) returns 4  and =INT(-4.8) returns -5.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="internal_rate_of_return_(irr)" term="Internal Rate of Return (IRR)">
+    <![CDATA[The discount rate that makes the NPV of a sequence of cash flows equal to 0.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="large_function" term="LARGE Function">
+    <![CDATA[The syntax =LARGE(cell range, n) returns the n'th largest number in a cell range. For example, =LARGE(A1:A10,3) returns the 3rd largest number in the cell range A1:A10.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="left_function" term="LEFT Function">
+    <![CDATA[The syntax =LEFT(cell,n) returns the n left hand most characters in a cell. For example, if cell A3 contains Reggie then =LEFT(A3,3) returns Reg.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="len_function" term="LEN function">
+    <![CDATA[The syntax =LEN(cell) returns the number of characters (including spaces) in a cell. For example, if cell A5 contains Al James then =LEN(A5) returns 8. Of course=LEN("Al James") would also return 8.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="major_unit" term="Major Unit">
+    <![CDATA[The distance between each major tick mark (typically on the y axis).]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="manual_calculation_option" term="Manual Calculation Option">
+    <![CDATA[When this option is selected, all cells in the spreadsheet will be recalculated only if the F9 key is selected. Manual calculation mode is especially useful for large spreadsheets.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="match_function" term="MATCH Function">
+    <![CDATA[Used to return the first found location of a number or text string in a row or column. For example, =MATCH("John", A1:A10,0) would return a 3  if the first occurrence of John in A1:A10 were in A3.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="max_function" term="MAX Function">
+    <![CDATA[Returns the largest number in a cell range. For example, if the largest number in cell range A1:A8 is 7 then =MAX(A1:A8) will return 7.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="mid_function" term="MID Function">
+    <![CDATA[Returns a fixed number of characters from within a cell. For example, if cell A5 contains Indiana then =MID(A3,2,3) begins at the 2nd character and returns 3 characters (ndi).]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="min_function" term="MIN Function">
+    <![CDATA[Returns the smallest number in a cell range. For example, if the smallest number in cell range A1:A8 is 7 then =MIN(A1:A8) will return 7.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="minor_unit" term="Minor Unit">
+    <![CDATA[The distance determining placement of smaller tick marks, if any.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="minute_function" term="Minute Function">
+    <![CDATA[Given a time, this function extracts the minute associated with the time. For example, if cell G14 contains 14:23:06 then =Minute(G14) returns 23.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="monte_carlo_simulation" term="Monte Carlo Simulation">
+    <![CDATA[A mathematical model that enables you to repeatedly play out an uncertain situation so you can estimate the probability of various outcomes. For example, Monte Carlo simulation is used by drug companies to estimate the probability that a new drug will make money.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="month_function" term="MONTH Function">
+    <![CDATA[Extracts the month of the year from a date. For example, if cell B2 contains the date 1/10/2005 then MONTH(B2) will return 1.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="name_box" term="Name Box">
+    <![CDATA[Located right above the headings for columns A and B, the Name box is used to give a range name to a range of cells. First select the range of cells that you want assigned to the name. Then select the Name Box and type the desired range name and then hit enter. You have now given the desired range name to the selected cells. The Name Box also indicates which cell (or named range) is active. If a cell reference is typed in the Name Box, Excel will select that cell.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="name_manager" term="Name Manager">
+    <![CDATA[Enables you to edit, delete or filter your range names. From the Formula tab select Name Manager and a list of the range names for the open workbook will be displayed. You may then edit the characteristics of a range name, delete any subset of the range names or filter the range names according to various criteria.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="net_present_value_(npv)" term="Net Present Value (NPV)">
+    <![CDATA[Given a discount rate, a sequence of cash flows, and the dates of the cash flows the NPV of the cash flows gives the values in today's dollars of the cash flows.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="now()_function" term="NOW() Function">
+    <![CDATA[When entered in a cell, =NOW() will always display the current date followed by the current time.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="office_button" term="Office Button">
+    <![CDATA[Located in the upper-left corner of Office programs, the Office Button allows access to file- and program-level settings, as well as to print and save commands.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="paste_name_dialog_box" term="Paste Name Dialog Box">
+    <![CDATA[By selecting F3 you may bring up the Paste Name Dialog Box which lets you paste a range name into a formula. After hitting F3 and choosing Paste List you can paste a list of the workbook's range names into the active cell.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="page_setup" term="Page Setup">
+    <![CDATA[A dialog box that allows the user to control such things as margins, headers, and alignment, as well as whether to print gridlines, whether to print row and column labels, and whether to repeat rows or columns of data on a multi-page print job.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="paste_special" term="Paste Special">
+    <![CDATA[A means of pasting only certain aspects of the copied material; e.g., formats, data validation, comments, values (rather than the underlying formulas or functions), etc.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="pivot_chart" term="Pivot Chart">
+    <![CDATA[A pivot chart is a chart based on the data displayed in a pivot table. You can easily create a pivot chart by moving to a cell within your Pivot Table and then selecting Pivot Chart from Options (in the upper right hand corner of the menu bar).]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="pivot_table" term="Pivot Table">
+    <![CDATA[Probably the tool used most often to summarize data. Through judicious choice of the Row Labels, Column Labels, Values, and Report Filter  you can "slice and dice" any set of data to display just about any way of summarizing the data you desire. To create a pivot table put your cursor within the data and select Insert Pivot Table and fill in the PivotTable Field list box. Remember the first row of your selected data needs headings in each column!]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="pmt_function" term="PMT function">
+    <![CDATA[Used to determine the periodic (usually monthly) payment needed to pay back a loan. Entering the formula =PMT(rate,nper,pv,fv,type) returns the payment each period if an amount pv is borrowed and the rate per period for nper  is rate. Type = 1 indicated beginning of period payments while Type = 0 indicates end of period payments. Fv is the amount of the ending payment needed to pay off the loan.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="pointing" term="Pointing">
+    <![CDATA[When entering a cell address such as A10 in a formula you can type the cell address but it is usually easier (and results in a smaller chance of entering the wrong cell address) if you simply "point" to the desired cell.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="print_area" term="Print Area">
+    <![CDATA[The area of a worksheet that will be sent to the printer; this can be changed to print only part of a worksheet's data.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="quick_access_toolbar" term="Quick Access Toolbar">
+    <![CDATA[An area on which users can place frequently used icons, visible no matter which tab is selected. The Quick Access toolbar is available in Excel and other Office programs.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="rand()_function" term="RAND() Function">
+    <![CDATA[Entering =RAND() in any cell  enters a number equally likely to  be any number between 0 and 1. Hitting F9 results in the number changing.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="randbetween" term="RANDBETWEEN">
+    <![CDATA[Entering =RANDBETWEEN(a,b) (a and b must be integers with a&lt;b) in a cell results in an integer equally likely between a and b inclusive to be entered in the cell. For example, =RANDBETWEEN(20,40) is equally likely to enter any integer in the range 20-40. Hitting F9 results in the function recalculating.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="random_variable" term="Random Variable">
+    <![CDATA[A random variable describes an uncertain quantity by specifying the values of an uncertain quantity along with a description of the relative likelihood of all possible values. For example, the annual unit sales of a product would be a random variable.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="range" term="Range">
+    <![CDATA[A group of cells.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="range_names" term="Range Names">
+    <![CDATA[You can associate a range name with a cell or group of cells. For example, if we name the cell range A1:B10 Data, then when Data is entered in a formula Excel will understand that you want to refer to the cell range A1:B10 in the formula.  You can create Range Names with the Name Box, Create from Selection or Define Names.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="rank_function" term="RANK Function">
+    <![CDATA[Returns the rank of a number in a selected range. The syntax =RANK(cell reference, cell range, 0) will return the rank of cell reference with the largest number in the cell range receiving rank 1, the 2<span style="vertical-align: super; font-size: 8px;">nd</span> largest number rank 2,  etc. The syntax =RANK(cell reference, cell range, 1) will return the rank of the cell reference with the smallest number receiving rank 1, the 2<span style="vertical-align: super; font-size: 8px;">nd</span> smallest number rank 2, etc.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="refresh" term="Refresh">
+    <![CDATA[Selecting Refresh will recalculate a Pivot Table to reflect changes in the source data that generated the Pivot Table. You may refresh a pivot table if the cursor is within the Pivot Table by right clicking and selecting Refresh.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="report_filter" term="Report Filter">
+    <![CDATA[By selecting a column in the source data for a pivot table for the Report Filter you can enable your pivot table to summarize the data based on any subset of values for the selected column. For example, if we enter Month as a Report Filter, then you could choose any subset of months of the year and summarize sales data for the selected months.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="ribbon" term="Ribbon">
+    <![CDATA[The area at the top of Office program windows, under the title bar, that allows access to icons for formatting and otherwise modifying the file.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="right_function" term="RIGHT Function">
+    <![CDATA[The syntax =RIGHT(cell,n) returns the right hand most n characters in a cell. For example, if cell A3 contains Reggie then =RIGHT(A3,3) returns gie.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="rounddown_function" term="ROUNDDOWN Function">
+    <![CDATA[Rounds a number downwards towards 0 to a given number of digits. For example =ROUNDDOWN(4.8,0) returns 4 and =ROUNDDOWN(-4.8,0) returns -4. The second argument indicates the number of digits to which you want to round. A second argument of 0 means you want to round to the nearest integer.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="round_function" term="ROUND Function">
+    <![CDATA[Rounds a number to a given number of digits. For example =ROUND(4.8,0) returns 5 and =ROUND(-4.8,0) returns -5. The second argument indicates the number of digits to which you want to round. A second argument of 0 means you want to round to the nearest integer.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="roundup_function" term="ROUNDUP Function">
+    <![CDATA[Rounds a number upwards away from 0 to a given number of digits. For example =ROUNDUP(4.8,0) returns 5 and =ROUNDUP(-4.8,0) returns -5. The second argument indicates the number of digits to which you want to round. A second argument of 0 means you want to round to the nearest integer.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="row_labels" term="Row Labels">
+    <![CDATA[A column in a selected range which will have a row orientation in a Pivot Table. For example, if we choose Month to be a Row Label then we can see (going down a single column) a breakdown of sales by month.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="scenarios" term="Scenarios">
+    <![CDATA[When building a spreadsheet model we may define scenarios which specify values of the model inputs. It is common practice to specify a Best Case, Worst Case and Most Likely scenario.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="scrollbars" term="Scrollbars">
+    <![CDATA[The bars on the right-hand side and bottom of the Excel window, allowing for navigation within a worksheet.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="second_function" term="SECOND Function">
+    <![CDATA[Given a time, this function extracts the second associated with the time. For example, if cell G14 contains 14:23:06 then =Second(G14) returns 6.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="selection_pointer" term="Selection Pointer">
+    <![CDATA[The cursor used to select cells; it appears as a thick white cross.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="sensitivity_analysis" term="Sensitivity Analysis">
+    <![CDATA[A method of determining how model outputs vary as model inputs and/or decision variables change. Data tables, Goal Seek, Spinners and Scenarios are useful Excel tools for conducting sensitivity analysis.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="sln_function" term="SLN Function">
+    <![CDATA[The SLN function is used to compute accumulated depreciation when depreciation is accumulated on a straight line basis.  Entering the formula =SLN(c, s, L) computes the depreciation accumulated each period for a machine costing $c, having a salvage value of $s and a useful life of L years.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="solver" term="Solver">
+    <![CDATA[Excel's optimization tool that enables you to find the best way to achieve a desired goal. For example, what is the profit maximizing product mix? What asset allocation strategy minimizes portfolio risk?]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="source_data" term="Source Data">
+    <![CDATA[The cells on the worksheet that the chart is drawn from.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="sorting" term="Sorting">
+    <![CDATA[A method for making the rows of a spreadsheet appear in a particular order based on the contents of one or more columns of data. We may sort alphabetically (A-Z or Z-A), numerically (smallest to largest or largest to smallest), by font color (red font on top followed by green font etc.), by cell color (red fill color followed by green color, etc.), by Icon sets (up arrow followed by down arrow, etc.), by a Custom List (put John on top, followed by Jill, followed by Erica).]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="spinners" term="Spinners">
+    <![CDATA[A spinner control makes it easy to vary the contents of an input or decision variable in a spreadsheet model. Clicking on the up arrow increases the value of the input and clicking on the down arrow decreases the value of the input.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="spreadsheet_model" term="Spreadsheet Model">
+    <![CDATA[An attempt to use a spreadsheet to build a representation of reality using logical mathematical relationships. Spreadsheet models are used for many purposes including determining customer value, evaluating new projects, and determining a company's production schedule.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="status_bar" term="Status Bar">
+    <![CDATA[The area at the bottom left of the Excel window; it indicates what mode the program is in (e.g., Ready; Calculating; Edit).]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="stdev_function" term="STDEV Function">
+    <![CDATA[Used to compute the standard deviation (a measure of spread about the mean) of a set of numbers. For example, =STDEV(A1:A50) determines the standard deviation of the numbers in the range A1:A50.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="subtotals" term="Subtotals">
+    <![CDATA[A method of summarizing data that is often used as an alternative to pivot tables. For example, after sorting on salesperson and location, you can easily use Subtotals to produce a list of how much each salesperson sold in each location.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="sum_function" term="SUM Function">
+    <![CDATA[Adds up the numbers in a range of cells. For example, the formula =SUM(A1:B10) adds up the numbers in the cell range A1:B10.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="sumif_function" term="SUMIF Function">
+    <![CDATA[Sums the values in one column of a spreadsheet if a given criteria is met in a different column. For example =SUMIF(Name,"Jen", Dollars) will add up all numbers in a column named Dollars for which the entry in the Name column is Jen.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="sumifs_function" term="SUMIFS Function">
+    <![CDATA[A generalization of the SUMIF function which allows for multiple criteria. For example =SUMIF(Dollars, Name,"Jen", Units,"&gt;=50") adds up all entries in the column named Dollars for which the entry in the Name column is Jen and the number in the Units column is at least 50.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="summation_or_autosum_icon" term="Summation or Autosum Icon">
+    <![CDATA[Indicated by the &#931; sign on the Home tab. If you click on the Summation Icon, then Excel tries to guess the nearby range of cells you want to add up and enters the desired formula. By clicking on the drop down arrow to the right of the Summation Icon you can make the calculations use AVERAGE COUNT, MAX or MIN in lieu of the SUM function. Be careful to check that Excel has actually selected the range of cells you actually wanted to sum!]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="sumproduct_function" term="SUMPRODUCT Function">
+    <![CDATA[Enables you to multiply corresponding cells in two or more ranges and sum these products. For example =SUMPRODUCT(A1:A3:B1:B3) returns the same value as the formula =A1*B1+A2*B2+A3*B3.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="switch_row/column" term="Switch Row/Column">
+    <![CDATA[A button on the Design tab (visible only when the chart is selected) that allows the user to swap the legend and the x-axis entries.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="table_feature" term="Table Feature">
+    <![CDATA[If you select a range of cells in a spreadsheet and make it a Table by selecting CONTROL +T, then Excel understands that you may add rows of data to your table and perhaps add columns of new formulas to the right of the table. Excel will ensure that graphs, formatting, and formulas linked to the current table range will automatically update to include the new data. New formulas added to the right of the current table range will be automatically copied down to the bottom of the table range.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="target_cell" term="Target Cell">
+    <![CDATA[The objective for a Solver model.  For example, we might want to maximize profit or minimize cost of meeting demand on time.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="text_box" term="Text Box">
+    <![CDATA[An object containing text of the user's choice, sometimes used to annotate a chart or other worksheet elements.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="text_import_wizard" term="Text Import Wizard">
+    <![CDATA[Used to import text files into Excel.  Once you open up a text (.txt) file from within Excel the Text Import Wizard will appear. Then by choosing Delimited you may "break" your data at spaces, commas or other characters and ensure that the text file is properly parsed into Excel with each numerical or text field appearing in its own column.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="text_to_columns" term="Text to Columns">
+    <![CDATA[Enables you to split data in a single column into multiple columns. For example if column A contains people's first name, middle name and last name, then Text to Columns can parse the data so each person's first name  appears in column B, each person's middle name appears in Column C and each person's last name occurs in Column D.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="three_dimensional_formulas" term="Three Dimensional Formulas">
+    <![CDATA[A 3D formula enables you to easily do computations involving data that always appears in the same cell range in a multiple worksheet workbook. For example, the formula =Sum('Sheet1:Sheet3'!B5) sums the contents of cell B5 in sheet 1 , sheet 2 and sheet 3.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="today()_function" term="TODAY() Function">
+    <![CDATA[This function always displays today's date.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="top/bottom_rules" term="Top/Bottom Rules">
+    <![CDATA[An aspect of conditional formatting which enables you to highlight items based on their relative position in a list of numbers. For example, you can highlight all above average numbers in a column in red, or highlight in red the 5 smallest numbers in a column. <a href="javascript:mod.Glossary.open('conditional_formatting')" id="link">Conditional Formatting</a>.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="trace_dependents" term="Trace Dependents">
+    <![CDATA[Enables you to determine the formulas that "depend" on a model's assumption or decision variable. For example, if Annual Sales Growth is in cell D10 then moving your cursor to cell D10 and repeatedly clicking on Trace Dependents from the Formula tab will show a sequence of blue arrows leading from D10 to all formulas whose calculation requires knowledge of the contents of cell D10.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="trace_precedents" term="Trace Precedents">
+    <![CDATA[Enables you to determine the cells in a spreadsheet that must be known to compute the value in a given cell. For example, if Year 5 Profit is computed in cell E6 then moving the cursor to cell E6 and repeatedly selecting Trace Precedents from the Formula tab shows all cells whose values are needed to compute Year 5 Profit.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="value_field_settings" term="Value Field Settings">
+    <![CDATA[These are the columns of data that are summarized in a pivot table. For example, we might compute Average units sold by each salesperson or total sales in dollars.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="value_function" term="VALUE Function">
+    <![CDATA[This function will turn text into a number. For example if cell A5 contains the text string 125 then VALUE(A5) will return the number 125.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="var_function" term="VAR Function">
+    <![CDATA[Returns the variance, a measure of spread about the mean of a data set. For example, VAR(A1:A12) returns the variance of the numbers in A1:A12. STDEV will always return the square root of the value returned by the VAR function.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="vlookup_function" term="VLOOKUP Function">
+    <![CDATA[Searches for a given value in the left hand most column of a table and returns a value in a specified column of the table and the same row of the table as the given value.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="web_query" term="Web Query">
+    <![CDATA[A web query lets you select a table(s) of data from a web site and efficiently download the table's contents into Excel.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="weekday_function" term="WEEKDAY Function">
+    <![CDATA[Extracts the day of the week from a date. The function =WEEKDAY(date,1) for example returns a 1 if the day of the week is a Monday, a 2 if the day of the week is Tuesday, etc.  For example, if cell B2 contains the date 8/22/2008 then WEEKDAY(B2,1 ) will return 5, indicating that 8/22/08 is a Friday.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="workbook" term="Workbook">
+    <![CDATA[An Excel file, containing one or more worksheets.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="worksheet" term="Worksheet">
+    <![CDATA[A single spreadsheet within a workbook.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="xirr_function" term="XIRR Function">
+    <![CDATA[Given a sequences of dates and the cash flows on each date, entering =XIRR(cash flow range, date range) returns the IRR of the cash flows.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="xnpv_function" term="XNPV function">
+    <![CDATA[Given an annual discount rate r, a sequence of cash flows, and the dates the cash flows occur, entering =XNPV(rate, cash flow range, date range) will enter the NPV of the cash flows as of the first date on the list.]]>
+  </GlossaryTerm>
+  <GlossaryTerm id="year_function" term="YEAR Function">
+    <![CDATA[Extracts the year from a date. For example, if cell B2 contains the date 8/22/2008, the function =Year(B2) returns 2008.]]>
+  </GlossaryTerm>
+  <Node id="33">
+    <Node id="5516">
+      <Node id="5517"/>
+    </Node>
+    <Node id="4300">
+      <Node id="4301"/>
+      <Node id="4302"/>
+    </Node>
+    <Node id="4291">
+      <Node id="4292"/>
+      <Node id="4293"/>
+      <Node id="4306"/>
+      <Node id="4307"/>
+      <Node id="4308"/>
+      <Node id="4309"/>
+      <Node id="4310"/>
+    </Node>
+    <Node id="4312">
+      <Node id="4313"/>
+      <Node id="4314">
+        <Node id="4315"/>
+        <Node id="4316"/>
+        <Node id="4317"/>
+      </Node>
+      <Node id="4318"/>
+      <Node id="5518"/>
+      <Node id="4319">
+        <Node id="4320"/>
+        <Node id="4321"/>
+      </Node>
+      <Node id="4322">
+        <Node id="4323"/>
+        <Node id="4324"/>
+      </Node>
+      <Node id="4325"/>
+      <Node id="4326"/>
+      <Node id="4327"/>
+      <Node id="4328"/>
+    </Node>
+    <Node id="4295">
+      <Node id="4296"/>
+      <Node id="4297"/>
+      <Node id="4298"/>
+      <Node id="4303"/>
+      <Node id="4329"/>
+      <Node id="4330"/>
+      <Node id="4331"/>
+    </Node>
+    <Node id="4333">
+      <Node id="4334"/>
+      <Node id="4335"/>
+      <Node id="4336"/>
+      <Node id="4337"/>
+      <Node id="4338"/>
+      <Node id="4339"/>
+      <Node id="4340"/>
+      <Node id="4341"/>
+      <Node id="4342"/>
+      <Node id="4343"/>
+      <Node id="4344"/>
+    </Node>
+    <Node id="5346">
+      <Node id="5347"/>
+      <Node id="5353"/>
+    <Node id="5355"/>
+      <Node id="5357"/>
+      <Node id="5358"/>
+      <Node id="5372"/>
+      <Node id="5377"/>
+      <Node id="5383"/>
+      <Node id="5385"/>
+      <Node id="5390"/>
+      <Node id="5392"/>
+      <Node id="5396"/>
+      <Node id="5403"/>
+      <Node id="5405"/>
+      <Node id="5408"/>
+      <Node id="5412"/>
+      <Node id="5416"/>
+      <Node id="5420"/>
+      <Node id="5424"/>
+      <Node id="5429"/>
+      <Node id="5435"/>
+      <Node id="5460"/>
+      <Node id="5445"/>
+    </Node>
+    <Node id="5452">
+      <Node id="5453"/>
+      <Node id="5454"/>
+      <Node id="5455"/>
+      <Node id="5456"/>
+      <Node id="5457"/>
+    </Node>
+    <Node id="5462">
+      <Node id="5463"/>
+      <Node id="5464"/>
+      <Node id="5465"/>
+    </Node>
+    <Node id="5496">
+      <Node id="5497"/>
+      <Node id="5498"/>
+      <Node id="5499"/>
+      <Node id="5500"/>
+      <Node id="5501"/>
+      <Node id="5502"/>
+      <Node id="5503"/>
+      <Node id="5504"/>
+      <Node id="5505"/>
+      <Node id="5506"/>
+      <Node id="5507"/>
+      <Node id="5508"/>
+      <Node id="5509"/>
+      <Node id="5510"/>
+      <Node id="5511"/>
+      <Node id="5512"/>
+      <Node id="5513"/>
+    </Node>
+    <Node id="5486">
+      <Node id="5487"/>
+      <Node id="5488"/>
+      <Node id="5489"/>
+    </Node>
+    <Node id="5483">
+      <Node id="5484"/>
+      <Node id="5485"/>
+      <Node id="5531"/>
+    </Node>
+    <Node id="5492">
+      <Node id="5493"/>
+      <Node id="5494"/>
+      <Node id="5495"/>
+    </Node>
+    <Node id="5521">
+      <Node id="5522"/>
+    </Node>
+    <Node id="5525"/>
+  </Node>
+</Tutorial>

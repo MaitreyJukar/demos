@@ -1,0 +1,160 @@
+#menu-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 13;
+}
+
+#menu-holder .header-menu-wrapper {
+    position: absolute;
+    /* padding: 20px 45px; */
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.24);
+}
+
+#menu-holder .header-menu-wrapper.signout-menu {
+    top: 15px;
+    right: 15px;
+    color: #b01b3e;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: calc(100% - 30px);
+}
+
+
+/* Iconic Text Styles START */
+
+#menu-holder .header-menu-wrapper .iconic-text {
+    cursor: pointer;
+}
+
+#menu-holder .header-menu-wrapper .iconic-text>div {
+    padding: 0 24px;
+}
+
+body:not(.touch-device) #menu-holder .header-menu-wrapper .iconic-text:hover,
+body:not(.touch-device) #menu-holder .header-menu-wrapper .iconic-text:focus {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#menu-holder .header-menu-wrapper .iconic-text:active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#menu-holder .header-menu-wrapper .iconic-text [class^="icon-"]:before {
+    vertical-align: -3px;
+}
+
+#menu-holder .header-menu-wrapper .iconic-text .icon-container i {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#menu-holder .header-menu-wrapper .iconic-text .text-container {
+    line-height: 34px;
+}
+
+#menu-holder .header-menu-wrapper .iconic-text.glossary {
+    display: none;
+}
+
+#menu-holder .header-menu-wrapper a.menu-item-container {
+    display: block;
+    color: #b01b3e;
+}
+
+@media screen and (max-width: 480px) {
+    #menu-holder .header-menu-wrapper .iconic-text.glossary {
+        display: block;
+    }
+}
+
+
+/* Iconic Text Styles  END */
+
+
+/* Button group Styles START */
+
+#menu-holder .header-menu-wrapper .button-group {
+    width: 140px;
+    margin: 24px;
+}
+
+#menu-holder .header-menu-wrapper .button-group .button-row {
+    box-shadow: 1px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    border: none;
+}
+
+#menu-holder .header-menu-wrapper .button-group .text-container {
+    color: #ae1b3d;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#menu-holder .header-menu-wrapper .button-group .buttons-container {
+    width: 40px;
+    height: 40px;
+}
+
+#menu-holder .header-menu-wrapper .button-group .text-indicator {
+    width: 60px;
+    line-height: 40px;
+    /* box-shadow: 1px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24); */
+    /* font-family: Roboto; */
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #edeff1;
+}
+
+
+/* #menu-holder .header-menu-wrapper .button-group .button-row {
+} */
+
+#menu-holder .header-menu-wrapper .button-group .buttons-container button {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: #b01b3e;
+    color: #ffffff;
+    /* box-shadow: 1px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24); */
+}
+
+#menu-holder .header-menu-wrapper .button-group .buttons-container button i {
+    position: relative;
+    top: 2px;
+}
+
+body:not(.touch-device) #menu-holder .header-menu-wrapper .button-group .buttons-container button:not(.disabled):hover {
+    background-color: #9a1635;
+}
+
+#menu-holder .header-menu-wrapper .button-group .buttons-container button:not(.disabled):active {
+    background-color: #81102b;
+}
+
+#menu-holder .header-menu-wrapper .button-group .buttons-container button.minus-button {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#menu-holder .header-menu-wrapper .button-group .buttons-container button.plus-button {
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#menu-holder .header-menu-wrapper .button-group .buttons-container button.disabled {
+    cursor: default;
+    background-color: rgba(176, 27, 62, 0.5);
+}
+
+
+/* Button group Styles  END  */

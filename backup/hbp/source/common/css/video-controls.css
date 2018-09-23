@@ -1,0 +1,362 @@
+.video-control-panel {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.video-control-panel.right-panel {
+    float: right;
+}
+
+.video-control-panel button,
+.video-control-panel a {
+    color: #d6f3f6;
+    background-color: #31363a;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+}
+
+.video-control-panel a.icon-transcript::before {
+    position: relative;
+    top: 6px;
+}
+
+.video-control-panel a:hover {
+    background-color: #222;
+    text-decoration: none;
+}
+
+body:not(.touch-device) .video-control-panel button:hover {
+    background-color: #222;
+}
+
+.video-control-panel button:focus {
+    background-color: #31363a;
+}
+
+.video-control-panel button[disabled] {
+    background-color: #31363a;
+    opacity: 0.3;
+}
+
+.video-control-panel .aligner {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0%;
+}
+
+.video-control-panel button::before {
+    display: block;
+}
+
+.video-control-panel .duration-holder {
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.video-control-panel .duration-holder span {
+    line-height: 40px;
+    display: inline-block;
+}
+
+.video-control-panel .duration-holder .elapsed-time {
+    font-weight: 700;
+    display: inline-block;
+    width: 40px;
+}
+
+.video-control-panel .duration-holder .remaining-time {
+    font-weight: 700;
+    display: none;
+    width: 40px;
+}
+
+.video-control-panel .duration-holder .total-time {
+    display: inline-block;
+    width: 40px;
+}
+
+.video-control-panel button.speed-button {
+    font-size: 15px;
+}
+
+
+/* VCP Button Styles START */
+
+.video-control-panel #play-pause-button {
+    margin-left: 5px;
+}
+
+
+/* .video-control-panel #play-pause-button.icon-replay {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+} */
+
+.video-control-panel #goto-prev-button {
+    margin-left: 45px;
+    display: none;
+}
+
+.video-control-panel #goto-next-button {
+    display: none;
+}
+
+.video-control-panel .duration-holder {
+    margin-left: 18px;
+    margin-right: 18px;
+    /*To fix : Bug #203827*/
+    margin-top: -3px;
+}
+
+.video-control-panel.right-panel button {
+    margin-right: 2px;
+}
+
+.video-control-panel.right-panel button#subtitle-button:focus~.underline {
+    z-index: 13;
+}
+
+.video-control-panel.right-panel #screen-shift-button {
+    margin-right: 10px;
+}
+
+.video-control-panel.right-panel #mob-menu-button {
+    display: none;
+}
+
+
+/* .mobile-menu-open .video-control-panel.right-panel #mob-menu-button, */
+
+.mobile-menu-open .video-control-panel.right-panel .ellips-wrapper {
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.video-control-panel.right-panel .ellips-wrapper {
+    display: none;
+    vertical-align: middle;
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;
+}
+
+.video-control-panel .cc-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    width: 32px;
+    line-height: 20px;
+}
+
+.video-control-panel .underline {
+    height: 4px;
+    width: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: -4px;
+    position: relative;
+    z-index: 2;
+    border-radius: 2px;
+}
+
+
+/* VCP Button Styles  END  */
+
+.mob-menu {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+    list-style: none;
+    padding-left: 0px;
+    position: absolute;
+    bottom: 42px;
+    right: 0;
+    background-color: #fafafa;
+    z-index: 1051;
+}
+
+.mob-menu .icon-holder,
+.mob-menu .text-holder {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.mob-menu .mob-menu-item button {
+    width: 100%;
+    text-align: left;
+    background-color: #31363a;
+}
+
+.mob-menu .mob-menu-item button:hover {
+    background-color: #222;
+}
+
+.mob-menu .mob-menu-item button[disabled] {
+    background-color: #31363a;
+    opacity: 0.3;
+}
+
+.mob-menu .text-holder {
+    color: #d6f3f6;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 7px;
+    line-height: 1;
+}
+
+.mob-menu .icon-holder {
+    color: #d6f3f6;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding-right: 7px;
+    height: 40px;
+    width: 40px;
+}
+
+.mob-menu .icon-holder .underline {
+    height: 4px;
+    width: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 2px;
+}
+
+.mob-menu .icon-holder span::before {
+    display: block;
+}
+
+
+/* .kepler-window.kepler-window-video.full-screen #video-player-controls .mob-menu {
+    bottom: 0;
+    top: auto;
+} */
+
+@media screen and (min-width: 1025px) {
+    .mob-menu,
+    .mob-menu-wrapper {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*Button margins*/
+    /* .video-control-panel button {
+        font-size: 24px;
+    }
+    .video-control-panel #goto-prev-button {
+        margin-left: 10px;
+    }
+    .video-control-panel .duration-holder {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .video-control-panel.right-panel button {
+        margin-right: 5px;
+    }
+    .video-control-panel.right-panel #screen-shift-button {
+        margin-right: 4px;
+    } */
+    /* Mobile View Menu START */
+    .mob-menu-wrapper {
+        display: block;
+    }
+    /* Mobile View Menu  END  */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /*Button margins*/
+    .video-control-panel #goto-prev-button {
+        margin-left: 16px;
+    }
+    .video-control-panel .duration-holder {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    /*Button margins*/
+    .video-control-panel button {
+        font-size: 24px;
+    }
+    .video-control-panel #goto-prev-button {
+        margin-left: 2px;
+    }
+    .video-control-panel .duration-holder {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .video-control-panel.right-panel button {
+        margin-right: 5px;
+    }
+    .video-control-panel.right-panel #screen-shift-button {
+        margin-right: 4px;
+    }
+    /*Display styles*/
+    .video-control-panel.right-panel #mob-menu-button {
+        display: inline-block;
+    }
+    .video-control-panel #volume-button {
+        display: none;
+    }
+    .video-control-panel .duration-holder .elapsed-time {
+        display: none;
+    }
+    .video-control-panel .duration-holder .remaining-time {
+        display: inline;
+    }
+    .video-control-panel .duration-holder .total-time {
+        display: none;
+    }
+    .video-control-panel .duration-holder .time-devider {
+        display: none;
+    }
+    .touch-device .kepler-window .hide-buttons #video-player-controls {
+        visibility: visible;
+        height: 0;
+    }
+    .touch-device .kepler-window.kepler-window-video.full-screen .hide-buttons #video-player-controls {
+        height: 0;
+    }
+    .video-control-panel,
+    .video-control-panel button,
+    .video-control-panel a,
+    .video-control-panel .duration-holder,
+    .video-control-panel .duration-holder span,
+    .video-control-panel .aligner {
+        display: inline;
+    }
+    .video-control-panel .icon-transcript {
+        margin-top: 7px;
+    }
+    .video-control-panel .cc-wrapper {
+        margin-top: 4px;
+    }
+    .video-control-panel .icon-full-screen {
+        margin-top: 4px;
+    }
+    .video-control-panel .icon-pause {
+        margin-top: 4px;
+    }
+}

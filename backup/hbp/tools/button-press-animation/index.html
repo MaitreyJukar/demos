@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Button Press Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <div class="button_opac_wrapper" id="animating_opac_wrapper">
+        <div class="button_ripple_div animation_ripple" id="button_ripple"></div>
+        <div class="button_bg" id="animating_button_bg">
+            <div class="button_main_wrapper" id="button_main_wrapper">
+                <div class="button_main animation_press" id="animating">
+                    <div class="pressing_button_label">F9</div>
+                </div>
+            </div>
+            <div class="overlay1"></div>
+        </div>
+    </div>
+
+    <p class="button-holder">
+        <button id="play-pause-btn">PAUSE</button>
+        <button id="stop-btn">STOP</button>
+        <button id="slide-in-btn">SLIDE IN</button>
+        <button id="slide-out-btn">SLIDE OUT</button>
+        <button id="press-btn">PRESS DOWN</button>
+        <button id="pressed-btn">PRESSED STATE</button>
+        <button id="release-btn">RELEASE UP</button>
+    </p>
+    <script src="main.js"></script>
+</body>
+
+</html>

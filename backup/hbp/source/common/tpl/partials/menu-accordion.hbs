@@ -1,0 +1,39 @@
+{{#each mainLinks}}
+    {{#if @first}}
+        <div class="hierarchy-title" id="{{hierarchy this}}-title">{{hierarchy this}}</div>
+    {{/if}}
+    <li class="menu-item" data-refid="{{this.refid}}" data-jsonurl="{{this.dataURL}}" data-pagetitle="{{this.pageTitle}}">
+        <div class="side-menu-accordion-header collapsed" title="{{this.text}}" {{#if this.childLinks}} data-toggle="collapse" data-target="#{{this.refid}}" {{/if}}>
+            <div class="status-bar">
+                <div class='icon-check hide' aria-label="Completed"></div>
+                <div class="percent-text" aria-hidden="true"></div>
+                <div class="progress hide">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0%" aria-valuemin="0%" aria-valuemax="100%"></div>
+                </div>
+            </div>
+            <button class="icon-arrow-left hide" tabindex="0" aria-label="Back to chapter" title="Back"></button>
+            <div class="divider hide"></div>
+
+
+            {{#if this.childLinks}}
+                <a {{#if this.hash}}href="#{{this.hash}}" class="side-menu-link" {{else}}class="side-menu-link first-level-header" aria-label="Expand {{this.text}}"{{/if}}
+                    aria-level="{{currLevel this}}" role="treeitem" aria-setsize="{{../mainLinks.length}}" aria-posinset="{{counter @index}}">{{this.text}}</a>
+                <span class="icon-plus" title="Expand"></span>
+            {{else}}
+                <span class="serial-no">{{counter @index}}</span>
+                <a {{#if this.hash}}href="#{{this.hash}}" {{/if}}class="side-menu-link" aria-level="{{currLevel this}}" role="treeitem"
+                    aria-setsize="{{../mainLinks.length}}" aria-posinset="{{counter @index}}">{{this.text}}</a>           
+            {{/if}}
+
+
+            <span class="icon-bookmarked hide"></span>
+            <span class="title-before"></span>                
+            <span class="title-after"></span>
+        </div>
+        {{#if this.childLinks}}
+        <ul class="side-menu-accordion-content collapse" id="{{this.refid}}" role="group">
+            {{&testHelper this.childLinks}}
+        </ul>
+        {{/if}}
+    </li>
+{{/each}}

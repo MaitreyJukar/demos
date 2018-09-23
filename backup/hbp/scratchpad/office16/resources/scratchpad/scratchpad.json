@@ -1,0 +1,119 @@
+﻿{
+  "task": {
+    "@id": "008",
+    "@name": "Section 3.3 Excercise 23.xlsx",
+    "engine": {
+      "showtaskbar": "1",
+      "app": "excel",
+      "tagger": null
+    },
+    "description": {
+      "#cdata-section": "Scratchpad"
+    },
+    "items": {
+      "@count": "1",
+      "item": {
+        "description": {
+          "#cdata-section": ""
+        },
+        "frames": {
+          "@count": "2",
+          "frame": [
+            {
+              "@id": "1",
+              "title": "Scratchpad",
+              "taskbarinfo": "1¦Excel•Scratchpad•1",
+               "ribbon_override_count": "2",
+              "ribbon_override_data": {
+                "#cdata-section": "10030000•0•0•-1•0••••¦10030001•0•0•-1•0••••"
+              },
+              "xl_number_format": {
+                "#cdata-section": "0"
+              },
+              "view_type": "1",
+              "ribbon_show": "1",
+              "statusbar_show": "1",              
+              "xl_sheet_data": {
+                "#cdata-section": "1¦Sheet1"
+              },
+              "xl_sheet_mode": {
+                "#cdata-section": "1"
+              },
+              "xl_active_sheet": {
+                "#cdata-section": "0"
+              },
+              "xl_sheet_tab_view_override": {
+                "#cdata-section": "0"
+              },
+              "xl_sheet_rowcolumn_resize_data": {
+                "#cdata-section": "0"
+              },
+              "xl_active_sheet_state": {
+                "#cdata-section": "0•A1¦1•A1¦2•A1¦3•A1"
+              },
+              "db_pagesetup_property": {
+                "#cdata-section": "0¦0•0•1•100•1•1•0•0•Auto•0.3•0.3•0.7•0.75•0.7•0.75•0•0•(none)‡Page 1‡Page 1 of ?•0•(none)‡Page 1‡Page 1 of ?•0•0•0•1•1••••0•0•0•0•0•0•0¦1•0•1•100•1•1•0•0•Auto•0.3•0.3•0.7•0.75•0.7•0.75•0•0•(none)‡Page 1‡Page 1 of ?•0•(none)‡Page 1‡Page 1 of ?•0•0•0•1•1••••0•0•0•0•0•0•0¦2•0•1•100•1•1•3•0•Auto•0.3•0.3•0.7•0.75•0.7•0.75•0•0•(none)‡Page 1‡Page 1 of ?•0•(none)‡Page 1‡Page 1 of ?•0•0•0•1•1••••0•0•0•0•0•0•0¦3•0•1•100•1•1•0•0•Auto•0.3•0.3•0.7•0.75•0.7•0.75•0•0•(none)‡Page 1‡Page 1 of ?•0•(none)‡Page 1‡Page 1 of ?•0•0•0•1•1••••0•0•0•0•0•0•0"
+              },
+              "xl_sheet1_active_cell": {
+                "#cdata-section": ""
+              },
+              "xl_sheet1_preselect_data": {
+                "#cdata-section": ""
+              },
+              "xl_sheet1_cell_format_data": {
+                "#cdata-section": "0¦A1:B7•0•10•rgb(0,0,0)•rgb(255,255,255)•0"
+              },
+              "xl_sheet1_cell_data": {
+                "#cdata-section": "0"
+              },
+			  
+              "xl_sheet1_mergedcell_data": {
+                "#cdata-section": "0"
+              },
+              "xl_sheet1_border": {
+                "#cdata-section": ""
+              },
+             
+              "xl_sheet1_hidden_row_col": {
+                "#cdata-section": "0"
+              }              
+            },
+            {
+              "@id": "2",
+              "@type": "4",
+              "xl_sheet_action_data": {
+                "#cdata-section": "0¦2•0300•0•D41•D41:D41•0•$113,589.51••2§=NPV0*(D11)+NPV1*(E39)+NPV1*(F39)+NPV1*(G39)+D39"
+              },
+             
+              "xl_number_format": {
+                "#cdata-section": "0¦0•B5+B8+B11+B12+B13+B18+B19+B20+B21+B23+B24+B25+B26+B33+B34+B35+B37+B40+B42+B52+C63+C50•33•2•$••2¦0•B41+B53+B54+B59+B60+C55•33•2•none•1¦0•B61+C62•33•2•none•¦0•B4+C33+C34+C35+C23:C26+C18:C21•13•0•none•¦0•B9•37•2••¦0•B58+C56•33•2•none••2"
+              },
+              "view_type": "1",
+              "ribbon_show": "1",
+              "statusbar_show": "1",
+              "xl_sheet_mode": "1",
+              "xl_active_sheet": "0",
+              "xl_sheet_data": "1¦Chapter 2",
+              "xl_sheet_rowcolumn_resize_data": {
+                "#cdata-section": "1¦0•A•256"
+              },
+              "xl_sheet1_cell_data": {
+                "#cdata-section": "112¦A1•To aid in planning, Jay Corporation is preparing a contribution format income statement.•To aid in planning, Jay Corporation is preparing a contribution format income statement.••24•11•rgb(0,0,0)•-1•0•¦A3•Budgeted information for Quarter 1 of Year 3:•Budgeted information for Quarter 1 of Year 3:••24•11•rgb(0,0,0)•-1•0•¦A4•   Sales in units•Sales in units••24•11•rgb(0,0,0)•-1•8•¦B4•            17,000 •17000•17000•24•11•rgb(0,0,0)•-1•0•¦A5•   Sales price per unit•Sales price per unit••24•11•rgb(0,0,0)•-1•8•¦B5• $           48.00 •48•48•24•11•rgb(0,0,0)•-1•0•¦A7•After analyzing expenses, the company has determined the following cost patterns.•After analyzing expenses, the company has determined the following cost patterns.••24•11•rgb(0,0,0)•-1•0•¦A8•   Cost of goods sold•Cost of goods sold••24•11•rgb(0,0,0)•-1•8•¦B8• $           29.00 •29•29•24•11•rgb(0,0,0)•-1•0•¦C8•per unit•per unit••24•11•rgb(0,0,0)•-1•0•¦A9•   Sales commissions•Sales commissions••24•11•rgb(0,0,0)•-1•8•¦B9•9.50%•9.50%•9.50%•24•11•rgb(0,0,0)•-1•0•¦C9•per dollar of sales•per dollar of sales••24•11•rgb(0,0,0)•-1•0•¦A11•   Administrative salaries•Administrative salaries••24•11•rgb(0,0,0)•-1•8•¦B11• $   45,000.00 •45000•45000•24•11•rgb(0,0,0)•-1•0•¦C11•per quarter•per quarter••24•11•rgb(0,0,0)•-1•0•¦A12•   Rent expense•Rent expense••24•11•rgb(0,0,0)•-1•8•¦B12• $   27,000.00 •27000•27000•24•11•rgb(0,0,0)•-1•0•¦C12•per quarter•per quarter••24•11•rgb(0,0,0)•-1•0•¦A13•   Depreciation expense•Depreciation expense••24•11•rgb(0,0,0)•-1•8•¦B13• $   36,000.00 •36000•36000•24•11•rgb(0,0,0)•-1•0•¦C13•per quarter•per quarter••24•11•rgb(0,0,0)•-1•0•¦A15•Management has concluded that shipping expense is a mixed cost. Units shipped and the related shipping cost over the last eight quarters are:•Management has concluded that shipping expense is a mixed cost. Units shipped and the related shipping cost over the last eight quarters are:••24•11•rgb(0,0,0)•-1•256•¦A17•Year 1•Year 1••24•11•rgb(0,0,0)•-1•0•¦B17•Total Shipping Cost•Total Shipping Cost••24•11•rgb(0,0,0)•-1•20•¦C17•Units•Units••24•11•rgb(0,0,0)•-1•20•¦A18•   Quarter 1•Quarter 1••24•11•rgb(0,0,0)•-1•8•¦B18• $   67,000.00 •67000•67000•24•11•rgb(0,0,0)•-1•0•¦C18•            12,500 •12500•12500•24•11•rgb(0,0,0)•-1•0•¦A19•   Quarter2•Quarter2••24•11•rgb(0,0,0)•-1•8•¦B19• $   94,000.00 •94000•94000•24•11•rgb(0,0,0)•-1•0•¦C19•            21,000 •21000•21000•24•11•rgb(0,0,0)•-1•0•¦A20•   Quarter 3•Quarter 3••24•11•rgb(0,0,0)•-1•8•¦B20• $   89,800.00 •89800•89800•24•11•rgb(0,0,0)•-1•0•¦C20•            13,800 •13800•13800•24•11•rgb(0,0,0)•-1•0•¦A21•   Quarter 4•Quarter 4••24•11•rgb(0,0,0)•-1•8•¦B21• $ 102,600.00 •102600•102600•24•11•rgb(0,0,0)•-1•0•¦C21•            20,000 •20000•20000•24•11•rgb(0,0,0)•-1•0•¦A22•Year 2•Year 2••24•11•rgb(0,0,0)•-1•0•¦F22•   • ••24•11•rgb(0,0,0)•-1•0•¦A23•   Quarter 1•Quarter 1••24•11•rgb(0,0,0)•-1•8•¦B23• $   72,500.00 •72500•72500•24•11•rgb(0,0,0)•-1•0•¦C23•            13,700 •13700•13700•24•11•rgb(0,0,0)•-1•0•¦A24•   Quarter2•Quarter2••24•11•rgb(0,0,0)•-1•8•¦B24• $   80,000.00 •80000•80000•24•11•rgb(0,0,0)•-1•0•¦C24•            14,000 •14000•14000•24•11•rgb(0,0,0)•-1•0•¦A25•   Quarter 3•Quarter 3••24•11•rgb(0,0,0)•-1•8•¦B25• $   84,000.00 •84000•84000•24•11•rgb(0,0,0)•-1•0•¦C25•            14,300 •14300•14300•24•11•rgb(0,0,0)•-1•0•¦A26•   Quarter 4•Quarter 4••24•11•rgb(0,0,0)•-1•8•¦B26• $ 100,000.00 •100000•100000•24•11•rgb(0,0,0)•-1•0•¦C26•            22,500 •22500•22500•24•11•rgb(0,0,0)•-1•0•¦A28•Use the data to answer the following.•Use the data to answer the following.••24•11•rgb(0,0,0)•-1•8•¦A30•1. Using the high-low method, determine a cost formula for shipping expenses.•1. Using the high-low method, determine a cost formula for shipping expenses.••24•11•rgb(0,0,0)•-1•0•¦B32•Total Shipping Cost•Total Shipping Cost••24•11•rgb(0,0,0)•-1•16•¦C32•Units•Units••24•11•rgb(0,0,0)•-1•16•¦A33•High level of activity•High level of activity••24•11•rgb(0,0,0)•-1•0•¦B33• $ 100,000.00 •=B26•100000•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦C33•            22,500 •=C26•22500•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A34•Low level of activity•Low level of activity••24•11•rgb(0,0,0)•-1•0•¦B34• $   67,000.00 •=B18•67000•24•11•rgb(0,0,0)•rgb(255,255,153)•28•¦C34•            12,500 •=C18•12500•24•11•rgb(0,0,0)•rgb(255,255,153)•28•¦A35•Change in activity•Change in activity••24•11•rgb(0,0,0)•-1•0•¦B35• $   33,000.00 •=B33-B34•33000•24•11•rgb(0,0,0)•rgb(255,255,153)•1048600•¦C35•            10,000 •=C33-C34•10000•24•11•rgb(0,0,0)•rgb(255,255,153)•1048600•¦A37•Variable cost•Variable cost••24•11•rgb(0,0,0)•-1•0•¦B37• $              3.30 •=B35/C35•3.3•24•11•rgb(0,0,0)•rgb(255,255,153)•1048576•¦C37•per unit•per unit••24•11•rgb(0,0,0)•-1•0•¦A39•Compute the fixed cost portion using the high level of activity.•Compute the fixed cost portion using the high level of activity.••24•11•rgb(0,0,0)•-1•0•¦A40•   Total cost at high level of activity•Total cost at high level of activity••24•11•rgb(0,0,0)•-1•8•¦B40• $ 100,000.00 •=B33•100000•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A41•   Less: Variable cost element•Less: Variable cost element••24•11•rgb(0,0,0)•-1•8•¦B41•      74,250.00 •=B37*C33•74250•24•11•rgb(0,0,0)•rgb(255,255,153)•4•¦A42•Total fixed cost•Total fixed cost••24•11•rgb(0,0,0)•-1•0•¦B42• $   25,750.00 •=B40-B41•25750•24•11•rgb(0,0,0)•rgb(255,255,153)•1048576•¦A44•2. Prepare a contribution format income statement for Quarter 1 of Year 3.•2. Prepare a contribution format income statement for Quarter 1 of Year 3.••24•11•rgb(0,0,0)•-1•0•¦A45• • ••24•11•rgb(0,0,0)•-1•0•¦A46•Jay Corporation•Jay Corporation••24•11•rgb(0,0,0)•-1•16•¦B46••••24•11•rgb(0,0,0)•-1•16•¦C46••••24•11•rgb(0,0,0)•-1•16•¦A47•Budgeted Contribution Format Income Statement•Budgeted Contribution Format Income Statement••24•11•rgb(0,0,0)•-1•16•¦B47••••24•11•rgb(0,0,0)•-1•16•¦C47••••24•11•rgb(0,0,0)•-1•16•¦A48•For Year 3, Quarter 1•For Year 3, Quarter 1••24•11•rgb(0,0,0)•-1•16•¦B48••••24•11•rgb(0,0,0)•-1•16•¦C48••••24•11•rgb(0,0,0)•-1•16•¦A50•Sales•Sales••24•11•rgb(0,0,0)•-1•0•¦C50• $ 816,000.00 •=B4*B5•816000•24•11•rgb(0,0,0)•rgb(255,255,153)•0•¦A51•Variable expenses:•Variable expenses:••24•11•rgb(0,0,0)•-1•0•¦A52•   Cost of goods sold•Cost of goods sold••24•11•rgb(0,0,0)•-1•8•¦B52• $ 493,000.00 •=B4*B8•493000•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A53•   Sales commissions•Sales commissions••24•11•rgb(0,0,0)•-1•8•¦B53•      77,520.00 •=C50*B9•77520•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A54•   Shipping expense•Shipping expense••24•11•rgb(0,0,0)•-1•8•¦B54•      56,100.00 •=B37*B4•56100•24•11•rgb(0,0,0)•rgb(255,255,153)•28•¦A55•Total variable expenses•Total variable expenses••24•11•rgb(0,0,0)•-1•0•¦C55•    626,620.00 •=SUM(B52:B54)•626620•24•11•rgb(0,0,0)•rgb(255,255,153)•28•¦A56•Contribution margin•Contribution margin••24•11•rgb(0,0,0)•-1•0•¦C56•189,380.00 •=C50-C55•189380•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A57•Fixed expenses:•Fixed expenses:••24•11•rgb(0,0,0)•-1•8•¦A58•   Administrative salaries•Administrative salaries••24•11•rgb(0,0,0)•-1•8•¦B58• 45,000.00 •=B11•45000•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A59•   Rent expense•Rent expense••24•11•rgb(0,0,0)•-1•8•¦B59•      27,000.00 •=B12•27000•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A60•   Shipping expense•Shipping expense••24•11•rgb(0,0,0)•-1•8•¦B60•      25,750.00 •=B42•25750•24•11•rgb(0,0,0)•rgb(255,255,153)•24•¦A61•   Depreciation expense•Depreciation expense••24•11•rgb(0,0,0)•-1•8•¦B61•      36,000.00 •=B13•36000•24•11•rgb(0,0,0)•rgb(255,255,153)•28•¦A62•Total fixed expenses•Total fixed expenses••24•11•rgb(0,0,0)•-1•8•¦C62•    133,750.00 •=SUM(B58:B61)•133750•24•11•rgb(0,0,0)•rgb(255,255,153)•28•¦A63•Net operating income•Net operating income••24•11•rgb(0,0,0)•-1•8•¦C63• $   55,630.00 •=C56-C62•55630•24•11•rgb(0,0,0)•rgb(255,255,153)•1048576•"
+              },
+              "xl_sheet1_preselect_data": "0",
+              "xl_sheet1_mergedcell_data": {
+                "#cdata-section": "4¦A46:C46¦A47:C47¦A48:C48¦A15:F15"
+              },
+              "xl_sheet1_overwrite_data": {
+                "#cdata-section": "7¦A1:F1•A1¦A3:B3•A3¦A7:E7•A7¦A28:D28•A28¦A30:D30•A30¦A44:D44•A44¦A39:B39•A39"
+              },
+              "xl_sheet1_hidden_row_col": {
+                "#cdata-section": "0"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

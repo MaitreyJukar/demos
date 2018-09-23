@@ -1,0 +1,396 @@
+/*header css*/
+
+#header {
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header,
+.header-back {
+    line-height: 56px;
+    padding-right: 4px;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    background-color: #b01b3e;
+    box-shadow: 1px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24), 0px 1px 3.92px 0.08px rgba(0, 0, 0, 0.16);
+    height: 56px;
+}
+
+.header-back {
+    text-align: left;
+    background-color: #31363a;
+    color: #d6f3f6;
+    white-space: nowrap;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.header-back .back-button-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 140px;
+    text-align: left;
+    background-color: #840e2a;
+}
+
+body:not(.touch-device) .header-back .back-button-wrapper:hover {
+    background-color: rgba(132, 14, 42, 0.8);
+}
+
+.header-back .back-button-wrapper:active,
+body:not(.touch-device) .header-back .back-button-wrapper:active {
+    background-color: rgba(132, 14, 42, 0.7);
+}
+
+.header-back .back-button-wrapper .back-label {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.header-back .title-wrapper {
+    display: inline-block;
+    width: calc(100% - 245px);
+    vertical-align: middle;
+    height: 56px;
+    white-space: normal;
+    overflow: hidden;
+    padding: 0 20px;
+    position: fixed;
+    left: 140px;
+    top: 0;
+    z-index: 12;
+    background-color: #31363a;
+}
+
+.header-back .title-wrapper .scroll-shadow-box {
+    position: fixed;
+    height: 56px;
+    width: 40px;
+    top: 0px;
+    pointer-events: none;
+    z-index: 3;
+    vertical-align: top;
+    display: none;
+}
+
+.header-back .title-wrapper .left {
+    left: 60px;
+    background: linear-gradient(to right, rgba(49, 54, 58, 1), rgba(49, 54, 58, 0));
+}
+
+.header-back .title-wrapper .right {
+    right: 0;
+    background: linear-gradient(to right, rgba(49, 54, 58, 0), rgba(49, 54, 58, 1));
+}
+
+.header-back .icon-back {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    width: 40px;
+    text-align: center;
+    line-height: 1;
+    height: 40px;
+    /* position: relative;
+    bottom: 5px; */
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+
+/* body:not(.touch-device) .header-back .icon-back:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header-back .icon-back:active {
+    background-color: rgba(0, 0, 0, 0.2);
+} */
+
+.header-back .icon-back::before {
+    display: block;
+    line-height: 40px;
+}
+
+.header-back .iframe-title {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 16px;
+    white-space: normal;
+    width: 100%;
+    vertical-align: middle;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header-back .iframe-title sup {
+    top: 0px;
+    vertical-align: super;
+}
+
+.header .title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header #hamburger-menu {
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    float: left;
+    background-color: #b01b3e;
+}
+
+body:not(.touch-device) .header #hamburger-menu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header .hbp-logo {
+    margin: 0 10px;
+    float: left;
+    height: 56px;
+}
+
+.header .hbp-logo img {
+    object-fit: contain;
+    height: 56px;
+    vertical-align: top;
+    width: 113px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.header .header-icons {
+    display: inline-block;
+    float: right;
+    font-size: 0px;
+    height: 56px;
+}
+
+.header-icons button {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background-color: #B01B3E;
+    width: 40px;
+    font-size: 20px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.header-icons [class^="icon-"]:before {
+    position: relative;
+    bottom: -2px;
+}
+
+body:not(.touch-device) .header .header-icons button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header .header-icons button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-icons .selected,
+#hamburger-menu.selected,
+body:not(.touch-device) .header-icons button.selected:hover,
+body:not(.touch-device) #hamburger-menu.selected:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+[class^="icon-"]:before {
+    margin: auto;
+}
+
+.abs-right {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    height: 100%;
+}
+
+.kepler-window-scratchpad .header-back {
+    position: relative;
+}
+
+.kepler-window-scratchpad .header-back .divider {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.12);
+    width: 1px;
+    height: 100%;
+}
+
+.kepler-window-scratchpad .header-back .help-holder {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 24px;
+    background-color: transparent;
+}
+
+.kepler-window-scratchpad .header-back .help-holder:active,
+body:not(.touch-device) .kepler-window-scratchpad .header-back .help-holder:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.kepler-window-scratchpad .header-back .help-holder.active-help {
+    background-color: #840e20 !important;
+}
+
+.kepler-window-scratchpad .header-back .help-holder.active-help .icon-help {
+    background-color: #fff !important;
+    color: #840e20 !important;
+}
+
+.kepler-window-scratchpad .header-back .help-holder .icon-help {
+    background-color: #fff;
+    color: #31363a;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.kepler-window-scratchpad .header-back .help-holder .icon-help::before {
+    display: block;
+}
+
+.kepler-window-scratchpad .header-back .help-holder .help-text {
+    display: none;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 16px;
+    margin-top: -2px;
+}
+
+@media screen and (min-width: 1025px) {
+    #hamburger-menu {
+        display: none;
+    }
+    .header #hamburger-menu {
+        width: 56px;
+        height: 56px;
+    }
+    .header .header-icons button {
+        height: 40px;
+    }
+    .kepler-window-scratchpad .header-back .help-holder .icon-help {
+        margin-right: 5px;
+    }
+    .kepler-window-scratchpad .header-back .help-holder .help-text {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 768px) {
+    .header .header-icons button {
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-back .title-wrapper {
+        width: calc(100% - 207px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header .header-icons button {
+        height: 40px;
+    }
+    .header .title {
+        display: none;
+    }
+    .header-back {
+        line-height: 40px;
+        height: 40px;
+    }
+    .header-back .title-wrapper {
+        height: 40px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding: 0;
+        width: calc(100% - 207px);
+        position: absolute;
+    }
+    .header-back .iframe-title,
+    .header-back .serial-no {
+        display: inline-block;
+        /* position: relative;
+        bottom: 6px; */
+        font-size: 16px;
+        white-space: nowrap;
+        height: 40px;
+        vertical-align: middle;
+        padding-top: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* To fix Bug #208066 */
+    .header-back .title-wrapper .scroll-shadow-box {
+        height: 40px;
+        display: block;
+        right: 65px;
+    }
+    .kepler-window.training-skill .header-back .title-wrapper .scroll-shadow-box.right {
+        right: 0;
+    }
+    .header-back .title-wrapper .scroll-shadow-box.left {
+        left: 60px;
+    }
+    .header-back .back-button-wrapper {
+        width: auto;
+    }
+    .header-back .back-button-wrapper .back-label {
+        display: none;
+    }
+    .header-back .icon-back {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .header-back .title-wrapper {
+        width: 1px;
+        min-width: calc(100% - 125px);
+        left: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .hbp-logo {
+        margin: 0;
+    }
+    .header .header-icons .icon-glossary {
+        display: none;
+    }
+}

@@ -1,0 +1,56 @@
+#closed-caption {
+    display: table;
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+    vertical-align: baseline;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: bottom 1s ease;
+    -moz-transition: bottom 1s ease;
+    transition: bottom 1s ease;
+}
+
+.cc-container {
+    position: relative;
+    display: table-cell;
+    cursor: default;
+    text-align: center;
+}
+
+.cc-text-container {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    padding: 20px;
+    line-height: 1.6;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.cc-text {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 4px;
+    vertical-align: baseline;
+    font-family: arial, sans-serif;
+    user-select: none;
+    -ms-user-select: none;
+}
+
+.cc-text:empty {
+    display: none;
+}
+
+.kepler-window.kepler-window-video.video-replay-mode #closed-caption .cc-text {
+    display: none;
+}
+
+@media screen and (max-width: 560px) {
+    #closed-caption {
+        bottom: 43px;
+    }
+    .touch-device .kepler-window .hide-buttons #closed-caption {
+        bottom: 3px;
+    }
+}

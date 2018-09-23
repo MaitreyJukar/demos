@@ -1,0 +1,30 @@
+<div class="left-panel video-control-panel">
+    <button class="" id="play-pause-button" aria-label="Play" title="Play"></button>
+    <button class="icon-arrow-left" id="goto-prev-button" aria-label="Previous Step" title="Previous Step"></button>
+    <span class="duration-holder">
+        <span class="remaining-time">{{timeRemaining}}</span>
+        <span class="elapsed-time">{{timeElapsed}}</span>
+        <span class="time-devider">&nbsp;/&nbsp;</span>
+        <span class="total-time">{{totalTime}}</span>
+    </span>
+    <button class="icon-arrow-right" id="goto-next-button" aria-label="Next Step" title="Next Step"></button>
+    <div class="aligner"></div>
+</div>
+<div class="right-panel video-control-panel">
+    <button class="icon-speed-1 hide" id="speed-button" aria-label="Play Speed" title="Play Speed"></button>
+    <a target="_blank" tabindex="0" role="button" class="icon-transcript" id="trans-button" aria-label="Download Transcript" title="Transcript"></a>
+    <div class="cc-wrapper">
+        <button class="" id="subtitle-button" aria-label="Captions" title="Captions"></button>
+        <div class="underline"></div>
+        <div class="aligner"></div>
+    </div>{{#if isMuteBtnAvailable}}
+    <button class="" id="volume-button" aria-label="Mute" title="Mute"></button>{{/if}}
+    <button class="" id="screen-shift-button" aria-label="Full Screen" title="Full Screen"></button>
+    <div class="ellips-wrapper">
+        <button class="icon-ellipses" id="mob-menu-button" aria-haspopup="true" aria-controls="mobile-menu" aria-expanded="false"
+            aria-label="More Options" title="More Options"></button>
+        <div class="aligner"></div>
+    </div>
+    <div class="aligner"></div>
+</div>
+<div class="modal mob-menu-wrapper"></div>

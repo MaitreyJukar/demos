@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aquamarine;
+    position: relative;
+    height: 100vh;
+}
+
+.button-holder {
+    display: inline-block;
+    position: relative;
+    top: calc(50% + 140px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.button_opac_wrapper {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+
+/* Use this styles in kepler player */
+
+.button_opac_wrapper {
+    background-color: rgba(0, 0, 0, .6);
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.button_ripple_div {
+    position: absolute;
+    border-radius: 50%;
+    height: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, .4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    border: 1px solid #fff
+}
+
+.button_bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px;
+    background-image: url("./key-base.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    overflow: hidden
+}
+
+.button_bg .button_main_wrapper {
+    position: absolute;
+    height: 93.3333%;
+    width: 100%;
+    overflow: hidden
+}
+
+.button_bg .button_main_wrapper .button_main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./key.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: center center
+}
+
+.button_bg .button_main_wrapper .button_main .pressing_button_label {
+    position: absolute;
+    top: 19%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+    font-family: Arial, sans-serif;
+    color: #212121
+}
+
+.button_bg .overlay1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-image: url("./key-overlay.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.animation_press {
+    -webkit-animation: press 0.4s 1 linear;
+    -ms-animation: press 0.4s 1 linear;
+    animation: press 0.4s 1 linear
+}
+
+.animation_ripple {
+    -webkit-animation: ripple 0.4s 1 ease-out;
+    -ms-animation: ripple 0.4s 1 ease-out;
+    animation: ripple 0.4s 1 ease-out
+}
+
+.animation_first_half_ripple {
+    -webkit-animation: firstHalfRipple 0.2s 1 ease-out;
+    -ms-animation: firstHalfRipple 0.2s 1 ease-out;
+    animation: firstHalfRipple 0.2s 1 ease-out
+}
+
+.animation_second_half_ripple {
+    -webkit-animation: secondHalfRipple 0.2s 1 ease-out;
+    -ms-animation: secondHalfRipple 0.2s 1 ease-out;
+    animation: secondHalfRipple 0.2s 1 ease-out
+}
+
+.animation_pause {
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important;
+    animation-play-state: paused !important;
+}
+
+.animation_press_down_state {
+    -webkit-animation: pressDownState 0.2s 1 linear;
+    -ms-animation: pressDownState 0.2s 1 linear;
+    animation: pressDownState 0.2s 1 linear
+}
+
+.animation_release_up_state {
+    -webkit-animation: releaseUpState 0.2s 1 linear;
+    -ms-animation: releaseUpState 0.2s 1 linear;
+    animation: releaseUpState 0.2s 1 linear
+}
+
+.button_bg .button_main_wrapper .pressed_down_state {
+    top: 7.619%;
+    transform: scale(.97);
+}
+
+@-webkit-keyframes press {
+    0% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+    25% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    50% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+    75% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+}
+
+@-ms-keyframes press {
+    0% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+    25% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    50% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+    75% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+}
+
+@keyframes press {
+    0% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+    25% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    50% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+    75% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+}
+
+@-webkit-keyframes pressDownState {
+    0% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+    50% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+}
+
+@-ms-keyframes pressDownState {
+    0% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+    50% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+}
+
+@keyframes pressDownState {
+    0% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+    50% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+}
+
+@-webkit-keyframes releaseUpState {
+    0% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+    50% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+}
+
+@-ms-keyframes releaseUpState {
+    0% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+    50% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+}
+
+@keyframes releaseUpState {
+    0% {
+        top: 7.619%;
+        transform: scale(.97)
+    }
+    50% {
+        top: 2%;
+        transform: scale(1) translateZ(0)
+    }
+    100% {
+        top: 0;
+        transform: scale(1) translateZ(0)
+    }
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        height: 60px;
+        width: 78px;
+        opacity: 1
+    }
+    100% {
+        height: 90px;
+        width: 130px;
+        opacity: 0
+    }
+}
+
+@-ms-keyframes ripple {
+    0% {
+        height: 60px;
+        width: 78px;
+        opacity: 1
+    }
+    100% {
+        height: 90px;
+        width: 130px;
+        opacity: 0
+    }
+}
+
+@keyframes ripple {
+    0% {
+        height: 60px;
+        width: 78px;
+        opacity: 1
+    }
+    100% {
+        height: 90px;
+        width: 130px;
+        opacity: 0
+    }
+}
+
+@keyframes firstHalfRipple {
+    0% {
+        height: 60px;
+        width: 78px;
+        opacity: 1
+    }
+    100% {
+        height: 90px;
+        width: 130px;
+        opacity: 0
+    }
+}
+
+@keyframes secondHalfRipple {}
+
+@-webkit-keyframes slideInRight {
+    from {
+        transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
+        visibility: visible
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible
+    }
+    to {
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-webkit-keyframes slideOutRight {
+    from {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        visibility: visible
+    }
+    to {
+        transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0)
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translate3d(0, 0, 0);
+        visibility: visible
+    }
+    to {
+        transform: translate3d(100%, 0, 0)
+    }
+}
+
+.button_slideInRight {
+    animation-name: slideInRight
+}
+
+.button_slideOutRight {
+    animation-name: slideOutRight
+}
+
+.button_animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.button_animated_forwards {
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+.animation_fill_mode_forwards {
+    animation-fill-mode: forwards
+}

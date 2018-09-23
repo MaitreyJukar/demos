@@ -1,0 +1,94 @@
+/*breadcrumbs css*/
+
+#breadcrumbs-container .scroll-shadow-box {
+    display: none;
+    position: fixed;
+    height: 47px;
+    width: 40px;
+    top: 56px;
+    pointer-events: none;
+    z-index: 3;
+    vertical-align: top;
+}
+
+#breadcrumbs-container .left {
+    left: 0;
+    background: linear-gradient(to right, rgba(246, 244, 245, 1), rgba(246, 244, 245, 0));
+}
+
+#breadcrumbs-container .right {
+    right: 0;
+    background: linear-gradient(to right, rgba(246, 244, 245, 0), rgba(246, 244, 245, 1));
+}
+
+#breadcrumbs-container .breadcrumbs-link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+#breadcrumbs-container .breadcrumbs-link a {
+    color: rgba(176, 27, 62, 0.87);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body:not(.touch-device) #breadcrumbs-container .breadcrumbs-link a:not(.inactive-breadcrumbs):focus,
+body:not(.touch-device) #breadcrumbs-container .breadcrumbs-link a:hover {
+    color: #9a1635;
+    text-decoration: underline;
+}
+
+#breadcrumbs-container .breadcrumbs-link a:active {
+    color: #81102b;
+}
+
+#breadcrumbs-container .breadcrumbs-link .inactive-breadcrumbs {
+    color: #222222;
+    pointer-events: none;
+    cursor: default;
+}
+
+#breadcrumbs-container {
+    height: 47px;
+    font-size: 0px;
+    line-height: 47px;
+    padding: 0 16px;
+    background-color: #f6f4f5;
+    color: #222222;
+    box-shadow: 1px 1px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    position: fixed;
+    top: 56px;
+}
+
+#breadcrumbs-container .icon-arrow-right {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+#breadcrumbs-container .icon-arrow-right:before {
+    top: 4px;
+    position: relative;
+}
+
+/* #breadcrumbs-container .serial-no {
+    display: inline-block;
+} */
+
+@media screen and (max-width: 767px) {
+    #breadcrumbs-container .scroll-shadow-box {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #breadcrumbs-container {
+        width: calc(100% - 333px);
+    }
+}

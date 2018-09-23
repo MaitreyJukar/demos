@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Audio Kill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        table {
+            display: inline-block;
+            text-align: center;
+        }
+
+        table tr td {
+            padding: 7px;
+        }
+
+        #html-dump {
+            max-width: 100vw;
+            word-break: break-word;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        .container button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="base64" src="" type="audio/mpeg"></audio>
+    <table border="1">
+        <tr>
+            <th>Current Time</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td id="base64-ctime"></td>
+            <td id="base64-duration"></td>
+        </tr>
+    </table>
+    <div class="container">
+        <button id="load-btn">Load</button>
+        <button id="play-btn" disabled>Play</button>
+        <button id="paws-btn" disabled>Pause</button>
+        <button id="kill-btn" disabled>Dump HTML</button>
+    </div>
+    <audio id="lab-rat" src="" type="audio/mpeg"></audio>
+    <div id="html-dump"></div>
+    <script src="audiokill.js"></script>
+</body>
+
+</html>

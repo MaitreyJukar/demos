@@ -1,0 +1,150 @@
+/* Bookmarks Styles Start */
+
+#bookmarks-breadcrumbs-container {
+    height: 50px;
+    font-size: 18px;
+    line-height: 1;
+    background-color: #F3F5F7;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 1px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding: 15px;
+    position: relative;
+}
+
+#bookmarks-search-container {
+    height: 50px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    padding: 10px 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+#bookmark-main-container .bookmark-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+#bookmark-main-container .breadcrumbs-link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#bookmark-main-container .breadcrumbs-link a {
+    color: rgba(176, 27, 62, 0.87);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#bookmark-main-container .breadcrumbs-seperator {
+    display: inline-block;
+}
+
+#bookmark-main-container .breadcrumbs-link .inactive-breadcrumbs {
+    color: #222222;
+    pointer-events: none;
+    cursor: default;
+}
+
+#bookmark-main-container {
+    height: calc(100% - 100px);
+    height: -webkit-calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+    padding-top: 15px;
+    border-top: rgba(127, 127, 127, 0.3) 2px solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#bookmarks-container nav i {
+    font-size: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#bookmarks-container nav .panel-title {
+    font-size: 19px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#bookmarks-container nav .close-icon-holder {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 12px;
+}
+
+#bookmarks-container .bookmark-item button.remove-item,
+#bookmarks-container button.panel-button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#bookmarks-container .bookmark-item button.remove-item {
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 0;
+}
+
+body:not(.touch-device) #bookmarks-container .bookmark-item button.remove-item:hover,
+body:not(.touch-device) #bookmarks-container .bookmark-item button.remove-item:focus,
+body:not(.touch-device) #bookmarks-container button.panel-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#bookmarks-container .bookmark-item button.remove-item:active,
+#bookmarks-container button.panel-button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#bookmarks-container input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#bookmarks-container .search-button-container {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 12px;
+}
+
+#bookmarks-container .bookmark-item button.remove-item .icon-delete {
+    height: 24px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+    color: #737373;
+}
+
+#bookmarks-search-container input {
+    border: none;
+    width: 100%;
+    padding-right: 28px;
+}
+
+#bookmarks-container .bookmark-item {
+    min-height: 40px;
+    position: relative;
+}
+
+
+/* Bookmarks Styles  End */

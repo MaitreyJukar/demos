@@ -1,0 +1,15 @@
+<div class="dialog-wrapper {{#if _shown}}show{{else}}hide{{/if}}">
+    <div class="dialog-main" role="dialog" id="{{dialogId}}" aria-describedby="title-{{dialogId}} content-{{dialogId}}" tabindex="-1"
+        aria-modal="true" tabindex="-1">
+        <div class="title-holder">
+            <span class="{{titleIcon}} title-icon" id="title-icon-{{dialogId}}"></span>
+            <h4 class="title-text" id="title-{{dialogId}}">{{title}}</h4>
+        </div>
+        <div class="close-icon-holder {{#if hasCloseBtn}}showInlineBlock{{else}}hide{{/if}}">
+            <button class="icon-close" aria-label="Close the dialog" title="Close"></button>
+        </div>
+        <div class="mob-only tab-only shadow-only"></div>
+        <div class="content-holder tab-shadow custom-scrollbar" id="content-{{dialogId}}">{{{content}}}</div>
+        <div class="buttons-holder"></div>
+    </div>
+</div>

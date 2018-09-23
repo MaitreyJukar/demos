@@ -1,0 +1,15 @@
+<ul class="mob-menu transform-animate" id="mobile-menu" role="menu">
+    {{#each this}}
+    <li class="mob-menu-item">
+        <button class="menu-btn type-{{this.iconCls}}" id="{{this.btnId}}" role="menuitem">
+            <div class="icon-holder">
+                <span class="{{this.iconCls}}"></span>
+                {{#if this.hasUnderline}}
+                <div class="underline"></div>
+                {{/if}}
+            </div>
+            <div class="text-holder">{{this.text}}</div>
+        </button>
+    </li>
+    {{/each}}
+</ul>

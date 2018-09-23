@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Dummy Page - Audio Jam For Firefox</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+</head>
+
+<body>
+    <audio id="hbp-sample-audio" preload="auto" src="" type="audio/mpeg">
+    </audio>
+    <input type="file" accept="audio/*">
+    <button id="play-button" onclick="playSound()" disabled>PLAY</button>
+    <button id="pause-button" onclick="pauseSound()" disabled>PAUSE</button>
+    <input id="step" type="number" name="quantity" min="1" max="12">
+    <script>
+        /*
+        setInterval(function () {
+            if (STEPS[currentStep + 1] === void 0) {
+                return;
+            }
+            if (audioElem.currentTime >= (timeStrToNum(STEPS[currentStep]["@stop"]) / 1000)) {
+                currentStep++;
+                audioElem.pause();
+                audioElem.currentTime = timeStrToNum(STEPS[currentStep]["@start"]) / 1000;
+                audioElem.play();
+                console.info("new time", audioElem.currentTime);
+            }
+        }, 50);
+        */
+    </script>
+    <script src="base64.js"></script>
+</body>
+
+</html>

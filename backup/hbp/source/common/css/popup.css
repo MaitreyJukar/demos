@@ -1,0 +1,147 @@
+.popup-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.popup-wrapper .popup-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    min-width: 216px;
+    padding: 16px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 19px 34px 56.4px 3.6px rgba(0, 0, 0, 0.24);
+}
+
+body:not(.touch-device) .popup-wrapper .popup-main:active:focus,
+body:not(.touch-device) .popup-wrapper .popup-main:focus {
+    position: absolute;
+}
+
+.popup-wrapper button,
+.popup-wrapper button::before {
+    display: block;
+}
+
+.popup-wrapper .popup-main .content-holder {
+    display: inline-block;
+    margin-top: 23px;
+    width: 100%;
+    text-align: center;
+}
+
+.popup-wrapper .popup-main .content-holder .text-node {
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.popup-wrapper .popup-main .buttons-holder {
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.popup-wrapper .popup-main .buttons-holder button {
+    border-radius: 2px;
+    background-color: #666666;
+    box-shadow: 1px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+    min-width: 72px;
+    padding: 6px 12px 6px 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+body:not(.touch-device) .popup-wrapper .popup-main .buttons-holder button:hover {
+    background-color: #515151 !important;
+}
+
+body:not(.touch-device) .popup-wrapper .popup-main .buttons-holder button:active,
+body .popup-wrapper .popup-main .buttons-holder button:active {
+    background-color: #3d3d3d !important;
+}
+
+.popup-wrapper .popup-main .buttons-holder button .label-container {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+    /*National Font Fix*/
+    margin-top: -3px;
+}
+
+.popup-wrapper .popup-main .buttons-holder button i {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.popup-wrapper .popup-main .buttons-holder button i::before {
+    display: block;
+}
+
+.popup-wrapper .popup-main .close-icon-holder {
+    position: absolute;
+    right: 16px;
+    color: #505050;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.popup-wrapper .popup-main .close-icon-holder button.icon-close {
+    border-radius: 50%;
+    padding: 3px;
+}
+
+body:not(.touch-devices) .popup-wrapper .popup-main .close-icon-holder button.icon-close:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.popup-wrapper .popup-main .content-holder .pretext-icon-holder {
+    font-size: 36px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: middle;
+    user-select: none;
+    -ms-user-select: none;
+}
+
+.popup-wrapper .popup-main .content-holder .pretext-icon-holder span {
+    border-radius: 50%;
+    color: #fff;
+    user-select: none;
+    -ms-user-select: none;
+}
+
+.popup-wrapper .popup-main .content-holder .pretext-icon-holder span::before {
+    display: block;
+}

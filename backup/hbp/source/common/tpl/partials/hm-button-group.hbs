@@ -1,0 +1,19 @@
+<div class="menu-item-container button-group container-fluid custom-fluid no-pad"
+    aria-valuemin="50" aria-valuemax="200" aria-valuetext="{{this.percent}}% Font size" aria-valuenow="{{this.percent}}">
+    <div class="row no-marg">
+        <div class="text-container col-xs-12 col-md-12 no-pad text-center" id="btn-group-text-container-{{this.percent}}">{{this.text}}</div>
+    </div>
+    <div class="row no-marg button-row">
+        <div class="buttons-container minus-button-holder col-xs-4 col-md-4 no-pad">
+            <button class="minus-button button" title="Reduce text size" aria-label="Reduce text size">
+                <i class="icon-minus" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="text-indicator col-xs-4 col-md-4 no-pad" aria-live="assertive">{{this.percent}}%</div>
+        <div class="buttons-container plus-button-holder col-xs-4 col-md-4 no-pad">
+            <button class="plus-button button" title="Increase text size" aria-label="Increase text size">
+                <i class="icon-plus" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+.skill-controls-main {
+    height: 146px;
+}
+
+.skill-controls-main .top-band {
+    height: 40px;
+    position: relative;
+    background-color: #b01b3e;
+    color: #fff;
+}
+
+.skill-controls-main .top-band .aligner {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+}
+
+.skill-controls-main .top-band .left-container {
+    display: inline-block;
+    height: 100%;
+}
+
+.skill-controls-main .top-band .left-container .counters-holder {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.skill-controls-main .top-band .left-container button,
+.skill-controls-main .top-band .right-container button {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #b01b3e;
+    font-size: 24px;
+}
+
+.skill-controls-main .top-band .left-container button::before,
+.skill-controls-main .top-band .right-container button::before {
+    display: block;
+}
+
+.skill-controls-main .top-band .right-container {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.skill-controls-main .top-band .right-container .hint-holder {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skill-controls-main.no-hint .top-band .right-container .hint-holder {
+    display: none;
+}
+
+.skill-controls-main .top-band .right-container .divider {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.12);
+    width: 1px;
+    height: 32px;
+}
+
+.skill-controls-main.no-hint .top-band .right-container .divider.divider-1 {
+    display: none;
+}
+
+.skill-controls-main .question-band {
+    border-width: 1px;
+    border-color: #b01b3e;
+    border-style: solid;
+    background-color: #f3f5f7;
+    height: 104px;
+}

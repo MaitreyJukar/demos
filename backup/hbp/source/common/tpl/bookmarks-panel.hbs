@@ -1,0 +1,22 @@
+{{#each this}}
+<div class="bookmark-item fluid-container">
+    <div class="row custom-row">
+        <div class="col-xs-12 col-md-12 col-custom-25px">{{this.pageNo}}</div>
+        <div class="col-xs-12 col-md-12 col-custom--25">
+            <div class="item-text">
+                <a href="#{{this.hash}}">{{{this.text}}}</a>
+            </div>
+            <div class="item-path">
+                {{#each this.tabs}}
+                <div class="breadcrumbs-link">
+                    <a href="#{{this.hash}}" class='inactive-breadcrumbs'>{{this.text}}</a>
+                </div>
+                {{#ifNotLast ../tabs @index}}
+                <div class="breadcrumbs-seperator"> <i class="icon-arrow-right" aria-hidden="true"></i> </div>
+                {{/ifNotLast}} {{/each}}
+            </div>
+            <button class="remove-item pull-right" data-index="{{@index}}" title="Delete" aria-label="Delete the bookmark"><i class="icon-delete" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
+{{/each}}

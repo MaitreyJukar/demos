@@ -1,0 +1,83 @@
+{
+    "popupModels": [
+        {
+            "text": "Correct",
+            "textColor": "#50812c",
+            "pretextIcon": "icon-check",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "popup-next-button",
+                    "label": "NEXT",
+                    "icon": "icon-filled-arrow-right",
+                    "isIconOnLeft": false,
+                    "bgColor": "#666666"
+                }
+            ]
+        },
+        {
+            "text": "Incorrect",
+            "textColor": "#e32926",
+            "pretextIcon": "icon-close",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "popup-retry-button",
+                    "label": "RETRY",
+                    "icon": "icon-replay",
+                    "isIconOnLeft": true,
+                    "bgColor": "#666666"
+                }
+            ]
+        },
+        {
+            "hasCloseBtn": false,
+            "text": "You have completed the task.",
+            "textColor": "#505050",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "popup-complete-ok-button",
+                    "label": "OK",
+                    "bgColor": "#b01b3e"
+                }
+            ]
+        },
+        {
+            "hasCloseBtn": true,
+            "text": "Are you sure you want to retry?<br/>Your current progress will be lost.",
+            "textColor": "#505050",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "retry-confirm-yes-button",
+                    "label": "Yes",
+                    "bgColor": "#666666"
+                },
+                {
+                    "id": "retry-confirm-no-button",
+                    "label": "No",
+                    "bgColor": "#666666"
+                }
+            ]
+        }
+    ],
+    "popupViews": [
+        {
+            "el": ".kepler-window.kepler-window-skill .correct-popup-holder",
+            "id": "correct-popup"
+        },
+        {
+            "el": ".kepler-window.kepler-window-skill .incorrect-popup-holder",
+            "id": "incorrect-popup"
+        },
+        {
+            "el": ".kepler-window.kepler-window-skill .task-complete-popup-holder",
+            "id": "task-complete-popup"
+        },
+        {
+            "el": ".kepler-window.kepler-window-skill .retry-confirmation-popup-holder",
+            "id": "retry-confirmation-popup"
+        }
+    ]
+}

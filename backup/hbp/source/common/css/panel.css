@@ -1,0 +1,253 @@
+/* Panel Styles Start */
+
+.panel-container {
+    position: relative;
+    height: 100%;
+    font-size: 16px;
+}
+
+.panel-breadcrumbs-container {
+    height: 50px;
+    font-size: 18px;
+    line-height: 1;
+    background-color: #F3F5F7;
+    color: #505050;
+    box-shadow: 1px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding: 7px 15px;
+    position: relative;
+}
+
+.panel-search-container {
+    height: 50px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    padding: 10px 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.panel-main-container {
+    height: calc(100% - 100px);
+    height: -webkit-calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+    padding-top: 15px;
+    border-top: rgba(127, 127, 127, 0.3) 2px solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#glossary-container .panel-main-container a {
+    cursor: pointer;
+}
+
+.panel-main-container .bookmark-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.panel-main-container .bookmark-item .item-text a {
+    color: #b01b3e;
+    text-decoration: none;
+}
+
+body:not(.touch-device) .panel-main-container .bookmark-item .item-text a:hover,
+body:not(.touch-device) .panel-main-container .bookmark-item .item-text a:focus {
+    color: #9a1635;
+    text-decoration: underline;
+}
+
+.panel-main-container .bookmark-item .item-text a:active {
+    color: #81102b;
+}
+
+.panel-main-container .item-path>* {
+    position: relative;
+    top: -10px;
+}
+
+.panel-main-container .breadcrumbs-link {
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 2.462rem;
+}
+
+.panel-main-container .breadcrumbs-link a {
+    color: #737373;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.panel-main-container .breadcrumbs-seperator {
+    color: #737373;
+    display: inline-block;
+    font-size: 1.429em;
+    line-height: 2.462rem;
+}
+
+.panel-main-container .icon-arrow-right:before {
+    top: 0.34em;
+    position: relative;
+}
+
+.panel-main-container .breadcrumbs-link .inactive-breadcrumbs {
+    color: #737373;
+    /* pointer-events: none; */
+    /* cursor: default; */
+}
+
+body:not(.touch-devices) .panel-main-container .breadcrumbs-link .inactive-breadcrumbs:hover,
+body:not(.touch-devices) .panel-main-container .breadcrumbs-link .inactive-breadcrumbs:focus {
+    text-decoration: underline;
+}
+
+.panel-main-container .panel-item {
+    padding: 0 15px;
+    padding-bottom: 8px;
+}
+
+.panel-main-container .panel-item .alphabet-holder {
+    color: #ababab;
+    font-size: 1.142em;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.panel-main-container .panel-item .item-title-holder {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.panel-main-container .hide-section,
+.panel-main-container .hide-alpha-section {
+    display: none;
+}
+
+.panel-main-container .highlight-section {
+    background-color: #ff0;
+}
+
+.panel-main-container .panel-item .item-text-holder {
+    font-size: 1em;
+    margin-bottom: 24px;
+}
+
+.panel-wrapper nav i {
+    font-size: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.panel-wrapper nav>i {
+    line-height: 34px;
+}
+
+.panel-wrapper nav .panel-title {
+    font-size: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 34px;
+}
+
+.panel-wrapper nav .close-icon-holder {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 12px;
+}
+
+.panel-wrapper nav .close-icon-holder button.panel-button {
+    position: relative;
+    bottom: 2px;
+}
+
+body:not(.touch-device) .panel-wrapper button.panel-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.panel-wrapper button.panel-button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.panel-wrapper button.panel-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.panel-wrapper .panel-search-container input {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    width: calc(100% - 35px);
+    width: -webkit-calc(100% - 35px);
+    width: -moz-calc(100% - 35px);
+    padding: 0 2px;
+}
+
+.panel-wrapper .panel-search-container .search-button-container {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 12px;
+    top: 55px;
+}
+
+.panel-wrapper .panel-search-container .search-button-container .icon-search {
+    height: 24px;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 34px;
+}
+
+mark {
+    background: #ff0;
+    padding: 0;
+}
+
+.alphabet-holder h3 {
+    line-height: 1.42857143;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.item-title-holder h4 {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+
+/* Panel Styles  End */
+
+@media screen and (min-width: 1025px) {
+    .panel-wrapper {
+        float: right;
+        width: calc(100% - 333px);
+        width: -webkit-calc(100% - 333px);
+        width: -moz-calc(100% - 333px);
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #content.has-extra-padding .panel-container {
+        padding-bottom: 50px;
+    }
+}

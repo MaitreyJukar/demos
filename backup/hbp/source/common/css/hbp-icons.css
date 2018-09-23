@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "hbp-icons";
+    src: url('./../font/hbp-icons.eot');
+    src: url('./../font/hbp-icons.eot?#iefix') format('eot'),
+    url('./../font/hbp-icons.woff2') format('woff2'),
+    url('./../font/hbp-icons.woff') format('woff'),
+    url('./../font/hbp-icons.ttf') format('truetype'),
+    url('./../font/hbp-icons.svg#hbp-icons') format('svg');
+}
+
+[class^="icon-"]:before {
+    font-family: "hbp-icons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+}
+
+
+.icon-help:before {
+    content: "\E001";
+}
+
+.icon-arrow-left:before {
+    content: "\E002";
+}
+
+.icon-hint-off:before {
+    content: "\E003";
+}
+
+.icon-back:before {
+    content: "\E004";
+}
+
+.icon-arrow-right:before {
+    content: "\E005";
+}
+
+.icon-hint-on:before {
+    content: "\E006";
+}
+
+.icon-bookmarked:before {
+    content: "\E007";
+}
+
+.icon-bars:before {
+    content: "\E008";
+}
+
+.icon-bookmark:before {
+    content: "\E009";
+}
+
+.icon-list:before {
+    content: "\E00A";
+}
+
+.icon-dashboard:before {
+    content: "\E00B";
+}
+
+.icon-check:before {
+    content: "\E00C";
+}
+
+.icon-close:before {
+    content: "\E00D";
+}
+
+.icon-closed-caption:before {
+    content: "\E00E";
+}
+
+.icon-pause:before {
+    content: "\E00F";
+}
+
+.icon-exercise:before {
+    content: "\E010";
+}
+
+.icon-delete:before {
+    content: "\E011";
+}
+
+.icon-document:before {
+    content: "\E012";
+}
+
+.icon-ellipses:before {
+    content: "\E013";
+}
+
+.icon-enter:before {
+    content: "\E014";
+}
+
+.icon-practice:before {
+    content: "\E015";
+}
+
+.icon-half-screen:before {
+    content: "\E016";
+}
+
+.icon-full-screen:before {
+    content: "\E017";
+}
+
+.icon-glossary:before {
+    content: "\E018";
+}
+
+.icon-filled-arrow-right:before {
+    content: "\E019";
+}
+
+.icon-filled-arrow-left:before {
+    content: "\E01A";
+}
+
+.icon-reset:before {
+    content: "\E01B";
+}
+
+.icon-minus:before {
+    content: "\E01C";
+}
+
+.icon-logout:before {
+    content: "\E01D";
+}
+
+.icon-launch-scratchpad-keplerskill:before {
+    content: "\E01E";
+}
+
+.icon-play:before {
+    content: "\E01F";
+}
+
+.icon-plus:before {
+    content: "\E020";
+}
+
+.icon-print:before {
+    content: "\E021";
+}
+
+.icon-replay:before {
+    content: "\E022";
+}
+
+.icon-search:before {
+    content: "\E023";
+}
+
+.icon-speed-1:before {
+    content: "\E024";
+}
+
+.icon-transcript:before {
+    content: "\E025";
+}
+
+.icon-video:before {
+    content: "\E026";
+}
+
+.icon-volume-off:before {
+    content: "\E027";
+}
+
+.icon-volume-up:before {
+    content: "\E028";
+}

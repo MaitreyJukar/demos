@@ -1,0 +1,131 @@
+<div id="header"></div>
+<div id="menu-holder" style="display: none;"></div>
+<div id="content">
+	<div id="side-menu" class="side-menu-container hide-menu"></div>
+	<div class="side-menu-modal hide-modal"></div>
+	<div id="main-content-holder">
+		<nav id="breadcrumbs-container" class="custom-scrollbar"></nav>
+		<section class="pageFadeIn animated slow scrollable content-section custom-scrollbar" tabindex="0" role="main">
+			<div class="page-holder  pageFadeIn animated">
+				<div class="title-holder">
+					<div class="title-container">
+						<span class="title-icon">
+							<i class="icon-document"></i>
+						</span>
+						<span class="serial-no">{{this.serial}}</span>
+						<h2 class="title-text">{{this.title}}</h2>
+					</div>
+				</div>
+				<div class="main-section">
+					<div class="top-nodes"></div>
+					<div class="video-holder">
+						<div class="kepler-window kepler-window-video f-left" style="display: none;">
+							<div class="iframe-controlls-wrapper">
+								<div id="video-wrapper">
+									<iframe class="kepler-video" scrolling="no" src="{{keplerVideoIframeUrl}}" tabindex="-1" title="Video"></iframe>
+									<div class="video-overlay"></div>
+									<div class="video-end-overlay"></div>
+									<div class="replay-icon">
+										<button class="icon-replay" data-target="kepler-video" data-json="{{this.dataJson}}" aria-label="Replay" title="Replay"></button>
+									</div>
+								</div>
+								<div id="closed-caption">
+									<div class="cc-container">
+										<div class="cc-text-container">
+											<span class="cc-text"></span>
+										</div>
+									</div>
+								</div>
+								<div class="video-slider">
+									<div class="start-seekbar"></div>
+									<div id="slider"></div>
+									<div class="end-seekbar"></div>
+								</div>
+								<div id="video-player-controls"></div>
+							</div>
+						</div><div class="node-main-content-container video-scratchpad-holder row no-marg f-left" style="display: none;">
+							<div class="label-text col-xs-12 col-md-12 no-pad">Try for yourself.</div>
+							<div class="button-holder col-xs-12 col-md-12 no-pad">
+								<button class="btn launch-btn scratchpad-launch-btn" data-target="kepler-scratchpad" data-json="{{this.dataJson}}" data-use-custom-title="{{this.useCustomTitle}}">
+									<i class="icon-launch-scratchpad-keplerskill" id="launcher-icon"></i>
+									<span>LAUNCH SCRATCHPAD</span>
+									<i class="icon-filled-arrow-right"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-nodes"></div>
+				</div>
+				<div class="pull-right">
+					<span class="icon-container">
+						{{#if this.bookmark}}
+						<button class="icon-bookmarked" tabindex="0" aria-label="{{bookmarkedAccText}}" data-toggle="tooltip" title="Bookmark" data-placement="bottom"></button>
+						{{else}}
+						<button class="icon-bookmark" tabindex="0" aria-label="{{unbookmarkedAccText}}" data-toggle="tooltip" title="Bookmark" data-placement="bottom"></button>
+						{{/if}}
+					</span>
+				</div>
+			</div>
+			<div class="page-nav-items-holder">
+			</div>
+			<div class="page-loader" style="display:none;" >
+				<img src="content/common/media/images/page-loader.gif"/>
+			</div>
+		</section>
+		<footer></footer>
+	</div>
+	<div class="footer-menu-parent-wrapper mobile-footer-menu">
+		<div class="footer-menu-wrapper" style="display: none;">
+			<div class="footer-menu-container slideUp animated"></div>
+		</div>
+	</div>
+	<div id="bookmarks-container" style="display: none;" class="panel-container"></div>
+	<div id="glossary-container" style="display: none;" class="panel-container"></div>
+</div>
+<div class="kepler-window kepler-window-scratchpad show" style="">
+	<div class="header-back">
+		<button class="back-button-wrapper" aria-label="Back to lesson" title="Back to lesson">
+			<span class="icon-back"></span>
+			<span class="back-label">BACK TO<br/> LESSON</span>
+		</button>
+		<div class="title-wrapper">
+			<div class="left scroll-shadow-box"></div>		
+			<div class="iframe-title" tabindex="0"></div>
+			<div class="right scroll-shadow-box"></div>
+		</div>
+		<div class="abs-right">
+			<div class="divider divider-4"></div>
+			<button class="help-holder"><i class="icon-help"></i><span class="help-text"> HELP</span><div class="aligner"></div></button>
+		</div>
+	</div>
+	<div class="wrapper-iframe">
+		<iframe class="kepler-scratchpad" src="{{keplerScratchPadIframeUrl}}" scrolling="no" title="Scratchpad" tabindex="-1"></iframe>
+	</div>
+	<div class="scratchpad-help-dialog-holder"></div>
+</div>
+<div class="kepler-window kepler-window-skill" style="display: none;">
+	<div class="header-back">
+		<button class="back-button-wrapper" aria-label="Back to lesson" title="Back to lesson">
+			<span class="icon-back"></span>
+			<span class="back-label">BACK TO<br/> LESSON</span>
+		</button>
+		<div class="title-wrapper">
+			<div class="left scroll-shadow-box"></div>		
+			<div class="iframe-title" tabindex="0"></div>
+			<div class="right scroll-shadow-box"></div>
+		</div>
+	</div>
+	<div class="wrapper-iframe hide-hint">
+		<iframe class="kepler-skill" src="{{keplerSkillIframeUrl}}" scrolling="no" title="Kepler skill" tabindex="-1"></iframe>
+		<div class="hint-border vert top left"></div>
+		<div class="hint-border vert top right"></div>
+		<div class="hint-border horiz top left"></div>
+		<div class="hint-border horiz bottom right"></div>
+	</div>
+	<div class="incorrect-popup-holder"></div>
+	<div class="correct-popup-holder"></div>
+	<div class="task-complete-popup-holder"></div>
+	<div class="retry-confirmation-popup-holder"></div>
+	<div class="assessment-help-dialog-holder"></div>
+	<div class="training-help-dialog-holder"></div>
+</div>

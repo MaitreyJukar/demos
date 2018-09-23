@@ -1,0 +1,6 @@
+<li class="{{#if this.isActive}}active-item{{/if}}">
+    <a href="#{{this.hash}}" class="row menu-link no-marg" role="listitem" aria-labelledby="list-item{{this.idPrefix}}-{{this.index}}">
+        <div class="col-md-1 col-xs-1 col-cust-30 index-col no-pad">{{this.index}}</div>
+        <div class="col-md-11 col-xs-11 col-cust-100-30 text-col no-pad" id="list-item{{this.idPrefix}}-{{this.index}}">{{this.text}}</div>
+    </a>
+</li>

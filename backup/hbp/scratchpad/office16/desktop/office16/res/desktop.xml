@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<parentnode>
+
+<menu>
+    <!--Desktop right click menu-->
+    <frameitem id="1" name="desktop right click menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1101" name="View" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" />
+        <frameitem id="1102" name="Sort by" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="3" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1103" name="Refresh" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1104" name="" role="28" width="202" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="26"/>
+        <frameitem id="1105" name="Paste" role="29" width="202" height="22" cssclass="" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1106" name="Paste shortcut" role="29" width="202" height="22" cssclass="" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1107" name="" role="28" width="210" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="26"/>
+        <frameitem id="1108" name="New" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="4" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1109" name="" role="28" width="210" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="26"/>
+        <frameitem id="1110" name="Screen resolution" role="29" width="202" height="22" cssclass="dsk_rt_scrresol" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1111" name="Personalize" role="29" width="202" height="22" cssclass="dsk_rt_personalize" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+    </frameitem>
+    <!--Desktop right click menu>View sub menu -->
+    <frameitem id="2" name="view sub menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1201" name="Large icons" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16" />
+        <frameitem id="1202" name="Medium icons" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16" />
+        <frameitem id="1203" name="Small icons" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="1204" name="" role="28" width="202" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="26"/>
+        <frameitem id="1205" name="Auto arrange icons" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="9" checked="1" imagesize="16,16" />
+        <frameitem id="1206" name="Align icons to grid" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="9" imagesize="16,16" />
+        <frameitem id="1207" name="" role="28" width="210" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="26" />
+        <frameitem id="1208" name="Show desktop icons" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="9" checked="1" imagesize="16,16" />
+    </frameitem>
+    <!--Desktop right click menu->Sort by sub menu -->
+    <frameitem id="3" name="Sort by sub menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1301" name="Name" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"  />
+        <frameitem id="1302" name="Size" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="1303" name="Item type" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16"/>
+        <frameitem id="1304" name="Date modified" role="29" width="202" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+    </frameitem>
+    <!--Desktop right click menu->New sub menu -->
+    <frameitem id="4" name="New sub menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1401" name="Folder" role="29" width="254" height="22" cssclass="dsk_rt_folder" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" />
+        <frameitem id="1402" name="Shortcut" role="29" width="254" height="22" cssclass="dsk_rt_shortcut" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1403" name="" role="28" width="254" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="26"/>
+        <frameitem id="1404" name="Bitmap image" role="29" width="254" height="22" cssclass="dsk_rt_bmpimg" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1405" name="Contact" role="29" width="254" height="22" cssclass="dsk_rt_contact" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1406" name="Microsoft Word Document" role="29" width="254" height="22" cssclass="dsk_rt_microwddoc" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1407" name="Journal Document" role="29" width="254" height="22" cssclass="dsk_rt_jrldoc" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1408" name="OpenDocument Drawing" role="29" width="254" height="22" cssclass="dsk_rt_opendocdraw" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1409" name="Microsoft PowerPoint Presentation" role="29" width="254" height="22" cssclass="dsk_rt_microppt" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1410" name="WinRAR archive" role="29" width="254" height="22" cssclass="dsk_rt_winrararch" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1411" name="Rich Text Format" role="29" width="254" height="22" cssclass="dsk_rt_richtextfor" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1412" name="Text Document" role="29" width="254" height="22" cssclass="dsk_rt_txtdoc" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1413" name="Microsoft Excel Worksheet" role="29" width="254" height="22" cssclass="dsk_rt_microexcel" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1414" name="WinRAR ZIP archive" role="29" width="254" height="22" cssclass="dsk_rt_winrarzipparch" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+    </frameitem>
+    <!--IE frequent tab->Right click menu -->
+    <frameitem id="5" name="IE frequent tab->Right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""><frameitem id="1501" name="Back" role="29" width="260" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" />
+        <frameitem id="1502" name="Forward" role="48" width="260" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1503" name="&lt;pre&gt;Go to copied address            Ctrl+Shift+L" role="48" width="260" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+    </frameitem>
+    <!--IE 11 Rightclick on alt menu Tab  -->
+    <frameitem id="6" name="IE 11 Rightclick on alt menu Tab" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1601" name="Menu bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="1602" name="Favorites bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="1603" name="Command bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="1604" name="Status bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="1605" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="1606" name="Lock the toolbars" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="1607" name="Show tabs on a seperate row" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+    </frameitem>
+    <!--Metro ie 11> address bar right click menu-->
+    <frameitem id="7" name="desktop ie 11 address bar right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1701" name="Cut" role="48" width="92" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="1702" name="Copy" role="48" width="92" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" />
+    </frameitem>
+    <!--Metro ie 11> Frequent right click menu-->
+    <frameitem id="8" name="Metro ie 11 Frequent right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1801" name="Open in new tab" role="48" width="153" height="54" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="1802" name="Hide sites" role="48" width="153" height="54" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" />
+        <frameitem id="1803" name="Remove" role="48" width="153" height="54" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" />
+    </frameitem>
+    <!--Metro ie 11> default favourites tab right click menu-->
+    <frameitem id="9" name="Metro ie 11 default favourites tab right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="1901" name="Duplicate tab" role="48" width="131" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+    </frameitem>
+    <!--Metro ie 11> Favourites drop down menu-->
+    <frameitem id="10" name="Metro ie 11 favourites drop down menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2001" name="All" role="48" width="140" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="2002" name="Favourites Bar" role="48" width="140" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+    </frameitem>
+    <!--Metro ie 11> Favourites right click menu-->
+    <frameitem id="11" name="Metro ie 11 Favourites right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2101" name="Open in new tab" role="48" width="153" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" menu_item_class="class_metro_menuitem"/>
+        <frameitem id="2102" name="Edit" role="48" width="153" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem"/>
+        <frameitem id="2103" name="Remove" role="48" width="153" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem"/>
+    </frameitem>
+    <!--Metro start list right click  menu-->
+    <frameitem id="12" name="Metro start list right click  menu" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2201" name="Close" role="29" width="113" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Taskbar start right click menu-->
+    <frameitem id="13" name="Taskbar start right click menu" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2301" name="Programs and Features" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2302" name="Mobility Centre" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2303" name="Power Options" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2304" name="Event Viewer" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2305" name="System" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2306" name="Device Manager" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2307" name="Network Connection" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2308" name="Disk Management" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2309" name="Computer Management" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2300" name="Command Prompt" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="23011" name="seperator" role="28" width="0" height="0" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="23012" name="Task Manager" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="23013" name="Control Panel" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="23014" name="File Explorer" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="23015" name="Search" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="23016" name="Run" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="23017" name="seperator" role="28" width="0" height="0" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="23018" name="Shut down or sign out" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="14" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="23019" name="Desktop" role="29" width="231" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!-- Shut down or sign out menu -->
+    <frameitem id="14" name="Shut down or sign out menu" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2401" name="Sign out" role="29" width="141" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2402" name="Sleep" role="29" width="141" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2403" name="Shut down" role="29" width="141" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2404" name="Restart" role="29" width="141" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Metro UI User name menu-->
+    <frameitem id="15" name="User name menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2501" name="Change account picture" role="48" width="274" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="2502" name="Lock" role="48" width="274" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" />
+        <frameitem id="2503" name="Sign out" role="48" width="274" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" />
+    </frameitem>
+    <frameitem id="16" name="Title Bar rightclick menu on DB" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2601" name="Restore" role="29" width="175" height="22" cssclass="ie_rt_titlebar_restore" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2602" name="Move" role="29" width="175" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2603" name="Size" role="29" width="175" height="22" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2604" name="Minimize" role="29" width="175" height="22" cssclass="ie_rt_titlebar_minimize" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2605" name="Maximize" role="29" width="175" height="22" cssclass="ie_rt_titlebar_maximize" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="2606" name="" role="28" width="142" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="2607" name="&lt;pre&gt;Close                     Alt+F4" role="29" width="175" height="22" cssclass="ie_rt_titlebar_close" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_text_bold" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Close Alt+F4"/>
+    </frameitem>
+    <!--Search Pane Option Right Click menu-->
+    <frameitem id="17" name="User name menu" pane_menu="1" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2701" name="Unpin from Start" role="48" width="172" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="2702" name="Unpin from Taskbar" role="48" width="172" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="2703" name="Uninstall" role="48" width="172" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+    </frameitem>
+    <!--Metro ie 11> Add Favourites right click menu-->
+    <frameitem id="18" name="Metro ie 11 add favourites right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2801" name="Cut" role="48" width="92" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" menu_item_class="class_metro_menuitem"/>
+        <frameitem id="2802" name="Copy" role="48" width="92" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem" />
+    </frameitem>
+    <!--Metro ie 11> Suggestion right click menu-->
+    <frameitem id="19" name="Metro ie 11 Favourites pane right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="2901" name="Open in new tab" role="48" width="153" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" menu_item_class="class_metro_menuitem"/>
+        <frameitem id="2902" name="Remove" role="48" width="153" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem" />
+    </frameitem>
+    <!--Metro ie 11> tabs right click menu-->
+    <frameitem id="20" name="Metro ie 11 Favourites pane right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3001" name="Open tab in new window" role="48" width="209" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" menu_item_class="class_metro_menuitem"/>
+        <frameitem id="3002" name="Close other tabs" role="48" width="209" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem" />
+        <frameitem id="3003" name="Duplicate tab" role="48" width="209" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem" />
+    </frameitem>
+    <!--Metro ie 11> tabs right click menu-->
+    <frameitem id="21" name="Metro ie 11 Favourites pane right click menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3101" name="Open tab in new window" role="48" width="209" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" menu_item_class="class_metro_menuitem"/>
+        <frameitem id="3102" name="Close other tabs" role="48" width="209" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem" />
+        <frameitem id="3103" name="Duplicate tab" role="48" width="209" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" menu_item_class="class_metro_menuitem" />
+    </frameitem>
+    <!--Metro ie 11> Address Bar Setting left Click menu-->
+    <frameitem id="22" name="User name menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3201" name="Get app for this site" role="48" width="178" height="40" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3202" name="Find on page" role="48" width="178" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3203" name="View in the desktop" role="48" width="178" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3204" name="View downloads" role="48" width="178" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+    </frameitem>
+    <!--Metro ie 11> Tab tools left Click menu-->
+    <frameitem id="23" name="User name menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3301" name="New InPrivate tab" role="48" width="170" height="40" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3302" name="Reopen closed tab" role="48" width="170" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+    </frameitem>
+    <!--Snipping Toools >New Menu -->
+    <frameitem id="77" name="Snipping Tool New Option Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8701" name="&lt;u&gt;F&lt;/u&gt;ree-form Snip" role="29" width="173" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked = "1" imagesize="16,16"/>
+        <frameitem id="8702" name="&lt;u&gt;R&lt;/u&gt;ectangular Snip" role="29" width="173" height="22" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="8703" name="&lt;u&gt;W&lt;/u&gt;indow Snip" role="29" width="173" height="22" cssclass="" enable="1" kbdshortcut="w" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="8704" name="Full-&lt;u&gt;s&lt;/u&gt;creen Snip" role="29" width="173" height="22" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+    </frameitem>
+    <!--Snipping Toools >File Menu -->
+    <frameitem id="34" name="Snipping Tool File Option Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="4401" name="&lt;pre&gt;&lt;u&gt;N&lt;/u&gt;ew Snip                 Ctrl+N" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="New Snip"/>
+        <frameitem id="4402" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="4403" name="&lt;pre&gt;Save &lt;u&gt;A&lt;/u&gt;s...                 Ctrl+S" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Save As"/>
+        <frameitem id="4404" name="Send &lt;u&gt;T&lt;/u&gt;o" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="35" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="4405" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="4406" name="E&lt;u&gt;x&lt;/u&gt;it" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="x" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Snipping Toools >File >Send To Menu -->
+    <frameitem id="35" name="Snipping Tool File Send To Option Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="4501" name="&lt;u&gt;E&lt;/u&gt;mail Recipient" role="29" width="251" height="22" cssclass="" enable="1" kbdshortcut="e" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="4502" name="Email Recipient (as &lt;u&gt;a&lt;/u&gt;ttachment)" role="29" width="251" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Snipping Toools >Edit Menu -->
+    <frameitem id="36" name="Snipping Tool Edit Option Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="4601" name="&lt;pre&gt;&lt;u&gt;C&lt;/u&gt;opy            Ctrl+C" role="29" width="147" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Copy"/>
+    </frameitem>
+    <!--Snipping Toools >Tools Menu -->
+    <frameitem id="37" name="Snipping Tool Tools Option Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="4701" name="&lt;u&gt;P&lt;/u&gt;en" role="29" width="144" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="38" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="4702" name="&lt;u&gt;H&lt;/u&gt;ighlighter" role="29" width="144" height="22" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="4703" name="&lt;u&gt;E&lt;/u&gt;raser" role="29" width="144" height="22" cssclass="" enable="1" kbdshortcut="e" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="4704" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="4705" name="&lt;u&gt;O&lt;/u&gt;ptions..." role="29" width="144" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Snipping Toools >Tools >PenMenu -->
+    <frameitem id="38" name="Snipping Tool Tools Pen Option Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="4801" name="&lt;u&gt;R&lt;/u&gt;ed Pen" role="29" width="149" height="22" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16"/>
+        <frameitem id="4802" name="&lt;u&gt;B&lt;/u&gt;lue Pen" role="29" width="149" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="4803" name="B&lt;u&gt;l&lt;/u&gt;ack Pen" role="29" width="149" height="22" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="4804" name="Custom &lt;u&gt;P&lt;/u&gt;en" role="29" width="149" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="4805" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="4806" name="&lt;u&gt;C&lt;/u&gt;ustomize..." role="29" width="149" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+    </frameitem>
+    <!--Snipping Toools >Edit Menu -->
+    <frameitem id="39" name="Snipping Tool Help Option Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="4901" name="&lt;pre&gt;&lt;u&gt;H&lt;/u&gt;elp              F1" role="29" width="129" height="22" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Help F1"/>
+        <frameitem id="4902" name="&lt;u&gt;A&lt;/u&gt;bout" role="29" width="129" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 File Menu -->
+    <frameitem id="40" name="IE11 File Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5001" name="&lt;pre&gt;New &lt;u&gt;t&lt;/u&gt;ab                                  Ctrl+T" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="New tab"/>
+        <frameitem id="5002" name="&lt;pre&gt;Duplicate ta&lt;u&gt;b&lt;/u&gt;                         Ctrl+K" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Duplicate tab"/>
+        <frameitem id="5003" name="&lt;pre&gt;&lt;u&gt;N&lt;/u&gt;ew window                         Ctrl+N" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="New window"/>
+        <frameitem id="5004" name="New sess&lt;u&gt;i&lt;/u&gt;on" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5005" name="&lt;pre&gt;&lt;u&gt;O&lt;/u&gt;pen...                                    Ctrl+O" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Open"/>
+        <frameitem id="5006" name="E&lt;u&gt;d&lt;/u&gt;it" role="29" width="226" height="22" cssclass="" enable="0" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5007" name="&lt;u&gt;S&lt;/u&gt;ave" role="29" width="226" height="22" cssclass="" enable="0" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5008" name="&lt;pre&gt;Save &lt;u&gt;a&lt;/u&gt;s...                                Ctrl+S" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Save as"/>
+        <frameitem id="5009" name="&lt;pre&gt;&lt;u&gt;C&lt;/u&gt;lose tab                               Ctrl+W" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Close tab"/>
+        <frameitem id="5010" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5011" name="Page set&lt;u&gt;u&lt;/u&gt;p..." role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="u" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5012" name="&lt;pre&gt;&lt;u&gt;P&lt;/u&gt;rint...                                      Ctrl+P" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Print"/>
+        <frameitem id="5013" name="Print pre&lt;u&gt;v&lt;/u&gt;iew..." role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5014" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5015" name="S&lt;u&gt;e&lt;/u&gt;nd" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="e" menuno="41" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5016" name="I&lt;u&gt;m&lt;/u&gt;port and export..." role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5017" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5018" name="P&lt;u&gt;r&lt;/u&gt;operties" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5019" name="&lt;u&gt;W&lt;/u&gt;ork offline" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="w" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5020" name="E&lt;u&gt;x&lt;/u&gt;it" role="29" width="226" height="22" cssclass="" enable="1" kbdshortcut="x" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 File > Send subMenu -->
+    <frameitem id="41" name="IE11 File Menu Send subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5101" name="&lt;u&gt;P&lt;/u&gt;age by e-mail..." role="29" width="189" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5102" name="&lt;u&gt;L&lt;/u&gt;ink by e-mail..." role="29" width="189" height="22" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5103" name="&lt;u&gt;S&lt;/u&gt;hortcut to Desktop" role="29" width="189" height="22" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 Edit Menu -->
+    <frameitem id="42" name="IE11 Edit Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5201" name="&lt;pre&gt;Cu&lt;u&gt;t&lt;/u&gt;                                         Ctrl+X" role="29" width="219" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Cut"/>
+        <frameitem id="5202" name="&lt;pre&gt;&lt;u&gt;C&lt;/u&gt;opy                                      Ctrl+C" role="29" width="219" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Copy"/>
+        <frameitem id="5203" name="&lt;pre&gt;&lt;u&gt;P&lt;/u&gt;aste                                     Ctrl+V" role="29" width="219" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Paste"/>
+        <frameitem id="5204" name="" role="28" width="219" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5205" name="&lt;pre&gt;Select &lt;u&gt;a&lt;/u&gt;ll                               Ctrl+A" role="29" width="219" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Select all"/>
+        <frameitem id="5206" name="" role="28" width="219" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5205" name="&lt;pre&gt;&lt;u&gt;F&lt;/u&gt;ind on this page...             Ctrl+F" role="29" width="219" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Find on this page"/>
+    </frameitem>
+    <!--IE11 View Menu -->
+    <frameitem id="43" name="IE11 View Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5301" name="&lt;u&gt;T&lt;/u&gt;oolbars" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="44" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5302" name="&lt;pre&gt;&lt;u&gt;Q&lt;/u&gt;uick tabs                                            Ctrl+Q" role="29" width="273" height="22" cssclass="" enable="0" kbdshortcut="q" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Quick tabs"/>
+        <frameitem id="5303" name="&lt;u&gt;E&lt;/u&gt;xplorer bars" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="e" menuno="45" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5304" name="" role="28" width="273" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5305" name="&lt;u&gt;G&lt;/u&gt;o to" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="g" menuno="46" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5306" name="&lt;pre&gt;Sto&lt;u&gt;p&lt;/u&gt;                                                            Esc" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Stop...Esc"/>
+        <frameitem id="5307" name="&lt;pre&gt;&lt;u&gt;R&lt;/u&gt;efresh                                                       F5" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Refresh...F5"/>
+        <frameitem id="5308" name="" role="28" width="273" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5309" name="&lt;u&gt;Z&lt;/u&gt;oom(100%)" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="z" menuno="47" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5310" name="Te&lt;u&gt;x&lt;/u&gt;t size" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="x" menuno="48" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5311" name="Enco&lt;u&gt;d&lt;/u&gt;ing" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="d" menuno="49" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5312" name="St&lt;u&gt;y&lt;/u&gt;le" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="y" menuno="51" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5313" name="&lt;pre&gt;Caret &lt;u&gt;b&lt;/u&gt;rowsing                                           F7" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Caret browsing...F7"/>
+        <frameitem id="5314" name="" role="28" width="273" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5315" name="&lt;pre&gt;Sour&lt;u&gt;c&lt;/u&gt;e                                                   Ctrl+U" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Source...Ctrl+U"/>
+        <frameitem id="5316" name="&lt;u&gt;S&lt;/u&gt;ecurity report" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5317" name="&lt;u&gt;I&lt;/u&gt;nternational website address" role="29" width="273" height="22" cssclass="" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5318" name="Webpage pri&lt;u&gt;v&lt;/u&gt;acy policy..." role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="5319" name="&lt;pre&gt;&lt;u&gt;F&lt;/u&gt;ull screen                    			                          F11" role="29" width="273" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Full screen...F11"/>
+    </frameitem>
+    <!--IE11 File > View > Toolbars subMenu -->
+    <frameitem id="44" name="IE11 View Menu Toolbars subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5401" name="&lt;u&gt;M&lt;/u&gt;enu bar" role="29" width="175" height="22" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="5402" name="&lt;u&gt;F&lt;/u&gt;avorites bar" role="29" width="175" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="5403" name="&lt;u&gt;C&lt;/u&gt;ommand bar" role="29" width="175" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="5404" name="&lt;u&gt;S&lt;/u&gt;tatus bar" role="29" width="175" height="22" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="5405" name="" role="28" width="175" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5406" name="&lt;u&gt;L&lt;/u&gt;ock the toolbars" role="29" width="175" height="22" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="5" imagesize="16,16" checked="1"/>
+    </frameitem>
+    <!--IE11 File > View > Explorer bars subMenu -->
+    <frameitem id="45" name="IE11 View Menu Explorer bars subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5501" name="&lt;pre&gt;&lt;u&gt;F&lt;/u&gt;avorites		              Ctrl+Shift+I" role="29" width="198" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" actionstring="Favorites...Ctrl+Shift+I"/>
+        <frameitem id="5502" name="&lt;pre&gt;&lt;u&gt;H&lt;/u&gt;istory			                Ctrl+Shift+H" role="29" width="198" height="22" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" actionstring="History...Ctrl+Shift+H"/>
+        <frameitem id="5503" name="&lt;pre&gt;Fee&lt;u&gt;d&lt;/u&gt;s			                 Ctrl+Shift+G" role="29" width="198" height="22" cssclass="" enable="1" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" actionstring="Feeds...Ctrl+Shift+G"/>
+    </frameitem>
+    <!--IE11 File > View > Go to subMenu -->
+    <frameitem id="46" name="IE11 View Menu Go to subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5601" name="&lt;pre&gt;&lt;u&gt;B&lt;/u&gt;ack		                           Alt+Left+Arrow" role="29" width="232" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" actionstring="Back...Alt+Left+Arrow"/>
+        <frameitem id="5602" name="&lt;pre&gt;&lt;u&gt;F&lt;/u&gt;orward			                 Alt+Right+Arrow" role="29" width="232" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" actionstring="Forward...Alt+Right+Arrow"/>
+        <frameitem id="5603" name="" role="28" width="232" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5604" name="&lt;pre&gt;&lt;u&gt;H&lt;/u&gt;ome Page			                     Alt+Home" role="29" width="232" height="22" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" actionstring="Home Page...Alt+Home"/>
+        <frameitem id="5605" name="" role="28" width="232" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5606" name="Current Page" role="29" width="232" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="5" imagesize="16,16" checked="1"/>
+    </frameitem>
+    <!--IE11 File > View > Zoom(100%) subMenu -->
+    <frameitem id="47" name="IE11 View Menu Zoom(100%) subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5701" name="&lt;pre&gt;Zoom &lt;u&gt;i&lt;/u&gt;n		                 Ctrl+" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Back...Alt+Left+Arrow"/>
+        <frameitem id="5702" name="&lt;pre&gt;Zoom &lt;u&gt;o&lt;/u&gt;ut	                 Ctrl-" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Forward...Alt+Right+Arrow"/>
+        <frameitem id="5703" name="" role="28" width="170" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5704" name="&lt;u&gt;4&lt;/u&gt;00%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="4" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5705" name="&lt;u&gt;3&lt;/u&gt;00%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="3" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5706" name="&lt;u&gt;2&lt;/u&gt;50%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="2" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5707" name="&lt;u&gt;2&lt;/u&gt;00%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="2" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16"/>
+        <frameitem id="5708" name="&lt;u&gt;1&lt;/u&gt;75%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5709" name="&lt;u&gt;1&lt;/u&gt;50%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5710" name="&lt;u&gt;1&lt;/u&gt;25%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5711" name="&lt;pre&gt;&lt;u&gt;1&lt;/u&gt;00%                     Ctrl+0" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="0" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16" actionstring="100%...Ctrl+0"/>
+        <frameitem id="5712" name="&lt;u&gt;7&lt;/u&gt;5%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="7" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5713" name="&lt;u&gt;5&lt;/u&gt;0%" role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="5" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5714" name="" role="28" width="170" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5715" name="&lt;u&gt;C&lt;/u&gt;ustom..." role="29" width="170" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 File > View > Text size subMenu -->
+    <frameitem id="48" name="IE11 View Menu Text size subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5801" name="Lar&lt;u&gt;g&lt;/u&gt;est" role="29" width="129" height="22" cssclass="" enable="1" kbdshortcut="g" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5802" name="&lt;u&gt;L&lt;/u&gt;arger" role="29" width="129" height="22" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5803" name="&lt;u&gt;M&lt;/u&gt;edium" role="29" width="129" height="22" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16"/>
+        <frameitem id="5804" name="&lt;u&gt;S&lt;/u&gt;maller" role="29" width="129" height="22" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5805" name="Sm&lt;u&gt;a&lt;/u&gt;llest" role="29" width="129" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 File > View > Encoding subMenu -->
+    <frameitem id="49" name="IE11 View Menu Encoding subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="5901" name="Auto-Select" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5902" name="" role="28" width="240" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5903" name="Western European (Windows)" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5904" name="Unicode (UTF-8)" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16"/>
+        <frameitem id="5905" name="&lt;u&gt;M&lt;/u&gt;ore" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="m" menuno="50" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="5906" name="" role="28" width="240" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="5907" name="Left-to-right document" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16"/>
+        <frameitem id="5908" name="Right-to-left document" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 File > View > Encoding > More subMenu -->
+    <frameitem id="50" name="IE11 View Menu Encoding - More subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="6001" name="Arabic (ASMO 708)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6002" name="Arabic (DOS)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6003" name="Arabic (ISO)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6004" name="Arabic (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6005" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6006" name="Baltic (ISO)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6007" name="Baltic (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6008" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6009" name="Central European (DOS)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6010" name="Central European (ISO)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6011" name="Central European (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6012" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6013" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6014" name="Chinese Simplified (GB18030)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6015" name="Chinese Simplified (GB2312)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6016" name="Chinese Simplified (HZ)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6017" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6018" name="Chinese Traditional (Big5)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6019" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6020" name="Cyrillic (DOS)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6021" name="Cyrillic (ISO)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6022" name="Cyrillic (KOI8-R)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6023" name="Cyrillic (KOI8-U)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6024" name="Cyrillic (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6025" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6026" name="Greek (ISO)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6027" name="Greek (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6028" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6029" name="Hebrew (DOS)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6030" name="Hebrew (ISO-Logical)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6031" name="Hebrew (ISO-Visual)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6032" name="Hebrew (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6033" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6034" name="Japanese (Auto-Select)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6035" name="Japanese (EUC)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6036" name="Japanese (Shift-JIS)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6037" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6038" name="Korean" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6039" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6040" name="Thai (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6041" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6042" name="Turkish (ISO)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6043" name="Turkish (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6044" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6045" name="User Defined" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6046" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6047" name="Vietnamese (Windows)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6048" name="" role="28" width="238" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6049" name="Western European (ISO)" role="29" width="238" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 File > View > Style subMenu -->
+    <frameitem id="51" name="IE11 View Menu Style subMenu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="6101" name="&lt;u&gt;N&lt;/u&gt;o style" role="29" width="149" height="22" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16"/>
+        <frameitem id="6102" name="&lt;u&gt;D&lt;/u&gt;efault style" role="29" width="149" height="22" cssclass="" enable="1" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 File > Favorites Menu -->
+    <frameitem id="52" name="IE11 Favorites Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="6201" name="&lt;u&gt;A&lt;/u&gt;dd to favorites..." role="29" width="210" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6202" name="Add to Favorites &lt;u&gt;b&lt;/u&gt;ar" role="29" width="210" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6203" name="Add current &lt;u&gt;t&lt;/u&gt;abs to favorites..." role="29" width="210" height="22" cssclass="" enable="0" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6204" name="" role="28" width="210" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="6205" name="&lt;u&gt;O&lt;/u&gt;rganize favorites..." role="29" width="210" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="6206" name="" role="28" width="210" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+    </frameitem>
+    <!--IE11 Tab Tools Menu-->
+    <frameitem id="55" name="&lt;u&gt;T&lt;/u&gt;ools" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="6501" name="&lt;pre&gt;&lt;u&gt;D&lt;/u&gt;elete browsing history...                           Ctrl+Shift+Del" role="29" width="124" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6502" name="&lt;pre&gt;&lt;u&gt;I&lt;/u&gt;nPrivate Browsing                                         Ctrl+Shift+P" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6503" name="Trac&lt;u&gt;k&lt;/u&gt;ing Protection..." role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6504" name="Active&lt;u&gt;X&lt;/u&gt; Filtering" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6505" name="Fix &lt;u&gt;c&lt;/u&gt;onnection problems..." role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6506" name="Reopen last browsing &lt;u&gt;s&lt;/u&gt;ession" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6507" name="Add site to Start &lt;u&gt;m&lt;/u&gt;enu" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6523" name="Separator" role="28" left="30" top="0" width="313" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="6508" name="&lt;pre&gt;View dow&lt;u&gt;n&lt;/u&gt;loads                                                         Ctrl+J" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6509" name="&lt;u&gt;P&lt;/u&gt;op-up Blocker" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="56" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6510" name="Smar&lt;u&gt;t&lt;/u&gt;Screen Filter" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="57" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6511" name="Manage &lt;u&gt;a&lt;/u&gt;dd-ons" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6524" name="Separator" role="28" left="30" top="0" width="313" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="6512" name="Compatibility &lt;u&gt;v&lt;/u&gt;iew" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6513" name="Compati&lt;u&gt;b&lt;/u&gt;ility View settings" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6525" name="Separator" role="28" left="30" top="0" width="313" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="6514" name="Subscribe to this &lt;u&gt;f&lt;/u&gt;eed..." role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6515" name="F&lt;u&gt;e&lt;/u&gt;ed discovery" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6516" name="Windows &lt;u&gt;u&lt;/u&gt;pdate" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6526" name="Separator" role="28" left="30" top="0" width="313" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="6517" name="F12 deve&lt;u&gt;l&lt;/u&gt;oper tools" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6518" name="Skype add-on for Internet Explorer" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6519" name="OneNote Lin&lt;u&gt;k&lt;/u&gt;ed Notes" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6520" name="Se&lt;u&gt;n&lt;/u&gt;d to OneNote" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6521" name="Sun Java Console" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6527" name="Separator" role="28" left="30" top="0" width="313" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="6522" name="Internet &lt;u&gt;O&lt;/u&gt;ptions" role="29" width="348" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <frameitem id="56" name="" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="6601" name="Turn off Pop-up Blocker" role="29" width="218" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6602" name="Pop-up Blocker Settings" role="29" width="218" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <frameitem id="57" name="" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="6701" name="Check this website" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6702" name="Turn off SmartScreen Filter..." role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6703" name="Report unsafe website" role="29" width="240" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 Tab Help Menu-->
+    <frameitem id="58" name="Help" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="6801" name="&lt;pre&gt;Internet Explorer Help                                     F1" role="29" width="282" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6802" name="Separator" role="28" left="30" top="0" width="282" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="6803" name="What's New in Internet Explorer 11" role="29" width="282" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6804" name="Online support" role="29" width="282" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="6805" name="Separator" role="28" left="30" top="0" width="282" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="6806" name="About Internet Explorer" role="29" width="282" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE11 Tab Right click Menu -->
+    <frameitem id="60" name="IE Tab rightclick menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7001" name="&lt;pre&gt;&lt;u&gt;C&lt;/u&gt;lose tab                                                      Ctrl+W" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Close tab Ctrl+W"/>
+        <frameitem id="7002" name="Close this tab &lt;u&gt;g&lt;/u&gt;roup" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="g" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7003" name="Close &lt;u&gt;o&lt;/u&gt;ther tabs" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7004" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7005" name="&lt;u&gt;U&lt;/u&gt;ngroup this tab" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="u" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7006" name="&lt;pre&gt;&lt;u&gt;R&lt;/u&gt;efresh                                                                  F5" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Refresh F5"/>
+        <frameitem id="7007" name="Refresh a&lt;u&gt;l&lt;/u&gt;l" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7008" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7009" name="&lt;pre&gt;&lt;u&gt;N&lt;/u&gt;ew tab                                                         Ctrl+T" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="New tab Ctl+T"/>
+        <frameitem id="7010" name="&lt;pre&gt;&lt;u&gt;D&lt;/u&gt;uplicate tab                                                Ctrl+K" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Duplicate tab Ctrl+K"/>
+        <frameitem id="7011" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7012" name="&lt;pre&gt;Reopen closed &lt;u&gt;t&lt;/u&gt;ab                            Ctrl+Shift+T" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Reopen closed tab Ctrl+Shift+T"/>
+        <frameitem id="7013" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7014" name="S&lt;u&gt;h&lt;/u&gt;ow tabs on a seperate row" role="29" width="300" height="22" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="5" checked="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Right Click on Settings Menu -->
+    <frameitem id="61" name="Rightclick Settings menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7101" name="M&lt;u&gt;e&lt;/u&gt;nu bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="e" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="5" checked="1" imagesize="16,16"/>
+        <frameitem id="7102" name="F&lt;u&gt;a&lt;/u&gt;vorites bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7103" name="C&lt;u&gt;o&lt;/u&gt;mmand bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7104" name="S&lt;u&gt;t&lt;/u&gt;atus bar" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7105" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7106" name="Lock the tool&lt;u&gt;b&lt;/u&gt;ars" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7107" name="S&lt;u&gt;h&lt;/u&gt;ow tabs on a seperate row" role="29" width="234" height="22" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Settings Menu -->
+    <frameitem id="62" name="Settings menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7201" name="&lt;u&gt;P&lt;/u&gt;rint" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="63" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7202" name="&lt;u&gt;F&lt;/u&gt;ile" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="64" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7203" name="&lt;u&gt;Z&lt;/u&gt;oom (100%)" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="z" menuno="47" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7204" name="&lt;u&gt;S&lt;/u&gt;afety" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="s" menuno="66" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7205" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7206" name="Add s&lt;u&gt;i&lt;/u&gt;te to Start Screen" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7207" name="&lt;pre&gt;View dow&lt;u&gt;n&lt;/u&gt;loads                       Ctrl+J" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="View downloads Ctrl+J"/>
+        <frameitem id="7208" name="&lt;u&gt;M&lt;/u&gt;anage add-ons" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7209" name="F12 deve&lt;u&gt;l&lt;/u&gt;oper tools" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7210" name="&lt;u&gt;G&lt;/u&gt;o to pinned sites" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="g" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7211" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7212" name="Internet &lt;u&gt;o&lt;/u&gt;ptions" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7213" name="&lt;u&gt;A&lt;/u&gt;bout Internet Explorer" role="29" width="236" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Settings -> Print Menu -->
+    <frameitem id="63" name="Settings Print menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7301" name="&lt;pre&gt;&lt;u&gt;P&lt;/u&gt;rint...                            Ctrl+P" role="29" width="196" height="22" cssclass="" enable="1" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Print            Ctrl+P"/>
+        <frameitem id="7302" name="Print pre&lt;u&gt;v&lt;/u&gt;iew..." role="29" width="196" height="22" cssclass="" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7304" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7305" name="Page set&lt;u&gt;u&lt;/u&gt;p..." role="29" width="196" height="22" cssclass="" enable="1" kbdshortcut="u" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Settings -> File Menu -->
+    <frameitem id="64" name="Settings File menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7401" name="&lt;pre&gt;Fu&lt;u&gt;l&lt;/u&gt;l screen                            F11" role="29" width="208" height="22" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Full screen F11"/>
+        <frameitem id="7402" name="&lt;pre&gt;Save &lt;u&gt;a&lt;/u&gt;s...                          Ctrl+S" role="29" width="208" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Save as... Ctrl+S"/>
+        <frameitem id="7403" name="&lt;pre&gt;&lt;u&gt;F&lt;/u&gt;ind on this page            Ctrl+F" role="29" width="208" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Find on this page Ctrl+F"/>
+        <frameitem id="7404" name="Su&lt;u&gt;g&lt;/u&gt;gested Sites" role="29" width="208" height="22" cssclass="" enable="1" kbdshortcut="g" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7405" name="&lt;pre&gt;Caret &lt;u&gt;b&lt;/u&gt;rowsing                      F7" role="29" width="208" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Caret browsing F7"/>
+    </frameitem>
+    <!--Settings -> Safety Menu -->
+    <frameitem id="66" name="Settings Safety menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7601" name="&lt;pre&gt;&lt;u&gt;D&lt;/u&gt;elete browsing history...                 Ctrl+Shift+Del" role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Delete browsing history... Ctrl+Shift+Del"/>
+        <frameitem id="7602" name="&lt;pre&gt;InPrivate Brows&lt;u&gt;i&lt;/u&gt;ng                                Ctrl+Shift+P" role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="InPrivate Browsing Ctrl+Shift+P"/>
+        <frameitem id="7603" name="Trac&lt;u&gt;k&lt;/u&gt;ing Protection..." role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="k" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7604" name="Active&lt;u&gt;X&lt;/u&gt; Filtering" role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="x" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7605" name="Webpage pri&lt;u&gt;v&lt;/u&gt;acy policy..." role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7606" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7607" name="&lt;u&gt;C&lt;/u&gt;heck this website" role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7608" name="Turn o&lt;u&gt;f&lt;/u&gt;f SmartScreen Filter..." role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7609" name="&lt;u&gt;R&lt;/u&gt;eport unsafe website" role="29" width="310" height="22" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+    </frameitem>
+    <!--IE 11 Title Bar rightclick menu -->
+    <frameitem id="67" name="IE 11 Title Bar rightclick menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7701" name="Menu bar" role="29" width="270" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7702" name="Favorites bar" role="29" width="270" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7703" name="Command bar" role="29" width="270" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7704" name="Status bar" role="29" width="270" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7705" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7706" name="Lock the toolbars" role="29" width="270" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7707" name="Show tabs on a seperate row" role="29" width="270" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7708" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7709" name="Restore" role="29" width="270" height="22" cssclass="ie_rt_titlebar_restore" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7710" name="Move" role="29" width="270" height="22" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7711" name="Size" role="29" width="270" height="22" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7712" name="Minimize" role="29" width="270" height="22" cssclass="ie_rt_titlebar_minimize" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7713" name="Maximize" role="29" width="270" height="22" cssclass="ie_rt_titlebar_maximize" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7714" name="" role="28" width="142" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7715" name="&lt;pre&gt;Close                                                    Alt+F4" role="29" width="270" height="22" cssclass="ie_rt_titlebar_close" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="class_text_bold" swaptextandicon="0" checkable="0" imagesize="16,16" actionstring="Close Alt+F4"/>
+    </frameitem>
+    <!--IE 11 Address Bar Right click Menu -->
+    <frameitem id="68" name="IE 11 Address Bar Right click Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7801" name="Undo" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7702" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7803" name="Cut" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0"  imagesize="16,16" />
+        <frameitem id="7804" name="Copy" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7805" name="Paste" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7806" name="Delete" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7707" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7808" name="Select All" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7709" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7810" name="Right to left Reading order" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7811" name="Show Unicode control characters" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7812" name="Insert Unicode control character" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="69" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7813" name="" role="28" width="190" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="7814" name="Open IME" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+        <frameitem id="7815" name="Reconversion" role="29" width="258" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+    </frameitem>
+    <!--IE 11 Address Bar Insert unicode menu -->
+    <frameitem id="69" name="IE 11 Address Bar Insert unicode menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="7901" name="&lt;pre&gt;LRM																																										  &lt;u&gt;L&lt;/u&gt;eft-to-right mark" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7902" name="&lt;pre&gt;RLM																																										  &lt;u&gt;R&lt;/u&gt;ight-to-left mark" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7903" name="&lt;pre&gt;ZWJ																																										     Zero width &lt;u&gt;j&lt;/u&gt;oiner" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7904" name="&lt;pre&gt;ZWNJ																																	  Zero width &lt;u&gt;n&lt;/u&gt;on-joiner" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7905" name="&lt;pre&gt;LRE																				  Start of left-to-right &lt;u&gt;e&lt;/u&gt;mbedding" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7906" name="&lt;pre&gt;RLE																				  Start of right-to-left e&lt;u&gt;m&lt;/u&gt;bedding" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7907" name="&lt;pre&gt;LRO																								   Start of left-to-right &lt;u&gt;o&lt;/u&gt;verride" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7908" name="&lt;pre&gt;RLO																								   Start of right-to-left o&lt;u&gt;v&lt;/u&gt;erride" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7909" name="&lt;pre&gt;PDF																												   &lt;u&gt;P&lt;/u&gt;op directional formatting" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7910" name="&lt;pre&gt;NADS													  N&lt;u&gt;a&lt;/u&gt;tional digit shapes substitution" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7911" name="&lt;pre&gt;NODS													   Nominal (European) &lt;u&gt;d&lt;/u&gt;igit shapes" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7912" name="&lt;pre&gt;ASS																					    Activate &lt;u&gt;s&lt;/u&gt;ymmetric swapping" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7913" name="&lt;pre&gt;ISS																					         Inhibit s&lt;u&gt;y&lt;/u&gt;mmetric swapping" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7914" name="&lt;pre&gt;AAFS																			    Activate Arabic &lt;u&gt;f&lt;/u&gt;orm shaping" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7915" name="&lt;pre&gt;IAFS																					       Inhibit Arabic form s&lt;u&gt;h&lt;/u&gt;aping" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7916" name="&lt;pre&gt;RS																		  Record Separator (&lt;u&gt;B&lt;/u&gt;lock separator)" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="7917" name="&lt;pre&gt;US																		Unit Separator (&lt;u&gt;S&lt;/u&gt;egment separator)" role="29" width="301" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE 11->Favorites pane->Add to Favorites Menu -->
+    <frameitem id="70" name="IE11 Add to Favorites Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8001" name="&lt;pre&gt;&lt;u&gt;A&lt;/u&gt;dd to favorites...                            Ctrl+D" role="29" width="259" height="22" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" actionstring="Add to favorites... Ctrl+D"/>
+        <frameitem id="8002" name="Add to Favorites &lt;u&gt;b&lt;/u&gt;ar" role="29" width="259" height="22" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="8003" name="Add current &lt;u&gt;t&lt;/u&gt;abs to favorites..." role="29" width="259" height="22" cssclass="" enable="0" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="8004" name="" role="28" width="210" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="8005" name="&lt;u&gt;I&lt;/u&gt;mport and export..." role="29" width="259" height="22" cssclass="ie_add_favourites" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="8006" name="" role="28" width="210" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+        <frameitem id="8007" name="&lt;u&gt;O&lt;/u&gt;rganize favorites..." role="29" width="259" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+    </frameitem>
+    <!--IE 11->Favorites pane->History tab-> Menu -->
+    <frameitem id="71" name="IE 11 Favorites pane History tab" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8101" name="View By Date" role="27" width="262" height="15" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize=""/>
+        <frameitem id="8102" name="View By Site" role="27" width="262" height="15" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize=""/>
+        <frameitem id="8103" name="View By Most Visited" role="27" width="262" height="15" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize=""/>
+        <frameitem id="8104" name="View By Order Visited Today" role="27" width="262" height="15" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize=""/>
+        <frameitem id="8105" name="Search History" role="27" width="262" height="15" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize=""/>
+    </frameitem>
+    <!--Taskbar->Rightclick Folder icon Menu -->
+    <frameitem id="72" name="Taskbar Rightclick Folder icon Menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8201" name="File Explorer" role="29" width="234" height="20" cssclass="exp_taskbar_folder" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="8202" name="Unpin this program form taskbar" role="29" width="234" height="20" cssclass="exp_taskbar_folder_unpin" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="8203" name="Close window" role="29" width="234" height="20" cssclass="exp_taskbar_folder_close" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+        <frameitem id="1702" name="seperator" role="28" width="0" height="0" left="32" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+    </frameitem>	
+
+    <!--Desktop  > This PC Icon > Right Click -->
+    <frameitem id="73" name="Desktop This PC Icon Right Click" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8301" name="Open" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8302" name="Manage" role="29" width="227" height="22" cssclass="dsk_rt_manage" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8303" name="Pin to Start" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8304" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8305" name="Map network drive..." role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8306" name="Disconnect network drive..." role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8307" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8308" name="Create shortcut" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8309" name="Delete" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8310" name="Rename" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8311" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8312" name="Properties" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+    </frameitem>
+
+    <!--Desktop > Network Icon > Right Click -->
+    <frameitem id="74" name="Desktop Network Icon Right Click" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8401" name="Open" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8402" name="Pin to Start" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8403" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8404" name="Map network drive..." role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8405" name="Disconnect network drive..." role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8406" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8407" name="Create shortcut" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8408" name="Delete" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8409" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8410" name="Properties" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+    </frameitem>
+
+    <!--Desktop > Recycle Bin Icon > Right Click -->
+    <frameitem id="75" name="Desktop Recycle Bin Icon Right Click" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8501" name="Open" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8502" name="Empty Recycle Bin" role="29" width="227" height="22" cssclass="dsk_rt_emptyrecyclebin" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8503" name="Pin to Start" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8504" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8505" name="Create shortcut" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8506" name="Rename" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8507" name="Separator" role="28" left="26" top="0" width="198" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8508" name="Properties" role="29" width="227" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Desktop > Control Panel Icon > Right Click -->
+    <frameitem id="76" name="Desktop Control Panel Icon Right Click" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="8601" name="Open" role="29" width="165" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8602" name="Separator" role="28" left="26" top="0" width="137" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+        <frameitem id="8603" name="Create shortcut" role="29" width="165" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+        <frameitem id="8604" name="Delete" role="29" width="165" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" checked="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Control Panel DB > View by menu -->
+    <frameitem id="24" name="view by menu" role="46" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3401" name="Category" role="29" width="144" height="22" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" checked="1" imagesize="16,16" />
+        <frameitem id="3402" name="" role="28" width="144" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="26"/>
+        <frameitem id="3403" name="Large icons" role="29" width="144" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16" />
+        <frameitem id="3404" name="Small icons" role="29" width="144" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="8" imagesize="16,16" />
+    </frameitem>
+    <!--Metro Desktop charms share pane start menu-->
+    <frameitem id="25" name="Metro Desktop charms share pane start menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3501" name="Start" role="49" width="306" height="59" cssclass="ddsk_charms_pane_metro_desktop_share_start" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3502" name="Screenshot|Share a screenshot of Start" role="49" width="306" height="59" cssclass="dsk_charms_pane_metro_desktop_share_screenshot" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="" swaptextandicon="0" checkable="0" />
+    </frameitem>
+    <!--Calendar >charms >share pane> start menu-->
+    <frameitem id="26" name="Calendar charms share pane start menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3601" name="Calendar" role="49" width="306" height="59" cssclass="dsk_chams_pane_cal_share_calender" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="3602" name="Screenshot|Share a screenshot of Calendar" role="49" width="306" height="59" cssclass="dsk_charms_pane_metro_desktop_share_screenshot" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="3603" name="Link to app in Store|;Share a link to Calendar in the..." role="49" width="306" height="59" cssclass="dsk_chams_pane_cal_share_link" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Share a link to Calendar in the Windows Store" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_charms_pane_menu_item_screenshot_text" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--IE >charms >share pane> start menu-->
+    <frameitem id="27" name="IE charms share pane start menu" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3701" name="New tab" role="49" width="306" height="59" cssclass="dsk_chams_pane_ie_share_ie" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+        <frameitem id="3702" name="Screenshot|Share a screenshot of Internet..." role="48" width="306" height="59" cssclass="dsk_charms_pane_metro_desktop_share_screenshot" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Screenshot|Share a screenshot of Internet Explorer" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_charms_pane_menu_item_screenshot_text" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    </frameitem>
+    <!--Search Pane text selected Right Click menu-->
+    <frameitem id="28" name="Search Pane text selected Right Click menu" pane_menu="1" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3801" name="Cut" pane_menu="1" role="48" width="103" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3802" name="Copy" pane_menu="1" role="48" width="103" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3803" name="Undo" pane_menu="1" role="48" width="103" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3804" name="Select All" pane_menu="1" role="48" width="103" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+    </frameitem>
+    <!--Search Pane text selected Right Click menu-->
+    <frameitem id="29" name="Search Pane text selected Right Click menu" pane_menu="1" role="47" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+        <frameitem id="3901" name="Undo" pane_menu="1" role="48" width="103" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />
+        <frameitem id="3902" name="Select All" pane_menu="1" role="48" width="103" height="40" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" menu_item_class="class_metro_menuitem" textclass="class_metro_menu_item_text" swaptextandicon="0" checkable="0" checked="0" />     
+    </frameitem>
+</menu>
+
+<pane_manager>
+    <pane_container id="1010000">
+        <!-- Charms Bar > Settings Pane wnd-->
+        <table>
+            <tr>
+                <!-- Charms Bar > Settings Pane wnd > Title-->
+                <td height="20px">
+                    <title_container id="title_container">
+                        <pane_backbutton></pane_backbutton>
+                        <pane_title text="Settings">
+                            <style></style>
+                        </pane_title>
+                        <style classname="charms_pane_devices_settings_title_text"></style>
+                    </title_container>
+                </td>
+            </tr>
+            <tr>
+                <!-- Charms Bar > Settings Pane wnd > Start-->
+                <td class="charms_pane_settings_align">        
+                    <container_wnd id="1010100" visible="0">
+                        <!-- Charms Bar > Settings Pane wnd > For Metro UI-->
+                        <table >  
+                            <tr> 
+                                <td> 
+                                    <label text="Start" id="1010101" css_class="charms_pane_settings_label_text">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <list_ctrl id="1010102" height="150">
+                                        <list_text_item text="Personalize" id="1010103" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Tiles" id="1010104" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Help" id="1010105" width="343" height="50"></list_text_item>
+                                    </list_ctrl>
+                                </td> 
+                            </tr>
+                        </table>
+                    </container_wnd>
+                    <container_wnd id="1010300" visible="0">
+                        <!-- Charms Bar > Settings Pane wnd > For Desktop-->
+                        <table >
+                            <tr>
+                                <td>
+                                    <label text="Desktop" id="1010301" css_class="charms_pane_settings_label_text">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <list_ctrl id="1010302" height="200">
+                                        <list_text_item text="Control Panel" id="1010303" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Personalization" id="1010304" width="343" height="50"></list_text_item>
+                                        <list_text_item text="PC info" id="1010305" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Help" id="1010306" width="343" height="50"></list_text_item>
+                                    </list_ctrl>
+                                </td>
+                            </tr>
+                        </table>
+                    </container_wnd>
+                    <container_wnd id="1010400" visible="0">
+                        <!-- Charms Bar > Settings Pane wnd > For Calendar-->
+                        <table >
+                            <tr>
+                                <td>
+                                    <label text="Calendar" id="1010401" css_class="charms_pane_settings_label_text">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label text="By Microsoft Corporation" id="1010402" css_class="charms_pane_settings_label_text">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <list_ctrl id="1010403" height="350">
+                                        <list_text_item text="Accounts" id="1010404" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Options" id="1010405" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Help" id="1010406" width="343" height="50"></list_text_item>
+                                        <list_text_item text="About" id="1010407" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Feedback" id="1010408" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Permissions" id="1010409" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Rate and review" id="1010410" width="343" height="50"></list_text_item>
+                                    </list_ctrl>
+                                </td>
+                            </tr>
+                        </table>
+                    </container_wnd>
+                    <container_wnd id="1010500" visible="0">
+                        <!-- Charms Bar > Settings Pane wnd > For IE-->
+                        <table >
+                            <tr>
+                                <td>
+                                    <label text="Internet Explorer" id="1010501" css_class="charms_pane_settings_label_text">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label text="By Microsoft Corporation" id="1010502" css_class="charms_pane_settings_label_text">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <list_ctrl id="1010503" height="300">
+                                        <list_text_item text="Options" id="1010504" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Privacy" id="1010505" width="343" height="50"></list_text_item>
+                                        <list_text_item text="About" id="1010306" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Help" id="1010307" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Accounts" id="1010308" width="343" height="50"></list_text_item>
+                                        <list_text_item text="Permissions" id="1010309" width="343" height="50"></list_text_item>
+                                    </list_ctrl>
+                                </td>
+                            </tr>
+                        </table>
+                    </container_wnd>
+                </td>
+            </tr>
+            <tr>
+                <!-- Charms Bar > Settings Pane wnd > PC settings ( For all App )-->
+                <td class="charms_pane_settings_align" height="265px">
+                    <container_wnd id="1010200" isDynamic="0" visible="1">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td colspan="3" class="charms_pane_settings_border"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td width="39px"> 
+                                </td>
+                                <td width="90px">
+                                    <setting_pane_button text="Wifi" id="1010201" img_class="dsk_charms_pane_wifi" width="90" height="90" img_height="32" img_width="32"></setting_pane_button>
+                                </td>
+                                <td width="90px">
+                                    <setting_pane_button text="Volume" id="1010202" img_class="dsk_charms_pane_volume" width="90" height="90" img_height="32" img_width="32"></setting_pane_button>
+                                </td>
+                                <td width="90px">
+                                    <setting_pane_button text="Brightness" id="1010203" img_class="dsk_charms_pane_brightness" width="90" height="90" img_height="32" img_width="32"></setting_pane_button>
+                                </td>
+                                <td width="39px">
+                                </td>
+                            </tr>
+                            <tr >
+                                <td width="39px">
+                                </td>
+                                <td width="90px">
+                                    <setting_pane_button text="Notification" id="1010204" img_class="dsk_charms_pane_notifications" width="90" height="90" img_height="32" img_width="32"></setting_pane_button>
+                                </td>
+                                <td width="90px">
+                                    <setting_pane_button text="Power" id="1010205" img_class="dsk_charms_pane_power" width="90" height="90" img_height="32" img_width="32"></setting_pane_button>
+                                </td>
+                                <td width="90px">
+                                    <setting_pane_button text="Keyboard" id="1010206" img_class="dsk_charms_pane_keyboard" width="90" height="90" img_height="32" img_width="32"></setting_pane_button>
+                                </td>
+                                <td width="39px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <list_text_item text="Change PC settings" id="1010207" width="343" height="50" align="1"></list_text_item>
+                                </td>
+                            </tr>
+                        </table>
+                        <style width="270px"></style>
+                    </container_wnd>
+                </td>          
+            </tr>
+        </table>
+        <style classname="cls_bg_color_accent" width="343px" height="100%" position="absolute" ></style>
+    </pane_container>
+    <pane_container id="1020000">
+        <!-- Charms Bar  > Share Pane wnd-->
+        <title_container id="title_container">
+            <pane_backbutton></pane_backbutton>
+            <pane_title text="Share">
+                <style></style>
+            </pane_title>
+            <style classname="charms_pane_devices_title_text"></style>
+        </title_container>
+        <container_wnd id="1020100" visible="0">
+            <!-- Charms Bar  > Share Pane wnd > For Metro UI-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="Start" id="1020101" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:12px">       
+                        <label text="Select an app and try again." id="1020102" css_class="charms_pane_devices_label_text"></label>
+                    </td>
+                </tr>
+            </table>
+        </container_wnd>
+        <container_wnd id="1020300" visible="0">
+            <!-- Charms Bar  > Share Pane wnd > For Desktop-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="Screenshot" id="1020301" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="40px">
+                        <label text="Share a screenshot of Desktop" id="1020302" css_class="charms_pane_settings_label_text"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:12px">
+                        <label text="You don't have any apps that can share" id="1020303" css_class="charms_pane_devices_label_text">   
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label text="this content" id="1020304" css_class="charms_pane_devices_label_text"></label>
+                    </td>
+                </tr>
+            </table>
+        </container_wnd>
+        <container_wnd id="1020400" visible="0">
+            <!-- Charms Bar  > Share Pane wnd > For Calendar-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="Calendar" id="1020401" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:12px">
+                        <label text="You must select content in an event in" id="1020402" css_class="charms_pane_devices_label_text"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label text="order to share." id="1020403" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </container_wnd>
+        <container_wnd id="1020500" visible="0">
+            <!-- Charms Bar  > Share Pane wnd > For IE-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="New tab" id="1020501" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <list_ctrl id="1020502" height="240">
+                            <list_text_img_des_item text="Mail§Send an email" id="1020503" img_class="dsk_charms_pane_share_ie_mail" width="343" height="60" img_height="40" img_width="40"></list_text_img_des_item>
+                            <list_text_img_des_item text="Music§Create a playlist" id="1020504" img_class="dsk_charms_pane_share_ie_music" width="343" height="60" img_height="40" img_width="40"></list_text_img_des_item>
+                            <list_text_img_des_item text="People§Post to your social networks" id="1020505" img_class="dsk_charms_pane_share_ie_people" width="343" height="60" img_height="40" img_width="40"></list_text_img_des_item>
+                            <list_text_img_des_item text="Reading List§Bookmark for later" id="1020506" img_class="dsk_charms_pane_share_ie_readinglist" width="343" height="60" img_height="40" img_width="40"></list_text_img_des_item>
+                        </list_ctrl>
+                    </td>
+                </tr>
+            </table>
+        </container_wnd>    
+        <style classname="cls_bg_color_accent" width="343px" height="100%" position="absolute"></style>
+    </pane_container>
+    <pane_container id="1030000" >
+        <!-- Charms Bar  > Device Pane wnd -->
+        <title_container id="title_container">      
+            <pane_title text="Devices">
+                <style></style>
+            </pane_title>
+            <style classname="charms_pane_devices_title_text"></style>
+        </title_container>
+        <container_wnd id="1030100" visible="0">
+            <!-- Charms Bar  > Device Pane wnd > For Metro UI-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="Start" id="1030101" css_class="charms_pane_devices_label_text">
+                        </label>  
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:12px">
+                        <list_ctrl id="1030102" height="240">
+                            <list_text_img_item text="Play" id="1030103" img_class="dsk_charms_pane_device_play" width="343" height="80" img_height="26" img_width="38"></list_text_img_item>
+                            <list_text_img_item text="Print" id="1030104" img_class="dsk_charms_pane_device_print" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                            <list_text_img_item text="Project" id="1030105" img_class="dsk_charms_pane_device_project" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                        </list_ctrl>
+                    </td>
+                </tr>
+            </table>
+
+        </container_wnd>
+        <container_wnd id="1030300" visible="0">
+            <!-- Charms Bar  > Device Pane wnd > For Desktop-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="Desktop" id="1030301" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:10px">
+                        <list_ctrl id="1030302" height="240">
+                            <list_text_img_item text="Play" id="1030303" img_class="dsk_charms_pane_device_play" width="343" height="80" img_height="26" img_width="38"></list_text_img_item>
+                            <list_text_img_item text="Print" id="1030304" img_class="dsk_charms_pane_device_print" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                            <list_text_img_item text="Project" id="1030305" img_class="dsk_charms_pane_device_project" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                        </list_ctrl>
+                    </td>
+                </tr>
+            </table>
+
+        </container_wnd>
+        <container_wnd id="1030400" visible="0">
+            <!-- Charms Bar  > Device Pane wnd > For Calendar-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="Calendar" id="1030401" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:10px">
+                        <list_ctrl id="1030402" height="240">
+                            <list_text_img_item text="Play" id="1030403" img_class="dsk_charms_pane_device_play" width="343" height="80" img_height="26" img_width="38"></list_text_img_item>
+                            <list_text_img_item text="Print" id="1030404" img_class="dsk_charms_pane_device_print" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                            <list_text_img_item text="Project" id="1030405" img_class="dsk_charms_pane_device_project" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                        </list_ctrl>
+                    </td>
+                </tr>
+            </table>
+
+        </container_wnd>
+        <container_wnd id="1030500" visible="0">
+            <!-- Charms Bar  > Device Pane wnd > For IE-->
+            <table>
+                <tr>
+                    <td>
+                        <label text="Internet Explorer" id="1030501" css_class="charms_pane_devices_label_text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:10px">
+                        <list_ctrl id="1030502" height="240">
+                            <list_text_img_item text="Play" id="1030503" img_class="dsk_charms_pane_device_play" width="343" height="80" img_height="26" img_width="38"></list_text_img_item>
+                            <list_text_img_item text="Print" id="1030504" img_class="dsk_charms_pane_device_print" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                            <list_text_img_item text="Project" id="1030505" img_class="dsk_charms_pane_device_project" width="343" height="80" img_height="35" img_width="40"></list_text_img_item>
+                        </list_ctrl>
+                    </td>
+                </tr>
+            </table>
+
+        </container_wnd>
+        <style classname="cls_bg_color_accent" width="343px" height="100%" position="absolute"></style>
+    </pane_container>	
+</pane_manager>
+
+</parentnode>

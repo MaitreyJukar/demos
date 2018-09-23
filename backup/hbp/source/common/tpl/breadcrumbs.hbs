@@ -1,0 +1,13 @@
+<div class="left scroll-shadow-box"></div>
+{{#each tabs}}
+<div class="breadcrumbs-link">
+    {{#if this.subMenuItems.length}}
+        <a {{#if @last}}{{else}}href="#{{this.hash}}"{{/if}} class='{{#if @last}} inactive-breadcrumbs{{/if}}'> {{#if this.subMenuItems.length}} {{topic @index}}: {{/if}}{{this.text}}</a>
+    {{else}}
+        <a {{#if @last}}{{else}}href="#{{this.hash}}"{{/if}} class='{{#if @last}} inactive-breadcrumbs{{/if}}'><span class="serial-no">{{topic @index}}: {{../serial}}</span> {{#if this.subMenuItems.length}} {{topic @index}}: {{/if}}{{this.text}}</a>
+    {{/if}}
+</div>
+{{#ifNotLast ../tabs @index}}
+<div class="icon-arrow-right"></div>
+{{/ifNotLast}} {{/each}}
+<div class="right scroll-shadow-box"></div>

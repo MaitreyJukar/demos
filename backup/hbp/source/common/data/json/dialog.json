@@ -1,0 +1,57 @@
+{
+    "dialogModels": [
+        {
+            "title": "Scratchpad Help",
+            "colorTheme": "RED",
+            "extraClass": "no-bullet mob-fs",
+            "content": "<ol><li>Scratchpad is a light-weight spreadsheet that provides you with the opportunity to learn Excel as you perform various activities. It allows you to enter data and perform spreadsheet calculations anywhere within the spreadsheet.</li><li>To use Scratchpad to perform the tasks suggested in the Course Topic, enter the answer within the cells highlighted in yellow, and select the <em>Evaluate Answers</em> button to validate. Only these yellow cells are graded by the system.</li><li>If the answer you provided is correct, the evaluated cell is highlighted in green with a tick mark. For an incorrect answer, the evaluated cell is highlighted in red with a cross mark. You can update your answer as many times as needed until you arrive at the correct answer.</li><li>To start over, select the <em>Reset Answers</em> button.</li><li>Use the keyboard shortcut Ctrl + F2 (or Command + F2 for Mac devices) to navigate between the Scratchpad top panel and the Scratchpad simulation area.</li></ol>",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "scratchpad-dialog-gotit-button",
+                    "label": "GOT IT"
+                }
+            ]
+        },
+        {
+            "title": "Help",
+            "colorTheme": "RED",
+            "extraClass": "no-bullet mob-fs",
+            "content": "<ul><li>Exercise assignments assess your understanding of the Excel operations discussed in the Course Topic.</li><li>The tasks you need to perform are displayed on the top panel above the simulation area. You can navigate through the system and work as you would in Excel to perform these tasks.</li><li>The system not only evaluates the final answer but also the steps you perform to derive the answer and you are provided with feedback for every action you perform to complete your task.</li><li>If the assignment comprises multiple tasks, you can view and move through all of them using the next (<span class=\"icon-arrow-right content-icon\" aria-label=\"Goto Next Icon\"></span>) and previous (<span class=\"icon-arrow-left content-icon\" aria-label=\"Goto Previous Icon\"></span>) buttons on the top panel.</li><li>You can reset the task at any time by selecting the <em>RETRY</em> button to start over.</li><li>If you are stuck, you can use the <em>HINT</em> button for audiovisual suggestions on how to complete the task.</li><li>Use the keyboard shortcut Ctrl + F2 (or Command + F2 for Mac devices) to navigate between the top panel and the simulation area.</li></ul>",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "training-dialog-gotit-button",
+                    "label": "GOT IT"
+                }
+            ]
+        },
+        {
+            "title": "Help",
+            "colorTheme": "RED",
+            "extraClass": "no-bullet mob-fs",
+            "content": "<ul><li>Practice assignments assess your understanding of the Excel operations discussed in the Course Topic. </li><li>The tasks you need to perform are displayed on the top panel above the simulation area. You can navigate through the system and work as you would in Excel to perform these tasks.</li><li>The system not only evaluates the final answer but also the steps you perform to derive the answer and you are provided with feedback for every action you perform to complete your task.</li><li>If the assignment comprises multiple tasks, you can view and move through all of them using the next (<span class=\"icon-arrow-right content-icon\" aria-label=\"Goto Next Icon\"></span>) and previous (<span class=\"icon-arrow-left content-icon\" aria-label=\"Goto Previous Icon\"></span>) buttons on the top panel.</li><li>You can reset the task at any time by selecting the <em>RETRY</em> button to start over.</li><li>Use the keyboard shortcut Ctrl + F2 (or Command + F2 for Mac devices) to navigate between the top panel and the simulation area.</li></ul>",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "assessment-dialog-gotit-button",
+                    "label": "GOT IT"
+                }
+            ]
+        }
+    ],
+    "dialogViews": [
+        {
+            "el": ".kepler-window.kepler-window-scratchpad .scratchpad-help-dialog-holder",
+            "id": "scratchpad-help-dialog"
+        },
+        {
+            "el": ".kepler-window.kepler-window-skill .training-help-dialog-holder",
+            "id": "training-help-dialog"
+        },
+        {
+            "el": ".kepler-window.kepler-window-skill .assessment-help-dialog-holder",
+            "id": "assessment-help-dialog"
+        }
+    ]
+}

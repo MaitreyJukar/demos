@@ -1,0 +1,11 @@
+<button class="dialog-button {{cls}}" id="{{id}}">
+    {{#if isIconAvailable}}
+        {{#if isIconOnLeft}}
+            <i class="{{icon}}"></i><span class="label-container">{{label}}</span>
+        {{else}}
+            <span class="label-container">{{label}}</span><i class="{{icon}}"></i>
+        {{/if}}
+    {{else}}
+        <span class="label-container">{{label}}</span>
+    {{/if}}
+</button>

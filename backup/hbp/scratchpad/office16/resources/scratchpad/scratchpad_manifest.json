@@ -1,0 +1,52 @@
+{
+  "task": {
+    "@version_major": "1",
+    "@version_minor": "0",
+    "description": {
+      "#cdata-section": "High-Low Method; Contribution Format Income Statement"
+    },
+    "items": {
+      "item": {
+        "description": {
+          "#cdata-section": "<Span id=1>Analyze a mixed cost using a scattergraph plot and the high-low method.<br>Prepare income statements for a merchandising company using the traditional and contribution formats.</Span>"
+        },
+        "pts": "22",
+        "mp3data": {
+          "@language": "1",
+          "mp3": [            
+			  {
+                "@start": "03:53:250",
+                "@stop": "03:57:500",
+                "#cdata-section": "Click ? AutoSum."
+              },
+			  {
+                "@start": "03:57:500",
+                "@stop": "04:03:750",
+                "#cdata-section": "Select cells B52 through B54."
+              },
+			  {
+                "@start": "04:09:750",
+                "@stop": "04:12:500",
+                "#cdata-section": "Press Enter."
+              }	,
+{
+                 "@start": "03:53:250",
+                "@stop": "03:57:500",
+                "#cdata-section": "Click ? AutoSum."
+              },
+			  {
+                "@start": "04:03:750",
+                "@stop": "04:09:750",
+                "#cdata-section": "Select cells B58 through B61."
+              },
+			  {
+                "@start": "04:09:750",
+                "@stop": "04:12:500",
+                "#cdata-section": "Press Enter."
+              }				  
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,746 @@
+{
+    "mainlinks": [
+        {
+            "refid": "link-0",
+            "text": "Pretest Introduction",
+            "dataURL": "link-0.json",
+            "hash": "0",
+            "childLinks": [
+                {
+                    "refid": "link-0-0",
+                    "text": "Pretest",
+                    "dataURL": "link-0-0.json",
+                    "hash": "0/0"
+                }
+            ]
+        },
+        {
+            "refid": "link-1",
+            "text": "Introduction",
+            "dataURL": "link-1.json",
+            "hash": "1",
+            "childLinks": [
+                {
+                    "refid": "link-1-0",
+                    "text": "The Company",
+                    "dataURL": "link-1-0.json",
+                    "hash": "1/0"
+                },
+                {
+                    "refid": "link-1-1",
+                    "text": "Spreadsheet Modeling Overview",
+                    "dataURL": "link-1-1.json",
+                    "hash": "1/1"
+                }
+            ]
+        },
+        {
+            "refid": "link-2",
+            "text": "The Excel Environment",
+            "dataURL": "link-2.json",
+            "hash": "2",
+            "childLinks": [
+                {
+                    "refid": "link-2-0",
+                    "text": "Opening a Workbook",
+                    "dataURL": "link-2-0.json",
+                    "hash": "2/0"
+                },
+                {
+                    "refid": "link-2-1",
+                    "text": "The Excel Ribbon",
+                    "dataURL": "link-2-1.json",
+                    "hash": "2/1"
+                },
+                {
+                    "refid": "link-2-2",
+                    "text": "The Quick Access Toolbar",
+                    "dataURL": "link-2-2.json",
+                    "hash": "2/2"
+                },
+                {
+                    "refid": "link-2-3",
+                    "text": "Worksheets",
+                    "dataURL": "link-2-3.json",
+                    "hash": "2/3"
+                },
+                {
+                    "refid": "link-2-4",
+                    "text": "Moving Around a Worksheet and Workbook",
+                    "dataURL": "link-2-4.json",
+                    "hash": "2/4"
+                },
+                {
+                    "refid": "link-2-5",
+                    "text": "Printing a Worksheet",
+                    "dataURL": "link-2-5.json",
+                    "hash": "2/5"
+                },
+                {
+                    "refid": "link-2-6",
+                    "text": "Saving a Workbook File",
+                    "dataURL": "link-2-6.json",
+                    "hash": "2/6"
+                }
+            ]
+        },
+        {
+            "refid": "link-3",
+            "text": "Working with Data: Basic Techniques",
+            "dataURL": "link-3.json",
+            "hash": "3",
+            "childLinks": [
+                {
+                    "refid": "link-3-0",
+                    "text": "Cells and Ranges",
+                    "dataURL": "link-3-0.json",
+                    "hash": "3/0"
+                },
+                {
+                    "refid": "link-3-1",
+                    "text": "Selecting Ranges",
+                    "dataURL": "link-3-1.json",
+                    "hash": "3/1",
+                    "childLinks": [
+                        {
+                            "refid": "link-3-1-0",
+                            "text": "Selection Pointer",
+                            "dataURL": "link-3-1-0.json",
+                            "hash": "3/1/0"
+                        },
+                        {
+                            "refid": "link-3-1-1",
+                            "text": "Ctrl and Shift",
+                            "dataURL": "link-3-1-1.json",
+                            "hash": "3/1/1"
+                        },
+                        {
+                            "refid": "link-3-1-2",
+                            "text": "Splitting the Screen",
+                            "dataURL": "link-3-1-2.json",
+                            "hash": "3/1/2"
+                        }
+                    ]
+                },
+                {
+                    "refid": "link-3-2",
+                    "text": "Selecting All Cells in a Dataset Using Shortcut Keys",
+                    "dataURL": "link-3-2.json",
+                    "hash": "3/2"
+                },
+                {
+                    "refid": "link-3-3",
+                    "text": "Selecting All Cells on a Worksheet",
+                    "dataURL": "link-3-3.json",
+                    "hash": "3/3"
+                },
+                {
+                    "refid": "link-3-4",
+                    "text": "Selecting Noncontiguous Ranges ",
+                    "dataURL": "link-3-4.json",
+                    "hash": "3/4",
+                    "childLinks": [
+                        {
+                            "refid": "link-3-4-0",
+                            "text": "Using the Ctrl Key",
+                            "dataURL": "link-3-4-0.json",
+                            "hash": "3/4/0"
+                        },
+                        {
+                            "refid": "link-3-4-1",
+                            "text": "Using F8 (Extend Selection) and Shift-F8 (Add to Selection)",
+                            "dataURL": "link-3-4-1.json",
+                            "hash": "3/4/1"
+                        }
+                    ]
+                },
+                {
+                    "refid": "link-3-5",
+                    "text": "Selecting Cells and Named Ranges",
+                    "dataURL": "link-3-5.json",
+                    "hash": "3/5",
+                    "childLinks": [
+                        {
+                            "refid": "link-3-5-0",
+                            "text": "In Name Box",
+                            "dataURL": "link-3-5-0.json",
+                            "hash": "3/5/0"
+                        },
+                        {
+                            "refid": "link-3-5-1",
+                            "text": "With the F5 Key (Go To Dialog Box)",
+                            "dataURL": "link-3-5-1.json",
+                            "hash": "3/5/1"
+                        }
+                    ]
+                },
+                {
+                    "refid": "link-3-6",
+                    "text": "Selecting Otherwise Difficult to Select Cells with Go To Special",
+                    "dataURL": "link-3-6.json",
+                    "hash": "3/6"
+                },
+                {
+                    "refid": "link-3-7",
+                    "text": "Filling Series",
+                    "dataURL": "link-3-7.json",
+                    "hash": "3/7"
+                },
+                {
+                    "refid": "link-3-8",
+                    "text": "Copying and Moving Cell Entries",
+                    "dataURL": "link-3-8.json",
+                    "hash": "3/8"
+                },
+                {
+                    "refid": "link-3-9",
+                    "text": "The Undo Command",
+                    "dataURL": "link-3-9.json",
+                    "hash": "3/9"
+                }
+            ]
+        },
+        {
+            "refid": "link-4",
+            "text": "Increasing Spreadsheet Readability",
+            "dataURL": "link-4.json",
+            "hash": "4",
+            "childLinks": [
+                {
+                    "refid": "link-4-0",
+                    "text": "Working with Rows and Columns",
+                    "dataURL": "link-4-0.json",
+                    "hash": "4/0"
+                },
+                {
+                    "refid": "link-4-1",
+                    "text": "Making Better Use of Screen Space",
+                    "dataURL": "link-4-1.json",
+                    "hash": "4/1"
+                },
+                {
+                    "refid": "link-4-2",
+                    "text": "Basic Cell Formatting",
+                    "dataURL": "link-4-2.json",
+                    "hash": "4/2"
+                },
+                {
+                    "refid": "link-4-3",
+                    "text": "Basic Number Formats",
+                    "dataURL": "link-4-3.json",
+                    "hash": "4/3"
+                },
+                {
+                    "refid": "link-4-4",
+                    "text": "Conditional Formatting",
+                    "dataURL": "link-4-4.json",
+                    "hash": "4/4"
+                },
+                {
+                    "refid": "link-4-5",
+                    "text": "Formatting and Other Options with Paste Special",
+                    "dataURL": "link-4-5.json",
+                    "hash": "4/5"
+                },
+                {
+                    "refid": "link-4-6",
+                    "text": "Setting Up a Worksheet for Printing",
+                    "dataURL": "link-4-6.json",
+                    "hash": "4/6"
+                }
+            ]
+        },
+        {
+            "refid": "link-5",
+            "text": "Excel Formulas",
+            "dataURL": "link-5.json",
+            "hash": "5",
+            "childLinks": [
+                {
+                    "refid": "link-5-0",
+                    "text": "Copying Formulas",
+                    "dataURL": "link-5-0.json",
+                    "hash": "5/0"
+                },
+                {
+                    "refid": "link-5-1",
+                    "text": "The Autocomplete Formula Option",
+                    "dataURL": "link-5-1.json",
+                    "hash": "5/1"
+                },
+                {
+                    "refid": "link-5-2",
+                    "text": "Entering Formulas by Pointing",
+                    "dataURL": "link-5-2.json",
+                    "hash": "5/2"
+                },
+                {
+                    "refid": "link-5-3",
+                    "text": "Other Ways to Copy Formulas",
+                    "dataURL": "link-5-3.json",
+                    "hash": "5/3"
+                },
+                {
+                    "refid": "link-5-4",
+                    "text": "Absolute Addressing",
+                    "dataURL": "link-5-4.json",
+                    "hash": "5/4"
+                },
+                {
+                    "refid": "link-5-5",
+                    "text": "Using the F4 Key ",
+                    "dataURL": "link-5-5.json",
+                    "hash": "5/5"
+                },
+                {
+                    "refid": "link-5-6",
+                    "text": "Hierarchy of Mathematical Operations",
+                    "dataURL": "link-5-6.json",
+                    "hash": "5/6"
+                },
+                {
+                    "refid": "link-5-7",
+                    "text": "Summation Icon",
+                    "dataURL": "link-5-7.json",
+                    "hash": "5/7"
+                },
+                {
+                    "refid": "link-5-8",
+                    "text": "Editing or Correcting Formulas",
+                    "dataURL": "link-5-8.json",
+                    "hash": "5/8"
+                },
+                {
+                    "refid": "link-5-9",
+                    "text": "Showing the Actual Formula in a Cell",
+                    "dataURL": "link-5-9.json",
+                    "hash": "5/9"
+                },
+                {
+                    "refid": "link-5-10",
+                    "text": "Do It Yourself Exercise",
+                    "dataURL": "link-5-10.json",
+                    "hash": "5/10"
+                }
+            ]
+        },
+        {
+            "refid": "link-6",
+            "text": "Useful Excel Functions",
+            "dataURL": "link-6.json",
+            "hash": "6",
+            "childLinks": [
+                {
+                    "refid": "link-6-0",
+                    "text": "IF Statements",
+                    "dataURL": "link-6-0.json",
+                    "hash": "6/0"
+                },
+                {
+                    "refid": "link-6-1",
+                    "text": "Text Functions",
+                    "dataURL": "link-6-1.json",
+                    "hash": "6/1"
+                },
+                {
+                    "refid": "link-6-2",
+                    "text": "Flash Fill",
+                    "dataURL": "link-6-2.json",
+                    "hash": "6/2"
+                },
+                {
+                    "refid": "link-6-3",
+                    "text": "Basic Date and Time Functions",
+                    "dataURL": "link-6-3.json",
+                    "hash": "6/3"
+                },
+                {
+                    "refid": "link-6-4",
+                    "text": "Range Names",
+                    "dataURL": "link-6-4.json",
+                    "hash": "6/4"
+                },
+                {
+                    "refid": "link-6-5",
+                    "text": "Lookup Functions",
+                    "dataURL": "link-6-5.json",
+                    "hash": "6/5"
+                },
+                {
+                    "refid": "link-6-6",
+                    "text": "Other Lookup & Reference Functions",
+                    "dataURL": "link-6-6.json",
+                    "hash": "6/6"
+                },
+                {
+                    "refid": "link-6-7",
+                    "text": "Error Trapping",
+                    "dataURL": "link-6-7.json",
+                    "hash": "6/7"
+                },
+                {
+                    "refid": "link-6-8",
+                    "text": "Rounding Functions",
+                    "dataURL": "link-6-8.json",
+                    "hash": "6/8"
+                },
+                {
+                    "refid": "link-6-9",
+                    "text": "The SUMPRODUCT Function",
+                    "dataURL": "link-6-9.json",
+                    "hash": "6/9"
+                },
+                {
+                    "refid": "link-6-10",
+                    "text": "Modeling Uncertainty in Excel",
+                    "dataURL": "link-6-10.json",
+                    "hash": "6/10"
+                },
+                {
+                    "refid": "link-6-11",
+                    "text": "Excel Financial Functions",
+                    "dataURL": "link-6-11.json",
+                    "hash": "6/11"
+                },
+                {
+                    "refid": "link-6-12",
+                    "text": "COUNT, COUNTA, and COUNTBLANK Functions",
+                    "dataURL": "link-6-12.json",
+                    "hash": "6/12"
+                },
+                {
+                    "refid": "link-6-13",
+                    "text": "Excel Statistical Functions",
+                    "dataURL": "link-6-13.json",
+                    "hash": "6/13"
+                },
+                {
+                    "refid": "link-6-14",
+                    "text": "Conditional Counts",
+                    "dataURL": "link-6-14.json",
+                    "hash": "6/14"
+                },
+                {
+                    "refid": "link-6-15",
+                    "text": "Conditional Sums",
+                    "dataURL": "link-6-15.json",
+                    "hash": "6/15"
+                },
+                {
+                    "refid": "link-6-16",
+                    "text": "Removing Duplicates",
+                    "dataURL": "link-6-16.json",
+                    "hash": "6/16"
+                },
+                {
+                    "refid": "link-6-17",
+                    "text": "Sorting in Excel",
+                    "dataURL": "link-6-17.json",
+                    "hash": "6/17"
+                },
+                {
+                    "refid": "link-6-18",
+                    "text": "Filtering Data",
+                    "dataURL": "link-6-18.json",
+                    "hash": "6/18"
+                },
+                {
+                    "refid": "link-6-19",
+                    "text": "Subtotals",
+                    "dataURL": "link-6-19.json",
+                    "hash": "6/19"
+                },
+                {
+                    "refid": "link-6-20",
+                    "text": "Pivot Tables",
+                    "dataURL": "link-6-20.json",
+                    "hash": "6/20"
+                },
+                {
+                    "refid": "link-6-21",
+                    "text": "Pivot Charts",
+                    "dataURL": "link-6-21.json",
+                    "hash": "6/21"
+                },
+                {
+                    "refid": "link-6-22",
+                    "text": "Conditional Formatting: The Formula Option",
+                    "dataURL": "link-6-22.json",
+                    "hash": "6/22"
+                }
+            ]
+        },
+        {
+            "refid": "link-7",
+            "text": "Charts",
+            "dataURL": "link-7.json",
+            "hash": "7",
+            "childLinks": [
+                {
+                    "refid": "link-7-0",
+                    "text": "Creating Charts",
+                    "dataURL": "link-7-0.json",
+                    "hash": "7/0"
+                },
+                {
+                    "refid": "link-7-1",
+                    "text": "Resizing and Moving Charts",
+                    "dataURL": "link-7-1.json",
+                    "hash": "7/1"
+                },
+                {
+                    "refid": "link-7-2",
+                    "text": "Basic Formatting of Charts",
+                    "dataURL": "link-7-2.json",
+                    "hash": "7/2"
+                },
+                {
+                    "refid": "link-7-3",
+                    "text": "Formatting Axes and Data Series",
+                    "dataURL": "link-7-3.json",
+                    "hash": "7/3"
+                },
+                {
+                    "refid": "link-7-4",
+                    "text": "Customizing Charts",
+                    "dataURL": "link-7-4.json",
+                    "hash": "7/4"
+                }
+            ]
+        },
+        {
+            "refid": "link-8",
+            "text": "Importing Data into Excel",
+            "dataURL": "link-8.json",
+            "hash": "8",
+            "childLinks": [
+                {
+                    "refid": "link-8-0",
+                    "text": "From a Text or Word File",
+                    "dataURL": "link-8-0.json",
+                    "hash": "8/0"
+                },
+                {
+                    "refid": "link-8-1",
+                    "text": "Using Web Queries to Import Data from the Web",
+                    "dataURL": "link-8-1.json",
+                    "hash": "8/1"
+                },
+                {
+                    "refid": "link-8-2",
+                    "text": "Exercises",
+                    "dataURL": "link-8-2.json",
+                    "hash": "8/2"
+                }
+            ]
+        },
+        {
+            "refid": "link-9",
+            "text": "The Art of Spreadsheet Modeling",
+            "dataURL": "link-9.json",
+            "hash": "9",
+            "childLinks": [
+                {
+                    "refid": "link-9-0",
+                    "text": "Model Building Blocks",
+                    "dataURL": "link-9-0.json",
+                    "hash": "9/0"
+                },
+                {
+                    "refid": "link-9-1",
+                    "text": "Model Terminology",
+                    "dataURL": "link-9-1.json",
+                    "hash": "9/1"
+                },
+                {
+                    "refid": "link-9-2",
+                    "text": "The Spreadsheet Model Building Process",
+                    "dataURL": "link-9-2.json",
+                    "hash": "9/2"
+                },
+                {
+                    "refid": "link-9-3",
+                    "text": "Rules to Guide Intelligent Modeling",
+                    "dataURL": "link-9-3.json",
+                    "hash": "9/3"
+                },
+                {
+                    "refid": "link-9-4",
+                    "text": "Building a Model",
+                    "dataURL": "link-9-4.json",
+                    "hash": "9/4"
+                },
+                {
+                    "refid": "link-9-5",
+                    "text": "Set up the Spreadsheet Model",
+                    "dataURL": "link-9-5.json",
+                    "hash": "9/5"
+                },
+                {
+                    "refid": "link-9-6",
+                    "text": "Data Tables",
+                    "dataURL": "link-9-6.json",
+                    "hash": "9/6"
+                },
+                {
+                    "refid": "link-9-7",
+                    "text": "Two-Way Data Tables",
+                    "dataURL": "link-9-7.json",
+                    "hash": "9/7"
+                },
+                {
+                    "refid": "link-9-8",
+                    "text": "Goal Seek",
+                    "dataURL": "link-9-8.json",
+                    "hash": "9/8"
+                },
+                {
+                    "refid": "link-9-9",
+                    "text": "Auditing",
+                    "dataURL": "link-9-9.json",
+                    "hash": "9/9"
+                },
+                {
+                    "refid": "link-9-10",
+                    "text": "Flexibility",
+                    "dataURL": "link-9-10.json",
+                    "hash": "9/10"
+                },
+                {
+                    "refid": "link-9-11",
+                    "text": "Comments and Text Boxes",
+                    "dataURL": "link-9-11.json",
+                    "hash": "9/11"
+                },
+                {
+                    "refid": "link-9-12",
+                    "text": "Error Trapping",
+                    "dataURL": "link-9-12.json",
+                    "hash": "9/12"
+                },
+                {
+                    "refid": "link-9-13",
+                    "text": "Using F9 and Evaluate Formula Feature",
+                    "dataURL": "link-9-13.json",
+                    "hash": "9/13"
+                },
+                {
+                    "refid": "link-9-14",
+                    "text": "Scenarios",
+                    "dataURL": "link-9-14.json",
+                    "hash": "9/14"
+                },
+                {
+                    "refid": "link-9-15",
+                    "text": "Spinners",
+                    "dataURL": "link-9-15.json",
+                    "hash": "9/15"
+                },
+                {
+                    "refid": "link-9-16",
+                    "text": "Model Limitations",
+                    "dataURL": "link-9-16.json",
+                    "hash": "9/16"
+                }
+            ]
+        },
+        {
+            "refid": "link-10",
+            "text": "Using Excel Solver",
+            "dataURL": "link-10.json",
+            "hash": "10",
+            "childLinks": [
+                {
+                    "refid": "link-10-0",
+                    "text": "Solving Optimization Problems ",
+                    "dataURL": "link-10-0.json",
+                    "hash": "10/0"
+                },
+                {
+                    "refid": "link-10-1",
+                    "text": "Developing a Solver Model",
+                    "dataURL": "link-10-1.json",
+                    "hash": "10/1"
+                },
+                {
+                    "refid": "link-10-2",
+                    "text": "Configuring Solver to Solve the Problem",
+                    "dataURL": "link-10-2.json",
+                    "hash": "10/2"
+                }
+            ]
+        },
+        {
+            "refid": "link-11",
+            "text": "Three-Dimensional Formulas, the Table Feature and Circular References",
+            "dataURL": "link-11.json",
+            "hash": "11",
+            "childLinks": [
+                {
+                    "refid": "link-11-0",
+                    "text": "Three-Dimensional Formulas",
+                    "dataURL": "link-11-0.json",
+                    "hash": "11/0"
+                },
+                {
+                    "refid": "link-11-1",
+                    "text": "Using the Excel Table Feature",
+                    "dataURL": "link-11-1.json",
+                    "hash": "11/1"
+                },
+                {
+                    "refid": "link-11-2",
+                    "text": "Circular References",
+                    "dataURL": "link-11-2.json",
+                    "hash": "11/2"
+                }
+            ]
+        },
+        {
+            "refid": "link-12",
+            "text": "Monte Carlo Simulation",
+            "dataURL": "link-12.json",
+            "hash": "12",
+            "childLinks": [
+                {
+                    "refid": "link-12-0",
+                    "text": "Uncertainty and Monte Carlo Simulation",
+                    "dataURL": "link-12-0.json",
+                    "hash": "12/0"
+                },
+                {
+                    "refid": "link-12-1",
+                    "text": "Random Variables: The Key to Monte Carlo Simulation",
+                    "dataURL": "link-12-1.json",
+                    "hash": "12/1"
+                },
+                {
+                    "refid": "link-12-2",
+                    "text": "Using @RISK to Simulate a New Product Introduction",
+                    "dataURL": "link-12-2.json",
+                    "hash": "12/2"
+                }
+            ]
+        },
+        {
+            "refid": "link-13",
+            "text": "Final Exam Introduction",
+            "dataURL": "link-13.json",
+            "hash": "13",
+            "childLinks": [
+                {
+                    "refid": "link-13-0",
+                    "text": "Final Exam",
+                    "dataURL": "link-13-0.json",
+                    "hash": "13/0"
+                }
+            ]
+        },
+        {
+            "refid": "link-14",
+            "text": "Credits",
+            "dataURL": "link-14.json",
+            "hash": "14"
+        }
+    ]
+}

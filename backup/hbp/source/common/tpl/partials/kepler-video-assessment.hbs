@@ -1,0 +1,27 @@
+<div class="node-main-content-container kepler-video kepler-video-scratchpad container-fluid no-marg">
+    <div class="row no-marg">
+        <div class="image-holder no-pad">
+            <div class="thumbnail-holder">
+                <img src="content/common/media/images/video-thumbnail.png" class="image img-responsive" alt="{{this.img.alt}}" />
+                <div class="thumbnail-modal"></div>
+                <div class="play-icon">
+                    <button class="icon-video" data-target="kepler-video" data-json="{{this.dataVideoJson}}" aria-label="Play" title="Play"></button>
+                </div>
+                <span class="video-text">{{this.text}}</span>
+            </div>
+        </div><div class="scratchpad-holder">
+            <div class="row no-marg">
+                {{#if this.showText}}
+                    <div class="label-text col-xs-12 col-md-12 no-pad">Try for yourself.</div>
+                {{/if}}
+                <div class="button-holder col-xs-12 col-md-12 no-pad">
+                    <button class="btn launch-btn scratchpad-launch-btn" data-target="kepler-assessment" data-json="{{this.dataOtherJson.[0]}}" data-use-custom-title="{{this.useCustomTitle}}">
+                        <i class="icon-practice"></i>
+                        <span>LAUNCH PRACTICE</span>
+                        <i class="icon-filled-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

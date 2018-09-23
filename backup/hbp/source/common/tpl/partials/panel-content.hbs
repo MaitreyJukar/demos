@@ -1,0 +1,17 @@
+{{#each this}}
+<div class="panel-item fluid-container">
+    <div class="row alphabet-holder">
+        <h3 class="col-xs-12 col-md-12">{{this.alphabet}}</h3>
+    </div>
+    {{#each this.items}}
+    <div class="items-holder" data-id="{{{this.term}}}">
+        <div class="row item-title-holder">
+            <h4 class="col-xs-12 col-md-12">{{{this.term}}}</h4>
+        </div>
+        <div class="row item-text-holder">
+            <div class="col-xs-12 col-md-12">{{{this.text}}}</div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/each}}

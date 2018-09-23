@@ -1,0 +1,622 @@
+/*sidemenu css*/
+
+#side-menu {
+    width: 333px;
+    display: inline-block;
+    transition: 0.5s;
+    left: 0px;
+    z-index: 13;
+    top: 56px;
+    position: fixed;
+    max-width: 100vw;
+    height: calc(100% - 56px);
+    height: -webkit-calc(100% - 56px);
+    height: -moz-calc(100% - 56px);
+}
+
+#side-menu.is-behind {
+    z-index: 6;
+}
+
+#side-menu li {
+    list-style: none;
+}
+
+#side-menu ul {
+    padding: 0;
+}
+
+.side-menu .icon-arrow-left {
+    display: inline-block;
+    line-height: 32px;
+    font-size: 24px;
+    color: #546e7a;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 4px;
+    background-color: transparent;
+}
+
+.side-menu .icon-arrow-left::before {
+    position: relative;
+    top: 4px;
+    right: 1px;
+}
+
+body:not(.touch-device) .side-menu .icon-arrow-left:hover,
+body:not(.touch-device) .side-menu .icon-enter:hover,
+body:not(.touch-device) .side-menu .icon-plus:hover,
+body:not(.touch-device) .side-menu .icon-minus:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.side-menu .icon-arrow-left:active,
+.side-menu .icon-enter:active,
+.side-menu .icon-plus:active,
+.side-menu .icon-minus:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.side-menu .icon-enter {
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 34px;
+    color: #546e7a;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+}
+
+.side-menu .icon-enter::before {
+    position: relative;
+    left: 12px;
+    top: 5px;
+}
+
+.side-menu-accordion-header.zero-height {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.side-menu {
+    width: 333px;
+    z-index: 1;
+    background-color: #f6f4f5;
+    overflow-x: hidden;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 11px 51.94px 1.06px rgba(0, 0, 0, 0.16), 14px 24px 37.6px 2.4px rgba(0, 0, 0, 0.24);
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    max-width: 100vw;
+}
+
+.side-menu-accordion-header.side-menu-header {
+    height: 48px;
+    background-color: #f6f4f5;
+    font-size: 24px;
+    padding-left: 1px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.side-menu-header .side-menu-link {
+    font-weight: 700;
+    position: relative;
+    top: -2px;
+}
+
+.side-menu-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.side-menu-content a {
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    box-sizing: border-box;
+    color: #505050;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 2px;
+    width: calc(100% - 69px);
+    width: -webkit-calc(100% - 69px);
+    width: -moz-calc(100% - 69px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 85%;
+    line-height: 37px;
+}
+
+.side-menu-accordion-content .side-menu-accordion-header a {
+    width: calc(100% - 73px);
+    width: -webkit-calc(100% - 73px);
+    width: -moz-calc(100% - 73px);
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+body:not(.touch-devices) .side-menu-accordion-content .side-menu-accordion-header:hover .side-menu-link,
+body:not(.touch-devices) .side-menu-accordion-content .side-menu-accordion-header:active .side-menu-link {
+    text-decoration: underline;
+}
+
+.side-menu-accordion-content .side-menu-accordion-header a:last-child {
+    width: calc(100% - 72px);
+    width: -webkit-calc(100% - 72px);
+    width: -moz-calc(100% - 72px);
+}
+
+.side-menu-accordion-content .side-menu-accordion-content .side-menu-accordion-header a {
+    width: calc(100% - 101px);
+    width: -webkit-calc(100% - 101px);
+    width: -moz-calc(100% - 101px);
+    margin-left: 0;
+}
+
+.side-menu-accordion-content .side-menu-accordion-content .side-menu-accordion-header a:last-child {
+    width: calc(100% - 68px);
+    width: -webkit-calc(100% - 68px);
+    width: -moz-calc(100% - 68px);
+}
+
+.side-menu-accordion-content .side-menu-accordion-content .side-menu-accordion-content .side-menu-accordion-header a {
+    width: calc(100% - 134px);
+    width: -webkit-calc(100% - 134px);
+    width: -moz-calc(100% - 134px);
+}
+
+body:not(.touch-device) .side-menu-content a:focus,
+body:not(.touch-device) .side-menu-content a:hover {
+    color: #505050;
+    text-decoration: underline;
+}
+
+body:not(.touch-device) .side-menu-content .active-link a:focus,
+body:not(.touch-device) .side-menu-content .active-link a:hover {
+    color: #B01B3E;
+    text-decoration: underline;
+}
+
+.current-header .side-menu-accordion-header:not(.collapsed) {
+    background-color: #f6f4f5;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.in .side-menu-accordion-header,
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.collapsing .side-menu-accordion-header {
+    background-color: #fff;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.in .side-menu-accordion-header.active-link,
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.in .hierarchy-title,
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.collapsing .hierarchy-title {
+    background-color: #fff;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.in .hierarchy-title,
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.collapsing .hierarchy-title {
+    border-top: solid 1px rgba(0, 0, 0, 0.12);
+    position: relative;
+    padding-left: 144px;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-header.collapsed .title-before,
+.current-header .side-menu-accordion-content.in .side-menu-accordion-header.collapsed .title-after {
+    opacity: 0;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-header .title-before,
+.current-header .side-menu-accordion-content.in .side-menu-accordion-header .title-after {
+    bottom: -1px;
+    left: 92.6%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s ease;
+    -moz-transition: opacity 0.35s ease;
+    transition: opacity 0.35s ease;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-header .title-before {
+    border-color: rgba(22, 26, 28, 0);
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+    border-width: 11px;
+    margin-left: -16px;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-header .title-after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: white;
+    border-width: 9px;
+    margin-left: -14px;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.in .side-menu-accordion-header.active-link .serial-no {
+    color: #B01B3E;
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.in,
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.collapsing {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.current-header .side-menu-accordion-content.in .side-menu-accordion-content.in .side-menu-accordion-header:hover,
+.current-header .side-menu-accordion-header:not(.collapsed):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.status-bar {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    height: 26px;
+}
+
+.side-menu-accordion-header {
+    position: relative;
+    white-space: nowrap;
+    height: 48px;
+    line-height: 48px;
+    border-left: solid 8px transparent;
+    padding: 0 24px 0 20px;
+    cursor: pointer;
+    transition: height 0.5s ease, line-height 0.5s ease;
+}
+
+.hierarchy-title {
+    cursor: auto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b7983;
+    font-weight: 400;
+    height: 41px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    padding-left: 146px;
+    transform: translateZ(0);
+}
+
+.side-menu-accordion-header:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.side-menu-accordion-content .side-menu-accordion-content .status-bar {
+    margin-left: 0px;
+}
+
+.side-menu-accordion-content .side-menu-accordion-content .side-menu-accordion-content .status-bar {
+    margin-left: 96px;
+}
+
+.side-menu-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 12;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.side-menu .icon-plus,
+.side-menu .icon-minus,
+.side-menu .icon-bookmarked {
+    color: #546e7a;
+    font-size: 20px;
+    line-height: 18px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+}
+
+.side-menu .icon-plus::before,
+.side-menu .icon-minus:before {
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.side-menu .icon-bookmarked {
+    font-size: 14px;
+    height: 18px;
+    width: unset;
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
+
+.side-menu .side-menu-header .icon-bookmarked {
+    left: 1px;
+}
+
+span.icon-enter:not(.hide)+span.icon-bookmarked {
+    left: -20px;
+}
+
+#header .side-menu-modal {
+    position: absolute;
+    height: 56px;
+    width: calc(100% - 56px);
+    z-index: 9;
+    top: 0;
+    left: 56px;
+    background-color: transparent;
+}
+
+.side-menu-modal.hide-modal {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fa-bars:before {
+    position: absolute;
+    left: 19px;
+    top: 16px;
+}
+
+.ui-accordion-header-icon {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.ui-accordion-header-icon.fa {
+    font-size: 20px;
+    font-weight: 800;
+    color: #808080;
+}
+
+.side-menu-content .active-link {
+    border-left: solid 8px #239caa;
+    background-color: #fff;
+}
+
+.side-menu-content .active-link a {
+    color: #B01B3E;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.side-menu-inner-accordion-content a {
+    display: block
+}
+
+.side-menu-inner-accordion-header {
+    position: relative;
+    white-space: nowrap;
+}
+
+#side-menu-close {
+    cursor: pointer;
+}
+
+.side-menu-accordion-header .glyphicon {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+
+.percent-text {
+    height: 14px;
+    width: 21px;
+    font-size: 12px;
+    text-align: center;
+    color: #239CAA;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.percent-bar.hide {
+    display: none;
+}
+
+.status-bar .progress {
+    height: 4px;
+    width: 22px;
+    border-radius: 3px;
+    margin: 4px 0;
+}
+
+.status-bar .progress-bar {
+    background-color: #239CAA;
+}
+
+.status-bar .icon-check {
+    font-size: 21px;
+    line-height: 27px;
+    color: #239CAA;
+    text-align: center;
+}
+
+.side-menu-accordion-content .side-menu-accordion-content .side-menu-accordion-header .status-bar .icon-check {
+    font-size: 15px;
+}
+
+.side-menu .icon-bookmarked {
+    display: none;
+}
+
+.current-header .icon-bookmarked {
+    display: inline-block;
+}
+
+.current-header .side-menu-accordion-content .side-menu-accordion-content a {
+    font-size: 16px;
+}
+
+.current-header .side-menu-accordion-content .side-menu-accordion-content .active-link a {
+    font-size: 16px;
+}
+
+.current-header>.side-menu-accordion-header:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.current-header>.active-header {
+    border-left: solid 8px #239caa;
+}
+
+.current-header>.active-header:hover {
+    background-color: #fff;
+}
+
+.side-menu .divider {
+    display: inline-block;
+    border-left: solid 1px rgba(84, 110, 122, 0.12);
+    height: 35px;
+    position: relative;
+    vertical-align: middle;
+    top: -2px;
+}
+
+.side-menu-accordion>.menu-item {
+    height: 48px;
+    opacity: 1;
+    transition: height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.side-menu-accordion>.hierarchy-title {
+    opacity: 1;
+    transition: height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+    padding: 0;
+    padding-left: 132px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.side-menu-accordion>.zero-height {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.side-menu-accordion>.zero-height.hierarchy-title {
+    padding-left: 132px;
+}
+
+.side-menu-accordion>.menu-item>.side-menu-accordion-content.collapsing {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.side-menu-accordion>.menu-item>.side-menu-accordion-content.collapse {
+    display: block;
+}
+
+.side-menu-accordion>.menu-item>.side-menu-accordion-content {
+    transition: 0.4s ease;
+    position: relative;
+    left: 100%;
+}
+
+.side-menu .serial-no {
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+    color: #737373;
+    text-align: center;
+    margin-left: 22px;
+}
+
+.swipe {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+.level2.side-menu-accordion>.menu-item>.side-menu-accordion-content {
+    transition-delay: 0.4s;
+}
+
+.level2.side-menu-accordion>.menu-item {
+    transition-delay: 0s;
+}
+
+.level1.side-menu-accordion>.menu-item>.side-menu-accordion-content {
+    transition-delay: 0s;
+}
+
+.level1.side-menu-accordion>.menu-item,
+.level1.side-menu-accordion>.hierarchy-title {
+    transition-delay: 0.4s;
+}
+
+body .side-menu-content .current-header .active-header a {
+    color: #B01B3E;
+}
+
+body:not(.touch-device) .current-header .active-header a:hover {
+    color: #B01B3E;
+}
+
+.main-container #content #side-menu .no-transition * {
+    transition: none;
+}
+
+@media screen and (min-width: 1025px) {
+    .side-menu {
+        box-shadow: none;
+        width: 333px;
+        top: auto;
+        height: 100%;
+        left: 0px !important;
+    }
+    .side-menu-modal {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #side-menu.hide-menu {
+        left: -400px;
+    }
+    #side-menu.menu-hidden.hide-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #side-menu {
+        height: 100%;
+        float: left;
+        width: 333px;
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #side-menu {
+        z-index: 14;
+    }
+    .side-menu-modal {
+        z-index: 13;
+    }
+}

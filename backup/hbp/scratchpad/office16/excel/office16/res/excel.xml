@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<parentnode>
+<framedata>
+	<ribbon>
+		<!--Basic Tabs-->
+		<frameitem id="10000000" name="File" imgprecache="1|2|3" parserfile="excel/res/ribbon_automation.xml" role="16" left="63" top="30" width="63" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+		<frameitem id="110000" name="Home" imgprecache="1|2|3" role="14" left="62" top="26" width="63" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="110100" name="Clipboard" role="13" left="0" top="55" width="86" height="91" touchleft="0" touchtop="79" touchwidth="115" touchheight="121" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" shrink="0" shrinkwidth="56" shrinktouchwidth="56">
+				<frameitem id="110101" name="Paste" role="6" left="4" top="2" width="42" height="69" touchleft="8" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_h_v" enable="1" kbdshortcut="v" menuno="1" rtmenuno="-2" tt_type="1" tt_text="Paste (Ctrl+V)ŽAdd content on the Clipboard to &lt;br&gt;your document.¦Paste (Ctrl+V)ŽPick a paste option, such as keeping formatting or pasting only content." tt_class="" multiline="0" behavnormal="0" textposition="1"/>				
+				<frameitem id="110103" name="" role="6" left="46" top="2" width="35" height="23" touchleft="60" touchtop="5" touchwidth="46" touchheight="32" cssclass="xl_h_c" enable="1" kbdshortcut="c" menuno="2" rtmenuno="-2" tt_type="1" tt_text="Copy (Ctrl+C)ŽPut a copy of the selection on the &lt;br&gt;Clipboard so you can paste it &lt;br&gt;somewhere else. ¦Copy(Ctrl+C)ŽPick how you want to copy the selection." tt_class="" multiline="0" behavnormal="0" textposition="1"/>				
+				
+			</frameitem>
+			<frameitem id="110200" name="Font" role="13" left="86" top="55" width="204" height="91" touchleft="115" touchtop="79" touchwidth="308" touchheight="121" cssclass="xl_h_zf_shrunk" enable="1" kbdshortcut="zf" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" shrink="1" shrinkwidth="56" shrinktouchwidth="56">
+				<frameitem id="110201" name="Calibri" role="0" left="4" top="10" width="108" height="23" touchleft="8" touchtop="18" touchwidth="151" touchheight="28" cssclass="" enable="1" kbdshortcut="ff" menuno="3" rtmenuno="-2" tt_type="1" tt_text="FontŽPick a new font for your text." tt_class=""/>
+				<frameitem id="110202" name="11" role="0" left="112" top="10" width="43" height="23" touchleft="164" touchtop="18" touchwidth="43" touchheight="28" cssclass="" enable="1" kbdshortcut="fs" menuno="4" rtmenuno="-2" tt_type="1" tt_text="Font SizeŽChange the size of your text." tt_class=""/>
+				<frameitem id="110203" name="" role="9" left="155" top="10" width="22" height="23" touchleft="207" touchtop="16" touchwidth="46" touchheight="32" cssclass="xl_h_fg" enable="1" kbdshortcut="fg" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Increase Font SizeŽMake your text a bit bigger." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110204" name="" role="9" left="177" top="10" width="22" height="23" touchleft="253" touchtop="16" touchwidth="46" touchheight="32" cssclass="xl_h_fk" enable="1" kbdshortcut="fk" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Decrease Font SizeŽMake your text a bit smaller." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110205" name="" role="9" left="4" top="41" width="22" height="23" touchleft="8" touchtop="59" touchwidth="46" touchheight="32" cssclass="xl_h_1" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Bold (Ctrl+B)ŽMake your text bold." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110206" name="" role="9" left="26" top="41" width="22" height="23" touchleft="54" touchtop="59" touchwidth="46" touchheight="32" cssclass="xl_h_2" enable="1" kbdshortcut="2" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Italic (Ctrl+I)ŽItalicize your text." tt_class="" multiline="0" textposition="0"/>				
+				<frameitem id="110212" name="new" role="8" left="48" top="41" width="1" height="22" touchleft="100" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>				
+				<frameitem id="110209" name="yellow" role="4" left="53" top="41" width="34" height="23" touchleft="105" touchtop="59" touchwidth="46" touchheight="32" cssclass="xl_h_h" enable="1" kbdshortcut="h" menuno="7" rtmenuno="-2" tt_type="2" tt_text="Fill ColorŽColor the background of cells to make them stand out. Tell me more" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+				<frameitem id="110210" name="red" role="4" left="90" top="41" width="34" height="23" touchleft="150" touchtop="59" touchwidth="46" touchheight="32" cssclass="xl_h_fc" enable="1" kbdshortcut="fc" menuno="8" rtmenuno="-2" tt_type="2" tt_text="Font ColorŽChange the color of your text. Tell me more" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+				<frameitem id="110211" name="" role="15" left="188" top="74" width="16" height="17" touchleft="288" touchtop="104" touchwidth="16" touchheight="17" cssclass="" enable="1" kbdshortcut="fn" menuno="-1" rtmenuno="-2" tt_type="3" tt_text="Font Settings (Ctrl+Shift+F)ŽCustomize your text to give it the exact look you want.&lt;br&gt;&lt;br&gt; You can add a variety of styles and colors to your text, as well as visual effects such as strikethrough and superscript." tt_class="xl_h_fc_tt" multiline="0" textposition="0"/>
+			</frameitem>			
+			<frameitem id="110300" name="Alignment" role="13" left="362" top="55" width="75" height="91" touchleft="90" touchtop="79" touchwidth="155" touchheight="121" cssclass="xl_h_za_shrunk" enable="1" kbdshortcut="za" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Alignment" tt_class="" shrink="1" shrinkwidth="63" shrinktouchwidth="65">
+				<frameitem id="110301" name="" role="9" left="4" top="10" width="22" height="23" touchleft="8" touchtop="16" touchwidth="46" touchheight="32" cssclass="xl_h_at" enable="1" kbdshortcut="at" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Top AlignŽAlign text to the top." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110302" name="" role="9" left="26" top="10" width="22" height="23" touchleft="54" touchtop="16" touchwidth="46" touchheight="32" cssclass="xl_h_am" enable="1" kbdshortcut="am" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Middle AlignŽAlign text so that it is centered between the top and bottom of the cell." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110303" name="" role="9" left="48" top="10" width="22" height="23" touchleft="100" touchtop="16" touchwidth="46" touchheight="32" cssclass="xl_h_ab" enable="1" kbdshortcut="ab" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Bottom AlignŽAlign text to the bottom." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110313" name="" role="8" left="74" top="10" width="1" height="22" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>				
+				<frameitem id="110305" name="" role="9" left="4" top="41" width="22" height="23" touchleft="8" touchtop="59" touchwidth="46" touchheight="32" cssclass="xl_h_al" enable="1" kbdshortcut="al" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Align LeftŽAlign your content to the left." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110306" name="" role="9" left="26" top="41" width="22" height="23" touchleft="54" touchtop="59" touchwidth="46" touchheight="32" cssclass="xl_h_ac" enable="0" kbdshortcut="ac" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="CenterŽCenter your content." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110307" name="" role="9" left="48" top="41" width="22" height="23" touchleft="100" touchtop="59" touchwidth="46" touchheight="32" cssclass="xl_h_ar" enable="1" kbdshortcut="ar" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Align RightŽAlign your content to the right." tt_class="" multiline="0" textposition="0"/>	
+				<frameitem id="110312" name="" role="15" left="248" top="74" width="16" height="17" touchleft="365" touchtop="104" touchwidth="16" touchheight="17" cssclass="" enable="1" kbdshortcut="fa" menuno="-1" rtmenuno="-2" tt_type="3" tt_text="Alignment SettingsŽDon't see what you're looking for? Check out the full set of cell alignment options." tt_class="xl_h_fa_tt"/>
+			</frameitem>
+			<frameitem id="110400" name="Number" role="13" left="626" top="55" width="137" height="91" touchleft="808" touchtop="79" touchwidth="148" touchheight="121" cssclass="xl_h_zn_shrunk" enable="1" kbdshortcut="zn" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Number" tt_class="" shrink="1" shrinkwidth="51" shrinktouchwidth="54">
+				<frameitem id="110405" name="Increase Decimal" role="9" left="4" top="10" width="125" height="23" touchleft="8" touchtop="16" touchwidth="126" touchheight="32" cssclass="xl_h_0" enable="1" kbdshortcut="0" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Increase DecimalŽShow more decimal places for a more precise value." tt_class="" multiline="0" textposition="0"/>
+				<frameitem id="110406" name="Decrease Decimal" role="9" left="4" top="41" width="128" height="23" touchleft="8" touchtop="59" touchwidth="130" touchheight="32" cssclass="xl_h_9" enable="1" kbdshortcut="9" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Decrease DecimalŽShow fewer decimal places." tt_class="" multiline="0" textposition="0"/>
+			</frameitem>
+			<frameitem id="110600" name="Cells" role="13" left="929" top="55" width="55" height="91" touchleft="1335" touchtop="79" touchwidth="70" touchheight="121" cssclass="xl_h_zc_shrunk" enable="1" kbdshortcut="zc" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Cells" tt_class="" shrink="1" shrinkwidth="44" shrinktouchwidth="54">				
+				<frameitem id="110603" name="Format" role="9" left="4" top="2" width="43" height="69" touchleft="8" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_h_o" enable="1" kbdshortcut="o" menuno="20" rtmenuno="-2" tt_type="1" tt_text="FormatŽ Change the row height or column width, organize sheets, or protect or hide cells." tt_class="" multiline="0" textposition="1"/>
+			</frameitem>
+			<frameitem id="110700" name="Data" role="13" left="929" top="55" width="55" height="91" touchleft="1335" touchtop="79" touchwidth="70" touchheight="121" cssclass="xl_h_zc_shrunk" enable="1" kbdshortcut="zc" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Cells" tt_class="" shrink="1" shrinkwidth="44" shrinktouchwidth="54" visible="0">				
+				<frameitem id="20000006" name="Auto Refresh" role="9" left="4" top="2" width="43" height="69" touchleft="8" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_jt_f" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Auto Refresh" tt_class="" multiline="0" checked="1" textposition="1"/>
+			</frameitem>
+	
+		</frameitem>
+		
+		<frameitem id="140000" name="Formulas" imgprecache="1|2|3" role="14" left="299" top="26" width="89" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="140100" name="Function Library" role="13" left="0" top="55" width="530" height="91" touchleft="0" touchtop="79" touchwidth="582" touchheight="121" cssclass="xl_m_r_f" enable="1" kbdshortcut="zl" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Function Library" tt_class="" shrinkwidth="54" shrinktouchwidth="56">
+				<frameitem id="140101" name="Insert Function" role="9" left="4" top="2" width="52" height="69" touchleft="8" touchtop="5" touchwidth="54" touchheight="96" cssclass="xl_m_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert Function (Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values." tt_class="" multiline="1" textposition="1"/>
+				<frameitem id="140111" name="new" role="8" left="60" top="10" width="1" height="55" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+				<frameitem id="140102" name="AutoSum" role="6" left="65" top="2" width="55" height="69" touchleft="62" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_m_u" enable="1" kbdshortcut="u" menuno="21" rtmenuno="-2" tt_type="3" tt_text="Sum (Alt+=)ŽAutomatically add it up.Your total will apear after the selected cells.|1•Sum (Alt+=)ŽAutomatically add a quick calculation to your worksheet, such as a sum or average." tt_class="xl_m_u_tt" multiline="0" behavnormal="0" textposition="1"/>
+				<frameitem id="140103" name="Recently Used" role="9" left="120" top="2" width="50" height="69" touchleft="125" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_m_r" enable="1" kbdshortcut="r" menuno="61" rtmenuno="-2" tt_type="2" tt_text="Recently UsedŽQuickly choose from functions you recently used." tt_class="" multiline="1" textposition="1"/>
+				<frameitem id="140104" name="Financial" role="9" left="170" top="2" width="52" height="69" touchleft="177" touchtop="5" touchwidth="54" touchheight="96" cssclass="xl_m_i" enable="1" kbdshortcut="i" menuno="62" rtmenuno="-2" tt_type="1" tt_text="FinancialŽAdd a financial function to your sheet." tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="140105" name="Logical" role="9" left="222" top="2" width="43" height="69" touchleft="231" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_m_l" enable="0" kbdshortcut="l" menuno="63" rtmenuno="-2" tt_type="1" tt_text="LogicalŽAdd a logical function to your worksheet." tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="140106" name="Text" role="9" left="265" top="2" width="42" height="69" touchleft="283" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_m_t" enable="1" kbdshortcut="t" menuno="64" rtmenuno="-2" tt_type="1" tt_text="Text FunctionŽAdd a text function to your worksheet." tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="140107" name="Date &amp; Time" role="9" left="307" top="2" width="42" height="69" touchleft="335" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_m_e" enable="1" kbdshortcut="e" menuno="65" rtmenuno="-2" tt_type="1" tt_text="Date &amp; TimeŽAdd a time function." tt_class="" multiline="1" textposition="1"/>
+				<frameitem id="140108" name="Lookup &amp; Reference" role="9" left="349" top="2" width="66" height="69" touchleft="387" touchtop="5" touchwidth="67" touchheight="96" cssclass="xl_m_o" enable="1" kbdshortcut="o" menuno="143" rtmenuno="-2" tt_type="1" tt_text="Lookup &amp; ReferenceŽAdd a lookup or reference function to your worksheet." tt_class="" multiline="1" textposition="1"/>
+				<frameitem id="140109" name="Math &amp; Trig" role="9" left="414" top="2" width="46" height="69" touchleft="454" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_m_g" enable="1" kbdshortcut="g" menuno="67" rtmenuno="-2" tt_type="1" tt_text="Math &amp; TrigŽAdd a math or trigonometry function to your worksheet." tt_class="" multiline="1" textposition="1"/>
+				<frameitem id="140110" name="More Functions" role="9" left="460" top="2" width="65" height="69" touchleft="506" touchtop="5" touchwidth="67" touchheight="96" cssclass="xl_m_q" enable="1" kbdshortcut="q" menuno="68" rtmenuno="-2" tt_type="1" tt_text="More FunctionsŽDon't see what you need?&lt;br&gt;&lt;br&gt;Browse more functions from categories like statistical, engineering, web, or OLAP cube functions." tt_class="" multiline="1" textposition="1"/>
+			</frameitem>
+	
+		</frameitem>
+		
+	</ribbon>
+	<quick_access>
+		<frameitem id="1" name="Data Analyzer" role="21" left="0" top="0" width="416" height="163" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="110000" name="Formatting" role="14" left="0" top="94" width="100" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" description="Conditional Formatting uses rules to highlight interesting data.">
+				<frameitem id="110001" name="Data Bars" role="9" left="12"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_h_l_d" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"     tt_text="" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="110002" name="Color Scale" role="9" left="0"  top="16" width="58" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_h_l_s" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"     tt_text="" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="110003" name="Icon Set" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_iconset" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"     tt_text="" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="110004" name="Greater Than" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_h_l_h_g" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"     tt_text="" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="110005" name="Top 10%" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_h_l_t_p" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"     tt_text="" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="110006" name="Clear Format" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_clearformat" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"     tt_text="" tt_class="" multiline="0" textposition="1"/>
+			</frameitem>
+			<frameitem id="120000" name="Charts" role="14" left="0" top="30" width="70" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" description="Recommended Charts help you visualize data.">
+				<frameitem id="120001" name="Clustered Bar" role="9" left="12"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_chart_clusbar" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="-1"     tt_text="ads" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="120002" name="Stacked Bar" role="9" left="0"  top="16" width="58" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_stacked_bar" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="-1"     tt_text="asd" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="120003" name="Clustered Column" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_chart_clustcolumn" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="-1"     tt_text="asd" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="120004" name="Scatter" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_scatter" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="-1"     tt_text="-1" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="120005" name="Stacked Column" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_stacked_column" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="-1"     tt_text="asd" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="120006" name="More Charts" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_chart_morechart" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="-1"     tt_text="asd" tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="120007" name="Line" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_chart_line" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="19"     tt_text="" tt_class="" multiline="0" textposition="1" visible="0"/>
+				<frameitem id="120008" name="Pie" role="9" left="0"  top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_chart_pie" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="19"     tt_text="" tt_class="" multiline="0" textposition="1" visible="0"/>
+			</frameitem>
+			<frameitem id="130000" name="Totals" role="14" left="0" top="30" width="68" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" description="Formulas automatically calculate totals for you.">
+				<frameitem id="1301012" name="" role="22" left="12" top="16" width="390" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" multiline="0" textposition="1">
+					<frameitem id="130101" name="Sum" role="9" left="0"  top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_sum_2" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"     tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130102" name="Average" role="9" left="0"  top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_average_2" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130103" name="Count" role="9" left="0"  top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_count_2" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"   tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130104" name="% Total" role="9" left="0" top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_total_2" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130105" name="Running Total" role="9" left="0" top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_runningtotal_2" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130106" name="Sum" role="9" left="0" top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_sum" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130107" name="Average" role="9" left="0" top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_average" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130108" name="Count" role="9" left="0" top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_count" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130109" name="% Total" role="9" left="0" top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_total" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+					<frameitem id="130110" name="Running Total" role="9" left="0" top="0" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_runningtotal" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2"    tt_text="" tt_class="" multiline="0" textposition="1"/>
+				</frameitem>
+			</frameitem>
+			<frameitem id="140000" name="Tables" role="14" left="0" top="30" width="66" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" description="Tables help you sort, filter, and summarize data.">
+				<frameitem id="140101" name="Table" role="9" left="12" top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_n_t" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="PivotTableŽ Easily arrange and summarize complex data in a PivotTable.&lt;br&gt;&lt;br&gt;FYI: You can double-click a value to see which detailed values make up the summarized total." tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="140102" name="Blank Pivot Table" role="9" left="0" top="16" width="61" height="76" touchleft="71" touchtop="5" touchwidth="88" touchheight="96" cssclass="xl_n_v" enable="1" kbdshortcut="sp" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Recommended PivotTablesŽ Want us to recommend PivotTables that summarize your complex data?&lt;br&gt;&lt;br&gt;Click this button to get a customized set of PivotTables that we think will best suit your data." tt_class="" multiline="1" textposition="1"/>
+			</frameitem>
+			<frameitem id="150000" name="Sparklines" role="14" left="0" top="30" width="93" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" description="Sparklines are mini charts placed in single cells.">
+				<frameitem id="150101" name="Line" role="9" left="12" top="16" width="61" height="76" touchleft="8" touchtop="5" touchwidth="63" touchheight="96" cssclass="xl_n_sl" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="PivotTableŽ Easily arrange and summarize complex data in a PivotTable.&lt;br&gt;&lt;br&gt;FYI: You can double-click a value to see which detailed values make up the summarized total." tt_class="" multiline="0" textposition="1"/>
+				<frameitem id="150102" name="Column" role="9" left="0" top="16" width="61" height="76" touchleft="71" touchtop="5" touchwidth="88" touchheight="96" cssclass="xl_n_so" enable="1" kbdshortcut="sp" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Recommended PivotTablesŽ Want us to recommend PivotTables that summarize your complex data?&lt;br&gt;&lt;br&gt;Click this button to get a customized set of PivotTables that we think will best suit your data." tt_class="" multiline="1" textposition="1"/>
+				<frameitem id="150103" name="Win/Loss" role="9" left="0" top="16" width="61" height="76" touchleft="159" touchtop="5" touchwidth="52" touchheight="96" cssclass="xl_n_sw" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Table (Ctrl+T)Ž Create a table to organize and analyze related data.&lt;br&gt;&lt;br&gt;Tables make it easy to sort, filter, and format data within a sheet." tt_class="" multiline="0" textposition="1"/>
+			</frameitem>
+		</frameitem>
+		<frameitem id="2" name="Elements Container" role="21" left="0" top="0" width="148" height="223" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" resizable_qat="1" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="210000" name="Chart Elements" role="14" left="309" top="94" width="118" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="210001" name="Axes" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="5"/>
+				<frameitem id="210002" name="Axis Titles" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="6"/>
+				<frameitem id="210003" name="Chart Title" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="7"/>
+				<frameitem id="210004" name="Data Labels" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="8"/>
+				<frameitem id="210005" name="Data Table" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="9"/>
+				<frameitem id="210006" name="Error Bars" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="10"/>
+				<frameitem id="210007" name="Gridlines" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="11"/>
+				<frameitem id="210008" name="Legend" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="12"/>
+				<frameitem id="210009" name="Trendline" role="3" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" contid="13"/>
+			</frameitem>
+		</frameitem>
+		<frameitem id="3" name="Style Container" role="21" left="0" top="0" width="236" height="399" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="310000" name="STYLE" role="14" left="309" top="94" width="60" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="310001" name="Misc" role="23" left="13" top="10" width="208" height="354" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" imgwidth="183" imgheight="112" itemwidth="189" itemheight="118">
+				</frameitem>
+			</frameitem>
+			<frameitem id="320000" name="COLOR" role="14" left="309" top="94" width="68" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="320001" name="Misc" role="23" left="13" top="10" width="208" height="325" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="xl_qat_color" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" imgwidth="183" imgheight="25" itemwidth="189" itemheight="31">
+					<frameitem id="320101" name="Colorful" role="8" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class=""/>
+					<frameitem id="320102" name="Color1" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 1" tt_class="" imgpoint="0,-3"/>
+					<frameitem id="320103" name="Color2" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 2" tt_class="" imgpoint="0,-34"/>
+					<frameitem id="320104" name="Color3" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 3" tt_class="" imgpoint="0,-65"/>
+					<frameitem id="320105" name="Color4" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 4" tt_class="" imgpoint="0,-96"/>
+					<frameitem id="320105" name="Monochromatic" role="8" left="11" top="0" width="125" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class=""/>
+					<frameitem id="320106" name="Color5" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 5" tt_class="" imgpoint="0,-127"/>
+					<frameitem id="320107" name="Color6" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 6" tt_class="" imgpoint="0,-158"/>
+					<frameitem id="320108" name="Color7" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 7" tt_class="" imgpoint="0,-189"/>
+					<frameitem id="320109" name="Color8" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 8" tt_class="" imgpoint="0,-220"/>
+					<frameitem id="320110" name="Color9" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 9" tt_class="" imgpoint="0,-251"/>
+					<frameitem id="320111" name="Color10" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 10" tt_class="" imgpoint="0,-282"/>
+					<frameitem id="320112" name="Color11" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 11" tt_class="" imgpoint="0,-313"/>
+					<frameitem id="320113" name="Color12" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 12" tt_class="" imgpoint="0,-344"/>
+					<frameitem id="320114" name="Color13" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 13" tt_class="" imgpoint="0,-375"/>
+					<frameitem id="320115" name="Color14" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 14" tt_class="" imgpoint="0,-406"/>
+					<frameitem id="320116" name="Color15" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 15" tt_class="" imgpoint="0,-437"/>
+					<frameitem id="320117" name="Color16" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 16" tt_class="" imgpoint="0,-468"/>
+					<frameitem id="320118" name="Color17" role="24" left="11" top="0" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Color 17" tt_class="" imgpoint="0,-499"/>
+				</frameitem>
+				<frameitem id="320002" name="How do I change these colors?" role="10" left="0" top="345" width="" height="" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="3" tt_text="Change Theme ColorsŽTo change the colors used in this workbook, go to the PAGE LAYOUT TAB, click COLORS in the THEMES group, and then select a theme color from the Colors list.&lt;br&gt;&lt;br&gt;Changing the colors will update all theme colors used in this workbook." tt_class="xl_qat_color xl_qat_color_label"/>
+			</frameitem>
+		</frameitem>
+		<frameitem id="4" name="Filters Container" role="21" left="62" top="26" width="232" height="449" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="410000" name="VALUES" role="14" left="309" top="94" width="68" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="410001" name="TREE" role="25" left="12" top="9" width="208" height="362" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="">
+					<frameitem id="410100" name="SERIES" role="26" left="0" top="0" width="191" height="16" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" expanded="1">
+						<frameitem id="410101" name="Select All" role="27" left="19" top="0" width="172" height="22" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" common="1" />
+					</frameitem>
+					<frameitem id="410200" name="CATEGORIES" role="26" left="0" top="0" width="191" height="16" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" expanded="1">
+						<frameitem id="410201" name="Select All" role="27" left="19" top="0" width="172" height="22" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" common="1" />
+					</frameitem>
+				</frameitem>
+			</frameitem>
+			<frameitem id="420000" name="NAMES" role="14" left="309" top="94" width="68" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="420001" name="TREE" role="25" left="12" top="9" width="208" height="362" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="">
+					<frameitem id="420100" name="SERIES" role="26" left="0" top="0" width="191" height="16" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" expanded="1">
+						<frameitem id="420102" name="Row 1*a,b,c,d,e,f,g" role="28" left="19" top="0" width="172" height="36" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" />
+						<frameitem id="420101" name="(None)" role="28" left="19" top="0" width="172" height="22" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="1" />
+					</frameitem>
+					<frameitem id="420200" name="CATEGORIES" role="26" left="0" top="0" width="191" height="16" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" expanded="1">
+						<frameitem id="420202" name="Column A*a1,b2,c3,d4,e5" role="28" left="19" top="0" width="172" height="36" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" />
+						<frameitem id="420201" name="(None)" role="28" left="19" top="0" width="172" height="22" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="1" />
+					</frameitem>
+				</frameitem>
+			</frameitem>
+                <frameitem id="140104" name="Financial" role="9" left="170" top="2" width="52" height="69" touchleft="177" touchtop="5" touchwidth="54" touchheight="96" cssclass="xl_m_i" enable="1" kbdshortcut="i" menuno="62" rtmenuno="-2" tt_type="1" tt_text="FinancialŽAdd a financial function to your sheet." tt_class="" multiline="0" textposition="1" />
+            <frameitem id="430000" name="FOOTER" role="35" left="11" top="413" width="209" height="30" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="">
+                <frameitem id="430001" name="Apply" role="36" left="3" top="5" width="41" height="23" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" />
+                <frameitem id="430002" name="Select Data..." role="32" left="130" top="12" width="75" height="12" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="qat_hyperlink_css" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="" tt_text="" tt_class="" />
+            </frameitem>
+		</frameitem>
+		<frameitem id="5" name="Axes" role="21" left="0" top="0" width="155" height="82" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="510000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="510001" name="Primary Horizontal" role="3" left="11" top="0" width="133" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="1" />
+				<frameitem id="510002" name="Primary Vertical" role="3" left="11" top="0" width="133" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="1" />
+				<frameitem id="510003" name="More Options..." role="9" left="11" top="0" width="133" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="asdsda" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="6" name="Axes Title" role="21" left="0" top="0" width="155" height="82" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="610000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="610001" name="Primary Horizontal" role="3" left="11" top="0" width="133" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" />
+				<frameitem id="610002" name="Primary Vertical" role="3" left="11" top="0" width="133" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" />
+				<frameitem id="610003" name="More Options..." role="9" left="11" top="0" width="133" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="asdsda" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="7" name="Chart Title" role="21" left="0" top="0" width="126" height="94" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="710000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="710001" name="Above Chart" role="9" left="11" top="0" width="104" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="710002" name="Centered Overlay" role="9" left="11" top="0" width="104" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="710003" name="More Options..." role="9" left="11" top="0" width="104" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="8" name="Data Labels" role="21" left="0" top="0" width="117" height="166" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="810000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="810001" name="Center" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="810002" name="Inside End" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="810003" name="Inside Base" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="810004" name="Outside End" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="810005" name="Data Callout" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="810006" name="More Options..." role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="9" name="Data Table" role="21" left="0" top="0" width="129" height="94" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="910000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="910001" name="With Legend Keys" role="9" left="11" top="0" width="107" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="910002" name="No Legend Keys" role="9" left="11" top="0" width="107" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="910003" name="More Options..." role="9" left="11" top="0" width="107" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="10" name="Error Bars" role="21" left="0" top="0" width="135" height="118" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="1010000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="1010001" name="Standard Error" role="9" left="11" top="0" width="113" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1010002" name="Percentage" role="9" left="11" top="0" width="113" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1010003" name="Standard Deviation" role="9" left="11" top="0" width="113" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1010004" name="More Options..." role="9" left="11" top="0" width="113" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="11" name="Gridlines" role="21" left="0" top="0" width="190" height="122" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="1110000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="1110001" name="Primary Major Horizontal" role="3" left="11" top="0" width="168" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1110002" name="Primary Major Vertical" role="3" left="11" top="0" width="168" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1110003" name="Primary Minor Horizontal" role="3" left="11" top="0" width="168" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1110004" name="Primary Minor Vertical" role="3" left="11" top="0" width="168" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1110005" name="More Options..." role="9" left="11" top="0" width="168" height="20" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="asdf" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="12" name="Legend" role="21" left="0" top="0" width="117" height="142" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="1210000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="1210001" name="Right" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1210002" name="Top" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1210003" name="Left" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1210004" name="Bottom" role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1210005" name="More Options..." role="9" left="11" top="0" width="95" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+		<frameitem id="13" name="Trendline" role="21" left="0" top="0" width="185" height="142" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+			<frameitem id="1310000" name="" role="14" left="309" top="94" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+				<frameitem id="1310001" name="Linear" role="9" left="11" top="0" width="163" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1310002" name="Exponential" role="9" left="11" top="0" width="163" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1310003" name="Linear Forecast" role="9" left="11" top="0" width="163" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1310004" name="Two Period Moving Average" role="9" left="11" top="0" width="163" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+				<frameitem id="1310005" name="More Options..." role="9" left="11" top="0" width="163" height="24" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="" menuno="2" rtmenuno="-2" tt_type="" tt_text="" tt_class="" checked="0" textposition="0" />
+			</frameitem>
+		</frameitem>
+	</quick_access>
+	<tabmode>
+		<frameitem role="18" mode="0" id="110000¦140000" activetab="110000" />		
+	</tabmode>
+	<tabheader>		
+	</tabheader>
+	
+<qat>
+    <!--<frameitem id="1001" name="" role="10" left="0" top="3" width="22" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_application" enable="1" kbdshortcut="" menuno="10087" rtmenuno="10087" tt_type="" tt_text="" tt_class="" />-->
+    <frameitem id="1002" name="" role="9" left="10" top="3" width="22" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_1" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Save (Ctrl + S)" tt_class="" multiline="0" textposition="0"/>
+   
+    <!--<frameitem id="1005" name="" role="9" left="0" top="1" width="33" height="24" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_4" enable="1" kbdshortcut="4" menuno="10135" rtmenuno="-2" tt_type="0" tt_text="Touch/Mouse Mode" tt_class="" multiline="0" textposition="0"/>-->
+    <frameitem id="1014" name="" role="9" left="0" top="0" width="22" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_n_np" enable="1" kbdshortcut="4" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="New (Ctrl+N)ŽCreate a document." tt_class="" multiline="0" textposition="0" visible="0" />
+    <frameitem id="1013" name="" role="9" left="0" top="4" width="22" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Add ToolTip Override" tt_class="" visible="0" />
+    <frameitem id="1006" name="" role="7" left="10" top="0" width="11" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_custarrow" enable="1" kbdshortcut="" menuno="439" rtmenuno="439" tt_type="0" tt_text="Customize Quick Access Toolbar" tt_class="" multiline="0" textposition="0" imgwidth="11" imgheight="22" />
+    <frameitem id="1007" name="" role="5" left="0" top="0" width="0" height="0" touchleft="0" touchtop="0" touchwidth="0" touchheight="0" cssclass="" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="10087" tt_type="" tt_text="" tt_class="" />
+    <frameitem id="1008" name="" role="7" left="0" top="1" width="29" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_close" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Close" tt_class="" imgwidth="29" imgheight="22" normalimgclass="xl_qat_close" hoverimgclass="xl_qat_close_hoverstate" pressedimgclass="xl_qat_close_pressed" />
+    <frameitem id="1009" name="" role="7" left="0" top="1" width="29" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_restore" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Restore Down" tt_class="" imgwidth="29" imgheight="22" />
+    <frameitem id="1010" name="" role="7" left="0" top="1" width="29" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_minimize" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Minimize" tt_class="" imgwidth="29" imgheight="22" />
+    <frameitem id="1011" name="" role="7" left="0" top="1" width="29" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_ribbondisplay" enable="1" kbdshortcut="" menuno="10136" rtmenuno="-2" tt_type="0" tt_text="Ribbon Display Options" tt_class="" imgwidth="29" imgheight="22" />
+    <!--<frameitem id="1012" name="" role="7" left="0" top="1" width="29" height="22" touchleft="0" touchtop="5" touchwidth="46" touchheight="28" cssclass="xl_qat_help" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Microsoft Excel Help (F1)" tt_class="" imgwidth="29" imgheight="22" normalimgclass="xl_qat_help" hoverimgclass="xl_qat_help_hoverstate" pressedimgclass="xl_qat_help_pressed" />-->
+	</qat>
+	<statusbar>
+		<frameitem id="330001" name="READY" role="18" left="0" top="0" width="54" height="22" touchleft="0" touchtop="0" touchwidth="66" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="In Ready mode." tt_class="" align="0" visible="1"/>
+		<frameitem id="330002" name="NUM LOCK" role="18" left="64" top="0" width="72" height="22" touchleft="66" touchtop="0" touchwidth="84" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Num Lock Enabled: You can enter numbersfrom the Number Pad on your keyboard." tt_class="" align="0" visible="0"/>
+		<frameitem id="330003" name="" role="17" left="123" top="0" width="32" height="22" touchleft="123" touchtop="0" touchwidth="48" touchheight="32" cssclass="xl_sb_macro" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="No macros are currently recording. Click to begin recording a new macro." tt_class="" align="0" visible="0"/>
+		<frameitem id="330004" name="AVERAGE: 1" role="18" left="0" top="0" width="54" height="22" touchleft="0" touchtop="0" touchwidth="66" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Average of selected cells" tt_class="" align="1" visible="0"/>
+		<frameitem id="330005" name="COUNT: 1" role="18" left="0" top="0" width="54" height="22" touchleft="0" touchtop="0" touchwidth="66" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Number of selected cells that conatains data" tt_class="" align="1" visible="0"/>
+		<frameitem id="330006" name="NUMERICAL COUNT: 1" role="18" left="0" top="0" width="54" height="22" touchleft="0" touchtop="0" touchwidth="66" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Number of selected cells that conatains numerical data" tt_class="" align="1" visible="0"/>
+		<frameitem id="330007" name="MIN: 1" role="18" left="0" top="0" width="54" height="22" touchleft="0" touchtop="0" touchwidth="66" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Minimum value in selection" tt_class="" align="1" visible="0"/>
+		<frameitem id="330008" name="MAX: 1" role="18" left="0" top="0" width="54" height="22" touchleft="0" touchtop="0" touchwidth="66" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Maximum value in selection" tt_class="" align="1" visible="0"/>
+		<frameitem id="330009" name="SUM: 1" role="18" left="0" top="0" width="54" height="22" touchleft="0" touchtop="0" touchwidth="66" touchheight="28" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Sum of selected cells" tt_class="" align="1" visible="0"/>
+		<frameitem id="330010" name="" role="17" left="987" top="0" width="38" height="22" touchleft="987" touchtop="0" touchwidth="46" touchheight="32" cssclass="xl_sb_normal" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Normal" tt_class="" align="1" visible="0" checkable="1" checked="1"/>
+		<frameitem id="330011" name="" role="17" left="1025" top="0" width="38" height="22" touchleft="1025" touchtop="0" touchwidth="46" touchheight="32" cssclass="xl_sb_pagelayout" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Page Layout" tt_class="" align="1" visible="0" />
+		<frameitem id="330012" name="" role="17" left="1060" top="0" width="38" height="22" touchleft="1060" touchtop="0" touchwidth="46" touchheight="32" cssclass="xl_sb_pagebreakpreview" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Page Break Preview" tt_class="" align="1" visible="0"/>
+		<frameitem id="330013" name="100%" role="20" left="1101" top="0" width="100" height="21" touchleft="1018" touchtop="3" touchwidth="3" touchheight="21" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Zoom Out•Zoom•Zoom In•Zoom Level. Click to open the Zoom dialog box. " tt_class="" align="1" visible="1"/>
+		<frameitem id="330014" name="" role="17" left="123" top="0" width="32" height="22" touchleft="123" touchtop="0" touchwidth="48" touchheight="32" cssclass="xl_sb_stopmacro" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="A macro is currently recording. Click to stop recording." tt_class="" align="0" visible="0"/>
+	</statusbar>
+	<minitoolbar>
+		<!--MiniToolbar FOR NORMAL RIGHT CLICK MENU-->
+		<frameitem id="340100" name="" role="13" left="0" top="55" width="256" height="56" touchleft="0" touchtop="55" touchwidth="256" touchheight="56" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="" tt_text="" tt_class="" shrink="0" shrinkwidth="" shrinktouchwidth="">
+			<frameitem id="340101" name="Calibri" role="0" left="4" top="4" width="59" height="24" touchleft="4" touchtop="4" touchwidth="59" touchheight="24" cssclass="" enable="1" kbdshortcut="ff" menuno="3" rtmenuno="-1" tt_type="0" tt_text="Font" tt_class=""/>
+			<frameitem id="340102" name="11" role="0" left="68" top="4" width="40" height="24" touchleft="68" touchtop="4" touchwidth="43" touchheight="24" cssclass="" enable="1" kbdshortcut="fs" menuno="4" rtmenuno="-1" tt_type="0" tt_text="Font Size" tt_class=""/>
+			<frameitem id="340103" name="" role="9" left="108" top="4" width="22" height="24" touchleft="112" touchtop="4" touchwidth="22" touchheight="24" cssclass="xl_h_fg" enable="1" kbdshortcut="fg" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Increase Font Size" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340104" name="" role="9" left="130" top="4" width="22" height="24" touchleft="131" touchtop="4" touchwidth="22" touchheight="24" cssclass="xl_h_fk" enable="1" kbdshortcut="fk" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Decrease Font Size" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340105" name="" role="9" left="152" top="4" width="34" height="24" touchleft="152" touchtop="4" touchwidth="34" touchheight="24" cssclass="xl_h_an" enable="0" kbdshortcut="an" menuno="12" rtmenuno="-1" tt_type="0" tt_text="Accounting Number Format" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340106" name="" role="9" left="186" top="4" width="22" height="24" touchleft="186" touchtop="4" touchwidth="22" touchheight="24" cssclass="xl_h_p" enable="0" kbdshortcut="p" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Percent Style (Ctrl+Shift+%)" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340107" name="" role="9" left="208" top="4" width="22" height="24" touchleft="208" touchtop="4" touchwidth="22" touchheight="24" cssclass="xl_h_k" enable="0" kbdshortcut="k" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Comma Style" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340107" name="" role="9" left="208" top="4" width="22" height="24" touchleft="208" touchtop="4" touchwidth="22" touchheight="24" cssclass="xl_h_k" enable="0" kbdshortcut="k" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Comma Style" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340108" name="" role="9" left="230" top="4" width="22" height="24" touchleft="230" touchtop="4" touchwidth="22" touchheight="24" cssclass="xl_h_m" enable="0" kbdshortcut="m" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Merge &amp; Center" tt_class="" multiline="0"  textposition="0"/>
+			<frameitem id="340109" name="" role="9" left="4" top="28" width="22" height="24" touchleft="4" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_1" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Bold (Ctrl+B)" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340110" name="" role="9" left="26" top="28" width="22" height="24" touchleft="26" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_2" enable="1" kbdshortcut="2" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Italic (Ctrl+I)" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340111" name="" role="9" left="48" top="28" width="22" height="24" touchleft="48" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_ac" enable="0" kbdshortcut="ac" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Center" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340112" name="" role="9" left="70" top="28" width="34" height="24" touchleft="70" touchtop="28" touchwidth="34" touchheight="24" cssclass="xl_h_h" enable="1" kbdshortcut="h" menuno="7" rtmenuno="-1" tt_type="0" tt_text="Fill Color" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+			<frameitem id="340113" name="" role="9" left="104" top="28" width="34" height="24" touchleft="104" touchtop="28" touchwidth="34" touchheight="24" cssclass="xl_h_fc" enable="1" kbdshortcut="fc" menuno="8" rtmenuno="-1" tt_type="0" tt_text="Font Color" tt_class="" multiline="0" behavnormal="0" textposition="1" dblclk="1" />
+			<frameitem id="340114" name="" role="6" left="138" top="28" width="34" height="24" touchleft="138" touchtop="28" touchwidth="34" touchheight="24" cssclass="xl_h_b" enable="0" kbdshortcut="b" menuno="527" rtmenuno="-1" tt_type="0" tt_text="Borders" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+			<frameitem id="340115" name="" role="9" left="172" top="28" width="22" height="24" touchleft="172" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_0" enable="0" kbdshortcut="0" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Increase Decimal" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340116" name="" role="9" left="194" top="28" width="22" height="24" touchleft="194" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_9" enable="0" kbdshortcut="9" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Decrease Decimal" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340117" name="" role="9" left="216" top="28" width="22" height="24" touchleft="216" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_fp" enable="0" kbdshortcut="fp" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Format Painter" tt_class="" multiline="0" textposition="0"/>
+		</frameitem>
+		<!--MiniToolbar FOR EDITED CELL RIGHT CLICK MENU-->
+		<frameitem id="340200" name="" role="13" left="0" top="55" width="130" height="56" touchleft="0" touchtop="55" touchwidth="130" touchheight="56" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="" tt_text="" tt_class="" shrink="0" shrinkwidth="" shrinktouchwidth="">
+			<frameitem id="340201" name="Calibri" role="0" left="4" top="4" width="82" height="24" touchleft="4" touchtop="4" touchwidth="64" touchheight="24" cssclass="" enable="1" kbdshortcut="ff" menuno="3" rtmenuno="-1" tt_type="0" tt_text="Font" tt_class=""/>
+			<frameitem id="340202" name="11" role="0" left="86" top="4" width="40" height="24" touchleft="86" touchtop="4" touchwidth="43" touchheight="24" cssclass="" enable="1" kbdshortcut="fs" menuno="4" rtmenuno="-1" tt_type="0" tt_text="Font Size" tt_class=""/>
+			<frameitem id="340203" name="" role="9" left="4" top="28" width="22" height="24" touchleft="4" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_1" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Bold (Ctrl+B)" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340204" name="" role="9" left="26" top="28" width="22" height="24" touchleft="26" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_2" enable="1" kbdshortcut="2" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Italic (Ctrl+I)" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340205" name="" role="6" left="48" top="28" width="34" height="24" touchleft="48" touchtop="28" touchwidth="34" touchheight="24" cssclass="xl_h_fc" enable="1" kbdshortcut="fc" menuno="8" rtmenuno="-1" tt_type="0" tt_text="Font Color" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+			<frameitem id="340206" name="" role="9" left="82" top="28" width="22" height="24" touchleft="82" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_fg" enable="1" kbdshortcut="fg" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Increase Font Size" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340207" name="" role="9" left="104" top="28" width="22" height="24" touchleft="104" touchtop="28" touchwidth="22" touchheight="24" cssclass="xl_h_fk" enable="1" kbdshortcut="fk" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Decrease Font Size" tt_class="" multiline="0" textposition="0"/>
+		</frameitem>
+	</minitoolbar>
+	<minitoolbar_touch>
+		<!--MiniToolbar Touch FOR NORMAL RIGHT CLICK MENU-->
+		<frameitem id="340100" name="" role="13" left="0" top="55" width="436" height="78" touchleft="0" touchtop="55" touchwidth="436" touchheight="78" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="" tt_text="" tt_class="" shrink="0" shrinkwidth="" shrinktouchwidth="">
+			<frameitem id="340118" name="Paste" role="9" left="1" top="8" width="49" height="60" touchleft="1" touchtop="8" touchwidth="49" touchheight="60" cssclass="xl_h_v" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Paste" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340119" name="Cut" role="9" left="51" top="8" width="49" height="60" touchleft="51" touchtop="8" touchwidth="49" touchheight="60" cssclass="xl_mini_cut" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Cut" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340120" name="Copy" role="9" left="100" top="8" width="49" height="60" touchleft="100" touchtop="8" touchwidth="49" touchheight="60" cssclass="xl_mini_copy" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Copy" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340121" name="Clear" role="9" left="149" top="8" width="49" height="60" touchleft="149" touchtop="8" touchwidth="49" touchheight="60" cssclass="xl_mini_clear" enable="1" kbdshortcut="p" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Clear" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340122" name="" role="8" left="198" top="8" width="1" height="60" touchleft="198" touchtop="8" touchwidth="1" touchheight="60" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340112" name="Fill" role="6" left="205" top="8" width="49" height="60" touchleft="205" touchtop="8" touchwidth="49" touchheight="60" cssclass="xl_mini_fill" enable="1" kbdshortcut="" menuno="7" rtmenuno="-1" tt_type="0" tt_text="Fill" tt_class="" multiline="0"  textposition="1"/>
+			<frameitem id="340113" name="Font" role="6" left="254" top="8" width="49" height="60" touchleft="254" touchtop="8" touchwidth="49" touchheight="60" cssclass="xl_mini_font" enable="1" kbdshortcut="" menuno="8" rtmenuno="-1" tt_type="0" tt_text="Font" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340123" name="" role="8" left="303" top="8" width="1" height="60" touchleft="303" touchtop="8" touchwidth="1" touchheight="60" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340124" name="AutoFill" role="9" left="310" top="8" width="49" height="60" touchleft="310" touchtop="8" touchwidth="49" touchheight="60" cssclass="xl_mini_autofill" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="AutoFill" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340125" name="" role="8" left="360" top="8" width="1" height="60" touchleft="360" touchtop="8" touchwidth="49" touchheight="60" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" multiline="0" behavnormal="0" textposition="0"/>
+			<frameitem id="340126" name="" role="20" left="362" top="8" width="29" height="60" touchleft="362" touchtop="8" touchwidth="29" touchheight="60" cssclass="xl_mini_dropdwn" enable="1" kbdshortcut="" menuno="425" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+		</frameitem>
+		<!--MiniToolbar FOR EDITED CELL RIGHT CLICK MENU-->
+		<frameitem id="340200" name="" role="13" left="0" top="55" width="436" height="84" touchleft="0" touchtop="55" touchwidth="436" touchheight="84" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="" tt_text="" tt_class="" shrink="0" shrinkwidth="" shrinktouchwidth="">
+			<frameitem id="340208" name="Paste" role="9" left="1" top="8" width="49" height="74" touchleft="1" touchtop="8" touchwidth="49" touchheight="74" cssclass="xl_h_v" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Paste" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340209" name="Cut" role="9" left="51" top="8" width="49" height="74" touchleft="51" touchtop="8" touchwidth="49" touchheight="74" cssclass="xl_mini_cut" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Cut" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340210" name="Copy" role="9" left="100" top="8" width="49" height="74" touchleft="100" touchtop="8" touchwidth="49" touchheight="74" cssclass="xl_mini_copy" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Copy" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340211" name="" role="8" left="150" top="8" width="1" height="74" touchleft="198" touchtop="8" touchwidth="1" touchheight="74" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" multiline="0" textposition="1"/>
+			<frameitem id="340201" name="Calibri" role="0" left="156" top="8" width="181" height="32" touchleft="156" touchtop="8" touchwidth="181" touchheight="32" cssclass="" enable="1" kbdshortcut="ff" menuno="3" rtmenuno="-1" tt_type="0" tt_text="Font" tt_class=""/>
+			<frameitem id="340202" name="11" role="0" left="337" top="8" width="40" height="32" touchleft="337" touchtop="8" touchwidth="32" touchheight="24" cssclass="" enable="1" kbdshortcut="fs" menuno="4" rtmenuno="-1" tt_type="0" tt_text="Font Size" tt_class=""/>
+			<frameitem id="340203" name="" role="9" left="156" top="8" width="40" height="32" touchleft="156" touchtop="8" touchwidth="40" touchheight="32" cssclass="xl_h_1" enable="1" kbdshortcut="1" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Bold (Ctrl+B)" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340204" name="" role="9" left="196" top="28" width="40" height="32" touchleft="196" touchtop="8" touchwidth="40" touchheight="32" cssclass="xl_h_2" enable="1" kbdshortcut="2" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Italic (Ctrl+I)" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340205" name="" role="6" left="236" top="28" width="40" height="32" touchleft="236" touchtop="8" touchwidth="40" touchheight="32" cssclass="xl_h_fc" enable="1" kbdshortcut="fc" menuno="8" rtmenuno="-1" tt_type="0" tt_text="Font Color" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+			<frameitem id="340206" name="" role="9" left="276" top="28" width="40" height="32" touchleft="276" touchtop="8" touchwidth="40" touchheight="32" cssclass="xl_h_fg" enable="1" kbdshortcut="fg" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Increase Font Size" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340212" name="" role="9" left="316" top="28" width="40" height="32" touchleft="316" touchtop="8" touchwidth="40" touchheight="32" cssclass="xl_h_fk" enable="1" kbdshortcut="fk" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="Decrease Font Size" tt_class="" multiline="0" textposition="0"/>
+			<frameitem id="340213" name="" role="8" left="356" top="8" width="1" height="60" touchleft="356" touchtop="8" touchwidth="49" touchheight="60" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" multiline="0" behavnormal="0" textposition="0"/>
+			<frameitem id="340214" name="" role="20" left="360" top="8" width="29" height="60" touchleft="360" touchtop="8" touchwidth="29" touchheight="60" cssclass="xl_mini_dropdwn" enable="1" kbdshortcut="" menuno="8" rtmenuno="-1" tt_type="0" tt_text="" tt_class="" multiline="0" behavnormal="0" textposition="1"/>
+		</frameitem>
+	</minitoolbar_touch>
+	<minitoolbarmap>
+		<frameitem role="19" rbnid="110104" mtbid="340117¦340414¦340617¦" />
+		<frameitem role="19" rbnid="110201" mtbid="340101¦340201¦340401¦340501¦340601" />
+		<frameitem role="19" rbnid="110202" mtbid="340102¦340202¦340402¦340502¦340602" />
+		<frameitem role="19" rbnid="110203" mtbid="340103¦340206¦340403¦340503¦340603" />
+		<frameitem role="19" rbnid="110204" mtbid="340104¦340207¦340404¦340504¦340604" />
+		<frameitem role="19" rbnid="110205" mtbid="340109¦340203¦340406¦340509¦340609" />
+		<frameitem role="19" rbnid="110206" mtbid="340110¦340204¦340407¦340510¦340610" />
+		<frameitem role="19" rbnid="110209" mtbid="340112¦340412¦340515¦340615" />
+		<frameitem role="19" rbnid="110210" mtbid="340113¦340205¦340411¦340514¦340614" />
+		<frameitem role="19" rbnid="110305" mtbid="340408¦340511¦340611" />
+		<frameitem role="19" rbnid="110306" mtbid="340111¦340409¦340512¦340612" />
+		<frameitem role="19" rbnid="110307" mtbid="340410¦340513¦340613" />
+		<frameitem role="19" rbnid="110308" mtbid="340605" />
+		<frameitem role="19" rbnid="110309" mtbid="340606" />
+		<frameitem role="19" rbnid="110311" mtbid="340108" />
+		<frameitem role="19" rbnid="110402" mtbid="340105" />
+		<frameitem role="19" rbnid="110403" mtbid="340106" />
+		<frameitem role="19" rbnid="110404" mtbid="340107" />
+		<frameitem role="19" rbnid="110405" mtbid="340115" />
+		<frameitem role="19" rbnid="110406" mtbid="340116" />
+		<frameitem role="19" rbnid="180301" mtbid="340303" />
+		<frameitem role="19" rbnid="180302" mtbid="340304" />
+		<frameitem role="19" rbnid="180306" mtbid="340308" />
+		<frameitem role="19" rbnid="180401" mtbid="340307" />
+		<frameitem role="19" rbnid="180403" mtbid="340302" />
+		<frameitem role="19" rbnid="180405" mtbid="340306" />
+		<frameitem role="19" rbnid="200202" mtbid="340615" />
+		<frameitem role="19" rbnid="200203" mtbid="340616" />
+		<frameitem role="19" rbnid="200401" mtbid="340607" />
+		<frameitem role="19" rbnid="200402" mtbid="340608" />
+		<frameitem role="19" rbnid="250103" mtbid="340505" />
+		<frameitem role="19" rbnid="250104" mtbid="340506" />
+		<frameitem role="19" rbnid="250202" mtbid="340515" />
+		<frameitem role="19" rbnid="250203" mtbid="340516" />
+		<frameitem role="19" rbnid="250401" mtbid="340507" />
+		<frameitem role="19" rbnid="250402" mtbid="340508" />
+		<frameitem role="19" rbnid="260101" mtbid="340405" />
+		<frameitem role="19" rbnid="300202" mtbid="340412" />
+		<frameitem role="19" rbnid="300203" mtbid="340413" />
+		<frameitem role="19" rbnid="110208" mtbid="340114" />
+	</minitoolbarmap>
+	<theme_details>
+    <!--	<theme appname="excel" colornormal="#217346" colornormallight="#439467" colornormaldark="#0A6332" colorhover="#D3F0E0" colorpressed="#86BFA0"
+		colorchecked="#9FD5B7" colorcheckedhover="#D4F0E1" colorcheckedbg="#E9F5EE" colorbar="#FFFFFF" colorstatusbartext="#FFFFFF" 
+		colorstatusbarchecked="#0A6332" colorstatusbarhover="#439467" colorstatusbar="#217346" colorbartext="#000" colortabandheader="#FFFFFF"
+		colorsharebtnnormal="#217346" colorsharebtnhover="#3F8159" colorsharebtnpressed="#0E5C2F" colorsharebtntext="#FFFFFF" colorsharebtntextpressed="#FFFFFF" theme_type="0" /> -->
+
+    <theme appname="excel" colorbartext="#FFF" colornormal="#217346" colornormallight="#439467" colornormaldark="#0A6332" colorstatusbartext="#515050"
+		colorstatusbarchecked="#CACACA" colorstatusbarcheckedhover="#B5B5B5" colorstatusbarhover="#D7D7D7" colorstatusbar="#F1F1F1" colorhover="#C5C5C5" colorpressed="#AEAEAE" colorchecked="#C5C5C5"
+		colorcheckedhover="#C5C5C5" colorcheckedbg="#C5C5C5" colorbar="#F1F1F1" colortabandheader="#217346"
+		colorsharebtnnormal="#0E5C2F" colorsharebtnhover="#3F8159" colorsharebtnpressed="#F3F3F3" colorsharebtntext="#FFFFFF" colorsharebtntextpressed="#0E5C2F" colorfilepagetext="#444444"
+		menuitemcheckedstatebgcolor="#E9F5EE" menuitemcheckedstatebordercolor="#86BFA0" colorviewpressed="#86BFA0" colorviewchecked="#D3F0E0"  colorviewpressedborder="#439467" theme_type="2" />
+
+  </theme_details>
+	<dialog>
+		<!--Open DB-->
+		<db dbname="commondb001" rbnid="10030315¦10030100¦10030300" >
+			<db_mode>11</db_mode>
+			<db_overridearray>2¦1•190•1•0•1•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦120¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Open¦608¦426¦0</db_dynlaunch_info>
+		</db>
+		<!--Insert Picture DB-->
+		<db dbname="commondb001" rbnid="120201" >
+			<db_mode>21</db_mode>
+			<db_overridearray>2¦1•190•1•0•1•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦120¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Insert Picture¦608¦426¦0</db_dynlaunch_info>
+		</db>
+		<!--Save As DB-->
+		<db dbname="commondb001" rbnid="10050215" >
+			<db_mode>31</db_mode>
+			<db_overridearray>2¦1•190•1•0•0•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 1-->
+		<db dbname="commondb001" rbnid="10080202" >
+			<db_mode>31</db_mode>
+			<db_overridearray>2¦1•190•1•0•0•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 2-->
+		<db dbname="commondb001" rbnid="10080203" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•3•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 3-->
+		<db dbname="commondb001" rbnid="10080204" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•27•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 4-->
+		<db dbname="commondb001" rbnid="10080205" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•7•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 5-->
+		<db dbname="commondb001" rbnid="10080206" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•1•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 6-->
+		<db dbname="commondb001" rbnid="10080207" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•2•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 7-->
+		<db dbname="commondb001" rbnid="10080209" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•10•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 8-->
+		<db dbname="commondb001" rbnid="10080210" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•14•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 9-->
+		<db dbname="commondb001" rbnid="10080211" >
+			<db_mode>-31</db_mode>
+			<db_overridearray>2¦1•190•1•0•15•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export 10-->
+		<db dbname="commondb001" rbnid="10080212" >
+			<db_mode>31</db_mode>
+			<db_overridearray>2¦1•190•1•0•0•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Save As¦608¦528¦0</db_dynlaunch_info>
+		</db>
+		<!--Export From Button-->
+		<db dbname="commondb001" rbnid="10080213" />
+		<!--Select Data Source DB-->
+		<db dbname="commondb001" menuid="3603" >
+			<db_mode>41</db_mode>
+			<db_overridearray>2¦1•190•1•0•1•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Select Data Source¦608¦459¦0</db_dynlaunch_info>
+		</db>
+		<!--Publish as PDF or XPS DB-->
+		<db dbname="commondb001" rbnid="10080106" >
+			<db_mode>211</db_mode>
+			<db_overridearray>2¦1•190•1•0•0•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Publish as PDF or XPS¦608¦550¦0</db_dynlaunch_info>
+		</db>
+		<!--Import Text File DB-->
+		<db dbname="commondb001" rbnid="150103" >
+			<db_mode>51</db_mode>
+			<db_overridearray>2¦1•190•1•0•1•¦1•180•1•-1•-1• </db_overridearray>
+			<db_focusinfo>1¦210¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Import Text File¦608¦426¦0</db_dynlaunch_info>
+		</db>
+		
+		<db dbname="exceldb003" rbnid="110211" >
+			<db_focusinfo>2¦0¦0¦0</db_focusinfo>
+		</db>
+		<db dbname="exceldb003" rbnid="110312" menuid="1907" >
+			<db_focusinfo>1¦0¦0¦0</db_focusinfo>
+		</db>
+		
+		<db dbname="exceldb013" rbnid="140101" menuid="7527" >
+			<db_overridearray>1¦0•30•1•0•3•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="7527" >
+			<db_overridearray>1¦0•30•1•0•3•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="15313" >
+			<db_overridearray>1¦0•30•1•0•6•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="7776" >
+			<db_overridearray>1¦0•30•1•0•2•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="7605" >
+			<db_overridearray>1¦0•30•1•0•3•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="8057" >
+			<db_overridearray>1¦0•30•1•0•11•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="8110" >
+			<db_overridearray>1¦0•30•1•0•12•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="8223" >
+			<db_overridearray>1¦0•30•1•0•10•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="8343" >
+			<db_overridearray>1¦0•30•1•0•13•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="51606" >
+			<db_overridearray>1¦0•30•1•0•14•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" menuid="7312" >
+			<db_overridearray>1¦0•30•1•0•9•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" menuid="7258" >
+			<db_overridearray>1¦0•30•1•0•2•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" menuid="7430" >
+			<db_overridearray>1¦0•30•1•0•8•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" rbnid="140101" menuid="7113¦3107" >
+			<db_overridearray>1¦0•30•1•0•0•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>	
+		<db dbname="exceldb013" menuid="7205">
+            <db_overridearray>1¦0•30•1•0•4•</db_overridearray>
+            <db_focusinfo>0¦10¦0¦65</db_focusinfo>
+            <db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+        </db>
+		<db dbname="exceldb013" menuid="7408" >
+			<db_overridearray>1¦0•30•1•0•5•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb013" menuid="7512" >
+			<db_overridearray>1¦0•30•1•0•6•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+        <db dbname="exceldb013" rbnid="140108" menuid="7705" >
+			<db_overridearray>1¦0•30•1•0•7•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+        <db dbname="exceldb013" rbnid="140108" menuid="8010" >
+			<db_overridearray>1¦0•30•1•0•8•</db_overridearray>
+			<db_focusinfo>0¦10¦0¦65</db_focusinfo>
+			<db_dynlaunch_info>Insert Function¦424¦364¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb003" menuid="43516¦43811¦43911¦44504¦3018¦" />
+		<db dbname="exceldb003" menuid="2114" >
+			<db_focusinfo>1¦10¦0¦0</db_focusinfo>
+		</db>
+		<db dbname="exceldb003" menuid="2207" >
+			<db_focusinfo>1¦10¦0¦0</db_focusinfo>
+			<db_mode>11</db_mode>
+		</db>
+		<db dbname="exceldb003" menuid="1622¦53717" >
+			<db_focusinfo>4¦10¦0¦0</db_focusinfo>
+		</db>
+		<!-- Always Open General Page -->
+		<db dbname="exceldb024" rbnid="10110000" >
+			<db_focusinfo>1¦0¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Excel Options¦836¦500</db_dynlaunch_info>
+		</db>
+		<!-- Quick Access Toolbar Page -->
+		<db dbname="exceldb024" menuid="1009501¦1009803¦44915¦1009603" >
+			<db_focusinfo>8¦0¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Excel Options¦836¦500</db_dynlaunch_info>
+		</db>
+		<!-- Customize Ribbon Page -->
+		<db dbname="exceldb024" menuid="1009504¦1009606¦1009806" >
+			<db_focusinfo>7¦0¦0¦0</db_focusinfo>
+			<db_dynlaunch_info>Excel Options¦836¦500</db_dynlaunch_info>
+		</db>
+		<!--Function Argument DB - SUM fn-->
+		<db dbname="exceldb014" menuid="7102¦7764">
+			<db_focusinfo>0¦30¦0¦0</db_focusinfo>
+			<db_mode>12</db_mode>
+		</db>
+		<!--Function Argument DB - Product fn-->
+		<db dbname="exceldb014" menuid="7746" >
+			<db_focusinfo>0¦30¦0¦0</db_focusinfo>
+			<db_mode>10</db_mode>
+		</db>		
+		<!--Function Argument DB - AVERAGE fn-->
+		<db dbname="exceldb014" menuid="7103¦7902" >
+			<db_focusinfo>0¦30¦0¦0</db_focusinfo>
+			<db_mode>17</db_mode>
+		</db>
+		<!--Function Argument DB - MIN fn-->
+		<db dbname="exceldb014" menuid="7957" >
+			<db_focusinfo>0¦30¦0¦0</db_focusinfo>
+			<db_mode>19</db_mode>
+		</db>	
+		<!--Function Argument DB - MAX fn-->
+		<db dbname="exceldb014" menuid="7954¦7107" >
+			<db_focusinfo>0¦30¦0¦0</db_focusinfo>
+			<db_mode>18</db_mode>
+		</db>		
+		<!--Function Argument DB - MEDIAN fn-->
+		<db dbname="exceldb014" menuid="7956" >
+			<db_focusinfo>0¦30¦0¦0</db_focusinfo>
+			<db_mode>41</db_mode>
+		</db>
+		<!--Function Argument DB - SQRT fn-->
+		<db dbname="exceldb014" menuid="7761" >
+			 <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>561</db_mode>
+        </db>
+        
+           
+		<!--Function Argument DB - COUNT fn-->
+		<db dbname="exceldb014" menuid="7106¦7919" >
+			<db_focusinfo>0¦30¦0¦0</db_focusinfo>
+			<db_mode>391</db_mode>
+		</db>
+		<!--Zoom Dialog-->
+		<db dbname="exceldb064" menuid="3300131" >
+			<db_dynlaunch_info>Zoom¦171¦224¦0</db_dynlaunch_info>
+		</db>
+		<db dbname="exceldb005" menuid="43912¦3005" >
+			<db_focusinfo>1¦20¦0¦0</db_focusinfo>
+			<db_mode>1</db_mode>
+		</db>
+		<db dbname="exceldb004" menuid="43812¦3002" >
+			<db_focusinfo>1¦20¦0¦0</db_focusinfo>
+			<db_mode>1</db_mode>
+		</db>
+		<!--Function Argument DB - ABS fn-->
+        <db dbname="exceldb014" menuid="7775">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>541</db_mode>
+        </db>
+        <!--Function Argument DB - NPV fn-->
+        <db dbname="exceldb014" menuid="7202">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>471</db_mode>
+        </db>
+         <!--Function Argument DB - RATE fn-->
+        <db dbname="exceldb014" menuid="7203">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>501</db_mode>
+        </db>
+        <!--Function Argument DB - HLOOKUP fn-->
+        <db dbname="exceldb014" menuid="7701">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>321</db_mode>
+        </db>
+        <!--Function Argument DB - VLOOKUP fn-->
+        <db dbname="exceldb014" menuid="7702">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>14</db_mode>
+        </db>
+         <!--Function Argument DB - PMT fn-->
+        <db dbname="exceldb014" menuid="7201">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>13</db_mode>
+        </db>
+         <!--Function Argument DB - LEFT fn-->
+        <db dbname="exceldb014" menuid="7401">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>781</db_mode>
+        </db>
+         <!--Function Argument DB - RIGHT fn-->
+        <db dbname="exceldb014" menuid="7402">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>791</db_mode>
+        </db>
+         <!--Function Argument DB - MID fn-->
+        <db dbname="exceldb014" menuid="7403">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>801</db_mode>
+        </db>
+         <!--Function Argument DB - LEN fn-->
+        <db dbname="exceldb014" menuid="7404">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>811</db_mode>
+        </db>
+         <!--Function Argument DB - FIND fn-->
+        <db dbname="exceldb014" menuid="7405">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>821</db_mode>
+        </db>
+         <!--Function Argument DB - VALUE fn-->
+        <db dbname="exceldb014" menuid="7406">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>831</db_mode>
+        </db>
+         <!--Function Argument DB - CONCATENATE fn-->
+        <db dbname="exceldb014" menuid="7407">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>171</db_mode>
+        </db>
+         <!--Function Argument DB - MONTH fn-->
+        <db dbname="exceldb014" menuid="7501">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>241</db_mode>
+        </db>
+         <!--Function Argument DB - WEEKDAY fn-->
+        <db dbname="exceldb014" menuid="7502">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>871</db_mode>
+        </db>
+         <!--Function Argument DB - YEAR fn-->
+        <db dbname="exceldb014" menuid="7503">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>221</db_mode>
+        </db>
+         <!--Function Argument DB - DAY fn-->
+        <db dbname="exceldb014" menuid="7504">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>251</db_mode>
+        </db>
+         <!--Function Argument DB - HOUR fn-->
+        <db dbname="exceldb014" menuid="7505">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>841</db_mode>
+        </db>
+         <!--Function Argument DB - MINUTE fn-->
+        <db dbname="exceldb014" menuid="7506">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>851</db_mode>
+        </db>
+         <!--Function Argument DB - SECOND fn-->
+        <db dbname="exceldb014" menuid="7507">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>861</db_mode>
+        </db>
+         <!--Function Argument DB - RANDBETWEEN fn-->
+        <db dbname="exceldb014" menuid="7777">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>881</db_mode>
+        </db>
+         <!--Function Argument DB - RAND fn-->
+        <db dbname="exceldb014" menuid="7778">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>891</db_mode>
+        </db>
+         <!--Function Argument DB - LARGE fn-->
+        <db dbname="exceldb014" menuid="7958">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>901</db_mode>
+        </db>
+         <!--Function Argument DB - SMALL fn-->
+        <db dbname="exceldb014" menuid="7959">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>911</db_mode>
+        </db>
+         <!--Function Argument DB - RANK fn-->
+        <db dbname="exceldb014" menuid="8001">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>921</db_mode>
+        </db>
+         <!--Function Argument DB - VAR fn-->
+        <db dbname="exceldb014" menuid="8002">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>931</db_mode>
+        </db>
+         <!--Function Argument DB - STDEV fn-->
+        <db dbname="exceldb014" menuid="8003">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>681</db_mode>
+        </db>
+         <!--Function Argument DB - RANK.EQ fn-->
+        <db dbname="exceldb014" menuid="7963">
+            <db_focusinfo>0¦30¦0¦0</db_focusinfo>
+            <db_mode>941</db_mode>
+        </db>
+ 
+		
+	</dialog>
+	<images>
+		<image imgkey="1" imgpath="excel/office16/res/xl_ribbon.png" />
+	</images>
+</framedata>        
+<menu>
+	<frameitem id="1" name="Paste" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="1101" name="Paste" role="25" width="133" height="54" cssclass="xl_misc_menu" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imgpoint="-2, -2" imgwidth="30" imgheight="30" itemwidth="30" itemheight="30" colcount="1">
+			<frameitem id="1105" name="Paste" role="23" width="131" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="1101" name="" role="30" width="30" height="23" cssclass="xl_misc_menu" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Values (V)" tt_class="" imgpoint="-2, -2"/>
+		</frameitem>
+		<frameitem id="1102" name="Separator" role="28" width="0" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="0"/>
+		<frameitem id="1104" name="Paste &lt;u&gt;S&lt;/u&gt;pecial..." role="27" width="131" height="24" cssclass="" enable="0" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Paste Special (Ctrl+Alt+V)" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	<frameitem id="2" name="Copy" role="21" left="0" top="0" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="1202" name="&lt;u&gt;C&lt;/u&gt;opy" role="27" textclass="" swaptextandicon="0" checkable="0" left="0" top="0" width="145" height="24" cssclass="xl_h_c_c" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Copy (Ctrl+C)ŽPut a copy of the selection on the Clipboard so you can paste it somewhere else." tt_class="" imagestyle="&quot;&quot;" imagesize="16,16" />
+		<frameitem id="1203" name="Copy as &lt;u&gt;P&lt;/u&gt;icture..." role="27" textclass="" swaptextandicon="0" checkable="0" left="0" top="0" width="145" height="24" cssclass="" enable="0" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagestyle="&quot;&quot;" imagesize="16,16" />
+	</frameitem>
+	<frameitem id="3" name="Font" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" no_shrunk="1">
+		<frameitem id="1301" name="Font:" role="24" width="264" height="265" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" scrollbarmode="0" checkedsubitem="-1">
+			<frameitem id="1302" name="Theme Fonts" role="23" width="264" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="1303" name="Calibri" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Calibri" swaptextandicon="0" checkable="0" imagesize="16,16"/>			
+			<frameitem id="1305" name="All Fonts" role="23" width="264" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="1307" name="Arial" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Arial" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+			<frameitem id="1309" name="Calibri" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Calibri" swaptextandicon="0" checkable="0" imagesize="16,16"/>			
+			<frameitem id="1310" name="Cambria" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Cambria" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+			<frameitem id="1311" name="Comic Sans MS" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Comic_Sans_MS" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+			<frameitem id="1313" name="Georgia" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Georgia" swaptextandicon="0" checkable="0" imagesize="16,16"/>			
+			<frameitem id="1321" name="Times New Roman" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Times_New_Roman" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+			<frameitem id="1322" name="Trebuchet MS" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Trebuchet_MS" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+			<frameitem id="1323" name="Verdana" role="27" width="264" height="24" cssclass="xl_h_ff_c" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="font_file_menu_Verdana" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		</frameitem>
+	</frameitem>
+	<frameitem id="4" name="Font Size:" role="21" left="0" top="0" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" no_shrunk="1">
+		<frameitem id="1401" name="Font Size:" role="24" left="0" top="0" width="39" height="304" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" scrollbarmode="0" checkedsubitem="0">
+			<frameitem id="1402" name="8" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="8" tt_class="" newpoint="" />
+			<frameitem id="1403" name="9" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="9" tt_class="" newpoint="" />
+			<frameitem id="1404" name="10" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="10" tt_class="" newpoint="" />
+			<frameitem id="1405" name="11" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="11" tt_class="" newpoint="" />
+			<frameitem id="1406" name="12" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="12" tt_class="" newpoint="" />
+			<frameitem id="1407" name="14" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="14" tt_class="" newpoint="" />
+			<frameitem id="1408" name="16" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="16" tt_class="" newpoint="" />
+			<frameitem id="1409" name="18" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="18" tt_class="" newpoint="" />
+			<frameitem id="1410" name="20" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="20" tt_class="" newpoint="" />
+			<frameitem id="1411" name="22" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="22" tt_class="" newpoint="" />
+			<frameitem id="1412" name="24" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="24" tt_class="" newpoint="" />
+			<frameitem id="1413" name="26" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="26" tt_class="" newpoint="" />
+			<frameitem id="1414" name="28" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="28" tt_class="" newpoint="" />
+			<frameitem id="1415" name="36" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="36" tt_class="" newpoint="" />
+			<frameitem id="1416" name="48" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="48" tt_class="" newpoint="" />
+			<frameitem id="1417" name="72" role="27" left="0" top="0" width="23" height="19" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="72" tt_class="" newpoint="" />
+		</frameitem>
+	</frameitem>
+	<frameitem id="5" name="Underline" role="21" left="0" top="0" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="1501" name="&lt;u&gt;U&lt;/u&gt;nderline" role="27" textclass="" swaptextandicon="0" checkable="1" left="0" top="0" width="146" height="24" cssclass="xl_h_3_u" enable="1" kbdshortcut="u" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Underline (Ctrl+U)ŽUnderline your text." tt_class="" imagestyle="&quot;&quot;" imagesize="16,16" />
+		<frameitem id="1502" name="&lt;u&gt;D&lt;/u&gt;ouble Underline" role="27" textclass="" swaptextandicon="0" checkable="1" left="0" top="0" width="146" height="24" cssclass="xl_h_3_d" enable="1" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Double UnderlineŽDouble underline the selected text." tt_class="" imagestyle="&quot;&quot;" imagesize="16,16" />
+	</frameitem>
+	<frameitem id="7" name="Fill Color" role="21" left="0" top="0" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="1701" name="Shading Color" role="31" left="0" top="0" width="170" height="175" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" colcount="10" themetype="0" checkedsubitem="0" />
+		<frameitem id="1702" name="&lt;u&gt;N&lt;/u&gt;o Fill" role="27" textclass="" swaptextandicon="0" checkable="0" left="0" top="0" width="170" height="24" cssclass="xl_h_h_n" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="No Fill" tt_class="" imagestyle="&quot;&quot;" imagesize="16,16" />
+		<frameitem id="1704" name="Separator" role="28" left="0" top="0" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+		<frameitem id="1703" name="&lt;u&gt;M&lt;/u&gt;ore Colors..." role="27" textclass="" swaptextandicon="0" checkable="0" left="0" top="0" width="170" height="24" cssclass="xl_h_h_m" enable="0" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="More Fill Colors" tt_class="" imagestyle="&quot;&quot;" imagesize="16,16" />
+	</frameitem>	
+	<frameitem id="8" name="Font Color" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="1801" name="Automatic" role="27" width="170" height="24" cssclass="xl_h_fc_a" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Automatic" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="1802" name="Font Color" role="31" width="170" height="175" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" themetype="0" checkedsubitem="-1"/>
+		<frameitem id="1803" name="Separator" role="28" width="0" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="0"/>
+		<frameitem id="1804" name="&lt;u&gt;M&lt;/u&gt;ore Colors..." role="27" textclass="" swaptextandicon="0" checkable="0" width="170" height="24" cssclass="xl_h_h_m" enable="0" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="More Font Colors" tt_class="" imagesize="16,16"/>
+	</frameitem>	
+	<frameitem id="21" name="AutoSum" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="3101" name="&lt;u&gt;S&lt;/u&gt;um" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="146" height="24" cssclass="xl_h_u" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="3" tt_text="Sum (Alt+=)ŽAutomatically add it up. Your total will appear after the selected cells." tt_class="xl_h_u_tt" imagesize="16,16"/>
+		<frameitem id="3102" name="&lt;u&gt;A&lt;/u&gt;verage" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="146" height="24" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>		
+		<frameitem id="3104" name="&lt;u&gt;M&lt;/u&gt;ax" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="146" height="24" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3105" name="M&lt;u&gt;i&lt;/u&gt;n" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="146" height="24" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3106" name="new" role="28" width="116" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="3107" name="More &lt;u&gt;F&lt;/u&gt;unctions..." role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="146" height="24" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+	</frameitem>	
+		
+	<frameitem id="61" name="Recently Used" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="7102" name="SUM" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="SUM(number1,number2,)ŽAdds all the numbers in a range of cells." tt_class="" imagesize="16,16" />
+		<frameitem id="7103" name="AVERAGE" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="AVERAGE(number1,number2,)ŽReturns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that contain numbers." tt_class="" imagesize="16,16" />		
+		<frameitem id="7106" name="COUNT" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="COUNT(value1,value2,)ŽCounts the number of cells in a range that contain numbers." tt_class="" imagesize="16,16" />
+		<frameitem id="7107" name="MAX" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="MAX(number1,number2,)ŽReturns the largest value in a set of values. Ignores logical values and text." tt_class="" imagesize="16,16" />		
+		<frameitem id="7112" name="Seperator" role="28" width="0" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="0" />
+    <frameitem id="7113" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert Function(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values." tt_class="" imagesize="16,16" />
+	</frameitem>
+	<frameitem id="62" name="Financial" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="7202" name="NPV" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="NPV(rate,value1,value2,)ŽReturns the net present value of an investment based on a discount rate and a series of future payments(negative values) and income(positive values)." tt_class=""  imagesize="16,16" />
+		<frameitem id="7201" name="PMT" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="PMT(rate,nper,pv,fv,type)ŽCalculates the payment for a loan based on constant payments and a constant interest rate." tt_class="" imagesize="16,16" />
+		<frameitem id="7203" name="RATE" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="RATE(nper,pmt,pv,fv,type,guess)ŽReturns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at 6% APR." tt_class=""  imagesize="16,16" />
+    <frameitem id="7205" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert Function(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values." tt_class="" imagesize="16,16" />
+	</frameitem>
+	
+	<frameitem id="64" name="Text" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		
+		<frameitem id="7407" name="CONCATENATE" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="CONCATENATE(text)ŽJoins several text strings into one text string." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7405" name="FIND" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="FIND(find_text,within_text,start_num)ŽReturns the starting position of one text string. FIND is case-sensitive." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7401" name="LEFT" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="LEFT(text,num_chars)ŽReturns the specified number of characters from the start of a text string." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7404" name="LEN" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="LEN(text)ŽReturns the number of characters in a text string." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7403" name="MID" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="MID(text,start_num,num_chars)ŽReturns the characters from the middle of a text string, given a starting position and length." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7402" name="RIGHT" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="RIGHT(text,num_chars)ŽReturns the specified number of characters from the end of a text string." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7406" name="VALUE" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="VALUE(text)ŽConverts a text string that represents a number to a number." tt_class="" imagesize="16,16" />
+		
+    <frameitem id="7408" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert Function(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values." tt_class="" imagesize="16,16" />
+	</frameitem>
+	
+	<frameitem id="65" name="Date &amp; Time" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="7504" name="DAY" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="DAY(Serial_number)ŽReturns the day of the month, a number from 1 to 31." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7505" name="HOUR" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="HOUR(Serial_number)ŽReturns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.)." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7506" name="MINUTE" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="MINUTE(Serial_number)ŽReturns the minute, a number from 0 to 59." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7501" name="MONTH" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="MONTH(Serial_number)ŽReturns the month, a number from 1 (January) to 12 (December)." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7507" name="SECOND" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="SECOND(Serial_number)ŽReturns the second, a number from 0 to 59." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7502" name="WEEKDAY" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="WEEKDAY(Serial_number,Return_type)ŽReturns a number from 1 to 7 identifying the day of the week of a date." tt_class="" imagesize="16,16" />
+		
+		<frameitem id="7503" name="YEAR" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="YEAR(Serial_number)ŽReturns the year of a date, an integer in the range 1900 - 9999." tt_class="" imagesize="16,16" />
+		
+    <frameitem id="7512" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert Function(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values." tt_class="" imagesize="16,16" />
+	</frameitem>
+	
+	<frameitem id="143" name="Lookup &amp; References" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="7701" name="HLOOKUP" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="HLOOKUP(lookup_value,table_array,row_index_num,range_lookup)ŽLooks for a value in the top row of a table or array of values and returns the value in the same column from a row you specify." tt_class="" imagesize="16,16" />
+
+		<frameitem id="7702" name="VLOOKUP" role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="VLOOKUP(lookup_value,table_array,row_index_number,range_lookup)ŽLooks for a value in the leftmost column of a table, and then returns a value in the same row from a column you specify. By default, the table must be sorted in an ascending order." tt_class="" imagesize="16,16" />
+		
+    <frameitem id="7705" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" swaptextandicon="0" checkable="0" textclass="" width="142" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert Function(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values." tt_class="" imagesize="16,16" />
+	</frameitem>
+
+  <frameitem id="67" name="Math &amp; Trig" role="21" width="0" height="0" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">     
+    <frameitem id="7775" name="ABS" role="27" textclass="" swaptextandicon="" checkable="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="ABS(number) ŽReturns absolute value of a number, a number without its sign." tt_class=""  imagesize="16,16" />     
+    <frameitem id="7746" name="PRODUCT" role="27" textclass="" swaptextandicon="" checkable="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="PRODUCT(number1,number2)ŽMultiplies all the numbers given as arguments.  " tt_class="" imagesize="16,16" />
+    <frameitem id="7778" name="RAND" role="27" textclass="" swaptextandicon="" checkable="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="RAND(number)ŽReturns a random number greater than or equal to 0 and less than1, evenly distributed (changes on recalculation)." tt_class=""  imagesize="16,16" />     
+    <frameitem id="7777" name="RANDBETWEEN" role="27" textclass="" swaptextandicon="" checkable="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="RANDBETWEEN(number)ŽReturns a random number between the numbers you specify." tt_class=""  imagesize="16,16" />
+    <frameitem id="7764" name="SUM" role="27" textclass="" swaptextandicon="" checkable="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="SUM(number1,number2,)ŽAdds all the numbers in a range of cells.  Tell me more" tt_class="" imagesize="16,16" />
+    <frameitem id="7761" name="SQRT" role="27" textclass="" swaptextandicon="" checkable="" width="142" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="SQRT(number)ŽReturns the square root of a number." tt_class="" imagesize="16,16" />
+	
+    <frameitem id="7776" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" textclass="" swaptextandicon="" checkable="" width="142" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert Function(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values.  " tt_class="" imagesize="16,16" />
+  </frameitem>
+	
+	
+	<frameitem id="68" name="More Functions" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="7801" name="&lt;u&gt;S&lt;/u&gt;tatistical" role="27" width="126" height="24" cssclass="xl_m_q_s" enable="1" kbdshortcut="s" menuno="69" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="7802" name="&lt;u&gt;E&lt;/u&gt;ngineering" role="27" width="126" height="24" cssclass="xl_m_q_e" enable="0" kbdshortcut="e" menuno="70" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="7803" name="&lt;u&gt;C&lt;/u&gt;ube" role="27" width="126" height="24" cssclass="xl_m_q_c" enable="0" kbdshortcut="c" menuno="71" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="7804" name="&lt;u&gt;I&lt;/u&gt;nformation" role="27" width="126" height="24" cssclass="xl_m_u_i" enable="0" kbdshortcut="i" menuno="72" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="7805" name="&lt;u&gt;C&lt;/u&gt;ompatibility" role="27" width="126" height="24" cssclass="xl_m_u_c" enable="1" kbdshortcut="c" menuno="73" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="7806" name="&lt;u&gt;W&lt;/u&gt;eb" role="27" width="126" height="24" cssclass="xl_m_q_w" enable="0" kbdshortcut="w" menuno="506" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+  <frameitem id="69" name="Statistical" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">    
+    <frameitem id="7902" name="AVERAGE" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="AVERAGE(number1,number2,)ŽReturns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that contain numbers." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>    
+    <frameitem id="7919" name="COUNT" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="COUNT(value1,value2,)ŽCounts the number of cells in a range that contain  numbers." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>     
+    <frameitem id="7958" name="LARGE" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="LARGE(array,k)ŽReturns the k-th largest value in a data set. For example, the fifth largest number." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    <frameitem id="7954" name="MAX" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="MAX(number1,number2)ŽReturns the largest value in a set of values. Ignores logical values and text." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>    
+    <frameitem id="7956" name="MEDIAN" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="MEDIAN(number1,number2)ŽReturns the median, or the number in the middle of the set of given numbers." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    <frameitem id="7957" name="MIN" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="MIN(number1,number2)ŽReturns the smallest number in a set of values. Ignores logical values and text." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    <frameitem id="7963" name="RANK.EQ" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="RANK.EQ(number,ref,order)ŽReturns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has same rank, the top rank of the set of values is returned." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    <frameitem id="7959" name="SMALL" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="SMALL(array,k)ŽReturns the k-th smallest value in a data set. For example, the fifth smallest number." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    <frameitem id="7605" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" width="149" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values. " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+  </frameitem>
+  <frameitem id="73" name="Compatibility" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+	<frameitem id="8001" name="RANK" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="RANK(number,ref,order)ŽThis function is available for compatibility with Excel 2007 and earlier.&lt;br&gt;Returns the rank of a number in a list of numbers: its size relative to other values in the list." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    <frameitem id="8003" name="STDEV" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="STDEV(number1,number2)ŽThis function is available for compatibility with Excel 2007 and earlier.&lt;br&gt;Estimates standard deviation based on a sample (ignores logical values and text in samples)." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+    <frameitem id="8002" name="VAR" role="27" width="149" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="VAR(number1,number2)ŽThis function is available for compatibility with Excel 2007 and earlier.&lt;br&gt;Estimates variance based on a sample (ignores logical values and text in samples)." tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	<frameitem id="8010" name="Insert &lt;u&gt;F&lt;/u&gt;unction..." role="27" width="149" height="24" cssclass="xl_m_r_f" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Insert(Shift+F3)ŽWork with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values. " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+  </frameitem>
+	
+	
+	
+	<frameitem id="433" name="Tab Color" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="44301" name="Tab Color" role="31" width="170" height="175" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" themetype="0" checked="-1"/>
+		<frameitem id="44302" name="&lt;u&gt;N&lt;/u&gt;o Color" role="27" left="0" top="0" width="170" height="26" cssclass="xl_h_h_n" enable="1" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="No Color" tt_class="" textclass="" swaptextandicon="0" checkable="1" checked="1" imagestyle="&quot;&quot;" imagesize="16,16"/>
+		<frameitem id="44304" name="Separator" role="28" width="0" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="0"/>
+		<frameitem id="44303" name="&lt;u&gt;M&lt;/u&gt;ore Colors..." role="27" width="170" height="24" cssclass="xl_h_h_m" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="More Sheet Tab Colors" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	<frameitem id="439" name="Menu Group" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="44901" name="Customize Quick Access Toolbar" role="23" width="208" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+		<frameitem id="44902" name="New" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" />
+		<frameitem id="44903" name="Open" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44904" name="Save" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" checked="1"/>
+		<frameitem id="44905" name="Email" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44906" name="Quick Print" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44907" name="Print Preview and Print" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44908" name="Spelling" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44909" name="Undo" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" checked="0"/>
+		<frameitem id="44910" name="Redo" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" checked="0"/>
+		<frameitem id="44911" name="Sort Ascending" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44912" name="Sort Descending" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44913" name="Touch/Mouse Mode" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16" checked="0"/>
+		<frameitem id="44914" name="new" role="28" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+		<frameitem id="44915" name="More Commands..." role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+		<frameitem id="44916" name="Show Below the Ribbon" role="27" width="208" height="24" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="1" imagesize="16,16"/>
+	</frameitem>
+	
+	<frameitem id="425" name="Menu Group" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" no_shrunk="1">
+		<frameitem id="43501" name="Cu&lt;u&gt;t&lt;/u&gt;" role="27" width="201" height="24" cssclass="xl_h_x" enable="0" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43502" name="&lt;u&gt;C&lt;/u&gt;opy" role="27" width="201" height="24" cssclass="xl_h_c" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43503" name="Paste Options:" role="25" left="0" top="0" width="201" height="53" cssclass="xl_t_h_zl_shrunk" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" colcount="4" itemwidth="30" itemheight="30" imgwidth="30" imgheight="30" leftmargin="30" imgsrc="" imgpoint="-2778,-66" groupinfo="" scrollbarmode="0" checkedsubitem="0">
+			<frameitem id="43503" name="Paste Options:" role="23" width="201" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="43503" name="" role="30" width="30" height="23" cssclass="xl_misc_menu" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Values (V)" tt_class="" imgpoint="-2, -2"/>
+		</frameitem>
+		<frameitem id="43505" name="Paste &lt;u&gt;S&lt;/u&gt;pecial..." role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43506" name="Seperator" role="28" width="171" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30" />
+		<frameitem id="43507" name="&lt;u&gt;I&lt;/u&gt;nsert..." role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43508" name="&lt;u&gt;D&lt;/u&gt;elete..." role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43509" name="Clear Co&lt;u&gt;n&lt;/u&gt;tents" role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43510" name="Seperator" role="28" width="171" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30" />
+		<frameitem id="43520" name="&lt;u&gt;Q&lt;/u&gt;uick Analysis" role="27" width="201" height="24" cssclass="xl_rt_quickanalysis" enable="0" kbdshortcut="q" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43511" name="Filt&lt;u&gt;e&lt;/u&gt;r" role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="e" menuno="426" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43512" name="S&lt;u&gt;o&lt;/u&gt;rt" role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="o" menuno="427" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43513" name="Seperator" role="28" width="171" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30" />
+		<frameitem id="43514" name="Insert Co&lt;u&gt;m&lt;/u&gt;ment" role="27" width="201" height="24" cssclass="xl_rt_newcomments" enable="0" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43515" name="Seperator" role="28" width="171" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30" />
+		<frameitem id="43516" name="&lt;u&gt;F&lt;/u&gt;ormat Cells..." role="27" width="201" height="24" cssclass="xl_h_o_e" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43517" name="Pic&lt;u&gt;k&lt;/u&gt; From Drop-down List..." role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="k" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43518" name="Define N&lt;u&gt;a&lt;/u&gt;me..." role="27" width="201" height="24" cssclass="" enable="0" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43519" name="Hyperl&lt;u&gt;i&lt;/u&gt;nk..." role="27" width="201" height="24" cssclass="xl_rt_hyperlink" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+	</frameitem>
+	<frameitem id="426" name="Menu Group" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="43601" name="Clear Filter" role="27" width="233" height="24" cssclass="xl_h_s_c" enable="1" kbdshortcut="e" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43602" name="Reapply" role="27" width="233" height="24" cssclass="xl_h_s_y" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43603" name="Seperator" role="28" width="203" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30" />
+		<frameitem id="43604" name="Filter by Selected Cell's Value" role="27" width="233" height="24" cssclass="" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43605" name="Filter by Selected Cell's Color" role="27" width="233" height="24" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43606" name="Filter by Selected Cell's Font Color" role="27" width="233" height="24" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43607" name="Filter by Selected Cell's Icon" role="27" width="233" height="24" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+	</frameitem>
+	<frameitem id="427" name="Menu Group" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="43701" name="Sort A to Z" role="27" width="221" height="24" cssclass="xl_h_s_s" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43702" name="Sort Z to A" role="27" width="221" height="24" cssclass="xl_h_s_o" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43703" name="Put Selected Cell Color On Top" role="27" width="221" height="24" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43704" name="Put Selected Font Color On Top" role="27" width="221" height="24" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43705" name="Put Selected Cell Icon On Top" role="27" width="221" height="24" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+		<frameitem id="43706" name="Custom Sort..." role="27" width="221" height="24" cssclass="xl_h_s_u" enable="1" kbdshortcut="u" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16" />
+	</frameitem>
+	<frameitem id="461" name="NumberFilterPane" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="47101" name="Sort A to Z" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="266" height="24" cssclass="xl_h_s_s" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="47102" name="Sort Z to A" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="266" height="24" cssclass="xl_h_s_o" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="47103" name="Sort by Color" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="266" height="24" cssclass="" enable="1" kbdshortcut="u" menuno="462" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="47104" name="Seperator" role="28" width="236" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="47105" name="Clear Filter from" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="266" height="24" cssclass="xl_h_s_c" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="4" tt_text="" tt_class="xl_h_s_f_tt" imagesize="16,16"/>
+		<frameitem id="47106" name="Filter by Color" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="266" height="24" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="47107" name="Number Filter" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="266" height="24" cssclass="" enable="1" kbdshortcut="y" menuno="463" rtmenuno="-2" tt_type="1" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="47108" name="Filter Control" role="32" width="266" height="246" />
+	</frameitem>
+	
+	<frameitem id="428" name="Right Click on Row Header" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" no_shrunk="1">
+		<frameitem id="43801" name="Cut" role="27" width="132" height="24" cssclass="xl_h_x" enable="0" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43802" name="Copy" role="27" width="132" height="24" cssclass="xl_h_c" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>		
+		<frameitem id="43803" name="Paste Options:" role="25" left="0" top="0" width="132" height="53" cssclass="xl_t_h_zl_shrunk" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" colcount="4" itemwidth="30" itemheight="30" imgwidth="30" imgheight="30" leftmargin="30" imgsrc="" imgpoint="-2778,-66" groupinfo="" scrollbarmode="0" checkedsubitem="0">
+			<frameitem id="43803" name="Paste Options:" role="23" width="132" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="43804" name="" role="30" width="30" height="23" cssclass="xl_misc_menu" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Values (V)" tt_class="" imgpoint="-2, -2"/>
+		</frameitem>
+		<frameitem id="43805" name="Paste Special..." role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43806" name="Separator" role="28" width="102" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="43807" name="Insert" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43808" name="Delete" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43809" name="Clear Contents" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43810" name="Separator" role="28" width="102" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="43811" name="Format Cells..." role="27" width="132" height="24" cssclass="xl_h_o_e" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43812" name="Row Height..." role="27" width="132" height="24" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43813" name="Hide" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43814" name="Unhide" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="u" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	<frameitem id="429" name="Right Click on Column Header" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" no_shrunk="1">
+		<frameitem id="43901" name="Cu&lt;u&gt;t&lt;/u&gt;" role="27" width="132" height="24" cssclass="xl_h_x" enable="0" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43902" name="&lt;u&gt;C&lt;/u&gt;opy" role="27" width="132" height="24" cssclass="xl_h_c" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>		
+		<frameitem id="43903" name="Paste Options:" role="25" left="0" top="0" width="132" height="53" cssclass="xl_t_h_zl_shrunk" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" colcount="4" itemwidth="30" itemheight="30" imgwidth="30" imgheight="30" leftmargin="30" imgsrc="" imgpoint="-2778,-66" groupinfo="" scrollbarmode="0" checkedsubitem="0">
+			<frameitem id="43903" name="Paste Options:" role="23" width="132" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="43904" name="" role="30" width="30" height="23" cssclass="xl_misc_menu" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Values (V)" tt_class="" imgpoint="-2, -2"/>
+		</frameitem>
+		<frameitem id="43905" name="Paste &lt;u&gt;S&lt;/u&gt;pecial..." role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43906" name="Separator" role="28" width="102" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="43907" name="&lt;u&gt;I&lt;/u&gt;nsert" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43908" name="&lt;u&gt;D&lt;/u&gt;elete" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43909" name="Clear Co&lt;u&gt;n&lt;/u&gt;tents" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="n" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43910" name="Separator" role="28" width="102" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="43911" name="&lt;u&gt;F&lt;/u&gt;ormat Cells..." role="27" width="132" height="24" cssclass="xl_h_o_e" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43912" name="&lt;u&gt;C&lt;/u&gt;olumn Width..." role="27" width="132" height="24" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43913" name="&lt;u&gt;H&lt;/u&gt;ide" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="43914" name="&lt;u&gt;U&lt;/u&gt;nhide" role="27" width="132" height="24" cssclass="" enable="0" kbdshortcut="u" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	<frameitem id="435" name="Right Click on Formula bar" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="44501" name="Cut" role="27" width="201" height="24" cssclass="xl_h_x" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44502" name="Copy" role="27" width="201" height="24" cssclass="xl_h_c" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44508" name="Paste Options:" role="25" left="0" top="0" width="201" height="53" cssclass="xl_t_h_zl_shrunk" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" colcount="4" itemwidth="30" itemheight="30" imgwidth="30" imgheight="30" leftmargin="30" imgsrc="" imgpoint="-2778,-66" groupinfo="" scrollbarmode="0" checkedsubitem="0">
+			<frameitem id="44508" name="Paste Options:" role="23" width="201" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="44503" name="Paste" role="30" left="0" top="0" width="30" height="30" cssclass="xl_misc_menu" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Keep only Text(T)" tt_class="" newpoint="" imgpoint="-2778,-66"/>
+		</frameitem>
+		<frameitem id="44509" name="Separator" role="28" width="171" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="44504" name="Format Cells..." role="27" width="201" height="24" cssclass="xl_h_o_e" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44505" name="Pick From Drop-down List..." role="27" width="201" height="24" cssclass="" enable="1" kbdshortcut="k" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44506" name="Separator" role="28" width="171" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="44507" name="Expand Formula Bar" role="27" width="201" height="24" cssclass="" enable="1" kbdshortcut="b" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	
+	<frameitem id="436" name="Fill Handle Drag Right Click Menu 1" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="44601" name="Copy Cells" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44602" name="Fill Series" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44603" name="Fill Formatting Only" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44604" name="Fill Without Formatting" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44605" name="Separator" role="28" width="147" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="44606" name="Fill Days" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44607" name="Fill Weekdays" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="w" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44608" name="Fill Months" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44609" name="Fill Years" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="y" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44610" name="Separator" role="28" width="147" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="44611" name="Linear Trend" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44612" name="Growth Trend" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="g" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44614" name="Flash Fill" role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44613" name="Series..." role="27" width="177" height="24" cssclass="" enable="1" kbdshortcut="e" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	<frameitem id="437" name="Fill Handle Drag Right Click Menu 2" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="44701" name="Move Here" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44702" name="Copy Here" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44703" name="Copy Here as Values Only" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="v" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44704" name="Copy Here as Formats Only" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44705" name="Link Here" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44706" name="Create Hyperlink Here" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44707" name="Separator" role="28" width="168" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="44708" name="Shift Down and Copy" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44709" name="Shift Right and Copy" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="t" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44710" name="Shift Down and Move" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44711" name="Shift Right and Move" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="44713" name="Separator" role="28" width="168" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="44712" name="Cancel" role="27" width="198" height="24" cssclass="" enable="1" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	<frameitem id="328" name="Option Menu" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="33801" name="Number Stored as Text" role="23" width="151" left="31" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="33802" name="&lt;u&gt;C&lt;/u&gt;onvert to Number" role="27" width="182" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="33803" name="&lt;u&gt;H&lt;/u&gt;elp on this error" role="27" width="182" height="22" cssclass="" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="33804" name="Separator" role="28" width="152" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="33805" name="&lt;u&gt;I&lt;/u&gt;gnore Error" role="27" width="182" height="22" cssclass="" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="33806" name="Edit in &lt;u&gt;F&lt;/u&gt;ormula Bar" role="27" width="182" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+		<frameitem id="33807" name="Separator" role="28" width="152" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="33808" name="Error Checking &lt;u&gt;O&lt;/u&gt;ptions..." role="27" width="182" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="16,16"/>
+	</frameitem>
+	<frameitem id="526" name="Autofill Meu" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Temporary context menu pop-up menu" tt_class="">
+		<frameitem id="53601" name="Copy Cells" role="36" width="201" height="22" cssclass="" enable="1" kbdshortcut="c" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checked="1" checkable="4" imagesize="16,16" />
+		<frameitem id="53602" name="Fill Series" role="36" width="201" height="22" cssclass="" enable="1" kbdshortcut="s" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="4" imagesize="16,16" />
+		<frameitem id="53603" name="Fill Formatting Only" role="36" width="201" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="4" imagesize="16,16" />
+		<frameitem id="53604" name="Fill Without Formatting" role="36" width="201" height="22" cssclass="" enable="1" kbdshortcut="o" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="4" imagesize="16,16" />
+		<frameitem id="53605" name="Flash Fill" role="36" width="201" height="22" cssclass="" enable="1" kbdshortcut="f" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="4" imagesize="16,16" />
+	</frameitem>
+	
+	<frameitem id="537" name="Font" role="21" width="0" height="323" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="54701" name="Font" role="24" width="153" height="323" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" checked="-1">
+			<frameitem id="54702" name=" Segoe UI Light (Headings)" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Segoe UI Light (Headings)ŽPower View " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54703" name=" Segoe UI (Body)" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Segoe UI (Body)ŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54704" name=" Arial" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="ArialŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54705" name=" Arial Black" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Arial BlackŽPower View " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54706" name=" Calibri" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="CalibriŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54707" name=" Cambria" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="CambriaŽPower View " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54708" name=" Courier New" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Courier NewŽPower View " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54709" name=" Georgia" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="GeorgiaŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54710" name=" Lucida Sans Unicode" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Lucida Sans UnicodeŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54711" name=" Segoe UI" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Segoe UIŽPower View " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54712" name=" Tahoma" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="TahomaŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54713" name=" Times New Roman" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Times New RomanŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54714" name=" Trebuchet MS" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Trebuchet MSŽPower View" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+			<frameitem id="54715" name=" Verdana" role="27" width="153" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="VerdanaŽPower View " tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize=""/>
+		</frameitem>
+	</frameitem>
+	
+	<!--Ctrl paste option menu-->
+	<frameitem id="528" name="Paste" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="52901" name="Paste" role="25" width="125" height="54" cssclass="xl_misc_menu" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imgpoint="-2778, -66" imgwidth="30" imgheight="30" itemwidth="30" itemheight="30" colcount="1">
+			<frameitem id="52902" name="Paste" role="23" width="125" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="52901" name="" role="30" width="30" height="23" cssclass="xl_misc_menu" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Paste (P)" tt_class="" imgpoint="-2778, -66"/>
+		</frameitem>
+	</frameitem>
+	
+	<frameitem id="238" name="Blank Rows" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="24801" name="&lt;u&gt;I&lt;/u&gt;nsert Blank Line after Each Item" role="27" width="268" height="44" cssclass="xl_jy_b_i" enable="1" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="32,32"/>
+		<frameitem id="24802" name="&lt;u&gt;R&lt;/u&gt;emove Blank Line after Each Item" role="27" width="268" height="44" cssclass="xl_jy_b_r" enable="1" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" textclass="" swaptextandicon="0" checkable="0" imagesize="32,32"/>
+	</frameitem>
+	
+	<frameitem id="580" name="Ctrl" role="21" left="0" top="0" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="59001" name="Ctrl" role="25" left="0" top="0" width="129" height="189" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" colcount="4" itemwidth="30" itemheight="30" imgwidth="30" imgheight="30" leftmargin="0" imgsrc="" imgpoint="" groupinfo="" scrollbarmode="0" checkedsubitem="0" ignorepoint="1">
+			<frameitem id="59001" name="Paste" role="23" left="0" top="0" width="129" height="30" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_p" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Paste (P)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_f" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Formulas (F)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_o" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Formulas &amp; Number Formatting (O)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_k" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Keep Source Formatting (K)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_b" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="No Borders (B)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_w" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Keep Source Column Widths (W)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_t" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Transpose (T)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="Paste Values" role="23" left="0" top="0" width="129" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_v" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Values (V)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_a" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Values &amp; Number Formatting (A)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_e" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Values &amp; Source Formatting (E)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="Other Paste Options" role="23" left="0" top="0" width="129" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" />
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_r" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Formatting (R)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_n" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Paste Link (N)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_u" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Picture (U)" tt_class="" newpoint="" imagesize="30,30"/>
+			<frameitem id="59001" name="" role="30" left="0" top="0" width="129" height="30" cssclass="xl_rt_paste_i" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Linked Picture (I)" tt_class="" newpoint="" imagesize="30,30"/>
+		</frameitem>
+	</frameitem>
+	
+	<frameitem id="20" name="Format" role="21" width="0" height="0" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="">
+		<frameitem id="3001" name="Cell Size" role="23" width="174" height="23" cssclass="" enable="0" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+		<frameitem id="3002" name="Row &lt;u&gt;H&lt;/u&gt;eight..." role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="xl_h_o_h" enable="1" kbdshortcut="h" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3003" name="&lt;u&gt;A&lt;/u&gt;utoFit Row Height" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="" enable="0" kbdshortcut="a" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3004" name="" role="28" width="144" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="3005" name="Column &lt;u&gt;W&lt;/u&gt;idth..." role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="xl_h_o_w" enable="1" kbdshortcut="w" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3006" name="AutoF&lt;u&gt;i&lt;/u&gt;t Column Width" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="" enable="0" kbdshortcut="i" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3007" name="&lt;u&gt;D&lt;/u&gt;efault Width..." role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="" enable="0" kbdshortcut="d" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3008" name="Visibility" role="23" width="174" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+		<frameitem id="3009" name="Hide &amp; &lt;u&gt;U&lt;/u&gt;nhide" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="" enable="0" kbdshortcut="u" menuno="84" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3010" name="Organize Sheets" role="23" width="174" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+		<frameitem id="3011" name="&lt;u&gt;R&lt;/u&gt;ename Sheet" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="" enable="0" kbdshortcut="r" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3012" name="&lt;u&gt;M&lt;/u&gt;ove or Copy Sheet..." role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="" enable="0" kbdshortcut="m" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3013" name="&lt;u&gt;T&lt;/u&gt;ab Color" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="" enable="0" kbdshortcut="t" menuno="504" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" imagesize="16,16"/>
+		<frameitem id="3014" name="Protection" role="23" width="174" height="23" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class=""/>
+		<frameitem id="3015" name="&lt;u&gt;P&lt;/u&gt;rotect Sheet..." role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="xl_h_o_p" enable="0" kbdshortcut="p" menuno="-1" rtmenuno="-2" tt_type="2" tt_text="Protect SheetŽPrevent unwanted changes from others by limiting their ability to edit.&lt;br&gt;&lt;br&gt; For example, you can prevent people from editing locked cells or making formatting changes. Tell me more" tt_class="" imagesize="16,16"/>
+		<frameitem id="3016" name="&lt;u&gt;L&lt;/u&gt;ock Cell" role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="xl_h_o_l" enable="0" kbdshortcut="l" menuno="-1" rtmenuno="-2" tt_type="1" tt_text="Lock CellŽLock the selected cells to keep people from making changes to them.&lt;br&gt;&lt;br&gt; You must turn on Protect Sheet in order for this feature to work." tt_class="" imagesize="16,16"/>
+		<frameitem id="3017" name="" role="28" width="144" height="2" cssclass="" enable="1" kbdshortcut="" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="" tt_class="" left="30"/>
+		<frameitem id="3018" name="Format C&lt;u&gt;e&lt;/u&gt;lls..." role="27" textclass = "" swaptextandicon = "0" checkable = "0" width="174" height="24" cssclass="xl_h_o_e" enable="1" kbdshortcut="e" menuno="-1" rtmenuno="-2" tt_type="0" tt_text="Datasheet Formatting (Ctrl+1)" tt_class="" imagesize="16,16"/>
+	</frameitem>
+	
+</menu>
+<data>	
+	<!-- File Tab -->
+	<filetab>
+		<page_navigator style="Main_Navigator" min-height="446">
+			<page text="Info" id="10010000" kbdshortcut="i" scrollbar="none">
+				<content>
+					<table>
+						<tr>
+							<td>
+								<label text="Scratchpad" id="10010154" show="true" text_class="file_tab_title_Xl" />
+							</td>
+						</tr>
+					</table>
+				</content>
+			</page>
+			<page text="Open" id="10030000" titleonly="" enable = "1" kbdshortcut="o">
+				<content>
+					<table>
+						<tr>
+							<td>
+								<file_picker text="Browse" id="10030500" kbdshortcut="o" button="" enable = "1" img_class="xl_f_o_c_b">
+								<size width="200px" height="45px" />
+								<style overflow="visible" />
+								</file_picker>								
+							</td>
+						</tr>
+					</table>
+				</content>
+			</page>
+			<page text="Export" id="10030001" titleonly="" enable = "1" kbdshortcut="o">
+				<content>
+					<table>
+						<tr>
+							<td>
+								<export_file text="Save As Excel" id="10030501" kbdshortcut="o" button="" enable = "1" img_class="xl_qat_1">
+								<size width="100px" height="85px" />
+								<style overflow="visible" />
+								</export_file>
+							</td>
+						</tr>
+					</table>
+				</content>
+			</page>
+		</page_navigator>
+	</filetab>
+</data>
+</parentnode>

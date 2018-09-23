@@ -1,0 +1,68 @@
+<div class="item-container">
+    <div class="left-items items">
+        {{#if prevLinkText}}
+            {{#ifCond currLabel "==" "Chapter"}}
+                <div class="item-link">
+                    <a href="{{leftLink}}">
+                        <div class="left button {{#ifCond currLabel "==" "Chapter"}}is-chapter{{/ifCond}}" role="button" aria-label="Previous" title="Previous">
+                            <i class="icon-filled-arrow-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="prev-text item-text chapter-text"><span class="label-text">Previous {{currLabel}}:</span><span class="link-text">{{prevLinkText}}</span></div>
+                    </a>
+                </div>
+            {{else}}
+                <div class="item-link">
+                    <a href="{{leftLink}}" class="left button" role="button" aria-label="Previous" title="Previous">
+                        <i class="icon-filled-arrow-left" aria-hidden="true"></i>
+                    </a>
+                </div>
+            {{/ifCond}}
+        {{/if}}
+    </div>
+    {{#if isShowCenter}}
+    <div class="center-items items">
+        <span class="now-of">{{currLabel}} {{current}} of {{max}}</span>
+        <button class="menu-button" aria-label="Topic List" title="Topic List"><i class="icon-list" aria-hidden="true"></i></button>
+    </div>
+    <div class="footer-menu-parent-wrapper">
+		<div class="footer-menu-wrapper" style="display: none;">
+            <div class="footer-menu-container-wrapper">
+			    <div class="footer-menu-container slideUp animated"></div>
+            </div>
+		</div>
+	</div>
+    {{/if}}
+    <div class="right-items items">
+        {{#if nextLinkText}}
+            {{#ifCond currLabel "==" "Chapter"}}
+                <div class="item-link">
+                    <a href="{{rightLink}}" role="button" aria-label="Next" title="Next">
+                        <div class="next-text item-text chapter-text"><span class="label-text">Explore {{currLabel}}</span></div>
+                        <div  class="right button {{#ifCond currLabel "==" "Chapter"}}is-chapter{{/ifCond}}" role="button">
+                            <i class="icon-filled-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            {{else}}
+                {{#ifCond nextLabel "==" "Chapter"}}
+                    <div class="item-link">
+                        <a href="{{rightLink}}">
+                            <div class="next-text item-text chapter-text next-chapter-text"><span class="label-text">Next {{nextLabel}}:</span><span class="link-text">{{nextLinkText}}</span></div>
+                            <div  class="right button is-chapter" role="button" aria-label="Next" title="Next">
+                                <i class="icon-filled-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                {{else}}
+                    <div class="next-text item-text"><span class="label-text">Next {{nextLabel}}:</span><span class="link-text">{{#ifCond nextLabel "!=" "Unit"}} {{nextLinkIndex}}{{/ifCond}} {{nextLinkText}}</span></div>
+                    <div class="item-link">
+                        <a href="{{rightLink}}" class="right button" role="button" aria-label="Next" title="Next">
+                            <i class="icon-filled-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                {{/ifCond}}
+            {{/ifCond}}
+        {{/if}}
+    </div>
+    <div class="footer-menu-modal" style="display: none;"></div>
+</div>

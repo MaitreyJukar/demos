@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+</head>
+
+<body>
+    <button id="help" onclick="getHelpData()"> Download help.json </button>
+    <button id="glossary" onclick="getGlossaryData()"> Download glossary.json </button>
+    <script>
+        $("body").append("<a id='downloader' style='display:none'></a>");
+
+        function downloadData(storageObj, fileName) {
+            var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(storageObj));
+            var dlAnchorElem = $('#downloader')[0];
+            dlAnchorElem.setAttribute("href", dataStr);
+            dlAnchorElem.setAttribute("download", fileName);
+            dlAnchorElem.click();
+        }
+
+        function getHelpData() {
+            var help = [];
+            $.get('./help.xml', function(d) {
+                $(d).find('Help').each(function() {
+                    var $help = $(this);
+                    var title = $help.attr("title");
+                    var imageSrc = $help.attr("imageSrc");
+                    var text = $help.text().trim();
+
+                    help.push({
+                        "title": title,
+                        "imageSrc": imageSrc,
+                        "text": text
+                    });
+                });
+                downloadData({
+                    "help": help
+                }, "help.json");
+            });
+        }
+
+        function getGlossaryData() {
+            var glossary = [];
+            $.get('./glossary.xml', function(d) {
+                $(d).find('GlossaryTerm').each(function() {
+                    var $glossary = $(this);
+                    var term = $glossary.attr("term");
+                    var text = $glossary.text().trim();
+
+                    glossary.push({
+                        "term": term,
+                        "text": text
+                    });
+                });
+                downloadData({
+                    "glossary": glossary
+                }, "glossary.json");
+            });
+        }
+    </script>
+</body>
+
+</html>

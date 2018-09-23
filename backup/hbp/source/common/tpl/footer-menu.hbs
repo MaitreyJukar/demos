@@ -1,0 +1,12 @@
+<div class="container-fluid no-pad">
+    <div class="mob-header">
+        <i class="icon-content icon-list" aria-hidden="true"></i>
+        <span class="panel-title">Contents</span>
+        <span class="close-icon-holder">
+            <button class="icon-close" aria-label="Close the menu" title="Close"></button>
+        </span>
+    </div>
+    <ol class="no-dot" role="list">
+        {{#each menuModels}} {{&footerItem this @index ../heighlightIndex}} {{/each}}
+    </ol>
+</div>
