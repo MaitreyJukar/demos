@@ -1,0 +1,128 @@
+@import './../../../../constants.scss';
+@import './../../../../vertical-scroll-common.scss';
+
+#section3 {
+    .screen-navigation-button {
+        line-height: 1;
+    }
+}
+
+.screen-navigation-button {
+    right: 0px;
+    bottom: 0px
+}
+
+.scroll-section .scroll-section-wrapper{
+    position: relative;
+    height:100%
+}
+
+.button-parent {
+    position: absolute;
+}
+
+.button-parent.back{
+    top: 16px;
+    left: 16px;
+    .icon-back{
+        left: 0px;
+        top: 0px
+    }
+}
+
+.button-parent.navigation{
+    bottom: 16px;
+    right: 16px;
+}
+
+@mixin freeSrcoll(){
+    .scroll-section {
+        padding: 40px;
+        margin: 0px auto;
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        height:100%;
+        pointer-events: initial;
+    }
+    .scroll-section.active{
+        box-shadow:none;
+    }
+    .screen-navigation-button{
+        display:none;
+    }
+    #section3{
+        margin-bottom:0px;
+    }
+}
+
+@media screen and (max-width:$desktop) {
+    @media screen and (max-height:$tabletLandscapeMinHeight){
+        :host{
+            @include freeSrcoll();
+        }
+    }
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax){
+    .scroll-section{
+        padding: 24px;
+    }
+    
+    #section3 {
+        margin-bottom: 24px;
+    }
+    .screen-navigation-button{
+        // bottom:16px;
+        // right:-9px;
+    }
+    .icon-back{
+        top:0px;
+        left:0px;
+    }
+    @media screen and (max-height:$tabletMinHeight){
+        .cwr.isAndroid :host{
+            @include freeSrcoll();
+        }
+    }
+
+    @media screen and (max-height:$tabletPortraitMin){
+        :host{
+            @include freeSrcoll();
+        }
+    }
+}
+
+@media screen and (max-width: $mobileLandscape){
+    .cwr-explore :host {
+        .scroll-section {
+            padding: 0px;
+            margin: 0px auto;
+            box-shadow: none;
+            border: none;
+            opacity: 1;
+            .icon-back {
+                display: none;
+            }
+        }
+        .scroll-section.active{
+            .icon-back {
+                display: none;
+            }
+        }
+
+        #section1,
+        #section2,
+        #section3 {
+            height: 100%;
+            pointer-events: initial;
+        }
+        .screen-navigation-button {
+            display: none;
+        }
+        #section3 {
+            margin-bottom:0px;
+        }
+    }    
+}
+

@@ -1,0 +1,172 @@
+@import './../../../../constants.scss';
+:host {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.drag-and-drop-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.draggable-droppable-container {
+    margin-top: 50px;
+    text-align: center;
+    margin: 50px auto auto auto;
+}
+
+.outside-tiles {
+    padding-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.draggable-container {
+    margin: 0px 18px 18px 0px;
+    border-radius: 3px;
+    vertical-align: bottom;
+    background-color: $draggable-container-bg;
+    max-width: 200px;
+    .draggable {
+        padding: 8px 0px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        padding-right: 8px;
+    }
+    .icon-check {
+        display: none;
+    }
+    .icon-check-cross {
+        display: none;
+    }
+}
+
+img.backgroundImage {
+    width: 100%;
+}
+
+.drop-group {
+    border: 2px solid $drop-group-border;
+    opacity: 54%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    box-shadow: inset 0px 0px 10px 0px $drop-group-shadow;
+    background-color: $drop-group-bg-color;
+    .draggable {
+        float: left;
+    }
+}
+
+.draggable {
+    box-shadow: 1px 2px 3px $draggable-shadow;
+    display: block;
+    border: 1px solid transparent;
+    background-color: $draggable-bg-color;
+    border-radius: 3px;
+    font-family: $roboto-bold;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    justify-content: center;
+    span {
+        display: block;
+        width: 100%;
+    }
+    .draggable-icon {
+        float: left;
+        display: flex;
+        align-items: center;
+        left: 0px;
+        height: calc(100%);
+        top: 5px;
+    }
+    .draggable-icon:before {
+        line-height: 1.4;
+    }
+    .draggable-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.draggable-image {
+    padding: 0px;
+}
+
+.draggable img {
+    width: 100%;
+    height: 100%;
+}
+
+.drop-group-wrapper {
+    display: inline-block;
+    position: absolute;
+    max-width: 310px;
+}
+
+.drop-group-name {
+    height: auto;
+    display: inline-block;
+    background-color: $drop-group-border;
+    padding: 0px 5px;
+    position: absolute;
+}
+
+.ui-state-active {
+    background-color: $draggable-bg-color;
+}
+
+.drag-state-active {
+    border: 1px solid $purple;
+}
+
+.ui-state-highlight {
+    border: 2px dashed $purple;
+}
+
+.highlight-draggable {
+    border: 1px solid $purple;
+}
+
+.highlight-droppable {
+    border: 2px dashed $purple;
+    background-color: $draggable-bg-color;
+}
+
+.drop-zone {
+    display: inline-block;
+}
+
+.readonly {
+    pointer-events: none;
+    user-select: none;
+}
+
+.options-container {
+    position: relative;
+    .correct-answer,
+    .wrong-answer {
+        outline: none;
+    }
+}
+
+.options-container-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 68px);
+    justify-content: center;
+}
+
+.group-label {
+    height: 25px;
+}

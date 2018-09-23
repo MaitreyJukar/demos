@@ -1,0 +1,68 @@
+<div class="cards-wrapper">
+    <div class="scenario-title">
+        <app-text textId="scenarioDesc"></app-text>
+        <app-text textId="scenarioTitle"></app-text>
+    </div>
+    <div id="card-model-container" class="card-model-container card-model-container-desktop-view">
+        <div class="card_model" [class.active]="mouseOvered && i === selected" *ngFor="let cardInfo of cardsInfo; let i = index"
+            (click)="cardClicked($event, i)" (mouseout)="mouseOvered=false; selected = -1" (mouseover)="mouseOvered=true; selected=i"
+            tabindex="0" role="link" [attr.aria-labelledby]="'scenario-'+i+'-title scenario-'+i+'-description'" (focus)="onFocus($event)"
+            (blur)="onBlur($event)">
+            <div class="image-container image_container_desktop_view">
+                <div class="icon-replay-video replay-overlay" *ngIf="model[i].completed"></div>
+                <img class="image" [src]="cardInfo.imageUrl" [ngClass]="{ display_none : cardInfo.imageUrl === '' }" [alt]="cardInfo.altText">
+            </div>
+            <div class="title" [id]="'scenario-'+i+'-title'">
+                <div class="title-text">
+                    {{ cardInfo.text }}
+                </div>
+                <div class="description">
+                    {{ cardInfo.description }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-model-container card-model-container-mobile-view">
+
+        <div class="card-container" (pan)="swipper($event)" (panend)="updatePosition($event)">
+            <div class="card_model" [style.right]="getLeft(cardInfo.cardIndex)" [style.transform]="getTransform(cardInfo.cardIndex)"
+                [style.zIndex]="getZIndex(cardInfo.cardIndex)" [id]="i" [attr.index]="cardInfo.cardIndex" *ngFor="let cardInfo of cardsInfo let i ='index'"
+                (click)="cardClicked( $event , i)">
+                <div class="image-container" [ngClass]="{'active':getZIndex(cardInfo.cardIndex) == 100}">
+                    <div class="icon-replay-video replay-overlay" *ngIf="model[i].completed"></div>
+
+                    <img class="image" [src]="cardInfo.imageUrl" [ngClass]="{ display_none : cardInfo.imageUrl === '' }" [alt]="cardInfo.altText">
+                    <div class="card-mobile-view title">
+                        {{ cardsInfo[ getCenterNumber() ].text }}
+                    </div>
+                    <div class="description" click="false">
+                        {{ cardsInfo[ getCenterNumber() ].description }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="navigation-dots">
+            <div class="dots-background" *ngFor="let cardInfo of cardsInfo let i ='index'" [ngClass]="{'active':getZIndex(cardInfo.cardIndex) == 100}"></div>
+        </div>
+
+        <div class="text-container">
+            <div class="title">
+                {{ cardsInfo[ getCenterNumber() ].text }}
+            </div>
+            <div class="description" click="false">
+                {{ cardsInfo[ getCenterNumber() ].description }}
+            </div>
+        </div>
+
+    </div>
+
+    <div *ngIf="anyOneCompleted" class="footer">
+        <app-custom-button class="text-button explore done-button" buttonClass="explore" showIconAfter=true iconClass="icon-chevron_right"
+            buttonText="takeQuiz" (buttonClickEvent)="goToQuiz()">
+        </app-custom-button>
+    </div>
+</div>

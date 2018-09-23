@@ -1,0 +1,107 @@
+import { AfterViewInit, ChangeDetectorRef, Component, EventEmitter, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { BaseComponent } from 'app/core/components/base/base.component';
+import { MessageService } from '../../../core/services/message.service';
+import { WindowResizeService } from '../../../core/services/window-resize.service';
+import { ScrollDirective } from '../../../core/scroll.directive';
+import { ScenarioDescribeComponent } from '../../../core/components/scenario-describe/scenario-describe.component';
+import { ScenarioDescribe2Model } from '../../../core/components/scenario-describe-2/scenario-describe-2.model';
+import { BrowserCompatibilityService } from '../../../core/services/browser-compatibility.service';
+import { KeyboardService } from '../../../core/services/keyboard.service';
+import { ImageCardsMcqModel } from '../../../core/components/image-cards-mcq/image-cards-mcq.model';
+import { responseType } from '../../../core/components/question/question.model';
+
+
+@Component({
+  selector: 'app-scenario1',
+  styleUrls: ['./scenario1.component.scss'],
+  templateUrl: './scenario1.component.html'
+
+})
+export class Scenario1Component extends BaseComponent implements OnDestroy, OnInit, AfterViewInit {
+  data: any;
+  @ViewChild('scenarioEle') scenarioEle: ScenarioDescribeComponent;
+  @ViewChild(ScrollDirective) scrollDirective: ScrollDirective;
+  scenarioDescribeModel: ScenarioDescribe2Model;
+  cardsMcqModel1: ImageCardsMcqModel;
+  cardsMcqModel2: ImageCardsMcqModel;
+  cardsMcqModel3: ImageCardsMcqModel;
+  responseType = responseType;
+
+  scrollTopOffset: number = 152;
+  isIpad: boolean = false;
+  keyboardService: KeyboardService;
+
+
+  ngOnInit() {
+    this.data = JSON.parse(JSON.stringify(MessageService.dloData['explore'].scenarios[0]));
+    this.scenarioDescribeModel = new ScenarioDescribe2Model(this.data['scenes'][0]);
+    this.cardsMcqModel1 = new ImageCardsMcqModel(this.data['scenes'][1]);
+    this.cardsMcqModel2 = new ImageCardsMcqModel(this.data['scenes'][2]);
+    this.cardsMcqModel3 = new ImageCardsMcqModel(this.data['scenes'][3]);
+  }
+  ngAfterViewInit(): void {
+    jQuery(jQuery('.scroll-section')[0]).addClass('active');
+    jQuery(window).scrollTop(0);
+
+    this.resizeService.register(this);
+    this.onResize();
+  }
+
+  ngOnDestroy() {
+    this.resizeService.deregister(this);
+  }
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private cdr: ChangeDetectorRef,
+    private resizeService: WindowResizeService, private browser: BrowserCompatibilityService, keyboardService: KeyboardService) {
+    super();
+    this.isIpad = this.browser.isIPad;
+    this.keyboardService = keyboardService;
+  }
+
+  onResize() {
+    if (window.innerWidth > 1366) {
+      this.scrollTopOffset = 152;
+    } else if (window.innerWidth <= 1366 && window.innerWidth > 1024) {
+      this.scrollTopOffset = 112;
+    } else if (window.innerWidth >= 1024 && window.innerWidth < 1365) {
+      const marginTop = (window.innerHeight - 503 - 88) / 2;
+      this.scrollTopOffset = 88 + marginTop;
+    } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+      this.scrollTopOffset = 88 + 24;
+    }
+    this.cdr.detectChanges();
+  }
+
+  backToScenarios() {
+    this.router.navigate(['../'], { relativeTo: this.activatedRoute });
+  }
+
+  sectionChanged(index: number) {
+    this.scenarioEle.sectionChanged(index);
+  }
+
+  goToSection(sectionIndex: number) {
+    this.scrollDirective.scrollToSection(sectionIndex);
+  }
+
+  // setDownArrowPosition() {
+  //   // ipad portrait view
+  //   setTimeout(() => {
+  //     const arrow = document.getElementsByClassName('screen-navigation-button');
+  //     if (arrow.length) {
+  //       for (let i = 1; i < arrow.length; i++) {
+  //         if (window.innerWidth >= 1024) {
+  //           arrow[i].parentElement.style.bottom = '';
+  //         } else {
+  //           arrow[i].parentElement.style.bottom = arrow[i].parentElement.offsetTop -
+  //             arrow[i].parentElement.parentElement.offsetTop - arrow[i].parentElement.parentElement.offsetHeight + 'px';
+  //         }
+  //       }
+  //     }
+  //   }, 500);
+  // }
+
+
+
+}

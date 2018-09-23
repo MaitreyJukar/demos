@@ -1,0 +1,205 @@
+@import './../../../../constants.scss';
+.tab-content {
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+}
+
+.right-section,.left-section {
+    width: 50%;
+    display: flex;
+}
+.left-section{
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+.right-section{
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-right: 95px;
+    padding-left: 20px;
+    .heading{
+        font-size: 24px;
+        font-family: "Quicksand";
+        color: rgb(34, 34, 34);
+        padding-bottom: 12px;
+        font-weight: bold;
+    }
+    .description{
+        font-size: 14px;
+        font-family: "Roboto";
+        color: rgb(34, 34, 34);
+    }
+}
+
+.play-pause-btn {
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    color: #4C12A1;
+    box-shadow: $audio-button-shadow;
+    position: absolute;
+    padding: 5px;
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 170;
+}
+
+.screen-navigation-button {
+    background-color:#EFEFEF;
+    border-radius: 50%;
+    color: #4C12A1;
+    box-shadow: $audio-button-shadow;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 170;
+    padding: 4px;
+    height: 40px;
+    line-height: 35px;
+    width: 40px;
+}
+
+
+.isIE :host .icon-volume,.isIE :host .icon-volume-mute{
+    position:relative;
+    top:3px;
+}
+
+@media screen and (max-width:$desktop){
+    @media screen and (max-height:$tabletLandscapeMinHeight){
+        :host {
+            .screen-navigation-button{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax){
+    .tab-content{
+        flex-direction:column;
+        img{
+            transform:scale(0.9,0.9);
+        }
+        .left-section{
+            padding:70px 0px 0px;
+            justify-content: center;
+            width:100%;
+        }
+        .right-section{
+            padding:50px 80px 20px;
+            width:100%;
+            .heading{
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-height:$tabletMinHeight){
+        .isAndroid :host {
+            .screen-navigation-button{
+                display: none;
+            }
+            .tab-content{
+                position:relative;
+            }
+        }
+    }
+
+    @media screen and (max-height:$tabletPortraitMin){
+        :host {
+            .screen-navigation-button{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobileLandscape){
+    .tab-content{
+        flex-direction:column;
+        position:relative;
+        img{
+            transform:scale(0.8,0.8);
+        }
+        .left-section{
+            padding:10px 0px 0px;
+            width:auto;
+            justify-content: center;
+            display:block;
+        }
+        .right-section{
+            height:100%;
+            overflow: none;
+            .heading{
+                position:absolute;
+                left:0px;
+                top:0px;
+                padding:0px 15px;
+                width:90%;
+                font-size:16px;
+            }
+            padding:0px 0px 0px 15px;
+            width:100%;
+        }
+        .play-pause-btn{
+            top:0px;
+        }
+        .screen-navigation-button{
+            display:none;
+        }
+    }
+
+}
+
+@media screen and (max-width:$mobilePotrait){
+    .tab-content{
+        height:100% !important;
+        max-height: 100%;
+        .left-section{
+            padding:30px 30px 0px 28px;
+            height:100%;
+            display:flex;
+        }
+        .right-section{
+            height:100%;
+            overflow:unset;
+            padding:0px 10px 0px 0px;
+            .heading{
+                padding:0px 30px 0px 0px;
+            }
+        }
+        .play-pause-btn{
+            top:0px;
+            right:0px;
+        }
+    }
+    #fo-learn :host {
+        .tab-content{
+            .left-section{
+                padding: 65px 30px 10px 30px;
+            }
+            .right-section{
+                padding: 0px 25px 0px 0px;
+                .heading{
+                    padding:0px 25px 0px 0px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:320px){
+    .tab-content{
+        img{
+            transform:scale(0.7,0.7);
+        }
+        .left-section{
+            padding:40px 0px 0px 0px;
+        }
+    }
+}

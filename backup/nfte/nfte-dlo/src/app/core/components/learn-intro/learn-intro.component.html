@@ -1,0 +1,24 @@
+<div class="learn-intro-wrapper" [ngClass]="{'isIE':isIE}">
+  <div class="left-section">
+    <img *ngIf="!model.replayGif" [src]="model.imgSrc" [alt]="model.imgAltText">
+    <app-replay-gif *ngIf="model.replayGif" [imgFrame]="model.imgFrame" [src]="model.imgSrc" [alt]="model.imgAltText" [gifDuration]="model.gifDuration">
+      
+    </app-replay-gif>
+  </div>
+  <div class="right-section">
+    <app-audio #audioPlayer [playDefault]="playAudioDefault" [audioSrc]="model.audioSrc"></app-audio>
+    <div class="icon play-pause-btn" (click)="isAudioPlaying?playAudio():pauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span [ngClass]="{'icon-volume-mute':!isAudioPlaying
+      , 'icon-volume':isAudioPlaying }"></span>
+    </div>
+    <div class="heading" [innerHtml]="model.headingText">
+    </div>
+    <div class="description" [innerHtml]="model.descriptionText">
+    </div>
+  </div>
+  <div class="icon screen-navigation-button" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('navigateToNextScreen')" tabindex="0"
+    (focus)="onFocus($event)" (blur)="onBlur($event)">
+    <span class="icon-chevron_down"></span>
+  </div>
+</div>

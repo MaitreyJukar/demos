@@ -1,0 +1,78 @@
+<div class="description-wrapper">
+  <div class="relative background-image animated fadeIn">
+    <img [src]="data.backgroundImage">
+    <img [src]="'assets/common/images/scenario-desc_em.png'" class="entrepreneurial-mindset-image">
+    <div>
+
+    </div>
+    <div class="absolute">
+
+      <div class="left-column animated slideInLeft delay1" >
+        <div class="title animated fadeIn" [ngClass]="data.theme === 'purple'?'orange-text':'purple-text'" aria-live="pollite" (animationstart)="changeText($event)">
+          {{data.column1.title}}
+        </div>
+        <div class="points-wrapper" [ngClass]="data.theme === 'purple'?'purple-background':'orange-background'">
+          <div class="bullet-point-container animated fadeIn" [ngClass]="'delay'+(2+i)" *ngFor="let point of data.column1.points; let i = index" aria-live="pollite" (animationstart)="changeText($event)">
+            <div class="icon-next_filled bullet-icon"></div>
+            {{point}}
+          </div>
+        </div>
+      </div>
+
+      <div class="right-column animated slideInRight" [ngClass]="'delay'+ (2+data.column1.points.length)">
+        <div class="title animated fadeIn delay5" [ngClass]="{'purple-text':data.theme !== 'purple','orange-text':data.theme === 'purple'}" aria-live="pollite" (animationstart)="changeText($event)">
+          {{data.column2.title}}
+        </div>
+        <div class="points-wrapper" [ngClass]="data.theme === 'purple'?'purple-background':'orange-background'">
+          <div class="bullet-point-container animated fadeIn" [ngClass]="'delay'+(3+data.column1.points.length + i)" aria-live="pollite" *ngFor="let point of data.column2.points; let i=index" (animationstart)="changeText($event)">
+            <div class="icon-next_filled bullet-icon"></div>
+            {{point}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<div class="description-wrapper-mobile">
+  <div class="relative background-image animated fadeIn">
+    <img [src]="data.backgroundImage">
+    <img [src]="'assets/common/images/scenario-desc_em.png'" class="entrepreneurial-mindset-image">
+    <div>
+
+    </div>
+    <div class="absolute-scroll">
+      <div class="absolute" (animationend)="changeText($event)">
+
+        <div class="left-column animated slideInLeft delay1">
+          <div class="title" [ngClass]="data.theme === 'purple'?'orange-text':'purple-text'">
+            {{data.column1.title}}
+          </div>
+          <div class="points-wrapper" [ngClass]="data.theme === 'purple'?'purple-background':'orange-background'">
+            <div class="bullet-point-container animated fadeIn" [ngClass]="'delay'+(2+i)" *ngFor="let point of data.column1.points; let i = index">
+              <div class="icon-next_filled bullet-icon"></div>
+              {{point}}
+            </div>
+          </div>
+        </div>
+
+        <div class="right-column animated slideInRight" [ngClass]="'delay'+ (2+data.column1.points.length)" (animationend)="animationEnd($event)">
+          <div class="title" [ngClass]="data.theme === 'purple'?'orange-text':'purple-text'">
+            {{data.column2.title}}
+          </div>
+          <div class="points-wrapper" [ngClass]="data.theme === 'purple'?'purple-background':'orange-background'">
+            <div class="bullet-point-container animated fadeIn" [ngClass]="'delay'+(3+data.column1.points.length + i)" *ngFor="let point of data.column2.points; let i=index">
+              <div class="icon-next_filled bullet-icon"></div>
+              {{point}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

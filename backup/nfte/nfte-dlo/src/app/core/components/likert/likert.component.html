@@ -1,0 +1,24 @@
+<div class="mcq-container" [ngClass]="{disabled:this.model.submited}">
+  <div class="question-container">
+    <app-question [model]="model" [questionIndex]="index + 1"></app-question>
+  </div>
+<div class="options-wrapper">
+  <div class="option-container" *ngFor="let item of model.options let i='index'; let last = last; let first = first" 
+  [ngClass]="{'first-option':first, 'last-option':last, 'focus':focusedIndex === i}">
+    <div class="top-section">
+      <div class="tab-seperator upper" [ngClass]="{first:first}"></div>
+      <div [ngClass]="( model.selected === i) ?
+      'icon-radio_button_selected':'icon-radio_button_normal'" class="mcq-radio-button icon"
+       [id]=" 'mcq-option-' + index + '-' + i " (click)="!model.submited ? setSelected(i):null" ></div>
+      <div class="tab-seperator lower" [ngClass]="{last:last}"></div>
+    </div>
+    <div [ngClass]="{'selected-text':( model.selected === i)}" class="text-wrapper" (click)="!model.submited ? setSelected(i):null" 
+    [id]="'label-'+index+'-'+i" [innerHTML]=item.option>
+    </div>
+    <input type="radio" class="mcq-radio" [attr.name]="'mcq-'+index" [disabled]="model.submited?true:false" [attr.aria-labelledby]="'label-'+index+'-'+i" 
+    (focus)="onInputFocus(i)" (blur)="onInputBlur()">
+
+  </div>
+</div>
+<div class="desc" [innerHTML]=model.desc *ngIf="model.desc"></div>
+</div>

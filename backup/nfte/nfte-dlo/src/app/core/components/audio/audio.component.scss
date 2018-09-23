@@ -1,0 +1,300 @@
+@import './../../../../constants.scss';
+// video player css
+vg-controls {
+    padding: 0 10px;
+    background: none !important;
+    background-color: #f6f3f2 !important;
+}
+
+vg-controls vg-scrub-bar {
+    display: flex;
+}
+
+vg-player {
+    height: 50px;
+    outline: 2px solid $video-question-border;
+    video {
+        height: auto;
+    }
+    width:180px;
+    min-width: 180px;
+}
+
+.scene :host vg-player {
+    video {
+        height: 20%;
+    }
+}
+
+.disabled-control {
+    pointer-events: none;
+    color: $paginator-disabled !important;
+}
+
+vg-player.fullscreen {
+    height: 100% !important;
+    border: none;
+    .question-part {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+    }
+    video {
+        position: fixed;
+    }
+    .video-ie-fullscreen {
+        position: relative;
+    }
+}
+
+.video-player-IE {
+    height: auto !important;
+    max-height: 100vh;
+}
+
+.icon-transcript {
+    width: 30px;
+    font-size: 24px;
+    color: $white-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hide-controls {
+    display: none !important;
+}
+
+.separator {
+    color: $white-text;
+    font-size: 24px;
+    padding: 5px 0px;
+}
+
+.icon-more_vertical {
+    display: none;
+}
+
+.resume-overlay {
+    z-index: 200;
+}
+
+.resume-overlay.is-buffering {
+    display: none;
+}
+
+.resume-overlay .vg-overlay-resume {
+    transition: all 0.5s;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    color: $white-text;
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    opacity: 0.6;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-overlay .vg-overlay-resume.native-fullscreen.controls-hidden {
+    cursor: none;
+}
+
+.resume-overlay .vg-overlay-resume .overlay-resume-container {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.resume-overlay .vg-overlay-resume:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.resume-overlay .vg-overlay-resume:hover .overlay-resume-container:before {
+    transform: scale(1.2);
+}
+
+//bottom buttons css
+vg-controls.disabled {
+    pointer-events: none !important;
+}
+
+.quiz_container {
+    z-index: 1000;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'QuickSand';
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    app-hotspot {
+        height: calc(100% - 50px);
+        width: 100%;
+    }
+    .position-relative {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+//for hotspot and dnd
+.quiz_container.transparent-background {
+    background-color: transparent;
+    display: flex;
+    .question-part {
+        max-width: initial;
+        margin: auto;
+        display: flex;
+        padding: 0px;
+    }
+    .bottom-button-container {
+        background-color: rgba(255, 255, 255, .9);
+    }
+}
+
+.remaining-time {
+    display: none;
+}
+
+.remaining-time-hyphen {
+    display: none;
+}
+
+.question-part {
+    height: calc(100% - 50px);
+    width: 100%;
+    padding: 24px;
+}
+
+//hide play overlay for hotspot and dnd questions
+.play-overlay-hide {
+    visibility: hidden;
+}
+
+//animations
+.quiz_container.in {
+    animation-name: in;
+}
+
+.quiz_container.out {
+    animation-name: out;
+}
+
+.ios-volume {
+    display: none;
+}
+
+.more-controls {
+    display: none;
+}
+
+.showControls {
+    display: block;
+    background-color: $white-text;
+    position: absolute;
+    right: 0px;
+    padding-right: 8px;
+    z-index: 250;
+    .more-control {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        app-text {
+            display: flex;
+        }
+    }
+    vg-track-selector,
+    vg-mute,
+    .icon-transcript {
+        display: flex;
+    }
+    .icon-transcript {
+        width: 50px;
+        padding: 0px;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+    vg-time-display {
+        display: none;
+    }
+    .overlay-resume-container {
+        font-size: 50px !important;
+    }
+    .separator {
+        display: none;
+    } // vg-play-pause{
+    //   display: none;
+    // }
+    vg-volume {
+        width: 30px !important;
+    }
+    .remaining-time {
+        display: flex;
+        color: $white-text;
+        align-content: center;
+        span {
+            height: 40px;
+            padding: 5px 0px;
+            display: flex;
+            align-items: center;
+        }
+        vg-time-display {
+            display: flex;
+            width: auto;
+            padding: 0px 4px;
+        }
+    }
+    .question-part {
+        padding: 16px;
+    }
+}
+
+@media screen and ( max-width: 500px) {
+    vg-player {
+        overflow: visible;
+    }
+    .overlay-resume-container {
+        font-size: 40px !important;
+    }
+    vg-track-selector,
+    vg-mute,
+    vg-volume {
+        display: none;
+    }
+    .icon-more_vertical {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        width: 40px;
+        justify-content: center;
+        color: $white-text;
+        font-size: 24px;
+    }
+}
+
+.audio-instructions {
+    color: #929190;
+}
+
+vg-play-pause {
+    color: #46454C !important;
+}
+
+.icon-transcript {
+    color: #46454C;
+}
+
+vg-player {
+    display: none;
+}
+
+//background-color: #ebebeb !important;

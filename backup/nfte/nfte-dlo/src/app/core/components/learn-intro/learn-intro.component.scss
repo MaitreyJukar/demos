@@ -1,0 +1,196 @@
+@import './../../../../constants.scss';
+.learn-intro-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .left-section,
+    .right-section {
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+    img {
+        width: 100%;
+    }
+    .right-section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        font-size: 14px;
+        font-family: "Roboto";
+        color: rgb(34, 34, 34);
+        text-align: left;
+        padding-right: 70px;
+        .heading {
+            font-size: 38px;
+            font-family: $quicksand-medium;
+            color: rgb(34, 34, 34);
+            text-align: left;
+            z-index: 31;
+            padding-bottom: 12px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.play-pause-btn {
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    color: #4C12A1;
+    box-shadow: $audio-button-shadow;
+    position: absolute;
+    padding: 5px;
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 170;
+}
+
+.screen-navigation-button {
+    background-color: #4C12A1;
+    border-radius: 50%;
+    color: #EFEFEF;
+    box-shadow: inset 0px -4px 0px 0px #2b0761;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 170;
+    padding: 4px;
+    height: 40px;
+    line-height: 35px;
+    width: 40px;
+}
+
+.isIE .icon-volume,
+.isIE .icon-volume-mute {
+    position: relative;
+    top: 3px;
+}
+
+@mixin freeScroll() {
+    .screen-navigation-button {
+        display: none;
+    }
+    .learn-intro-wrapper {
+        .right-section {
+            margin: 20px auto;
+        }
+    }
+}
+
+@media screen and (max-width:$desktop) {
+    .screen-navigation-button {
+        display: block;
+    }
+    @media screen and (max-height:$tabletLandscapeMinHeight) {
+        :host {
+            .screen-navigation-button {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax) {
+    .learn-intro-wrapper {
+        flex-direction: column;
+        .left-section,
+        .right-section {
+            width: 100%;
+        }
+        .left-section {
+            height: 60%;
+            margin-top: 30px;
+            justify-content: center;
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+        .right-section {
+            height: 30%;
+            width: 100%;
+            padding: 0px 100px;
+            text-align: center;
+            align-items: center;
+            .description{
+                width: 380px;
+            }
+        }
+    }
+    @media screen and (max-height:$tabletMinHeight) {
+        .isAndroid :host {
+            @include freeScroll();
+        }
+    }
+    @media screen and (max-height:$tabletPortraitMin) {
+        :host {
+            @include freeScroll();
+        }
+    }
+}
+
+@media screen and (max-width:$mobileLandscape) {
+    .learn-intro-wrapper {
+        padding-bottom: 20px;
+        .right-section {
+            display: inline-block;
+            .heading {
+                font-size: 22px;
+            }
+            padding-top:80px;
+            padding-right:30px;
+        }
+    }
+    .left-section {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .screen-navigation-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:$mobilePotrait) {
+    .learn-intro-wrapper {
+        flex-direction: column;
+        pointer-events: initial;
+        height: 100%;
+        padding-bottom: 0px;
+        .left-section,
+        .right-section {
+            width: 100%;
+        }
+        .right-section .heading {
+            font-size: 24px;
+        }
+        .right-section {
+            position: relative;
+            padding: 20px 80px 20px 15px;
+        }
+        .left-section {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .screen-navigation-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:$ipodWidth){
+    .faa :host .learn-intro-wrapper{
+        .right-section{
+            padding:20px 60px 20px 15px;
+        }
+    }
+}

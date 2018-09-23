@@ -1,0 +1,63 @@
+<div class="description-wrapper" *ngIf="!imageLeft">
+  <div class="text-section">
+    <app-audio #audioPlayer1 [playDefault]=false [audioSrc]="model.audioSrc"></app-audio>
+    <div class="icon play-pause-btn" (click)="playPauseAudio1(audioPlayer1)" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span [ngClass]="{'icon-volume-mute':isAudioPlaying1
+      , 'icon-volume':!isAudioPlaying1 }"></span>
+    </div>
+    <div class="title">
+      {{model.title}}
+    </div>
+    <div class="description" [innerHtml]="model.description | safeHtml">
+    </div>
+  </div>
+  <div class="image-section">
+    <img #img class="slide" *ngIf="!model.replayGif" [src]="model.imgSrc" [alt]="model.imgAltText">
+    <app-replay-gif *ngIf="model.replayGif" [imgFrame]="model.imgFrame" [src]="model.imgSrc" [alt]="model.imgAltText" [gifDuration]="model.gifDuration">
+
+    </app-replay-gif>
+  </div>
+  <div class='button-parent'>
+    <div class="icon screen-navigation-button" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('navigateToNextScreen')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span class="icon-chevron_down"></span>
+    </div>
+  </div>
+  <div class="icon icon-back" (click)="backToScenarios()" [attr.aria-label]="getAccText('backToScenario')" tabindex="0" (focus)="onFocus($event)"
+    (blur)="onBlur($event)"></div>
+
+
+</div>
+<div class="description-wrapper image-left" *ngIf="imageLeft">
+  <div class="image-section">
+    <img #img class="slide" *ngIf="!model.replayGif" [src]="model.imgSrc" [alt]="model.imgAltText">
+    <app-replay-gif *ngIf="model.replayGif" [imgFrame]="model.imgFrame" [src]="model.imgSrc" [alt]="model.imgAltText" [gifDuration]="model.gifDuration">
+      
+    </app-replay-gif>
+  </div>
+  <div class="text-section">
+    <app-audio #audioPlayer1 [playDefault]=false [audioSrc]="model.audioSrc"></app-audio>
+    <div class="icon play-pause-btn" (click)="playPauseAudio1(audioPlayer1)" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span [ngClass]="{'icon-volume-mute':isAudioPlaying1
+            , 'icon-volume':!isAudioPlaying1 }"></span>
+    </div>
+
+    <div class="title">
+      {{model.title}}
+    </div>
+    <div class="description" [innerHtml]="model.description | safeHtml">
+    </div>
+  </div>
+  <div class='button-parent'>
+    <div class="icon screen-navigation-button" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('navigateToNextScreen')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span class="icon-chevron_down"></span>
+    </div>
+  </div>
+
+  <div class="icon icon-back color-white" (click)="backToScenarios()" [attr.aria-label]="getAccText('backToScenario')" tabindex="0" (focus)="onFocus($event)"
+  (blur)="onBlur($event)"></div>
+
+</div>

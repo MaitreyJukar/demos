@@ -1,0 +1,14 @@
+<div class="tab-bar navbar-fixed-top" role="tablist">
+  <div class="tab-bar-container">
+    <div class="tab" *ngFor="let tab of tabList; let last = last" [routerLinkActive]="['active']">
+      <div class="arrow-right">
+      </div>
+      <div class="link" [routerLink]="[tab]" role="tab" [attr.aria-selected]="router.url.indexOf(tab)>-1?true:false" 
+        [tabindex]="router.url.indexOf(tab)>-1?0:-1" (focus)="onFocus($event)" (blur)="onBlur($event)">
+        <div class="tab-name" [routerLinkActive]="['active']">
+          <app-text textId={{tab}}></app-text>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

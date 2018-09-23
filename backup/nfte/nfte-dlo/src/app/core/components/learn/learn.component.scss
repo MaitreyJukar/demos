@@ -1,0 +1,73 @@
+.dlo-learn {
+    // height: calc(100% - 60px - 42px - 16px);
+    padding-bottom: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.lesson-title {
+    font-size: 16px; // font-weight: bold;
+    box-sizing: border-box; // text-align: center;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 10px 0px;
+}
+
+.lesson-description {
+    font-size: 15px;
+    font-family: roboto;
+    width: 100%
+}
+
+.video-container {
+    max-height: calc(100% - 48px);
+    position: relative; // height: 100%;
+}
+
+.or :host,
+.ci :host {
+    .dlo-learn {
+        padding-top: 90px;
+    }
+}
+
+app-video-player {
+    max-height: calc(100% - 105px)
+}
+
+@media screen and (max-width: 900px) {
+    .dlo-learn {
+        width: 100%;
+        max-width: 678px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .video-container {
+        height: auto; // margin: auto;
+        margin: 0px 16px;
+    }
+    .dlo-learn {
+        margin: 0 auto;
+    }
+    .lesson-title {
+        margin: 0px 16px;
+    }
+}
+
+// mobile portrait
+@media screen and (max-width: 500px) {
+    .dlo-learn {
+        max-width: 100%;
+        margin: 0;
+    }
+    .video-container {
+        width: 100%;
+        margin: 0;
+    } // .lesson-title{
+    //     margin: 0;
+    // }
+}

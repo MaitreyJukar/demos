@@ -1,0 +1,458 @@
+@import './../../../../constants.scss';
+.card {
+    width: 240px;
+    height: 300px;
+    display: block;
+    cursor: pointer;
+    transform: translateZ(-1000px);
+}
+// .active :host{
+//     .card{
+//        //transform: none;
+//     }    
+// }
+
+.card:focus.showFocusRect{
+    outline: none!important;
+    .cardFront, .cardBack{
+        outline: 1px solid #4d90fe !important;
+    }
+}
+.card .content {
+    transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    /* content backface is visible so that static content still appears */
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card.applyflip .content {
+    transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+    /* Backface visibility works great for all but IE. As such, we mark the backface visible in IE and manage visibility ourselves */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 25px 56.4px 3.6px rgba(0, 0, 0, 0.24), 0px 15px 79.38px 1.62px rgba(0, 0, 0, 0.16);
+    padding: 12px;
+    display: flex;
+}
+
+.card .content .cardFront,
+.card.applyflip .content .cardFront {
+    transform: rotateY(0deg);
+}
+
+.card .content .cardBack,
+.card.applyflip .content .cardBack {
+    transform: rotateY(-180deg);
+}
+
+.card .content .cardFront,
+.card.applyflip .content .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s linear 0.17s;
+    visibility: visible;
+   
+}
+
+.card.applyflip .content .cardFront,
+.card .content .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s linear 0.17s;
+    visibility: hidden;
+    
+}
+
+.cardFront .front-content {
+    background-color: #4C12A1;
+    color: #ffffff;
+    font-family: "Roboto";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.cardBack .back-content.correct {
+    background-color: #2E7D32;
+}
+
+.cardBack .back-content {
+    background-color: #C62828;
+    color: #ffffff;
+    font-family: "Roboto";
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 10px 0px;
+    font-size: 14px;
+}
+
+@keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-o-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-ms-keyframes donothing {
+    0% {}
+    100% {}
+}
+
+.cardFront .front-content img,
+.cardBack .back-content img {
+    position: absolute;
+}
+
+.back-content img {
+    margin-top: -100px;
+    margin-left: -50px;
+}
+
+.isSafari :host .cardFront .front-content img {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.feedback-icon {
+    position: absolute;
+    top: 65px;
+    left: 110px;
+    font-size: 20px;
+}
+
+app-image-cards-mcq {
+    :host {
+        .card {
+            width: 170px;
+            height: 220px;
+        }
+        .cardBack {
+            padding: 8px;
+            .back-content {
+                font-size: 12px;
+                padding-top: 50px;
+            }
+            img {
+                width: 41px;
+                left: 110px;
+                top: 113px;            }
+        }
+        .cardFront {
+            padding: 8px;
+            .front-content {
+                font-size: 16px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+        .feedback-icon {
+            left: calc(50% - 10px);
+            top: 30px;
+            font-size: 12px;
+        }
+
+    }
+}
+.isIE app-image-cards-mcq :host {
+    .cardFront .front-content img {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .cardBack .back-content img {
+        margin-left: 50px;
+        left: 12px;
+    }
+}
+
+.isIE :host {
+    .cardFront .front-content img {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .cardBack .back-content img {
+        margin-left: 50px;
+    }
+}
+
+// @media screen and (max-width:700px){
+//     .cwr-explore :host {
+//         .card{
+//             width:168px;
+//             height:220px;
+//         }
+//         .cardFront .front-content{
+//             font-size:14px;
+//         }
+//         img{
+//             width:70%;
+//         }
+//         .cardBack .back-content{
+//             display:flex;
+//             padding:10px 5px;
+//         }
+//     }
+// }
+@media screen and (max-width:$desktop) {
+    @media screen and (max-height: $tabletLandscapeMinHeight) {
+        :host .card {
+            margin-left:10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:$tabletPortraitMax) {
+    .card {
+        width: 100%;
+        margin: 0 auto;
+        height: 180px;
+        margin-bottom: 24px;
+        max-width: 400px;
+    }
+    .cardBack .back-content img {
+        margin: 0px;
+    }
+    .back-content .feedback-icon.icon-feedback-wrong {
+        background-color: #A62929;
+    }
+    .back-content .feedback-icon.icon-feedback-right {
+        background-color: #296D2B;
+    }
+    .back-content .feedback-icon {
+        top: -8px;
+        left: -10px;
+        height: 35px;
+        width: 35px;
+        padding-top: 10px;
+        font-size: 15px;
+        border-radius: 50%;
+    }
+    .card.applyflip .content {
+        transform: rotateX(180deg);
+    }
+    .card .content .cardFront,
+    .card.applyflip .content .cardFront {
+        transform: rotateX(0deg);
+    }
+    .card .content .cardBack,
+    .card.applyflip .content .cardBack {
+        transform: rotateX(-180deg);
+    }
+    app-image-cards-mcq :host{
+        .card.applyflip .content {
+            transform: rotateY(180deg);
+        }
+        .card .content .cardFront,
+        .card.applyflip .content .cardFront {
+            transform: rotateY(0deg);
+        }
+        .card .content .cardBack,
+        .card.applyflip .content .cardBack {
+            transform: rotateY(-180deg);
+        }   
+        .cardFront .front-content, .cardFront .back-content{
+            padding: 10px;
+        }
+        .cardBack img {
+            width: 41px;
+            left: 65px;
+            top: 22px;
+        }
+        .back-content .feedback-icon{
+            left: calc(50% - 17px);
+            top: 30px;
+            font-size: 12px;
+        }
+    }
+    img {
+        width: 38%;
+    }
+    .card .content .cardFront,
+    .card .content .cardBack {
+        box-shadow: 0px 13.775px 20px rgba(0, 0, 0, 0.24), 0px 15px 81px rgba(0, 0, 0, 0.16);
+    }
+    .cardFront .front-content {
+        padding: 10px 30px;
+        width: 100%;
+    }
+    .cardBack .back-content {
+        display: flex;
+        padding: 10px 5px;
+    }
+    .cardBack .back-content img {
+        margin: 0px;
+    }
+    .cardBack .back-content {
+        font-size: 16px;
+    }
+    .faa-explore :host {
+        .back-content {
+            .feedback-icon.icon-feedback-wrong,.feedback-icon.icon-feedback-right {
+               background-color: transparent;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobileLandscape) {
+    .cwr-explore :host,
+    .fo-explore :host {
+        .card {
+            width: 100%;
+            margin: 0 auto;
+            height: 180px;
+            margin-bottom: 15px;
+            max-width: 288px;
+        }
+    }
+
+    .faa-explore :host {
+        .card {
+            margin-bottom: 40px;
+        }
+    }
+    .cardBack .back-content {
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:$mobilePotrait) {
+    .cwr-explore :host,
+    .fo-explore :host {
+        .card {
+            max-width: 900px;
+        }
+    }
+    .faa-explore :host {
+        .card {
+            margin-bottom: 24px;
+        }
+        .back-content .feedback-icon.icon-feedback-wrong {
+            background-color: #A62929;
+        }
+        .back-content .feedback-icon.icon-feedback-right {
+            background-color: #296D2B;
+        }
+    }
+    app-image-cards-mcq {
+        :host {
+            .card{
+                width: 100%;
+                height: 154px;
+                margin-left:0px;
+            }
+            .card.applyflip .content {
+                transform: rotateX(180deg);
+            }
+            .card .content .cardFront,
+            .card.applyflip .content .cardFront {
+                transform: rotateX(0deg);
+            }
+            .card .content .cardBack,
+            .card.applyflip .content .cardBack {
+                transform: rotateX(-180deg);
+            }  
+            .cardFront {
+                .front-content {
+                    img {
+                        width: 96px;
+                    }
+                }
+            }
+            .cardBack{
+                .back-content{
+                    padding: 10px;
+                    font-size: 14px;
+                    img {
+                        width: 96px;
+                        top:28px;
+                        left:initial;
+                        position:absolute;
+                    }
+                }
+            }
+            .back-content .feedback-icon{
+                left: -8px;
+                top: -10px;
+                font-size: 15px;
+            }
+        }}
+}
+
+.card-text {
+    z-index: 10;
+}

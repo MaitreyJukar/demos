@@ -1,0 +1,40 @@
+<div bsModal #popup="bs-modal" class="modal fade" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" [attr.aria-label]=" title + ' ' + description ">
+
+  <div class="vertical-align"></div>
+  <div class="modal-dialog modal-sm">
+
+    <div class="modal-content">
+      <div class="modal-body-wrapper">
+        <div class="modal-body">
+          <div class="description">
+            <!-- <app-text #desc *ngIf="descId" textId={{descId}}></app-text> -->
+            <div class="description-content" *ngIf="description">{{description}}</div>
+          </div>
+        </div>
+
+        <div class="modal-footer nm-modal-footer">
+          <app-custom-button *ngIf="noOfButtons == 1" (blur)="onBlur($event);" (touchend)="yesClicked()" (click)="yesClicked()" class="footer-button"
+            focus="true" [buttonText]="yesButtonText" (focus)="onFocus($event)"></app-custom-button>
+
+          <div *ngIf="noOfButtons == 2">
+            <app-custom-button (click)="yesClicked()" (touchend)="yesClicked()" class="footer-button" (blur)="onBlur($event)" [buttonText]="yesButtonText"
+              (focus)="onFocus($event)"></app-custom-button>
+            <app-custom-button (click)="hide()" (touchend)="hide()" class="footer-button" (blur)="onBlur($event);" (focus)="onFocus($event)"
+              [buttonText]="noButtonText"></app-custom-button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-header">
+        <div class="modal-title">
+          <app-text textId={{title}}></app-text>
+        </div>
+
+        <button type="button" id="alert-close" class="close pull-right" tabindex="0" aria-label="Close" (focus)="onFocus($event)"
+          (blur)="onBlur($event)" (click)="hide()" (touchend)="hide()">
+          <span class="icon-clear" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

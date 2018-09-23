@@ -1,0 +1,6 @@
+<div class="select-container option-container" [ngClass]="{'readonly':model.submited}">
+  <div class="question-container"> 
+    <app-question [model]="model"></app-question>
+  </div>
+  <div class="select-instruction-container" #select [innerHtml]="model.selectStatement | safeHtml"> </div>
+</div>

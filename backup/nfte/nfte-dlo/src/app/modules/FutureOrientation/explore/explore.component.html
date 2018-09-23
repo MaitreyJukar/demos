@@ -1,0 +1,4 @@
+<div class = 'explore-container fo-explore'  [ngClass]="{'hide-bottom-bar': router.url === '/FO/explore','isSafari':isSafari, 'isIE':isIE, 'isEdge':isEdge, 'isFireFox':isFireFox, 'isIpad':isIpad}">	
+    <router-outlet></router-outlet>
+    <app-custom-button buttonClass="scenarios-back" buttonText="scenarios" showIconBefore=true iconClass="icon-back" (buttonClickEvent)="backToScenarios()"></app-custom-button>	
+ </div>

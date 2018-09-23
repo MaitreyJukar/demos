@@ -1,0 +1,72 @@
+<pagination-template #p="paginationApi" class="my-pagination" maxSize="5" (pageChange)="onPageChange($event)">
+    <ul class="ngx-pagination" role="navigation" [attr.aria-label]="screenReaderPaginationLabel" *ngIf="!(p.pages.length <= 1)">
+        <li class="pagination-previous" [class.disabled]="p.isFirstPage()" *ngIf="true">
+            <a class="icon-chevron_left" tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)" *ngIf="1 < p.getCurrent()"
+            (click)="p.previous()" [attr.aria-label]="previousLabel + ' ' + screenReaderPageLabel">
+                <span class="show-for-sr"></span>
+            </a>
+            <span class="icon-chevron_left" *ngIf="p.isFirstPage()"> 
+                <span class="show-for-sr"></span>
+            </span>
+        </li>
+        <li [class.current]="p.getCurrent() === page.value" [ngClass]="{'attempted':model[page.value-1].attempted}" 
+        *ngFor="let page of p.pages; let i=index">
+            <a (click)="p.setCurrent(page.value); setFocus($event)" tabindex="0" [attr.aria-label]="screenReaderPageLabel+ ' '+page.label" 
+            (focus)="onFocus($event)" (blur)="onBlur($event)" *ngIf="p.getCurrent() !== page.value">
+                <span class="show-for-sr"> </span>
+                <span>{{ page.label }}</span>
+            </a>
+            <div *ngIf="p.getCurrent() === page.value" tabindex="0" [attr.aria-label]="screenReaderCurrentLabel+ ' '+page.label" (focus)="onFocus($event)" 
+            (blur)="onBlur($event)">
+                <span class="show-for-sr"> </span>
+                <span>{{ page.label }}</span>
+            </div>
+        </li>
+
+        <li class="pagination-next" [class.disabled]="p.isLastPage()" *ngIf="true">
+            <a class="icon-chevron_right" tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)" *ngIf="!p.isLastPage()" 
+            (click)="p.next()" [attr.aria-label]="nextLabel + ' ' + screenReaderPageLabel">
+                <span class="show-for-sr"></span>
+            </a>
+            <span class="icon-chevron_right" *ngIf="p.isLastPage()"> 
+                <span class="show-for-sr"></span>
+            </span>
+        </li>
+    </ul>
+</pagination-template>
+<div class="pagination-mobile-view">
+    <pagination-template #pm="paginationApi" [maxSize]="totalPages" (pageChange)="onPageChange($event)">
+        <ul class="ngx-pagination" role="presentation" [attr.aria-label]="screenReaderPaginationLabel" *ngIf="!(pm.pages.length <= 1)">
+            <li class="pagination-previous" [class.disabled]="pm.isFirstPage()" *ngIf="true">
+                <a class="icon-chevron_left" *ngIf="1 < pm.getCurrent()" (click)="pm.previous()" 
+                [attr.aria-label]="previousLabel + ' ' + screenReaderPageLabel"> 
+                    <span class="show-for-sr"></span>
+                </a>
+                <span class="icon-chevron_left" *ngIf="pm.isFirstPage()"> 
+                    <span class="show-for-sr"></span>
+                </span>
+            </li>
+
+            <span class="question-navigation-container">{{pm.getCurrent()}} of {{pm.getLastPage()}}</span>
+            <span class="paginator-icon-wrapper">
+                <span class="icon-list paginator-icon" (click)="setDisplayQuestionList()" [ngClass]="{'dropdown-focus':displayQuestionList}"></span>
+                <div *ngIf="displayQuestionList" class="question-list">
+                    <div *ngFor="let page of pm.pages let i = index" [ngClass]="{'attempted':model[page.value-1].attempted}">
+                        <div class="question question-number-paginator"  (click)="pm.setCurrent(i+1); setDisplayQuestionList()">
+                            {{i+1}}
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+            <li class="pagination-next" [class.disabled]="pm.isLastPage()" *ngIf="true">
+                <a class="icon-chevron_right" *ngIf="!pm.isLastPage()" (click)="pm.next()" [attr.aria-label]="nextLabel + ' ' + screenReaderPageLabel">
+                    <span class="show-for-sr"></span>
+                </a>
+                <span class="icon-chevron_right" *ngIf="pm.isLastPage()"> 
+                    <span class="show-for-sr"></span>
+                </span>
+            </li>
+        </ul>
+    </pagination-template>
+</div>

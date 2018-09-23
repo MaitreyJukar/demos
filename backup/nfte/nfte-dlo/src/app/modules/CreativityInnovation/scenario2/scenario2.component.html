@@ -1,0 +1,211 @@
+<div class="scenario-wrapper" [ngClass]="{'full-height':scenesBoolean[1]}">
+  <div class="top-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" buttonText="previous"
+      showIconBefore=true iconClass="icon-chevron_left" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player-wrapper">
+      <div class="pseudo-audio-player" *ngIf="scenesBoolean[1]">
+        <div class="audio-instructions">
+          <span>{{data['scenes'][1].instructionText}}</span>
+        </div>
+        <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0" (focus)="onFocus($event, true)"
+          (blur)="onBlur($event, true)">
+          <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+          , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+          , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+        </div>
+        <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0" (focus)="onFocus($event, true)"
+          (blur)="onBlur($event, true)">
+          <span class="icon icon-transcript"></span>
+        </div>
+      </div>
+    </div>
+    <app-custom-button #continueButton *ngIf="!scenesBoolean[3]" buttonClass="scenario-continue transparent" buttonText="continue"
+      showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button #endScenarioButton *ngIf="scenesBoolean[3]" [buttonClass]="{'scenario-continue':true, 'background':dndModel3.noOfTrials===0 }"
+      buttonText="endScenario" showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+
+
+  </div>
+  
+  <div class="scene1 scene" *ngIf="scenesBoolean[0]">
+      <div class="scenario-title">
+          <div>
+            <div>{{ data['scenarioDesc'] }}</div>
+          </div>
+          <div>
+            <div>{{ data['scenarioTitle'] }}</div>
+          </div>
+        </div>
+    <app-video-player [model]=model></app-video-player>
+  </div>
+
+  <div class="scene2 scene" *ngIf="scenesBoolean[1]">
+    <div class="audio-player">
+      <app-audio #audioPlayer [audioSrc]="data['scenes'][1].audioSrc" [transcript]="data['scenes'][1].transcriptSrc"></app-audio>
+    </div>
+
+    <div class="description-wrapper">
+      <div class="main-title"> {{data['scenes'][1].title}} </div>
+      <div class="row">
+        <div class="left-column col-6">
+          <div class="title">
+            {{data['scenes'][1].column1.title}}
+          </div>
+          <div class="points-wrapper">
+            <div class="bullet-point-container" *ngFor="let point of data['scenes'][1].column1.points; let i = index">
+              <div class="flex">
+                <div class="icon-bullet_point_filled"></div>
+                <div class="points">{{point}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-column col-6">
+          <div class="right-column-container">
+            <div class="relative">
+              <img [src]="data['scenes'][1].column2.image" class="idea-map-image">
+              <div class="idea-map-title">{{data['scenes'][1].column2.ideaMapTitle}}</div>
+              <div class="first-circle" (click)="displayCircleText('circleOne')" [attr.aria-label]="getAccText('Strap')" tabindex="0"
+              (focus)="onFocus($event, true)" (blur)="onBlur($event, true)">
+                <div id="circle-one-text" class="circle-text">{{data['scenes'][1].column2.circleOne.circleText}}</div>
+              </div>
+              <div class="second-circle" (click)="displayCircleText('circleTwo')" [attr.aria-label]="getAccText('Screen')" tabindex="0"
+              (focus)="onFocus($event, true)" (blur)="onBlur($event, true)">
+                <div id="circle-two-text" class="circle-text">{{data['scenes'][1].column2.circleTwo.circleText}}</div>
+              </div>
+              <div class="third-circle" (click)="displayCircleText('circleThree')" [attr.aria-label]="getAccText('Data')" tabindex="0"
+              (focus)="onFocus($event, true)" (blur)="onBlur($event, true)">
+                <div id="circle-three-text" class="circle-text">{{data['scenes'][1].column2.circleThree.circleText}}</div>
+              </div>
+            </div>
+            <div class="circle-points-wrapper row">
+              <div id="circle-one-points" class="col-4">
+                <div class="bullet-point-container" *ngFor="let point of data['scenes'][1].column2.circleOne.points; let i = index">
+                  <div class="flex">
+                    <div class="icon-bullet_point_filled"></div>
+                    <div class="points">{{point}}</div>
+                  </div>
+                </div>
+              </div>
+              <div id="circle-two-points" class="col-4">
+                <div class="bullet-point-container" *ngFor="let point of data['scenes'][1].column2.circleTwo.points; let i = index">
+                  <div class="flex">
+                    <div class="icon-bullet_point_filled"></div>
+                    <div class="points">{{point}}</div>
+                  </div>
+                </div>
+              </div>
+              <div id="circle-three-points" class="col-4">
+                <div class="bullet-point-container" *ngFor="let point of data['scenes'][1].column2.circleThree.points; let i = index">
+                  <div class="flex">
+                    <div class="icon-bullet_point_filled"></div>
+                    <div class="points">{{point}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div #instruction class="instruction">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scene3 scene" *ngIf="scenesBoolean[2]">
+    <app-drag-and-drop-2 #dnd1 scaleB="true" [showResult]="dndModel1.submited" #dnd [model]="dndModel1" [showCorrectAnswer]=!dnd1ShowCorrectAnswer></app-drag-and-drop-2>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel1.submited}" *ngIf="scenesBoolean[2]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel1.submited" [disabled]="!dndModel1.attempted" [buttonClass]="{'scenario-submit': !dndModel1.attempted, 'done': dndModel1.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel1.submit()"></app-custom-button>
+        <div *ngIf="dndModel1.submited" class="feedback" [ngClass]="{'correct':dndModel1.responseType === responseType.CORRECT, 'incorrect':dndModel1.responseType === responseType.INCORRECT, 'partially-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd1ShowCorrectAnswer || dndModel1.noOfTrials > 0}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel1.responseType === responseType.CORRECT, 'icon-check-cross':dndModel1.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel1.feedback"></span>
+        </div>
+        <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials > 0 && dndModel1.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel1.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel1.resetData(); dnd1.resetTilesPosition(); dnd1.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials === 0 && dndModel1.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd1ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd1ShowCorrectAnswer = !dnd1ShowCorrectAnswer"></app-custom-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="scene4 scene" *ngIf="scenesBoolean[3]">
+    <app-drag-and-drop #dnd2 scaleB="true" [showResult]="dndModel3.submited" #dnd [model]="dndModel3" [showCorrectAnswer]=!dnd1ShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel3.submited}" *ngIf="scenesBoolean[3]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel3.submited" [disabled]="!dndModel3.attempted" [buttonClass]="{'scenario-submit': !dndModel3.attempted, 'done': dndModel3.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel3.submit()"></app-custom-button>
+        <div *ngIf="dndModel3.submited" class="feedback" [ngClass]="{'correct':dndModel3.responseType === responseType.CORRECT, 'incorrect':dndModel3.responseType === responseType.INCORRECT, 'partially-correct':dndModel3.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd1ShowCorrectAnswer || dndModel3.noOfTrials > 0}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel3.responseType === responseType.CORRECT, 'icon-check-cross':dndModel3.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel3.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel3.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel3.submited && dndModel3.noOfTrials > 0 && dndModel3.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel3.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel3.resetData(); dnd2.resetTilesPosition(); dnd2.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel3.submited && dndModel3.noOfTrials === 0 && dndModel3.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd1ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd1ShowCorrectAnswer = !dnd1ShowCorrectAnswer"></app-custom-button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <div class="scene5 scene" *ngIf="scenesBoolean[3]">
+    <app-drag-and-drop #dnd2 scaleB="true" [showResult]="dndModel2.submited" #dnd [model]="dndModel2" [showCorrectAnswer]=!dnd2ShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel2.submited}" *ngIf="scenesBoolean[3]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel2.submited" [disabled]="!dndModel2.attempted" [buttonClass]="{'scenario-submit': !dndModel2.attempted, 'done': dndModel2.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel2.submit()"></app-custom-button>
+        <div *ngIf="dndModel2.submited" class="feedback" [ngClass]="{'correct':dndModel2.responseType === responseType.CORRECT, 'incorrect':dndModel2.responseType === responseType.INCORRECT, 'partially-correct':dndModel2.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd2ShowCorrectAnswer || dndModel2.noOfTrials > 0}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel2.responseType === responseType.CORRECT, 'icon-check-cross':dndModel2.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel2.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel2.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel2.submited && dndModel2.noOfTrials > 0 && dndModel2.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel2.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel2.resetData();  dnd2.resetTilesPosition(); dnd2.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel2.submited && dndModel2.noOfTrials === 0 && dndModel2.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd2ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd2ShowCorrectAnswer = !dnd2ShowCorrectAnswer"></app-custom-button>
+
+      </div>
+
+    </div>
+  </div> -->
+
+
+
+
+
+
+  <div class="mobile-navigation-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" showIconBefore=true
+      iconClass="icon-arrow_back_black" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player" *ngIf="scenesBoolean[1]">
+      <div class="audio-instructions">
+        <span>{{data['scenes'][1].instructionText}}</span>
+      </div>
+      <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0" (focus)="onFocus($event, true)"
+        (blur)="onBlur($event, true)">
+        <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+          , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+          , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+      </div>
+      <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0" (focus)="onFocus($event, true)"
+        (blur)="onBlur($event, true)">
+        <span class="icon icon-transcript"></span>
+      </div>
+    </div>
+    <app-custom-button *ngIf="!scenesBoolean[3]" buttonClass="scenario-continue transparent" showIconAfter=true iconClass="icon icon-arrow_forward_black"
+      (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button *ngIf="scenesBoolean[3]" [buttonClass]="{'scenario-continue':true, 'background':dndModel2.noOfTrials===0 }"
+      showIconAfter=true iconClass="icon-arrow_forward_black" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+  </div>
+</div>

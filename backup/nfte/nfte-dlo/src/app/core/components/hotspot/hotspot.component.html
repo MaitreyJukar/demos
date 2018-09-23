@@ -1,0 +1,63 @@
+<div class="hotspot-container" [ngClass]="{disabled:this.model.submited}">
+  
+  <app-question [model]="hotspotModel" [questionIndex]="index + 1" 
+    [ngClass]="{'absolute-question hide-mobile-view':isFullscreen,'hide-controls': isFullscreen && timeOutControl}"></app-question>
+  
+  <div class="center-align" #centerAlign [ngClass]="{'fullscreen':isFullscreen}" (click)="isFullscreen?fullscreenBottonBar():null">
+      
+    <app-question *ngIf="isFullscreen" class="show-mobile-view" [model]="hotspotModel" [questionIndex]="index + 1" 
+        [ngClass]="{'absolute-question':isFullscreen,'hide-controls': isFullscreen && timeOutControl}"></app-question>
+
+      <div class="position-relative" >
+        
+        <img #image src="{{imgSrc}}" alt="Mountain View" [style.height]="imageHeight" [style.width]="imageWidth">
+        
+        <div *ngFor="let myOption of allOptions; let i = index">
+          
+          <div id="option{{index}}{{i}}" [style.width]="myOption.width" [style.height]="myOption.height" [style.top]="myOption.top"
+            [style.left]="myOption.left" 
+            [ngClass]="{'highlight-hotspot' : (hotspotModel.userResponse 
+            && (hotspotModel.userResponse.indexOf(myOption.id) > -1)),'correct-answer':hotspotModel.userResponse && showResult
+            && hotspotModel.userResponse.indexOf(myOption.id) > -1 && hotspotModel.question.arrCorrectOption.indexOf(myOption.id) > -1 
+            && hotspotModel.submited, 'wrong-answer': hotspotModel.userResponse && showResult && hotspotModel.userResponse.indexOf(myOption.id) > -1 
+            && hotspotModel.question.arrCorrectOption.indexOf(myOption.id) < 0 && hotspotModel.submited}"
+            class="position-absolute hotspot-option" (click)="!hotspotModel.submited?hotspotClicked(myOption.id):null">
+
+            <div *ngIf="showResult" [ngClass]="(hotspotModel.userResponse !== undefined && hotspotModel.userResponse.indexOf(i) !== -1) ? 
+            (hotspotModel.question.arrCorrectOption.indexOf(i) !== -1) ? 'icon-check' : 'icon-check-cross' : '' " 
+            class=" position-absolute icon" [style.right.px]="-6" [style.top.px]="-6"></div>
+
+          </div>
+        
+        </div>
+      
+      </div>
+
+      <div *ngIf="isFullscreen" class="show-mobile-view hotspot-fullscreen-button" [ngClass]="{'hide-controls': timeOutControl}">
+        
+        <div *ngIf="!hotspotModel.submited" class="reset-button">
+          
+          <app-custom-button [buttonClass]="{ 'custom-button':true,'full-screen-reset-disable': !hotspotModel.attempted, 'reset-enable': 
+            hotspotModel.attempted  }" class="text-button" buttonText="reset" (buttonClickEvent)="hotspotModel.resetData()"></app-custom-button>
+          
+          <div class="icon-fullscreen-exit" (click)="fullscreen()"></div>  
+        
+        </div>
+      
+      </div>
+
+  </div>
+
+</div>
+
+<div *ngIf="isFullscreen" class="hotspot-fullscreen-button" [ngClass]="{'hide-controls': timeOutControl, 'hide-mobile-view':isFullscreen}">
+
+  <div *ngIf="!hotspotModel.submited" class="reset-button">
+
+    <app-custom-button [buttonClass]="{ 'custom-button':true,'full-screen-reset-disable': !hotspotModel.attempted, 'reset-enable':
+      hotspotModel.attempted  }" class="text-button" buttonText="reset" (buttonClickEvent)="hotspotModel.resetData()"></app-custom-button>
+  
+    <div class="icon-fullscreen-exit" (click)="fullscreen()"></div>  
+
+  </div>
+</div>

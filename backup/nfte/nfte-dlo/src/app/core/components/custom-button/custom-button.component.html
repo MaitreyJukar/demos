@@ -1,0 +1,7 @@
+<div class="custom-button" #button [ngClass]="buttonClass" (click)="disabled?null:onButtonClick()" [id]="inputId?inputId:''"
+  [attr.aria-label]="buttonText" role="button" [tabindex]="disabled?-1:0" [attr.aria-disabled]="disabled" (focus)="onFocus($event)"
+  (blur)="onBlur($event)">
+  <div *ngIf="showIconBefore" class="before icon" [ngClass]="iconClass"></div>
+  <app-text textId={{buttonText}}></app-text>
+  <div *ngIf="showIconAfter" class="after icon" [ngClass]="iconClass"></div>
+</div>

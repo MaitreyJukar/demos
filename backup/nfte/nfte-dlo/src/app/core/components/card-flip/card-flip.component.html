@@ -1,0 +1,23 @@
+<div class="card" [ngClass]="{'applyflip':isCardFlipped}" tabindex="0" (click)="onCardClick()" role="flipcard" (focus)="onFocus($event)" [attr.aria-label]="getAriaLabel()">
+  <div class="content">
+    <div class="cardFront"  >
+      <div class="front-content">
+        <img src="assets/cwr/images/card-patch-1.png" alt="">
+        <div class="card-text">
+          {{model.frontText}}
+        </div>
+      </div>
+    </div>
+    <div class="cardBack">
+      <div class="back-content" [ngClass]="{'correct':model.correct}">
+        <img src="assets/cwr/images/card-patch-2.png" alt="">
+        <div class="validation">
+          <div class="icon feedback-icon" [ngClass]="{'icon-feedback-right':model.correct, 'icon-feedback-wrong':!model.correct}"></div>
+        </div>
+        <div class="card-text">
+          {{model.backText}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

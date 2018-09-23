@@ -1,0 +1,66 @@
+<div class="carousel-wrapper">
+  <div class="title">
+    {{model.title}}
+  </div>
+  <div class="card-model-container card-model-container-mobile-view">
+
+    <div class="card-container" (pan)="swipper($event)" (panend)="updatePosition($event)">
+      <div class="slide-wrapper" *ngFor="let cardInfo of model.arrSlides;let i ='index'" [id]="i" [attr.index]="cardInfo.cardIndex"
+        [style.right]="getLeft(cardInfo.cardIndex)" [style.transform]="getTransform(cardInfo.cardIndex)" [style.zIndex]="getZIndex(cardInfo.cardIndex)"
+        [ngClass]="addClassForShadow(cardInfo.cardIndex)">
+        <div class="image-wrapper">
+          <img [src]="cardInfo.imgSrc" draggable=false [alt]="cardInfo.imgAltText">
+        </div>
+        <div class="text-wrapper">
+          <app-audio #audioPlayer [playDefault]="playAudioDefault" [audioSrc]="cardInfo.audioSrc"></app-audio>
+          <div class="icon play-pause-btn" (click)="isAudioPlaying[i]?playAudio(i):pauseAudio(i)" [attr.aria-label]="getAccText('playPause')"
+            tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+            <span [ngClass]="{'icon-volume-mute':!isAudioPlaying[i]
+              , 'icon-volume':isAudioPlaying[i] }"></span>
+          </div>
+
+          <div class="heading">
+            {{cardInfo.title}}
+          </div>
+          <div class="description" [innerHtml]="cardInfo.description | safeHtml"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="navigation-dots-wrapper">
+      <div class="navigation-dots" *ngFor="let names of model.slideNames let i ='index'" [ngClass]="{'active':getZIndex(model.arrSlides[i].cardIndex) == 100}"
+        (click)="handleClick(i)">
+        <div class="dots">
+          <div class="dots-background"></div>
+        </div>
+        <div class="name">
+          {{names}}
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="icon screen-navigation-button" [ngClass]="{'last':isLastSlide()}" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('playPause')"
+    tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+    <span class="icon-chevron_down"></span>
+  </div>
+</div>
+
+<div class="nav nav-tabs mobile-tabs" id="nav-tab" role="tablist">
+  <div class="title">{{model.title}}</div>
+
+  <accordion class="accordion-container" [closeOthers]="true">
+    <accordion-group *ngFor="let cardInfo of model.arrSlides;let i ='index'">
+      <div accordion-heading (click)="onAccordianOpen(i)">
+        <app-text [text]="model.slideNames[i]"></app-text>
+        <div class="down-arrow icon icon-chevron_down"></div>
+      </div>
+      <app-tab-content [heading]="cardInfo.title" [description]="cardInfo.description" [audioSrc]="cardInfo.audioSrc" [imgSrc]="cardInfo.imgSrc"
+        [altText]="cardInfo.imgAltText" (screenNavigation)="scrollDirective.scrollToSection(2)" (defaultAudio)="setAudioEvent($event)"></app-tab-content>
+    </accordion-group>
+  </accordion>
+</div>

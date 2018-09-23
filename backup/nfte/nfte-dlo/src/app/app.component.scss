@@ -1,0 +1,12 @@
+.main-container {
+    background-color: #F6F3F2;
+    .nfte-container {
+        height: 100%;
+    }
+}
+
+@media print {
+    .main-container {
+        visibility: hidden;
+    }
+}

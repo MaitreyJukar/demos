@@ -1,0 +1,484 @@
+@import './../../../../constants.scss';
+:host {
+    display: block;
+    height: 100%;
+}
+
+.cards-wrapper {
+    display: block;
+    width: 100%;
+    height: calc(100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.scenario-title {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto
+}
+
+.scenario-title app-text:nth-child(2) {
+    font-weight: bold;
+}
+
+.card-model-container-desktop-view {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card_model {
+    display: inline-block;
+    margin-top: 0px;
+    cursor: pointer;
+    width: 220px;
+}
+
+.card_model.active {
+    box-shadow: 0px 3px 4.7px 0.3px $first-shadow, 0px 1px 6.86px 0.14px $second-shadow;
+}
+
+.cwr-explore,
+.fo-explore,
+.faa-explore {
+    :host .card_model.active {
+        box-shadow: none;
+    }
+}
+
+.card-container {
+    position: relative;
+}
+
+.replay-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    justify-content: center;
+}
+
+.card-grand-container {
+    position: relative
+}
+
+.hide {
+    display: none
+}
+
+.footer {
+    background-color: $footer-background;
+}
+
+.display_none {
+    display: none !important
+}
+
+.current_card {
+    z-index: 1000
+}
+
+.cards {
+    position: absolute
+}
+
+.image-container {
+    background-color: $card-control-background-color; //width: 220px;
+    //height: 240px;
+    box-shadow: 0px 3px 4.7px 0.3px $first-shadow, 0px 1px 6.86px 0.14px $second-shadow;
+    position: relative;
+}
+
+.text-container {
+    margin: 0px 0px 0px 0px;
+}
+
+.image {
+    width: inherit;
+    max-width: 230px;
+    height: inherit;
+    max-height: 240px;
+    min-height: 130px;
+    min-width: 120px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -ms-user-drag: none;
+    pointer-events: none;
+}
+
+.card-model-container-mobile-view,
+.navigation-dots {
+    display: none;
+}
+
+.title {
+    color: $card-control-text-color;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.description {
+    padding: 8px;
+    width: 220px;
+    padding-top: 0px;
+    text-align: left;
+}
+
+.cwr-explore :host,
+.fo-explore :host,
+.faa-explore :host {
+    .cards-wrapper {
+        max-width: 976px;
+        margin: calc(50vh - 251px - 46px) auto;
+        background-color: #ffffff;
+        height: 503px;
+        box-shadow: 19.5px 33.775px 60px rgba(0, 0, 0, 0.24), 0px 15px 81px rgba(0, 0, 0, 0.16);
+    }
+    .scenario-title {
+        margin: 0 auto;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Quicksand";
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .title {
+        color: black;
+        font-family: "Quicksand";
+        padding: 30px 8px 8px;
+        font-weight: bold;
+    }
+    .card-mobile-view.title {
+        display: none;
+    }
+}
+
+.faa-explore :host {
+    .title-text {
+        padding-bottom: 0px;
+    }
+    .description {
+        color: black;
+        font-family: "Quicksand";
+        padding: 0px 8px 8px;
+        text-align: center;
+        width: auto;
+        font-weight: bold;
+    }
+}
+
+.fo-explore :host {
+    .scenario-title {
+        max-width: 689px;
+        app-text {
+            width: 100%
+        }
+    }
+}
+
+.cwr-explore :host,
+.fo-explore :host,
+.faa-explore :host {
+    .image-container {
+        background-color: white !important;
+        box-shadow: none !important;
+    }
+}
+
+.faa-explore :host .card-model-container-desktop-view {
+    justify-content: center;
+}
+
+.faa-explore :host .card_model {
+    margin: 0 5%;
+    width: auto;
+}
+
+@mixin freeScroll() {
+    .cards-wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 24px;
+        margin: 0px;
+        box-shadow: none;
+    }
+}
+
+// @media screen and (max-width:$desktop) {
+//     @media screen and (max-height: $tabletPortraitMin) {
+//         .isAndroid :host {
+//             .cards-wrapper {
+//                 height:100%;
+//                 width: 100%;
+//                 padding: 24px;
+//                 margin: 0px auto;
+//                 box-shadow: none;
+//             }
+//         }
+//     }
+// }
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax) {
+    .cwr-explore :host,
+    .fo-explore :host,
+    .faa-explore :host {
+        .scenario-title {
+            max-width: 100%;
+        }
+        .cards-wrapper {
+            margin: 24px;
+            padding: 14px 24px;
+            height: calc(100vh - 88px - 48px);
+            width: calc(100vw - 48px);
+            .scenario-title {
+                padding: 0px;
+            }
+        }
+        .title {
+            padding: 0px;
+        }
+        .card-model-container-desktop-view {
+            flex-direction: column;
+        }
+        .card_model {
+            display: block;
+            margin: 0 auto;
+            .image-container {
+                transform: scale(0.9, 0.9);
+            }
+            .description {
+                padding: 0px;
+            }
+        }
+    }
+    .cwr-explore.isIpad :host,
+    .fo-explore.isIpad :host,
+    .faa-explore.isIpad :host {
+        .card-model-container {
+            height: calc(100% - 100px);
+        }
+        .card_model {
+            height: 230px;
+        }
+        .scenario-title {
+            font-size: 20px;
+        }
+        .cards-wrapper {
+            height: calc(100vh - 88px - 48px - 60px);
+        }
+    }
+    .fo-explore :host,
+    .faa-explore :host {
+        .card_model {
+            margin: 20px auto;
+        }
+    }
+    @media screen and (max-height:$tabletMinHeight) {
+        .isAndroid :host {
+            @include freeScroll();
+        }
+    }
+    @media screen and (max-height:$tabletPortraitMin) {
+        .explore-container :host {
+            @include freeScroll();
+        }
+    }
+}
+
+@media screen and ( max-width: $mobileLandscape) {
+    .card-model-container-mobile-view {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-model-container-desktop-view {
+        display: none;
+    }
+    .card_model {
+        position: absolute;
+        margin: 0px;
+    }
+    .card-container {
+        width: 220px;
+        height: 240px;
+        margin: auto;
+    }
+    .description {
+        padding: 0px;
+    }
+    .cwr-explore :host,
+    .fo-explore :host,
+    .faa-explore :host {
+        .cards-wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            height: 100%;
+            box-shadow: none;
+        }
+        .card-model-container-desktop-view {
+            display: flex;
+        }
+        .card-model-container-mobile-view {
+            display: none;
+        }
+        .scenario-title {
+            padding-top: 15px;
+            font-size: 16px;
+            max-width: 100%;
+        }
+        .title {
+            display: block;
+            font-size: 14px;
+            text-align: center;
+            padding: 0px;
+        }
+        .card_model {
+            position: initial;
+            width: 168px;
+            display: flex;
+            flex-direction: column-reverse;
+            padding-bottom: 10px;
+            .image-container {
+                border-radius: 2px;
+                height: 192px;
+                background-color: #4C12A1 !important;
+                box-shadow: 1.5px 2.598px 5px rgba(0, 0, 0, 0.24), 0px 1px 7px rgba(0, 0, 0, 0.16);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .image {
+                width: 90%;
+                height: auto;
+            }
+        }
+    }
+    .fo-explore :host {
+        .card_model {
+            .image-container {
+                background-color: transparent !important
+            }
+        }
+    }
+    .faa-explore :host {
+        .title{
+           margin-left: -18px;
+           width:205px; 
+        }
+    }
+}
+
+.card_model.active .image-container {
+    transform: scale(0.95, 0.95);
+}
+
+@media screen and (max-width: $mobilePotrait) {
+    .cwr-explore :host,
+    .fo-explore :host,
+    .faa-explore :host {
+        .card-model-container-desktop-view {
+            display: none;
+        }
+        .card-model-container-mobile-view {
+            display: flex;
+            margin-top: -20px;
+        }
+        .scenario-title {
+            padding: 20px 0px;
+            font-size: 16px;
+        }
+        .card_model {
+            display: inline-block;
+            position: absolute;
+            width: 220px;
+            padding-bottom: 0px;
+            .image-container {
+                flex-direction: column;
+                .image {
+                    transform: scale(0.9, 0.8);
+                    height: 100%;
+                    margin-top: -10px;
+                    margin-left: 0px;
+                }
+                width:224px;
+                height:256px;
+                background-color: #37077b !important;
+                border-radius: 2px;
+                box-shadow: 1.5px 2.598px 5px rgba(0, 0, 0, 0.24),
+                0px 1px 7px rgba(0, 0, 0, 0.16);
+            }
+        }
+        .card_model .image-container.active {
+            background-color: #4C12A1 !important;
+        }
+        .text-container {
+            display: none;
+        }
+        .card-mobile-view.title {
+            display: flex;
+            font-size: 14px;
+            padding: 0px;
+            color: #ffffff;
+        }
+        .navigation-dots {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            .dots-background {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 0px 15px;
+                border-radius: 5px;
+                background-color: #d4d4d4;
+            }
+            .dots-background.active {
+                background-color: #4b11a1;
+            }
+        }
+
+    }
+    .faa-explore :host{
+        .description{
+            font-size: 14px;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width:$ipodWidth) {
+    .cwr-explore :host,
+    .fo-explore :host,
+    .faa-explore :host {
+        .card-model-container-mobile-view {
+            margin-top: -30px;
+        }
+        .navigation-dots {
+            bottom: -60px;
+        }
+    }
+    .faa-explore :host{
+        .scenario-title {
+            padding: 20px 25px;
+        }
+    }
+}

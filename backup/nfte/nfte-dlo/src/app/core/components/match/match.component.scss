@@ -1,0 +1,292 @@
+@import './../../../../constants.scss';
+.match-container {
+    .match-middle-container {
+        width: 30%;
+        position: relative;
+    }
+    .match-left-right-container {
+        display: flex;
+        position: relative;
+        .option-container {
+            margin: 16px 0px;
+            display: flex;
+            position: relative;
+            border: 2px solid transparent;
+            .selected-text {
+                color: $bullets-color;
+            }
+            label {
+                cursor: pointer;
+                font-weight: normal;
+                font-size: 14px;
+                margin-bottom: 2px;
+                line-height: 20px;
+            }
+            .mcq-radio-button {
+                font-size: 24px;
+                font-weight: bolder;
+                line-height: 20px;
+            }
+        }
+        .mcq-label {
+            cursor: pointer;
+            padding: 10px 10px
+        }
+        .column-name,
+        .option-index {
+            display: none;
+        }
+        .match-left-container {
+            width: 35%;
+            float: left;
+            .option-container {
+                justify-content: flex-end;
+                align-items: center;
+                label {
+                    padding-right: 12px;
+                }
+            }
+            .mcq-label {
+                width: 100%;
+                text-align: center;
+                background-color: $option-color;
+                margin-right: 10px;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .match-right-container {
+            width: 35%;
+            float: right;
+            .option-container {
+                justify-content: flex-start;
+                align-items: center;
+                label {
+                    padding-left: 12px;
+                }
+            }
+            .mcq-label {
+                width: 100%;
+                margin-left: 10px; //width: 140px;
+                text-align: center;
+                background-color: $option-color;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .parent-circle {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            min-height: 24px;
+            border: 24px solid transparent;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid $purple;
+            background-color: transparent;
+            cursor: pointer;
+            
+        }
+        .circle {
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .remove-click-state {
+            border: 24px solid $white;
+        }
+        .second-click-state {
+            border: 12px solid $purple;
+            overflow: hidden;
+        }
+        .radio-wrapper{
+            position: relative;
+            z-index: 100;
+            background-color: $white;
+            border-radius: 50%;
+        }
+    }
+    .match-left-right-container.print {
+        width: 670px;
+    }
+}
+
+.match-container.disabled {
+    .parent-circle {
+        cursor: initial !important;
+    }
+    label,
+    .mcq-label {
+        cursor: initial !important;
+    }
+}
+
+.mobile-view {
+    display: none;
+}
+
+.faa-explore :host {
+    font-family: 'Roboto';
+    font-size: 15px;
+    .match-container {
+        padding: 0px 16px;
+    }
+    .question-index {
+        display: none !important;
+    }
+    .match-middle-container {
+        width: 60px;
+    }
+    .match-left-container {
+        width: calc(50% - 30px) !important;
+        .column-name{
+            padding-right: 36px;
+        }
+    }
+    .match-right-container {
+        width: calc(50% - 30px) !important;
+        .column-name{
+            padding-left: 36px;
+        }
+    }
+    .mcq-label {
+        text-align: left !important;
+        border-radius: 4px !important;
+        background-color: #d7c5f1 !important;
+        justify-content: flex-start !important;
+        padding: 12px 24px !important;
+    }
+    .column-name {
+        display: block !important;
+        font-family: Roboto;
+        color: #4c12a1;
+        text-align: center;
+        font-family: $roboto-bold;
+    }
+    .option-container {
+        margin: 10px 0px !important;
+    }
+}
+
+@media print and (max-width: 500px) {
+    .match-container .match-left-right-container {
+        .match-middle-container {
+            display: none;
+        }
+        .match-left-container,
+        .match-right-container {
+            width: 50%;
+            .parent-circle {
+                display: none
+            }
+            .column-name {
+                display: flex;
+                justify-content: center;
+            }
+            .option-index {
+                align-self: flex-start;
+                display: inline;
+            }
+        }
+    }
+    .mobile-view {
+        display: block;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        .match-option-mobile-view.match-left-right-container {
+            justify-content: space-between;
+            .match-middle-container {
+                display: block;
+                width: 100%
+            }
+            .match-left-container,
+            .match-right-container {
+                width: 20%;
+                .mcq-label {
+                    width: auto;
+                    background-color: transparent;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+                .parent-circle {
+                    display: flex
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobilePotrait) {
+    .faa-explore :host{
+        .mcq-label{
+            padding: 10px !important;
+        }
+        .mobile-view .mcq-label{
+            background-color: white !important;
+        }
+        .sentence-break{
+            word-break: break-word;
+        }
+        .match-container .match-left-right-container {
+            .match-left-container .mcq-label{
+                margin-right:3px;
+            }
+            .match-right-container .mcq-label{
+                margin-left:3px;
+            }
+        }
+    }
+    .match-container .match-left-right-container {
+        .match-middle-container {
+            display: none;
+        }
+        .match-left-container,
+        .match-right-container {
+            width: 50% !important;
+            .parent-circle {
+                display: none
+            }
+            .column-name {
+                display: flex;
+                justify-content: center;
+                padding:0px;
+            }
+            .option-index {
+                align-self: flex-start;
+                display: inline;
+            }
+        }
+    }
+    .mobile-view {
+        display: block;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        .match-option-mobile-view.match-left-right-container {
+            justify-content: space-between;
+            .match-middle-container {
+                display: block;
+                width: 100%
+            }
+            .match-left-container,
+            .match-right-container {
+                width: 20%;
+                .mcq-label {
+                    width: auto;
+                    background-color: transparent;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+                .parent-circle {
+                    display: flex
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+<div class="scenario-wrapper" [ngClass]="{'full-height':scenesBoolean[1]}">
+  <div class="top-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" buttonText="previous"
+      showIconBefore=true iconClass="icon-chevron_left" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player-wrapper">
+      <div class="pseudo-audio-player" *ngIf="scenesBoolean[1]">
+        <div class="audio-instructions">
+          <span>{{data['scenes'][1].instructionText}}</span>
+        </div>
+        <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0" (focus)="onFocus($event, true)"
+          (blur)="onBlur($event, true)">
+          <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+          , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+          , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+        </div>
+        <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0" (focus)="onFocus($event, true)"
+          (blur)="onBlur($event, true)">
+          <span class="icon icon-transcript"></span>
+        </div>
+      </div>
+    </div>
+    <app-custom-button #continueButton *ngIf="!scenesBoolean[3]" buttonClass="scenario-continue transparent" buttonText="continue"
+      showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button #endScenarioButton *ngIf="scenesBoolean[3]" [buttonClass]="{'scenario-continue':true, 'background':dndModel.noOfTrials===0 }"
+      buttonText="endScenario" showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+
+
+  </div>
+ 
+  <div class="scene1 scene" *ngIf="scenesBoolean[0]">
+      <div class="scenario-title">
+          <div>
+            <div>{{ data['scenarioDesc'] }}</div>
+          </div>
+          <div>
+            <div>{{ data['scenarioTitle'] }}</div>
+          </div>
+        </div>
+    <app-video-player [model]=model></app-video-player>
+  </div>
+
+  <div class="scene2 scene" *ngIf="scenesBoolean[1]">
+    <div class="audio-player">
+      <app-audio #audioPlayer [audioSrc]="data['scenes'][1].audioSrc" [transcript]="data['scenes'][1].transcriptSrc"></app-audio>
+    </div>
+    <app-scenario-description [data]="data['scenes'][1]"></app-scenario-description>
+  </div>
+
+  <div class="scene3 scene" *ngIf="scenesBoolean[2]">
+    <app-mrq #mrq index="1" [model]="mrqModel" [showResult]=mrqModel.submited [showCorrectAnswer]=!mrqShowCorrectAnswer></app-mrq>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':mrqModel.submited}" *ngIf="scenesBoolean[2]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!mrqModel.submited" aria-controls="feedback" [disabled]="!mrqModel.attempted" [buttonClass]="{'scenario-submit': !mrqModel.attempted, 'done': mrqModel.attempted }"
+          buttonText="submit" (buttonClickEvent)="mrqModel.submit()"></app-custom-button>
+        <div role="region" id="feedback" class="feedback" [ngClass]="{'correct':mrqModel.responseType === responseType.CORRECT, 'incorrect':mrqModel.responseType === responseType.INCORRECT, 'partially-correct':mrqModel.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback': !mrqShowCorrectAnswer || mrqModel.noOfTrials > 0}">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':mrqModel.responseType === responseType.CORRECT, 'icon-check-cross':mrqModel.responseType === responseType.INCORRECT, 'icon-partial-correct':mrqModel.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="mrqModel.feedback"></span>
+        </div>
+        <app-custom-button *ngIf="mrqModel.submited && mrqModel.noOfTrials > 0 && mrqModel.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': mrqModel.attempted }" buttonText="tryAgain" (buttonClickEvent)="mrqModel.resetData()"></app-custom-button>
+        <app-custom-button *ngIf="mrqModel.submited && mrqModel.noOfTrials === 0 && mrqModel.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="mrqShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="mrqShowCorrectAnswer = !mrqShowCorrectAnswer"></app-custom-button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scene4 scene" *ngIf="scenesBoolean[3]">
+    <app-drag-and-drop #dnd scaleB="true" [showResult]="dndModel.submited" [model]="dndModel" [showCorrectAnswer]=!dndShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel.submited}" *ngIf="scenesBoolean[3]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel.submited" [disabled]="!dndModel.attempted" [buttonClass]="{'scenario-submit': !dndModel.attempted, 'done': dndModel.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel.submit()"></app-custom-button>
+        <div *ngIf="dndModel.submited" class="feedback" [ngClass]="{'correct':dndModel.responseType === responseType.CORRECT, 'incorrect':dndModel.responseType === responseType.INCORRECT, 'partially-correct':dndModel.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dndShowCorrectAnswer || dndModel.noOfTrials > 0}">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel.responseType === responseType.CORRECT, 'icon-check-cross':dndModel.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel.submited && dndModel.noOfTrials > 0 && dndModel.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel.resetData();  dnd.resetTilesPosition(); dnd.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel.submited && dndModel.noOfTrials === 0 && dndModel.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dndShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dndShowCorrectAnswer = !dndShowCorrectAnswer"></app-custom-button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="mobile-navigation-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" showIconBefore=true
+      iconClass="icon-arrow_back_black" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player" *ngIf="scenesBoolean[1]">
+      <div class="audio-instructions">
+        <span>{{data['scenes'][1].instructionText}}</span>
+      </div>
+      <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0" (focus)="onFocus($event, true)"
+        (blur)="onBlur($event, true)">
+        <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+        , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+        , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+      </div>
+      <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0" (focus)="onFocus($event, true)"
+        (blur)="onBlur($event, true)">
+        <span class="icon icon-transcript"></span>
+      </div>
+    </div>
+    <app-custom-button *ngIf="!scenesBoolean[3]" buttonClass="scenario-continue transparent" showIconAfter=true iconClass="icon-arrow_forward_black"
+      (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button *ngIf="scenesBoolean[3]" [buttonClass]="{'scenario-continue':true, 'background':dndModel.noOfTrials===0 }"
+      showIconAfter=true iconClass="icon-arrow_forward_black" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+
+
+  </div>
+
+</div>

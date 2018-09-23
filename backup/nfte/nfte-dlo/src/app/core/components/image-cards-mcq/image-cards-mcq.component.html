@@ -1,0 +1,24 @@
+<div class='button-parent'>
+  <div class="icon icon-back" (click)="backToScenarios()" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+  (focus)="onFocus($event)" (blur)="onBlur($event)"></div>
+</div>
+<div class="main-wrapper">
+  
+  <div class="image-container">
+      <img [src]="model.imgSrc" [alt]="model.altText">
+  </div>
+  <div class="question-container">
+    <div class="title" [innerHtml]="model.title"></div>
+    <app-cards-mcq [data]="model.cardsMcqModel"></app-cards-mcq>
+  </div>
+
+
+</div>
+<div class='button-parent'>
+  <div class="icon screen-navigation-button" [ngClass]="{'screen-up':screenUp}" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('playPause')"
+   tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+    <span [ngClass]="screenUp?'icon-chevron_up':'icon-chevron_down'"></span>
+  </div>
+</div>
+
+

@@ -1,0 +1,74 @@
+@import './../../../../constants.scss';
+.pagination-mobile-view {
+    display: none;
+}
+
+.question-navigation-container {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    min-width: 42px;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.paginator-icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    position: relative;
+}
+
+.paginator-icon {
+    background-color: $transparent;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 24px;
+    padding: 3px 1px;
+}
+
+.dropdown-focus {
+    background-color: $paginator-arrow-bg-color;
+}
+
+.paginator-icon:hover {
+    cursor: pointer;
+}
+
+.question-list {
+    overflow: auto;
+    max-height: calc(100vh - 50px);
+    position: absolute;
+    bottom: 32px;
+    left: -9px;
+    background-color: #fafafa;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid $dropdown-border-color;
+    z-index: 2000;
+    color: $paginator-page-color;
+    .attempted {
+        color: $primary-text;
+        font-weight: normal;
+    }
+}
+
+.question {
+    padding: 8px 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .my-pagination {
+        display: none;
+    }
+    .pagination-mobile-view {
+        display: inline-block;
+    }
+    .question-navigation-container {
+        margin: 0;
+    }
+}

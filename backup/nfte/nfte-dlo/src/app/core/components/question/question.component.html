@@ -1,0 +1,22 @@
+<div class="question-container">
+    <div class="question-index">{{ questionIndex }}</div>
+    <div class="main-question">
+        <div class="question-text" *ngIf="model.text !== undefined" [innerHTML]="model.text | safeHtml">
+        </div>
+
+        <div class="multimedia-content" >
+            <div class="question-image" *ngIf="model.imageUrl !== undefined" >
+                   <img [src]="model.imageUrl" [class] =" 'question-image-' + questionIndex "/>
+            </div>
+            <div class="question-video" *ngIf="model.videoUrl !== undefined" >
+                    <video controls [src]=" 'assets/video/' + model.videoUrl" [class] =" 'question-video-' + questionIndex "></video>
+             </div>
+        </div>
+    </div>
+    <div class="icon-replay-video" (click)="!model.submited?resetData():null" (focus)="onFocus($event)" (blur)="onBlur($event)" 
+    [ngClass]="{ 'reset-disable':!model.attempted || model.submited || !model.interacted, 'reset-enable': (model.attempted && !model.submited) || model.interacted }"
+    [tabindex]="(model.attempted && !model.submited )|| model.interacted? 0:-1" [attr.aria-label]="getAccText('reset')" role="button">
+
+    </div>
+    
+</div>

@@ -1,0 +1,38 @@
+<div class="scenario-wrapper scroll" [ngClass]="{'isIpad':isIpad}" #scrollParent appScroll sectionSelector=".scroll-section"
+    (sectionChanged)="sectionChanged($event)" [topOffset]="scrollTopOffset">
+
+    <div id="section1" class="scroll-section" index="0">
+        <app-scenario-describe #scenarioEle [model]="scenarioDescribeModel" [playAudioDefault]="keyboardService.playAudioDefault"
+            (screenNavigation)="goToSection(1)"></app-scenario-describe>
+    </div>
+    <div id="section2" class="scroll-section" index="1">
+        <div class="scroll-section-wrapper">
+            <app-cards-mcq [data]="data['scenes'][1]" index=1></app-cards-mcq>
+            <div class='button-parent navigation'>
+                <div class="icon screen-navigation-button" (click)="goToSection(2)" [attr.aria-label]="getAccText('navigateToNextScreen')" tabindex="0"
+                    (focus)="onFocus($event)" (blur)="onBlur($event)">
+                    <span class="icon-chevron_down"></span>
+                </div>
+            </div>
+            <div class='button-parent back'>
+                <div class="icon icon-back" (click)="backToScenarios()" [attr.aria-label]="getAccText('backToScenario')" tabindex="0" (focus)="onFocus($event)"
+                    (blur)="onBlur($event)"></div>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="scroll-section" index="2">
+        <div class="scroll-section-wrapper">
+            <app-cards-mcq [data]="data['scenes'][2]" index=2></app-cards-mcq>
+            <div class='button-parent navigation'>
+                <div class="icon screen-navigation-button" (click)="goToSection(0)" [attr.aria-label]="getAccText('navigateToFirstScreen')" tabindex="0"
+                    (focus)="onFocus($event)" (blur)="onBlur($event)">
+                    <span class="icon-chevron_up"></span>
+                </div>
+            </div>
+            <div class='button-parent back'>
+                <div class="icon icon-back" (click)="backToScenarios()" [attr.aria-label]="getAccText('backToScenario')" tabindex="0" (focus)="onFocus($event)"
+                    (blur)="onBlur($event)"></div>
+            </div>
+        </div>
+    </div>
+</div>

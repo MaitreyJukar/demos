@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "nfte-icons";
+    src: url('./../font//nfte-icons.eot');
+    src: url('./../font//nfte-icons.eot?#iefix') format('eot'),
+    url('./../font//nfte-icons.woff2') format('woff2'),
+    url('./../font//nfte-icons.woff') format('woff'),
+    url('./../font//nfte-icons.ttf') format('truetype'),
+    url('./../font//nfte-icons.svg#nfte-icons') format('svg');
+}
+
+[class^="icon-"]:before {
+    font-family: "nfte-icons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+}
+.icon {
+    font-family: "nfte-icons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+}
+
+
+.icon-arrow-down:before {
+    content: "\E001";
+}
+
+.icon-arrow-up:before {
+    content: "\E002";
+}
+
+.icon-arrow_back_black:before {
+    content: "\E003";
+}
+
+.icon-arrow_forward_black:before {
+    content: "\E004";
+}
+
+.icon-back:before {
+    content: "\E005";
+}
+
+.icon-back_2px:before {
+    content: "\E006";
+}
+
+.icon-bullet_point_filled:before {
+    content: "\E007";
+}
+
+.icon-caption-on:before {
+    content: "\E008";
+}
+
+.icon-check-cross:before {
+    content: "\E009";
+}
+
+.icon-check:before {
+    content: "\E00A";
+}
+
+.icon-check_box_normal:before {
+    content: "\E00B";
+}
+
+.icon-check_box_selected:before {
+    content: "\E00C";
+}
+
+.icon-chevron_down:before {
+    content: "\E00D";
+}
+
+.icon-chevron_left:before {
+    content: "\E00E";
+}
+
+.icon-chevron_right:before {
+    content: "\E00F";
+}
+
+.icon-chevron_up:before {
+    content: "\E010";
+}
+
+.icon-clear-pathways:before {
+    content: "\E011";
+}
+
+.icon-clear:before {
+    content: "\E012";
+}
+
+.icon-closed-caption:before {
+    content: "\E013";
+}
+
+.icon-closed:before {
+    content: "\E014";
+}
+
+.icon-cross:before {
+    content: "\E015";
+}
+
+.icon-cross_baseline:before {
+    content: "\E016";
+}
+
+.icon-cross_filled:before {
+    content: "\E017";
+}
+
+.icon-download:before {
+    content: "\E018";
+}
+
+.icon-drag_handles:before {
+    content: "\E019";
+}
+
+.icon-feedback-right:before {
+    content: "\E01A";
+}
+
+.icon-feedback-wrong:before {
+    content: "\E01B";
+}
+
+.icon-fullscreen-exit:before {
+    content: "\E01C";
+}
+
+.icon-fullscreen:before {
+    content: "\E01D";
+}
+
+.icon-info:before {
+    content: "\E01E";
+}
+
+.icon-list:before {
+    content: "\E01F";
+}
+
+.icon-minus:before {
+    content: "\E020";
+}
+
+.icon-more_vertical:before {
+    content: "\E021";
+}
+
+.icon-next_filled:before {
+    content: "\E022";
+}
+
+.icon-not-graded:before {
+    content: "\E023";
+}
+
+.icon-partial-correct:before {
+    content: "\E024";
+}
+
+.icon-pause-2:before {
+    content: "\E025";
+}
+
+.icon-pause-video:before {
+    content: "\E026";
+}
+
+.icon-pause:before {
+    content: "\E027";
+}
+
+.icon-play-2:before {
+    content: "\E028";
+}
+
+.icon-play-video:before {
+    content: "\E029";
+}
+
+.icon-play:before {
+    content: "\E02A";
+}
+
+.icon-play_filled:before {
+    content: "\E02B";
+}
+
+.icon-plus:before {
+    content: "\E02C";
+}
+
+.icon-print:before {
+    content: "\E02D";
+}
+
+.icon-radio-button-selected:before {
+    content: "\E02E";
+}
+
+.icon-radio-button:before {
+    content: "\E02F";
+}
+
+.icon-radio_button_normal:before {
+    content: "\E030";
+}
+
+.icon-radio_button_selected:before {
+    content: "\E031";
+}
+
+.icon-refresh:before {
+    content: "\E032";
+}
+
+.icon-replay-video:before {
+    content: "\E033";
+}
+
+.icon-reset:before {
+    content: "\E034";
+}
+
+.icon-settings:before {
+    content: "\E035";
+}
+
+.icon-simulate:before {
+    content: "\E036";
+}
+
+.icon-skip-question:before {
+    content: "\E037";
+}
+
+.icon-skipped:before {
+    content: "\E038";
+}
+
+.icon-tick:before {
+    content: "\E039";
+}
+
+.icon-tick_baseline:before {
+    content: "\E03A";
+}
+
+.icon-tick_filled:before {
+    content: "\E03B";
+}
+
+.icon-transcript:before {
+    content: "\E03C";
+}
+
+.icon-volume-mute:before {
+    content: "\E03D";
+}
+
+.icon-volume:before {
+    content: "\E03E";
+}

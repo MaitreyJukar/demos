@@ -1,0 +1,247 @@
+@import './../../../../constants.scss';
+.description-wrapper {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+    height: 100%;
+    img {
+        position: absolute;
+        right: 0px;
+        max-height: 100%;
+    }
+    img.width-full{
+        width: 100%;
+        max-height: initial;
+    }
+    .entrepreneurial-mindset-image {
+        width: 100%;
+        max-height: 600px;
+    }
+}
+
+.entrepreneurial-mindset-image {
+    position: absolute !important;
+    bottom: 50px;
+    opacity: 0.5;
+}
+
+.absolute {
+    position: absolute;
+    top: 46px;
+    overflow: hidden;
+    display: flex;
+    left: 46px;
+    width: calc(100% - 92px);
+}
+
+.title {
+    font-size: 30px;
+}
+
+.bullet-point-container {
+    display: flex;
+    padding-right: 20px;
+    margin-bottom: 35px;
+    color: $white;
+    padding-left: 30px;
+    position: relative;
+}
+
+.points-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: calc(100% - 42px);
+}
+
+.orange-background {
+    background-color: $scenario-orange-bg;
+}
+
+.purple-background {
+    background-color: $scenario-purple-bg;
+}
+
+.orange-text {
+    color: $orange-text;
+}
+
+.purple-text {
+    color: $purple-text;
+}
+
+.bullet-icon {
+    font-size: 54px;
+    color: $bullet-color;
+    position: absolute;
+    left: -18px;
+    top: -19px;
+}
+
+.left-column {
+    width: calc(50% - 15px);
+    height: auto;
+    left: 56px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.right-column {
+    width: calc(50% - 15px);
+    height: auto;
+    left: 100vw;
+    display: inline-block;
+}
+
+// animation
+.delay1 {
+    animation-delay: 2.5s;
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+
+.delay2 {
+    animation-delay: 5s;
+}
+
+.delay3 {
+    animation-delay: 7.5s;
+}
+
+.delay4 {
+    animation-delay: 10s;
+}
+
+.delay5 {
+    animation-delay: 12.5s;
+}
+
+.delay6 {
+    animation-delay: 15s;
+}
+
+.delay7 {
+    animation-delay: 17.5s;
+}
+
+.delay8 {
+    animation-delay: 20s;
+}
+
+.delay9 {
+    animation-delay: 22.5s;
+}
+
+.delay10 {
+    animation-delay: 25s;
+}
+
+.description-wrapper-mobile {
+    display: none;
+}
+
+
+.right-column {
+    transform: translateX(1200px);
+    visibility: hidden;
+}
+
+.left-column {
+    transform: translateX(-800px);
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-800px,0,0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0px,0,0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translate3d(1200px,0,0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0px,0,0);
+      visibility: visible;
+    }
+  }
+  
+  .slideInRight {
+    animation-name: slideInRight;
+  }
+
+
+@media screen and (min-width:900px) {
+    .description-wrapper{
+        position: relative;
+    }
+    .relative {
+        position: static;
+        height: 100%;
+        img {
+            position: static;
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .title{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .absolute-scroll {
+        overflow: auto;
+        position: absolute;
+        top: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        .absolute {
+            overflow: auto;
+            width: auto;
+            height: 100%;
+            padding-bottom: 40px; 
+        }
+    }
+    .description-wrapper-mobile {
+        display: block;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    .description-wrapper {
+        display: none;
+    }
+    .absolute {
+        flex-direction: column;
+        top: 30px;
+        width: 100%;
+        left: 0px;
+    }
+    .left-column,
+    .right-column {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+}

@@ -1,0 +1,208 @@
+@import './../../../../constants.scss';
+@import './../../../../vertical-scroll-common.scss';
+#section2 {
+    background-color: #4C12A1;
+    .characteristics-heading {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "Quicksand";
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .screen-navigation-button {
+        background-color: #EFEFEF;
+        color: #4C12A1;
+    }
+}
+
+#section3 {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#section4 {
+    padding: 0px 40px;
+    position: relative;
+    font-family: "Roboto";
+}
+
+.characteristics-heading {
+    font-size: 30px;
+}
+
+.no-scroll {
+    height: 100vh;
+    #section3 {
+        opacity: 1;
+        pointer-events: initial;
+    }
+}
+
+app-learn {
+    width: 100%;
+    .dlo-learn {
+        max-width: 100%;
+    }
+}
+
+
+
+.tabset-container {
+    display: block;
+    height: 100%;
+}
+
+.accordion-container {
+    display: none !important;
+}
+
+@mixin freeScroll() {
+    .scroll-section {
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        pointer-events: initial;
+    }
+    .scroll-section.active {
+        box-shadow: none;
+    }
+    .screen-navigation-button {
+        display: none;
+    }
+    .tabset-container {
+        display: none;
+    }
+    .accordion-container {
+        display: block !important;
+        .play-pause-btn {
+            position: initial;
+            float: right;
+            margin-left: 10px;
+        }
+    }
+    .down-arrow {
+        float: right;
+        font-size: 25px;
+        margin-top: -23px;
+    }
+    #section5 {
+        margin-bottom: 0px;
+    }
+    #section2 {
+        background-color: #ffffff;
+        .characteristics-heading {
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width:$desktop) {
+
+    @media screen and (max-height:$tabletLandscapeMinHeight) {
+        :host {
+            @include freeScroll();
+        }
+    }
+}
+
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax) {
+    .isIpad {
+        #section2 {
+            .characteristics-heading {
+                font-size: 28px;
+                padding: 20px 10px;
+            }
+        }
+    }
+    text-align:center;
+    padding-bottom:10px;
+    @media screen and (max-height:$tabletMinHeight) {
+        .isAndroid :host {
+            @include freeScroll();
+        }
+    }
+    @media screen and (max-height:$tabletPortraitMin) {
+        :host {
+            @include freeScroll();
+        }
+    }
+}
+
+@media screen and (max-width:$mobileLandscape) {
+    .left-section {
+        flex-direction: column;
+    }
+    #section2,
+    #section3,
+    #section4 {
+        height: 100%;
+        flex-direction: column;
+        pointer-events: initial;
+    }
+    #section2 {
+        background-color: #ffffff;
+        .characteristics-heading {
+            color: black;
+            font-size: 20px;
+            text-align: left;
+            padding: 0px 15px 20px;
+        }
+    }
+    .tabset-container {
+        display: none;
+    }
+    .accordion-container {
+        display: block !important;
+        .play-pause-btn {
+            position: initial;
+            float: right;
+            margin-left: 10px;
+        }
+    }
+    .down-arrow {
+        float: right;
+        font-size: 25px;
+        margin-top: -23px;
+    }
+    #section3 {
+        padding-bottom: 20px;
+    }
+    #section4 {
+        padding: 0px 25px 10px 15px;
+        .bottom-bar {
+            padding: 0px 0px 0px 10px;
+        }
+        app-custom-button {
+            position: initial;
+            margin: 0px auto;
+        }
+    }
+    #section5 {
+        margin-bottom: 0px;
+    }
+}
+
+#section2 .nav-button-change {
+    background-color: #4C12A1;
+    box-shadow: inset 0px -4px 0px 0px #2b0761;
+    .icon-chevron_down {
+        color: #ffffff;
+    }
+}
+
+.border {
+    width: 1px;
+    background-color: #FFDA40;
+    height: 15px;
+    /* float: right; */
+    position: absolute;
+    top: 12px;
+    right: -4px;
+}
+
+

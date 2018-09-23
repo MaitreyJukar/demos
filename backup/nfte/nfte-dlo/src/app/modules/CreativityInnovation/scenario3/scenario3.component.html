@@ -1,0 +1,237 @@
+<div class="scenario-wrapper">
+  <div class="top-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" buttonText="previous"
+      showIconBefore=true iconClass="icon-chevron_left" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player-wrapper">
+      <div class="pseudo-audio-player" *ngIf="scenesBoolean[1] || scenesBoolean[2]">
+        <div class="audio-instructions">
+          <span>{{data['scenes'][1].instructionText}}</span>
+        </div>
+        <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0" (focus)="onFocus($event, true)"
+          (blur)="onBlur($event, true)">
+          <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+          , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+          , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+        </div>
+        <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0" (focus)="onFocus($event, true)"
+          (blur)="onBlur($event, true)">
+          <span class="icon icon-transcript"></span>
+        </div>
+      </div>
+    </div>
+    <app-custom-button #continueButton *ngIf="!scenesBoolean[4]" buttonClass="scenario-continue transparent" buttonText="continue"
+      showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button #endScenarioButton *ngIf="scenesBoolean[4]" [buttonClass]="{'scenario-continue':true, 'background':dndModel2.noOfTrials===0 }"
+      buttonText="endScenario" showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+  </div>
+ 
+
+  <div class="scene1 scene" *ngIf="scenesBoolean[0]">
+      <div class="scenario-title">
+          <div>
+            <div>{{ data['scenarioDesc'] }}</div>
+          </div>
+          <div>
+            <div>{{ data['scenarioTitle'] }}</div>
+          </div>
+        </div>
+    <app-video-player [model]=model></app-video-player>
+  </div>
+
+  <!-- <div class="scene2 scene" *ngIf="scenesBoolean[1]">
+    <app-scenario-description [data]="data[1]"></app-scenario-description>
+  </div> -->
+
+  <div class="scene3 scene" *ngIf="scenesBoolean[1]">
+    <div class="audio-player">
+      <app-audio #audioPlayer [audioSrc]="data['scenes'][1].audioSrc" [transcript]="data['scenes'][1].transcriptSrc"></app-audio>
+    </div>
+    <div class="question"> {{data['scenes'][1].question}} </div>
+    <div class="images-wrapper">
+
+      <div class="row">
+        <div class="col-4 stencils">
+          <span class="text">{{data['scenes'][2].text.stencils}}</span>
+          <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.stencils">
+        </div>
+        <div class="col-4 section-tabs">
+          <span class="text">{{data['scenes'][2].text.sectionsTabs}}</span>
+          <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.sectionsTabs">
+        </div>
+        <div class="col-4 crafts">
+          <span class="text">{{data['scenes'][2].text.crafts}}</span>
+          <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.crafts">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 chart-paper">
+          <span class="text">{{data['scenes'][2].text.chartPaper}}</span>
+          <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.chartPaper">
+        </div>
+        <div class="col-4 hang-pictures">
+          <span class="text">{{data['scenes'][2].text.hangPictures}}</span>
+          <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.hangPictures">
+        </div>
+        <div class="col-4 drawer-labels">
+          <span class="text">{{data['scenes'][2].text.drawerLabels}}</span>
+          <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.drawerLabels">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 bookmarks">
+          <span class="text">{{data['scenes'][2].text.bookmarks}}</span>
+          <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.bookmarks">
+        </div>
+        <div class="col-3 temporary-tape">
+          <span class="text">{{data['scenes'][2].text.temporaryTape}}</span>
+          <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.temporaryTape">
+        </div>
+        <div class="col-3 photo-labels">
+          <span class="text">{{data['scenes'][2].text.photoLabels}}</span>
+          <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.photoLabels">
+        </div>
+        <div class="col-3 wall-hooks">
+          <span class="text">{{data['scenes'][2].text.wallHooks}}</span>
+          <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.wallHooks">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scene4 scene" *ngIf="scenesBoolean[2]">
+    <div class="audio-player">
+      <app-audio #audioPlayer [audioSrc]="data['scenes'][2].audioSrc" [transcript]="data['scenes'][2].transcriptSrc"></app-audio>
+    </div>
+    <div class="question"> {{data['scenes'][2].question}} </div>
+    <div class="column-header">
+      <div class="left">
+        <span>{{data['scenes'][2].leftColHeader}}</span>
+      </div>
+      <div class="right">
+        <span>{{data['scenes'][2].rightColHeader}}</span>
+      </div>
+    </div>
+    <div class="images-wrapper">
+      <div class="traditional-uses">
+        <div class="inner-wrapper">
+          <div class="sticky-note section-tabs">
+            <span class="text">{{data['scenes'][2].text.sectionsTabs}}</span>
+            <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.sectionsTabs">
+          </div>
+          <div class="sticky-note chart-paper">
+            <span class="text">{{data['scenes'][2].text.chartPaper}}</span>
+            <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.chartPaper">
+          </div>
+          <div class="sticky-note drawer-labels">
+            <span class="text">{{data['scenes'][2].text.drawerLabels}}</span>
+            <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.drawerLabels">
+          </div>
+          <div class="sticky-note bookmarks">
+            <span class="text">{{data['scenes'][2].text.bookmarks}}</span>
+            <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.bookmarks">
+          </div>
+          <div class="sticky-note photo-labels">
+            <span class="text">{{data['scenes'][2].text.photoLabels}}</span>
+            <img class="image" [src]="data['scenes'][2].orangeNote" [alt]="data['scenes'][2].text.photoLabels">
+          </div>
+        </div>
+      </div>
+      <div class="vertical-line">
+        <img class="image" [src]="data['scenes'][2].imgVerticalLine" [alt]="data['scenes'][2].text.verticalLine">
+      </div>
+      <div class="innovative-uses">
+        <div class="inner-wrapper">
+          <div class="sticky-note stencils">
+            <span class="text">{{data['scenes'][2].text.stencils}}</span>
+            <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.stencils">
+          </div>
+          <div class="sticky-note wall-hooks">
+            <span class="text">{{data['scenes'][2].text.wallHooks}}</span>
+            <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.wallHooks">
+          </div>
+          <div class="sticky-note hang-pictures">
+            <span class="text">{{data['scenes'][2].text.hangPictures}}</span>
+            <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.hangPictures">
+          </div>
+          <div class="sticky-note temporary-tape">
+            <span class="text">{{data['scenes'][2].text.temporaryTape}}</span>
+            <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.temporaryTape">
+          </div>
+          <div class="sticky-note crafts">
+            <span class="text">{{data['scenes'][2].text.crafts}}</span>
+            <img class="image" [src]="data['scenes'][2].purpleNote" [alt]="data['scenes'][2].text.crafts">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scene5 scene" *ngIf="scenesBoolean[3]">
+    <app-drag-and-drop #dnd1 scaleB="true" [showResult]="dndModel1.submited" #dnd [model]="dndModel1" [showCorrectAnswer]=!dnd1ShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel1.submited}" *ngIf="scenesBoolean[3]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel1.submited" [disabled]="!dndModel1.attempted" [buttonClass]="{'scenario-submit': !dndModel1.attempted, 'done': dndModel1.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel1.submit()"></app-custom-button>
+        <div *ngIf="dndModel1.submited" class="feedback" [ngClass]="{'correct':dndModel1.responseType === responseType.CORRECT, 'incorrect':dndModel1.responseType === responseType.INCORRECT, 'partially-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd1ShowCorrectAnswer || dndModel1.noOfTrials > 0}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel1.responseType === responseType.CORRECT, 'icon-check-cross':dndModel1.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel1.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials > 0 && dndModel1.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel1.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel1.resetData(); dnd1.resetTilesPosition(); dnd1.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials === 0 && dndModel1.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd1ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd1ShowCorrectAnswer = !dnd1ShowCorrectAnswer"></app-custom-button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scene6 scene" *ngIf="scenesBoolean[4]">
+    <app-drag-and-drop #dnd2 scaleB="true" [showResult]="dndModel2.submited" #dnd [model]="dndModel2" [showCorrectAnswer]=!dnd2ShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel2.submited}" *ngIf="scenesBoolean[4]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel2.submited" [disabled]="!dndModel2.attempted" [buttonClass]="{'scenario-submit': !dndModel2.attempted, 'done': dndModel2.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel2.submit()"></app-custom-button>
+        <div *ngIf="dndModel2.submited" class="feedback" [ngClass]="{'correct':dndModel2.responseType === responseType.CORRECT, 'incorrect':dndModel2.responseType === responseType.INCORRECT, 'partially-correct':dndModel2.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd2ShowCorrectAnswer || dndModel2.noOfTrials > 0}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel2.responseType === responseType.CORRECT, 'icon-check-cross':dndModel2.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel2.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel2.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel2.submited && dndModel2.noOfTrials > 0 && dndModel2.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel2.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel2.resetData();  dnd2.resetTilesPosition(); dnd2.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel2.submited && dndModel2.noOfTrials === 0 && dndModel2.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd2ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd2ShowCorrectAnswer = !dnd2ShowCorrectAnswer"></app-custom-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-navigation-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" showIconBefore=true
+      iconClass="icon-arrow_back_black" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player" *ngIf="scenesBoolean[1] || scenesBoolean[2]">
+      <div class="audio-instructions">
+        <span>{{data['scenes'][2].instructionText}}</span>
+      </div>
+      <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0" (focus)="onFocus($event, true)"
+        (blur)="onBlur($event, true)">
+        <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+          , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+          , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+      </div>
+      <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0" (focus)="onFocus($event, true)"
+        (blur)="onBlur($event, true)">
+        <span class="icon icon-transcript"></span>
+      </div>
+    </div>
+    <app-custom-button *ngIf="!scenesBoolean[4]" buttonClass="scenario-continue transparent" showIconAfter=true iconClass="icon-arrow_forward_black"
+      (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button *ngIf="scenesBoolean[4]" [buttonClass]="{'scenario-continue':true, 'background':dndModel2.noOfTrials===0 }"
+      showIconAfter=true iconClass="icon-arrow_forward_black" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+  </div>
+</div>

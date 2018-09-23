@@ -1,0 +1,4 @@
+<div class = 'explore-container cwr-explore' [ngClass]="{'hide-bottom-bar': router.url === '/CWR/explore','isSafari':isSafari, 'isIE':isIE, 'isFireFox':isFireFox, 'isEdge':isEdge, 'isIpad':isIpad}">	
+    <router-outlet></router-outlet>
+    <app-custom-button buttonClass="scenarios-back" buttonText="scenarios" showIconBefore=true iconClass="icon-back" (buttonClickEvent)="backToScenarios()"></app-custom-button>	
+ </div>

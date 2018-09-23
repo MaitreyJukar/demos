@@ -1,0 +1,136 @@
+@import './../../../../constants.scss';
+@import './../../../../vertical-scroll-common.scss';
+
+
+#section3{
+    .screen-navigation-button {
+        line-height: 1;
+    }
+}
+
+.screen-navigation-button {
+    right: 0px;
+    bottom: 0px
+}
+
+.scroll-section .scroll-section-wrapper{
+    position: relative;
+    height:100%
+}
+
+.button-parent {
+    position: absolute;
+}
+
+.button-parent.back{
+    top: 16px;
+    left: 16px;
+    .icon-back{
+        left: 0px;
+        top: 0px
+    }
+}
+
+.button-parent.navigation{
+    bottom: 16px;
+    right: 16px;
+}
+
+
+@mixin freeScroll() {
+    .scroll-section {
+        padding: 40px;
+        margin: 0px auto;
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        height:100%;
+        pointer-events: initial;
+    }
+    .scroll-section.active{
+        box-shadow:none;
+    }
+    .screen-navigation-button{
+        display:none;
+    }
+    #section3{
+        margin-bottom:0px;
+    }
+}
+
+@media screen and (max-width:$desktop) {
+
+    .screen-navigation-button.nav-button-change{
+        background-color:#EFEFEF;
+        box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24), 0px 1px 6.86px 0.14px rgba(0, 0, 0, 0.16);
+        .icon-chevron_down{
+            color:#4C12A1;
+        }
+    }
+
+    @media screen and (max-height:$tabletLandscapeMinHeight){
+        :host{
+            @include freeScroll();
+        }
+    }
+}
+
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax){
+    .scroll-section{
+        padding: 24px;
+    }
+
+    #section3 {
+        margin-bottom: 24px;
+    }
+    .screen-navigation-button{
+        // bottom:16px;
+        // right:-9px;
+    }
+    .icon-back{
+        top:0px;
+        left:0px;
+    }
+
+    @media screen and (max-height:$tabletMinHeight){
+        .cwr.isAndroid :host{
+            @include freeScroll();
+        }
+    }
+
+    @media screen and (max-height:$tabletPortraitMin){
+        :host{
+            @include freeScroll();
+        }
+    }
+}
+@media screen and (max-width: $mobileLandscape) {
+    .cwr-explore :host {
+        .scroll-section {
+            padding: 0px;
+            margin:0px auto;
+            box-shadow:none;
+            border:none;
+            opacity: 1;
+            .icon-back {
+                display: none;
+            }
+        }
+        .scroll-section.active{
+            .icon-back {
+                display: none;
+            }
+        }
+        #section1,#section2,#section3{
+            height:100%;
+            pointer-events: initial;
+        }
+        .screen-navigation-button{
+            display:none;
+        }
+        #section3 {
+            margin-bottom:0px;
+        }
+    }
+}

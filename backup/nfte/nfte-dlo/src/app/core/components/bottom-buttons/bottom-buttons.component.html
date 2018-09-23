@@ -1,0 +1,105 @@
+<div class="button-wrapper" [ngClass]="{'button-full-screen': api && api.fsAPI.isFullscreen, 'done-clicked':doneClicked}">
+  <div class="submit-questions mobile-view" *ngIf="cuePointData !== null" [ngClass]="{'absolute-right':!showCorrectAnswerFlag && doneClicked}">
+    <div class="buttons" *ngIf=" !doneClicked && !forceResume">
+      <app-custom-button [ngClass]="{ disabled: doneDisable  }" class="done-button" buttonText="done" buttonClass="done" (buttonClickEvent)="done.next()">
+
+      </app-custom-button>
+
+
+
+    </div>
+    <div class="feedback-wrapper" >
+      <div class="feedback-container" [ngClass]="{'invisible': !(showCorrectAnswerFlag && doneClicked && !forceResume)}">
+        <div [ngClass]="setIconClass()">
+        </div>
+        <div [ngClass]="feedbackClass" class="feedback">
+          {{feedback}}
+        </div>
+      </div>
+      <app-custom-button *ngIf="(feedbackClass === 'incorrect' || feedbackClass === 'partially-correct') && showCorrectAnswerFlag && doneClicked"
+        class="correct-answer-button" buttonClass="correct-answer-button" buttonText="showCorrectAnswer" 
+        (buttonClickEvent)="showCorrectAnswerFlag=false; showCorrectAnswer.next(showCorrectAnswerFlag); "></app-custom-button>
+
+      <app-custom-button *ngIf="(feedbackClass === 'incorrect' || feedbackClass === 'partially-correct') && !showCorrectAnswerFlag && doneClicked"
+        class="correct-answer-button" buttonClass="correct-answer-button" buttonText="showYourAnswer" 
+        (buttonClickEvent)="showCorrectAnswerFlag=true ; showCorrectAnswer.next(showCorrectAnswerFlag); "></app-custom-button>
+    </div>
+    <div class="right-side" [ngClass]="{'force-right-side': forceResume, 'right-side-after-done': doneClicked}">
+      <app-custom-button *ngIf="!doneClicked && !forceResume" class="skip" [buttonClass]="{'skip':true, 'skip-fullscreen':api && api.fsAPI.isFullscreen}"
+        showIconAfter=true iconClass="icon-skip-question" buttonText="skip" (buttonClickEvent)="skip.next()"></app-custom-button>
+
+      <app-custom-button *ngIf="doneClicked || forceResume" [ngClass]="{'correct-resume-mobile': feedbackClass === 'correct', 'force-resume': forceResume}"
+        buttonClass="resume" showIconBefore=true iconClass="icon-play_filled" buttonText="resume" (buttonClickEvent)="resume.next(); showCorrectAnswerFlag=true">
+      </app-custom-button>
+
+      <app-custom-button [buttonClass]="{'transparent no-shadow quiz-fullscreen':true, 'skip-fullscreen':api && api.fsAPI.isFullscreen}"
+        showIconBefore=true [iconClass]="(api && api.fsAPI.isFullscreen)?'icon-fullscreen-exit':'icon-fullscreen'" (buttonClickEvent)="fullscreen.next()"
+        [buttonText]="(api && api.fsAPI.isFullscreen)?'exitFullscreen':'fullscreen'" [ngClass]="{'margin-left-110': isIpadView() && doneClicked}">
+      </app-custom-button>
+
+    </div>
+
+
+
+  </div>
+  <div class="skip-resume-wrapper" id="skip-resume-wrapper" *ngIf="cuePointData !== null && !forceResume" [ngClass]="{'force-skip-resume': forceResume}">
+    <app-custom-button *ngIf="!doneClicked" class="skip" buttonClass="skip" showIconAfter=true iconClass="icon-skip-question"
+      buttonText="skip" (buttonClickEvent)="skip.next()"></app-custom-button>
+
+    <app-custom-button *ngIf="(feedbackClass === 'incorrect' || feedbackClass === 'partially-correct') && showCorrectAnswerFlag && doneClicked"
+      class="correct-answer-button" buttonClass="correct-answer-button" buttonText="showCorrectAnswer" 
+      (buttonClickEvent)="showCorrectAnswerFlag=false; showCorrectAnswer.next(showCorrectAnswerFlag); "></app-custom-button>
+
+    <app-custom-button *ngIf="(feedbackClass === 'incorrect' || feedbackClass === 'partially-correct') && !showCorrectAnswerFlag && doneClicked"
+      class="correct-answer-button" buttonClass="correct-answer-button" buttonText="showYourAnswer" 
+      (buttonClickEvent)="showCorrectAnswerFlag=true ; showCorrectAnswer.next(showCorrectAnswerFlag); "></app-custom-button>
+
+    <app-custom-button *ngIf="doneClicked || forceResume" class="resume" 
+    [ngClass]="{'correct-resume-mobile': feedbackClass === 'correct', 'force-resume': forceResume}"
+      buttonClass="resume" showIconBefore=true iconClass="icon-play_filled" buttonText="resume" (buttonClickEvent)="resume.next(); showCorrectAnswerFlag=true">
+    </app-custom-button>
+
+  </div>
+</div>
+
+<div class="button-wrapper-fullscreen feedback" [ngClass]="{'feedback-fullscreen': api && api.fsAPI.isFullscreen}" *ngIf="doneClicked">
+  <div class="feedback-container">
+    <div [ngClass]="setIconClass()" *ngIf="showCorrectAnswerFlag && doneClicked">
+    </div>
+    <div [ngClass]="feedbackClass" class="feedback" *ngIf="showCorrectAnswerFlag && doneClicked">
+      {{feedback}}
+    </div>
+  </div>
+
+  <div class="right-side-buttons" [ngClass]="{'resume-only':feedbackClass === 'correct'}">
+    <app-custom-button *ngIf="(feedbackClass === 'incorrect' || feedbackClass === 'partially-correct') && showCorrectAnswerFlag && doneClicked"
+      class="correct-answer-button" buttonClass="correct-answer-button" buttonText="showCorrectAnswer" 
+      (buttonClickEvent)="showCorrectAnswerFlag=false; showCorrectAnswer.next(showCorrectAnswerFlag);"></app-custom-button>
+
+    <app-custom-button *ngIf="(feedbackClass === 'incorrect' || feedbackClass === 'partially-correct') && !showCorrectAnswerFlag && doneClicked"
+      class="correct-answer-button" buttonClass="correct-answer-button" buttonText="showYourAnswer" 
+      (buttonClickEvent)=" showCorrectAnswerFlag=true ;showCorrectAnswer.next(showCorrectAnswerFlag);"></app-custom-button>
+
+    <app-custom-button *ngIf="doneClicked || forceResume" class="resume" buttonClass="resume" showIconBefore=true iconClass="icon-play_filled"
+      buttonText="resume" (buttonClickEvent)="resume.next(); showCorrectAnswerFlag=true" [ngClass]="{'force-resume': forceResume}"></app-custom-button>
+    <!-- <div [ngClass]="{'icon-fullscreen-exit full-screen-button':(api && api.fsAPI.isFullscreen) , 'icon-fullscreen full-screen-button': !(api && api.fsAPI.isFullscreen)}"
+      (click)="fullscreen.next()"> -->
+
+    <app-custom-button [buttonClass]="{'transparent no-shadow quiz-fullscreen':true, 'skip-fullscreen':api && api.fsAPI.isFullscreen}"
+      showIconBefore=true [iconClass]="(api && api.fsAPI.isFullscreen)?'icon-fullscreen-exit':'icon-fullscreen'" (buttonClickEvent)="fullscreen.next()"
+      [buttonText]="(api && api.fsAPI.isFullscreen)?'exitFullscreen':'fullscreen'"></app-custom-button>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div *ngIf="videoCompleted" class="footer">
+  <app-custom-button class="text-button explore" buttonClass="explore" showIconAfter=true iconClass="icon-chevron_right" buttonText="goToExplore"
+    (buttonClickEvent)="explore.next();">
+  </app-custom-button>
+</div>

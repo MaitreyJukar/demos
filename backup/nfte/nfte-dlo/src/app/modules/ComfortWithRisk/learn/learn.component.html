@@ -1,0 +1,83 @@
+<div class="scroll" [ngClass]="{'no-scroll':(learn.video.api && learn.video.api.fsAPI.isFullscreen || false),'isFireFox':isFireFox, 'isIE':isIE, 'isEdge':isEdge, 'isSafari':isSafari,'isIpad':isIpad}"
+  #scrollParent appScroll sectionSelector=".scroll-section" [topOffset]="scrollTopOffset" (sectionChanged)="sectionChanged($event)">
+
+  <div id="section1" class="scroll-section" index="0">
+    <app-learn-intro #learnIntro [model]="learnIntroModel" [playAudioDefault]="playAudioDefault" (screenNavigation)="scrollDirective.scrollToSection(1)"
+      (defaultAudio)="setDefaultPlayAudio($event)"></app-learn-intro>
+  </div>
+
+  <div id="section2" class="scroll-section" index="1">
+    <div class="characteristics-heading">
+      <app-text textId="comfortable"></app-text>
+    </div>
+    <nav [ngClass]="{'isIpad':isIpad}">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+        <tabset class="tabset-container">
+          <tab (select)="onTabSelected(i)" *ngFor="let tab of modelData[1].tabs; let i = index">
+            <ng-template tabHeading>
+              <app-text [text]="tab.title"></app-text>
+              <div *ngIf="modelData[1].tabs.length - 1 !== i" class="border"></div>
+            </ng-template>
+            <app-tab-content [ngClass]="{'last-tab':modelData[1].tabs.length - 1 == i}" [heading]="tab.heading" [description]="tab.description" [audioSrc]="tab.audioSrc" [imgSrc]="tab.imgSrc"
+              [altText]="tab.imgAltText" (screenNavigation)="scrollDirective.scrollToSection(2)" (defaultAudio)="setDefaultPlayAudio($event)"></app-tab-content>
+          </tab>
+        </tabset>
+
+        <accordion class="accordion-container" [closeOthers]="true">
+          <accordion-group  *ngFor="let tab of modelData[1].tabs; let i = index">
+            <div accordion-heading (click)="onAccordianOpen(i)">
+              <app-text [text]="tab.title"></app-text>
+              <div class="down-arrow icon icon-chevron_down"></div>
+            </div>
+            <app-tab-content [heading]="tab.heading" [description]="tab.description" [audioSrc]="tab.audioSrc" [imgSrc]="tab.imgSrc"
+              [altText]="tab.imgAltText" (screenNavigation)="scrollDirective.scrollToSection(2)" (defaultAudio)="setDefaultPlayAudio($event)"></app-tab-content>
+          </accordion-group>
+        </accordion>
+      </div>
+    </nav>
+
+
+
+  </div>
+  <div id="section3" class="scroll-section" index="2">
+    <app-learn #learn></app-learn>
+    <div class="icon screen-navigation-button" (click)="goToSection(3)" [attr.aria-label]="getAccText('navigateToNextScreen')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span class="icon-chevron_down"></span>
+    </div>
+  </div>
+
+  <div id="section4" class="scroll-section" index="3">
+    <div class="icon screen-navigation-button" (click)="goToSection(4)" [attr.aria-label]="getAccText('navigateToNextScreen')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span class="icon-chevron_down"></span>
+    </div>
+    <app-drag-and-drop [model]="dndModel" #dnd [alignDragDrop]="1" [showResult]="dndModel.submited" [showCorrectAnswer]=!dnd1ShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel.submited}">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel.submited" [disabled]="!dndModel.attempted" [buttonClass]="{'scenario-submit': !dndModel.attempted, 'done': dndModel.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel.submit()"></app-custom-button>
+        <div *ngIf="dndModel.submited" class="feedback" [ngClass]="{'correct':dndModel.responseType === responseType.CORRECT, 'incorrect':dndModel.responseType === responseType.INCORRECT, 'partially-correct':dndModel.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd1ShowCorrectAnswer}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel.responseType === responseType.CORRECT, 'icon-check-cross':dndModel.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel.submited && dndModel.noOfTrials > 0 && dndModel.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel.resetData(); dnd.resetTilesPosition(); dnd.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel.submited && dndModel.noOfTrials === 0 && dndModel.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd1ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd1ShowCorrectAnswer = !dnd1ShowCorrectAnswer"></app-custom-button>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div id="section5" class="scroll-section" index="4">
+    <app-learn-example  #learnExample [model]="learnExampleModel" [playAudioDefault]="playAudioDefault" (screenNavigation)="scrollDirective.scrollToSection(0)"
+    (defaultAudio)="setDefaultPlayAudio($event)"></app-learn-example>
+  </div>
+</div>

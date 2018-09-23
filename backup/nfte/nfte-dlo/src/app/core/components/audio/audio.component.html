@@ -1,0 +1,18 @@
+<vg-player (onPlayerReady)="onPlayerReady($event)" (mousemove)="api.state!='paused'?onPointerMove(): null">
+  <vg-controls>
+    <vg-play-pause placement="right" (click)="playVideo()"></vg-play-pause>
+    <div #transcript class="icon-transcript" tabindex="0" (focus)="onFocus($event, true)" (blur)="onBlur($event, true)" role="button"
+      [attr.aria-label]="getAccText('transcript')" (click)="showTranscript()"></div>
+    <div class="more-controls" [ngClass]="{'showControls':showHiddenControls}">
+      <div class="more-control transcript">
+        <div class="icon-transcript control" (click)="showTranscript()"></div>
+        <app-text textId="transcript"></app-text>
+      </div>
+    </div>
+  </vg-controls>
+  <video #media [vgMedia]="media" id="singleVideo" preload="auto" playsinline webkit-playsinline>
+    <source [src]="audioData.src" [type]="audioData.type">
+  </video>
+</vg-player>
+<app-alert #brAlert title='transcript' noOfButtons=1 yesButtonText='download' (yesClickedEvent)="alertYesClicked()" 
+  [description]='transcriptData'></app-alert>

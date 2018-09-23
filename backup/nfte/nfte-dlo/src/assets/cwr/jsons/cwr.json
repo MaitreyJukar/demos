@@ -1,0 +1,614 @@
+{
+  "string-table": {
+    "alert": "Alert",
+    "cancel": "CANCEL",
+    "continue": "CONTINUE",
+    "done": "DONE",
+    "download": "DOWNLOAD",
+    "explore": "EXPLORE",
+    "endScenario": "END SCENARIO",
+    "goToExplore": "GO TO EXPLORE",
+    "IntroPopupButton": "LET'S GO",
+    "learn": "LEARN",
+    "no": "NO",
+    "previous": "PREVIOUS",
+    "print": "PRINT",
+    "quiz": "Quiz",
+    "quizReport": "Quiz Report",
+    "reset": "RESET",
+    "resume": "RESUME VIDEO",
+    "scenarioTitle": "",
+    "showCorrectAnswer": "SHOW CORRECT ANSWER",
+    "showYourAnswer": "SHOW YOUR ANSWER",
+    "skip": "SKIP QUESTION",
+    "skipped": "Not Answered",
+    "submit": "SUBMIT",
+    "submitAlertAllAttempted": "Are you sure you want to submit final answers?",
+    "submitAlertPartialAttempted": "You haven't answered all questions. Are you sure you want to submit?",
+    "submitQuiz": "SUBMIT QUIZ",
+    "take-quiz": "TAKE QUIZ",
+    "takeQuiz": "TAKE THE QUIZ",
+    "totalQuestions": "Total Questions",
+    "transcript": "Transcript",
+    "tryAgain": "TRY AGAIN",
+    "viewReport": "VIEW REPORT",
+    "yes": "YES",
+    "dloTitle": "Comfort with Risk",
+    "video-title": "Getting Comfortable with Risk",
+    "popup-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.Proin sodales pulvinar tempor.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate felis tellus mollis orci.",
+    "s1scene1Title": "Create and Innovate by Challenging the Usual",
+    "scenarioDesc": "Explore the entrepreneurial mindset of <br>comfort with risk in each of these scenarios.",
+    "s1scene1Point1": "State Your Challenge",
+    "s1scene1Point1Text": "I want to change how I play video games.",
+    "s1scene1Point2": "State Your Assumptions",
+    "s1scene1Point2Text": "Game systems can be home consoles or portable devices.",
+    "s1scene1Point3": "Challenge the Usual",
+    "s1scene1Point3Text": "Game systems don’t HAVE to be console-only or portable device-only.",
+    "s1scene1Point4": "Ask “What If?” Questions",
+    "s1scene1Point4Text": "What if my game system could convert between a portable system and a console system? How could I make that work?",
+    "fullscreen": "FULL SCREEN",
+    "exitFullscreen": "EXIT FULL SCREEN",
+    "comfortable": "Characteristics of Being Comfortable with Risk",
+    "scenarios": "Scenarios",
+    "caption": "Caption"
+  },
+  "assets": {
+    "images": [
+      "assets/cwr/gifs/Intro-variation.gif",
+      "assets/cwr/gifs/Custom Greeting Cards.gif",
+      "assets/cwr/gifs/Pet Grooming Service.gif",
+      "assets/cwr/gifs/Food Delivery Service.gif",
+      "assets/cwr/images/Intro-first-frame.png",
+      "assets/cwr/images/Characteristics-Determined.png",
+      "assets/cwr/images/Characteristics-Proactive.png",
+      "assets/cwr/images/Characteristics-Analytical.png",
+      "assets/cwr/images/Characteristics-Goal-Oriented.png",
+      "assets/cwr/images/Characteristics-Adaptable.png",
+      "assets/cwr/images/Jeff-Bazos.png",
+      "assets/cwr/images/Risk_Animation_Video-Thumbnail.png",
+      "assets/cwr/images/Custom-Greeting-Cards.png",
+      "assets/cwr/images/Custom-Greeting-Cards-first-frame.png",
+      "assets/cwr/images/Pet-Grooming-Service.png",
+      "assets/cwr/images/Pet-Grooming-Service-first-frame.png",
+      "assets/cwr/images/Food-Delivery-Service.png",
+      "assets/cwr/images/Food-Delivery-Service-first-frame.png"
+    ]
+  },
+  "acc-data": {
+    "playPause": "play pause",
+    "resume": "resume",
+    "transcript": "transcript",
+    "reset": "reset",
+    "previousLabel": "Previous",
+    "nextLabel": "Next",
+    "screenReaderPaginationLabel": "Pagination",
+    "screenReaderPageLabel": "question",
+    "screenReaderCurrentLabel": "You are on question",
+    "mute": "mute",
+    "fullscreen": "fullscreen",
+    "navigateToNextScreen":"Navigate to next screen",
+    "navigateToFirstScreen": "Navigate to first Screen",
+    "hideSubtitle":"Hide Subtitle",
+    "showSubtitle": "Show Subtitle",
+    "backToScenario": "Back to scenario"
+   },
+  "dlo": {
+    "learnSections": [
+      {
+        "imgSrc": "assets/cwr/gifs/Intro-variation.gif",
+        "imgFrame": "assets/cwr/images/Intro-first-frame.png",
+        "imgAltText": "A man walking on a tightrope with an umbrella in one hand and a briefcase in another.",
+        "headingText": "Comfort with Risk",
+        "descriptionText": "The capacity to move forward with a decision despite inevitable uncertainty and challenges",
+        "audioSrc": "cwr/audios/01-CWR-TL-intro-1.mp3",
+        "replayGif": false
+      },
+      {
+        "tabs": [
+          {
+            "title": "DETERMINED",
+            "heading": "Not deterred by the possibility of failure or loss",
+            "description": "Jaden is a pastry chef. He loves to experiment with creative and innovative desserts. In his early days as an entrepreneur, he often had clients who preferred traditional items, and his business nearly collapsed due to the negative reviews he received. However, Jaden was determined to create new items and make a success of it. He started advertising his creations as unique, one-of-a-kind desserts and slowly built up a customer base that truly appreciated his efforts.<br/> <br/>Go through the tabs to explore the qualities that make him a successful entrepreneur.",
+            "imgSrc": "assets/cwr/images/Characteristics-Determined.png",
+            "imgAltText": "A pastry chef",
+            "audioSrc": "cwr/audios/02-CWR-TL-characteristics-1.mp3"
+          },{
+            "title": "PROACTIVE",
+            "heading": "Implement strategies to anticipate and reduce risk",
+            "description": "The price of raw materials often varies and can affect the amount of profit a business makes. This is especially true for some of the exotic ingredients that Jaden imports. To minimize this risk, Jaden has an annual contract with his vendor for purchasing materials at a fixed rate.",
+            "imgSrc": "assets/cwr/images/Characteristics-Proactive.png",
+            "imgAltText": "Graph with dotted line indicating price fluctuation and solid line with a contract at the end.",
+            "audioSrc": "cwr/audios/05-CWR--TL-characteristics-2.mp3"
+          },{
+            "title": "ANALYTICAL",
+            "heading": "Weigh potential benefits and tradeoffs or costs",
+            "description": "A fancy school in France offers a course in culinary arts that Jaden would love to attend. Jaden carefully considers the costs – travel, school fees, and living in France for the duration of the course. On the other hand, with an expanded skill set and a fancy degree in hand, he could continue pursuing his passion for making innovative desserts and target a more sophisticated customer base. Jaden calculates that it would take him less than a year to cover the costs. The benefits outweigh the costs. And off he goes!",
+            "imgSrc": "assets/cwr/images/Characteristics-Analytical.png",
+            "imgAltText": "Weighing scale with a dollar sign and a certificate that has more weight.",
+            "audioSrc": "cwr/audios/06-CWR-TL-characteristics-3.mp3"
+          },{
+            "title": "GOAL - ORIENTED",
+            "heading": "Develop a plan to achieve goals regardless of obstacles",
+            "description": "Jaden has ambitions to become world renowned in his field. His immediate goals are to participate in an international pastry contest within a year or work for 3 months under a pastry chef who already has an international acclaim.",
+            "imgSrc": "assets/cwr/images/Characteristics-Goal-Oriented.png",
+            "imgAltText": "Chef with globe in his hand",
+            "audioSrc":"cwr/audios/07-CWR-TL-characteristics-4.mp3"
+          },{
+            "title": "ADAPTABLE",
+            "heading": "Willingly change course in pursuit of new opportunities",
+            "description": "After years of specializing in pastries, Jaden is now approached by a wealthy retired man with the offer of becoming a partner in a new restaurant. The man would finance the restaurant and Jaden would run it. After carefully considering the offer, Jaden decides he is willing to risk changing course from being a specialist pastry chef to becoming a chef-owner!",
+            "imgSrc": "assets/cwr/images/Characteristics-Adaptable.png",
+            "imgAltText": "Arrow indicating straight path, suddenly veering off towards right.",
+            "audioSrc": "cwr/audios/08-CWR-TL-characteristics-5.mp3"
+          }
+        ]
+      },
+      {},
+      {
+        "type": 5,
+        "singledrop": true,
+        "inline": false,
+        "allowRetrial": true,
+        "checkAllDropped": true,
+        "noOfTrials": 2,
+        "groups": [
+          {
+            "id": "0",
+            "group": "1"
+          },
+          {
+            "id": "1",
+            "group": "2"
+          },
+          {
+            "id": "2",
+            "group": "3"
+          },
+          {
+            "id": "3",
+            "group": "4"
+          }
+        ],
+        "question": {
+          "text": "Rank the actions from most calculated risk (1) to least calculated risk (4).",
+          "arrCorrectOption": [
+            0,
+            3,
+            2,
+            1
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "Sally earns more money running photography workshops on weekends than she does at her weekday job. She quits her weekday job to offer workshops full-time."
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "Alex takes out a very large loan to start his car detailing business even though he doesn't understand all of the costs of running his business."
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "Mike spends money on several expensive suits to impress potential business clients during lunch meetings."
+          },
+          {
+            "id": "3",
+            "type": "text",
+            "option": "Kathy develops a new music app in her spare time after work because she thinks people will buy it."
+          }
+        ],
+        "feedbackObj": [
+          {
+            "correct": "That’s right! You’ve ranked the actions correctly from most calculated risk (1) to least calculated risk (4).",
+            "inCorrect": "That’s not it. Try Again.",
+            "partiallyCorrect": "That’s not it. Try Again."
+          },
+          {
+            "correct": "That’s right! You’ve ranked the actions correctly from most calculated risk (1) to least calculated risk (4).",
+            "inCorrect": "That’s not it. Sally is extremely likely to earn more by making her profitable weekend business full-time. Kathy develops a new app. Mike’s expensive business suit may or may not impress his business clients. Alex has taken a large debt without analyzing costs, so his behavior is impulsive.",
+            "partiallyCorrect": "That’s not it. Sally is extremely likely to earn more by making her profitable weekend business full-time. Kathy develops a new app. Mike’s expensive business suit may or may not impress his business clients. Alex has taken a large debt without analyzing costs, so his behavior is impulsive."
+          }
+        ]
+      },
+      {
+        "imgSrc": "assets/cwr/images/Jeff-Bazos.png",
+        "imgAltText": "Image of Jeff Bezos",
+        "headingText": "A man comfortable with risk",
+        "descriptionText": "One example of an entrepreneur who has been comfortable with risk is Jeff Bezos.</br></br>Bezos had a comfortable well-paying job on Wall Street. When he realized that the web was growing at a phenomenal rate, he recognized an opportunity. He took a tremendous risk by quitting his job to launch an online book store, Amazon.com.</br></br> At the time, many experts thought an online book store would fail. However, over the years, not only did Amazon become one of the largest retail companies in the world, Bezos’s empire has also expanded to newspapers, a rocket company, a grocery giant, health care, and more.</br></br>This phenomenal success has been possible due to Bezos’s entrepreneurial mindset characterized by his comfort with risk.",
+        "audioSrc": "cwr/audios/02-CWR-TL-example.mp3",
+        "replayGif": false
+      }
+    ],
+    "learn": {
+      "videoSrc": "assets/cwr/videos/Risk_Animation_HD.mp4",
+      "cuePointFile": "assets/cwr/cue-points.vtt",
+      "subtitle": "assets/cwr/subtitles/Risk_Animation_Video.vtt",
+      "transcript": "assets/cwr/transcripts/learnVideo.txt",
+      "poster": "assets/cwr/images/Risk_Animation_Video-Thumbnail.png",
+      "questions": []
+    },
+    "explore": {
+      "scenarios": [
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/cwr/images/Custom-Greeting-Cards.png",
+          "scenarioDesc": "",
+          "title": "Custom Greeting Cards",
+          "navigationURL": "scenario1",
+          "altText": "White paper with pencil and scissors",
+          "scenes": [
+            {
+              "imgSrc": "assets/cwr/gifs/Custom Greeting Cards.gif",
+              "imgFrame": "assets/cwr/images/Custom-Greeting-Cards-first-frame.png",
+              "title": "Custom Greeting Cards",
+              "description": "Amy loves making greeting cards. Her friends and family love receiving cards from her because they are truly unique. In fact, many of them gift her raw materials such as card paper, colors, and decorative material to encourage her talent.</br></br>She now wants to turn her hobby into a business, selling handmade and printed greeting cards. She has a small home computer. However, to design digital cards, she would need to invest in resources such as a better computer, a high-quality color printer and a greeting card or desktop publishing software. To attract local business, she would also like to rent an office downtown.</br></br>Amy is excellent at drawing and making her own illustrations. She is considering using some of her unique work for advertising purposes but worries that others may copy it. Help Amy make decisions to identify and reduce some of the risks in her new business.",
+              "audioSrc": "cwr/audios/12-CWR-TL-explore-scenario-1.mp3",
+              "altText": "White paper with pencil and scissors",
+              "gifDuration": 3000,
+              "replayGif": true
+            },
+            {
+              "question": {
+                "text": "How would Amy reduce risk associated with startup costs?"
+              },
+              "options": [
+                {
+                  "frontText": "Sell cards at a 10% discount to attract customers.",
+                  "backText": "Selling cards at discounted rates would not help Amy cover her costs. She may incur loss by selling her cards at a lower cost.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Initially work on her small home computer instead of buying a new one.",
+                  "backText": "Prioritizing spending by postponing the purchase of expensive equipment is a good way to reduce risk.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Promise to deliver cards ahead of delivery time.",
+                  "backText": "Delivering cards early would not reduce her spending. It would only add stress to her work schedule.",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "question": {
+                "text": "It would be easy for a competitor to copy Amy's unique cards. How could Amy make sure that her key intellectual property is protected?"
+              },
+              "options": [
+                {
+                  "frontText": "Make her cards so unique that anybody could tell that they were designed by her.",
+                  "backText": "This may be a good idea but having a legal registration of your business is always the best option.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Sell her cards only to people she knows in town to prevent thieves from seeing them.",
+                  "backText": "Amy won’t get potential clients by selling her cards only to people she knows.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Register her cards at the US Copyright Office in case she ever needs to file a lawsuit.",
+                  "backText": "By having a copyright for her designs, she can ensure that no one imitates her designs. Also she can then take legal action against those who try to copy her work.",
+                  "correct": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/cwr/images/Pet-Grooming-Service.png",
+          "scenarioDesc": "",
+          "title": "Pet Grooming Service",
+          "navigationURL": "scenario2",
+          "altText": "Dog in a bath tub",
+          "scenes": [
+            {
+              "imgSrc": "assets/cwr/gifs/Pet Grooming Service.gif",
+              "imgFrame": "assets/cwr/images/Pet-Grooming-Service-first-frame.png",
+              "title": "Pet Grooming Service",
+              "description": "John works at a pet salon. He is thinking of quitting his job to start his own business - a pet grooming service. He plans on setting up his business in a van and providing a door to door service. This would save pet owners the trouble of bringing their pets to a salon. Driving around would also help him reach customers in a larger area.</br></br>John has already decided on a name for his company - Classy Care Grooming. He hopes this is a unique name.</br>John does not have a large amount to invest and is eager to start earning as soon as possible. However, the legal formalities seem never-ending.",
+              "audioSrc": "cwr/audios/12-CWR-TL-explore-scenario-2.mp3",
+              "altText": "Dog in a bath tub",
+              "gifDuration": 5500,
+              "replayGif": true
+            },
+            {
+              "question": {
+                "text": "What can John do to avoid some legal risks when starting a new business?"
+              },
+              "options": [
+                {
+                  "frontText": "Start the business right away, but avoid advertising until all the legal formalities are complete.",
+                  "backText": "It is risky to start without completing legal formalities. Also, John may not be able to attract customers without advertising.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Complete all the legal procedures to register his business and obtain required licenses before startup.",
+                  "backText": "Registering the business is crucial to avoiding legal risk.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Start the business first, then see from experience whether all the legal formalities are needed.",
+                  "backText": "Not following government regulations is highly risky.",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "question": {
+                "text": "What can John do to make sure he isn’t using someone else's intellectual property?"
+              },
+              "options": [
+                {
+                  "frontText": "Perform a name availability search before filing the name of his company.",
+                  "backText": "Checking to make sure a competitor is not using the same name is a vital step in starting a business.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Check with family and friends to see if they have ever heard of a company with the same name.",
+                  "backText": "Asking people you know about whether a competitor is using the name you want could be a good place to start. However, it is important to do a more thorough name search.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Spell the name in an unusual way to reduce the chance that another company is already using it.",
+                  "backText": "Many businesses use unusual spelling in their names. You cannot assume that your name is unique for any reason.",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/cwr/images/Food-Delivery-Service.png",
+          "scenarioDesc": "",
+          "title": "Food Delivery Service",
+          "navigationURL": "scenario3",
+          "altText": "Delivery scooter",
+          "scenes": [
+            {
+              "imgSrc": "assets/cwr/gifs/Food Delivery Service.gif",
+              "imgFrame": "assets/cwr/images/Food-Delivery-Service-first-frame.png",
+              "title": "Food Delivery Service",
+              "description": "Martin would like to start his own food delivery service, which would pick up food from any restaurant and deliver it to a customer’s doorstep. He is extremely excited. He knows that many people in his town do not cook regularly and would welcome the idea of a food delivery service. He is also in talks with a number of restaurant owners about having his service deliver orders on their behalf.</br></br>Martin already has a two-wheeler, and can easily attach a delivery box on it. He feels his startup expenditures are negligible, and he can start right away.",
+              "audioSrc": "cwr/audios/12-CWR-TL-explore-scenario-3.mp3",
+              "altText": "Delivery scooter",
+              "replayGif":false
+            },
+            {
+              "question": {
+                "text": "What can Martin do to reduce risk prior to the launch of his business?"
+              },
+              "options": [
+                {
+                  "frontText": "Launch a large-scale advertising campaign to attract new customers as quickly as possible.",
+                  "backText": "Advertising is a good way to attract customers. However, spending money on a big campaign up front is risky as it will increase startup costs.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Hire a fleet of drivers so that he is able to handle as many customers as he can attract.",
+                  "backText": "Staffing up without knowing whether he needs to is risky. Without careful planning, Martin may hire more resources than required and lose money.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Closely analyze his expenses and projected income to see if he is likely to make a profit.",
+                  "backText": "Planning up front is a smart way to reduce risk. Having a business model in place will help Martin make informed decisions and reduce risks.",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "question": {
+                "text": "What could Martin do up front to help validate his assumptions with his business?"
+              },
+              "options": [
+                {
+                  "frontText": "Conduct a survey of people in his town to find out whether they would pay money for his service.",
+                  "backText": "An important strategy entrepreneurs use to reduce risk is to validate their assumptions with real data. It is vital to know whether customers will pay money for your product or service.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Hire an artist to paint a beautiful logo on his scooter to make sure his business looks professional.",
+                  "backText": "Making a business look professional is important, but this is no guarantee that customers will pay money for your product or service. Asking customers directly is a good way to find out.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Go around town and put flyers on people's doors so that they know he is starting this service.",
+                  "backText": "Using direct advertising by giving out flyers is a good way to attract potential customers, but this is no guarantee that customers will pay money for your product or service. Asking customers directly is a good way to find out.",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "type": 5,
+        "singledrop": true,
+        "isClone": false,
+        "inline": true,
+        "inlineText": "Comfort with risk is the capacity to <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 180px; height: 115px;\"></div></div></div></div>with a decision despite inevitable uncertainty and <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 180px; height: 115px;\"></div></div></div></div>.",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          },
+          {
+            "id": "1",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "<div class=\"bold-weight\">Drag and drop the options that best complete the statement.</div>",
+          "arrCorrectOption": [
+            -1,
+            0,
+            -1,
+            -1,
+            1
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "strategize"
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "move forward"
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "failure"
+          },
+          {
+            "id": "3",
+            "type": "text",
+            "option": "get comfortable"
+          },
+          {
+            "id": "4",
+            "type": "text",
+            "option": "challenges"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "Incorrect. Comfort with risk is the capacity to move forward with a decision despite inevitable uncertainty and challenges. ",
+          "partiallyCorrect": "Nice try! You are partially correct. Comfort with risk is the capacity to move forward with a decision despite inevitable uncertainty and challenges."
+        }
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "Which among the following is a characteristic of an entrepreneur who is comfortable with risk?",
+          "correctOption": "2"
+        },
+        "options": [
+          {
+            "option": "Keeps an optimistic outlook and avoids thinking of potential risks",
+            "feedback": "Incorrect. An entrepreneur who is comfortable with taking risks uses strategies such as careful budgeting, validating assumptions with real data, and following legal guidelines to reduce risk."
+          },
+          {
+            "option": "Prefers traditional methods and avoids new or innovative ideas",
+            "feedback": "Incorrect. An entrepreneur who is comfortable with taking risks uses strategies such as careful budgeting, validating assumptions with real data, and following legal guidelines to reduce risk."
+          },
+          {
+            "option": "Uses strategies to anticipate and reduce risk",
+            "feedback": "Correct."
+          },
+          {
+            "option": "Takes quick decisions based on impulse",
+            "feedback": "Incorrect. An entrepreneur who is comfortable with taking risks uses strategies such as careful budgeting, validating assumptions with real data, and following legal guidelines to reduce risk."
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 2,
+        "question": {
+          "text": "Why is it important to take calculated risks instead of impulsive risks?</br><div class=\"bold-weight\">Select all options that apply.<div>",
+          "arrCorrectOption": [
+            0,
+            2,
+            3
+          ]
+        },
+        "options": [
+          {
+            "option": "To better understand how a business could fail"
+          },
+          {
+            "option": "To guarantee that a business will be successful"
+          },
+          {
+            "option": "To reduce the level of risk in starting a business"
+          },
+          {
+            "option": "To improve the chance of making good business decisions"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "Incorrect. Calculated risks help better understand how a business could fail, reduce the level of risk in starting a business, and improve the chance of making good business decisions.",
+          "partiallyCorrect": "Nice try! You are partially correct. Calculated risks help better understand how a business could fail, reduce the level of risk in starting a business, and improve the chance of making good business decisions."
+        },
+        "selected": []
+      },
+      {
+        "type": 2,
+        "question": {
+          "text": "What are some ways entrepreneurs can anticipate and reduce risks when starting a new business?<div class=\"bold-weight\">Select all options that apply.</div>",
+          "arrCorrectOption": [
+            0,
+            2,
+            4,
+            5
+          ]
+        },
+        "options": [
+          {
+            "option": "Prioritize startup spending"
+          },
+          {
+            "option": "Make decisions based on gut feelings"
+          },
+          {
+            "option": "Validate assumptions with real data"
+          },
+          {
+            "option": "Act quickly to start up the business"
+          },
+          {
+            "option": "Perform a name availability search"
+          },
+          {
+            "option": "Research relevant legal issues"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "Incorrect. Some ways to anticipate and reduce risks when starting a new business are to prioritize startup spending, validate assumptions with real data, perform a name availability search, and research relevant legal issues.",
+          "partiallyCorrect": " Nice try! You are partially correct. Some ways to anticipate and reduce risks when starting a new business are to prioritize startup spending, validate assumptions with real data, perform a name availability search, and research relevant legal issues."
+        },
+        "selected": []
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "Which of the following best describes a person with an entrepreneurial mindset of being comfortable with risk?",
+          "correctOption": "3"
+        },
+        "options": [
+          {
+            "option": "Works hard until a task is complete",
+            "feedback": "Incorrect. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks."
+          },
+          {
+            "option": "Sets up organized processes to maintain a smooth workflow",
+            "feedback": "Incorrect. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks."
+          },
+          {
+            "option": "Follows a predefined path to reach a goal without any changes",
+            "feedback": "Incorrect. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks."
+          },
+          {
+            "option": "Takes a calculated risk when confronted with obstacles",
+            "feedback": "Correct."
+          }
+        ],
+        "selected": -1
+      }
+    ]
+  }
+}

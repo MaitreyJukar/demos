@@ -1,0 +1,12 @@
+<div *ngIf='!dataLoaded' class="activity-main-container">
+  <div class="alignment-div"></div>
+  <img src="./assets/common/images/preloader.gif">
+</div>
+<div *ngIf="dataLoaded" class="dlo-container">
+
+    <app-header (buttonClickEvent)="introPopUp.show()" dloName="dloTitle"></app-header>
+    <app-tab-bar></app-tab-bar>
+    <!-- <app-popup #introPopUp></app-popup> -->
+
+  <router-outlet></router-outlet>
+</div>

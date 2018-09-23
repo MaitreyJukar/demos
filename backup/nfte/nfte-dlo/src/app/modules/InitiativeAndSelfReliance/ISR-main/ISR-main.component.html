@@ -1,0 +1,18 @@
+<div *ngIf='!dataLoaded' class="activity-main-container isr loader">
+  <div class="alignment-div"></div>
+  <img src="./assets/common/images/preloader.gif">
+</div>
+<div *ngIf="dataLoaded" class="dlo-container activity-main-container isr" [ngClass]="{'isIE':isIE, 'isEdge':isEdge, 'isFireFox':isFireFox, 'isAndroid':isAndroid}">
+  <header>
+    <app-header dloName="dloTitle"></app-header>
+  </header>
+  <nav>
+    <app-tab-bar></app-tab-bar>
+  </nav>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>
+<div *ngIf="imagesDataReady" class="preload-images">
+  <img [src]="images[currentImage]" (load)="onImageLoad()">
+</div>

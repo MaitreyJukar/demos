@@ -1,0 +1,4 @@
+<div class = 'explore-container faa-explore' [ngClass]="{'hide-bottom-bar': router.url === '/FAA/explore','isSafari':isSafari, 'isIE':isIE, 'isEdge':isEdge, 'isFireFox':isFireFox}">	
+    <router-outlet></router-outlet>
+    <app-custom-button buttonClass="scenarios-back" buttonText="scenarios" showIconBefore=true iconClass="icon-back" (buttonClickEvent)="backToScenarios()"></app-custom-button>	
+ </div>

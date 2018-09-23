@@ -1,0 +1,133 @@
+@import './../../../../constants.scss';
+@import './../../../../vertical-scroll-common.scss';
+
+#section3 {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#section4 {
+    font-family: "Roboto";
+}
+
+.characteristics-heading {
+    font-size: 30px;
+}
+
+.no-scroll {
+    height: 100vh;
+    #section3 {
+        opacity: 1;
+        pointer-events: initial;
+    }
+}
+
+app-learn {
+    width: 100%;
+    .dlo-learn {
+        max-width: 100%;
+    }
+}
+
+.bottom-bar {
+    bottom: 0px;
+    width: inherit;
+    background-color: $white;
+    padding-right: 25px;
+
+    .align-content-center {
+        justify-content: center;
+    }
+}
+
+.align-content-center {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+}
+
+.bottom-bar {
+    width: 100%;
+}
+
+.fixed-to-bottom {
+    border-top: 1px solid $scenario-bottom-border-color;
+    bottom: 0px;
+    align-items: center;
+    .align-content-center {
+        justify-content: space-between;
+    }
+}
+
+.feedback {
+    color: $incorrect-user-answer-text;
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    margin-right: 12px;
+    .feedback-icon {
+        padding-right: 8px;
+        height: 20px;
+        font-size: 20px;
+    }
+}
+
+.hide-feedback {
+    visibility: hidden;
+    height: 0;
+}
+
+.feedback.correct {
+    color: $correct-answer-color;
+    visibility: visible;
+}
+
+.feedback.partially-correct {
+    color: $partially-correct-answer-color;
+}
+
+@mixin freeScroll() {
+    .scroll-section {
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        pointer-events: initial;
+    }
+    .scroll-section.active {
+        box-shadow: none;
+    }
+    .screen-navigation-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax) {
+    .isIpad {
+        #section2 {
+            .characteristics-heading {
+                font-size: 28px;
+                padding: 20px 10px;
+            }
+        }
+    }
+    text-align:center;
+    padding-bottom:10px;
+    @media screen and (max-height:$tabletMinHeight) {
+        .isAndroid :host {
+            @include freeScroll();
+        }
+    }
+    @media screen and (max-height:$tabletPortraitMin) {
+        :host {
+            @include freeScroll();
+        }
+    }
+}
+
+

@@ -1,0 +1,36 @@
+<div class="learn-wrapper">
+
+  <div class="left-section">
+    <app-audio #audioPlayer [playDefault]="playAudioDefault" [audioSrc]="model.scene[0].audioSrc"></app-audio>
+    <div class="icon play-pause-btn" (click)="isAudioPlaying?playAudio():pauseAudio()" [attr.aria-label]="getAccText('playPause')"
+      tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span [ngClass]="{'icon-volume-mute':!isAudioPlaying
+    , 'icon-volume':isAudioPlaying }"></span>
+    </div>
+    <div class="heading">
+      <app-text [text]="model.scene[0].heading"></app-text>
+    </div>
+    <div class="description">
+      <app-text [text]="model.scene[0].description"></app-text>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="question-wrapper">
+      <app-text [text]="model.question.text"></app-text>
+    </div>
+    <div class="cards-container">
+      <app-card-with-option [model]="model.options[i]" (cardClicked)="handleCardClick($event)" *ngFor="let card of model.options; let i=index">
+        
+      </app-card-with-option>
+    </div>
+
+  </div>
+
+</div>
+<div class='button-parent'>
+  <div class="icon screen-navigation-button" [ngClass]="{'screen-up':screenUp}" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('playPause')"
+    tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+    <span [ngClass]="screenUp?'icon-chevron_up':'icon-chevron_down'"></span>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="scroll" [ngClass]="{'no-scroll':(learn.video.api && learn.video.api.fsAPI.isFullscreen || false),'isFireFox':isFireFox, 'isIE':isIE, 'isEdge':isEdge, 'isSafari':isSafari,'isIpad':isIpad}"
+  #scrollParent appScroll sectionSelector=".scroll-section" [topOffset]="scrollTopOffset" (sectionChanged)="sectionChanged($event)">
+
+  <div id="section1" class="scroll-section">
+    <app-learn-intro #learnIntro [model]="learnIntroModel" [playAudioDefault]="playAudioDefault" (screenNavigation)="scrollDirective.scrollToSection(1)"
+      (defaultAudio)="setDefaultPlayAudio($event)"></app-learn-intro>
+  </div>
+
+  <div id="section2" class="scroll-section">
+    <app-carousel #carousel [model]="carouselModel" [playAudioSlideChange]="allowCarouselPlayAudio" (defaultAudio)="setDefaultPlayAudio($event)" (screenNavigation)="scrollDirective.scrollToSection(2)"></app-carousel>
+  </div>
+  <div id="section3" class="scroll-section">
+    <app-learn #learn [jsonText]="modelData[2]"></app-learn>
+    <div class="icon screen-navigation-button" (click)="goToSection(3)" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span class="icon-chevron_down"></span>
+    </div>
+  </div>
+
+  <div id="section4" class="scroll-section">
+    <app-learn-card-question #cardOption [model]="modelData[3]" [playAudioDefault]="playAudioDefault" (screenNavigation)="scrollDirective.scrollToSection(4)"
+    (defaultAudio)="setDefaultPlayAudio($event)"></app-learn-card-question>
+  </div>
+
+  <div id="section5" class="scroll-section">
+    <app-learn-example #learnExample [model]="learnExampleModel" [playAudioDefault]="playAudioDefault" (screenNavigation)="scrollDirective.scrollToSection(0)"
+      (defaultAudio)="setDefaultPlayAudio($event)"></app-learn-example>
+  </div>
+</div>

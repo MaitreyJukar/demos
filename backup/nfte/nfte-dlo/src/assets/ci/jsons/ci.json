@@ -1,0 +1,1041 @@
+{
+  "string-table": {
+    "alert": "Alert",
+    "cancel": "CANCEL",
+    "continue": "CONTINUE",
+    "done": "DONE",
+    "download": "DOWNLOAD",
+    "explore": "EXPLORE",
+    "endScenario": "END SCENARIO",
+    "goToExplore": "GO TO EXPLORE",
+    "IntroPopupButton": "LET'S GO",
+    "learn": "LEARN",
+    "no": "NO",
+    "previous": "PREVIOUS",
+    "print": "PRINT",
+    "quiz": "Quiz",
+    "quizReport": "Quiz Report",
+    "reset": "RESET",
+    "resume": "RESUME VIDEO",
+    "scenarioTitle": "Select a Scenario",
+    "showCorrectAnswer": "SHOW CORRECT ANSWER",
+    "showYourAnswer": "SHOW YOUR ANSWER",
+    "skip": "SKIP QUESTION",
+    "skipped": "Not Answered",
+    "submit": "SUBMIT",
+    "submitAlertAllAttempted": "Are you sure you want to submit final answers?",
+    "submitAlertPartialAttempted": "You haven't answered all questions. Are you sure you want to submit?",
+    "submitQuiz": "SUBMIT QUIZ",
+    "take-quiz": "TAKE QUIZ",
+    "takeQuiz": "TAKE THE QUIZ",
+    "totalQuestions": "Total Questions",
+    "transcript": "Transcript",
+    "tryAgain": "TRY AGAIN",
+    "viewReport": "VIEW REPORT",
+    "yes": "YES",
+    "dloTitle": "Creativity and Innovation",
+    "video-title": "Watch this video to learn how NFTE alum Angela Ivana used creativity and innovation to become a successful entrepreneur. <br><b>Click on the hotspots as they appear to learn more about Angela’s use of this skill.</b>",
+    "popup-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.Proin sodales pulvinar tempor.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate felis tellus mollis orci.",
+    "s1scene1Title": "Create and Innovate by Challenging the Usual",
+	"scenarioDesc" : "Explore these three scenarios to find out how entrepreneurs use creativity and innovation by 'challenging the usual,' creating idea maps, and using brainstorming techniques.",
+    "s1scene1Point1": "State Your Challenge",
+    "s1scene1Point1Text": "I want to change how I play video games.",
+    "s1scene1Point2": "State Your Assumptions",
+    "s1scene1Point2Text": "Game systems can be home consoles or portable devices.",
+    "s1scene1Point3": "Challenge the Usual",
+    "s1scene1Point3Text": "Game systems don’t HAVE to be console-only or portable device-only.",
+    "s1scene1Point4": "Ask “What If?” Questions",
+    "s1scene1Point4Text": "What if my game system could convert between a portable system and a console system? How could I make that work?",
+	"fullscreen": "FULL SCREEN",
+	"exitFullscreen": "EXIT FULL SCREEN"
+  },
+  "assets": {
+    "images": [
+      "assets/ci/images/NFTE_DLO_02_Intro_scenario_01_videoGames.png",
+      "assets/ci/images/NFTE_DLO_02_Intro_scenario_02_fitness.png",
+      "assets/ci/images/NFTE_DLO_02_Intro_scenario_03_StickyeNotes.png",
+      "assets/ci/images/NFTE_DLO_02_scenario_01_videoGames_image.png",
+      "assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_01.png",
+      "assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_02.png",
+      "assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_03.png",
+      "assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_04.png",
+      "assets/ci/images/orange.png",
+      "assets/ci/images/purple.png"
+    ]
+  },
+  "acc-data": {
+    "playPause": "play pause",
+    "resume": "resume",
+    "transcript": "transcript",
+    "reset": "reset",
+    "previousLabel": "Previous",
+    "nextLabel": "Next",
+    "screenReaderPaginationLabel": "Pagination",
+    "screenReaderPageLabel": "question",
+    "screenReaderCurrentLabel": "You are on question",
+    "mute": "mute",
+    "fullscreen": "fullscreen"
+  },
+  "dlo": {
+    "learn": {
+      "videoSrc": "assets/ci/videos/Angela Ivana_NFTE Story_hiRes.mp4",
+      "cuePointFile": "assets/ci/cue-points.vtt",
+      "subtitle": "assets/ci/subtitles/DLO_2_Intro_Video.vtt",
+      "transcript": "assets/ci/transcripts/DLO_2_Intro_Video.txt",
+	  "questions": [
+		{
+			"type": 7,
+			"question": {
+			  "text": "How do you feel about this statement? <br/>A creative and innovative mindset could help a person still succeed despite an economic downturn.",
+			  "isGradable":"false",
+			  "questionMode":"1"
+			},
+			"options": [
+			  {
+				"option": "Strongly Disagree"
+			  },
+			  {
+				"option": "Disagree"
+			  },
+			  {
+				"option": "Neither Agree nor Disagree"
+			  },
+			  {
+				"option": "Agree"
+			  },
+			  {
+				"option": "Strongly Agree"
+			  }
+			],
+			"selected": -1
+		},
+		{
+			"type": 1,
+			"question": {
+			  "text": "Do you think Angela Ivana could relate to the makeup professionals’ problems?",
+			  "isGradable":"false",
+			  "correctOption": "0"
+			},
+			"options": [
+					{
+						"option": "Yes",
+						"feedback": "Angela Ivana had a similar experience. Entrepreneurs often use creativity and innovation to solve problems they relate to."
+					},
+					{
+						"option": "No",
+						"feedback": "Angela Ivana had a similar experience. Entrepreneurs often use creativity and innovation to solve problems they relate to."
+					}
+				],
+				"selected": -1
+		},
+		{
+			"type": 1,
+			"question": {
+			  "text": "How did Angela Ivana use a creativity and innovation mindset?",
+			  "isGradable":"true",
+			  "correctOption": "1"
+			},
+			"options": [
+			  {
+				"option": "By creating a new brand of makeup for beauty professionals.",
+				"feedback": "Angela Ivana 'challenged the usual' to improve an outdated education system."
+			  },
+			  {
+				"option": "By challenging assumptions about beauty school education.",
+				"feedback": "Angela Ivana 'challenged the usual' to improve an outdated education system."
+			  }
+			],
+			"selected": -1
+		},
+		{
+			"type": 8,
+			"questionMode":"1",
+			"isGradable":"false",
+				"hotspotcoords":{
+				"size":"5vw",
+				"left":"45%",
+				"top":"65%",
+				"transform": "translate(-50%, -50%)"
+			},
+			"text": "Many successful entrepreneurs find it personally rewarding to use creativity and innovation to improve how things are done in the world."
+		}
+	  ]
+	},
+    "explore": {
+      "scenarios": [
+        {
+          "completed": false,
+          "description": "Demonstrate creativity and innovation by 'challenging the usual.'",
+          "imageSrc": "assets/ci/images/NFTE_DLO_02_Intro_scenario_01_videoGames.png",
+		  "scenarioDesc": "Watch this video to learn about how an entrepreneurial mindset can be used to grow an already successful industry.",
+          "title": "Scenario 1",
+          "navigationURL": "scenario1",
+          "scenes": [
+            {
+              "cuePointFile": "assets/ci/cue-points-scenario1.vtt",
+              "questions": [],
+              "videoSrc": "assets/ci/videos/S1 gaming update.mp4",
+              "subtitle": "assets/ci/subtitles/scenario1.vtt",
+              "transcript": "assets/ci/transcripts/scenario1.txt"
+            },
+            {
+              "audioSrc": "ci/audios/DLO2_S06.mp3",
+              "transcriptSrc": "ci/transcripts/DLO2_S06.txt",
+              "instructionText": "Instructions"
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "e-Reader"
+                },
+                {
+                  "id": "1",
+                  "group": "UPF (Ultraviolet Protection Factor) Protective Swimwear"
+                },
+                {
+                  "id": "2",
+                  "group": "ATM (Automatic Teller Machine)"
+                },
+                {
+                  "id": "3",
+                  "group": "AirBnB Rental Service"
+                }
+              ],
+              "question": {
+                "text": "How did each of these successful innovations challenge the usual?",
+                "arrCorrectOption": [
+                  3,
+                  2,
+                  0,
+                  1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "What if I could stay at someone's home instead of a hotel when I travel?"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "What if I could do my banking from locations outside of the bank?"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "What if books could be stored and read on a portable device?"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "What if I didn’t have to wear sunscreen under my clothing?"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! You have matched each innovation to the question that would have challenged the usual before the innovation. E-readers challenged the usual of paper books. UPF Protective Swimwear challenged the usual of having to wear sunscreen to protect covered skin. ATMs challenged the usual of banking services only being provided inside of a bank. AirBnB Rental Service challenged the usual of travelers having to stay in and pay for hotels.",
+                  "inCorrect": "Try again. Think about what type of product would fill the need described by each question.",
+                  "partiallyCorrect": "Try again. Think about what type of product would fill the need described by each question."
+                },
+                {
+                  "correct": "Correct! You have matched each innovation to the question that would have challenged the usual before the innovation. E-readers challenged the usual of paper books. UPF Protective Swimwear challenged the usual of having to wear sunscreen to protect covered skin. ATMs challenged the usual of banking services only being provided inside of a bank. AirBnB Rental Service challenged the usual of travelers having to stay in and pay for hotels.",
+                  "inCorrect": "E-readers challenged the usual of paper books. UPF Protective Swimwear challenged the usual of having to wear sunscreen to protect covered skin. ATMs challenged the usual of banking services only being provided inside of a bank. AirBnB Rental Service challenged the usual of travelers having to stay in and pay for hotels.",
+                  "partiallyCorrect": "E-readers challenged the usual of paper books. UPF Protective Swimwear challenged the usual of having to wear sunscreen to protect covered skin. ATMs challenged the usual of banking services only being provided inside of a bank. AirBnB Rental Service challenged the usual of travelers having to stay in and pay for hotels."
+                }
+              ]
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "inlineText": "When you challenge the usual, you facilitate creativity and innovation by identifying current <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 175px; height: 65px;\"></div></div></div> and asking <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 175px; height: 65px;\"></div></div></div> that challenge those assumptions.",
+              "groups": [
+                {
+                  "id": "0",
+                  "group": ""
+                },
+                {
+                  "id": "1",
+                  "group": ""
+                }
+              ],
+              "question": {
+                "text": "How does challenging the usual facilitate creativity and innovation? <div class=\"bold-weight\">Drag and drop the words into the statement and select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  -1,
+                  1,
+                  -1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "assumptions"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "challenges"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "questions"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "experts"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! When you challenge the usual, you identify assumptions and challenge the assumptions by asking “what if” questions",
+                  "inCorrect": "Try again.",
+                  "partiallyCorrect": "Try again."
+                },
+                {
+                  "correct": "Correct! When you challenge the usual, you identify assumptions and challenge the assumptions by asking “what if” questions",
+                  "inCorrect": "When you challenge the usual, you identify assumptions and challenge the assumptions by asking “what if” questions.",
+                  "partiallyCorrect": "When you challenge the usual, you identify assumptions and challenge the assumptions by asking “what if” questions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "Generate innovative ideas by using idea maps for creative thinking.",
+          "imageSrc": "assets/ci/images/NFTE_DLO_02_Intro_scenario_02_fitness.png",
+		  "scenarioDesc": "Watch this video to learn about how a successful industry has the potential to keep growing if entrepreneurs apply the mindset of creativity and innovation.",
+          "title": "Scenario 2",
+          "navigationURL": "scenario2",
+          "scenes": [
+            {
+              "videoSrc": "assets/ci/videos/S2 wearables update.mp4",
+              "subtitle": "assets/ci/subtitles/scenario2.vtt",
+              "transcript": "assets/ci/transcripts/scenario2.txt",
+              "cuePointFile": "assets/ci/cue-points-scenario2.vtt",
+              "questions": []
+            },
+            {
+              "audioSrc": "ci/audios/DLO2_S09.mp3",
+              "transcriptSrc": "ci/transcripts/DLO2_S09.txt",
+              "instructionText": "Instructions",
+			  "instructionScenario": "<b>Select each circle on the idea map to see how an entrepreneur might organize solutions to these problems to create an innovative product.</b>",
+              "backgroundImage": "assets/common/images/NFTE_DLO_01_scenario_02_DescBG.jpg",
+              "title": "Use Idea Maps for Creative Thinking",
+              "column1": {
+                "title": "Problems",
+                "points": [
+                  "Wrist straps are not durable",
+                  "Wrist straps are uncomfortable",
+                  "Display is hard to view in daylight",
+                  "Touch screen does not respond to sweaty fingertips",
+                  "Calorie measurement is not accurate"
+                ]
+              },
+              "column2": {
+                "image": "assets/common/images/NFTE_DLO_02_02_fitness_Diagram.png",
+                "ideaMapTitle": "New Fitness Tracker",
+                "circleOne": {
+                  "circleText": "Strap",
+                  "points": [
+                    "Different materials for wrist straps",
+                    "More options for strap styles"
+                  ]
+                },
+                "circleTwo": {
+                  "circleText": "Screen",
+                  "points": [
+                    "Improve technology for touch screen",
+                    "Improve contrast for display"
+                  ]
+                },
+                "circleThree": {
+                  "circleText": "Data",
+                  "points": [
+                    "New algorithm to calculate calorie usage"
+                  ]
+                }
+              }
+            },
+            {
+              "type": 5,
+              "singledrop": false,
+              "maxDroppables": "2",
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "tilesWithinImage": false,
+              "backgroundImage": [
+                "assets/common/images/scenario-2-question-1_with-text.png",
+                "assets/common/images/scenario-2-question-1_with-text-mobile.png"
+              ],
+              "audioSrc": "ci/audios/DLO2_S12.mp3",
+              "transcriptSrc": "ci/transcripts/DLO2_S12.txt",
+              "imageTitle": "New Headphones",
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "",
+                  "width": "31.5%",
+                  "height": "56%",
+                  "top": "45%",
+                  "left": "-0.2%",
+                  "leftMobile": "24%",
+                  "topMobile": "18.5%",
+                  "widthMobile": "73.7%",
+                  "heightMobile": "21.5%"
+                },
+                {
+                  "id": "1",
+                  "group": "",
+                  "width": "31.5%",
+                  "height": "56%",
+                  "top": "45%",
+                  "left": "34.2%",
+                  "leftMobile": "24%",
+                  "topMobile": "48%",
+                  "widthMobile": "73.7%",
+                  "heightMobile": "21.5%"
+                },
+                {
+                  "id": "2",
+                  "group": "",
+                  "width": "31.5%",
+                  "height": "56%",
+                  "top": "45%",
+                  "left": "68.8%",
+                  "leftMobile": "24%",
+                  "topMobile": "77.5%",
+                  "widthMobile": "73.7%",
+                  "heightMobile": "21.5%"
+                }
+              ],
+              "question": {
+                "text": "<div class=\"normal\"> Create an idea map of your own to organize solutions to common problems with headphones. </div>  <div class=\"bold-weight\"> Drag each word or phrase to the correct box, and select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  1,
+                  2,
+                  1,
+                  2,
+                  0
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Foldable"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Noise canceling"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Reinforced wire connections"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "Tight fit around ears"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "Metal instead of plastic"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "Flexible headband"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! You have matched each idea to the problem it addresses. Foldable or flexible headphones could improve portability, noise cancelling or tight-fitting headphones could reduce background noise, and reinforced connections and different materials could improve durability.",
+                  "inCorrect": "Foldable or flexible headphones could improve portability, noise cancelling or tight-fitting headphones could reduce background noise, and reinforced connections and different materials could improve durability.",
+                  "partiallyCorrect": "Try again. Each idea relates to a specific problem with current models of headphones."
+                },
+                {
+                  "correct": "Foldable or flexible headphones could improve portability, noise cancelling or tight-fitting headphones could reduce background noise, and reinforced connections and different materials could improve durability.",
+                  "inCorrect": "Foldable or flexible headphones could improve portability, noise cancelling or tight-fitting headphones could reduce background noise, and reinforced connections and different materials could improve durability.",
+                  "partiallyCorrect": "Foldable or flexible headphones could improve portability, noise cancelling or tight-fitting headphones could reduce background noise, and reinforced connections and different materials could improve durability."
+                }
+              ]
+            },
+            {
+              "type": 5,
+              "singledrop": false,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "tilesWithinImage": false,
+              "backgroundImage": "assets/common/images/scenario-2-question-1_with-text-mobile.png",
+              "imageTitle": "New Headphones",
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "",
+                  "width": "60%",
+                  "height": "20%",
+                  "top": "20.5%",
+                  "left": "35.5%"
+                },
+                {
+                  "id": "1",
+                  "group": "",
+                  "width": "60%",
+                  "height": "20%",
+                  "top": "49.5%",
+                  "left": "35.5%"
+                },
+                {
+                  "id": "2",
+                  "group": "",
+                  "width": "60%",
+                  "height": "20%",
+                  "top": "78%",
+                  "left": "35.5%"
+                }
+              ],
+              "question": {
+                "text": "<div class=\"bold-weight\"> Create an idea map of your own to organize solutions to common problems with headphones. </div>  <div class=\"bold-weight\"> Drag each word or phrase to the correct box, and select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  1,
+                  2,
+                  1,
+                  2,
+                  0
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Foldable"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Noise canceling"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Reinforced wire connections"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "Tight fit around ears"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "Metal instead of plastic"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "Flexible headband"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Try again.",
+                  "partiallyCorrect": "Try again."
+                },
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Solve a problem that stems from customer pain points and create a new product that solves the problem.",
+                  "partiallyCorrect": "Solve a problem that stems from customer pain points and create a new product that solves the problem."
+                }
+              ]
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "inlineText": "Entrepreneurs use idea maps to organize information by identifying <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 175px; height: 65px;\"></div></div></div>  and potential <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 175px; height: 65px;\"></div></div></div>  that could lead to <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"2\" data-id=2 style=\"width: 175px; height: 65px;\"></div></div></div>.",
+              "groups": [
+                {
+                  "id": "0",
+                  "group": ""
+                },
+                {
+                  "id": "1",
+                  "group": ""
+                },
+                {
+                  "id": "2",
+                  "group": ""
+                }
+              ],
+              "question": {
+                "text": "How do idea maps help facilitate the entrepreneurial mindset of creativity and innovation?",
+                "arrCorrectOption": [
+                  -1,
+                  2,
+                  0,
+                  1,
+                  -1,
+                  -1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "assumptions"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "innovation"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "problems"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "solutions to problems"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "innovations to assumptions"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "solutions to innovations"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! Idea maps are an effective way to organize information. By clearly organizing problems and solutions, an entrepreneur can more easily brainstorm innovations to solve the problems.",
+                  "inCorrect": "Incorrect. Idea maps are an effective way to organize information. By clearly organizing problems and solutions, an entrepreneur can more easily brainstorm innovations to solve the problems.",
+                  "partiallyCorrect": "You can use an idea map to organize ideas around a central theme and identify potential areas for innovation based on problems with current products."
+                },
+                {
+                  "correct": "Correct! Idea maps are an effective way to organize information. By clearly organizing problems and solutions, an entrepreneur can more easily brainstorm innovations to solve the problems.",
+                  "inCorrect": "Incorrect. Idea maps are an effective way to organize information. By clearly organizing problems and solutions, an entrepreneur can more easily brainstorm innovations to solve the problems.",
+                  "partiallyCorrect": "You can use an idea map to organize ideas around a central theme and identify potential areas for innovation based on problems with current products."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "Use brainstorming techniques to enhance creativity and innovation.",
+          "imageSrc": "assets/ci/images/NFTE_DLO_02_Intro_scenario_03_StickyeNotes.png",
+		  "scenarioDesc": "Watch this video to learn about how brainstorming with the creativity and innovation mindset resulted in the creation of a hugely successful product.",
+          "title": "Scenario 3",
+          "navigationURL": "scenario3",
+          "scenes": [
+            {
+              "videoSrc": "assets/ci/videos/S3 adhesive update.mp4",
+              "subtitle": "assets/ci/subtitles/scenario3.vtt",
+              "transcript": "assets/ci/transcripts/scenario3.txt",
+              "cuePointFile": "assets/ci/cue-points-scenario3.vtt",
+              "questions": []
+            },
+            {
+              "audioSrc": "ci/audios/DLO2_S16.mp3",
+              "transcriptSrc": "ci/transcripts/DLO2_S16.txt",
+              "instructionText": "Instructions",
+              "question": "What are the possible uses for repositionable adhesive?"
+            },
+            {
+              "audioSrc": "ci/audios/DLO2_S17.mp3",
+              "transcriptSrc": "ci/transcripts/DLO2_S17.txt",
+              "instructionText": "Instructions",
+              "question": "What are the possible uses for repositionable adhesive?",
+              "text": {
+                "stencils": "Flip Books",
+                "sectionsTabs": "Sections Tabs",
+                "crafts": "Lipstick Blotter",
+                "chartPaper": "Chart Paper",
+                "hangPictures": "Wall Calendar",
+                "drawerLabels": "Drawer Labels",
+                "bookmarks": "Bookmarks",
+                "temporaryTape": "Keyboard Cleaner",
+                "photoLabels": "Photo Labels",
+                "wallHooks": "Mural Tiles",
+                "verticalLine": "Vertical Line"
+              },
+              "leftColHeader": "Traditional Uses",
+              "rightColHeader": "Innovative Uses",
+              "imgVerticalLine": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_line.png",
+              "imgSectionTabs": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_sectionTabs.png",
+              "imgChartPaper": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_chartPaper.png",
+              "imgDrawerLabels": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_drawerLabels.png",
+              "imgBookmarks": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_bookmarks.png",
+              "imgPhotoLabels": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_photoLabels.png",
+              "imgStencils": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_stencils.png",
+              "imgWallHooks": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_wallHooks.png",
+              "imgHangPicturesOnWall": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_hangPictures.png",
+              "imgTemporaryTape": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_temporaryTape.png",
+              "imgCrafts": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_crafts.png",
+              "purpleNote": "assets/ci/images/purple.png",
+              "orangeNote": "assets/ci/images/orange.png"
+            },
+            {
+              "type": 5,
+              "singledrop": false,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "Brainstorming \"Do\"s"
+                },
+                {
+                  "id": "1",
+                  "group": "Brainstorming \"Don't\"s"
+                }
+              ],
+              "question": {
+                "text": "What are the best practices used in successful brainstorming? <div class=\"bold-weight\">Drag each idea to the correct column, then select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Think of as many ideas as possible"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Follow a rigid structure"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Encourage wild ideas"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "Extend others’ ideas"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "Criticize others’ ideas"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "Include a diverse group"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming.",
+                  "inCorrect": "Try again. Think about which behaviors would best foster creativity.",
+                  "partiallyCorrect": "Try again. Think about which behaviors would best foster creativity."
+                },
+                {
+                  "correct": "Correct! Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming.",
+                  "inCorrect": "Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming.",
+                  "partiallyCorrect": "Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming."
+                }
+              ]
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "inlineText": "When you brainstorm, you list as many possible <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 175px; height: 65px;\"></div></div></div>as quickly as possible. Some of these ideas might seem<div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 175px; height: 65px;\"></div></div></div> , but they might turn out to be innovative ideas.",
+              "groups": [
+                {
+                  "id": "0",
+                  "group": ""
+                },
+                {
+                  "id": "1",
+                  "group": ""
+                }
+              ],
+              "question": {
+                "text": "How does brainstorming facilitate the entrepreneurial mindset of creativity and innovation?<div class=\"bold-weight\"> Drag and drop the words or phrases into the statement and select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  1,
+                  -1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "solutions to a problem"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "assumptions"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "barriers"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "opportunities"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "ridiculous"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "guesses"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "inCorrect": "Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "partiallyCorrect": "Brainstorming should be a free flow of ideas that could be the answer to a question. All ideas should be included, no matter how ridiculous they might seem."
+                },
+                {
+                  "correct": "Correct! Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "inCorrect": "Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "partiallyCorrect": "Brainstorming should be a free flow of ideas that could be the answer to a question. All ideas should be included, no matter how ridiculous they might seem."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "type": 1,
+        "question": {
+          "text": "Which of the following best describes creativity?",
+          "correctOption": "3"
+        },
+        "options": [
+          {
+            "option": "The process of asking questions",
+            "feedback": "Incorrect. Asking questions is part of the creative process, but developing innovative ideas based on the answers to these questions is creativity."
+          },
+          {
+            "option": "The process of identifying problems",
+            "feedback": "Incorrect. Identifying problems is part of the creative process, but developing innovative ideas to solve these problems is creativity."
+          },
+          {
+            "option": "The process of identifying assumptions",
+            "feedback": "Incorrect. Identifying assumptions is part of the creative process, but developing innovative ideas to solve these problems is creativity."
+          },
+          {
+            "option": "The process of developing ideas",
+            "feedback": "Correct. Creativity is the process of developing ideas."
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "isClone": true,
+        "inline": true,
+        "inlineText": " The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 160px; height: 115px;\"></div></div></div></div> discuss each idea as it is suggested. </br>The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 160px; height: 115px;\"></div></div></div></div>build upon ideas suggested by its members.</br> The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"2\" data-id=2 style=\"width: 160px; height: 115px;\"></div></div></div></div> include people with diverse backgrounds and opinions. </br>The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"3\" data-id=3 style=\"width: 160px; height: 115px;\"></div></div></div></div> be respectful of all ideas.",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          },
+          {
+            "id": "1",
+            "group": ""
+          },
+          {
+            "id": "2",
+            "group": ""
+          },
+          {
+            "id": "3",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "A group of entrepreneurs meets to brainstorm answers to the question, “What are the possible uses for this new technology?” <div class=\"bold-weight\">Drag and drop the phrase that best completes each statement:</div>",
+          "arrCorrectOption": [
+            [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "should not"
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "should"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "Incorrect.",
+          "partiallyCorrect": "Nice try! Your answer is partially correct!"
+        }
+      },
+      {
+        "type": 2,
+        "question": {
+          "text": "What is an idea map?<div class=\"bold-weight\"> Select all that apply.",
+          "arrCorrectOption": [
+            0,
+            2,
+            4
+          ]
+        },
+        "options": [
+          {
+            "option": "a diagram that connects information"
+          },
+          {
+            "option": "a way to limit ridiculous ideas"
+          },
+          {
+            "option": "a brainstorming tool"
+          },
+          {
+            "option": "a tool for creating a diagram of a town"
+          },
+          {
+            "option": "a visual aid to help find solutions to problems"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct. An idea map is many things: a diagram that connects information, a valuable brainstorming tool, and a visual aid to help find solutions to problems.",
+          "inCorrect": "Incorrect. An idea map is many things: a diagram that connects information, a valuable brainstorming tool, and a visual aid to help find solutions to problems.",
+          "partiallyCorrect": "Partially Correct. An idea map is many things: a diagram that connects information, a valuable brainstorming tool, and a visual aid to help find solutions to problems."
+        },
+        "selected": []
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "specificFeedback": true,
+        "inline": true,
+        "inlineText": "<div>1. I want to change the design of tablet cases. </div><div>2. <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div class=\"drop-group-name-wrapper\"><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 160px; height: 115px;\"></div></div></div></div><div> 3. Cases don’t HAVE to trade comfort for protection.</div><div><br/>4. What if my tablet cover could provide protection while still being lightweight and sleek?</div>",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "An entrepreneur wants to innovate by improving upon tablet cases. Complete the four steps she can use to challenge the usual. <div class=\"bold-weight\">Drag and drop the statement that best completes Step 2.</div>",
+          "arrCorrectOption": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "Cases are either fashionable or strong.",
+            "feedback": "Incorrect. The challenge does not involve the appearance of the case."
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "Cases are either bulky or protective.",
+            "feedback": "Incorrect. The “what if” question suggests that the entrepreneur assumes that cases are either bulky and uncomfortable or lightweight."
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "Cases are either bulky or lightweight.",
+            "feedback": "Correct. The “what if” question suggests that the entrepreneur assumes that cases are either bulky and uncomfortable or lightweight."
+          }
+        ]
+      },
+      {
+        "type": 7,
+        "question": {
+          "text": "Self Reflection: Click the part of the scale that best describes how you feel about the following statement:<br/> I understand the domain of creativity and innovation.",
+          "correctOption": "2"
+        },
+        "options": [
+          {
+            "option": "Strongly Disagree"
+          },
+          {
+            "option": "Disagree"
+          },
+          {
+            "option": "Neither Agree nor Disagree"
+          },
+          {
+            "option": "Agree"
+          },
+          {
+            "option": "Strongly Agree"
+          }
+        ],
+        "selected": -1
+      }
+    ]
+  }
+}

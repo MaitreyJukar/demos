@@ -1,0 +1,141 @@
+// common constants
+$primary-text: rgba(0, 0, 0, 0.87);
+$white-text:  #ffffff;
+$white: #ffffff;
+$black: #000000;
+$transparent: transparent;
+$correct-answer-color: #50812c;
+$incorrect-answer-color: #d03131;
+$partially-correct-answer-color:#005393;
+$video-question-border: #ebebeb;
+$orange:#FF5C39; 
+$purple:#4C12A1;
+$video-scrub-bar:#2B0959;
+$video-controls-bg:rgba(255, 255, 255, 0.40);
+$video-fullscreen-button: #949291;
+$footer-background:#F6F3F2;
+$quicksand-bold: 'Quicksand-Bold';
+$quicksand: 'QuickSand';
+$roboto-bold: 'Roboto-Bold';
+$roboto: 'Roboto';
+$quicksand-medium:'Quicksand-Medium';
+//component constants
+$header-background:#FCFCFC;
+$tab-seperator-color: #E4E4E4;
+$tab-background-color: #EEFAFD;
+
+//show correct answer button
+$show-correct-background: #f5f5f5;
+$show-correct-border: #cccccc;
+$show-correct-text: rgba(0, 0, 0, 0.87);
+
+//Title bar (top most)
+$title-bar-header-button: #757575;
+
+//navigator tab (header)
+$navigator-tab-bar: #f6f3f2;;
+$navigator-buttons: $purple;
+$inactive-navigator-tab-font: #949291;
+$active-tab-font: $orange;
+$shadow-tab: #c1c1c1;
+
+//question
+$question-number-text: rgba(115, 115, 115, 0.87);
+
+//mcq (learn)
+$bullets-color: $purple;
+$mcq-correct-background: #eff7e8;
+$mcq-correct-border: #a5d284;
+$mcq-incorrect-background: #f8efef; //temp
+$mcq-incorrect-border: #ee9797; //temp
+
+
+//hotspot
+$selected-hotspot-color: #009DD5;
+$submit-answer-button: #009DD5;
+$submit-button-text-color: white;
+$hotspot-border: #8A8A8A;
+$hotspot-img-border: #ebebeb;
+$first-shadow: rgba(0, 0, 0, 0.24);
+$second-shadow: rgba(0, 0, 0, 0.16);
+$hotspot-background: rgba(0,0,0,0.12);
+$hotspot-highlighted-background : rgba(0,0,0,0.30);
+$hotspot-correct-background: rgba(147,235,44,0.38);
+$hotspot-correct-border: rgba(80,129,44,0.38);
+$hotspot-incorrect-background: rgba(235, 44, 44, 0.38); //temp
+$hotspot-incorrect-border: rgba(129, 54, 44, 0.38); //temp
+
+//intro popup
+$start-button: $purple;
+$start-button-text: #EFECF5;
+$start-button-shadow: #D3D3D3;
+$image-border: #DEDEDE;
+$intro-popup-background: #FFFEFF;
+$intro-popup-close-button: #A2A2A2;
+$intro-popup-text: #999999;
+
+$card-control-text-color: $purple;
+$card-selected-bg:#ACAAAF;
+$card-control-background-color: #f6f3fa;
+
+//paginator
+$current-page-background-color: $purple;
+$current-page-color: white;
+$paginator-disabled: #9C9C9C; 
+$paginator-arrow-bg-color:#DFDFDF;
+$paginator-arrow-color: $black;
+$paginator-page-color: $purple;
+$dropdown-border-color:rgba(0, 0, 0, 0.12); 
+$dropdown-background-color: #FAFAFA;
+
+//learn bottom
+$resume-button-bg-color: $purple; 
+$done-button-bg-color: $purple;
+$done-disabled-color:#949291;
+$resume-button-shadow: rgba(0, 0, 0, 0.24);
+$resume-button-text: rgba(255, 255, 255, 0.4);
+$incorrect-user-answer-text: #d03131;
+$reset-disable-fullscreen: rgba(255, 255, 255, 0.1);
+$reset-disable-fullscreen-text: rgba(0, 0, 0, 0.28);
+$reset-disable-fullscreen-mobile-text: #46325c;
+$reset-disable-fullscreen-mobile: rgba(26, 26, 26, 0.4);;
+
+//drag and drop
+$draggable-container-bg: rgba(0, 0, 0, 0.05);
+$draggable-shadow:lightgrey;
+$draggable-bg-color: #E7E7E7;
+$drop-group-shadow: rgba(0, 0, 0, 0.3);
+$drop-group-border:rgba(255,255,255, 0.54);
+$drop-group-bg-color:rgba(246,243,242, 0.6);
+$drop-group-hover-color:rgba(214,214,214, 0.6);
+
+//quiz
+$quiz-reset-disable-button: rgba(143,95,196,0.10);
+$quiz-reset-button-text: rgba(143,95,196,0.28);
+
+$scenario-bottom-border-color:#E0E0E0;
+
+$scenario-orange-bg:rgba(255, 92, 57, 0.8);
+$scenario-purple-bg:rgba(78, 21, 159, 0.9);
+$orange-text:rgb(255, 92, 57);
+$purple-text:rgb(78, 21, 159);
+$bullet-color:rgba(174, 156, 199, 0.9);
+
+// match
+$option-color:#eaeaea;
+
+$audio-button-shadow:inset 0px -4px 0px 0px #bdb3b9;
+
+//medio query
+$mobilePotrait: 500px;
+$mobileLandscape: 760px;
+$tabletPortraitMin: 761px;
+$tabletPortraitMax: 900px;
+$tabletLandscapeMin:901px;
+$tabletLandscapeMax:1024px;
+$desktopMin:1025px;
+$desktop: 1366px;
+$tabletMinHeight: 955px;
+$ipodWidth:320px;
+$tabletLandscapeMinHeight:550px;
+

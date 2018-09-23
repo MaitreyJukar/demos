@@ -1,0 +1,31 @@
+.legend-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    .legend{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 19px;
+        display: flex;
+        line-height:30px;
+        width:350px;
+        background-color: #f6f3f2;
+
+    label{
+        padding:0 10px;
+    }
+    .correct, .incorrect{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .legend-line{
+        display:inline-block;
+        height:4px;
+        vertical-align: middle;
+        width: 51px;
+        z-index: 1;
+    }
+    }
+}

@@ -1,0 +1,1955 @@
+  /* You can add global styles to this file, and also import other style files */
+
+  @import './constants.scss';
+  @font-face{
+    font-family:'QuickSand';
+    src: url('/assets/font/Quicksand/Quicksand-Regular.ttf');
+}
+@font-face{
+    font-family:'Quicksand-Bold';
+    src: url('/assets/font/Quicksand/Quicksand-Bold.ttf');
+}
+@font-face{
+    font-family:'Quicksand-Medium';
+    src: url('/assets/font/Quicksand/Quicksand-Medium.ttf');
+}
+@font-face{
+    font-family:'Roboto-Bold';
+    src: url('/assets/font/Roboto/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family:'Roboto';
+    src: url('/assets/font/Roboto/Roboto-Regular.ttf');
+}
+  .edge_print {
+      width: 700px !important;
+      margin: auto
+  }
+
+  body {
+      height: 100vh;
+      font-size: 16px;
+      font-family: 'QuickSand';
+      min-width: 320px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      overflow-y: scroll;
+  }
+
+  body.report-open {
+      overflow: hidden;
+      position: fixed;
+      width: 100vw;
+      top: 0px;
+      left: 0px;
+  }
+
+@mixin accordionView(){
+    .tab-content {
+        height: auto !important;
+    }
+    .panel-default >.panel-heading{
+        background-color:#4c12a1;
+        color:#ffffff;
+    }
+    .panel{
+        border-radius:0px;
+        border:none;
+    }
+    .panel-heading{
+        border-radius:0px;
+    }
+    .panel-group .panel+.panel{
+        margin-top:1px;
+    }
+    .panel-group {
+        margin-bottom:0px;
+    }
+    .panel-open .down-arrow.icon-chevron_down{
+        transform:rotate(180deg);
+    }
+    .panel-title {
+        font-family:bold;
+        font-family:'Roboto-Bold';
+    }
+    .down-arrow {
+        float: right;
+        font-size: 25px;
+        margin-top: -23px;
+    }
+}
+
+@mixin learnSec34() {
+    #section4 {
+        app-custom-button{
+            position:initial;
+            margin-bottom:20px;
+        }
+    }
+    #section3{
+        app-learn{
+            .lesson-title{
+                padding-top:0px;
+            }
+        }
+    }
+}
+
+  vg-controls {
+      vg-scrub-bar {
+          vg-scrub-bar-cue-points {
+              .cue-point-container {
+                  .cue-point {
+                      width: 2px;
+                      max-width: 2px;
+                  }
+              }
+          }
+      }
+  }
+
+  .no-gradable {
+      .feedback-icon {
+          display: none !important
+      }
+      .feedback {
+          color: black !important;
+          margin-left: 0px !important
+      }
+      .feedback-fullscreen,
+      .button-full-screen {
+          .feedback {
+              color: white !important;
+          }
+      }
+  }
+
+  .no-feedback {
+      .feedback .feedback,
+      .feedback-icon {
+          visibility: hidden;
+      }
+      .button-wrapper,
+      .button-wrapper-fullscreen {
+          .submit-questions {
+              .feedback-wrapper {
+                  visibility: hidden;
+              }
+          }
+      }
+  }
+
+  .hotspot-mode {
+      .button-wrapper,
+      .button-wrapper-fullscreen {
+          .skip-resume-wrapper,
+          .right-side-buttons,
+          .feedback-wrapper {
+              app-custom-button {
+                  .resume {
+                      margin: 10px auto;
+                  }
+                  .correct-answer-button {
+                      display: none;
+                  }
+              }
+          }
+      }
+  }
+
+  .cards-wrapper {
+      .scenario-title app-text {
+          div:empty {
+              display: none;
+          }
+      }
+      .scenario-title app-text {
+          div {
+              padding-bottom: 15px;
+              margin: 0px 20px
+          }
+      }
+  }
+
+  main {
+      height: calc(100% - 112px);
+  }
+
+//   .modal-open {
+//       .tab-bar {
+//           z-index: 0 !important;
+//       }
+//   }
+
+  .preload-images {
+      position: fixed;
+      visibility: hidden;
+      top: 0px;
+      left: 100vw;
+  }
+
+  .hideFocusRect {
+      outline: none !important;
+  }
+
+  .showFocusRect:focus {
+      outline: 1px solid #4d90fe !important;
+  }
+
+  .image {
+      width: 50px;
+  }
+
+  .normal-weight {
+      font-weight: normal !important;
+  }
+
+  .bold-weight {
+      font-family: $roboto-bold
+  }
+
+  .scene {
+      .question-index {
+          display: none;
+      }
+      video {
+          height: 100% !important;
+      }
+  }
+
+  .modal {
+      z-index: 1052;
+  }
+
+  vg-player.fullscreen {
+      z-index: 1050 !important;
+  }
+
+  .video-player-IE {
+      vg-fullscreen{
+          margin-right: 15px;
+      }
+      .quiz_container.transparent-background {
+          overflow: hidden;
+      }
+      .quiz_container.transparent-background {
+          overflow: hidden;
+      }
+      app-drag-and-drop,
+      app-drag-and-drop-2 {
+          .options-container {
+              position: static;
+          }
+          .draggable-icon {
+              height: 100%;
+              top: 0px;
+          }
+      }
+  }
+
+  vg-scrub-bar {
+      .scrubBar {
+          background: rgba(0, 0, 0, 0.3);
+          height: 6px !important;
+      }
+  }
+
+  vg-scrub-bar-current-time {
+      .background {
+          background-color: $video-scrub-bar !important;
+          border: none !important;
+      }
+  }
+
+  vg-scrub-bar-buffering-time {
+      .background {
+          background-color: grey !important;
+      }
+  }
+
+  vg-controls {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7019610000000001) 0%, rgba(0, 0, 0, 0) 100%) !important;
+  }
+
+  vg-play-pause,
+  vg-time-display,
+  vg-mute,
+  vg-fullscreen,
+  vg-track-selector {
+      color: $white-text !important;
+  }
+
+  option {
+      color: black;
+  }
+
+  select.trackSelector {
+      padding: 0px !important;
+  }
+
+  .showControls {
+      vg-mute,
+      .icon-transcript,
+      vg-track-selector {
+          color: $primary-text !important;
+      }
+  }
+
+  vg-volume {
+      .volumeValue,
+      .volumeKnob {
+          background-color: $white-text !important;
+      }
+      .volumeBackground {
+          background-color: grey !important;
+      }
+  }
+
+  .hotspot-container {
+      .question-image {
+          display: none;
+      }
+  }
+
+  .cue-point {
+      min-width: 2px;
+      height: 15px !important;
+      top: -5px;
+      background-color: #A4511F !important;
+  }
+
+  .main-container {
+      .ngx-pagination {
+          //position: relative;
+          -webkit-padding-start: 0px;
+          padding: 0px;
+          margin: 0px;
+          display: inline-flex;
+          li {
+              border-radius: 50%;
+              margin: 0px 16px;
+              width: 36px;
+              height: 36px;
+              text-align: center;
+              color: $paginator-page-color;
+              list-style-type: none;
+              color: $purple;
+              font-family: $roboto-bold;
+              a {
+                  cursor: pointer;
+              }
+              a,
+              div {
+                  padding: 7px 0px;
+                  border-radius: 50%;
+                  text-decoration: none;
+                  display: block;
+                  color: $paginator-page-color;
+              }
+              div {
+                  color: $current-page-color;
+              }
+          }
+          li.attempted {
+              font-family: $roboto;
+              a {
+                  color: $primary-text;
+                  font-weight: normal;
+              }
+          }
+          .current {
+              background-color: $current-page-background-color;
+              padding: 0px;
+          }
+          .pagination-next,
+          .pagination-previous {
+              border-radius: 50%;
+              box-shadow: unset;
+              background-color: $paginator-arrow-bg-color;
+              font-size: 20px;
+              a {
+                  text-decoration: none;
+                  color: $paginator-arrow-color;
+              }
+              a:hover {
+                  background-color: unset;
+              }
+          }
+          .disabled {
+              padding: 7px 0px;
+              pointer-events: none;
+              color: $paginator-disabled;
+          }
+          .pagination-next a::after,
+          .pagination-next.disabled::after,
+          .pagination-previous a::before,
+          .pagination-previous.disabled::before {
+              font-size: 20px;
+              padding-top: 0px;
+              box-sizing: border-box;
+          }
+      }
+  }
+
+  .hide-feedback.correct {
+      height: auto !important;
+  }
+
+  app-quiz {
+      .quiz-submit-button {
+          .custom-button {
+              color: $navigator-buttons;
+              display: inline-flex;
+              align-items: center;
+              background: transparent;
+              box-shadow: none;
+          }
+      }
+      .quiz-submit-button-background {
+          .custom-button {
+              color: $white-text;
+          }
+      }
+  } // video frame hotspot & DND
+  .quiz_container {
+      .question-index {
+          display: none !important;
+      }
+      .position-relative {
+          height: 100%;
+          width: 100%;
+      }
+      .center-align {
+          height: 100% !important;
+      }
+      app-hotspot {
+          height: 100% !important;
+          img {
+              display: none;
+          }
+          app-question {
+              position: absolute;
+          }
+          .question-container {
+              background-color: $white;
+              margin: 0px;
+              padding: 4px;
+          }
+      }
+      app-drag-and-drop,
+      app-drag-and-drop-2 {
+          width: 100%;
+          height: 100%;
+          img {
+              display: none;
+          }
+          .drag-and-drop-container {
+              text-align: left;
+          }
+          .options-container {
+              text-align: center;
+              height: 100%;
+              width: 100%;
+          }
+          .options-container-wrapper {
+              height: 100%;
+          }
+          app-question {
+              position: absolute;
+              .question-container {
+                  background: $white;
+                  display: inline-flex;
+                  padding: 4px;
+                  margin: 0px;
+              }
+          }
+      }
+  }
+
+  .wrong-answer {
+      outline-offset: 4px;
+      outline: 2px solid $incorrect-answer-color;
+  }
+
+  app-mcq,
+  app-mrq {
+      .wrong-answer {
+          background-color: $mcq-incorrect-background !important;
+          border: 1px solid $mcq-incorrect-border !important;
+          outline: none;
+      }
+      .correct-answer {
+          background-color: $mcq-correct-background !important;
+          border: 1px solid $mcq-correct-border !important;
+          outline: none !important;
+      }
+  }
+
+  app-hotspot {
+      .wrong-answer {
+          background-color: $hotspot-incorrect-background !important;
+          border: 2px solid $hotspot-incorrect-border !important;
+          outline: none;
+      }
+      .correct-answer {
+          background-color: $hotspot-correct-background !important;
+          border: 2px solid $hotspot-correct-border !important;
+          outline: none !important;
+      }
+  }
+
+  app-match {
+      .wrong-answer {
+          background-color: $incorrect-answer-color;
+          outline: none;
+      }
+      .correct-answer {
+          background-color: $correct-answer-color;
+          border: 2px solid $correct-answer-color;
+          outline: none;
+      }
+  }
+
+  app-legends,
+  app-match {
+      .correct-line {
+          height: 3px;
+          border: 2px solid $correct-answer-color;
+          background-color: $correct-answer-color;
+      }
+      .incorrect-line {
+          height: 0px;
+          border-top: 4px dashed $incorrect-answer-color;
+          background-color: #fff;
+      }
+  }
+
+  app-drag-and-drop,
+  app-drag-and-drop-2 {
+      .drop-group {
+          .wrong-answer {
+              position: relative;
+              outline: none;
+              border: 1px solid $mcq-incorrect-border;
+          }
+          .correct-answer {
+              position: relative;
+              outline: none;
+              border: 1px solid $mcq-correct-border;
+          }
+      }
+  }
+
+  .draggable-container {
+      .wrong-answer,
+      .correct-answer {
+          outline: none;
+      }
+  }
+
+  .no-underline {
+      text-decoration: none;
+  }
+
+  .report-modal {
+      .modal-dialog {
+          width: auto;
+          max-width: 1024px;
+          height: 100vh;
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+      .modal-body {
+          height: calc(100% - 80px);
+          overflow: auto;
+          padding: 0px;
+          margin: 15px;
+      }
+      .modal-content {
+          height: 100%;
+      }
+  }
+
+  .icon-skipped {
+      color: #737373;
+      font-size: 20px;
+      z-index: 100;
+      &:before {
+          background-color: white;
+          border-radius: 50%;
+      }
+  }
+
+  .icon-check {
+      color: $correct-answer-color;
+      font-size: 20px;
+      z-index: 100;
+      &:before {
+          background-color: white;
+          border-radius: 50%;
+      }
+  }
+
+  .icon-check-cross {
+      color: $incorrect-answer-color;
+      font-size: 20px;
+      z-index: 100;
+      &:before {
+          background-color: white;
+          border-radius: 50%;
+      }
+  }
+
+  .icon-partial-correct {
+      color: $partially-correct-answer-color;
+      font-size: 20px;
+      z-index: 100;
+      &:before {
+          background-color: white;
+          border-radius: 50%;
+      }
+  }
+
+  .line {
+      transform-origin: 0 100%;
+      height: 3px;
+      background-color: $purple;
+    }
+
+  .click-state {
+      border: 6px solid $purple;
+  }
+
+  .drop-group-name {
+      height: 100%;
+      display: inline-block;
+      background-color: $drop-group-border;
+      padding: 0px 5px;
+  }
+
+  .drop-group .dnd-report-icon, app-select .select-report-icon {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      z-index: 50;
+  }
+
+  .inline-text {
+      .drop-group-wrapper {
+          margin-bottom: 5px;
+      }
+  }
+
+  .drop-group {
+      padding: 3px 0px 0px 3px;
+      border: 2px solid $drop-group-border;
+      opacity: 54%;
+      display: inline-block;
+      width: 270px;
+      vertical-align: middle;
+      margin: 0 10px;
+      box-shadow: inset 0px 0px 10px 0px $drop-group-shadow;
+      background-color: $drop-group-bg-color;
+      .draggable {
+          margin: 0px 5px 5px 0px;
+          float: left;
+          width: calc(100% - 10px);
+          height: calc(100% - 10px);
+          position: relative;
+      }
+  }
+
+  app-drag-and-drop-2 {
+      .drop-group {
+          margin: 0px;
+      }
+  }
+
+  .ui-state-active {
+      background-color: $draggable-bg-color;
+  }
+
+  .drag-state-active {
+      border: 1px solid $purple;
+  }
+
+  .ui-state-highlight {
+      border: 2px dashed $purple !important;
+  }
+
+  .highlight-draggable {
+      border: 1px solid $purple !important;
+  }
+
+  .highlight-droppable {
+      border: 2px dashed $purple !important;
+      background-color: $draggable-bg-color !important;
+  }
+
+  .last-tab{
+    .screen-navigation-button{
+        color:#EFEFEF !important;
+        background-color: #4C12A1 !important;
+        box-shadow: inset 0px -4px 0px 0px #2b0761 !important;                    
+    }
+}
+app-learn-card-question, app-scenario-describe-2{
+    .bullet{
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+    }
+    .bullets-content{
+        width: calc(100% - 20px);
+        display: inline-block;
+    }
+    .inner-bullet{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .inner-bullet-content{
+        width: calc(100% - 15px);
+        display: inline-block;
+        &.align-bullet-content{
+            padding-left: 3px;
+        }
+    }
+}
+  @media screen and ( min-width: 768px) {
+
+    
+      .feedback-wrapper {
+          app-custom-button {
+              .correct-answer-button {
+                  margin: 10px 0px;
+              }
+          }
+      }
+      .skip-resume-wrapper {
+          display: none;
+      }
+  }
+
+  @media screen and ( max-width: 1024px) {
+      .main-container .ngx-pagination {
+          li {
+              margin: 0px 8px;
+          }
+      }
+  }
+
+  @media screen and ( max-width: 700px) {
+      .button-wrapper {
+          .right-side {
+              app-custom-button {
+                  .quiz-fullscreen {
+                      .icon {
+                          margin-top: 7px;
+                      }
+                  }
+              }
+          }
+      }
+      .main-container .ngx-pagination {
+          li {
+              margin: 0px 8px;
+          }
+      }
+  }
+
+  @media screen and ( max-width: 767px) {
+    .scroll{
+        touch-action: initial !important;
+    }
+      .button-wrapper {
+          .feedback-wrapper {
+              .correct-answer-button {
+                  display: none;
+              }
+          }
+          .right-side {
+              app-custom-button {
+                  .resume {
+                      display: none;
+                  }
+              }
+          }
+          .force-right-side {
+              app-custom-button {
+                  .resume {
+                      display: flex;
+                  }
+              }
+          }
+      }
+  }
+
+  @media screen and ( max-width: 500px) {
+      .button-wrapper {
+          .buttons {
+              .done {
+                  margin-top: 10px;
+              }
+          }
+          .right-side {
+              app-custom-button {
+                  .quiz-fullscreen {
+                      .icon-fullscreen {
+                          margin-top: 16px;
+                      }
+                      .icon-fullscreen-exit {
+                          margin-top: 0px;
+                      }
+                  }
+              }
+          }
+      }
+      .main-container {
+          .ngx-pagination {
+              li {
+                  width: 32px;
+                  height: 32px;
+                  margin: 0;
+                  line-height: 1;
+              }
+          }
+      }
+  }
+
+  @media print {
+      body {
+          overflow: visible;
+          height: auto;
+          -webkit-print-color-adjust: exact;
+          position: absolute !important;
+      }
+      div {
+          page-break-inside: avoid;
+      }
+      .report-container {
+          position: absolute !important;
+      }
+  }
+
+  .nfte-container .dlo-container .scenario-wrapper .mobile-navigation-bar .icon.icon-arrow_back_black,
+  .nfte-container .dlo-container .scenario-wrapper .mobile-navigation-bar .icon-arrow_forward_black {
+      font-size: 28px;
+  }
+
+  vg-track-selector.IE select.trackSelector {
+      opacity: 0;
+  }
+
+  .drag-and-drop-container#dnd-3 .options-container .inline-text .drop-group-wrapper .drop-group-name-wrapper {
+      margin-bottom: 10px;
+  } //   dlo 3
+
+  .activity-main-container.cwr, .activity-main-container.fo, .activity-main-container.faa, .activity-main-container.isr{
+    app-custom-button{
+        font-family: 'Roboto';
+    }
+
+  }
+  app-cwr-learn, app-fo-learn{
+      .hide-feedback{
+          height: auto !important;
+      }
+      .dlo-learn {
+          max-width: 100% !important;
+          padding-bottom: 0px !important;
+      }
+      #section2 {
+          border: none;
+          tab{
+              height: 100%;
+          }
+          nav {
+              height: calc(100% - 85px);
+          }
+          div.nav-tabs {
+              height: 100%;
+              border: none;
+          }
+          ul.nav {
+              display: flex;
+              justify-content: center;
+              border-bottom: 4px solid #2B0761;
+              height: 40px;
+          }
+          .nav-item.active {
+              a {
+                  color: #4C12A1;
+                  font-size: 14px;
+                  font-family: $roboto-bold;
+                  &:hover {
+                      color: #4C12A1;
+                      background-color: #ffffff;
+                  }
+                  &:focus {
+                      color: #4C12A1;
+                      font-size: 14px;
+                      background-color: #ffffff;
+                  }
+              }
+              .border{
+                  display:none
+              }
+          }
+          .nav-item {
+              margin-bottom: -4px;
+              width: 146px;
+              a {
+                  color: #FFDA40;
+                  font-family: 'Roboto';
+                  font-size: 13px;
+                  letter-spacing: 0px;
+                  line-height: 20px;
+                  text-align: center;
+                  &:hover {
+                      color: #ffffff;
+                      background-color: transparent;
+                      border-color: transparent;
+                  }
+                  &:focus {
+                    color: #ffffff;
+                    background-color: transparent;
+                    border-color: transparent;
+                  }
+              }
+          }
+          .tab-content {
+              background-color: white;
+              height: calc(100% - 40px + 4px);
+              position: relative;
+          }
+          @media screen and (min-width:1024px){
+            .nav-tabs>li>a{
+                padding:10px 6px;
+            }  
+          }
+          @media screen and (min-width:751px) and (max-width:1023px){
+            .nav-tabs>li>a{
+                margin-right:-1px;
+                margin-left:-1px;
+                padding:10px 6px;
+            }
+            .tab-content {
+                height: calc(100% - 40px + 45px);
+            }
+          }
+
+          @media screen and (max-width:750px) {
+                @include accordionView();
+          }
+      }
+      #section3 {
+
+          app-learn{
+              app-video-player{
+                  display: flex;
+                  justify-content: center;
+              }
+            .lesson-title {
+                font-size: 30px;
+                font-family: "Quicksand";
+                color: rgb(34, 34, 34);
+                height: 88px;
+                line-height: 88px;
+                padding: 0px;
+                font-weight: bold;
+            }
+              .dlo-learn{
+                  height: 100%;
+              }
+              .video-container{
+                  height: calc(100% - 88px);
+              }
+              vg-player{
+                width: 650px;
+              } 
+              vg-player.full-screen.fullscreen{
+                  width: 100% !important;
+              }
+            @media screen and (min-width:750px) and (max-width:1023px){
+                .lesson-title {
+                    padding-top:29%;
+                }
+                .video-container{
+                    margin-top:30px;
+                }
+                .vertical-align{
+                    display:none;
+                }
+                .modal.in .modal-dialog{
+                    transform: translate(0,100%);
+                }
+            }
+            @media screen and (max-width:500px) {
+                .lesson-title {
+                    font-size:20px;
+                    justify-content: flex-start;
+                    align-items: initial;
+                }
+                app-video-player{
+                    .more-control.closed-caption{
+                        display:none;
+                    }
+                    .modal-dialog{
+                        margin:0px;
+                    }
+                    .vertical-align{
+                        display:none;
+                    }
+                    .modal.in .modal-dialog{
+                        transform: translate(0,50%);
+                    }
+                }
+            }
+            @media screen and (max-width:320px) {
+                .lesson-title{
+                    line-height:30px;
+                    padding-top:10px;
+                }
+            }  
+          }
+      }
+      #section4 {
+          .question-index {
+              display: none;
+          }
+          .fixed-to-bottom .feedback{
+            font-size: 14px;
+        }
+
+        
+        app-custom-button{
+            margin-top:60px;
+            position:absolute;
+            bottom:20px;
+        }
+
+        .fixed-to-bottom{
+            app-custom-button{
+                margin-top:0px;
+                position:initial;
+            }
+        }
+        @media screen and (max-width:1023px){
+            .align-content-center{
+                flex-direction: column;
+            }
+            .align-content-center app-custom-button {
+                padding-top:15px;
+            }
+        }
+        @media screen and (min-width:760px) and (max-width:1023px){
+            .bottom-bar{
+                padding-right:0px;
+            }
+            .feedback{
+                margin-right:0px;
+            }
+            .align-content-center{
+                padding:0px;
+                flex-direction:row;
+            }
+        }
+        .isIpad app-tab-content{
+        
+            .left-section{
+                padding: 30px 0px 0px;
+            }
+            .right-section{
+                padding: 20px 80px 20px;
+            }
+        }
+          app-drag-and-drop{
+            .question-container{
+                height: 56px;
+                align-items: center;
+                padding-bottom: 0px;
+                .main-question{
+                    font-family: $roboto-bold;
+                }
+            }
+            .draggable{
+                width: 416px !important;
+                height: 67px !important;
+                text-align: left;
+            }
+            .options-container{
+                padding: 0px;
+                height: auto;
+            }
+            .draggable-container{
+                margin: 8px 0px;
+                width: 416px !important;
+                height: 67px !important;
+                padding-bottom: 10px;
+            }
+            .drag-and-drop-container{
+                padding-bottom: 10px;
+            }
+            .draggable-container-parent{
+                display: inline;
+            }
+            .options-drag-drop-container .options-drag-drop-container-child:nth-child(1){
+                width: calc(416px + 16px);
+                margin-right: 0px;
+            }
+            .options-drag-drop-container .options-drag-drop-container-child:nth-child(3){
+                width: auto;
+                margin: 0px;
+            }
+
+            .drop-group{
+                padding: 2px 0px 0px 2px;
+                height: 75px !important;
+                width: 424px !important;
+            }
+                .options-container.column-orientation{
+                    .draggable-container-parent{
+                        .draggable-container{
+                          font-size: 14px;
+                          text-align: left;
+                        }
+                    }
+
+                    .drop-group-wrapper{
+                        font-size: 14px
+                    }
+                }
+
+                @media screen and (min-width:751px) and (max-width: 1023px) {
+                    .column-orientation.options-container, .options-drag-drop-container{
+                        flex-direction: column;
+                    }  
+                    .options-drag-drop-container .options-drag-drop-container-child:nth-child(1){
+                        width: 100%;
+                        padding-left:25px;
+                    }
+                    .options-drag-drop-container .options-drag-drop-container-child:nth-child(3) {
+                        margin:5px 0px 0px;
+                    }
+                    .draggable-container{
+                        width: 95% !important;
+                        margin:3px 0px;
+                    } 
+                    .draggable {
+                        width: 100% !important;
+                    }
+                    .drag-and-drop-container{
+                        padding-bottom: 0px;
+                    }
+                    .drop-group .draggable{
+                        max-width: calc(100% - 2px);
+                    }
+                    .drop-group {
+                        width:92% !important;
+                        margin:0px 0px 0px 6px;
+                    }
+                    .drop-group-wrapper{
+                        margin-bottom:3px;
+                    }
+                    .drop-group-wrapper div:nth-child(1) {
+                        justify-content: flex-start;
+                    }
+                    .question-container{
+                        margin:0px 0px 5px;
+                        height:40px;
+                    }
+                }
+                @media screen and (max-width:750px) {
+                    .options-drag-drop-container .options-drag-drop-container-child:nth-child(1){
+                        margin:0px auto;
+                    }
+                    .drop-group .draggable{
+                        max-width: calc(100% - 1px);
+                    }
+                    .column-orientation.options-container .options-drag-drop-container{
+                        flex-direction: column;
+                    }
+                }
+                @media screen and (max-width:500px) {
+                    .draggable-container,.draggable {
+                        width: 95% !important;
+                        font-family: 'Roboto-Bold';
+                        height:105px !important;
+                    }
+                    .draggable {
+                        width: 100% !important;
+                        padding: 5px 15px;
+                    }
+                    .options-drag-drop-container .options-drag-drop-container-child:nth-child(1){
+                        width: calc(100% + 16px);
+                    }
+                    .drop-group {
+                        height: 113px !important;
+                    }
+                    .drop-group .draggable{
+                        max-width: calc(100% - 2px);
+                    }
+                    .options-drag-drop-container .options-drag-drop-container-child:nth-child(3) {
+                        margin:20px 0px 0px;
+                    }
+                    .question-container{
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+        
+  }
+
+  .cwr-body, .fo-body{
+      background-color: #F6F3F2;
+  }
+
+  app-cwr-learn, app-fo-learn {
+    .isFireFox,.isIE,.isEdge{
+      #section2 {
+        .nav-item.active{
+            a{
+                font-size: 13px;
+            }
+            &:focus {
+                font-size: 13px;
+            }
+         }
+      }
+    }
+    .isSafari{
+        #section4{
+            app-drag-and-drop{ 
+                .draggable {
+                    font-weight:normal;
+                }
+            }
+        }
+    }
+  }
+
+  app-fo-learn {
+    .isIE{
+        #section3{
+            app-learn{
+                .video-container{
+                    height:100%
+                }
+            }
+        }
+    }
+}
+
+  vg-track-selector {
+      display: none !important;
+  }
+
+  .cwr-explore.isIE .icon-volume, .isIE .icon-volume-mute, .fo-explore.isIE .icon-volume,{
+    position:relative;
+    top:3px;
+}
+
+app-select{
+    .select-option-container{
+        display:inline-block;
+        background: linear-gradient(0deg, #e3e3e3 30%, #ffffff 69%);
+        background-position: calc(100% - 5px);
+        border-radius: 5px;
+        line-height: initial;
+        margin: 5px;
+        position: relative;
+        font-size: 14px;
+        select{
+            padding: 5px 10px;
+            text-align-last: center;
+            border-radius: 5px;
+            background-color: transparent;
+            cursor: pointer;
+            outline:none;
+            font-size: inherit;
+            color: rgb(117,117,117);
+            border:1px solid #959595;
+            option{
+                font-style: normal;
+            }
+        }
+        select.correct{
+            border: 1px solid #50812c;
+        }
+        select.incorrect{
+            border: 1px solid #d03131;
+        }
+
+        .italic{
+            font-style: italic
+        }
+    }
+}
+
+app-fo-main, app-cwr-main, app-faa-main, app-isr-main{
+    app-fo-learn, app-cwr-learn, app-explore, app-simple-report{
+        .bottom-bar .align-content-center,.feedback-container{
+            app-custom-button{
+                    align-self: flex-end
+            }
+        }
+        @media screen and(max-width: $mobilePotrait){
+            .bottom-bar .align-content-center{
+                flex-direction: column;
+            }
+            .bottom-bar .align-content-center,.feedback-container{
+                app-custom-button{
+                    margin: 20px auto 0px;
+               }
+            }
+        }
+    }
+}
+
+  
+  app-fo-main{
+      app-fo-learn{
+        #section2 {
+            .nav-item {
+                width: 170px;
+            }
+            accordion{
+                accordion-group{
+                    app-tab-content{
+                        .left-section, .right-section{
+                            display: block;
+                        }
+                        .tab-content{
+                            max-height: 100%;
+                            .left-section{
+                                padding: 10px 30px 10px 30px;
+                                img{
+                                    margin: auto;
+                                    display: block;
+                                }
+                                @media screen and (max-width: $mobilePotrait) {
+                                    img{
+                                        width: 100%;
+                                        height:100%;
+                                        transform: initial;
+                                        padding: 20px 0;
+                                    }
+                                }
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+        #section4{
+            font-family: Quicksand;
+            font-size: 18px;
+            .question-container{
+                font-size: inherit;
+                font-family: inherit;
+            }
+
+            .align-content-center{
+                app-custom-button{
+                    margin-top:0px;
+                    position: relative;
+                    bottom:0px;
+                    padding-top: 0px
+                }
+            }
+        }
+        #section3 {
+            app-learn{
+                width: 100%;
+                .dlo-learn {
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center
+                }
+                .lesson-title {
+                  font-size: 30px;
+                  font-family: "Quicksand";
+                  color: rgb(34, 34, 34);
+                  height: auto;
+                  line-height: normal;
+                  padding: 5px 0px;
+                  min-height: unset
+                }
+               .lesson-description{
+                    padding: 0 17% 15px 17%;
+                }
+                .video-container{
+                    padding: 0 17%;
+                    height: auto
+                }
+ 
+               @media screen and (max-width:$mobilePotrait) {
+                   .dlo-learn{
+                        .lesson-description{
+                            padding: 0px 16px 10px 16px;
+                        }
+                    }
+                }
+               @media screen and (max-width:$tabletPortraitMax) {
+                    .dlo-learn{
+                        .lesson-description{
+                            padding: 20px 8% 20px 8%;
+                        }
+                        .video-container{
+                            padding: 20px 8%;
+                            margin: 0px
+                        }
+                        .lesson-title{
+                            align-items: center;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+                @media screen and (max-width:$mobileLandscape) {
+                    .dlo-learn{
+                        .lesson-title{
+                            height: 90px;
+                            width: 100%;
+                            padding: 10px 16px;
+                        }
+                        .lesson-description{
+                            padding: 0 16px 20px 16px;
+                            
+                        }
+                        .video-container{
+                            padding: 0px;
+                            vg-player{
+                                width: calc(100% - 32px)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #section5{
+            app-learn-example{
+                height:100%;
+                width: 100%
+            }
+        }
+    }
+      app-explore{
+        .isIE{
+            #section2, #section3{
+                app-drag-and-drop{
+                    .options-drag-drop-container-child:nth-child(1){
+                        width: calc( 50% - 35px);
+                        margin-right: 5px;
+                    }
+                    .options-drag-drop-container-child:nth-child(3){
+                        width: calc( 50% + 35px);
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+        .hide-feedback{
+            visibility: hidden;
+        }
+        .cards-wrapper .card-model-container-desktop-view{
+            justify-content: center;
+            .card_model{
+                margin: 0 5%;
+                width: auto
+            }
+        }
+        #section2, #section3{
+            .bottom-bar{
+                align-items: center;
+                justify-content: center;
+                font-family: roboto;
+                .align-content-center{
+                    height: 100%;
+                    padding: 16px 0
+                }
+            }
+            app-drag-and-drop{
+                font-size: 14px;
+                font-family: roboto;
+                height: calc(100% - 105px);
+                padding: 10px 40px;
+                .drag-and-drop-container{
+                    font-size: inherit;
+                    .question-wrapper{
+                        padding: 8px;
+                        .question-container{
+                            font-size: 15px;
+                            .question-index{
+                                color: #000;
+                                text-align: right;
+                            }
+                        }
+                    }
+
+                    .options-container{
+                        padding: 0px;
+                    }
+
+                    .draggable {
+                        justify-content: left;
+                        text-align: left;
+                        max-width: 100%;
+                    }
+                }
+                @media screen and (max-width: $tabletPortraitMax) {
+                    .draggable-droppable-container{
+                        overflow: hidden
+                    }
+                }
+            }
+        }
+        #section2{
+            @media screen and (max-width: $tabletPortraitMax) {
+                app-drag-and-drop{
+                    .column-orientation.options-container{
+                        height: 100%;
+                        .options-drag-drop-container{
+                            flex-direction: column;
+                            .draggable-container-parent, .seperator, .draggable-droppable-container{
+                                width: 100%
+                            }
+                            .draggable-container-parent{
+                                height: calc(40% - 2px);
+                                .draggable {
+                                    padding: 10px
+                                }
+                                .draggable-text{
+                                    margin-left: 10px
+                                }
+                            }
+                            .draggable-droppable-container{
+                                margin-top: 40px;
+                            }
+    
+                            .seperator{
+                                height: 2px
+                            }
+                        }
+                        .drop-group-wrapper div:nth-child(1){
+                            justify-content: flex-start
+                        }
+                    }
+                }
+            }
+        }
+        #section3{
+            font-size: 15px;
+            app-drag-and-drop{
+                .drag-and-drop-container{
+                    .draggable-container-parent, .draggable-droppable-container{
+                        justify-content: flex-start
+                    }
+                    .question-wrapper{
+                        app-question{
+                            .question-container{
+                                margin: 0px;
+                            }
+                        }
+                    }
+                   
+                    
+                    .options-container{
+                        .drop-group-wrapper{
+                            margin-bottom: 5px;
+                            .drop-group-name{
+                                width: 16px !important
+                            }
+                        }
+                    }
+                    @media screen and (max-width:$mobileLandscape) {
+                        .options-container{
+                            .drop-group-wrapper{
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+
+                @media screen and (max-width: $tabletPortraitMax) {
+                    .column-orientation.options-container{
+                        height: 100%;
+                        .options-drag-drop-container{
+                            flex-direction: column;
+                            .draggable-container-parent, .seperator, .draggable-droppable-container{
+                                width: 100%
+                            }
+                            .draggable-container-parent{
+                                height: calc(30% - 2px);
+                                flex-wrap: wrap;
+                                .draggable {
+                                    padding: 5px 10px
+                                }
+                                .draggable-text{
+                                    margin-left: 10px
+                                }
+                                .draggable-container{
+                                    max-width: calc(50% - 10px);
+                                    margin: 0 0 8px 0;
+                                }
+                            }
+                            .draggable-droppable-container{
+                                padding-top: 20px;
+                                margin-left: 0px
+                            }
+                            .seperator{
+                                height: 2px
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    }
+    app-quiz{
+        .footer-wrapper{
+            font-family: roboto
+        }
+    }
+}
+
+
+.cwr-explore{
+    .cards-wrapper {
+        .scenario-title app-text {
+            div {
+                padding-bottom: 0px;
+            }
+        }
+    }
+}
+
+app-drag-and-drop{
+    .drag-and-drop-container{
+        .options-container.timeline_activity .options-drag-drop-container{
+            .draggable-droppable-container{
+                .drop-group-wrapper {
+                    div:nth-child(1) {
+                        .drop-group-name.timeline_tags{
+                            h4{
+                                margin: 0px;
+                                padding: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.isIE.scroll,.isFireFox.scroll,.isEdge.scroll{
+    overflow:auto;
+}
+app-explore{
+    .isIE,.isFireFox,.isEdge{
+        overflow:auto;
+    }
+}
+
+app-fo-main{
+    .isSafari{
+        app-scenario1{
+            #section2{
+                .question-container{
+                    font-size:18px;
+                }
+            }
+            
+            @media screen and (max-width: $tabletPortraitMax) {
+                #section2, #section3{
+                    .question-container{
+                        height: 160px;
+                    }
+                    .cards-container{
+                        padding: 0px 40px
+                    }
+                }
+            }
+        }
+    }
+}
+
+app-faa-main{
+    app-faa-learn #section3{
+        .lesson-title{
+            font-size: 30px;
+            font-family: $quicksand-medium;
+            color: #222222;
+            padding:20px 0px;
+        }
+        vg-player{
+            width:650px;
+            margin:0 auto;
+        }
+        vg-player.full-screen.fullscreen{
+            width: 100% !important;
+        }
+    }
+}
+
+.orange-text{
+    color:#fc5f4b; 
+}
+
+.isIE .icon-volume,.isIE .icon-volume-mute{
+    position:relative;
+    top:3px;
+}
+
+@media screen and (max-width:$desktop) {
+    @media screen and (max-height:$tabletLandscapeMinHeight) {
+        .dlo-container{
+            @include learnSec34(); 
+            @include accordionView();
+        }
+        app-fo-main app-explore{
+            #section3 app-drag-and-drop{
+                padding:10px 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax){
+
+app-cwr-learn, app-fo-learn{
+
+    #section2 {
+        nav.isIpad {
+            height: calc(100% - 125px);
+            app-tab-content{
+                .left-section{
+                    padding:20px 0px 0px;
+                }
+                .right-section{
+                    padding:30px 60px 20px;
+                }
+            }
+        }
+    }
+
+    #section4 {
+        app-custom-button{
+            margin-top:60px;
+            position:absolute;
+            bottom:20px;
+        }
+
+        .fixed-to-bottom{
+            app-custom-button{
+                margin-top:0px;
+                position:initial;
+            }
+        }
+    }
+}
+
+app-fo-main{
+    app-scenario1{
+        #section2{
+            .question-container{
+                font-size:16px;
+            }
+        }
+    }
+}
+
+    .isAndroid .faa-explore app-scenario1 app-cards-mcq{
+        .question-container{
+            padding:0px 0px 15px !important;
+        }
+    }
+
+    @media screen and (max-height:$tabletMinHeight){
+        .cwr.isAndroid, .fo.isAndroid, .faa.isAndroid{
+            app-cwr-learn, app-fo-learn,app-faa-learn{
+                @include learnSec34();
+                @include accordionView();
+            }
+        }
+        .fo.isAndroid{
+            app-explore{
+                app-scenario2{
+                    app-drag-and-drop{
+                        .drag-and-drop-container{
+                            margin:20px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-height:$tabletPortraitMin){
+        .cwr, .fo{
+            app-cwr-learn, app-fo-learn{
+                @include learnSec34();
+                @include accordionView();
+            }
+        }
+        .fo{
+            app-explore{
+                app-scenario2{
+                    app-drag-and-drop{
+                        .drag-and-drop-container{
+                            margin:20px 0px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width:750px) and (max-width:1024px){
+    .modal-open{
+        .quiz-container{
+            position:relative!important;
+        } 
+    }
+}
+
+@media screen and (max-width:$mobileLandscape){
+    app-fo-main{
+        app-explore{
+            #section2,#section3{
+                app-drag-and-drop{
+                    .column-orientation.options-container{
+                        .options-drag-drop-container{
+                            .drop-group-wrapper div:nth-child(1){
+                                justify-content: center
+                            }
+                            
+                            .draggable-container-parent {
+                                .draggable-container{
+                                    max-width: 100%
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    app-faa-learn{
+        app-video-player{
+            display:flex;
+            justify-content:center;
+            .more-control.closed-caption{
+                display:none !important;
+            }
+            .vertical-align{
+                display:none !important;
+            }
+            .modal-dialog{
+                margin:0px !important;
+            }
+            .modal.in .modal-dialog{
+                transform: translate(0,0);
+            }
+        }
+    }
+
+    .isAndroid .faa-explore app-scenario1 app-cards-mcq{
+        .question-container{
+            padding:0px 0px 15px !important;
+        }
+    }
+    
+    @include accordionView();
+}
+
+@media screen and (max-width:$mobilePotrait){
+    app-fo-main{
+        app-explore{
+            #section2,#section3{
+                app-drag-and-drop{
+                    .drag-and-drop-container{
+                        .options-container.timeline_activity .options-drag-drop-container{
+                            .draggable-droppable-container{
+                                margin-left:0px;
+                            }
+                        }
+                       
+                        .drop-group .draggable{
+                            max-width: calc(100% - 3px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cards-wrapper {
+        .scenario-title app-text {
+            div:empty {
+                display: none;
+            }
+        }
+        .scenario-title app-text {
+            div {
+                padding-bottom: 15px;
+                margin: 0px;
+            }
+        }
+    }
+    .faa-explore app-scenario1 app-cards-mcq{
+        .question-container{
+            padding:0px 0px 15px !important;
+        }
+    }
+
+    app-faa-learn{
+        app-video-player{
+            .modal.in .modal-dialog{
+                transform: translate(0,50%);
+            }
+        }
+    }
+}
+@media screen and (max-width:$ipodWidth){
+    app-fo-main{
+        app-fo-learn{
+            #section2 {
+                accordion{
+                    accordion-group{
+                        app-tab-content{
+                            .tab-content{
+                                .left-section{
+                                    img{
+                                        padding: 40px 0px 20px;
+                                    }
+                                }
+                            }
+                        }       
+                    }
+                }
+            }
+        }
+    }
+    .cwr-explore{
+        .cards-wrapper {
+            .scenario-title app-text {
+                div {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}

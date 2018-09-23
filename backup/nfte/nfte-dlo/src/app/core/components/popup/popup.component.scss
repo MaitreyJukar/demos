@@ -1,0 +1,227 @@
+@import './../../../../constants.scss';
+.modal {
+    padding: 0 !important;
+    text-align: center;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+    /* Adjusts for spacing */
+}
+
+.image-wrapper-mobile-view {
+    display: none;
+    .button-container-mobile-landscape {
+        display: none;
+    }
+}
+
+.modal-dialog {
+    text-align: left;
+}
+
+.modal-dialog {
+    min-width: 500px;
+    margin: auto;
+    max-width: 500px;
+    position: relative;
+    height: 435px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container-popup {
+    max-height: 435px;
+    position: absolute;
+    max-width: 500px;
+}
+
+.image-wrapper {
+    margin: 0 auto;
+    background-color: $transparent;
+    width: 60%;
+    max-height: 184px;
+    position: relative;
+    z-index: 10;
+}
+
+.intro-image {
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid $image-border;
+    margin-top: 13px;
+}
+
+.modal-content {
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    /* IE 9 */
+    -webkit-transform: translate(0%, -50%);
+    /* Safari */
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+    padding-top: 20%;
+    margin-top: 16%;
+}
+
+.close {
+    font-size: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $intro-popup-close-button;
+    opacity: 1;
+}
+
+.modal-body {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: $intro-popup-text;
+    position: relative;
+    opacity: 1;
+    .description {
+        font-size: 16px;
+        max-height: 142px;
+        overflow-y: auto;
+    }
+    .intro-image {
+        padding-top: 40px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 97%;
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.modal-header {
+    padding: 0px;
+    border: none;
+    display: flex;
+}
+
+//media query
+@media screen and ( max-width: 700px) {
+    .intro-image {
+        max-height: 152px;
+    }
+    .image-wrapper {
+        display: none;
+    }
+    .modal-content {
+        padding: 32px 16px;
+        margin: 0px;
+        transform: none;
+    }
+    .image-wrapper-mobile-view {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        min-width: 250px;
+        flex-direction: column;
+        .button-container-mobile-landscape {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .modal-dialog {
+        margin: 3%;
+        height: auto;
+        width: 90%;
+        max-width: unset;
+        min-width: 300px;
+    }
+    .container-popup {
+        max-width: unset;
+        position: inherit;
+    }
+    .popup-content {
+        display: flex;
+    }
+    .modal-body {
+        padding: 0px 0px 0px 10px;
+        display: block;
+        .description {
+            max-height: 200px;
+        }
+    }
+    .button-container {
+        display: none;
+    }
+    .close {
+        top: 4px;
+        right: 4px;
+    }
+}
+
+@media screen and ( max-width: 500px) {
+    .intro-image {
+        max-width: 198px;
+        margin-top: 0px;
+    }
+    .modal-dialog {
+        max-width: 288px;
+        min-width: 288px;
+    }
+    .modal-content {
+        margin: 0px;
+        transform: none;
+        padding: 24px 16px;
+    }
+    .container-popup {
+        position: initial;
+        max-height: initial;
+    }
+    .popup-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .modal-body {
+        padding: 10px 0px 0px 0px;
+        display: flex;
+        .description {
+            max-height: 900px;
+            overflow-y: visible;
+            height: auto;
+        }
+    }
+    .button-container {
+        display: flex;
+    }
+    .image-wrapper-mobile-view {
+        max-height: 184px;
+        flex-direction: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button-container-mobile-landscape {
+            display: none;
+        }
+    }
+}

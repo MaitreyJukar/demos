@@ -1,0 +1,32 @@
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="introduction-text"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="container-popup">
+      <div class="image-wrapper">
+        <img class="intro-image" src="./assets/common/images/intro-popup.png">
+      </div>
+      <div class="modal-content">
+
+        <button  popover="Close" triggers="" placement="left" container="body" (press)="pop.isOpen? pop.hide(): pop.show()"  #pop="bs-popover" 
+        [outsideClick]="true" type="button" class="close pull-right" id="intro-close" aria-label="Close" (tap)="pop.isOpen?pop.hide():hide()"
+          (blur)="setFocus()">
+                    <span class="icon-cross" aria-hidden="true"></span>
+                </button>
+        <div class="popup-content">
+          <div class="image-wrapper-mobile-view">
+            <img class="intro-image" src="./assets/common/images/intro-popup.png">
+            <div class="button-container-mobile-landscape">
+              <app-custom-button [buttonText]="popupButton" (click)="hide()" buttonClass="intro-button"></app-custom-button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="description">{{ description }}</div>
+          </div>
+        </div>
+        <div class="button-container">
+          <app-custom-button [buttonText]="popupButton" (click)="hide()" buttonClass="intro-button"></app-custom-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

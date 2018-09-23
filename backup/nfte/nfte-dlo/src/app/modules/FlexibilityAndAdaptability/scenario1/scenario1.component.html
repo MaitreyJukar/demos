@@ -1,0 +1,21 @@
+<div class="scenario-wrapper scroll" [ngClass]="{'isIpad':isIpad}" #scrollParent appScroll sectionSelector=".scroll-section"
+    (sectionChanged)="sectionChanged($event)" [topOffset]="scrollTopOffset">
+
+    <div id="section1" class="scroll-section">
+        <app-scenario-describe-2 #scenarioEle [model]="scenarioDescribeModel" [playAudioDefault]="keyboardService.playAudioDefault" 
+        (screenNavigation)="goToSection(1)"></app-scenario-describe-2>
+        <img src="assets/faa/images/B-M-L-sc-1.png" class="image-relative" alt="">
+    </div>
+    <div id="section2" class="scroll-section">
+        <app-image-cards-mcq [model]="cardsMcqModel1" (screenNavigation)="goToSection(2)"></app-image-cards-mcq>
+        <img src="assets/faa/images/B-M-L-sc-1.png" class="image-relative" alt="">
+    </div>
+    <div id="section3" class="scroll-section">
+        <app-image-cards-mcq [model]="cardsMcqModel2" (screenNavigation)="goToSection(3)"></app-image-cards-mcq>
+        <img src="assets/faa/images/B-M-L-sc-1.png" class="image-relative" alt="">
+    </div>
+    <div id="section4" class="scroll-section">
+        <app-image-cards-mcq [model]="cardsMcqModel3" [screenUp]="true" (screenNavigation)="goToSection(0)"></app-image-cards-mcq>
+        <img src="assets/faa/images/B-M-L-sc-1.png" class="image-relative" alt="">
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="tab-content">
+    <div class="left-section">
+      <img *ngIf="imgSrc" [src]="imgSrc" [alt]="altText">
+    </div>
+    <div class="right-section">
+      <div class="heading">
+        <app-text [text]="heading"></app-text>
+      </div>
+      <div class="description">
+        <app-text [text]="description"></app-text>
+      </div>
+    </div>
+    <app-audio #audioPlayer [playDefault]="playAudioDefault" [audioSrc]="audioSrc"></app-audio>
+    <div class="icon play-pause-btn" (click)="isAudioPlaying?playAudio():pauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span [ngClass]="{'icon-volume-mute':!isAudioPlaying, 'icon-volume':isAudioPlaying }"></span>
+    </div>
+    <div class="icon screen-navigation-button" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('navigateToNextScreen')" tabindex="0"
+      (focus)="onFocus($event)" (blur)="onBlur($event)">
+      <span class="icon-chevron_down"></span>
+    </div>
+  </div>

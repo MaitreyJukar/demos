@@ -1,0 +1,19 @@
+<div class="cards-mcq-container">
+  <div class="question-container">
+    <div class="question-index" *ngIf="index">
+      {{ index }}.
+    </div>
+    <div class="main-question">
+      <div class="question-text" [innerHTML]="model.question.text | safeHtml">
+      </div>
+    </div>
+
+  </div>
+  <div class="cards-container">
+    <div class="option-container" *ngFor="let item of data.options let i='index'">
+      <app-card-flip #cards [questionAria]="i === 0 ? model.question.text : undefined" [model]="data.options[i]" (cardClicked)="handleCardClick($event)" clickHandledByParent=true></app-card-flip>
+    </div>
+
+  </div>
+
+</div>

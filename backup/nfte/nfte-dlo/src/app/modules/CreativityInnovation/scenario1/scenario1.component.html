@@ -1,0 +1,238 @@
+<div class="scenario-wrapper" [ngClass]="{'full-height':scenesBoolean[1]}">
+  <div class="top-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" buttonText="previous"
+      showIconBefore=true iconClass="icon-chevron_left" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player-wrapper">
+      <div class="pseudo-audio-player" *ngIf="scenesBoolean[1]">
+        <div class="audio-instructions">
+          <span>{{data['scenes'][1].instructionText}}</span>
+        </div>
+        <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+        (focus)="onFocus($event, true)" (blur)="onBlur($event, true)">
+          <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+          , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+          , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+        </div>
+        <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0"
+        (focus)="onFocus($event, true)" (blur)="onBlur($event, true)">
+          <span class="icon icon-transcript"></span>
+        </div>
+      </div>
+    </div>
+    <app-custom-button #continueButton *ngIf="!scenesBoolean[3]" buttonClass="scenario-continue transparent" buttonText="continue"
+      showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button #endScenarioButton *ngIf="scenesBoolean[3]" [buttonClass]="{'scenario-continue':true, 'background':dndModel2.noOfTrials===0 }"
+      buttonText="endScenario" showIconAfter=true iconClass="icon-chevron_right" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+  </div>
+ 
+  <div class="scene1 scene" *ngIf="scenesBoolean[0]">
+      <div class="scenario-title">
+          <div>
+              <div>{{ data['scenarioDesc'] }}</div>
+          </div>
+          <div>
+              <div>{{ data['scenarioTitle'] }}</div>
+          </div>
+      </div>
+    <app-video-player [model]=model></app-video-player>
+  </div>
+
+
+  <!-- <div class="scene2 scene" *ngIf="scenesBoolean[1]">
+    <div class="audio-player">
+      <app-audio #audioPlayer [audioSrc]="data[1].audioSrc" [transcript]="data[1].transcriptSrc"></app-audio>
+    </div>
+    <div class="scene2-title">
+
+      <app-text textId="s1scene1Title"></app-text>
+    </div>
+    <div class="content">
+      <div class="points">
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_01.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point1"></app-text>
+            </div>
+            <app-text textId="s1scene1Point1Text"></app-text>
+          </div>
+        </div>
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_02.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point2"></app-text>
+            </div>
+            <app-text textId="s1scene1Point2Text"></app-text>
+          </div>
+        </div>
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_03.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point3"></app-text>
+            </div>
+            <app-text textId="s1scene1Point3Text"></app-text>
+          </div>
+        </div>
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_04.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point4"></app-text>
+            </div>
+            <app-text textId="s1scene1Point4Text"></app-text>
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="assets/ci/images/NFTE_DLO_02_scenario_01_videoGames_image.png">
+      </div>
+    </div>
+  </div> -->
+  <div class="scene3 scene" *ngIf="scenesBoolean[1]">
+      <div class="audio-player">
+          <app-audio #audioPlayer [audioSrc]="data['scenes'][1].audioSrc" [transcript]="data['scenes'][1].transcriptSrc"></app-audio>
+        </div>
+    <div class="scene3-title">
+      <app-text textId="s1scene1Title"></app-text>
+    </div>
+    <div class="content">
+      <div class="points">
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_01.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point1"></app-text>
+            </div>
+            <app-text textId="s1scene1Point1Text"></app-text>
+          </div>
+        </div>
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_02.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point2"></app-text>
+            </div>
+            <app-text textId="s1scene1Point2Text"></app-text>
+          </div>
+        </div>
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_03.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point3"></app-text>
+            </div>
+            <app-text textId="s1scene1Point3Text"></app-text>
+          </div>
+        </div>
+        <div class="point">
+          <div class="image-bullet">
+            <img src="assets/ci/images/NFTE_DLO_02_Intro_01_videoGames_04.png">
+          </div>
+          <div class="point-text">
+            <div class="point-heading">
+              <app-text textId="s1scene1Point4"></app-text>
+            </div>
+            <app-text textId="s1scene1Point4Text"></app-text>
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="assets/ci/images/NFTE_DLO_02_scenario_01_videoGames_image.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="scene4 scene" *ngIf="scenesBoolean[2]">
+    <app-drag-and-drop #dnd1 scaleB="true" [showResult]="dndModel1.submited" #dnd [model]="dndModel1" [showCorrectAnswer]=!dnd1ShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel1.submited}" *ngIf="scenesBoolean[2]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel1.submited" [disabled]="!dndModel1.attempted" [buttonClass]="{'scenario-submit': !dndModel1.attempted, 'done': dndModel1.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel1.submit()"></app-custom-button>
+        <div *ngIf="dndModel1.submited" class="feedback" [ngClass]="{'correct':dndModel1.responseType === responseType.CORRECT, 'incorrect':dndModel1.responseType === responseType.INCORRECT, 'partially-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd1ShowCorrectAnswer || dndModel1.noOfTrials > 0}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel1.responseType === responseType.CORRECT, 'icon-check-cross':dndModel1.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel1.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials > 0 && dndModel1.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel1.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel1.resetData(); dnd1.resetTilesPosition(); dnd1.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials === 0 && dndModel1.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd1ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd1ShowCorrectAnswer = !dnd1ShowCorrectAnswer"></app-custom-button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scene5 scene" *ngIf="scenesBoolean[3]">
+    <app-drag-and-drop #dnd2 scaleB="true" [showResult]="dndModel2.submited" #dnd [model]="dndModel2" [showCorrectAnswer]=!dnd2ShowCorrectAnswer></app-drag-and-drop>
+    <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel2.submited}" *ngIf="scenesBoolean[3]">
+      <div class="align-content-center">
+        <app-custom-button *ngIf="!dndModel2.submited" [disabled]="!dndModel2.attempted" [buttonClass]="{'scenario-submit': !dndModel2.attempted, 'done': dndModel2.attempted }"
+          buttonText="submit" (buttonClickEvent)="dndModel2.submit()"></app-custom-button>
+        <div *ngIf="dndModel2.submited" class="feedback" [ngClass]="{'correct':dndModel2.responseType === responseType.CORRECT, 'incorrect':dndModel2.responseType === responseType.INCORRECT, 'partially-correct':dndModel2.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd2ShowCorrectAnswer || dndModel2.noOfTrials > 0}"
+          class="feedback">
+          <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel2.responseType === responseType.CORRECT, 'icon-check-cross':dndModel2.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel2.responseType === responseType.PARTIALLY_CORRECT}">
+          </div>
+          <span aria-live="polite" aria-atomic="true" [innerHTML]="dndModel2.feedback"></span>
+
+        </div>
+        <app-custom-button *ngIf="dndModel2.submited && dndModel2.noOfTrials > 0 && dndModel2.responseType !== responseType.CORRECT"
+          [buttonClass]="{'done': dndModel2.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel2.resetData();  dnd2.resetTilesPosition(); dnd2.ngAfterViewInit()"></app-custom-button>
+        <app-custom-button *ngIf="dndModel2.submited && dndModel2.noOfTrials === 0 && dndModel2.responseType !== responseType.CORRECT"
+          class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd2ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+          (buttonClickEvent)="dnd2ShowCorrectAnswer = !dnd2ShowCorrectAnswer"></app-custom-button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="mobile-navigation-bar">
+    <app-custom-button [disabled]="activeScene===0" [buttonClass]="{'disable':activeScene===0, 'scenario-continue':true}" showIconBefore=true
+      iconClass="icon-arrow_back_black" (buttonClickEvent)="previousClicked()"></app-custom-button>
+    <div class="pseudo-audio-player" *ngIf="scenesBoolean[1]">
+      <div class="audio-instructions">
+        <span>{{data['scenes'][1].instructionText}}</span>
+      </div>
+      <div class="icon play-pause-btn" (click)="playPauseAudio()" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+      (focus)="onFocus($event, true)" (blur)="onBlur($event, true)">
+      <span [ngClass]="{'icon-pause-2':isAudioPlaying && !videoCompleted
+      , 'icon-play_filled':!isAudioPlaying && !videoCompleted
+      , 'icon-replay-video':!isAudioPlaying && videoCompleted}"></span>
+      </div>
+      <div class="transcript-btn" (click)="showTranscript()" [attr.aria-label]="getAccText('transcript')" tabindex="0"
+      (focus)="onFocus($event, true)" (blur)="onBlur($event, true)">
+        <span class="icon icon-transcript"></span>
+      </div>
+    </div>
+    <app-custom-button *ngIf="!scenesBoolean[3]" buttonClass="scenario-continue transparent" showIconAfter=true iconClass="icon-arrow_forward_black"
+      (buttonClickEvent)="continueClicked()"></app-custom-button>
+    <app-custom-button *ngIf="scenesBoolean[3]" [buttonClass]="{'scenario-continue':true, 'background':dndModel2.noOfTrials===0 }"
+      showIconAfter=true iconClass="icon-arrow_forward_black" (buttonClickEvent)="endScenarioClicked()"></app-custom-button>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="mcq-container" [ngClass]="{disabled:model.submited}" *ngIf="!model.columnHeader">
+  <div class="question-container">
+    <app-question [model]="model" [questionIndex]="index + 1"></app-question>
+  </div>
+
+  <div class="option-container" [ngClass]="setCorrectIncorrectClass(i)" *ngFor="let item of model.options;let i=index">
+
+    <div [ngClass]="((showCorrectAnswerFlag && mrqModel.arrCorrectOption.indexOf(i) !== -1) || 
+      ( !showCorrectAnswerFlag &&  mrqModel.selected.indexOf(i) !== -1)) ? 'icon-check_box_selected':'icon-check_box_normal'"
+      class="mcq-radio-button icon" [id]=" 'mcq-option-' + index + '-' + i " >
+      <input  type="checkbox" passFocus="true" [attr.index]="i" class="mcq-radio user-response" [disabled]="model.submite?true:false" [attr.name]="'mcq-'+i" [attr.aria-labelledby]="'label-'+index+'-'+i"
+        tabindex="0" (focus)="onInputFocus($event, i)" (blur)="onInputBlur($event)" (click)="!model.submited ? setSelected(i):null">
+    </div>
+
+    <label [ngClass]="{'selected-text':((!showCorrectAnswerFlag) && mrqModel.selected.indexOf(i) !== -1)}" [attr.aria-label]=" i === 0? getPlainText( model.text ) + ' ' + item.option : item.option" 
+    (click)="!model.submited ? setSelected(i):null" [attr.id]="'label-'+index+'-'+i">
+      <div [innerHTML]=item.option></div>
+    </label>
+
+    <div *ngIf="showResult"  [ngClass]="(showCorrectAnswerFlag) ?
+      ((mrqModel.arrCorrectOption.indexOf(i)) !== -1 ? 'icon-check' : '' ) :
+      ((mrqModel.selected.indexOf(i) !== -1 ) ? ( (mrqModel.isCorrect(i)) ? 'icon-check' : 'icon-check-cross') : '' )" class="mcq-feedback-icon icon">
+      
+    </div>
+
+  </div>
+</div>
+
+
+<div class="mcq-container" [ngClass]="{disabled:model.submited}" *ngIf="model.columnHeader">
+  <div class="question-container">
+    <app-question [model]="model" [questionIndex]="index + 1"></app-question>
+  </div>
+  <div class="options-wrapper">
+    <div class="column-header" [ngClass]="{'last':last}" *ngFor="let column of model.columns; let columnIndex = index; let last = last;">
+      <div class="column-title">{{column.title}}</div>
+      <div class="option-container" [ngClass]="setCorrectIncorrectClass(i, columnIndex)" *ngFor="let item of column.options; let i='index'">
+
+        <div [ngClass]="setClassRadioBtn(i, columnIndex)" class="mcq-radio-button icon" [id]=" 'mcq-option-' + index + '-' + i "
+          (click)="!model.submited ? setSelected(i, columnIndex):null">
+          <input type="checkbox" class="mcq-radio user-response" [disabled]="model.submited?true:false" [attr.name]="'mcq-'+index" [attr.aria-labelledby]="'label-'+index+'-'+i"
+            (focus)="onInputFocus($event,i, columnIndex)" (blur)="onInputBlur($event)">
+        </div>
+
+        <label [ngClass]="setClassText(i, columnIndex)" [attr.id]="'label-'+index+'-'+i" (click)="!model.submited ? setSelected(i, columnIndex):null" 
+        [attr.aria-label]=" i === 0? model.text + ' ' + item.option : item.option" >
+          <div  [innerHTML]=item.option></div>
+        </label>
+
+        <div *ngIf="showResult" [ngClass]="setCorrectIncorrectIconClass(i, columnIndex)" class="mcq-feedback-icon icon">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="for-accessibility" aria-live="polite">
+  <span role="alert">{{model.submitFeedback}}</span>
+</div>

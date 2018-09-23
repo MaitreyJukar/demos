@@ -1,0 +1,86 @@
+<div class="match-container" [ngClass]="{disabled:this.model.submited}">
+  <div class="question-container">
+    <app-question [model]="model" [questionIndex]="index + 1" (resetClicked)="resetMatch()"></app-question>
+  </div>
+  <div class="match-left-right-container" [ngClass]="{'active': window.innerWidth > 500, 'inactive': window.innerWidth <= 500 }"
+    (blur)="selectedColumn = -1">
+    <div id="radio-option-container" class="match-left-container radio-option-container" index="0">
+      <div class="column-name">Column A</div>
+      <div class="option-container" *ngFor="let item of model.leftData let i='index'">
+        <div class="mcq-label" (click)="!this.model.submited ? setClickCoordinates($event):null">
+          <div>
+            <span class="option-index" [innerHTML]="i+1 + '.'"></span>
+            <span *ngIf="item.type==='text'" class="sentence-break" [innerHTML]="item.data | safeHtml"></span>
+            <img *ngIf="item.type=== 'image'" [style.width]="item.width" [style.height]="item.height" src="{{item.data}}" />
+          </div>
+        </div>
+        <div class="radio-wrapper">
+          <div class="parent-circle user-response" [id]="'parent-1-'+i" [attr.aria-label]=" i === 0? getPlainText( model.text ) + ' ' + item.data : item.data"
+            [tabindex]=" model.submited || selectedColumn === 0 ? -1 : 0" (click)="!this.model.submited ? setClickCoordinates($event):null"
+            (focus)="onFocus($event)" (blur)="onBlur($event)">
+            <div class="circle mcq-radio-button" [id]=" 'match-left-' + index + '-' + i ">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="match-middle-container"></div>
+    <div id="radio-option-container" class="match-right-container radio-option-container" index="1">
+      <div class="column-name">Column B</div>
+      <div class="option-container" *ngFor="let item of model.rightData let j='index'">
+        <div class="radio-wrapper">
+          <div class="parent-circle user-response" [tabindex]=" model.submited || selectedColumn === 1 ? -1 : 0" [attr.aria-label]="item.data"
+            [id]="'parent-2-'+j" (click)="!this.model.submited ? setClickCoordinates($event):null" (focus)="onFocus($event)"
+            (blur)="onBlur($event)">
+            <div class="circle  mcq-radio-button" [id]=" 'match-right-' + index + '-' + j"></div>
+          </div>
+        </div>
+        <div class="mcq-label" (click)="!this.model.submited ? setClickCoordinates($event):null">
+          <div>
+            <span class="option-index" [innerHTML]="j+1 + '.'"></span>
+            <span *ngIf="item.type==='text'" [innerHTML]="item.data"></span>
+            <img *ngIf="item.type=== 'image'" [style.width]="item.width" [style.height]="item.height" src="{{item.data}}" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-view" [ngClass]="{'active': window.innerWidth <= 500, 'inactive': window.innerWidth > 500 }">
+    <div class="instruction-text">Submit your answer here,</div>
+    <div class="match-option-mobile-view match-left-right-container" (blur)="selectedColumn = -1">
+      <div id="radio-option-container" class="match-left-container radio-option-container" index="0">
+        <div class="option-container" *ngFor="let item of model.leftData let i='index'">
+          <div class="mcq-label" (click)="!this.model.submited ? setClickCoordinates($event):null">
+            <div>
+              <span class="option-index" [innerHTML]=" 'A&nbsp;' + (i+1)"></span>
+            </div>
+          </div>
+          <div class="radio-wrapper">
+            <div class="parent-circle user-response" [id]="'parent-1-'+i" (click)="!this.model.submited ? setClickCoordinates($event):null"
+              [tabindex]=" model.submited || selectedColumn === 0 ? -1 : 0" [attr.aria-label]="item.data" (focus)="onFocus($event)"
+              (blur)="onBlur($event)">
+              <div class="circle  mcq-radio-button" [id]=" 'match-left-' + index + '-' + i ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="match-middle-container"></div>
+      <div id="radio-option-container" class="match-right-container radio-option-container" index="1">
+        <div class="option-container" *ngFor="let item of model.rightData let j='index'">
+          <div class="radio-wrapper">
+            <div class="parent-circle user-response" [tabindex]=" model.submited || selectedColumn === 1 ? -1 : 0" [attr.aria-label]="item.data"
+              [id]="'parent-2-'+j" (click)="!this.model.submited ? setClickCoordinates($event):null" (focus)="onFocus($event)"
+              (blur)="onBlur($event)">
+              <div class="circle  mcq-radio-button" [id]=" 'match-right-' + index + '-' + j"></div>
+            </div>
+          </div>
+          <div class="mcq-label" (click)="!this.model.submited ? setClickCoordinates($event):null">
+            <span class="option-index" [innerHTML]=" 'B&nbsp;' + (j+1)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>

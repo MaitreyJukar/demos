@@ -1,0 +1,13 @@
+<div class="dlo-learn">
+  <div class="lesson-title">
+    <app-text *ngIf="!jsonText" textId=video-title></app-text>
+    <app-text *ngIf="jsonText" [text]="jsonText.videoTitle"></app-text>
+  </div>
+  <div class="lesson-description">
+    <app-text *ngIf="!jsonText" textId=video-description></app-text>
+    <app-text *ngIf="jsonText" [text]="jsonText.videoDescription"></app-text>
+  </div>
+  <div class="video-container" [ngClass]="{'video-fullscreen':(video.api && video.api.fsAPI.isFullscreen || false)}">
+    <app-video-player #video [model]=model></app-video-player>
+  </div>
+</div>

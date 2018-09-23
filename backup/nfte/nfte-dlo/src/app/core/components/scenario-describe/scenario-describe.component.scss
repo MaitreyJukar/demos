@@ -1,0 +1,289 @@
+@import './../../../../constants.scss';
+.description-wrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.text-section {
+    width: 50%;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+}
+
+.play-pause-btn {
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    color: #4C12A1;
+    box-shadow: $audio-button-shadow;
+    position: absolute;
+    padding: 5px;
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.screen-navigation-button {
+    background-color: #4C12A1;
+    border-radius: 50%;
+    color: #EFEFEF;
+    box-shadow: inset 0px -4px 0px 0px #2b0761;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 170;
+    padding: 4px;
+    height: 40px;
+    line-height: 35px;
+    width: 40px;
+    display: block;
+}
+
+.button-parent {
+    position: relative;
+}
+
+.text-section {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 70px 0px 50px;
+    position: relative;
+    display: flex;
+    .title {
+        font-size: 24px;
+        font-family: "Quicksand";
+        color: rgb(34, 34, 34);
+        padding-bottom: 12px;
+        font-weight: bold;
+    }
+    .description {
+        font-size: 14px;
+        font-family: "Roboto";
+        color: rgb(34, 34, 34);
+    }
+}
+
+.icon-back {
+    color: #4C12A1;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.color-white {
+    color: white;
+}
+
+// .slide{
+//     animation: slide 0.5s ease-in;
+// }
+@keyframes slide {
+    0% {
+        transform: translateY(150%);
+        transform: translateX(-25%)
+    }
+    100% {
+        transform: translateY(0%);
+        transform: translateX(0%)
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        -webkit-transform: translateY(150%);
+        -webkit-transform: translateX(-25%);
+    }
+    100% {
+        -webkit-transform: translateY(00%);
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@mixin freeScroll() {
+    .left-section {
+        .title {
+            left: 230px;
+        }
+    }
+    .description-wrapper .screen-navigation-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:$desktop) {
+    @media screen and (max-height: $tabletLandscapeMinHeight) {
+        .left-section {
+            .title {
+                left:230px;
+            }
+        }
+        .description-wrapper .screen-navigation-button {
+            display: none;
+        }
+        .play-pause-btn,
+        .icon-back {
+            top: 0px;
+        }
+    }
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax) {
+    .description-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .description-wrapper.image-left {
+        flex-direction: column;
+    }
+    .text-section {
+        position: initial;
+        justify-content: center;
+        padding: 20px 50px;
+        width: 100%;
+        .title {
+            position: absolute;
+            top: 3px;
+            display: block;
+            width: 88%;
+            text-align: center;
+        }
+    }
+    .icon-back {
+        top: 0px;
+        left: 0px;
+        color: #4C12A1 !important;
+    }
+    .play-pause-btn {
+        top: 0px;
+        right: 0px;
+    }
+    .image-section {
+        width: 100%;
+        padding-top: 50px;
+        img {
+            width: auto;
+            max-width: 400px;
+            max-height: 412px;
+        }
+    }
+    .description-wrapper {
+        position: relative;
+        .button-parent {
+            position: initial;
+        }
+        .screen-navigation-button {
+            bottom: -8px;
+            right: -8px;
+            background-color: #4C12A1;
+            box-shadow: inset 0px -4px 0px 0px #2b0761;
+            .icon-chevron_down {
+                color: #ffffff;
+            }
+        }
+    }
+    @media screen and (max-height:$tabletMinHeight) {
+        .isAndroid :host {
+            @include freeScroll();
+        }
+    }
+    @media screen and (max-height:$tabletPortraitMin) {
+        :host {
+            @include freeScroll();
+        }
+    }
+}
+
+@media screen and (max-width:$mobileLandscape) {
+    .description-wrapper {
+        flex-direction: column-reverse;
+        padding-top: 54px;
+    }
+    .description-wrapper.image-left {
+        flex-direction: column;
+    }
+    .screen-navigation-button {
+        display: none;
+    }
+    .text-section {
+        width: 100%;
+        padding: 24px;
+        text-align: left;
+        position: initial;
+        .decription {
+            padding-top: 20px;
+        }
+    }
+    .image-section {
+        width: 100%;
+        align-items: center;
+        img {
+            width: 100%;
+            padding: 0px 76px;
+            max-width: 350px;
+        }
+    }
+    .title {
+        position: absolute;
+        top: 12px;
+        text-align: center;
+        width: 100%;
+        left: 0px;
+    }
+    .icon-back {
+        display: none;
+    }
+    .play-pause-btn {
+        z-index: 100;
+        top: 16px;
+    }
+}
+
+@media screen and (max-width: $mobilePotrait) {
+    .description-wrapper {
+        padding-top: 0px;
+    }
+    .text-section {
+        margin-top: 20px;
+        padding: 0px 15px 0px 15px;
+        height: 100%;
+        justify-content: center;
+        overflow: none;
+        position: relative;
+        .description {
+            padding-top: 0px;
+        }
+    }
+    .title {
+        width: 75%;
+        text-align: left;
+        position: initial;
+    }
+    .image-section {
+        display: block;
+        height: 100%;
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+        }
+    }
+    .text-section{
+        position:relative;
+    }
+    .play-pause-btn {
+        top: 0px;
+    }
+}

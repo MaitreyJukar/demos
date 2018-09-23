@@ -1,0 +1,94 @@
+
+  <div id="fo-learn" class="scroll" [ngClass]="{'no-scroll':(learn.video.api && learn.video.api.fsAPI.isFullscreen || false),'isFireFox':isFireFox, 'isIE':isIE, 'isEdge':isEdge, 'isSafari':isSafari,'isIpad':isIpad}" #scrollParent
+    appScroll sectionSelector=".scroll-section" [topOffset]="scrollTopOffset" (sectionChanged)="sectionChanged($event)">
+
+    <div id="section1" class="scroll-section" index="0">
+      
+      <app-learn-intro #learnIntro [model]="learnIntroModel" [playAudioDefault]="playAudioDefault" (screenNavigation)="scrollDirective.scrollToSection(1)"
+      (defaultAudio)="setDefaultPlayAudio($event)"></app-learn-intro>
+      
+    </div>
+
+    <div id="section2" class="scroll-section" index="1">
+      
+        <div class="characteristics-heading">
+          <app-text [text]="modelData[1].title"></app-text>
+        </div>
+        <nav [ngClass]="{'isIpad':isIpad}">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <tabset class="tabset-container">
+                  <tab (select)="onTabSelected(i)" *ngFor="let tab of modelData[1].tabs; let i = index">
+                    <ng-template tabHeading>
+                      <app-text [text]="tab.title"></app-text>
+                      <div *ngIf="modelData[1].tabs.length - 1 !== i" class="border"></div>
+                    </ng-template>
+                    <app-tab-content [ngClass]="{'last-tab':modelData[1].tabs.length - 1 == i}" [heading]="tab.heading" [description]="tab.description" [audioSrc]="tab.audioSrc" [imgSrc]="tab.imgSrc"
+                      [altText]="tab.imgAltText" (screenNavigation)="scrollDirective.scrollToSection(2)" (defaultAudio)="setDefaultPlayAudio($event)"></app-tab-content>
+                  </tab>
+                </tabset>
+        
+                <accordion class="accordion-container" [closeOthers]="true">
+                  <accordion-group  *ngFor="let tab of modelData[1].tabs; let i = index">
+                    <div accordion-heading (click)="onAccordianOpen(i)">
+                      <app-text [text]="tab.title"></app-text>
+                      <div class="down-arrow icon icon-chevron_down"></div>
+                    </div>
+                    <app-tab-content [heading]="tab.heading" [description]="tab.description" [audioSrc]="tab.audioSrc" [imgSrc]="tab.imgSrc"
+                      [altText]="tab.imgAltText" (screenNavigation)="scrollDirective.scrollToSection(2)" (defaultAudio)="setDefaultPlayAudio($event)"></app-tab-content>
+                  </accordion-group>
+                </accordion>
+          </div>
+        </nav>
+      
+    </div>
+
+
+    <div id="section3" class="scroll-section" index="2">
+      
+        <app-learn #learn [jsonText]="modelData[2]"></app-learn>
+        <div class="icon screen-navigation-button" (click)="scrollDirective.scrollToSection(3)" [attr.aria-label]="getAccText('navigateToNextScreen')"
+          tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+          <span class="icon-chevron_down"></span>
+        </div>
+    
+    </div>
+
+
+    <div id="section4" class="scroll-section" index="3">
+     
+        <app-select [model]="selectModel"></app-select>
+        <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':selectModel.submited}">
+          <div class="align-content-center">
+            <app-custom-button *ngIf="!selectModel.submited" [disabled]="!selectModel.attempted" [buttonClass]="{'scenario-submit': !selectModel.attempted, 'done': selectModel.attempted }"
+              buttonText="submit" (buttonClickEvent)="selectModel.submit()"></app-custom-button>
+            <div *ngIf="selectModel.submited" class="feedback" [ngClass]="{'correct':selectModel.responseType === responseType.CORRECT, 'incorrect':selectModel.responseType === responseType.INCORRECT, 'partially-correct':selectModel.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!selectModel.showCorrectAnswer}"
+              class="feedback">
+              <div class="feedback-icon icon" [ngClass]="{'icon-check':selectModel.responseType === responseType.CORRECT, 'icon-check-cross':selectModel.responseType === responseType.INCORRECT, 'icon-partial-correct':selectModel.responseType === responseType.PARTIALLY_CORRECT}">
+              </div>
+              <span aria-live="polite" aria-atomic="true" [innerHTML]="selectModel.feedback"></span>
+
+            </div>
+            <app-custom-button *ngIf="selectModel.submited && selectModel.noOfTrials > 0 && selectModel.responseType !== responseType.CORRECT"
+              [buttonClass]="{'done': selectModel.attempted }" buttonText="tryAgain" (buttonClickEvent)="selectModel.resetData()"></app-custom-button>
+            <app-custom-button *ngIf="selectModel.submited && selectModel.noOfTrials === 0 && selectModel.responseType !== responseType.CORRECT"
+              class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="selectModel.showCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+              (buttonClickEvent)="selectModel.onClick()"></app-custom-button>
+
+          </div>
+
+        </div>
+        <div class="icon navigation next-section screen-navigation-button" (click)="scrollDirective.scrollToSection(4)" [attr.aria-label]="getAccText('navigateToNextScreen')"
+        tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+        <span class="icon-chevron_down"></span>
+      </div>
+      
+    </div>
+
+
+    <div id="section5" class="scroll-section" index="4">
+      
+      <app-learn-example  #learnExample [model]="learnExampleModel" [playAudioDefault]="playAudioDefault" (screenNavigation)="scrollDirective.scrollToSection(0)"
+      (defaultAudio)="setDefaultPlayAudio($event)"></app-learn-example>
+        
+    </div>
+  </div>

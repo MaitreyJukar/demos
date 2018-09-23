@@ -1,0 +1,34 @@
+<div class="main-wrapper">
+  <div class="image-container">
+    <img #img class="slide" *ngIf="!model.replayGif" [src]="model.imgSrc" [alt]="model.imgAltText">
+    <app-replay-gif *ngIf="model.replayGif" [imgFrame]="model.imgFrame" [src]="model.imgSrc" [alt]="model.imgAltText" [gifDuration]="model.gifDuration">
+      
+    </app-replay-gif>
+    <div class="icon icon-back" (click)="backToScenarios()" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+    (focus)="onFocus($event)" (blur)="onBlur($event)"></div>
+  </div>
+  <div class="content-wrapper">
+      <app-audio #audioPlayer1 [playDefault]=false [audioSrc]="model.audioSrc"></app-audio>
+      <div class="icon play-pause-btn" (click)="playPauseAudio1(audioPlayer1)" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+        (focus)="onFocus($event)" (blur)="onBlur($event)">
+        <span [ngClass]="{'icon-volume-mute':isAudioPlaying1
+              , 'icon-volume':!isAudioPlaying1 }"></span>
+      </div>
+  
+      <div class="title">
+        {{model.title}}
+      </div>
+      <div class="description" [innerHtml]="model.description | safeHtml">
+      </div>
+
+  </div>
+
+</div>
+<div class='button-parent'>
+  <div class="icon screen-navigation-button" (click)="screenNavigation.next()" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+    (focus)="onFocus($event)" (blur)="onBlur($event)">
+    <span class="icon-chevron_down"></span>
+  </div>
+</div>
+
+

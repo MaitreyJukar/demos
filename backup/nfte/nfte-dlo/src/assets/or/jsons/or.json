@@ -1,0 +1,818 @@
+{
+  "string-table": {
+    "learn": "LEARN",
+    "explore": "EXPLORE",
+    "take-quiz": "TAKE QUIZ",
+    "IntroPopupButton": "LET'S GO",
+    "done": "DONE",
+    "reset": "RESET",
+    "skip": "SKIP QUESTION",
+    "showCorrectAnswer": "SHOW CORRECT ANSWER",
+    "showYourAnswer": "SHOW YOUR ANSWER",
+    "resume": "RESUME VIDEO",
+    "goToExplore": "GO TO EXPLORE",
+    "scenarioTitle": "Select a Scenario",
+	"scenarioDesc" : "Explore these three scenarios to find out how entrepreneurs use opportunity recognition by identifying customer pain points, problems the competition has not solved, and trends in the marketplace.",
+    "takeQuiz": "TAKE THE QUIZ",
+    "submitQuiz": "SUBMIT QUIZ",
+    "alert": "Alert",
+    "yes": "YES",
+    "no": "NO",
+    "print": "PRINT",
+    "quiz": "Quiz",
+    "viewReport": "VIEW REPORT",
+    "previous": "PREVIOUS",
+    "tryAgain": "TRY AGAIN",
+    "endScenario": "END SCENARIO",
+    "submitAlertPartialAttempted": "You haven't answered all questions. Are you sure you want to submit?",
+    "submitAlertAllAttempted": "Are you sure you want to submit final answers?",
+    "dloTitle": "Opportunity Recognition",
+    "video-title": "Watch this video to learn how NFTE alum Mark Thomspon used opportunity recognition to become a successful entrepreneur. <br><b>Click on the hotspots as they appear to learn more about Mark’s use of this skill.</b>",
+    "totalQuestions": "Total Questions",
+    "popup-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.Proin sodales pulvinar tempor.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate felis tellus mollis orci.",
+    "submit": "SUBMIT",
+    "continue": "CONTINUE",
+    "quizReport": "Quiz Report",
+    "skipped": "Not Answered",
+    "transcript": "Transcript",
+    "download": "DOWNLOAD",
+    "cancel": "CANCEL",
+	"fullscreen": "FULL SCREEN",
+	"exitFullscreen": "EXIT FULL SCREEN"
+  },
+  "assets": {
+    "images": [
+      "assets/common/images/NFTE_DLO_01_Intro_scenario_01_shirts.png",
+      "assets/common/images/NFTE_DLO_01_Intro_scenario_02_contacts.png",
+      "assets/common/images/NFTE_DLO_01_Intro_scenario_03_map.png",
+      "assets/common/images/NFTE_DLO_01_S03_Q1_diagram.png",
+      "assets/common/images/NFTE_DLO_01_scenario_01_DescBG.jpg",
+      "assets/common/images/NFTE_DLO_01_scenario_02_DescBG.jpg",
+      "assets/common/images/NFTE_DLO_01_scenario_03_DescBG.jpg",
+      "assets/common/images/nfte-logo-header.png",
+      "assets/common/images/scenario-desc_em.png",
+
+
+      "assests/images/DLO1-sprite.png",
+      "assests/images/intro-popup.png",
+      "assests/images/NFTE_DLO_01_Intro_scenario_01_shirts.png",
+      "assests/images/NFTE_DLO_01_Intro_scenario_02_contacts.png",
+      "assests/images/NFTE_DLO_01_Intro_scenario_03_map.png",
+      "assests/images/NFTE_DLO_01_S03_Q1_diagram.png",
+      "assests/images/NFTE_DLO_01_scenario_01_DescBG.jpg",
+      "assests/images/NFTE_DLO_01_scenario_02_DescBG.jpg",
+      "assests/images/NFTE_DLO_01_scenario_03_DescBG.jpg",
+      "assests/images/NFTE_DLO_02_02_fitness_Diagram.png",
+      "assests/images/nfte-logo-header.png",
+      "assests/images/preloader.gif",
+      "assests/images/scenario-2-question-1_with-text-mobile.png",
+      "assests/images/scenario-2-question-1_with-text.png",
+      "assests/images/scenario-desc_em.png"
+    ]
+  },
+  "acc-data": {
+    "playPause": "play pause",
+    "resume": "resume",
+    "transcript": "transcript",
+    "reset": "reset",
+    "previousLabel": "Previous",
+    "nextLabel": "Next",
+    "screenReaderPaginationLabel": "Pagination",
+    "screenReaderPageLabel": "question",
+    "screenReaderCurrentLabel": "You are on question",
+    "mute": "mute",
+    "fullscreen": "fullscreen"
+  },
+  "dlo": {
+    "learn": {
+	  "videoSrc": "assets/or/videos/MarkThompson_NFTE_Video.mp4",
+      "cuePointFile": "assets/or/cue-points.vtt",
+      "subtitle": "assets/or/subtitles/learn-video.vtt",
+      "transcript": "assets/or/transcripts/learn-video.txt",
+	  "questions": [
+	   {
+		"type": 1,
+		"question": {
+          "text": "Have you ever thought the cost of a yearbook was too high?",
+		  "questionMode":"1",
+		  "isGradable":"false"
+        },
+        "options": [
+          {
+            "option": "Yes",
+            "feedback": "Frustration like this is an example of what is called 'customer pain points'."
+          },
+          {
+            "option": "No",
+            "feedback": "Frustration like this is an example of what is called 'customer pain points'."
+          }
+        ],
+        "selected": -1
+      },
+	  {
+        "type": 7,
+		"question": {
+          "text": "How do you feel about this statement? <br/>Students should have a voice in what their school yearbook should cost.",
+          "correctOption": "2",
+		  "questionMode":"1",
+		  "isGradable":"false"
+        },
+        "options": [
+          {
+            "option": "Strongly Disagree"
+          },
+          {
+            "option": "Disagree"
+          },
+          {
+            "option": "Neither Agree nor Disagree"
+          },
+          {
+            "option": "Agree"
+          },
+          {
+            "option": "Strongly Agree"
+          }
+        ],
+		"desc":"Successful entrepreneurs ask their customers questions like this.",
+        "selected": -1
+      },
+        {
+		"type": 1,
+        "question": {
+          "text": "How did Mark Thompson use opportunity recognition in college?",
+          "correctOption": "2",
+		  "isGradable":"true"
+        },
+        "options": [
+          {
+            "option": "He kept his yearbook business exactly the same.",
+            "feedback": "Mark Thompson saw the opportunity to improve his business through new trends."
+          },
+          {
+            "option": "He sold his yearbook business to other students.",
+            "feedback": "Mark Thompson saw the opportunity to improve his business through new trends."
+          },
+          {
+            "option": "He saw a new way to improve his yearbook business.",
+            "feedback": "Mark Thompson saw the opportunity to improve his business through new trends."
+          }
+        ],
+        "selected": -1
+      },
+	  {
+		"type": 1,
+        "question": {
+          "text": "How did Mark Thompson use opportunity recognition to start Mark Media?",
+          "correctOption": "0",
+		  "isGradable":"true"
+        },
+        "options": [
+          {
+            "option": "He identified an unmet need in social impact companies.",
+            "feedback": "Identifying an unmet need in an existing industry is a good way to  use opportunity recognition."
+          },
+          {
+            "option": "He identified the need to start a nonprofit company of his own.",
+            "feedback": "Identifying an unmet need in an existing industry is a good way to  use opportunity recognition."
+          }
+        ],
+        "selected": -1
+      },
+		{
+			"type": 8,
+			"questionMode":"1",
+			"isGradable":"false",
+			"hotspotcoords":{
+				"size":"5vw",
+				"left":"25%",
+				"top":"55%"
+			},
+			"text": "Many successful entrepreneurs find opportunity recognition in areas in which they have talent and passion."
+		}
+      ]
+    },
+    "explore": {
+      "scenarios": [
+        {
+          "completed": false,
+          "description": "Recognize opportunity based on customer pain points surrounding existing products.",
+          "imageSrc": "assets/common/images/NFTE_DLO_01_Intro_scenario_01_shirts.png",
+          "title": "Scenario 1",
+		  "scenarioDesc": "Watch this video to learn about frustrations many men experience with the clothes they wear. Entrepreneurs view 'pain points' such as these as opportunities in a marketplace.",
+          "navigationURL": "scenario1",
+          "scenes": [
+            {
+              "cuePointFile": "assets/or/cue-points-scenario1.vtt",
+              "questions": [],
+              "videoSrc": "assets/or/videos/NFTE_DLO_01_S01_clothes.mp4",
+              "subtitle": "assets/or/subtitles/scenario1.vtt",
+              "transcript": "assets/or/transcripts/scenario1.txt"
+            },
+            {
+              "audioSrc": "or/audios/DLO1_S07.mp3",
+              "transcriptSrc": "or/transcripts/DLO1_S07.txt",
+              "instructionText": "Instructions",
+              "backgroundImage": "assets/common/images/NFTE_DLO_01_scenario_01_DescBG.jpg",
+              "theme": "purple",
+              "column1": {
+                "title": "Customer Preferences",
+                "points": [
+                  "75% of men say they want their casual clothing to look neat and stylish. ",
+                  "95% of men prefer their shirts to fall in the middle of the fly, but have difficulty finding them in stores.",
+                  "90% of men would like to own more shirts with the correct length to be properly worn untucked."
+                ]
+              },
+              "column2": {
+                "title": "Menswear",
+                "points": [
+                  "In 2015, menswear e-commerce sales reached $29 billion following average annual growth of 14%",
+                  "Menswear sales are growing faster than womenswear sales in the luxury market",
+                  "Men's shirts, jeans, jackets, and coats are forecast to be the top performers"
+                ]
+              }
+            },
+            {
+              "type": 2,
+              "question": {
+                "text": "Entrepreneurs use opportunity recognition by identifying customer pain points (unmet wants or needs) that existing products do not solve. Once pain points are identified, entrepreneurs can look for ways to solve them. Which of the facts below describe an unmet need or want in the menswear market? <div class=\"bold-weight\">Select all of the correct answers.",
+                "arrCorrectOption": [
+                  0,
+                  1
+                ]
+              },
+              "columnHeader": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "columns": [
+                {
+                  "title": "Customer Preferences",
+                  "options": [
+                    {
+                      "option": "95% of men prefer their shirts to fall in the middle of the fly, but have difficulty finding them in stores."
+                    },
+                    {
+                      "option": "90% of men would like to own more shirts with the correct length to be properly worn untucked."
+                    }
+                  ]
+                },
+                {
+                  "title": "Menswear",
+                  "options": [
+                    {
+                      "option": "In 2015, menswear e-commerce sales reached $29 billion following average annual growth of 14%"
+                    },
+                    {
+                      "option": "Men’s shirts, jeans, jackets, and coats are forecast to be the top performers"
+                    }
+                  ]
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Try again.",
+                  "partiallyCorrect": "Try again."
+                },
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Based on customer preferences, 95% of men prefer their shirts to fall in the middle of the fly, but have difficulty finding them in stores and 90% of men would like to own more shirts with the correct length to be properly worn untucked.",
+                  "partiallyCorrect": "Based on customer preferences, 95% of men prefer their shirts to fall in the middle of the fly, but have difficulty finding them in stores and 90% of men would like to own more shirts with the correct length to be properly worn untucked."
+                }
+              ],
+              "selected": []
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "inlineText": "<div class=\"normal-weight\">By recognizing a problem that stems from<div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 155px; height: 65px;\"></div></div></div>and creating a<div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 155px; height: 65px;\"></div></div></div>that solves this problem.</div>",
+              "groups": [
+                {
+                  "id": "0",
+                  "group": ""
+                },
+                {
+                  "id": "1",
+                  "group": ""
+                }
+              ],
+              "question": {
+                "text": "<div class=\"normal-weight\">How could an entrepreneur use opportunity recognition to profit in the menswear marketplace?</div> <div class=\"bold-weight\">Drag and drop the words or phrases into the statement and select Submit.</div>",
+                "arrCorrectOption": [
+                  -1,
+                  0,
+                  -1,
+                  1,
+                  -1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "competition "
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "customer pain points"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "delivery methods"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "new product"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "new regulation"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Try again.",
+                  "partiallyCorrect": "Try again."
+                },
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Solve a problem that stems from customer pain points and create a new product that solves the problem.",
+                  "partiallyCorrect": "Solve a problem that stems from customer pain points and create a new product that solves the problem."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "Recognize opportunity based on problems the competition has not solved.",
+          "imageSrc": "assets/common/images/NFTE_DLO_01_Intro_scenario_02_contacts.png",
+          "title": "Scenario 2",
+		  "scenarioDesc": "Watch this video to learn about problems that come with wearing contact lenses. Entrepreneurs view problems such as these as opportunities to beat the competition in a marketplace.",
+          "navigationURL": "scenario2",
+          "scenes": [
+            {
+              "videoSrc": "assets/or/videos/NFTE_DLO_01_S02_contacts.mp4",
+              "subtitle": "assets/or/subtitles/scenario2.vtt",
+              "transcript": "assets/or/transcripts/scenario2.txt",
+              "cuePointFile": "assets/or/cue-points-scenario2.vtt",
+              "questions": []
+            },
+            {
+              "audioSrc": "or/audios/DLO1_S12.mp3",
+              "transcriptSrc": "or/transcripts/DLO1_S12.txt",
+              "instructionText": "Instructions",
+              "backgroundImage": "assets/common/images/NFTE_DLO_01_scenario_02_DescBG.jpg",
+              "column1": {
+                "title": "Sales",
+                "points": [
+                  "The worldwide contact lens market generated about $7.4 billion in sales in 2015",
+                  "65% of respondents to a survey expected their contact lens practice to grow",
+                  "Sales of daily-disposable lenses show annual growth of about 20%"
+                ]
+              },
+              "column2": {
+                "title": "Customers",
+                "points": [
+                  "The majority of contact lens wearers purchase them from their optometrists",
+                  "The annual cost for daily-disposable lenses is $480 to $720 per year"
+                ]
+              }
+            },
+            {
+              "type": 5,
+              "singledrop": false,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "The annual cost for daily-disposable lenses is $480 to $720 per year."
+                },
+                {
+                  "id": "1",
+                  "group": "The majority of contact lens wearers purchase them from their optometrists."
+                }
+              ],
+              "question": {
+                "text": "<div class=\"normal-weight\">Opportunity recognition means beating the competition by finding solutions to problems that the competition has not solved.</div><div class=\"bold-weight\">Drag each opportunity to the problem it addresses, then select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  0,
+                  1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Partner with contact lens manufacturers to manage pricing"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Offer lower-cost subscription services"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Offer online shopping"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Try again.",
+                  "partiallyCorrect": "Try again."
+                },
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Customers’ dissatisfaction with current prices provides an opportunity to compete based on lower prices. The inconvenience of having to purchase contact lenses from an optometrist provides an opportunity to compete based on the convenience of online shopping.",
+                  "partiallyCorrect": "Customers’ dissatisfaction with current prices provides an opportunity to compete based on lower prices. The inconvenience of having to purchase contact lenses from an optometrist provides an opportunity to compete based on the convenience of online shopping."
+                }
+              ]
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "inlineText": " By solving customer problems to beat the competition with both<div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 175px; height: 65px;\"></div></div></div>.",
+              "groups": [
+                {
+                  "id": "1",
+                  "group": ""
+                }
+              ],
+              "question": {
+                "text": "<div class=\"normal-weight\">How could an entrepreneur use opportunity recognition to profit in the contact lens marketplace?</div><div class=\"bold-weight\">Drag and drop the words or phrases into the statement and select Submit.</div>",
+                "arrCorrectOption": [
+                  -1,
+                  -1,
+                  -1,
+                  1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "location and regulations"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "inventions and convenience"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "price and regulations"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "price and convenience"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Try again.",
+                  "partiallyCorrect": "Try again."
+                },
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Solve a problem that stems from customer pain points and beats the competition based on both price and convenience.",
+                  "partiallyCorrect": "Solve a problem that stems from customer pain points and beats the competition based on both price and convenience."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "Recognize opportunity based on trends in the marketplace.",
+          "imageSrc": "assets/common/images/NFTE_DLO_01_Intro_scenario_03_map.png",
+		  "scenarioDesc": "Watch this video to learn about two consumer trends. Entrepreneurs analyze trends such as these to find opportunities in a marketplace.",
+          "title": "Scenario 3",
+          "navigationURL": "scenario3",
+          "scenes": [
+            {
+              "videoSrc": "assets/or/videos/NFTE_DLO_01_S03_grocery.mp4",
+              "subtitle": "assets/or/subtitles/scenario3.vtt",
+              "transcript": "assets/or/transcripts/scenario3.txt",
+              "cuePointFile": "assets/or/cue-points-scenario3.vtt",
+              "questions": []
+            },
+            {
+              "audioSrc": "or/audios/DLO1_S17.mp3",
+              "transcriptSrc": "or/transcripts/DLO1_S17.txt",
+              "instructionText": "Instructions",
+              "backgroundImage": "assets/common/images/NFTE_DLO_01_scenario_03_DescBG.jpg",
+              "column1": {
+                "title": "Consumer Buying Trends",
+                "points": [
+                  "About 73 percent of internet users aged 18 to 24 years purchased products or services online in 2015.",
+                  "Sales of all collectible toys (action figures, miniature figures, trading cards, etc.) surged 33 percent in 2016."
+                ]
+              },
+              "column2": {
+                "title": "Subscription Services Trends",
+                "points": [
+                  "In April 2017, subscription company websites had about 37 million visitors, which is more than an 800% growth since 2014.",
+                  "There are about 5.7 million subscription box shoppers in the U.S. today."
+                ]
+              }
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "tilesWithinImage": false,
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "",
+                  "width": "19%",
+                  "height": "42%",
+                  "top": "31%",
+                  "left": "-2%",
+                  "widthMobile": "19%",
+                  "heightMobile": "42%",
+                  "topMobile": "31%",
+                  "leftMobile": "1%"
+                },
+                {
+                  "id": "1",
+                  "group": "",
+                  "width": "19%",
+                  "height": "42%",
+                  "top": "31%",
+                  "left": "40%",
+                  "widthMobile": "19%",
+                  "heightMobile": "42%",
+                  "topMobile": "31%",
+                  "leftMobile": "40%"
+                },
+                {
+                  "id": "2",
+                  "group": "",
+                  "width": "19%",
+                  "height": "42%",
+                  "top": "31%",
+                  "left": "83%",
+                  "widthMobile": "19%",
+                  "heightMobile": "425",
+                  "topMobile": "31%",
+                  "leftMobile": "77%"
+                }
+              ],
+              "question": {
+                "text": "Entrepreneurs can use opportunity recognition to sell products or services based on how trends intersect. Analyze these two trends to identify an opportunity.<div class=\"bold-weight\"> Drag the labels to the sections of the Venn diagram, then select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  2,
+                  1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Demand for Pop Culture Merchandise and Online Shopping",
+                  "width": "28%",
+                  "height": "24%",
+                  "top": "70%",
+                  "left": "0%",
+                  "maxNoOfLines": 4
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Rising Popularity of Subscription Services",
+                  "width": "28%",
+                  "height": "24%",
+                  "top": "70%",
+                  "left": "30%",
+                  "maxNoOfLines": 4
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Opportunity for Subscription Service Offering Collectible Merchandise",
+                  "width": "28%",
+                  "height": "24%",
+                  "top": "70%",
+                  "left": "60%",
+                  "maxNoOfLines": 4
+                }
+              ],
+              "backgroundImage": [
+                "assets/common/images/NFTE_DLO_01_S03_Q1_diagram.png",
+                "assets/common/images/NFTE_DLO_01_S03_Q1_diagram.png"
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Try again.",
+                  "partiallyCorrect": "Try again."
+                },
+                {
+                  "correct": "Correct!",
+                  "inCorrect": "Internet users aged 18 to 24 years create a demand for collectible merchandise, which can be served by a subscription-based service.",
+                  "partiallyCorrect": "Internet users aged 18 to 24 years create a demand for collectible merchandise, which can be served by a subscription-based service."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "type": 1,
+        "question": {
+          "text": "Which of the following best describes the first step in opportunity recognition?",
+          "correctOption": "0"
+        },
+        "options": [
+          {
+            "option": "Identifying unmet needs ",
+            "feedback": "Correct. Identifying unmet needs the first step in opportunity recognition."
+          },
+          {
+            "option": "Inventing new products",
+            "feedback": "Incorrect. Identifying unmet needs the first step in opportunity recognition. After that, an entrepreneur can invent new products to meet consumers' needs."
+          },
+          {
+            "option": "Starting new businesses",
+            "feedback": "Incorrect. Identifying unmet needs the first step in opportunity recognition. After that, an entrepreneur can start a new business to meet those needs."
+          },
+          {
+            "option": "Identifying new regulations",
+            "feedback": "Incorrect. Identifying unmet needs the first step in opportunity recognition. New regulations might either create new unmet needs or solve them. It is up to the entrepreneur to identify an opportunity based on this."
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "How is innovation related to opportunity recognition?",
+          "correctOption": "1"
+        },
+        "options": [
+          {
+            "option": "Both result in new products.",
+            "feedback": "Incorrect. Innovation and opportunity recognition may lead to new products, but they do not have to."
+          },
+          {
+            "option": "Innovation often occurs after an opportunity is recognized.",
+            "feedback": "Correct. Many innovative products and services have been the result of an entrepreneur recognizing the opportunity to meet an unmet want or need in a marketplace."
+          },
+          {
+            "option": "Neither is required for successful entrepreneurship.",
+            "feedback": "Incorrect. Both innovation and opportunity recognition are key parts of the entrepreneurial mindset."
+          },
+          {
+            "option": "Opportunity recognition occurs after new ideas are introduced.",
+            "feedback": "Incorrect. Opportunity recognition comes before, and often leads to, new ideas."
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "specificFeedback": true,
+        "inline": true,
+        "inlineText": "<div>Bluetooth technology uses radio waves to connect electronic devices. This innovation led to an opportunity by solving a problem rooted in the <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 190px; height: 115px;\" ></div></div><div>",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "<div class=\"bold-weight\">Drag and drop the object that best completes the statement.</div> ",
+          "arrCorrectOption": [
+            -1,
+            -1,
+            -1,
+            0
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "high cost of headphones",
+            "feedback": "Incorrect. Bluetooth technology does not necessarily make headphones cost any less. It does, however, allow people to move more freely by wearing headphones connected wirelessly to smart phones."
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": " lack of choice in headphones sizes",
+            "feedback": "Incorrect. Bluetooth technology does not necessarily create variety in the size of headphones. It does, however, allow people to move more freely by wearing headphones connected wirelessly to smart phones."
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "poor audio quality found in headphones",
+            "feedback": "Incorrect. Bluetooth technology does not necessarily affect the audio quality of headphones. It does, however, allow people to move more freely by wearing headphones connected wirelessly to smart phones."
+          },
+          {
+            "id": "3",
+            "type": "text",
+            "option": "awkwardness of wearing wired headphones",
+            "feedback": "Correct. Bluetooth technology allows people to move more freely by wearing headphones connected wirelessly to smart phones."
+          }
+        ]
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "specificFeedback": true,
+        "inline": true,
+        "inlineText": "The entrepreneur recognized an opportunity rooted in<div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 160px; height: 115px;\"></div></div></div>",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "An entrepreneur overhears her colleagues complaining that their local dry cleaners are always closed by the time they get home from work. There is a vacant shop in their busy office building. She sees the opportunity for a dry cleaner in her office building that would serve the employees in nearby office buildings.<div class=\"bold-weight\">Drag and drop the phrase that best completes the statement:</div>",
+          "arrCorrectOption": [
+            -1,
+            -1,
+            -1,
+            0
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "a technological advance",
+            "feedback": "Incorrect. The scenario does not mention any technological advances."
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "changes in trends in customer habits",
+            "feedback": "Incorrect. The scenario does not describe any changes in trends in customer habits."
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "offering a lower-cost service",
+            "feedback": "Incorrect. The scenario does not mention any price advantage."
+          },
+          {
+            "id": "3",
+            "type": "text",
+            "option": "beating the competition based on location",
+            "feedback": "Correct. The entrepreneur recognized an opportunity to provide more convenient dry cleaning service to employees of the in the nearby office buildings."
+          }
+        ]
+      },
+      {
+        "type": 7,
+        "question": {
+          "text": "Self Reflection: Click the part of the scale that best describes how you feel about the following statement: <br/> I understand the domain of opportunity recognition.",
+          "correctOption": "2"
+        },
+        "options": [
+          {
+            "option": "Strongly Disagree"
+          },
+          {
+            "option": "Disagree"
+          },
+          {
+            "option": "Neither Agree nor Disagree"
+          },
+          {
+            "option": "Agree"
+          },
+          {
+            "option": "Strongly Agree"
+          }
+        ],
+        "selected": -1
+      }
+    ]
+  }
+}

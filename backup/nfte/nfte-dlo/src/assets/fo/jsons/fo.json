@@ -1,0 +1,652 @@
+{
+  "string-table": {
+    "alert": "Alert",
+    "cancel": "CANCEL",
+    "continue": "CONTINUE",
+    "done": "DONE",
+    "download": "DOWNLOAD",
+    "explore": "EXPLORE",
+    "endScenario": "END SCENARIO",
+    "goToExplore": "GO TO EXPLORE",
+    "IntroPopupButton": "LET'S GO",
+    "learn": "LEARN",
+    "no": "NO",
+    "previous": "PREVIOUS",
+    "print": "PRINT",
+    "quiz": "Quiz",
+    "quizReport": "Quiz Report",
+    "reset": "RESET",
+    "resume": "RESUME VIDEO",
+    "scenarioTitle": "",
+    "showCorrectAnswer": "SHOW CORRECT ANSWER",
+    "showYourAnswer": "SHOW YOUR ANSWER",
+    "skip": "SKIP QUESTION",
+    "skipped": "Not Answered",
+    "submit": "SUBMIT",
+    "submitAlertAllAttempted": "Are you sure you want to submit final answers?",
+    "submitAlertPartialAttempted": "You haven't answered all questions. Are you sure you want to submit?",
+    "submitQuiz": "SUBMIT QUIZ",
+    "take-quiz": "TAKE QUIZ",
+    "takeQuiz": "TAKE THE QUIZ",
+    "totalQuestions": "Total Questions",
+    "transcript": "Transcript",
+    "tryAgain": "TRY AGAIN",
+    "viewReport": "VIEW REPORT",
+    "yes": "YES",
+    "dloTitle": "Future Orientation",
+    "popup-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.Proin sodales pulvinar tempor.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate felis tellus mollis orci.",
+    "s1scene1Title": "Create and Innovate by Challenging the Usual",
+    "scenarioDesc": "Explore the entrepreneurial mindset of </br>future orientation in each of these scenarios.",
+    "s1scene1Point1": "State Your Challenge",
+    "s1scene1Point1Text": "I want to change how I play video games.",
+    "s1scene1Point2": "State Your Assumptions",
+    "s1scene1Point2Text": "Game systems can be home consoles or portable devices.",
+    "s1scene1Point3": "Challenge the Usual",
+    "s1scene1Point3Text": "Game systems don’t HAVE to be console-only or portable device-only.",
+    "s1scene1Point4": "Ask “What If?” Questions",
+    "s1scene1Point4Text": "What if my game system could convert between a portable system and a console system? How could I make that work?",
+    "fullscreen": "FULL SCREEN",
+    "exitFullscreen": "EXIT FULL SCREEN",
+    "responsible": "RESPONSIBLE",
+    "proactive": "PROACTIVE",
+    "analytical": "ANALYTICAL",
+    "goal": "GOAL ORIENTED",
+    "adaptable": "ADAPTABLE",
+    "jeffTitle": "A man comfortable with risk",
+    "jeffDEsc": "One example of an entrepreneur who has been comfortable with risk is Jeff Bezos.</br></br>Bezos had a comfortable well-paying job on Wall Street. When he realized that the web was growing at a phenomenal rate, he recognized an opportunity. He took a tremendous risk by quitting his job to launch an online book store, Amazon.com.</br></br> At the time, many experts thought an online book store would fail. However, over the years, not only did Amazon become one of the largest retail companies in the world, Bezos’s empire has also expanded to newspapers, a rocket company, a grocery giant, health care, and more.</br></br>This phenomenal success has been possible due to Bezos’s entrepreneurial mindset characterized by his comfort with risk.",
+    "scenarios": "Scenarios",
+    "caption": "Caption"
+  },
+  "assets": {
+    "images": [
+      "assets/fo/gifs/FO-intro_Animation.gif"
+    ]
+  },
+  "acc-data": {
+    "playPause": "play pause",
+    "backToScenario":"back to scenario",
+    "navigateToNextScreen":"Navigate to next screen",
+    "resume": "resume",
+    "transcript": "transcript",
+    "reset": "reset",
+    "previousLabel": "Previous",
+    "nextLabel": "Next",
+    "screenReaderPaginationLabel": "Pagination",
+    "screenReaderPageLabel": "question",
+    "screenReaderCurrentLabel": "You are on question",
+    "mute": "mute",
+    "fullscreen": "fullscreen",
+    "navigateToFirstScreen": "Navigate to first screen",
+    "hideSubtitle":"Hide Subtitle",
+    "showSubtitle": "Show Subtitle"
+   },
+  "dlo": {
+    "learnSections": [
+      {
+        "imgSrc": "assets/fo/gifs/FO-intro_Animation.gif",
+        "imgFrame": "assets/fo/images/FO-intro_Animation-first-frame.png",
+        "imgAltText": "View of a mountain through binoculars",
+        "headingText": "Future Orientation",
+        "descriptionText": "An optimistic disposition with a focus on obtaining the skills and knowledge required to transition into a career",
+        "audioSrc": "fo/audios/01-FO-intro.mp3",
+        "replayGif": true,
+        "gifDuration": 6000
+      },
+      {
+        "title": "Characteristics of Being Future-Oriented",
+        "tabs": [
+          {
+            "title": "RESPONSIBLE",
+            "heading": "Express interest in building a business that is sustainable (financially and environmentally)",
+            "description": "Alexa grew up with a vegetable garden in her backyard. It is her dream to make a successful business selling organic vegetables. Although Alexa wants to be financially successful, she is also driven by the idea of cultivating crops without chemicals. She plans to provide healthy food using methods that will not pollute the soil.<br><br>Use the tabs to explore the qualities that make her an entrepreneur with future orientation.",
+            "imgSrc": "assets/fo/images/Express-career-and-business.png",
+            "imgAltText": "A house with vegetable garden in backyard",
+            "audioSrc": "fo/audios/02-FOt-characteristics-2.mp3"
+          },
+          {
+            "title": "INQUIRING",
+            "heading": "Seek out information about careers and their demands",
+            "description": "Before jumping into her business, Alexa spent time researching various sustainable farming methods. She also joined an agricultural school and attended workshops that demonstrated the use of natural fertilizers.",
+            "imgSrc": "assets/fo/images/Seek-out-information.png",
+            "imgAltText": "Magnifying glass over web page",
+            "audioSrc": "fo/audios/03-FO-characteristics-2.mp3"
+          },
+          {
+            "title": "GOAL-ORIENTED",
+            "heading": "Motivated to set and pursue long term goals ",
+            "description": "Currently Alexa grows vegetables in her backyard and sells the produce to people in her area. Within the next 2 to 3 years, her goal is to buy a small farm and increase her production to supply the grocery stores and supermarkets in her town. Within the next 5 years, Alexa plans to set up farmer markets in food deserts where people do not have access to clean and fresh vegetables.",
+            "imgSrc": "assets/fo/images/Motivated-to-set-and-pursue-long-term-goals.png",
+            "imgAltText": "Path with flag at the end",
+            "audioSrc": "fo/audios/04-FO-characteristics-3.mp3"
+          },
+          {
+            "title": "FORWARD-THINKING",
+            "heading": "Able to prioritize long-term success in the face of short-term sacrifice/effort",
+            "description": " Alexa uses her family’s old car to transport her vegetables. She really wants to buy a new truck of her own to transport the produce. However, Alexa knows that to increase her business in the long term, she needs to buy farm land. She has been saving up for this purchase and knows that it should be her priority. So, she decides to postpone buying a new truck. She hopes that this short-term sacrifice will help her buy land and increase her profits in the long run.",
+            "imgSrc": "assets/fo/images/prioritize-long-term-goal.png",
+            "imgAltText": "A farm land and a truck",
+            "audioSrc": "fo/audios/05-FO-characteristics-4.mp3"
+          }
+        ]
+      },
+      {
+        "videoTitle": "Goal Setting",
+        "videoDescription": "Having a future orientation allows entrepreneurs to identify their business and career goals. You may have a goal such as saving money. However, when you begin the process of setting a goal, you need to make sure you are working with a SMART goal."
+      },
+      {
+        "type": 9,
+        "selectStatement": "</br></br><div class=\"bold-weight\">To have a successful T-shirt printing business, by select-tag by select-tag by select-tag within select-tag.</div>",
+        "text": "<div class=\"bold-weight\">Diego prints and sells customized T-shirts. He currently serves only local customers by setting up temporary stalls in markets and at weekend craft fairs. His goal is to have a successful T-shirt printing business. Help Diego build a SMART goal.</br></br>Select appropriate options to build a SMART goal.</br></div>",
+        "allowRetrial": true,
+        "noOfTrials": 2,
+        "isSingleSelect": false,
+        "correctAnswer": [
+          2,
+          2,
+          3,
+          1
+        ],
+        "select": [
+          [
+            "make specific",
+            "covering monthly spending&nbsp;",
+            "increasing sales",
+            "becoming popular"
+          ],
+          [
+            "make measurable",
+            "a huge amount",
+            "20%",
+            "much more than current&nbsp;"
+          ],
+          [
+            "make action-oriented",
+            "gaining popularity nationally",
+            "attracting more customers",
+            "expanding to sell on online sites&nbsp;"
+          ],
+          [
+            "make time-specific",
+            "2 years",
+            "a few months",
+            "as soon as possible&nbsp;"
+          ]
+        ],
+        "feedbackObj": [
+          {
+            "correct": "Correct.",
+            "inCorrect": "Incorrect.",
+            "partiallyCorrect": "Nice try! You are partially correct."
+          },
+          {
+            "correct": "Correct.",
+            "inCorrect": "Incorrect. To have a successful T-shirt printing business, by increasing sales by 20% by expanding to sell on online sites within 2 years.",
+            "partiallyCorrect": "You are partially correct. To have a successful T-shirt printing business, by increasing sales by 20% by expanding to sell on online sites within 2 years."
+          }
+        ]
+      },
+      {
+        "imgSrc": "assets/fo/images/Walker.png",
+        "imgAltText": "Image of Madam C. J. Walker",
+        "headingText": "A woman with future orientation",
+        "descriptionText": "One example of an entrepreneur who became successful by demonstrating future orientation is Madam C. J. Walker. Madam Walker made a fortune by developing and selling hair care products.</br></br>Walker realized her passion for the hair care industry as she attempted to solve her own hair loss problems. She had the foresight to expand her solution to the African-American women of the early 1900s.</br></br>She started working as a sales agent for a company that made beauty products. There she grasped the knowledge she needed to establish her own business. She worked tirelessly, selling her own products door-to-door. After her initial success, she was able to open her first factory. She went on to become the wealthiest African-American woman of her time.",
+        "audioSrc": "fo/audios/09-FO-example.mp3",
+        "replayGif": false
+      }
+    ],
+    "learn": {
+      "videoSrc": "assets/fo/videos/Goal_Setting_animation.mp4",
+      "cuePointFile": "assets/fo/cue-points.vtt",
+      "subtitle": "assets/fo/subtitles/DLO_4_Intro_Video.vtt",
+      "transcript": "assets/fo/transcripts/DLO_4_Intro_Video.txt",
+      "poster": "assets/fo/images/Goal_Setting_Video_Thumbnail.png",
+      "alt": "Five pebbles each displaying the individual letters of the word SMART ",
+      "questions": []
+    },
+    "explore": {
+      "scenarios": [
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/fo/images/Scenario-Jewelry-Business.png",
+          "scenarioDesc": "",
+          "title": "Jewelry Business",
+          "navigationURL": "scenario1",
+          "altText": "Beaded jewelry in a tray",
+          "scenes": [
+            {
+              "imgSrc": "assets/fo/gifs/jewelry-design.gif",
+              "imgFrame": "assets/fo/images/jewelry-design-first-frame.png",
+              "title": "Jewelry Business",
+              "description": "Larah is a skilled designer with a famous jewelry brand, but would like to start her own jewelry business.</br></br>She is optimistic that her work will become popular. However, she is realistic and knows that she needs to set clear goals, both short term and long term. She has started planning and researching different aspects of the business, such as marketing strategies, sourcing raw materials and finding out the customer needs.</br></br>Larah has been receiving plenty of advice from her friends and well-wishers, who want her to succeed at any cost. Now it’s time for you to help Larah make the right decisions.",
+              "audioSrc": "fo/audios/11-FO-explore-scenario-1.mp3",
+              "imgAltText": "Beaded jewelry in a tray",
+              "replayGif": true,
+              "gifDuration": 8000
+            },
+            {
+              "question": {
+                "text": "As part of her marketing strategy, Larah plans to place an advertisement in the local newspaper. Her friends have suggested that she edit the photographs for the advertisement to make them look more attractive. They are confident that she will attract more customers that way. What should Larah do?"
+              },
+              "options": [
+                {
+                  "frontText": "Follow the advice, since everyone creates misleading advertisements and no one would really know the difference.",
+                  "backText": "This is not ethical even if some other businesses may do it. Such a tactic may negatively impact customers’ trust towards her business.",
+                  "correct": false
+                },
+                {
+                  "frontText": "In the advertisement, emphasize that her designs can be customized, rather than using misleading photographs.",
+                  "backText": "This is her biggest unique selling proposition and she should focus on it. Genuine advertising will help build trust with customers.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Use the enhanced photographs not only in the advertisement, but also on all branding to keep it consistent.",
+                  "backText": "Using enhanced photographs will mislead the customers and they may lose confidence in her product.",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "question": {
+                "text": "What should be Larah’s short-term goal to start her business?"
+              },
+              "options": [
+                {
+                  "frontText": "Develop a customer base of 100 customers by selling her jewelry online.",
+                  "backText": "Having a good customer base is a long term goal. Before starting her business, the immediate goal should be to complete all the legal formalities.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Have a successful jewelry brand.",
+                  "backText": "This goal sounds too vague. A goal needs to be specific.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Obtain the proper license needed to start a business in her city.",
+                  "backText": "An important goal before starting a business is to acquire the license to avoid any legal risks.",
+                  "correct": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/fo/images/Scenario-Car-Detailing.png",
+          "scenarioDesc": "",
+          "title": "Car Detailing",
+          "navigationURL": "scenario2",
+          "altText": "Car in a garage",
+          "scenes": [
+            {
+              "imgSrc": "assets/fo/gifs/car-detailing.gif",
+              "imgFrame": "assets/fo/images/car-detailing-first-frame.png",
+              "title": "Car Detailing",
+              "description": "Jack would like to start his own car detailing business. He lives in the city and knows that there is a huge demand for this kind of work. He has apprenticed in an automobile garage for a year to learn the skills required and observe how the business is run. He is now ready to strike out on his own.</br></br>Jack is now in the process of researching and developing a strategy for his business. His first task is to build a timeline of SMART goals.</br></br>Jack also needs to create a “customer journey map” a timeline that anticipates the different “touch points” (experiences) customers will have with his service. This will help him understand how to best attract, serve, and retain customers.</br></br>Let’s help Jack plan for the future.",
+              "audioSrc": "fo/audios/12-FO-explore-scenario-2.mp3",
+              "imgAltText": "Car in a garage",
+              "replayGif": true,
+              "gifDuration": 5000
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": false,
+              "allowRetrial": true,
+              "checkAllDropped": true,
+              "noOfTrials": 2,
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "1"
+                },
+                {
+                  "id": "1",
+                  "group": "2"
+                },
+                {
+                  "id": "2",
+                  "group": "3"
+                },
+                {
+                  "id": "3",
+                  "group": "4"
+                }
+              ],
+              "timeline": {
+                "tags": [
+                  "Immediate",
+                  "Within<br><h4>6</h4>months",
+                  "Within<br><h4>1</h4>year",
+                  "Within<br><h4>3</h4>years"
+                ],
+                "ipodTags": [
+                  "Immediate",
+                  "Within&nbsp;<h4>6</h4>&nbsp;months",
+                  "Within&nbsp;<h4>1</h4>&nbsp;year",
+                  "Within&nbsp;<h4>3</h4>&nbsp;years"
+                ]
+              },
+              "question": {
+                "text": "<div class=\"bold-weight\">Build a timeline for Jack’s SMART business goals.</div>",
+                "arrCorrectOption": [
+                  2,
+                  0,
+                  3,
+                  1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Increase profit by 3% each month"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Find a suitable location to set up shop"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Open a second detailing shop"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "Develop a client base, with 10-12 cars per day"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct.",
+                  "inCorrect": "Incorrect.",
+                  "partiallyCorrect": "Nice try! You are partially correct."
+                },
+                {
+                  "correct": "Correct.",
+                  "inCorrect": "Incorrect. Jack’s immediate goal should be to find a location for his shop. Building a good client base will come next. Next, Jack can target increasing his profit. After his business is stable, he can think about opening a second detailing shop.",
+                  "partiallyCorrect": "You are partially correct. Jack’s immediate goal should be to find a location for his shop. Building a good client base will come next. Next, Jack can target increasing his profit. After his business is stable, he can think about opening a second detailing shop."
+                }
+              ]
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": false,
+              "allowRetrial": true,
+              "checkAllDropped": true,
+              "noOfTrials": 2,
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "1"
+                },
+                {
+                  "id": "1",
+                  "group": "2"
+                },
+                {
+                  "id": "2",
+                  "group": "3"
+                },
+                {
+                  "id": "3",
+                  "group": "4"
+                },
+                {
+                  "id": "4",
+                  "group": "5"
+                },
+                {
+                  "id": "5",
+                  "group": "6"
+                }
+              ],
+              "timeline": true,
+              "question": {
+                "text": "<div class=\"bold-weight\">Build a customer journey map for Jack’s detailing shop</div>",
+                "arrCorrectOption": [
+                  2,
+                  4,
+                  0,
+                  5,
+                  1,
+                  3
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Drop the car at the detailing shop and ask for an estimate"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Share the experience by providing feedback"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Find the shop by searching for a detailer"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "Return for the next service or find another detailing shop"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "Contact the detailing shop to make an appointment"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "Make payment after the detailing is complete"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct.",
+                  "inCorrect": "Incorrect.",
+                  "partiallyCorrect": "Nice Try! You are partially correct."
+                },
+                {
+                  "correct": "Correct.",
+                  "inCorrect": "Incorrect. First customers find the shop by searching for detailer. Then contact the detailing shop. Next, they drop the car at the detailing shop and then make the payment, after which they can share their experience. Finally, they could return the next time they require a service or find another detailing shop.",
+                  "partiallyCorrect": "You are partially correct. First customers find the shop by searching for detailer. Then contact the detailing shop. Next, they drop the car at the detailing shop and then make the payment, after which they can share their experience. Finally, they could return the next time they require a service or find another detailing shop."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "type": 2,
+        "question": {
+          "text": "Which of the following best describes characteristics of future orientation?<div class=\"bold-weight\">Select all options that apply.</div>",
+          "arrCorrectOption": [
+            1,
+            3
+          ]
+        },
+        "options": [
+          {
+            "option": "To make a profit immediately"
+          },
+          {
+            "option": "To have an optimistic disposition"
+          },
+          {
+            "option": "To do anything that will attract customers"
+          },
+          {
+            "option": "To focus on obtaining required career skills"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "Incorrect. An optimistic disposition and a focus on obtaining required career skills are characteristics of future orientation.",
+          "partiallyCorrect": "Nice try! You are partially correct. An optimistic disposition and focus on obtaining required career skills are characteristics of future orientation."
+        },
+        "selected": []
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "From the given business scenarios, select the one that is an example of a sustainable business.",
+          "correctOption": "3"
+        },
+        "options": [
+          {
+            "option": "Sell beverages in disposable plastic cups that are convenient for takeout",
+            "feedback": "Incorrect. Serving locally sourced healthy food options is financially viable and socially responsible."
+          },
+          {
+            "option": "Sell affordable skin care creams that give good results but include toxic chemicals",
+            "feedback": "Incorrect. Serving locally sourced healthy food options is financially viable and socially responsible."
+          },
+          {
+            "option": "Sell packaged ready-to-eat snacks with lots of artificial preservatives",
+            "feedback": "Incorrect. Serving locally sourced healthy food options is financially viable and socially responsible."
+          },
+          {
+            "option": "Start a café for college students that serves locally sourced healthy food options",
+            "feedback": "Correct"
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 3,
+        "singleSelect": true,
+        "question": {
+          "text": "Nakia wants to start her own beauty salon. Match the characteristics to the given actions to help Nakia develop the entrepreneurial mindset of future orientation.",
+          "arrCorrectOption": [
+            [
+              "1"
+            ],
+            [
+              "0"
+            ],
+            [
+              "3"
+            ],
+            [
+              "2"
+            ]
+          ]
+        },
+        "leftData": [
+          {
+            "id": "left-0",
+            "type": "text",
+            "data": "Able to prioritize long-term success in the face of short-term sacrifice/effort"
+          },
+          {
+            "id": "left-1",
+            "type": "text",
+            "data": "Seek out information about careers and their demands"
+          },
+          {
+            "id": "left-2",
+            "type": "text",
+            "data": "Express interest in building a business that is sustainable (financially and environmentally)"
+          },
+          {
+            "id": "left-3",
+            "type": "text",
+            "data": "Motivated to set and pursue long term goals"
+          }
+        ],
+        "rightData": [
+          {
+            "id": "right-0",
+            "type": "text",
+            "data": "Find out how a salon works and learn the skills required to be a beautician"
+          },
+          {
+            "id": "right-1",
+            "type": "text",
+            "data": "Provide at-home service to save money on opening a salon"
+          },
+          {
+            "id": "right-2",
+            "type": "text",
+            "data": "Open two new salons in the next 5 years"
+          },
+          {
+            "id": "right-3",
+            "type": "text",
+            "data": "Use products with refillable packaging"
+          }
+        ],
+        "feedbackObj": [
+          {
+            "correct": "Correct.",
+            "inCorrect": "Incorrect. Nakia can prioritize long-term success in the face of short-term sacrifice/effort by providing at-home service to save money on opening a salon. She can seek out information about careers and their demands by finding out how a salon works and learning the skills required to be a beautician. She has expressed interest in building a business that is sustainable (financially and environmentally) by using products with refillable packaging. She is motivated to set and pursue long term goals since she aims to open two new salons in the next 5 years.",
+            "partiallyCorrect": "Nice try! You are partially correct. Nakia can prioritize long-term success in the face of short-term sacrifice/effort by providing at-home service to save money on opening a salon. She can seek out information about careers and their demands by finding out how a salon works and learning the skills required to be a beautician. She has expressed interest in building a business that is sustainable (financially and environmentally) by using products with refillable packaging. She is motivated to set and pursue long term goals since she aims to open two new salons in the next 5 years."
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "Which of the following is a SMART goal?",
+          "correctOption": "1"
+        },
+        "options": [
+          {
+            "option": "Provide good service to your customers to ensure they return, thereby building up your client base",
+            "feedback": "Incorrect. To acquire four new clients for your cleaning service within two months by asking for referrals is a SMART goal. It is specific, measurable, action-oriented, realistic, and time-specific."
+          },
+          {
+            "option": "Acquire four new clients within two months for your cleaning service by asking for referrals",
+            "feedback": "Correct"
+          },
+          {
+            "option": "Increase sales by 50% in two months and become rich",
+            "feedback": "Incorrect. To acquire four new clients for your cleaning service within two months by asking for referrals is a SMART goal. It is specific, measurable, action-oriented, realistic, and time-specific."
+          },
+          {
+            "option": "Make your clothing line successful by gaining popularity in the 18-25 age group",
+            "feedback": "Incorrect. To acquire four new clients for your cleaning service within two months by asking for referrals is a SMART goal. It is specific, measurable, action-oriented, realistic, and time-specific."
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "How does developing a customer journey map help a business succeed over time?",
+          "correctOption": "2"
+        },
+        "options": [
+          {
+            "option": "It guarantees the success of the business by eliminating possible setbacks.",
+            "feedback": "Incorrect. Customer journey maps help align your business to customer needs and anticipate how a customer will interact with the business."
+          },
+          {
+            "option": "It eliminates the need for a business to plan for the future.",
+            "feedback": "Incorrect. Customer journey maps help align your business to customer needs and anticipate how a customer will interact with the business."
+          },
+          {
+            "option": "It helps better align your business to customers’ needs.",
+            "feedback": " Correct"
+          },
+          {
+            "option": "It guarantees more income by understanding the competition.",
+            "feedback": "Incorrect. Customer journey maps help align your business to customer needs and anticipate how a customer will interact with the business."
+          }
+        ],
+        "selected": -1
+      }
+    ]
+  }
+}

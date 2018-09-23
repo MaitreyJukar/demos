@@ -1,0 +1,367 @@
+@import './../../../../constants.scss';
+.card {
+    width: 195px;
+    height: 205px;
+    display: block;
+    cursor: pointer;
+    transform: translateZ(-1000px);
+    margin-bottom: 18px;
+}
+
+.card .content {
+    transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    /* content backface is visible so that static content still appears */
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card.applyflip .content {
+    transform: rotateY(180deg);
+}
+
+.card .content .cardFront,
+.card .content .cardBack {
+    /* Backface visibility works great for all but IE. As such, we mark the backface visible in IE and manage visibility ourselves */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #f6f3f2;
+    border-radius: 4px;
+    box-shadow: 0px 13.775px 20px rgba(0, 0, 0, 0.24), 0px 15px 81px rgba(0, 0, 0, 0.16);
+    display: flex;
+}
+
+.card .content .cardFront,
+.card.applyflip .content .cardFront {
+    transform: rotateY(0deg);
+}
+
+.card .content .cardBack,
+.card.applyflip .content .cardBack {
+    transform: rotateY(-180deg);
+}
+
+.card .content .cardFront,
+.card.applyflip .content .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s linear 0.17s;
+    visibility: visible;
+}
+
+.card.applyflip .content .cardFront,
+.card .content .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s linear 0.17s;
+    visibility: hidden;
+}
+
+.cardFront .front-content {
+    background-color: #ffffff;
+    font-family: $roboto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    .card-front-text {
+        width: 100%;
+        height: 80%;
+        font-size: 16px;
+    }
+}
+
+.cardBack .back-content.correct {
+    background-color: #2E7D32;
+}
+
+.cardBack .back-content {
+    background-color: #C62828;
+    color: #ffffff;
+    font-family: $roboto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 71px 10px 0px;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 2px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    app-custom-button {
+        width: 73px;
+    }
+}
+
+.card .content .cardBack {
+    padding: 2px;
+}
+
+@keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-o-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@-ms-keyframes donothing {
+    0% {}
+    100% {}
+}
+
+.cardFront .front-content img,
+.cardBack .back-content img {
+    position: absolute;
+}
+
+.cardBack .back-content img {
+    top: 5px;
+    margin-left: -40px;
+    width: 66px;
+    height: 69px;
+}
+
+.isSafari :host .cardFront .front-content img {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back-content .feedback-icon {
+    position: absolute;
+    top: 31px;
+    left: 80px;
+    font-size: 20px;
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax) {
+
+    .card {
+        width: 300px;
+        height: 180px;
+        margin: 12px;
+    }
+    .button-container{
+        justify-content: center;
+        app-custom-button{
+            margin: 12px;
+        }
+    }
+    .back-content{
+        padding-top: 10px !important;
+    }
+    .back-content .feedback-icon{
+        font-size: 24px;
+        left: 128px;
+        top:32px;
+    }
+    .card .back-content img{
+        width: 70px;
+        height: 70px;
+    }
+    .feedback-text{
+        height: 100%;
+        padding-top: 70px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    // .back-content .feedback-icon.icon-feedback-wrong {
+    //     background-color: #A62929;
+    // }
+    // .back-content .feedback-icon.icon-feedback-right {
+    //     background-color: #296D2B;
+    // }
+    // .cardBack .back-content img {
+    //     margin: 0px;
+    // }
+    // .back-content .feedback-icon {
+    //     top: -8px;
+    //     left: -10px;
+    //     height: 35px;
+    //     width: 35px;
+    //     padding-top: 10px;
+    //     font-size: 15px;
+    //     border-radius: 50%;
+    // }
+    // .card.applyflip .content {
+    //     transform: rotateX(180deg);
+    // }
+    // .card .content .cardFront,
+    // .card.applyflip .content .cardFront {
+    //     transform: rotateX(0deg);
+    // }
+    // .card .content .cardBack,
+    // .card.applyflip .content .cardBack {
+    //     transform: rotateX(-180deg);
+    // }
+    // img {
+    //     width: 38%;
+    // }
+    // .card .content .cardFront,
+    // .card .content .cardBack {
+    //     box-shadow: 0px 13.775px 20px rgba(0, 0, 0, 0.24), 0px 15px 81px rgba(0, 0, 0, 0.16);
+    // }
+    // .cardFront .front-content {
+    //     padding: 10px 30px;
+    //     width: 100%;
+    // }
+    // .cardBack .back-content {
+    //     display: flex;
+    //     padding: 10px 5px;
+    // }
+    // .cardBack .back-content img {
+    //     margin: 0px;
+    // }
+    // .cardBack .back-content {
+    //     font-size: 16px;
+    // }
+}
+
+@media screen and (max-width:$mobileLandscape) {
+    .cwr-explore :host,
+    .fo-explore :host {
+        .card {
+            width: 100%;
+            margin: 0 auto;
+            height: 180px;
+            margin-bottom: 15px;
+            max-width: 288px;
+        }
+    }
+    .cardBack .back-content {
+        font-size: 14px;
+    }
+    .faa :host {
+        .card {
+            width:250px;
+            height:187px;
+        }
+        .button-container{
+            justify-content: center;
+        }
+        .card-button{
+            margin-right:8px;
+        }
+        .cardBack .back-content{
+            display:flex;
+            justify-content: center;
+            padding:0px 10px;
+            img{
+                top:40px;
+                margin:0px;
+                width:auto;
+                height:auto;
+            }
+            .feedback-text{
+                z-index:100;
+            }
+        }
+        .back-content .feedback-icon.icon-feedback-wrong {
+            background-color: #A62929;
+        }
+        .back-content .feedback-icon.icon-feedback-right {
+            background-color: #296D2B;
+        }
+        .back-content .feedback-icon{
+            top:-8px;
+            left:-10px;
+            height:35px;
+            width:35px;
+            font-size:16px;
+            padding-top: 10px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.isIE :host {
+    .cardFront .front-content img {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .cardBack .back-content img {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:$mobilePotrait) {
+    .cwr-explore :host,
+    .fo-explore :host {
+        .card {
+            max-width: 900px;
+        }
+    }
+}
+
+.card-text {
+    z-index: 10;
+}

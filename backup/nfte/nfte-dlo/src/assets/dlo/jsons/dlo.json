@@ -1,0 +1,365 @@
+{
+  "string-table": {
+    "learn": "LEARN",
+    "explore": "EXPLORE",
+    "take-quiz": "TAKE QUIZ",
+    "IntroPopupButton": "LET'S GO",
+    "done": "DONE",
+    "download": "DOWNLOAD",
+    "reset": "RESET",
+    "skip": "SKIP QUESTION",
+    "showCorrectAnswer": "SHOW CORRECT ANSWER",
+    "showYourAnswer": "SHOW YOUR ANSWER",
+    "resume": "RESUME VIDEO",
+    "goToExplore": "GO TO EXPLORE",
+    "scenarioTitle": "Select a Scenario",
+    "takeQuiz": "TAKE THE QUIZ",
+    "submitQuiz": "SUBMIT QUIZ",
+    "alert": "Alert",
+    "yes": "Yes",
+    "no": "No",
+    "print": "Print",
+    "quiz": "Quiz",
+    "quizReport": "Quiz Report",
+    "fullscreen": "FULL SCREEN",
+    "exitFullscreen": "EXIT FULL SCREEN",
+    "viewReport": "VIEW REPORT",
+    "submitAlertPartialAttempted": "You haven't answered all questions. Are you sure you want to submit?",
+    "submitAlertAllAttempted": "Are you sure you want to submit final answers?",
+    "dloTitle": "Creativity & Innovation",
+    "video-title": "What is Creativity & Innovation?",
+    "popup-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.Proin sodales pulvinar tempor.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate felis tellus mollis orci."
+  },
+  "assets": {
+    "images": [
+    ]
+  },
+  "acc-data": {},
+  "dlo": {
+    "learn": {
+      "videoSrc": "assets/ci/videos/Angela Ivana_NFTE Story_hiRes.mp4",
+      "cuePointFile": "assets/dlo.vtt",
+      "subtitle": "assets/ci/subtitles/DLO_2_Intro_Video.vtt",
+      "transcript": "assets/ci/transcripts/DLO_2_Intro_Video.txt",
+      "questions": [
+        {
+        "type": 3,
+        "singleSelect": true,
+        "question": {
+          "text": "Match the column lorem ipsum dolor sit amet, consectetur adipiscing elit Nam fermentum, nulla luctus?",
+          "arrCorrectOption": [
+            ["1","2"] ,
+            "1",
+            "0"
+          ]
+        },
+        "leftData": [
+          {
+            "id": "left-0",
+            "type": "text",
+            "data": "Object 1",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "left-1",
+            "type": "text",
+            "data": "Object 2",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "left-2",
+            "type": "text",
+            "data": "Object 3",
+            "width": "200px",
+            "height": "40px"
+          }
+        ],
+        "rightData": [
+          {
+            "id": "right-0",
+            "type": "text",
+            "data": "Object 4",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "right-1",
+            "type": "text",
+            "data": "Object 5",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "right-2",
+            "type": "text",
+            "data": "Object 6",
+            "width": "200px",
+            "height": "40px"
+          }
+        ],
+        "feedbackObj": [
+          {
+            "correct": "Correct! You have matched each idea to the problem it addresses.",
+            "inCorrect": "Incorrect.",
+            "partiallyCorrect": "You are partially correct."
+          }
+        ],
+        "selected": -1
+      }
+      ]
+    },
+    "explore": {
+      "scenarios": [
+        {
+          "description": "Recognize an  opportunity based on customer pain points surrounding existing products.",
+          "imageSrc": "./assets/common/images/NFTE_DLO_01_Intro_scenario_01_shirts.png",
+          "title": "Scenario 1",
+          "navigationURL": "",
+          "scenes": []
+        },
+        {
+          "description": "Recognize opportunity based on beating the competition.",
+          "imageSrc": "./assets/common/images/NFTE_DLO_01_Intro_scenario_02_contacts.png",
+          "title": "Scenario 2",
+          "navigationURL": "",
+          "scenes": []
+        },
+        {
+          "description": "Recognize opportunity based trends.",
+          "imageSrc": "./assets/common/images/NFTE_DLO_01_Intro_scenario_03_map.png",
+          "title": "Scenario 3",
+          "navigationURL": "",
+          "scenes": []
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "type": 3,
+        "singleSelect": true,
+        "question": {
+          "text": "Match the column lorem ipsum dolor sit amet, consectetur adipiscing elit Nam fermentum, nulla luctus?",
+          "arrCorrectOption": [
+            ["1","2"] ,
+            "1",
+            "0"
+          ]
+        },
+        "leftData": [
+          {
+            "id": "left-0",
+            "type": "text",
+            "data": "Object 1",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "left-1",
+            "type": "text",
+            "data": "Object 2",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "left-2",
+            "type": "text",
+            "data": "Object 3",
+            "width": "200px",
+            "height": "40px"
+          }
+        ],
+        "rightData": [
+          {
+            "id": "right-0",
+            "type": "text",
+            "data": "Object 4",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "right-1",
+            "type": "text",
+            "data": "Object 5",
+            "width": "200px",
+            "height": "40px"
+          },
+          {
+            "id": "right-2",
+            "type": "text",
+            "data": "Object 6",
+            "width": "200px",
+            "height": "40px"
+          }
+        ],
+        "feedbackObj": [
+          {
+            "correct": "Correct! You have matched each idea to the problem it addresses.",
+            "inCorrect": "Incorrect.",
+            "partiallyCorrect": "You are partially Correct."
+          }
+        ]
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "isClone": true,
+        "inline": true,
+        "inlineText": " The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 160px; height: 115px;\"></div></div></div></div> discuss each idea as it is suggested. </br>The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 160px; height: 115px;\"></div></div></div></div>build upon ideas suggested by other members.</br> The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"2\" data-id=2 style=\"width: 160px; height: 115px;\"></div></div></div></div> include people with diverse backgrounds and opinions. </br>The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"3\" data-id=3 style=\"width: 160px; height: 115px;\"></div></div></div></div> be respectful of all ideas.",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          },
+          {
+            "id": "1",
+            "group": ""
+          },
+          {
+            "id": "2",
+            "group": ""
+          },
+          {
+            "id": "3",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "A group of entrepreneurs meets to brainstorm answers to the question, “What are the possible uses for this new technology?” <div class=\"bold-weight\">Drag and drop the phrase that best completes each statement:</div>",
+          "arrCorrectOption": [
+            [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "should not"
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "should"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct",
+          "inCorrect": "Incorrect",
+          "partiallyCorrect": "Nice try! Your answer is partially correct!"
+        }
+      },
+      {
+        "type": 2,
+        "question": {
+          "text": "Which of the following can be barriers to creativity and innovation?<div class=\"bold-weight\"> Select all that apply.",
+          "arrCorrectOption": [
+            0,
+            1,
+            3
+          ]
+        },
+        "options": [
+          {
+            "option": "Thinking you need to know the “right” answer to create a great idea"
+          },
+          {
+            "option": "Thinking about how others might view your idea"
+          },
+          {
+            "option": "Thinking of new uses for existing products"
+          },
+          {
+            "option": "Thinking that potential investors might not like your idea"
+          },
+          {
+            "option": "Thinking of new problems or questions"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct",
+          "inCorrect": "Incorrect",
+          "partiallyCorrect": "Partially Correct"
+        },
+        "selected": []
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "specificFeedback": true,
+        "inline": true,
+        "inlineText": "<div>1. I want to change the design of tablet cases. </div><div>2. <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div class=\"drop-group-name-wrapper\"><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 160px; height: 115px;\"></div></div></div></div><div> 3. Cases don’t HAVE to trade comfort for protection.</div><div><br/>4. What if my tablet cover could provide protection while still being lightweight and sleek?</div>",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "An entrepreneur wants to innovate by improving upon tablet cases. Complete the four steps she can use to challenge the usual. <div class=\"bold-weight\">Drag and drop the statement that best completes Step 2.</div>",
+          "arrCorrectOption": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "Cases are either fashionable or strong.",
+            "feedback": "Incorrect. The challenge does not involve the appearance of the case."
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "Cases are either bulky or protective.",
+            "feedback": "Incorrect. The “what if” question suggests that the entrepreneur assumes that cases are either bulky and uncomfortable or lightweight."
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "Cases are either bulky or lightweight.",
+            "feedback": "Correct. The “what if” question suggests that the entrepreneur assumes that cases are either bulky and uncomfortable or lightweight."
+          }
+        ]
+      },
+      {
+        "type": 7,
+        "question": {
+          "text": "Self Reflection: Click the part of the scale that best describes how you feel about the following statement:<br/> I understand the domain of creativity and innovation.",
+          "correctOption": "2"
+        },
+        "options": [
+          {
+            "option": "Strongly Disagree"
+          },
+          {
+            "option": "Disagree"
+          },
+          {
+            "option": "Neither Agree nor Disagree"
+          },
+          {
+            "option": "Agree"
+          },
+          {
+            "option": "Strongly Agree"
+          }
+        ],
+        "selected": -1
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<div class="card" [ngClass]="{'applyflip':isCardFlipped}">
+  <div class="content">
+    <div class="cardFront">
+      <div class="front-content">
+        <div class="card-front-text">
+          {{model.frontText}}
+        </div>
+        <div class="button-container">
+          <app-custom-button tabindex="0" [buttonClass]="{'done':true}" class='card-button' buttonText="do" (focus)="onFocus($event)" (blur)="onBlur($event)"
+            (click)="showDo()"></app-custom-button>
+          <app-custom-button tabindex="0" [buttonClass]="{'done':true}" buttonText="dont" (focus)="onFocus($event)" (blur)="onBlur($event)"
+            (click)="showDont()"></app-custom-button>
+        </div>
+      </div>
+    </div>
+    <div class="cardBack" (click)="onCardClick()">
+      <div class="back-content" [ngClass]="{'correct':(isDO && model.correct) || (!isDO && !model.correct)}">
+        <img src="assets/cwr/images/card-patch-2.png" alt="">
+        <div class="validation">
+          <div class="icon feedback-icon" [ngClass]="{'icon-feedback-right':(isDO && model.correct) || (!isDO && !model.correct),
+           'icon-feedback-wrong':(isDO && !model.correct) || (!isDO && model.correct)}"></div>
+        </div>
+        <div class="feedback-text" *ngIf="isDO" [innerHTML]="model.doText | safeHtml"></div>
+        <div class="feedback-text" *ngIf="!isDO" [innerHTML]="model.dontText | safeHtml"></div>
+      </div>
+    </div>
+  </div>
+</div>

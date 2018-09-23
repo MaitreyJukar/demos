@@ -1,0 +1,85 @@
+@import './../../../../constants.scss';
+@import './../../../../vertical-scroll-common.scss';
+#section2 {
+    padding: 24px;
+    position: relative;
+}
+
+.icon-back {
+    top: 0px;
+    left: -12px;
+}
+
+.bottom-bar {
+    width: calc(100% - 48px);
+}
+@mixin freeScroll() {
+    .scroll-section {
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        pointer-events: initial;
+    }
+    .scroll-section.active {
+        box-shadow: none;
+    }
+    .screen-navigation-button {
+        display: none;
+    }
+    .bottom-bar{
+        position: initial;
+        width: 100% !important;
+        .align-content-center{
+            flex-direction: row;
+            padding: 0px;
+            padding-bottom: 16px;
+            padding-right: 0px;
+        }
+    }
+
+    .bottom-bar.fixed-to-bottom .align-content-center{
+        padding-right:16px;
+    }
+
+    .feedback{
+        margin: 20px;
+        padding: 0px;
+        app-custom-button{
+            margin: 20px;
+       }
+    } 
+    .hide-feedback{
+        height: auto;;
+    }
+}
+
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax) {
+    #section1 {
+        padding: 24px;
+    }
+    .bottom-bar.fixed-to-bottom .align-content-center {
+        padding-right: 45px;
+    }
+    @media screen and (max-height:$tabletMinHeight) {
+        .isAndroid :host {
+            @include freeScroll();
+        }
+    }
+    @media screen and (max-height:$tabletPortraitMin) {
+        :host {
+            @include freeScroll();
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobileLandscape) {
+
+    #section2 {
+        padding: 50px 0;
+    }
+}
+

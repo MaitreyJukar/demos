@@ -1,0 +1,52 @@
+<div class="quiz-report">
+  <div class="top-bar">
+    <app-custom-button class="back-button" buttonText="" buttonClass="transparent report-button" showIconBefore=true iconClass="icon-back_2px"
+      (buttonClickEvent)="backClicked.next()"></app-custom-button>
+    <div class="report-label">
+      <app-text textId="quizReport"></app-text>
+    </div>
+    <app-custom-button class="print-button" buttonText="print" buttonClass="transparent report-button print" showIconBefore=true
+      iconClass="icon-print" (buttonClickEvent)="downloadReport()"></app-custom-button>
+
+  </div>
+  <div class="horizontal-line"></div>
+  <div class="main-quiz-report-container">
+    <div class="chart-container">
+      <app-chart [chartMaxTickValue]='chartMaxTickValue' [barDataCounter]="barDataCounter" [chartData]="chartData"></app-chart>
+    </div>
+    <div class="question-container" [ngClass]="setClassForResize(question, i)" *ngFor="let question of reportModel.questions; let i='index'">
+      <diV class="question-wrapper">
+        <app-mcq *ngIf=" question.type == 1" showResult=true [model]="question" [index]="i" [showCorrectAnswer]=!showCorrectAnswer[i]
+          showResult=true></app-mcq>
+        <app-mrq *ngIf="question.type == 2" showResult=true [model]="question" [index]="i" [showCorrectAnswer]=!showCorrectAnswer[i]
+          showResult=true></app-mrq>
+          <app-match #match *ngIf="question.type == 3" showResult=true [model]="question" [index]="i" [showCorrectAnswer]=!showCorrectAnswer[i]
+          showResult=true></app-match>
+        <app-hotspot *ngIf="question.type == 6" showResult=true [handleWidth]=true [model]=" question " [index]="i " [showCorrectAnswer]=!showCorrectAnswer[i]
+          showResult=true></app-hotspot>
+        <app-drag-and-drop showResult=true *ngIf="question.type==5 && question.backgroundImage===undefined " [model]="question" [index]="i"
+          [showCorrectAnswer]=!showCorrectAnswer[i] showResult=true></app-drag-and-drop>
+        <app-drag-and-drop-2 showResult=true [handleWidth]=true *ngIf="question.type == 5 && question.backgroundImage !== undefined"
+          [model]="question" [index]="i" [showCorrectAnswer]=showCorrectAnswer[i] showResult=true></app-drag-and-drop-2>
+        <app-likert *ngIf=" question.type == 7" showResult=true [model]="question" [index]="i"></app-likert>
+        <app-legends *ngIf=" question.type == 3"></app-legends>
+        <div class="feedback-container">
+          <div class="feedback-wrapper" *ngIf="question.type!==7 && question.attempted" [ngClass]="setFeedbackClass(question,i)">
+            <div class="icon" [ngClass]="setIconClass(question)"></div>{{question.feedback}}
+          </div>
+          <div class="feedback-wrapper" *ngIf="question.type!==7 && !question.attempted" [ngClass]="{'hide-feedback':!showCorrectAnswer[i]}">
+            <div class="icon" [ngClass]="setIconClass(question)"></div>
+            <app-text textId="skipped"></app-text>
+          </div>
+          <app-custom-button *ngIf="question.type!==7 && showCorrectAnswer[i] && !checkIfCorrect(question)" class="correct-answer-button"
+            buttonClass="correct-answer-button report" buttonText="showCorrectAnswer" (buttonClickEvent)="showCorrectAnswer[i] = !showCorrectAnswer[i]">
+          </app-custom-button>
+
+          <app-custom-button *ngIf="question.type!==7 && !showCorrectAnswer[i] && !checkIfCorrect(question)" class="correct-answer-button"
+            buttonClass="correct-answer-button report" buttonText="showYourAnswer" (buttonClickEvent)="showCorrectAnswer[i] = !showCorrectAnswer[i]">
+          </app-custom-button>
+        </div>
+      </diV>
+    </div>
+  </div>
+</div>

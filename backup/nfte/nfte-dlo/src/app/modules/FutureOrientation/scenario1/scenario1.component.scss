@@ -1,0 +1,194 @@
+@import './../../../../constants.scss';
+.scroll-section {
+    max-width: 976px;
+    margin: 64px auto;
+    background-color: #ffffff;
+    opacity: 0.3;
+    pointer-events: none;
+    height: 503px;
+    transition: all 0.5s  ease-in-out;
+    .icon-back{
+        display: none;
+    }
+    .scroll-section-wrapper{
+        position: relative;
+        height:100%
+    }
+}
+
+.scroll-section.active {
+    opacity: 1;
+    box-shadow: 19.5px 33.775px 60px rgba(0, 0, 0, 0.24), 0px 15px 81px rgba(0, 0, 0, 0.16);
+    pointer-events: initial;
+    .icon-back{
+        display: block;
+    }
+}
+
+.screen-navigation-button {
+    background-color: #4C12A1;
+    border-radius: 50%;
+    color: #EFEFEF;
+    box-shadow: inset 0px -4px 0px 0px #2b0761;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 170;
+    padding: 4px;
+    height: 40px;
+    line-height: 35px;
+    width: 40px;
+}
+
+#section3 {
+    margin-bottom: calc(100vh - 88px - 64px - 503px);
+    .screen-navigation-button {
+        line-height: 1;
+    }
+}
+.button-parent {
+    position: absolute;
+}
+
+.button-parent.back{
+    top: 16px;
+    left: 16px;
+}
+
+.button-parent.navigation{
+    bottom: 16px;
+    right: 16px;
+}
+
+.icon-back {
+    color: #4C12A1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@mixin freeScroll(){
+    .scroll-section {
+        padding: 40px;
+        margin: 0px auto;
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        height:100%;
+        pointer-events: initial;
+    }
+    .scroll-section.active{
+        box-shadow:none;
+    }
+    .screen-navigation-button{
+        display:none;
+    }
+    .bottom-bar{
+        position:initial;
+    }
+}
+
+@media screen and (max-width:$desktop) {
+    .screen-navigation-button {
+        display: block;
+    }
+    .scroll-section {
+        margin: 24px auto 48px auto;
+    }
+    #section3 {
+        margin-bottom: calc(100vh - 88px - 24px - 503px);
+    }
+    @media screen and (max-height:$tabletLandscapeMinHeight) {
+        :host{
+            @include freeScroll();
+        } 
+        
+    }
+}
+
+@media screen and (max-width:$desktopMin) {
+    .scroll-section {
+        margin: calc(50vh - 251px - 44px) auto;
+    }
+    
+    #section3 {
+        margin-bottom: calc(50vh - 44px - 251px);
+    }
+    
+}
+@media screen and (min-width:$tabletPortraitMin) and (max-width:$tabletPortraitMax){
+    .scroll-section{
+        height: calc(100vh - 88px - 48px);
+        margin: 24px;
+        padding: 24px;
+        overflow: hidden;
+    }
+    .isIpad{
+        .scroll-section{
+            height: calc(100vh - 88px - 48px - 60px);
+            margin-bottom: 84px;
+        }
+    }
+
+    #section3 {
+        margin-bottom: 24px;
+    }
+    // .screen-navigation-button{
+    //     bottom:16px;
+    //     right:-9px;
+    // }
+    .icon-back{
+        top:0px;
+        left:0px;
+    }
+    
+    @media screen and (max-height:$tabletMinHeight){
+        .isAndroid :host{
+            @include freeScroll();
+        }
+    }
+
+    @media screen and (max-height:$tabletPortraitMin){
+        :host{
+            @include freeScroll();
+        }
+    }
+}
+
+@media screen and (max-width: $mobileLandscape){
+    .fo-explore :host {
+        .scroll-section {
+            padding: 0px;
+            margin: 0px auto;
+            box-shadow: none;
+            border: none;
+            opacity: 1;
+            .icon-back {
+                display: none;
+            }
+        }
+        .scroll-section.active{
+            .icon-back {
+                display: none;
+            }
+        }
+
+        #section1,
+        #section2,
+        #section3 {
+            height: 100%;
+            pointer-events: initial;
+        }
+        .screen-navigation-button {
+            display: none;
+        }
+        #section3{
+            margin-bottom:0px;
+        }
+    }    
+}
+

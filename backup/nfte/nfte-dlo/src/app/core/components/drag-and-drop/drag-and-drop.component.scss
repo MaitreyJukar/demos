@@ -1,0 +1,371 @@
+@import './../../../../constants.scss';
+:host {
+    display: block;
+}
+
+.scale {
+    transform-origin: 0px 0px;
+}
+
+.inline-text {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    .drop-group-wrapper {
+        margin-bottom: 4px;
+    }
+}
+
+.draggable-clone {
+    visibility: hidden;
+    position: absolute;
+}
+
+.draggable-container {
+    position: relative;
+    .draggable {
+        position: absolute;
+    }
+    .draggable-clone {
+        position: relative
+    }
+}
+
+.drop-group {
+    .draggable {
+        position: relative;
+    }
+}
+
+.drag-and-drop-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    height: 100%;
+}
+
+.draggable-droppable-container {
+    margin-top: 25px;
+    text-align: center;
+    margin: 25px auto auto auto;
+}
+
+.draggable-container {
+    margin: 0px 18px 18px 0px;
+    border-radius: 3px;
+    vertical-align: bottom;
+    background-color: $draggable-container-bg;
+    max-width: 200px;
+    margin-bottom: 10px;
+    .draggable {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .icon-check {
+        display: none;
+    }
+    .icon-check-cross {
+        display: none;
+    }
+}
+
+.drop-group-name {
+    height: 100%;
+    display: inline-block;
+    background-color: $drop-group-border;
+    padding: 0px 5px;
+}
+
+.drop-group {
+    border: 2px solid $drop-group-border;
+    opacity: 54%;
+    display: inline-block;
+    width: 270px;
+    vertical-align: middle;
+    margin: 0 10px;
+    box-shadow: inset 0px 0px 10px 0px $drop-group-shadow;
+    background-color: $drop-group-bg-color;
+    .draggable {
+        margin: 0px 8px 8px 0px;
+        float: left;
+    }
+}
+
+.drop-group-wrapper {
+    margin-bottom: 10px;
+}
+
+.draggable {
+    box-shadow: 1px 2px 3px $draggable-shadow;
+    display: flex;
+    border: 1px solid transparent;
+    background-color: $draggable-bg-color;
+    padding: 5px 20px;
+    text-align: center;
+    list-style-type: none;
+    max-height: 220px;
+    border-radius: 3px;
+    font-family: $roboto-bold;
+    cursor: move;
+    align-items: center;
+    justify-content: center;
+    .draggable-icon {
+        float: left;
+        position: absolute;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        height: calc(100% - 10px);
+        top: 5px;
+    }
+    .draggable-icon:before {
+        line-height: 1.4;
+    }
+}
+
+.draggable-image {
+    padding: 0px;
+}
+
+.draggable img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.drop-group-wrapper {
+    display: inline-block;
+    position: relative;
+    font-family: $roboto-bold;
+}
+
+.drop-zone {
+    display: inline-block;
+}
+
+.readonly {
+    pointer-events: none;
+}
+
+.options-container {
+    position: relative;
+    padding: 20px 0px;
+    padding-left: 25px;
+    .options-drag-drop-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .correct-answer,
+    .wrong-answer {
+        outline: none;
+    }
+}
+
+.column-orientation.options-container {
+    padding-left: 0;
+    display: flex;
+    .options-drag-drop-container {
+        flex-direction: row;
+        width: 100%;
+        .options-drag-drop-container-child {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: space-around;
+            align-items: center
+        }
+        .draggable-container {
+            max-width: 100%;
+        }
+        .drop-group-wrapper {
+            width: 100%
+        }
+        .drop-group-wrapper div:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            .drop-group-name {
+                width: auto !important;
+                display: flex;
+                align-items: center
+            }
+            .drop-group {
+                margin: 0 0 0 10px;
+                background-color: #F6F4FF
+            }
+        }
+        .draggable-droppable-container {
+            margin: 0 0 0 auto
+        }
+        .options-drag-drop-container-child:nth-child(1) {
+            width: calc(50% - 16px - 30px); //30px margin-right
+            margin-right: 30px
+        }
+        .seperator {
+            width: 1px;
+            min-width: 1px;
+            background-color: #dedbdb
+        }
+        .draggable {
+            background-color: #CDC4FF
+        }
+        .options-drag-drop-container-child:nth-child(3) {
+            width: calc(50% + 16px - 30px + 2px); //30px padding-left , 2px width of seperator
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .drag-and-drop-container {
+        .column-orientation.options-container {
+            padding: 20px 10px;
+            display: block;
+            .options-drag-drop-container {
+                flex-direction: column;
+                .options-drag-drop-container-child {
+                    width: 100%
+                }
+                .seperator {
+                    display: none
+                }
+                .drop-group-wrapper {
+                    .drop-group-name {
+                        font-size: 12px;
+                        max-width: 15px;
+                    }
+                    .drop-zone {
+                        max-width: calc(100% - 25px); // 15px max-width of drop-group-name + 10px margin-left
+                        .draggable {
+                            max-width: calc(100% - 6px);
+                            font-size: 12px
+                        }
+                    }
+                }
+                .draggable-container {
+                    margin: 10px 0px;
+                }
+                .draggable-container-parent {
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobileLandscape) {
+    .drag-and-drop-container {
+        .options-container.timeline_activity .options-drag-drop-container {
+            .draggable-droppable-container {
+                .drop-container {
+                    display: flex;
+                    flex-direction: column;
+                    .horizontal_line {
+                        display: none
+                    }
+                    .drop-index-container {
+                        flex-direction: row-reverse;
+                        width: 100%;
+                    }
+                    .drop-index-container {
+                        div:nth-child(1) {
+                            .drop-group-name.timeline_tags {
+                                display: none
+                            }
+                            .drop-group-name.ipod_tags {
+                                display: flex
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scene :host .options-container {
+    padding-left: 0px;
+}
+
+.draggable.ui-draggable.ui-draggable-dragging {
+    z-index: 50 !important;
+}
+
+.drag-and-drop-container {
+    .options-container.timeline_activity .options-drag-drop-container {
+        .draggable-container {
+            margin: 0 0 10px 0;
+        }
+        .draggable-droppable-container {
+            position: relative;
+            .timeline {
+                margin: 10px 0;
+                display: flex;
+                position: relative;
+                align-items: center;
+                margin-left: 5px;
+                .circle {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    border: 4px solid #c9c1ff;
+                    z-index: 1;
+                }
+                .horizontal_line {
+                    width: 22px;
+                    height: 4px;
+                    background-color: #c9c1ff;
+                    left: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .vertical_line {
+                height: 100%;
+                display: flex;
+                width: 2px;
+                border-radius: 1px;
+                background-color: #c9c1ff;
+                position: absolute;
+            }
+            .drop-group-wrapper {
+                div {
+                    align-items: center;
+                }
+                div:nth-child(1) {
+                    .drop-group-name.timeline_tags {
+                        width: 65px !important;
+                        height: auto;
+                        display: block;
+                        font-size: 12px;
+                        letter-spacing: 0px;
+                        color: rgb(117, 117, 117);
+                        font-family: "Roboto";
+                        text-align: center;
+                    }
+                    .drop-group-name.ipod_tags {
+                        display: none
+                    }
+                }
+            }
+            .drop-group-wrapper.dropped {
+                .timeline {
+                    .circle {
+                        background-color: #c9c1ff
+                    }
+                }
+            }
+            .drop-group-wrapper div:nth-child(1) .drop-group,
+            .drop-group-wrapper:nth-last-child(1) {
+                margin: 0px;
+            }
+        }
+        .options-drag-drop-container-child:nth-child(1) {
+            width: 100%;
+            margin-right: 10px;
+        }
+        .options-drag-drop-container-child:nth-child(3) {
+            width: 100%;
+            margin-left: 10px;
+        }
+    }
+}

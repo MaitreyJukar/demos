@@ -1,0 +1,123 @@
+@import './../../../../constants.scss';
+.modal-content {
+    padding: 24px;
+    border: none;
+    border-radius: 0px;
+    padding-bottom: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.modal-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 97%;
+    text-align: left;
+    color: $primary-text;
+    font-size: 24px;
+    font-family: "Quicksand";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+}
+
+.modal-footer {
+    justify-content: flex-end;
+    padding: 0px;
+    height: 36px;
+    padding: 24px 0px;
+    height: auto;
+    text-align: center;
+    border: 0px;
+    .footer-button {
+        height: 36px;
+        line-height: 36px;
+        border: none;
+        cursor: pointer;
+        box-sizing: border-box;
+        min-width: 90px;
+        display: inline-block;
+    }
+    .footer-button+.footer-button {
+        margin-left: 32px;
+    }
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 24px;
+    text-align: left;
+    max-height: 400px;
+    overflow: auto;
+    .description {
+        font-size: 14px;
+        font-family: "Roboto";
+        color: rgb(34, 34, 34);
+    }
+}
+
+.description-content {
+    white-space: pre-line;
+}
+
+.close {
+    font-size: 24px;
+}
+
+.modal-header {
+    padding: 0px;
+    border: none;
+    display: flex;
+}
+
+.modal {
+    padding: 0 !important;
+    text-align: center;
+}
+
+.vertical-align {
+    height: calc(100vh);
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal-dialog {
+    min-width: 300px;
+    height: auto;
+    max-width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+app-video-player :host {
+    .modal-sm {
+        max-width: 560px;
+        max-height: 350px;
+        width: 100%;
+        height: 100%;
+    }
+    .modal-body {
+        height: calc(100% - 28px - 84px - 16px);
+    }
+    .modal-content {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .modal-sm {
+        width: 384px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modal-dialog {
+        min-width: 282px;
+        margin: 16px;
+        max-width: calc(100% - 38px);
+    }
+}

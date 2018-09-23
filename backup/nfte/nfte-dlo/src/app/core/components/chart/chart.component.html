@@ -1,0 +1,33 @@
+<div class="chart">
+  <div class="main-div">
+    <div class="total-questions">
+      <div class="number">{{chartMaxTickValue}}</div>
+      <div class="text">Total Questions</div>
+    </div>
+    <div class="chart-graph chart-graph-desktop">
+      <div *ngFor="let data of chartData, let i = index" class="bar">
+        <div class="bar-count">
+          <div class="count" [ngStyle]="{'color': data.colorCode}">{{data.barDataCounter}}</div>
+          <div class="bar-color" [ngStyle]="{'border-top': 44 * data.barDataCounter + 'px solid '+ data.colorCode}">  <!--print hack for all browsers except chrome, chrome & safari has css -webkit-pritn-color-adjust:extract -->
+          </div>
+        </div>
+        <div class="chart-label" [ngStyle]="{'color': data.colorCode}">
+          <div [ngClass]="data.xAxisLabels.icon" class="icon"></div>
+          <div class="label-name">{{data.xAxisLabels.name}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chart-graph chart-graph-mobile">
+      <div *ngFor="let data of chartData, let i = index" class="bar">
+        <div class="chart-label" [ngStyle]="{'color': data.colorCode}">
+          <div [ngClass]="data.xAxisLabels.icon" class="icon"></div>
+          <div class="label-name">{{data.xAxisLabels.name}}</div>
+        </div>
+        <div class="bar-color" [ngStyle]="{'background-color': data.colorCode}"
+          [style.width.%]="10 * data.barDataCounter">
+        </div>
+        <div class="count" [ngStyle]="{'color': data.colorCode}">{{data.barDataCounter}}</div>
+      </div>
+    </div>
+  </div>
+</div>

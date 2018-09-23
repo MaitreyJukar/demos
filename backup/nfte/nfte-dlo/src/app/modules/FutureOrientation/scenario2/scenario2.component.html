@@ -1,0 +1,78 @@
+<div class="scenario-wrapper scroll" [ngClass]="{'isIpad':isIpad, 'isIE': isIE}" #scrollParent appScroll sectionSelector=".scroll-section"
+    (sectionChanged)="sectionChanged($event)" [topOffset]="scrollTopOffset">
+
+    <div id="section1" class="scroll-section" index="0">
+        <app-scenario-describe #scenarioEle [model]="data['scenes'][0]" [playAudioDefault]="keyboardService.playAudioDefault" (screenNavigation)="goToSection(1)"></app-scenario-describe>
+    </div>
+
+    <div id="section2" class="scroll-section" index="1">
+        <div class="scroll-section-wrapper">
+            <app-drag-and-drop [model]="dndModel" #dnd [alignDragDrop]="1" [index]="0" [showResult]="dndModel.submited" [showCorrectAnswer]=!dnd1ShowCorrectAnswer></app-drag-and-drop>
+            <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel.submited}">
+                <div class="align-content-center">
+                    <app-custom-button *ngIf="!dndModel.submited" [disabled]="!dndModel.attempted" [buttonClass]="{'scenario-submit': !dndModel.attempted, 'done': dndModel.attempted }"
+                        buttonText="submit" (buttonClickEvent)="dndModel.submit()"></app-custom-button>
+                    <div *ngIf="dndModel.submited" class="feedback" [ngClass]="{'correct':dndModel.responseType === responseType.CORRECT, 'incorrect':dndModel.responseType === responseType.INCORRECT, 'partially-correct':dndModel.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd1ShowCorrectAnswer}"
+                        class="feedback">
+                        <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel.responseType === responseType.CORRECT, 'icon-check-cross':dndModel.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel.responseType === responseType.PARTIALLY_CORRECT}">
+                        </div>
+                        <span aria-live="polite" class="feedback-text" aria-atomic="true" [innerHTML]="dndModel.feedback" [ngClass]="{'correct-text':dndModel.responseType === responseType.CORRECT, 'incorrect-text':dndModel.responseType === responseType.INCORRECT, 'partial-correct-text':dndModel.responseType === responseType.PARTIALLY_CORRECT}"></span>
+
+                    </div>
+                    <app-custom-button *ngIf="dndModel.submited && dndModel.noOfTrials > 0 && dndModel.responseType !== responseType.CORRECT"
+                        [buttonClass]="{'done': dndModel.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel.resetData(); dnd.resetTilesPosition(); dnd.ngAfterViewInit()"></app-custom-button>
+                    <app-custom-button *ngIf="dndModel.submited && dndModel.noOfTrials === 0 && dndModel.responseType !== responseType.CORRECT"
+                        class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd1ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+                        (buttonClickEvent)="dnd1ShowCorrectAnswer = !dnd1ShowCorrectAnswer"></app-custom-button>
+
+                </div>
+
+            </div>
+            <div class='button-parent navigation'>
+                <div class="icon screen-navigation-button" (click)="goToSection(2)" [attr.aria-label]="getAccText('navigateToNextScreen')"
+                    tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+                    <span class="icon-chevron_down"></span>
+                </div>
+            </div>
+            <div class='back-to-scenario button-parent'>
+                <div class="icon icon-back" (click)="backToScenarios()" [attr.aria-label]="getAccText('backToScenario')" tabindex="0" (focus)="onFocus($event)"
+                    (blur)="onBlur($event)"></div>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="scroll-section" index="2">
+        <div class="scroll-section-wrapper">
+            <app-drag-and-drop [model]="dndModel1" #dnd1 [index]="1" [alignDragDrop]="1" [showResult]="dndModel1.submited" [showCorrectAnswer]=!dnd2ShowCorrectAnswer></app-drag-and-drop>
+            <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':dndModel1.submited}">
+                <div class="align-content-center">
+                    <app-custom-button *ngIf="!dndModel1.submited" [disabled]="!dndModel1.attempted" [buttonClass]="{'scenario-submit': !dndModel1.attempted, 'done': dndModel1.attempted }"
+                        buttonText="submit" (buttonClickEvent)="dndModel1.submit()"></app-custom-button>
+                    <div *ngIf="dndModel1.submited" class="feedback" [ngClass]="{'correct':dndModel1.responseType === responseType.CORRECT, 'incorrect':dndModel1.responseType === responseType.INCORRECT, 'partially-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!dnd2ShowCorrectAnswer}"
+                        class="feedback">
+                        <div class="feedback-icon icon" [ngClass]="{'icon-check':dndModel1.responseType === responseType.CORRECT, 'icon-check-cross':dndModel1.responseType === responseType.INCORRECT, 'icon-partial-correct':dndModel1.responseType === responseType.PARTIALLY_CORRECT}">
+                        </div>
+                        <span class="feedback-text" aria-live="polite" [ngClass]="{'correct-text':dndModel1.responseType === responseType.CORRECT, 'incorrect-text':dndModel1.responseType === responseType.INCORRECT, 'partial-correct-text':dndModel1.responseType === responseType.PARTIALLY_CORRECT}"
+                            aria-atomic="true" [innerHTML]="dndModel1.feedback"></span>
+
+                    </div>
+                    <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials > 0 && dndModel1.responseType !== responseType.CORRECT"
+                        [buttonClass]="{'done': dndModel1.attempted }" buttonText="tryAgain" (buttonClickEvent)="dndModel1.resetData(); dnd1.resetTilesPosition(); dnd1.ngAfterViewInit()"></app-custom-button>
+                    <app-custom-button *ngIf="dndModel1.submited && dndModel1.noOfTrials === 0 && dndModel1.responseType !== responseType.CORRECT"
+                        class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="dnd2ShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+                        (buttonClickEvent)="dnd2ShowCorrectAnswer = !dnd2ShowCorrectAnswer"></app-custom-button>
+
+                </div>
+
+            </div>
+            <div class='button-parent navigation'>
+                <div class="icon screen-navigation-button" (click)="goToSection(0)" [attr.aria-label]="getAccText('navigateToFirstScreen')"
+                    tabindex="0" (focus)="onFocus($event)" (blur)="onBlur($event)">
+                    <span class="icon-chevron_up"></span>
+                </div>
+            </div>
+            <div class='back-to-scenario button-parent'>
+                <div class="icon icon-back" (click)="backToScenarios()" [attr.aria-label]="getAccText('backToScenario')" tabindex="0" (focus)="onFocus($event)"
+                    (blur)="onBlur($event)"></div>
+            </div>
+        </div>
+    </div>

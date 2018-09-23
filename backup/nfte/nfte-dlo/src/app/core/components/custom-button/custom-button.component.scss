@@ -1,0 +1,315 @@
+@import './../../../../constants.scss';
+// common button css
+.custom-button {
+    color: $white-text;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    border-radius: 3px;
+    background-color: $done-button-bg-color;
+    cursor: pointer;
+    box-shadow: 0px 3px 4.7px 0.3px $first-shadow, 0px 1px 6.86px 0.14px $second-shadow;
+    padding: 0px 8px;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.bottom-center :host.done-button:not(.explore) .custom-button {
+    width: 60px;
+    margin: 0 auto;
+}
+
+:host.resume .icon-play_filled {
+    font-size: 24px;
+}
+
+:host.explore .icon-chevron_right,
+.go-to-quiz :host .icon-chevron_right {
+    font-size: 24px;
+    margin: initial;
+    width: 16px;
+}
+
+.disable {
+    background-color: $quiz-reset-disable-button;
+    color: $quiz-reset-button-text;
+}
+
+:host.resume .custom-button {
+    padding: 0px 8px 0px 2px;
+    margin: 10px auto
+}
+
+:host.correct-answer-button .custom-button {
+    border: 1px solid $show-correct-border;
+    background-color: $show-correct-background;
+    color: $show-correct-text;
+    box-shadow: none;
+    padding: 0px 8px;
+}
+
+:host.disabled {
+    pointer-events: none;
+    .custom-button {
+        box-shadow: none;
+        opacity: 0.3;
+    }
+    .reset-disable {
+        opacity: 1;
+    }
+}
+
+.scenario-continue {
+    font-size: 14px;
+    box-shadow: none;
+    color: $primary-text;
+    background-color: transparent;
+    .icon-chevron_right,
+    .icon-chevron_left {
+        font-size: 20px;
+    }
+}
+
+.scenario-continue.background {
+    color: $white-text;
+    background-color: $done-button-bg-color;
+    .after {
+        margin-right: 0px;
+    }
+}
+
+.scenario-continue.disable {
+    color: $quiz-reset-button-text;
+    pointer-events: none;
+}
+
+.full-screen-reset-disable {
+    background-color: $reset-disable-fullscreen !important;
+    color: $reset-disable-fullscreen-text !important;
+    cursor: default;
+    box-shadow: none;
+}
+
+.quiz-fullscreen {
+    color: $purple !important;
+    height: auto;
+    .icon-fullscreen {
+        font-size: 20px;
+    }
+}
+
+.correct-answer-button {
+    width: 210px;
+    margin: 10px auto;
+}
+
+.correct-answer-button.report {
+    margin: 0px;
+}
+
+.resume {
+    width: 150px;
+}
+
+// .button-full-screen :host .reset-enable {
+//     opacity: 0.5;
+// }
+.intro-button {
+    margin: 20px auto 0px;
+    width: 109px;
+}
+
+:host.explore {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 56px;
+    background-color: $footer-background;
+    border-top: 1px solid $image-border;
+}
+
+.done {
+    border-radius: 5px;
+    box-shadow: inset 0px -4px 0px 0px #2b0761;
+}
+
+.scenario-submit {
+    background-color: #dbccea !important;
+    color: #ffffff !important;
+    box-shadow: inset 0px -4px 0px 0px #d4cade;
+    border-radius: 5px;
+    cursor: default;
+    width: 76px;
+}
+
+.explore {
+    width: 155px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.skip {
+    background-color: transparent;
+    font-size: 14px;
+    color: $resume-button-bg-color;
+    box-shadow: none;
+    margin: 10px auto;
+    .icon-skip-question {
+        font-size: 20px;
+    }
+}
+
+.transparent {
+    background-color: transparent !important;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.report-button {
+    color: black;
+    box-shadow: none;
+    font-size: 24px;
+    app-text {
+        font-size: 16px;
+    }
+}
+
+.fullscreen {
+    color: $purple !important;
+    .icon-fullscreen {
+        font-size: 24px;
+    }
+}
+
+.report-button.print {
+    color: #3f0d80;
+    box-shadow: 0px 3px 4.7px 0.3px $first-shadow, 0px 1px 6.86px 0.14px $second-shadow;
+    margin-right: 7px;
+}
+
+.skip-fullscreen {
+    // margin: 10px auto;
+    color: $white-text !important;
+    .icon-fullscreen-exit {
+        color: $white-text;
+        font-size: 20px;
+    }
+    .icon-skip-question {
+        color: $white-text;
+    }
+}
+
+.before,
+.after {
+    margin-right: 4px;
+    display: flex;
+}
+
+.scenarios-back {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .resume {
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quiz-fullscreen {
+        app-text {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .quiz-fullscreen {
+        width: 150px;
+    }
+    .skip-fullscreen {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .scenarios-back {
+        display: flex;
+        border: 2px solid #e9e9e9;
+        width: 100%;
+        z-index: 101;
+        border-bottom: none;
+        position: fixed;
+        bottom: 0px;
+        font-weight: bold;
+        color: #3f0d80;
+        text-align: center;
+        background-color: #efefef;
+        padding: 10px 0px;
+    }
+    .icon-back {
+        font-size: 20px;
+    }
+    .hide-bottom-bar :host .scenarios-back {
+        display: none;
+    }
+    .button-full-screen .skip-resume-wrapper :host.skip .skip {
+        color: $white-text;
+    }
+    .go-to-quiz :host.done-button {
+        width: 100%;
+        bottom: 0px;
+        .custom-button {
+            border-radius: 0px;
+        }
+    }
+    .explore {
+        width: 100%;
+    }
+    :host.explore {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        height: initial;
+        .custom-button {
+            margin: 0 auto;
+            text-align: center;
+            height: 36px;
+            border-radius: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .full-screen-reset-disable {
+        color: $reset-disable-fullscreen-mobile-text !important;
+    }
+    .intro-button {
+        margin: 10px auto 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .scenarios-back {
+        display: flex;
+        border: 2px solid #e9e9e9;
+        width: 100%;
+        border-bottom: none;
+        position: fixed;
+        bottom: 0px;
+        font-weight: bold;
+        color: #3f0d80;
+        text-align: center;
+        background-color: #efefef;
+        padding: 10px 0px;
+    }
+    .icon-back {
+        font-size: 20px;
+    }
+    .hide-bottom-bar :host .scenarios-back {
+        display: none;
+    }
+}

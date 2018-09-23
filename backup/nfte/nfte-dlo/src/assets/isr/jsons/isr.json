@@ -1,0 +1,655 @@
+{
+  "string-table": {
+    "alert": "Alert",
+    "cancel": "CANCEL",
+    "continue": "CONTINUE",
+    "done": "DONE",
+    "download": "DOWNLOAD",
+    "explore": "EXPLORE",
+    "endScenario": "END SCENARIO",
+    "goToExplore": "GO TO EXPLORE",
+    "IntroPopupButton": "LET'S GO",
+    "learn": "LEARN",
+    "no": "NO",
+    "previous": "PREVIOUS",
+    "print": "PRINT",
+    "quiz": "Quiz",
+    "quizReport": "Quiz Report",
+    "reset": "RESET",
+    "resume": "RESUME VIDEO",
+    "scenarioTitle": "Explore the entrepreneurial mindset of </br>flexibility and adaptability in each of these scenarios",
+    "showCorrectAnswer": "SHOW CORRECT ANSWER",
+    "showYourAnswer": "SHOW YOUR ANSWER",
+    "skip": "SKIP QUESTION",
+    "skipped": "Not Answered",
+    "submit": "SUBMIT",
+    "submitAlertAllAttempted": "Are you sure you want to submit final answers?",
+    "submitAlertPartialAttempted": "You haven't answered all questions. Are you sure you want to submit?",
+    "submitQuiz": "SUBMIT QUIZ",
+    "take-quiz": "TAKE QUIZ",
+    "takeQuiz": "TAKE THE QUIZ",
+    "totalQuestions": "Total Questions",
+    "transcript": "Transcript",
+    "tryAgain": "TRY AGAIN",
+    "viewReport": "VIEW REPORT",
+    "yes": "YES",
+    "dloTitle": "Initiative and Self-Reliance",
+    "video-title": "Getting Comfortable with Risk",
+    "fullscreen": "FULL SCREEN",
+    "exitFullscreen": "EXIT FULL SCREEN",
+    "scenarios": "Scenarios",
+    "caption": "Caption",
+    "do": "Do",
+    "dont": "Don't"
+  },
+  "assets": {
+    "images": [
+      "assets/faa/gifs/intro-FA.gif",
+      "assets/faa/images/intro-FA_firstFrame.png",
+      "assets/faa/images/characteristic-view-challenges-as-opportunities.png",
+      "assets/faa/images/characteristic-alter-plans-quickly-and-effectively-when-needed.png",
+      "assets/faa/images/characteristic-revise-perspective-after-receipt-of-new-information.png",
+      "assets/faa/images/characteristic-evaluate-setbacks-and-adapt-by-iterating-or-pivoting.png",
+      "assets/faa/images/Video-thumbnail.png",
+      "assets/faa/images/Twitter.png",
+      "assets/faa/images/scenario-build-measure-learn.png",
+      "assets/faa/images/scenario-customer-feedback.png",
+      "assets/faa/gifs/B-M-L_Animation.gif",
+      "assets/faa/images/B-M-L.png",
+      "assets/faa/images/Build_selected.png",
+      "assets/faa/images/Measure_Selection.png",
+      "assets/faa/images/Learn_Selection.png",
+      "assets/faa/gifs/Customer-feedback_Animation.gif",
+      "assets/faa/images/Customer-feedback_firstScreen.png"
+    ]
+  },
+  "acc-data": {
+    "playPause": "play pause",
+    "resume": "resume",
+    "transcript": "transcript",
+    "reset": "reset",
+    "previousLabel": "Previous",
+    "nextLabel": "Next",
+    "screenReaderPaginationLabel": "Pagination",
+    "screenReaderPageLabel": "question",
+    "screenReaderCurrentLabel": "You are on question",
+    "mute": "mute",
+    "fullscreen": "fullscreen"
+  },
+  "dlo": {
+    "learnSections": [
+      {
+        "imgSrc": "assets/faa/gifs/intro-FA.gif",
+        "imgFrame": "assets/faa/images/intro-FA_firstFrame.png",
+        "imgAltText": "Superhero changing from a business suit into a unitard and cape.",
+        "headingText": "Flexibility and Adaptability",
+        "descriptionText": "The ability and willingness to change actions and plans to overcome present and future challenges",
+        "audioSrc": "faa/audios/01-FA-intro.mp3",
+        "replayGif": true,
+        "gifDuration": 3500
+      },
+      {
+        "title": "Characteristics of Being Flexible and Adaptable",
+        "slideNames": [
+          "OPTIMISTIC",
+          "ADAPTABLE",
+          "PROACTIVE",
+          "REACTIVE"
+        ],
+        "slides": [
+          {
+            "imgSrc": "assets/faa/images/characteristic-view-challenges-as-opportunities.png",
+            "imgAltText": "A shrimp burger",
+            "title": "View challenges as opportunities",
+            "description": "Today McDonald’s is a well-known global fast food chain. But this popularity came with its share of challenges. As the business started expanding, McDonald’s realized that the same menu wasn’t working for all its international customers. So, McDonald’s enhanced its menu to include items with regional ingredients such as the shrimp burger in Japan. Being flexible with the menu helped the company gain customers and increase sales.</br></br>Go through the slides to explore the characteristics that make McDonald’s a successful fast food chain.",
+            "audioSrc": "faa/audios/02-FA-characteristics-1.mp3"
+          },
+          {
+            "imgSrc": "assets/faa/images/characteristic-alter-plans-quickly-and-effectively-when-needed.png",
+            "imgAltText": "A delivery scooter",
+            "title": "Alter plans quickly and effectively when needed",
+            "description": "A global restaurant survey suggested that customers prefer having food delivered to their doorstep. So, McDonald’s teamed up with Uber to provide delivery service to its customers. It first tested the service in a few selected cities. After the test proved to be successful, McDonald’s expanded its delivery service across the entire country.",
+            "audioSrc": "faa/audios/03-FA-characteristics-2.mp3"
+          },
+          {
+            "imgSrc": "assets/faa/images/characteristic-revise-perspective-after-receipt-of-new-information.png",
+            "imgAltText": "A monitor with a picture of burger",
+            "title": "Revise perspective after receipt of new information",
+            "description": "Over the years, McDonald’s has used various catchphrases and slogans to successfully advertise and market its brand. It mainly used television and print media to launch these campaigns. Gradually, however, its target audience started moving online — particularly into social media. McDonald’s was quick to see this shift, and it started focusing on online advertising.",
+            "audioSrc": "faa/audios/04-FA-characteristics-3.mp3"
+          },
+          {
+            "imgSrc": "assets/faa/images/characteristic-evaluate-setbacks-and-adapt-by-iterating-or-pivoting.png",
+            "imgAltText": "A smiley face between text “Happy Employees” and “Happy Customers”",
+            "title": "Evaluate setbacks and adapt by iterating or pivoting",
+            "description": "McDonald’s always focused on providing tasty food to its customers. However, customer satisfaction and sales fell over time. Through customer feedback, McDonald’s identified that the main problems were inaccurate orders, long wait times, and rude employees. So, the company invested in staff training and wages to develop the formula of “happy employees = happy customers.” Over time McDonald’s kept iterating and improving its customer service, resulting in increased sales.",
+            "audioSrc": "faa/audios/05-FA-characteristics-4.mp3"
+          }
+        ]
+      },
+      {
+        "videoTitle": "Pivoting"
+      },
+      {
+        "scene": [
+          {
+            "heading": "Pivoting",
+            "description": "Erika has a ride-sharing business. However, her business is not doing well. She has many ideas to take her business in new directions. But before pivoting, she knows she needs to obtain customer data to understand customer pain points.</br></br>She conducts a customer survey and finds:</br></br><div class=\"bullet\">1.</div><div class=\"bullets-content\">Some customers find Erika’s service too costly and can get better deals with other ride-sharing services.</div></br></br><div class=\"bullet\">2.</div><div class=\"bullets-content\">Some customers choose public transportation as a cost-effective option for daily travel, although it is extremely crowded.</div",
+            "audioSrc": "faa/audios/07-FA-Dos-and-don'ts.mp3"
+          }
+        ],
+        "question": {
+          "text": "What should be the Dos and Don’ts for Erika’s business to become successful?"
+        },
+        "options": [
+          {
+            "frontText": "Be flexible with the prices and offer discounts.",
+            "doText": "That’s right.</br>A flexible pricing strategy would help make prices more competitive.",
+            "dontText": "That’s not right.</br>A flexible pricing strategy would help make prices more competitive.",
+            "correct": true
+          },
+          {
+            "frontText": "Keep the prices the same and emphasize on the quality of her service through TV advertisements.",
+            "doText": "That’s not right.</br>Advertising may attract some customers who can afford Erika’s rates, but it probably won’t be enough to offset the cost of the advertising.",
+            "dontText": "That’s right.</br>Advertising may attract some customers who can afford Erika’s rates, but it probably won’t be enough to offset the cost of the advertising.",
+            "correct": false
+          },
+          {
+            "frontText": "Install entertainment options such as video monitors.",
+            "doText": "That’s not right.</br>Installing entertainment options would be expensive and would further reduce Erika’s profit.",
+            "dontText": "That’s right.</br>Installing entertainment options would be expensive and would further reduce Erika’s profit.",
+            "correct": false
+          },
+          {
+            "frontText": "Start a lower cost carpooling service for people travelling in the same direction.",
+            "doText": "That’s right.</br>A carpooling service is a good alternative to public transportation, as it is comfortable and more affordable.",
+            "dontText": "That’s not right.</br>A carpooling service is a good alternative to public transportation, as it is comfortable and more affordable.",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "imgSrc": "assets/faa/images/Twitter.png",
+        "imgAltText": "User interface similar to that of Twitter",
+        "headingText": "A company that has shown flexibility and adaptability",
+        "descriptionText": "One example of a business that became hugely successful after pivoting is Twitter. Twitter was originally founded as Odeo — a network that allowed users to find and subscribe to podcasts. But the company struggled when iTunes started taking over the podcast market.</br></br>The founders started looking for ideas to revamp their business. They decided to pivot and transform into a status updating and micro-blogging platform. They developed prototypes, had them tested, and gradually launched themselves in the market.</br></br>Over the years, the company turned into a widely used social network. The ability of the founders to be flexible in their approach and adapt to the market changes made the company successful.",
+        "audioSrc": "faa/audios/10-FA-Example-Twitter.mp3",
+        "replayGif": false
+      }
+    ],
+    "learn": {
+      "videoSrc": "assets/faa/videos/Pivoting_Animation.mp4",
+      "cuePointFile": "assets/faa/cue-points.vtt",
+      "subtitle": "assets/faa/subtitles/Pivoting_Animation.vtt",
+      "transcript": "assets/faa/transcripts/learnVideo.txt",
+      "poster": "assets/faa/images/Video-thumbnail.png",
+      "questions": []
+    },
+    "explore": {
+      "scenarios": [
+        {
+          "completed": false,
+          "description": "(Dictionary App)",
+          "imageSrc": "assets/faa/images/scenario-build-measure-learn.png",
+          "scenarioDesc": "",
+          "title": "Build-Measure-Learn",
+          "navigationURL": "scenario1",
+          "altText": "Cell phone",
+          "scenes": [
+            {
+              "imgSrc": "assets/faa/gifs/B-M-L_Animation.gif",
+              "imgFrame": "assets/faa/images/B-M-L.png",
+              "title": "Build-Measure-Learn",
+              "description": "Entrepreneurs often use the cyclic process of Build-Measure-Learn to design and improve their products and services through feedback loops. The process cycles through four steps:</br></br><div class=\"bullet\">1.</div><div class=\"bullets-content\">Define a product/service <span class=\"bold-weight\">idea</span> that you want to test.</div><div class=\"bullet\">2.</div><div class=\"bullets-content\"><span class=\"bold-weight\">Build</span> a “minimum viable product (MVP)” to test your idea. The MVP is a version of the product/service with enough basic features in place for customers to try out and provide feedback.</div><div class=\"bullet\">3.</div><div class=\"bullets-content\"><span class=\"bold-weight\">Measure</span> the feedback to see if customers responded to the MVP as you expected they would.</div><div class=\"bullet\">4.</div><div class=\"bullets-content\"><span class=\"bold-weight\">Learn</span> from the feedback.</br>  <div class=\"inner-bullet\">-</div> <div class=\"inner-bullet-content\">If the feedback is positive, <span class=\"bold-weight\">persevere</span> and continue to build out the product/service as planned.</div></br><div class=\"inner-bullet\">-</div><div class=\"inner-bullet-content align-bullet-content\"> If the feedback is negative, <span class=\"bold-weight\">pivot</span> and either revise the idea or think of a new one based on the feedback.</div></div></br></br>Michelle has an idea for developing a dictionary app for students, with two main features for each word: Define and Translate.</br></br>Help Michelle follow the Build-Measure-Learn feedback loop to make her app a successful product.",
+              "audioSrc": "faa/audios/12-FA-Explore-Scenario-Build_Measure_Learn.mp3",
+              "altText": "A loop of Build-Measure-Learn cycle.",
+              "gifDuration": 4500,
+              "replayGif": true
+            },
+            {
+              "title": "<span class=\"orange-text\">Build</span>-Measure-Learn",
+              "audioSrc": "",
+              "imgSrc": "assets/faa/images/Build_selected.png",
+              "altText": "A loop of Build-Measure-Learn cycle.",
+              "question": {
+                "text": "What should Michelle do in the build phase?"
+              },
+              "options": [
+                {
+                  "frontText": "Build a fully functional version of the app that is ready to be sold.",
+                  "backText": "It is better to first build an MVP and test it before completing the app. Developing a fully functional app that is not what people want is a waste of time and money.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Create a marketing video or a prototype of the app with all its basic features.",
+                  "backText": "Building an MVP is the safest option. It reduces risk because Michelle can find out if customers want the app as she envisions it.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Estimate a price for the app that will be affordable for college students.",
+                  "backText": "Estimating the price of the app is not a part of the build step. It is better to first build an MVP to learn whether people want the app as Michelle envisions it.",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "title": "Build-<span class=\"orange-text\">Measure</span>-Learn",
+              "audioSrc": "",
+              "imgSrc": "assets/faa/images/Measure_Selection.png",
+              "altText": "A loop of Build-Measure-Learn cycle.",
+              "question": {
+                "text": "Michelle built a marketing video as an MVP and posted it on social media.  What should she do in the measure phase?"
+              },
+              "options": [
+                {
+                  "frontText": "Offer an “early bird” discount for the first ten people to buy the app.",
+                  "backText": "Offering a discount will not help measure whether people would actually buy the app.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Provide a way for people to submit their email address so that they can be notified when the app is released.",
+                  "backText": "Getting a count of potential customers is a good way of measuring whether the app would be successful.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Show the video to her family and friends and record their opinions.",
+                  "backText": "Family and friends often cheer you on instead of providing objective feedback. Also, they might not be the target audience. It is important to get objective feedback from the target audience.",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "title": "Build-Measure-<span class=\"orange-text\">Learn</span>",
+              "audioSrc": "",
+              "imgSrc": "assets/faa/images/Learn_Selection.png",
+              "altText": "A loop of Build-Measure-Learn cycle.",
+              "question": {
+                "text": "Very few people shared their email so that they would be notified when the app is released. Based on this, what should Michelle do in the learn phase?"
+              },
+              "options": [
+                {
+                  "frontText": "She should be optimistic and persevere with building her app based on her original idea.",
+                  "backText": "Since the results of the measure phase indicate that the current idea is not likely to be successful, she should not continue with building the app with the same ideas.",
+                  "correct": false
+                },
+                {
+                  "frontText": "She should persevere and build her app with additional features.",
+                  "backText": "Building the app with new features without measuring the response to an MVP is not advisable.",
+                  "correct": false
+                },
+                {
+                  "frontText": "She should pivot and try a fresh approach that she can test and learn from again.",
+                  "backText": "Since the measure phase indicates that the current idea is not likely to be successful, she should pivot and either revise her idea or come up with a new idea.",
+                  "correct": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "(Packers & Movers Business)",
+          "imageSrc": "assets/faa/images/scenario-customer-feedback.png",
+          "scenarioDesc": "",
+          "title": "Customer Feedback",
+          "navigationURL": "scenario2",
+          "altText": "Delivery truck",
+          "scenes": [
+            {
+              "imgSrc": "assets/faa/gifs/Customer-feedback_Animation.gif",
+              "imgFrame": "assets/faa/images/Customer-feedback_firstScreen.png",
+              "title": "Customer Feedback",
+              "description": "David has started a packers and movers business in his town. To understand his customers’ needs and satisfaction, he asks all his customers to fill out a feedback form rating key aspects. The table shows the percentage of people who selected a particular rating in their form. Study these results to understand the areas where David can make improvements. David’s willingness to improve his services based on customers’ reviews demonstrates his entrepreneurial mindset of flexibility and adaptability.",
+              "audioSrc": "faa/audios/17-FA-Explore-Scenario-CustomerFeedback.mp3",
+              "altText": "A table",
+              "gifDuration": 3000,
+              "replayGif": true
+            },
+            {
+              "type": 3,
+              "singleSelect": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "question": {
+                "text": "<div class=\"bold-weight\">Column A shows frequent issues that customers mentioned in the survey. Match these points with appropriate decisions that David could take to improve his services.</div>",
+                "arrCorrectOption": [
+                  [
+                    "2"
+                  ],
+                  [
+                    "0"
+                  ],
+                  [
+                    "3"
+                  ],
+                  [
+                    "1"
+                  ]
+                ]
+              },
+              "leftData": [
+                {
+                  "id": "left-0",
+                  "type": "text",
+                  "data": "Customers want to know the status of their items (e.g. Scheduled, On the way, Delivered).",
+                  "width": "300",
+                  "height": "100px"
+                },
+                {
+                  "id": "left-1",
+                  "type": "text",
+                  "data": "Delivery charges are high.",
+                  "width": "300",
+                  "height": "100px"
+                },
+                {
+                  "id": "left-2",
+                  "type": "text",
+                  "data": "Furniture damaged while loading/unloading.",
+                  "width": "300",
+                  "height": "100px"
+                },
+                {
+                  "id": "left-3",
+                  "type": "text",
+                  "data": "Deliveries are not on time.",
+                  "width": "300",
+                  "height": "100px"
+                }
+              ],
+              "rightData": [
+                {
+                  "id": "right-0",
+                  "type": "text",
+                  "data": "Explain through advertisements that the rates are high in order to maintain good quality packaging.",
+                  "width": "300",
+                  "height": "100px"
+                },
+                {
+                  "id": "right-1",
+                  "type": "text",
+                  "data": "Provide realistic estimates when scheduling deliveries.",
+                  "width": "300",
+                  "height": "100px"
+                },
+                {
+                  "id": "right-2",
+                  "type": "text",
+                  "data": "Introduce a tracking system for customers.",
+                  "width": "300",
+                  "height": "100px"
+                },
+                {
+                  "id": "right-3",
+                  "type": "text",
+                  "data": "Set up a staff training on package handling techniques.",
+                  "width": "300",
+                  "height": "100px"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct.",
+                  "inCorrect": "That’s not right. Try again.",
+                  "partiallyCorrect": "Nice try! You are partially correct."
+                },
+                {
+                  "correct": "Correct.",
+                  "inCorrect": "The correct answers will be shown.",
+                  "partiallyCorrect": "Nice try! You are partially correct."
+                }
+              ]
+            },
+            {
+              "question": {
+                "text": "What can John do to avoid some legal risks when starting a new business?"
+              },
+              "options": [
+                {
+                  "frontText": "Start the business right away, but avoid advertising until all the legal formalities are complete.",
+                  "backText": "It is risky to start without completing legal formalities. Also, John may not be able to attract customers without advertising.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Complete all the legal procedures to register his business and obtain required licenses before startup.",
+                  "backText": "Registering the business is crucial to avoiding legal risk.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Start the business first, then see from experience whether all the legal formalities are needed.",
+                  "backText": "Not following government regulations is highly risky.",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "question": {
+                "text": "What can John do to make sure he isn’t using someone else's intellectual property?"
+              },
+              "options": [
+                {
+                  "frontText": "Perform a name availability search before filing the name of his company.",
+                  "backText": "Checking to make sure a competitor is not using the same name is a vital step in starting a business.",
+                  "correct": true
+                },
+                {
+                  "frontText": "Check with family and friends to see if they have ever heard of a company with the same name.",
+                  "backText": "Asking people you know about whether a competitor is using the name you want could be a good place to start. However, it is important to do a more thorough name search.",
+                  "correct": false
+                },
+                {
+                  "frontText": "Spell the name in an unusual way to reduce the chance that another company is already using it.",
+                  "backText": "Many businesses use unusual spelling in their names. You cannot assume that your name is unique for any reason.",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "type": 1,
+        "question": {
+          "text": "Select the scenario that best demonstrates the entrepreneurial mindset of taking initiative and being self-reliant.",
+          "correctOption": 2
+        },
+        "options": [
+          {
+            "option": "Jon starts a cafe in his town. He observes that due to a drop in the economy, his cafe is not doing as well as expected. He hopes his business will pick up again once the economy is strong again.",
+            "feedback": "Incorrect. Samantha works as a nail artist. To keep up with the competition and customer demands, she constantly expands her skill set with new techniques and designs in the market."
+          },
+          {
+            "option": "Linda is developing a music app. However, she gets stuck many times while writing the code. She considers giving up on her app and working under an experienced person to develop apps.",
+            "feedback": "Incorrect. Samantha works as a nail artist. To keep up with the competition and customer demands, she constantly expands her skill set with new techniques and designs in the market."
+          },
+          {
+            "option": "Samantha works as a nail artist. To keep up with the competition and customer demands, she constantly expands her skill set with new techniques and designs in the market.",
+            "feedback": "Correct."
+          },
+          {
+            "option": "Steve works as a pizza delivery boy, but wants to start his own pizza parlor. He thinks it will be difficult to make time to implement his business plan, so he is going to wait for a better time to start his business.",
+            "feedback": "Incorrect. Samantha works as a nail artist. To keep up with the competition and customer demands, she constantly expands her skill set with new techniques and designs in the market."
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 2,
+        "question": {
+          "text": "Which of the following would apply to an entrepreneur who has an internal locus of control?  Select all options that apply.",
+          "arrCorrectOption": [
+            0,
+            1,
+            3
+          ]
+        },
+        "options": [
+          {
+            "option": "Takes charge of events occurring in life"
+          },
+          {
+            "option": "Believes that hard work and competency can overcome any failure"
+          },
+          {
+            "option": "Considers that fate determines one’s success or failure"
+          },
+          {
+            "option": "Undertakes strategies to succeed"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "Incorrect. An entrepreneur who has internal locus of control takes charge of events occurring in life, believes that hard work and competency can overcome any failure, and undertakes strategies to succeed.",
+          "partiallyCorrect": "You are partially correct. An entrepreneur who has internal locus of control takes charge of events occurring in life, believes that hard work and competency can overcome any failure, and undertakes strategies to succeed."
+        },
+        "selected": []
+      },
+      {
+        "type": 3,
+        "question": {
+          "text": "Scarlett works in a restaurant and wants to start her own cupcake shop. Match the characteristics to the given actions to help Scarlett develop the entrepreneurial mindset of taking initiative and being self-reliant.",
+          "arrCorrectOption": [
+            [
+              "2"
+            ],
+            [
+              "0"
+            ],
+            [
+              "3"
+            ],
+            [
+              "1"
+            ]
+          ]
+        },
+        "leftData": [
+          {
+            "id": "left-0",
+            "type": "text",
+            "data": "Persevere until a project is done",
+            "width": "300",
+            "height": "100px"
+          },
+          {
+            "id": "left-1",
+            "type": "text",
+            "data": "Set own goals and monitor their progress",
+            "width": "300",
+            "height": "100px"
+          },
+          {
+            "id": "left-2",
+            "type": "text",
+            "data": "Maintain an optimistic attitude in the face of uncertainty",
+            "width": "300",
+            "height": "100px"
+          },
+          {
+            "id": "left-3",
+            "type": "text",
+            "data": "Make their own decisions, but seek help when needed",
+            "width": "300",
+            "height": "100px"
+          }
+        ],
+        "rightData": [
+          {
+            "id": "right-0",
+            "type": "text",
+            "data": "Maintain a record of regular customers and aim to double the customer base in the next 3 months.",
+            "width": "300",
+            "height": "100px"
+          },
+          {
+            "id": "right-1",
+            "type": "text",
+            "data": "Take guidance from professionals to create an online presence.",
+            "width": "300",
+            "height": "100px"
+          },
+          {
+            "id": "right-2",
+            "type": "text",
+            "data": "Balance the startup work along with her job until her shop is successfully opened.",
+            "width": "300",
+            "height": "100px"
+          },
+          {
+            "id": "right-3",
+            "type": "text",
+            "data": "Be confident about business doing well despite competition.",
+            "width": "300",
+            "height": "100px"
+          }
+        ],
+        "feedbackObj": [
+          {
+            "correct": "Correct.",
+            "inCorrect": "Incorrect. Scarlett can persevere until the project is done by balancing the startup work along with her job until her shop is successfully opened. She sets her own goals and monitors their progress by maintaining a record of regular customers and aiming to double the customer base over the next 3 months. She maintains an optimistic attitude in the face of uncertainty by being confident that the business will do well despite competition. She makes her own decisions but seeks help when needed by taking guidance from professionals to create an online presence.",
+            "partiallyCorrect": "Nice try! You are partially correct. Scarlett can persevere until the project is done by balancing the startup work along with her job until her shop is successfully opened. She sets her own goals and monitors their progress by maintaining a record of regular customers and aiming to double the customer base over the next 3 months. She maintains an optimistic attitude in the face of uncertainty by being confident that the business will do well despite competition. She makes her own decisions but seeks help when needed by taking guidance from professionals to create an online presence."
+          }
+        ]
+      },
+      {
+        "type": 2,
+        "question": {
+          "text": "Oliver is passionate about developing mobile games and wants to start up his own business. He has worked hard on his business plan, but is not sure whether he would be able to find investors for it. What should Oliver do to demonstrate the entrepreneurial mindset of initiative and self-reliance in funding his startup? Select all options that apply.",
+          "arrCorrectOption": [
+            1,
+            2,
+            3
+          ]
+        },
+        "options": [
+          {
+            "option": "Bide his time and keep a lookout for a suitable investor."
+          },
+          {
+            "option": "Aim to improve his business plan by targeting regions where the mobile gaming market has potential."
+          },
+          {
+            "option": "Approach a venture capital firm - a company that is willing to invest in startups - with his business plan."
+          },
+          {
+            "option": "Offer 10% ownership shares to encourage investors."
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "To fund his business, Oliver should aim to improve his business plan by targeting regions where the mobile gaming market has potential, approach a venture capital firm - a company that is willing to invest in startups with his business plan, and offer 10% ownership shares to encourage investors.",
+          "partiallyCorrect": "You are partially correct. To fund his business, Oliver should aim to improve his business plan by targeting regions where the mobile gaming market has potential, approach a venture capital firm - a company that is willing to invest in startups with his business plan, and offer 10% ownership shares to encourage investors."
+        },
+        "selected": []
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "Jasper plans to start his own chocolate candy business. He has identified the key steps in the supply chain for his business. In the first step, Jasper needs to get the raw materials. How can Jasper demonstrate initiative and self-reliance in getting the raw materials?",
+          "correctOption": 1
+        },
+        "options": [
+          {
+            "option": "Believe that raw materials vendors will contact him when they hear about his new business.",
+            "feedback": "Incorrect. Jasper can demonstrate initiative and self-reliance by contacting multiple vendors to find one that offers the best raw materials at the best price."
+          },
+          {
+            "option": "Contact multiple vendors to find one that offers the best raw materials at the best price.",
+            "feedback": "Correct."
+          },
+          {
+            "option": "Consider buying raw materials online as he needs them to reduce the effort of creating a relationship with a vendor.",
+            "feedback": "Incorrect. Jasper can demonstrate initiative and self-reliance by contacting multiple vendors to find one that offers the best raw materials at the best price."
+          },
+          {
+            "option": "Plan on buying raw materials after he starts getting orders in order to reduce risk in his startup costs.",
+            "feedback": "Incorrect. Jasper can demonstrate initiative and self-reliance by contacting multiple vendors to find one that offers the best raw materials at the best price."
+          }
+        ],
+        "selected": -1
+      }
+    ]
+  }
+}

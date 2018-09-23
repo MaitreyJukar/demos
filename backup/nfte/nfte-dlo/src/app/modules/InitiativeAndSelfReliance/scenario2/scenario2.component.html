@@ -1,0 +1,43 @@
+<div class="scenario-wrapper scroll" [ngClass]="{'isIpad':isIpad}" #scrollParent appScroll sectionSelector=".scroll-section"
+    (sectionChanged)="sectionChanged($event)" [topOffset]="scrollTopOffset">
+
+    <div id="section1" class="scroll-section">
+        <app-scenario-describe #scenarioEle [imageLeft]="true" [model]="scenarioDescribeModel" [playAudioDefault]="keyboardService.playAudioDefault"
+            (screenNavigation)="goToSection(1)"></app-scenario-describe>
+    </div>
+
+    <div id="section2" class="scroll-section">
+        <div class='button-parent'>
+            <div class="icon icon-back" (click)="backToScenarios()"></div>
+        </div>
+        <app-match #match [model]="matchModel" [showResult]="matchModel.isGradable && matchModel.submited" [showCorrectAnswer]="!matchShowCorrectAnswer && matchModel.submited"></app-match>
+
+        <div class="bottom-bar" [ngClass]="{'fixed-to-bottom':matchModel.submited}">
+            <div class="align-content-center">
+                <app-custom-button *ngIf="!matchModel.submited" [disabled]="!matchModel.attempted" [buttonClass]="{'scenario-submit': !matchModel.attempted, 'done': matchModel.attempted }"
+                    buttonText="submit" (buttonClickEvent)="match.onDoneClick()"></app-custom-button>
+                <div *ngIf="matchModel.submited" class="feedback" [ngClass]="{'correct':matchModel.responseType === responseType.CORRECT, 'incorrect':matchModel.responseType === responseType.INCORRECT, 'partially-correct':matchModel.responseType === responseType.PARTIALLY_CORRECT, 'hide-feedback':!matchShowCorrectAnswer}"
+                    class="feedback">
+                    <div class="feedback-icon icon" [ngClass]="{'icon-check':matchModel.responseType === responseType.CORRECT, 'icon-check-cross':matchModel.responseType === responseType.INCORRECT, 'icon-partial-correct':matchModel.responseType === responseType.PARTIALLY_CORRECT}">
+                    </div>
+                    <span class="feedback-text" aria-live="polite" [ngClass]="{'correct-text':matchModel.responseType === responseType.CORRECT, 'incorrect-text':matchModel.responseType === responseType.INCORRECT, 'partial-correct-text':matchModel.responseType === responseType.PARTIALLY_CORRECT}"
+                        aria-atomic="true" [innerHTML]="matchModel.feedback"></span>
+
+                </div>
+                <app-custom-button *ngIf="matchModel.submited && matchModel.noOfTrials > 0 && matchModel.responseType !== responseType.CORRECT"
+                    [buttonClass]="{'done': matchModel.attempted }" buttonText="tryAgain" (buttonClickEvent)="match.resetMatch(); matchModel.resetData();"></app-custom-button>
+                <app-custom-button *ngIf="matchModel.submited && matchModel.noOfTrials === 0 && matchModel.responseType !== responseType.CORRECT"
+                    class="correct-answer-button" buttonClass="correct-answer-button report" [buttonText]="matchShowCorrectAnswer?'showCorrectAnswer':'showYourAnswer'"
+                    (buttonClickEvent)="matchShowCorrectAnswer = !matchShowCorrectAnswer"></app-custom-button>
+
+            </div>
+
+        </div>
+        <div class='navigation-button-parent'>
+            <div class="icon screen-navigation-button" (click)="goToSection(0)" [attr.aria-label]="getAccText('playPause')" tabindex="0"
+                (focus)="onFocus($event)" (blur)="onBlur($event)">
+                <span class="icon-chevron_up"></span>
+            </div>
+        </div>
+
+    </div>

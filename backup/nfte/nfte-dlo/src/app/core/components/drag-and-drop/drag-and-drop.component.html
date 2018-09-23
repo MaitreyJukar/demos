@@ -1,0 +1,62 @@
+<div class="drag-and-drop-container" [ngClass]="{'scale':scaleB, 'readonly':dndModel.submited}" [id]="dndId" [style.transform]="'scale('+scaleRatio+')'">
+  <div class="question-wrapper">
+    <app-question [model]="dndModel" [questionIndex]="index + 1" (resetClicked)="resetTilesPosition()"></app-question>
+  </div>
+  <div class="options-container option-container" #optionsContainer [ngClass]="{'readonly':dndModel.submited,'timeline_activity': dndModel.timeline}"
+    [class.column-orientation]="alignDragDrop === 1">
+    <div class="inline-text" *ngIf="dndModel.inline" [innerHtml]="dndModel.inlineText | safeHtml">
+
+    </div>
+    <div class="options-drag-drop-container">
+      <div class="draggable-container-parent options-drag-drop-container-child">
+        <div class="draggable-container drop-zone " id="draggable-{{item.id}}" [style.top]="item.top" [style.left]="item.left" 
+        *ngFor="let item of dndModel.options  let i='index'">
+          <div *ngIf="item.type === 'text'" class="draggable user-response" [tabindex]="clickedItemId || model.submited ? -1 : 0 " (focus)="onFocus($event)"
+            (blur)="onBlur($event)" [attr.aria-label]=" i === 0? getQuestion() + ' ' + item.option : item.option" 
+            [attr.data-id]="item.id" [attr.aria-grabbed]="clickedItemId === i? true:false" (click)="setClickedId($event)">
+            <div class="icon-drag_handles draggable-icon"></div>
+            <span class="draggable-text">{{item.option}}</span>
+            <div class="icon dnd-report-icon" *ngIf="showResult"></div>
+          </div>
+          <div *ngIf="item.type === 'text'" class="draggable draggable-clone" [tabindex]="clickedItemId || model.submited ? -1 : 0 " (focus)="onFocus($event)"
+          (blur)="onBlur($event)" [attr.aria-grabbed]="clickedItemId === i? true:false" (click)="setClickedId($event)">
+          <div class="icon-drag_handles draggable-icon"></div>
+          <span class="draggable-text">{{item.option}}</span>
+          <div class="icon dnd-report-icon" *ngIf="showResult"></div>
+        </div>
+          <div *ngIf="item.type === 'image'" class="draggable-image draggable" [attr.data-id]="item.id" [style.width]="item.width"
+            [style.height]="item.height">
+            <img src="{{item.option}}" [style.width]="item.width" [style.height]="item.height" />
+          </div>
+        </div>
+      </div>
+
+      <div class="seperator"></div>
+
+      <div class="draggable-droppable-container options-drag-drop-container-child" *ngIf="!dndModel.inline">
+        <div class="vertical_line" [style.left.px]="timelineVerticalLineLeft"></div>
+        <div class="drop-group-wrapper" *ngFor="let item of dndModel.groups let j='index'" [style.max-width]="getMaxWidth(item.width)">
+          <div class="drop-container">
+            <div class="drop-index-container">
+              <div>
+                <span class="drop-group-name" [innerHtml]="dndModel.timeline && dndModel.timeline.tags ? dndModel.timeline.tags[j] 
+              : item.group | safeHtml" [ngClass]="{'timeline_tags': dndModel.timeline && dndModel.timeline.tags}"></span>
+                <span class="drop-group-name" *ngIf="dndModel.timeline && dndModel.timeline.ipodTags" [innerHtml]="dndModel.timeline.ipodTags[j]| safeHtml" 
+                [ngClass]="{'ipod_tags': dndModel.timeline && dndModel.timeline.ipodTags}"></span>
+              </div>
+              <div class="timeline">
+                <div class="circle">
+                </div>
+                <div class="horizontal_line">
+                </div>
+              </div>
+            </div>
+            <div class="drop-zone drop-group" [attr.data-id]="item.id" [attr.aria-label]="item.group" [tabindex]="clickedItemId && !model.submited ? 0 : -1 "
+              aria-dropeffect="move" (focus)="onFocus($event)" (blur)="onBlur($event)" (click)="setClickedElementToDropLocation($event)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

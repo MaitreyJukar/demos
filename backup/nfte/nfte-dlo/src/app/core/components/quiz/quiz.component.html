@@ -1,0 +1,42 @@
+<div *ngIf="!reportVisible" class="quiz-container" [ngClass]="{'hotspot-set-height':isHotspot}" (mousedown)="onMouseDown($event)">
+  <app-alert #brAlert [title]='alertTitle' [descId]='alertMsg' (yesClickedEvent)="alertYesClicked( $event )" ></app-alert>
+  <div class="quiz-wrapper" [ngClass]="model.submited? 'set-pointer-event-none' : ' '" 
+  *ngFor="let question of model.questions  | paginate: { itemsPerPage: 1, currentPage: pageNumber };let i='index'">
+    <div class="question fadeIn">
+      <app-mcq *ngIf=" question.type == 1" [model]="question" [index]="pageNumber-1"></app-mcq>
+      <app-mrq *ngIf=" question.type == 2" [model]="question" [index]="pageNumber-1"></app-mrq>
+      <app-hotspot (checkFullScreen)="changeMode()" *ngIf="question.type == 6" [model]=" question " [index]="pageNumber-1 " class="set-hotspot-height" #hotspot>
+
+      </app-hotspot>
+      <app-drag-and-drop *ngIf="question.type==5 && question.backgroundImage===undefined " [model]="question" [index]="pageNumber-1" #dnd></app-drag-and-drop>
+      <app-drag-and-drop-2 *ngIf="question.type == 5 && question.backgroundImage !== undefined" [model]="question" [index]="pageNumber-1" #dnd></app-drag-and-drop-2>
+      <app-match #match *ngIf="question.type == 3" [model]="question" [index]="pageNumber-1"></app-match>
+      <app-likert *ngIf=" question.type == 7" [model]="question" [index]="pageNumber-1"></app-likert>
+    </div>
+  </div>
+  <div *ngIf="!model.submited && !this.fullScreenMode" class="reset-button">
+    <app-custom-button *ngIf="model.questions[pageNumber-1].type == 6"  buttonClass="transparent no-shadow quiz-fullscreen" showIconBefore=true 
+    iconClass="icon-fullscreen"
+     (buttonClickEvent)="fullscreen()"  buttonText="fullscreen"></app-custom-button>
+      <!-- <div *ngIf="model.questions[pageNumber-1].type == 6" class="icon-fullscreen" (click)="fullscreen()"></div> -->
+    </div>
+    
+</div>
+<div *ngIf="!reportVisible" class="footer-wrapper">
+  <div class="footer">
+    <div class="pagination">
+      <app-paginator #paginator (pageChange)=onPageChange($event) [model]="model.questions"></app-paginator>
+    </div>
+    <div class="quiz-button-wrapper">
+      <app-custom-button inputId="submit-quiz" class="quiz-submit-button" [ngClass]="{'quiz-submit-button-background': isLastPage()}"
+        *ngIf="!model.submited" (buttonClickEvent)="showAlertMessage()"
+        buttonText="submitQuiz"></app-custom-button>
+      <app-custom-button inputId="view-report" class="quiz-submit-button" [ngClass]="{'quiz-submit-button-background': isLastPage()}"
+        *ngIf="model.submited" (buttonClickEvent)="showReport()" buttonText="viewReport"></app-custom-button>
+    </div>
+  </div>
+</div>
+<div *ngIf="reportVisible" class="report-container">
+    <app-simple-report  [model]=model (backClicked)="hideReport()"></app-simple-report>
+    
+</div>

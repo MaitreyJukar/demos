@@ -1,0 +1,108 @@
+@import './../../../../constants.scss';
+.question-container {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    font-size: 16px;
+    align-items: flex-start;
+    border-bottom: 1px solid $image-border;
+    padding-bottom: 8px;
+    .icon-replay-video {
+        font-size: 20px;
+        padding-left: 24px;
+    }
+}
+
+.question-index {
+    height: 22px;
+    width: 18px;
+}
+
+.question-index:not(:empty)::after {
+    content: '.'
+}
+
+.reset-disable {
+    color: $quiz-reset-button-text !important;
+    cursor: default;
+}
+
+.reset-enable {
+    color: $purple !important;
+    cursor: pointer;
+}
+
+.question-index {
+    font-family: $roboto-bold;
+    margin-right: 8px;
+    color: $question-number-text;
+}
+
+.quiz-report :host .reset-disable {
+    visibility: hidden;
+}
+
+.multimedia-content {
+    display: flex;
+    flex-direction: row;
+}
+
+// .multimedia-content div {
+//     padding-right: 5%
+// }
+:host.absolute-question {
+    .question-container {
+        position: absolute;
+        top: 0px;
+        z-index: 1001;
+        left: 0px;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        color: $white-text;
+        margin: 0px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    .question-index {
+        display: none;
+    }
+}
+
+.main-question {
+    flex-direction: column;
+    width: calc(100% - 20px);
+}
+
+app-likert {
+    :host {
+        .question-text {
+            font-weight: normal;
+        }
+    }
+}
+
+app-cards-mcq :host {
+    .icon-replay-video {
+        display: none;
+    }
+}
+
+.faa-explore :host {
+    .question-index {
+        display: none !important;
+    }
+}
+
+.faa-explore app-match :host .question-container{
+    border-bottom: none;
+}
+@media screen and (max-width:320px) {
+    .question-container {
+        .icon-replay-video {
+            padding: 10px 10px 0px;
+            margin-top: -10px;
+            margin-right: -10px;
+        }
+    }
+}

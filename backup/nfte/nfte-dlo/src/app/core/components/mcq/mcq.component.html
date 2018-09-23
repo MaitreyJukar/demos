@@ -1,0 +1,28 @@
+<div class="mcq-container" [ngClass]="{disabled:model.submited}">
+  <div class="question-container">
+    <app-question [model]="model" [questionIndex]="index + 1"></app-question>
+  </div>
+
+  <div class="option-container" 
+    [ngClass]="setOptionContainerClass(i)"
+     *ngFor="let item of model.options let i=index">
+   
+    <div [ngClass]="((showCorrectAnswer && model.correctOption === i) || ( !showCorrectAnswer &&  model.selected === i)) ?
+      'icon-radio_button_selected':'icon-radio_button_normal'" class="mcq-radio-button icon" [id]=" 'mcq-option-' + index + '-' + i " 
+      (click)="!model.submited ? setSelected(i):null">
+      <input type="radio" class="mcq-radio user-response" [attr.name]="'mcq-'+index" [disabled]="model.submited?true:false" [attr.aria-labelledby]="'label-'+index+'-'+i"
+      passFocus="true" (focus)="onInputFocus($event,i)" (blur)="onInputBlur()">
+
+    </div>
+    
+    <label [ngClass]="{'selected-text':((!showCorrectAnswer) && model.selected === i)}" 
+       (click)="!model.submited ? setSelected(i):null"><div [id]="'label-'+index+'-'+i" [innerHTML]=item.option [attr.aria-label]=" i === 0? getPlainText( model.text ) + ' ' + item.option : item.option" ></div></label>
+    
+    <div *ngIf="showResult" 
+      [ngClass]="(showCorrectAnswer) ?
+        ((model.correctOption ===i) ? 'icon-check' : '' ) :
+        ((model.selected === i) ? ( (model.isCorrect(model.selected)) ? 'icon-check' : 'icon-check-cross') : '' )"
+      class="mcq-feedback-icon icon"></div>
+
+  </div>
+</div>

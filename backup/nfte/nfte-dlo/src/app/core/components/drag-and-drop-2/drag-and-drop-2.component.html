@@ -1,0 +1,60 @@
+<div class="drag-and-drop-container" [id]="dndId" [ngClass]="{'scale':scaleB, 'readonly':dndModel.submited}" >
+  <div class="question-wrapper">
+    <app-question [model]="dndModel" [questionIndex]="index + 1" (resetClicked)="resetTilesPosition()"></app-question>
+  </div>
+  <div class="options-container-wrapper" #optionsContainer [style.min-height.px]="imageOriginalHeight" >
+    <div class="options-container option-container" [ngClass]="{'readonly':dndModel.submited}" >
+      <img *ngIf="!showMobileDND" #image class="backgroundImage" (load)="onImageLoad()" src="{{dndModel.backgroundImage[0]}}" [style.height]="imageHeight" 
+      [style.width]="imageWidth"/>
+      <img *ngIf="showMobileDND" #image class="backgroundImage" (load)="onImageLoad()" src="{{dndModel.backgroundImage[1]}}" [style.height]="imageHeight" 
+      [style.width]="imageWidth"/>
+      <div *ngIf="dndModel.tilesWithinImage">
+        <div class="draggable-container drop-zone " id="draggable-{{item.id}}" [style.top]="item.top" [style.left]="item.left" [style.width]="item.width"
+        [style.height]="item.height" *ngFor="let item of dndModel.options let i='index'">
+        <div *ngIf="item.type === 'text'" class="draggable user-response" [tabindex]="clickedItemId || dndModel.submited ? -1 : 0 " (focus)="onFocus($event)" (blur)="onBlur($event)"
+        [attr.aria-label]=" i === 0? getPlainText( dndModel.text ) + ' ' + item.option : item.option" [attr.data-id]="item.id" (click)="!isAndroid?setClickedId($event):null" (mousedown)="isAndroid?setClickedId($event):null">
+         <div class="icon dnd-report-icon" *ngIf="showResult"></div>
+
+          <div class="draggable-content">
+            <div class="icon-drag_handles draggable-icon"></div>
+            <span [style.transform]="resizeText(item.id)">{{item.option}}</span>
+          </div>
+        </div>
+        <div *ngIf="item.type === 'image'" class="draggable-image draggable user-response" [attr.aria-label]=" i === 0? getPlainText( dndModel.text ) + ' ' + item.option : item.option"
+        [attr.data-id]="item.id" (click)="!isAndroid?setClickedId($event):null" (mousedown)="isAndroid?setClickedId($event):null">
+          <img src="{{item.option}}" />
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="drop-group-wrapper" *ngFor="let item of dndModel.groups let j='index'" [style.top]="showMobileDND?item.topMobile:item.top" 
+      [style.left]="showMobileDND?item.leftMobile:item.left" [style.width]="showMobileDND?item.widthMobile:item.width" 
+      [style.height]="showMobileDND?item.heightMobile:item.height">
+        <span class="drop-group-name" >{{item.group}}</span>
+        
+        <div class="drop-zone drop-group" [attr.data-id]="item.id" [attr.aria-label]="item.group" [tabindex]="clickedItemId && !dndModel.submited? 0 : -1 " 
+        (focus)="onFocus($event)" (blur)="onBlur($event)" (click)="!isAndroid?setClickedElementToDropLocation($event):null" (mousedown)="isAndroid?setClickedElementToDropLocation($event):null"></div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!dndModel.tilesWithinImage" class="outside-tiles">
+    <div class="draggable-container drop-zone " id="draggable-{{item.id}}"  *ngFor="let item of dndModel.options let i='index'">
+    <div *ngIf="item.type === 'text'" class="draggable user-response" [tabindex]="clickedItemId || dndModel.submited ? -1 : 0 " (focus)="onFocus($event)" (blur)="onBlur($event)"
+    [attr.aria-label]=" i === 0? getPlainText( dndModel.text ) + ' ' + item.option : item.option" [attr.data-id]="item.id" (click)="!isAndroid?setClickedId($event):null" (mousedown)="isAndroid?setClickedId($event):null">
+     <div class="icon dnd-report-icon" *ngIf="showResult"></div>
+
+      <div class="draggable-content">
+        <div class="icon-drag_handles draggable-icon"></div>
+        <span [style.transform]="resizeText(item.id)">{{item.option}}</span>
+      </div>
+    </div>
+    <div *ngIf="item.type === 'image'" class="draggable-image draggable user-response" [attr.aria-label]=" i === 0? getPlainText( dndModel.text ) + ' ' + item.option : item.option" [attr.data-id]="item.id" 
+    (click)="!isAndroid?setClickedId($event):null" (mousedown)="isAndroid?setClickedId($event):null">
+      <img src="{{item.option}}" />
+    </div>
+  </div>
+  
+</div>

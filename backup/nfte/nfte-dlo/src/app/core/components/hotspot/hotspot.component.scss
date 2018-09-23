@@ -1,0 +1,151 @@
+@import './../../../../constants.scss';
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+img {
+  border: 2px solid $hotspot-img-border;
+}
+
+.hotspot-option {
+  background-color: $hotspot-background;
+  box-shadow: 0px 3px 4.7px 0.3px $first-shadow, 0px 1px 6.86px 0.14px $second-shadow;
+  z-index: 73;
+  border: 2px solid rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+}
+
+.highlight-hotspot {
+  border: 2px solid rgba(0, 0, 0, 0.87);
+  background-color: $hotspot-highlighted-background;
+}
+
+.disabled .hotspot-option {
+  cursor: default;
+}
+
+.text-button {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+  }
+
+.hotspot-container {
+  height: 100%;
+  display: block;
+  overflow: auto;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 57px);
+  overflow: auto;
+  justify-content: center;
+}
+
+.hotspot-fullscreen-button {
+  position: absolute;
+  z-index: 1000;
+  .reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 33px 0px 10px;
+    .custom-button{
+        width: 100px;
+    }
+    .icon-fullscreen-exit {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      color: $white-text;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+.center-align.fullscreen {
+  height: 100vh !important;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: $white;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 1000;
+}
+.hotspot-fullscreen-button {
+  transform: rotate(0deg);
+  transform-origin: 0% 0%;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  position: fixed;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7019610000000001) 0%, rgba(0, 0, 0, 0) 100%);
+  
+}
+
+.hide-controls {
+  display: none !important;
+}
+.show-mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .hide-mobile-view {
+    display: none;
+  }
+  .show-mobile-view {
+    display: block;
+    width: 100%;
+  }
+  .center-align.fullscreen {
+    height: 100vh !important;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: $white;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    z-index: 1000;
+    display: flex;
+    flex-flow: column wrap;
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  .show-mobile-view.hotspot-fullscreen-button {
+    height: 100px;
+    display: flex;
+    vertical-align: middle;
+    .reset-button {
+      width: 100%;
+      margin: 0;
+      .text-button {
+        background-color: $reset-disable-fullscreen-mobile;
+        color: $reset-disable-fullscreen-mobile-text;
+      }
+      .icon-fullscreen-exit {
+        top: initial;
+        padding-top: 3px;
+      }
+    }
+  }
+}

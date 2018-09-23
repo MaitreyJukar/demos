@@ -1,0 +1,115 @@
+@import './../../../../constants.scss';
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+.option-container {
+    margin: 16px 0px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    border: 1px solid transparent;
+    padding-right: 20px;
+}
+
+.disabled .option-container * {
+    cursor: default;
+}
+
+.option-container label {
+    padding-left: 12px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 0px;
+    line-height: 26px;
+}
+
+.mcq-feedback-icon {
+    position: absolute;
+    right: 0px;
+    height: 26px;
+    align-items: center;
+    display: flex;
+}
+
+.selected-text {
+    color: $bullets-color;
+}
+
+.icon-check_box_selected {
+    color: $bullets-color !important;
+}
+
+.mcq-radio-button {
+    margin: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    height: 26px;
+    align-items: center;
+    color: $black;
+    position: relative;
+}
+
+.mcq-radio-button.showFocusRect {
+    outline: 1px solid #4d90fe !important;
+}
+
+.correct-answer {
+    label {
+        color: $bullets-color;
+    }
+}
+
+.mcq-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.column-title {
+    font-weight: bold;
+}
+
+.options-wrapper {
+    display: flex;
+}
+
+.report-container {
+    :host .mcq-container {
+        margin: 0px;
+    }
+}
+
+.column-header {
+    margin-right: 50px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.column-header.last {
+    margin-right: 0px;
+}
+
+.mcq-radio {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.for-accessibility {
+    position: fixed;
+    left: 100vw;
+    opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .options-wrapper {
+        display: block;
+    }
+}

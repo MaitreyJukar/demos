@@ -1,0 +1,143 @@
+@import './../../../../constants.scss';
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.cards-mcq-container {
+    padding: 40px;
+    height: 100%;
+}
+
+.question-container {
+    display: flex;
+    font-size: 20px;
+    font-family: "Quicksand";
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto; // justify-content: center;
+    font-weight: bold;
+    height: 80px;
+}
+
+.fo-explore :host {
+    .question-container {
+        width: 780px;
+    }
+}
+
+.question-index {
+    padding-right: 8px;
+}
+
+app-image-cards-mcq {
+    :host {
+        .cards-mcq-container {
+            padding: 0px;
+            padding-top: 28px;
+        }
+        .question-container {
+            font-size: 18px;
+            height: auto;
+            padding-bottom: 20px;
+        }
+        .cards-container {
+            padding: 0px;
+            justify-content: flex-start;
+        }
+        .option-container {
+            margin-right: 16px;
+        }
+    }
+}
+
+@media screen and (max-width:$tabletPortraitMax) {
+    .cwr-explore :host,
+    .fo-explore :host {
+        .question-container {
+            text-align: left; // justify-content: center;
+            width: 100%;
+            height: 120px;
+            padding: 40px 15px 15px;
+        }
+        .cards-container {
+            padding: 20px 40px 40px;
+            display: block;
+        }
+        .cards-mcq-container {
+            padding: 0px;
+        }
+    }
+    .fo-explore :host {
+        .question-container {
+            height: 120px;
+            padding: 20px 15px 15px;
+        }
+    }
+    .isAndroid :host {
+        .question-container {
+            padding: 0px 15px 15px;
+        }
+    }
+    app-image-cards-mcq {
+        :host {
+            .cards-container {
+                margin: 0 35px;
+            }
+            .option-container {
+                margin-right: 45px;
+            }
+            .question-container{
+                margin:0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobileLandscape) {
+    .cwr-explore :host,
+    .fo-explore :host {
+        .question-container {
+            height: 100%;
+            text-align: left;
+            justify-content: unset;
+            font-size: 18px;
+        }
+    }
+    app-image-cards-mcq {
+        :host {
+            .cards-container{
+                margin: 0px;
+                justify-content: space-around;
+            }
+            .option-container{
+                margin-right:0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobilePotrait) {
+    .cwr-explore :host,
+    .fo-explore :host {
+        .question-container {
+            padding: 15px;
+        }
+        .cards-container {
+            display: block;
+            padding: 20px 20px 40px;
+        }
+    }
+    app-image-cards-mcq {
+        :host {
+            .cards-container{
+                display: block;
+                margin: 0px 0px 45px;
+            }
+            .option-container{
+                margin-right: 0px;
+            }
+        }
+    }
+}

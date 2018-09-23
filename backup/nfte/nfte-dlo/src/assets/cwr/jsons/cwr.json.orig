@@ -1,0 +1,641 @@
+{
+  "string-table": {
+    "alert": "Alert",
+    "cancel": "CANCEL",
+    "continue": "CONTINUE",
+    "done": "DONE",
+    "download": "DOWNLOAD",
+    "explore": "EXPLORE",
+    "endScenario": "END SCENARIO",
+    "goToExplore": "GO TO EXPLORE",
+    "IntroPopupButton": "LET'S GO",
+    "learn": "LEARN",
+    "no": "NO",
+    "previous": "PREVIOUS",
+    "print": "PRINT",
+    "quiz": "Quiz",
+    "quizReport": "Quiz Report",
+    "reset": "RESET",
+    "resume": "RESUME VIDEO",
+    "scenarioTitle": "",
+    "showCorrectAnswer": "SHOW CORRECT ANSWER",
+    "showYourAnswer": "SHOW YOUR ANSWER",
+    "skip": "SKIP QUESTION",
+    "skipped": "Not Answered",
+    "submit": "SUBMIT",
+    "submitAlertAllAttempted": "Are you sure you want to submit final answers?",
+    "submitAlertPartialAttempted": "You haven't answered all questions. Are you sure you want to submit?",
+    "submitQuiz": "SUBMIT QUIZ",
+    "take-quiz": "TAKE QUIZ",
+    "takeQuiz": "TAKE THE QUIZ",
+    "totalQuestions": "Total Questions",
+    "transcript": "Transcript",
+    "tryAgain": "TRY AGAIN",
+    "viewReport": "VIEW REPORT",
+    "yes": "YES",
+    "dloTitle": "Comfort with Risk",
+    "video-title": "Getting Comfortable with Risk",
+    "popup-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.Proin sodales pulvinar tempor.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate felis tellus mollis orci.",
+    "s1scene1Title": "Create and Innovate by Challenging the Usual",
+    "scenarioDesc": "Explore the entrepreneurial mindset of comfort with risk in each of these scenarios.",
+    "s1scene1Point1": "State Your Challenge",
+    "s1scene1Point1Text": "I want to change how I play video games.",
+    "s1scene1Point2": "State Your Assumptions",
+    "s1scene1Point2Text": "Game systems can be home consoles or portable devices.",
+    "s1scene1Point3": "Challenge the Usual",
+    "s1scene1Point3Text": "Game systems don’t HAVE to be console-only or portable device-only.",
+    "s1scene1Point4": "Ask “What If?” Questions",
+    "s1scene1Point4Text": "What if my game system could convert between a portable system and a console system? How could I make that work?",
+    "fullscreen": "FULL SCREEN",
+    "exitFullscreen": "EXIT FULL SCREEN",
+    "comfort": "Comfort with Risk",
+    "comfortDesc": "The capacity to move forward with a decision despite inevitable uncertainty and challenges.",
+    "comfortable": "Characteristics of Being Comfortable with Risk",
+    "determined": "DETERMINED",
+    "proactive": "PROACTIVE",
+    "analytical": "ANALYTICAL",
+    "goal": "GOAL ORIENTED",
+    "adaptable": "ADAPTABLE",
+    "tab1Heading": "Not deterred by the possibility of failure or loss",
+    "tab1Description": "Jaden is a pastry chef. He loves to experiment with creative and innovative desserts. In his early days as an entrepreneur, he often had clients who preferred traditional items, and his business nearly collapsed due to the negative reviews he received. However, Jaden was determined to create new items and make a success of it. He started advertising his creations as unique, one-of-a-kind desserts and slowly built up a customer base that truly appreciated his efforts.<br/> <br/>Go through the tabs to explore the qualities that make him a successful entrepreneur.",
+    "tab2Heading": "Implement strategies to anticipate and reduce risk",
+    "tab2Description": "The price of raw materials often varies and can affect the amount of profit a business makes. This is especially true for some of the exotic ingredients that Jaden imports. To minimize this risk, Jaden has an annual contract with his vendor for purchasing materials at a fixed rate.",
+    "tab3Heading": "Weigh potential benefits and tradeoffs or costs",
+    "tab3Description": "A fancy school in France offers a course in culinary arts that Jaden would love to attend. Jaden carefully considers the costs – travel, school fees, and living in France for the duration of the course. On the other hand, with an expanded skill set and a fancy degree in hand, he could continue pursuing his passion for making innovative desserts and target a more sophisticated customer base. Jaden calculates that it would take him less than a year to cover the costs. The benefits outweigh the costs. And off he goes!",
+    "tab4Heading": "Develop a plan to achieve goals regardless of obstacles",
+    "tab4Description": "Jaden has ambitions to become world-renowned in his field. His immediate goals are to either participate in an international pastry contest within a year or work for 3 months under a pastry chef who already has an international acclaim.",
+    "tab5Heading": "Willingly change course in pursuit of new opportunities",
+    "tab5Description": "After years of specializing in pastries, Jaden is now approached by a wealthy retired man with the offer of being a partner in a new restaurant. The man would finance the place and Jaden would run it. Jaden considers the offer carefully and is willing to risk changing course from being a specialist pastry chef to be a chef-owner!",
+    "jeffTitle": "A man comfortable with risk",
+    "jeffDEsc": "One example of an entrepreneur who has been comfortable with risk is Jeff Bezos.</br>Bezos had a comfortable well-paying job on Wall Street. When he realized that the web was growing at a phenomenal rate, he recognized an opportunity. He took a tremendous risk by quitting his job to launch an online book store, Amazon.com.</br> At the time, many experts thought an online book store would fail. However, over the years, not only did Amazon become one of the largest retail companies in the world, Bezos’s empire has also expanded to newspapers, a rocket company, a grocery giant, health care, and more.</br>This phenomenal success has been possible due to Bezos’s entrepreneurial mindset characterized by his comfort with risk.",
+    "scenarios": "Scenarios"
+  },
+  "assets": {
+    "images": [
+      "assets/common/images/scenario-2-question-1_with-text.png"
+    ]
+  },
+  "acc-data": {
+    "playPause": "play pause",
+    "resume": "resume",
+    "transcript": "transcript",
+    "reset": "reset",
+    "previousLabel": "Previous",
+    "nextLabel": "Next",
+    "screenReaderPaginationLabel": "Pagination",
+    "screenReaderPageLabel": "question",
+    "screenReaderCurrentLabel": "You are on question",
+    "mute": "mute",
+    "fullscreen": "fullscreen"
+  },
+  "dlo": {
+    "learnSections": [
+<<<<<<< HEAD
+      {
+        "imgSrc": "assets/cwr/gifs/Intro.gif"
+      },
+      {},
+      {},
+      {
+        "type": 5,
+        "singledrop": true,
+        "inline": false,
+        "allowRetrial": true,
+        "noOfTrials": 2,
+        "groups": [
+          {
+            "id": "0",
+            "group": "1"
+=======
+        {
+          "imgSrc": "assets/cwr/gifs/Intro.gif"
+        },
+        {
+          "tabAudioSrc":["cwr/audios/02-CWR-TL-characteristics-1.mp3",
+            "cwr/audios/05-CWR--TL-characteristics-2.mp3",
+            "cwr/audios/06-CWR-TL-characteristics-3.mp3",
+            "cwr/audios/07-CWR-TL-characteristics-4.mp3",
+            "cwr/audios/08-CWR-TL-characteristics-5.mp3"]
+        },
+        {},
+        {
+          "type": 5,
+          "singledrop": true,
+          "inline": false,
+          "allowRetrial": true,
+          "noOfTrials": 2,
+          "groups": [
+            {
+              "id": "0",
+              "group": "1"
+            },
+            {
+              "id": "1",
+              "group": "2"
+            },
+            {
+              "id": "2",
+              "group": "3"
+            },
+            {
+              "id": "3",
+              "group": "4"
+            }
+          ],
+          "question": {
+            "text": "Rank the actions from most calculated risk (1) to least calculated risk (4).",
+            "arrCorrectOption": [
+              0,
+              3,
+              2,
+              1
+            ]
+>>>>>>> 1ff0d57a8cf588e0d02f2809a0ed8921162acc7b
+          },
+          {
+            "id": "1",
+            "group": "2"
+          },
+          {
+            "id": "2",
+            "group": "3"
+          },
+          {
+            "id": "3",
+            "group": "4"
+          }
+        ],
+        "question": {
+          "text": "Rank the actions from most calculated risk (1) to least calculated risk (4).",
+          "arrCorrectOption": [
+            0,
+            3,
+            2,
+            1
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "Sally earns more money running photography workshops on weekends than she does at her weekday job. She quits her weekday job to offer workshops full-time."
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "Alex takes out a very large loan to start his car detailing business even though he doesn't understand all of the costs of running his business."
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "Mike spends money on several expensive suits to impress potential business clients during lunch meetings."
+          },
+          {
+            "id": "3",
+            "type": "text",
+            "option": "Kathy develops a new music app in her spare time after work because she thinks people will buy it."
+          }
+        ],
+        "feedbackObj": [
+          {
+            "correct": "That’s right! You’ve ranked the actions correctly from most calculated risk (1) to least calculated risk (4).",
+            "inCorrect": "That’s not it. Try Again.",
+            "partiallyCorrect": "That’s not it. Try Again."
+          },
+          {
+            "correct": "That’s right! You’ve ranked the actions correctly from most calculated risk (1) to least calculated risk (4).",
+            "inCorrect": "That’s not it. Sally is extremely likely to earn more by making her profitable weekend business full-time. Kathy develops a new app . Mike’s expensive business suit may or may not impress his business clients. Alex has taken a large debt without analyzing costs, so his behavior is impulsive.",
+            "partiallyCorrect": "That’s not it. Sally is extremely likely to earn more by making her profitable weekend business full-time. Kathy develops a new app . Mike’s expensive business suit may or may not impress his business clients. Alex has taken a large debt without analyzing costs, so his behavior is impulsive."
+          }
+        ]
+      },
+      {
+        "imgSrc": "assets/cwr/images/Jeff-Bazos.png"
+      }
+    ],
+    "learn": {
+      "videoSrc": "assets/cwr/videos/Risk_Animation_Video.mp4",
+      "cuePointFile": "assets/cwr/cue-points.vtt",
+      "subtitle": "assets/ci/subtitles/DLO_2_Intro_Video.vtt",
+      "transcript": "assets/ci/transcripts/DLO_2_Intro_Video.txt",
+      "questions": []
+    },
+    "explore": {
+      "scenarios": [
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/cwr/images/Custom-Greeting-Cards.png",
+          "scenarioDesc": "",
+          "title": "Custom Greetting Cards",
+          "navigationURL": "scenario1",
+          "scenes": [
+            {
+              "imgSrc":"assets/cwr/gifs/Card.gif",
+              "title":"Custom Greeting Cards",
+              "description":"Amy loves making greeting cards. Her friends and family love receiving cards from her because they are truly unique. In fact, many of them gift her raw materials such as card paper, colors, and decorative material to encourage her talent.</br>She now wants to turn her hobby into a business, selling handmade and printed greeting cards. She has a small home computer. However, to design digital cards, she would need to invest in resources such as a better computer, a high-quality color printer and a greeting card or desktop publishing software. To attract local business, she would also like to rent an office downtown.</br>Amy is excellent at drawing and making her own illustrations. She is considering using some of her unique work for advertising purposes but worries that others may copy it. Help Amy make decisions to identify and reduce some of the risks in her new business."
+            }
+          ]
+        },
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/cwr/images/Pet-Grooming-Service.png",
+          "scenarioDesc": "",
+          "title": "Pet Grooming Service",
+          "navigationURL": "scenario2",
+          "scenes": []
+        },
+        {
+          "completed": false,
+          "description": "",
+          "imageSrc": "assets/cwr/images/Food-Delivery-Service.png",
+          "scenarioDesc": "",
+          "title": "Food Delivery Service",
+          "navigationURL": "scenario3",
+          "scenes": [
+            {
+              "videoSrc": "assets/ci/videos/S3 adhesive update.mp4",
+              "subtitle": "assets/ci/subtitles/scenario3.vtt",
+              "transcript": "assets/ci/transcripts/scenario3.txt",
+              "cuePointFile": "assets/ci/cue-points-scenario3.vtt",
+              "questions": []
+            },
+            {
+              "audioSrc": "ci/audios/DLO2_S16.mp3",
+              "transcriptSrc": "ci/transcripts/DLO2_S16.txt",
+              "instructionText": "Instructions",
+              "question": "What are the possible uses for repositionable adhesive?"
+            },
+            {
+              "audioSrc": "ci/audios/DLO2_S17.mp3",
+              "transcriptSrc": "ci/transcripts/DLO2_S17.txt",
+              "instructionText": "Instructions",
+              "question": "What are the possible uses for repositionable adhesive?",
+              "text": {
+                "stencils": "Flip Books",
+                "sectionsTabs": "Sections Tabs",
+                "crafts": "Lipstick Blotter",
+                "chartPaper": "Chart Paper",
+                "hangPictures": "Wall Calendar",
+                "drawerLabels": "Drawer Labels",
+                "bookmarks": "Bookmarks",
+                "temporaryTape": "Keyboard Cleaner",
+                "photoLabels": "Photo Labels",
+                "wallHooks": "Mural Tiles",
+                "verticalLine": "Vertical Line"
+              },
+              "leftColHeader": "Traditional Uses",
+              "rightColHeader": "Innovative Uses",
+              "imgVerticalLine": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_line.png",
+              "imgSectionTabs": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_sectionTabs.png",
+              "imgChartPaper": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_chartPaper.png",
+              "imgDrawerLabels": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_drawerLabels.png",
+              "imgBookmarks": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_bookmarks.png",
+              "imgPhotoLabels": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_photoLabels.png",
+              "imgStencils": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_stencils.png",
+              "imgWallHooks": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_wallHooks.png",
+              "imgHangPicturesOnWall": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_hangPictures.png",
+              "imgTemporaryTape": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_temporaryTape.png",
+              "imgCrafts": "assets/ci/images/NFTE_DLO_02_03_StickyNotes_crafts.png",
+              "purpleNote": "assets/ci/images/purple.png",
+              "orangeNote": "assets/ci/images/orange.png"
+            },
+            {
+              "type": 5,
+              "singledrop": false,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "groups": [
+                {
+                  "id": "0",
+                  "group": "Brainstorming \"Do\"s"
+                },
+                {
+                  "id": "1",
+                  "group": "Brainstorming \"Don't\"s"
+                }
+              ],
+              "question": {
+                "text": "What are the best practices used in successful brainstorming? <div class=\"bold-weight\">Drag each idea to the correct column, then select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "Think of as many ideas as possible"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "Follow a rigid structure"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "Encourage wild ideas"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "Extend others’ ideas"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "Criticize others’ ideas"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "Include a diverse group"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming.",
+                  "inCorrect": "Try again. Think about which behaviors would best foster creativity.",
+                  "partiallyCorrect": "Try again. Think about which behaviors would best foster creativity."
+                },
+                {
+                  "correct": "Correct! Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming.",
+                  "inCorrect": "Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming.",
+                  "partiallyCorrect": "Brainstorming is more likely to succeed when participants extend other’s ideas, encourage wild ideas, include a diverse group, and think of as many ideas as possible. Following a rigid structure and criticizing others’ ideas can limit creativity when brainstorming."
+                }
+              ]
+            },
+            {
+              "type": 5,
+              "singledrop": true,
+              "inline": true,
+              "allowRetrial": true,
+              "noOfTrials": 2,
+              "inlineText": "When you brainstorm, you list as many possible <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 175px; height: 65px;\"></div></div></div>as quickly as possible. Some of these ideas might seem<div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 175px; height: 65px;\"></div></div></div> , but they might turn out to be innovative ideas.",
+              "groups": [
+                {
+                  "id": "0",
+                  "group": ""
+                },
+                {
+                  "id": "1",
+                  "group": ""
+                }
+              ],
+              "question": {
+                "text": "How does brainstorming facilitate the entrepreneurial mindset of creativity and innovation?<div class=\"bold-weight\"> Drag and drop the words or phrases into the statement and select Submit.</div>",
+                "arrCorrectOption": [
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  1,
+                  -1
+                ]
+              },
+              "options": [
+                {
+                  "id": "0",
+                  "type": "text",
+                  "option": "solutions to a problem"
+                },
+                {
+                  "id": "1",
+                  "type": "text",
+                  "option": "assumptions"
+                },
+                {
+                  "id": "2",
+                  "type": "text",
+                  "option": "barriers"
+                },
+                {
+                  "id": "3",
+                  "type": "text",
+                  "option": "opportunities"
+                },
+                {
+                  "id": "4",
+                  "type": "text",
+                  "option": "ridiculous"
+                },
+                {
+                  "id": "5",
+                  "type": "text",
+                  "option": "guesses"
+                }
+              ],
+              "feedbackObj": [
+                {
+                  "correct": "Correct! Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "inCorrect": "Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "partiallyCorrect": "Brainstorming should be a free flow of ideas that could be the answer to a question. All ideas should be included, no matter how ridiculous they might seem."
+                },
+                {
+                  "correct": "Correct! Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "inCorrect": "Brainstorming should be a free flow of ideas that could be the solution to a problem. All ideas should be included, no matter how ridiculous they might seem.",
+                  "partiallyCorrect": "Brainstorming should be a free flow of ideas that could be the answer to a question. All ideas should be included, no matter how ridiculous they might seem."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "type": 1,
+        "question": {
+          "text": "Which of the following best describes creativity?",
+          "correctOption": "3"
+        },
+        "options": [
+          {
+            "option": "The process of asking questions",
+            "feedback": "Incorrect. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks. "
+          },
+          {
+            "option": "The process of identifying problems",
+            "feedback": "Incorrect. Identifying problems is part of the creative process, but developing innovative ideas to solve these problems is creativity."
+          },
+          {
+            "option": "The process of identifying assumptions",
+            "feedback": "Incorrect. Identifying assumptions is part of the creative process, but developing innovative ideas to solve these problems is creativity."
+          },
+          {
+            "option": "The process of developing ideas",
+            "feedback": "Correct. Creativity is the process of developing ideas."
+          }
+        ],
+        "selected": -1
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "isClone": true,
+        "inline": true,
+        "inlineText": " The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 160px; height: 115px;\"></div></div></div></div> discuss each idea as it is suggested. </br>The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"1\" data-id=1 style=\"width: 160px; height: 115px;\"></div></div></div></div>build upon ideas suggested by its members.</br> The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"2\" data-id=2 style=\"width: 160px; height: 115px;\"></div></div></div></div> include people with diverse backgrounds and opinions. </br>The group <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"3\" data-id=3 style=\"width: 160px; height: 115px;\"></div></div></div></div> be respectful of all ideas.",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          },
+          {
+            "id": "1",
+            "group": ""
+          },
+          {
+            "id": "2",
+            "group": ""
+          },
+          {
+            "id": "3",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "A group of entrepreneurs meets to brainstorm answers to the question, “What are the possible uses for this new technology?” <div class=\"bold-weight\">Drag and drop the phrase that best completes each statement:</div>",
+          "arrCorrectOption": [
+            [
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "should not"
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "should"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct.",
+          "inCorrect": "Incorrect.",
+          "partiallyCorrect": "Nice try! Your answer is partially correct!"
+        }
+      },
+      {
+        "type": 2,
+        "question": {
+          "text": "What is an idea map?<div class=\"bold-weight\"> Select all that apply.",
+          "arrCorrectOption": [
+            0,
+            2,
+            4
+          ]
+        },
+        "options": [
+          {
+            "option": "a diagram that connects information"
+          },
+          {
+            "option": "a way to limit ridiculous ideas"
+          },
+          {
+            "option": "a brainstorming tool"
+          },
+          {
+            "option": "a tool for creating a diagram of a town"
+          },
+          {
+            "option": "a visual aid to help find solutions to problems"
+          }
+        ],
+        "feedbackObj": {
+          "correct": "Correct. An idea map is many things: a diagram that connects information, a valuable brainstorming tool, and a visual aid to help find solutions to problems.",
+          "inCorrect": "Incorrect. An idea map is many things: a diagram that connects information, a valuable brainstorming tool, and a visual aid to help find solutions to problems.",
+          "partiallyCorrect": "Partially Correct. An idea map is many things: a diagram that connects information, a valuable brainstorming tool, and a visual aid to help find solutions to problems."
+        },
+        "selected": []
+      },
+      {
+        "type": 5,
+        "singledrop": true,
+        "specificFeedback": true,
+        "inline": true,
+        "inlineText": "<div>1. I want to change the design of tablet cases. </div><div>2. <div class=\"drop-group-wrapper\" style=\"display:inline-block\"><div class=\"drop-group-name-wrapper\"><div><span class=\"drop-group-name\"></span></div><div class=\"drop-zone drop-group\" id=\"0\" data-id=0 style=\"width: 160px; height: 115px;\"></div></div></div></div><div> 3. Cases don’t HAVE to trade comfort for protection.</div><div><br/>4. What if my tablet cover could provide protection while still being lightweight and sleek?</div>",
+        "groups": [
+          {
+            "id": "0",
+            "group": ""
+          }
+        ],
+        "question": {
+          "text": "An entrepreneur wants to innovate by improving upon tablet cases. Complete the four steps she can use to challenge the usual. <div class=\"bold-weight\">Drag and drop the statement that best completes Step 2.</div>",
+          "arrCorrectOption": [
+            -1,
+            -1,
+            0
+          ]
+        },
+        "options": [
+          {
+            "id": "0",
+            "type": "text",
+            "option": "Cases are either fashionable or strong.",
+            "feedback": "Incorrect. The challenge does not involve the appearance of the case."
+          },
+          {
+            "id": "1",
+            "type": "text",
+            "option": "Cases are either bulky or protective.",
+            "feedback": "Incorrect. The “what if” question suggests that the entrepreneur assumes that cases are either bulky and uncomfortable or lightweight."
+          },
+          {
+            "id": "2",
+            "type": "text",
+            "option": "Cases are either bulky or lightweight.",
+            "feedback": "Correct. The “what if” question suggests that the entrepreneur assumes that cases are either bulky and uncomfortable or lightweight."
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "question": {
+          "text": "Which of the following best describes a person with an entrepreneurial mindset of being comfortable with risk?",
+          "correctOption": "3"
+        },
+        "options": [
+          {
+            "option": "Works hard until a task is complete ",
+            "feedback": "Incorrect. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks."
+          },
+          {
+            "option": "Sets up organized processes to maintain a smooth workflow",
+            "feedback": "Incorrect. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks."
+          },
+          {
+            "option": "Follows a predefined path to reach a goal without any changes",
+            "feedback": "Incorrect. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks."
+          },
+          {
+            "option": "Takes a calculated risk when confronted with obstacles",
+            "feedback": "Correct. Being comfortable with risk involves evaluating possible outcomes and taking calculated risks."
+          }
+        ],
+        "selected": -1
+      }
+    ]
+  }
+}

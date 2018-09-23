@@ -1,0 +1,121 @@
+<vg-player (onPlayerReady)="onPlayerReady($event)" (mousemove)="api.state!='paused'?onPointerMove(): onPointerMove()" (click)="(api && api.fsAPI.isFullscreen &&
+  item != null)?  fullscreenBottonBar(): onPointerMove()" [ngClass]="{'full-screen':api && api.fsAPI.isFullscreen, 'video-player-IE':isIE}">
+  
+  <div *ngIf="cuePointData !== null && item !== null" [ngClass]="{'quiz_container': cuePointData !== null,'transparent-background': (item.type==5 || item.type==6) }"
+    class={{animationClass}}>
+
+    <div class="question-part" [style.width.px]="questionContainerWidth" [style.height.px]="questionContainerHeight">
+      <app-mcq #mcq *ngIf="cuePointData !== null && item.type == 1 " [model]="item" [showCorrectAnswer]="showCorrectAnswerFlag" 
+        [index]="index-1" [showResult]="item.isGradable && item.submited"></app-mcq>
+
+      <app-mrq #mrq *ngIf="cuePointData !== null && item.type == 2" [showCorrectAnswer]="showCorrectAnswerFlag" [model]="item" [showResult]="item.isGradable && item.submited"
+        [index]="index-1"></app-mrq>
+
+      <app-drag-and-drop scaleB="true" [parentHeight]="questionContainerHeight" [parentWidth]="questionContainerWidth" [showResult]="item.isGradable && item.submited" #dnd 
+        *ngIf="cuePointData !== null && item.type == 5  && item.backgroundImage == undefined" [model]="item" [index]="index-1" 
+        [showCorrectAnswer]="showCorrectAnswerFlag"></app-drag-and-drop>
+
+      <app-drag-and-drop-2 scaleB="true"  [parentHeight]="questionContainerHeight" [parentWidth]="questionContainerWidth" #dnd [showResult]="item.isGradable && item.submited"
+        *ngIf="cuePointData !== null && item.type == 5 && item.backgroundImage !== undefined" [model]="item" [index]="index-1" 
+        [showCorrectAnswer]="showCorrectAnswerFlag" ></app-drag-and-drop-2>
+
+
+      <app-hotspot #hotspot [showResult]="item.isGradable && item.submited"  *ngIf="cuePointData !== null && item.type == 6 " [model]="item" [index]="index-1" 
+        [showCorrectAnswer]="showCorrectAnswerFlag" ></app-hotspot>
+
+      <app-likert #sr *ngIf="cuePointData !== null && item.type == 7 " [model]="item" [showResult]="item.isGradable && item.submited"
+        [index]="index-1"></app-likert>
+      
+      <app-match #match [showResult]="item.isGradable && item.submited" *ngIf="cuePointData !== null && item.type == 3" [showCorrectAnswer]="showCorrectAnswerFlag" 
+      [model]="item" [index]="index-1" ></app-match>
+
+      <div class="text-information" *ngIf="cuePointData !== null && item.type == 8">{{item.text}}</div>
+      
+    </div>
+
+    <app-bottom-buttons *ngIf='api.fsAPI.isFullscreen' [ngClass]="{'hide-controls': timeOutControl, 'hotspot-mode': item && !convertToBoolean(item.isGradable), 'no-feedback': feedback == undefined, 'no-gradable': item && !convertToBoolean(item.isGradable)}" [api]='api' [feedback]="item && item.submited ? feedback : ''" 
+      (showCorrectAnswer)="showCorrectAnswer($event)" (done)="onDoneClick();" (resume)="onClick(1)" (skip)="onClick(0);" (explore)="goToExplore();" [cuePointData]='cuePointData' 
+      [feedbackClass]='feedbackClass' [forceResume]="item && item.type.toString() === '8'" [doneClicked]='item && item.submited' [doneDisable]='!(item && item.attempted)' (reset)="resetData()" 
+      (fullscreen)="fullscreen()" [showCorrectAnswerFlag]=!showCorrectAnswerFlag></app-bottom-buttons>
+
+  </div>
+
+  <div *ngIf="!videoCompleted && cuePointData === null"   class="resume-overlay" [ngClass]="{'play-overlay-hide': (item && (item.type==5 || item.type==6))}" >
+    <div class="vg-overlay-resume" (click)="api.getDefaultMedia().state ==='paused'?playVideo():pauseVideo()">
+        <div [ngClass]="{'video-controls-container': data.playText }" *ngIf="(api && api.getDefaultMedia().state ==='paused')">
+          <div  tabindex="0" id="playOverlay" role="button" [attr.aria-label]="getAccText('playPause')" class="icon-play-video overlay-resume-container" (focus)="onFocus($event, true)" (blur)="onBlur($event, true)"></div>
+          <div  class="video-control-text" [innerHtml]="data.playText" *ngIf="data.playText"></div>
+        </div>
+    </div>
+  </div>
+
+  <div *ngIf="!videoCompleted && cuePointData === null"   class="resume-overlay" [ngClass]="{'play-overlay-hide': (item && (item.type==5 ||
+    item.type==6)), 'hide-controls': timeOutControl }" (click)="onPointerMove()" (mousemove)="onPointerMove()">
+    <div   class="vg-overlay-resume" (click)="api.getDefaultMedia().state ==='paused'?playVideo():pauseVideo()">
+      <div *ngIf="(api && api.getDefaultMedia().state ==='playing')" role="button" tabindex="0" id="pauseOverlay" [attr.aria-label]="getAccText('playPause')"  class="icon-pause-video overlay-resume-container" (focus)="onFocus($event, true)" (blur)="onBlur($event, true)" ></div>      
+    </div>
+  </div>
+  
+
+
+  <div *ngIf="videoCompleted || !(api)" class="resume-overlay" >
+    <div class="vg-overlay-resume" (click)="resumeVideo()">
+      <div class="icon-replay-video overlay-resume-container" tabindex="0" role="button" [attr.aria-label]="getAccText('resume')" (focus)="onFocus($event, true)" (blur)="onBlur($event, true)" ></div>
+    </div>
+  </div>
+  <vg-controls *ngIf="!videoCompleted" [ngClass]="{'disabled':videoCompleted, 'hide-controls': (cuePointData !=null) || timeOutControl}" 
+    (vgUpdateState)="updateState($state)">
+    
+    <vg-play-pause  placement="right" (click)="playOverlayClicked()" ></vg-play-pause>
+
+
+    <vg-scrub-bar >
+      <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+      <vg-scrub-bar-cue-points [vgCuePoints]="metadataTrack.cues"></vg-scrub-bar-cue-points>
+    </vg-scrub-bar>
+    <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+    <div class="separator">/</div>
+    <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+    <div class="remaining-time">
+     <span> - </span>
+     <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+     
+    </div>
+    
+    <vg-track-selector  [ngClass]="{'IE': isIE}"></vg-track-selector>
+    <div class="subtitle-icon icon icon-closed-caption" [attr.aria-label]="getAccText('Subtitle')" tabindex="0" role="button"  (focus)="onFocus($event,true)" (blur)="onBlur($event, true)" (click)="showSubtitles()"></div> 
+    <div #transcript  class="icon-transcript" tabindex="0" role="button" [attr.aria-label]="getAccText('transcript')" (focus)="onFocus($event,true)" (blur)="onBlur($event, true)" (click)="showTranscript()"></div>
+    <vg-mute  [ngClass]="{'ios-volume':checkIfIOS()}" ></vg-mute>
+    <vg-volume [ngClass]="{'ios-volume':checkIfIOS()}" ></vg-volume>
+
+    <vg-fullscreen #fullscreenButton placement="left" ></vg-fullscreen>
+    <div class="icon-more_vertical" (click)="toggleMobileHiddenControls()"></div>
+    <div class="more-controls" [ngClass]="{'showControls':showHiddenControls}">
+      <div *ngIf="!checkIfIOS()" class="more-control volume"><vg-mute class="control"  [ngClass]="{'ios-volume':checkIfIOS()}"></vg-mute></div>
+      <div class="more-control transcript"><div class="icon-transcript control" (click)="showTranscript()"></div></div>
+      <div class="more-control closed-caption"><vg-track-selector class="control"></vg-track-selector></div>
+      
+    </div>
+  </vg-controls>
+
+  <video #media (loadedmetadata)="loadData($event)" [ngClass]="{'video-ie-fullscreen': isIE}"[vgMedia]="media" id="singleVideo" preload="auto" 
+    playsinline webkit-playsinline [poster]="videoData.poster?videoData.poster:null">
+    <source [src]="videoData.src" [type]="videoData.type">
+
+    <track [src]="videoData.cuePointFile" kind="metadata" label="Cue Points"  #metadataTrack vgCuePoints (onEnterCuePoint)="onEnterCuePoint($event)"
+      (onExitCuePoint)="onExitCuePoint($event)">
+      <track kind="subtitles" label="English" [src]="videoData.subtitle" srclang="en">
+  </video>
+
+  <div class="hotspot-question" *ngIf="hotspotVisible" [ngClass]="{ 'hotspot-highlight-animation' : hotspotVisible}" (click)="showQuestion($event)">?</div>
+
+</vg-player>
+<app-bottom-buttons [ngClass]="{'hide':!isLearnTab, 'hotspot-mode': item && !convertToBoolean(item.isGradable), 'no-feedback': feedback == undefined, 'no-gradable': item && !convertToBoolean(item.isGradable) }" *ngIf='!(api && api.fsAPI.isFullscreen)' [api]='api' [videoCompleted]="videoCompleted" [feedback]="item && item.submited ? feedback : ''" 
+  (showCorrectAnswer)="showCorrectAnswer($event)" (done)="onDoneClick()" (resume)="onClick(1)" (skip)="onClick(0)" (explore)="goToExplore()" [forceResume]="item && item.type.toString() === '8'" [cuePointData]='cuePointData' 
+  [feedbackClass]='feedbackClass' [doneClicked]='item && item.submited' [doneDisable]='!(item && item.attempted)' (reset)="resetData()" 
+  (fullscreen)="fullscreen()" [showCorrectAnswerFlag]=!showCorrectAnswerFlag></app-bottom-buttons>
+
+  <app-alert #brAlert title='transcript'  noOfButtons=1 yesButtonText='download' (yesClickedEvent)="alertYesClicked()" (okClickedEvent)="hideTranscript()"
+  [description]='transcriptData' ></app-alert>
+
