@@ -1,0 +1,193 @@
+var circle,
+    radius=200,
+    xPointList = [],
+    masterGroup,
+    side= 140,
+    layer1;
+
+main();
+
+var buttonPlus= new Path.Circle({
+        radius : 10,
+        center: new Point(600,100),
+        fillColor : 'green'
+    });
+    
+    var buttonMinus= new Path.Circle({
+        radius : 10,
+        center: new Point(450,100),
+        fillColor : 'red'
+    });
+    
+    
+var layer2=new Layer({
+    children: [buttonPlus, buttonMinus],
+    strokeColor: 'black'
+});
+    
+    buttonPlus.onMouseDown=function(){
+        if(side<radius){
+            side+=radius/100;
+            layer1.removeChildren();
+            main();
+        }
+    }
+    
+    buttonMinus.onMouseDown=function(){
+        if(side>radius/100){
+            side-=radius/100;
+            layer1.removeChildren();
+            main();
+        }
+    }
+
+function main(){
+    circle = renderCircle();
+    circle.strokeColor = 'black';
+    circle.strokeWidth = 1;
+    console.log(side);
+    if(side<=7*radius/10){
+        xPointList = gatherPoints();
+        var linesgroup = renderLines(xPointList);
+        masterGroup = new Group();
+        masterGroup.addChildren([linesgroup,circle]);
+        masterGroup.position = view.center;
+        linesgroup.strokeColor = 'red';
+        layer1 = new Layer({
+            children: [masterGroup]
+        });
+    }
+    else if (side<9*radius/10){
+        var rectGroup=createRect();
+        rectGroup.strokeColor='red';
+        rectGroup.strokeWidth=1;
+        masterGroup = new Group();
+        masterGroup.addChildren([rectGroup,circle]);
+        masterGroup.position = view.center;
+        layer1 = new Layer({
+            children: [masterGroup]
+        });
+    }
+    else{
+        var rectGroup=createSingleRect();
+        rectGroup.strokeColor='red';
+        rectGroup.strokeWidth=1;
+        masterGroup = new Group();
+        masterGroup.addChildren([rectGroup,circle]);
+        masterGroup.position = view.center;
+        layer1 = new Layer({
+            children: [masterGroup]
+        });
+    }
+}
+
+function createRect(){
+    var rect1=new Path.Rectangle(0,0,side,side);
+    var rect2=new Path.Rectangle(0,side,side,side);
+    var group=new Group();
+    group.addChildren([rect1,rect2]);
+    group.position.x-=side/2;
+    group.position.y-=side;
+    return group;
+}
+
+function createSingleRect(){
+    var rect1=new Path.Rectangle(0,0,side,side);
+    var group=new Group();
+    group.addChildren([rect1]);
+    group.position.x-=side/2;
+    group.position.y-=side/2;
+    return group;
+}
+
+function renderLines(ptListObject){
+    var group = new Group(),
+        line1,line2,pt,
+        ptListHorz = ptListObject.horz,
+        ptListVert = ptListObject.vert;
+    
+    for( var i = 0 ; i < ptListHorz.length ; i++){
+        pt = ptListHorz[i];
+        line1 = new Path();
+        line1.add(pt);
+        line1.add(-pt.x,pt.y);
+        line2 = new Path();
+        line2.add(-pt);
+        line2.add(pt.x,-pt.y);
+        group.addChildren([line1,line2]);
+    }
+    
+    for(var i = 0 ; i < ptListVert.length ; i++){
+        pt = ptListVert[i];
+        line1 = new Path();
+        line1.add(-pt);
+        line1.add(-pt.x,pt.y);
+        line2 = new Path();
+        line2.add(pt);
+        line2.add(pt.x,-pt.y);
+        group.addChildren([line1,line2]);
+    }
+    
+    return group;
+}
+
+function renderCircle(){
+    var circle = new Path.Circle({
+        radius : radius,
+        center: new Point(0,0),
+        strokeColor : 'red'
+    });
+    return circle;
+}
+
+function gatherPoints(){
+    var yLimit = parseInt(radius/side) ,
+        xLimit,
+        xPointList = [],
+        yPointList = [],
+        x,y,width = 0;
+        
+    for(var i = 0 ; i <= yLimit ; i++){
+        y = i * side ;
+        x = getPointOnCircleY(y).x;
+        xLimit = parseInt(x / side) * side;
+        if(i > 0 && !isNaN(xLimit)){
+            width += xLimit;   
+        }
+        if( i === 0 ){
+            var newY = Math.abs(getPointOnCircleY(xLimit).x);
+            if(newY < side){
+                xLimit -= side;   
+            }
+        }
+        xPointList.push(new Point(xLimit,y));
+    }
+    
+    //console.log(width/side * 4);
+    
+    xLimit = parseInt(radius/side);
+    for(var i = 0 ; i <= xLimit ; i++){
+        x = i * side ;
+        y = getPointOnCircleX(x).y ;
+        yLimit = parseInt(y / side) * side;
+        if( i === 0 ){
+            var newX = Math.abs(getPointOnCircleX(yLimit).y);
+            if(newX < side){
+                yLimit -= side;   
+            }
+        }
+        yPointList.push(new Point(x , yLimit));
+    }
+    
+    return { 'horz' : xPointList , 'vert' : yPointList , count : width};
+}
+
+function getPointOnCircleX(x){
+    var theta = Math.acos( x / radius) ;
+    return new Point(x,radius * Math.sin(theta));
+}
+
+function getPointOnCircleY(y){
+    var theta = Math.asin( y / radius) ;
+    return new Point(radius * Math.cos(theta) , y);
+}

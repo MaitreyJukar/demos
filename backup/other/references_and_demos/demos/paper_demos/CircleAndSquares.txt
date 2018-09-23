@@ -1,0 +1,57 @@
+
+var originX=500;
+var originY=350;
+var xAxisLength=1000;
+var yAxisLength=1000;
+var circleRadius=200;
+var squareSide=20;
+
+var yAxis = new Path.Line({
+    from: [originX, originY-(yAxisLength/2)],
+    to: [originX, originY+(yAxisLength/2)],
+    strokeColor: 'black'
+});
+
+var xAxis = new Path.Line({
+    from: [originX-(xAxisLength/2), originY],
+    to: [originX+(xAxisLength/2), originY],
+    strokeColor: 'black'
+});
+
+//Create a Circle
+circle = new Path.Circle(new Point(originX, originY), circleRadius);
+circle.strokeWidth = 1;
+circle.strokeColor = 'black';
+
+    var squareArea=squareSide*squareSide;
+    var smallSquarePath=new Path.Rectangle(0,0,squareSide,squareSide);
+    smallSquarePath.strokeColor='red';
+    smallSquarePath.strokeWidth=1;
+    var smallSquare=new Symbol(smallSquarePath);
+    var instance,group;
+    smallSquarePath.remove();
+    var limitX=originX-circleRadius;
+    var limitY=originY-circleRadius;
+    for(var x=originX-squareSide,j=1,k=1,noOfSquares=0;x>limitX;x-=squareSide){
+        for(var y=originY-squareSide;y>limitY;y-=squareSide){
+            var point=new Point(x,y);
+            if(circle.contains(point)){
+                var xPoint=x+squareSide/2;
+                var yPoint=y+squareSide/2;
+                var xDelta=squareSide*k;
+                var yDelta=squareSide*j;
+                smallSquare.place([xPoint,yPoint]);
+                smallSquare.place([xPoint+xDelta,yPoint]);
+                smallSquare.place([xPoint+xDelta,yPoint+yDelta]);
+                smallSquare.place([xPoint,yPoint+yDelta]);
+                j+=2;
+                noOfSquares+=4;
+            }
+            else{
+                break;
+            }
+        }
+        j=1;
+        k+=2;
+    }
+    console.log(noOfSquares);

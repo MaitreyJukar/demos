@@ -1,0 +1,243 @@
+[4mRunning "env:debug" (env) task[24m
+
+[4mRunning "set_build_config" task[24m
+
+[4mRunning "deploy_kepler" task[24m
+
+[4mRunning "copy_css_to_output" task[24m
+access
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/access/css/**' ]
+../../../kepler-output/kepler-strata/debug/access/css/
+accessdb006
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/accessdb006/css/**' ]
+../../../kepler-output/kepler-strata/debug/accessdb006/css/
+accessdb007
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/accessdb007/css/**' ]
+../../../kepler-output/kepler-strata/debug/accessdb007/css/
+accessdb016
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/accessdb016/css/**' ]
+../../../kepler-output/kepler-strata/debug/accessdb016/css/
+accessdb045
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/accessdb045/css/**' ]
+../../../kepler-output/kepler-strata/debug/accessdb045/css/
+common
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/common/css/**' ]
+../../../kepler-output/kepler-strata/debug/common/css/
+commondb001
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb001/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb001/css/
+commondb002
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb002/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb002/css/
+commondb003
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb003/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb003/css/
+commondb004
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb004/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb004/css/
+commondb005
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb005/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb005/css/
+commondb006
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb006/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb006/css/
+commondb007
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb007/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb007/css/
+commondb008
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb008/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb008/css/
+commondb009
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb009/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb009/css/
+commondb010
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb010/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb010/css/
+commondb011
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb011/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb011/css/
+commondb012
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb012/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb012/css/
+commondb013
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb013/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb013/css/
+commondb014
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb014/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb014/css/
+commondb015
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/commondb015/css/**' ]
+../../../kepler-output/kepler-strata/debug/commondb015/css/
+excel
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/excel/css/**' ]
+../../../kepler-output/kepler-strata/debug/excel/css/
+exceldb003
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb003/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb003/css/
+exceldb006
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb006/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb006/css/
+exceldb014
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb014/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb014/css/
+exceldb023
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb023/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb023/css/
+exceldb024
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb024/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb024/css/
+exceldb032
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb032/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb032/css/
+exceldb062
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb062/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb062/css/
+exceldb072
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb072/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb072/css/
+exceldb075
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb075/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb075/css/
+exceldb080
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb080/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb080/css/
+exceldb082
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb082/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb082/css/
+exceldb098
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb098/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb098/css/
+exceldb114
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb114/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb114/css/
+exceldb115
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb115/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb115/css/
+exceldb121
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb121/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb121/css/
+exceldb148
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb148/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb148/css/
+exceldb149
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb149/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb149/css/
+exceldb151
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/exceldb151/css/**' ]
+../../../kepler-output/kepler-strata/debug/exceldb151/css/
+explorer
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/explorer/css/**' ]
+../../../kepler-output/kepler-strata/debug/explorer/css/
+metrodb001
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/metrodb001/css/**' ]
+../../../kepler-output/kepler-strata/debug/metrodb001/css/
+metrodb002
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/metrodb002/css/**' ]
+../../../kepler-output/kepler-strata/debug/metrodb002/css/
+player
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/player/css/kepler_player.css' ]
+../../../kepler-output/kepler-strata/debug/player/css/
+win8applauncher
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/win8applauncher/css/**' ]
+../../../kepler-output/kepler-strata/debug/win8applauncher/css/
+windb001
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/windb001/css/**' ]
+../../../kepler-output/kepler-strata/debug/windb001/css/
+windb002
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/windb002/css/**' ]
+../../../kepler-output/kepler-strata/debug/windb002/css/
+windb003
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/windb003/css/**' ]
+../../../kepler-output/kepler-strata/debug/windb003/css/
+windb004
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/windb004/css/**' ]
+../../../kepler-output/kepler-strata/debug/windb004/css/
+wintaskbar
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/wintaskbar/css/**' ]
+../../../kepler-output/kepler-strata/debug/wintaskbar/css/
+word
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/word/css/**' ]
+../../../kepler-output/kepler-strata/debug/word/css/
+worddb001
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb001/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb001/css/
+worddb002
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb002/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb002/css/
+worddb004
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb004/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb004/css/
+worddb012
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb012/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb012/css/
+worddb017
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb017/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb017/css/
+worddb020
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb020/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb020/css/
+worddb021
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb021/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb021/css/
+worddb024
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb024/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb024/css/
+worddb034
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb034/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb034/css/
+worddb037
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb037/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb037/css/
+worddb038
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb038/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb038/css/
+worddb039
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb039/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb039/css/
+worddb044
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb044/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb044/css/
+worddb049
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb049/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb049/css/
+worddb053
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb053/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb053/css/
+worddb070
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb070/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb070/css/
+worddb093
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb093/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb093/css/
+worddb094
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb094/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb094/css/
+worddb100
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb100/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb100/css/
+worddb102
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb102/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb102/css/
+worddb121
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb121/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb121/css/
+worddb128
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb128/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb128/css/
+worddb299
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb299/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb299/css/
+worddb309
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb309/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb309/css/
+worddb332
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb332/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb332/css/
+worddb346
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb346/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb346/css/
+worddb359
+[ '../../code/kepler_web/obj/debug/Package/PackageTmp/worddb359/css/**' ]
+../../../kepler-output/kepler-strata/debug/worddb359/css/
+
+[32mDone, without errors.[39m

@@ -1,0 +1,87 @@
+var circle,
+    radius=223,
+    xPointList = [],
+    masterGroup;
+    side= 51;
+
+main();
+
+
+function main(){
+    circle = renderCircle();
+    xPointList = gatherPoints();
+    var linesgroup = renderLines(xPointList);
+    masterGroup = new Group();
+    masterGroup.addChildren([linesgroup,circle]);
+    masterGroup.position = view.center;
+    masterGroup.strokeColor = 'red';
+}
+
+function renderLines(ptListObject){
+    var group = new Group(),
+        line,pt,
+        ptListHorz = ptListObject.horz,
+        ptListVert = ptListObject.vert;
+    
+    for( var i = 0 ; i < ptListHorz.length ; i++){
+        pt = ptListHorz[i];
+        line = new Path();
+        line.add(pt);
+        line.add(-pt.x, pt.y);
+        group.addChild(line);
+    }
+    
+    for(var i = 0 ; i < ptListVert.length ; i++){
+        pt = ptListVert[i];
+        line = new Path();
+        line.add(pt);
+        line.add(pt.x, -pt.y);
+        group.addChild(line);
+    }
+    
+    return group;
+}
+
+function renderCircle(){
+    var circle = new Path.Circle({
+        radius : radius,
+        center: new Point(0,0),
+        strokeColor : 'red'
+    });
+    return circle;
+}
+
+function gatherPoints(){
+    var yLimit = parseInt(radius/side) ,
+        xLimit,
+        xPointList = [],
+        yPointList = [],
+        x,y;
+        
+    for(var i = -yLimit ; i <= yLimit ; i++){
+        y = i * side;
+        x = getPointOnCircleY(y).x;
+        xLimit = parseInt(x / side) * side;
+        xPointList.push(new Point(xLimit,y));
+    }
+    
+    xLimit = parseInt(radius/side);
+    for(var i = -xLimit ; i <= xLimit ; i++){
+        x = i * side;
+        y = getPointOnCircleX(x).y;
+        yLimit = parseInt(y / side) * side;
+        yPointList.push(new Point(x , yLimit));
+    }
+    
+    return { 'horz' : xPointList , 'vert' : yPointList};
+}
+
+function getPointOnCircleX(x){
+    var theta = Math.acos( x / radius) ;
+    return new Point(x,radius * Math.sin(theta));
+}
+
+function getPointOnCircleY(y){
+    var theta = Math.asin( y / radius) ;
+    return new Point(radius * Math.cos(theta) , y);
+}

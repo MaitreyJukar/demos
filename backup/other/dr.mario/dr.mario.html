@@ -1,0 +1,268 @@
+<div id="drmario" class="drmario">
+    <div class="game_cover" style="display: none;"><a class="game_start">start game Dr.Mario</a>
+        <div class="game_info">
+            <p class="title mariobutton" id="title">PLAY</p>
+        </div>
+        <div id="instructions">Match four of the same color vertically or horizontally so that they disappear, taking the viruses with them.
+            <br>
+            <br>Use arrow keys or on-screen controls to move/rotate</div>
+    </div>
+    <div class="game_panel" style="display: block;">
+        <div class="column cell1">
+            <ul class="score_panel">
+                <li><strong>TOP</strong></li>
+                <li class="top_score">400</li>
+                <li><strong>SCORE</strong></li>
+                <li class="score">400</li>
+            </ul>
+            <div class="microscope">
+                <div class="virus red" style="background-position: -517px -100px; visibility: visible;"></div>
+                <div class="virus yellow" style="background-position: -517px -250px; visibility: visible;"></div>
+                <div class="virus blue" style="background-position: -517px -400px; visibility: visible;"></div>
+            </div>
+        </div>
+        <div class="column cell2">
+            <div class="playarea">
+                <div class="table">
+                    <table cellspacing="2" cellpadding="0" border="0" class="medicine bottle">
+                        <tbody>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class="v_red_act"></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class="v_blue_act"></td>
+                                <td class="v_yellow_act"></td>
+                                <td class="m_yellow_up"></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class="v_yellow_act"></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class="m_yellow_down"></td>
+                                <td class="m_blue_left"></td>
+                                <td class="m_blue_right"></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class="v_yellow_act"></td>
+                                <td class="v_blue_act"></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class="v_blue_act"></td>
+                                <td class="v_red_act"></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                            <tr>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                                <td class=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="2" cellpadding="0" border="0" class="medicine playbox" style="left: 60px; top: 0px; display: block;">
+                        <tbody>
+                            <tr>
+                                <td class=""></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="m_blue_left"></td>
+                                <td class="m_blue_right"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="result next_stage" style="display: none;">
+                    <p><strong>LOADING...</strong><strong></strong></p>
+                </div>
+                <div class="result game_over" style="display: none;">
+                    <p><strong>GAME OVER</strong></p>
+                    <div class="mariobutton">PLAY AGAIN</div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="column cell3">
+            <div class="gamename">Dr.Mario</div>
+            <div class="mario">
+                <table cellspacing="2" cellpadding="0" border="0" class="medicine nextbox" style="left: 30px; top: 7px; display: block;">
+                    <tbody>
+                        <tr>
+                            <td class="m_red_left"></td>
+                            <td class="m_blue_right"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="msgbox">
+                <li><strong>LEVEL</strong></li>
+                <li class="level">2</li>
+                <li><strong>SPEED</strong></li>
+                <li class="speed">LOW</li>
+                <li><strong>VIRUS</strong></li>
+                <li class="remain">8</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+
+check3DCollinearity : function check3DCollinearity(pt1, pt2, pt3) {
+
+	var sameX = pt1.x === pt2.x && pt1.x === pt3.x,
+	sameY = pt1.y === pt2.y && pt1.y === pt3.y,
+	sameZ = pt1.z === pt2.z && pt1.z === pt3.z,
+	count = Number(sameX) + Number(sameY) + Number(sameZ);
+
+	if (count > 1) {
+		return true;
+	}
+
+	var tolerance = 0.001,
+	x12 = pt2.x - pt1.x,
+	x13 = pt3.x - pt1.x,
+	xDiff = (x12 / x13),
+	y12 = pt2.y - pt1.y,
+	y13 = pt3.y - pt1.y,
+	yDiff = (y12 / y13),
+	z12 = pt2.z - pt1.z,
+	z13 = pt3.z - pt1.z,
+	zDiff = (z12 / z13);
+
+	if (count) {
+		if (sameX) {
+			return Math.abs(z12 * y13 - z13 * y12) <= tolerance;
+		} else if (sameY) {
+			return Math.abs(x12 * z13 - x13 * z12) <= tolerance;
+		} else {
+			return Math.abs(y12 * x13 - y13 * x12) <= tolerance;
+		}
+	} else {
+		return Math.abs(xDiff - yDiff) < tolerance && Math.abs(xDiff - zDiff) < tolerance;
+	}
+},
+
+check3DCollinearity : function check3DCollinearity(pt1, pt2, pt3) {
+	var tolerance = 0.001,
+	precision = 3,
+	roundOff = Math.pow(10, precision),
+	x12 = pt2.x - pt1.x,
+	x13 = pt3.x - pt1.x,
+	xDiff = Math.round(roundOff * x12 / x13),
+	y12 = pt2.y - pt1.y,
+	y13 = pt3.y - pt1.y,
+	yDiff = Math.round(roundOff * y12 / y13),
+	z12 = pt2.z - pt1.z,
+	z13 = pt3.z - pt1.z,
+	zDiff = Math.round(roundOff * z12 / z13);
+
+	if ((Math.round(x12) === 0 && Math.round(x13) === 0) ||
+		(Math.round(y12) === 0 && Math.round(y13) === 0) ||
+		(Math.round(z12) === 0 && Math.round(z13) === 0)) {
+		return true;
+	}
+
+	return xDiff === yDiff && xDiff === zDiff;
+},

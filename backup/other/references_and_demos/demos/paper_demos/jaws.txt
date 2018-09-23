@@ -1,0 +1,287 @@
+  1 var jaws = (function(jaws) {
+  2 
+  3   var pressed_keys = {}
+  4   var previously_pressed_keys = {}
+  5   var keycode_to_string = []
+  6   var on_keydown_callbacks = []
+  7   var on_keyup_callbacks = []
+  8   var mousebuttoncode_to_string = []
+  9   var ie_mousebuttoncode_to_string = []
+ 10  
+ 11 /** @private
+ 12  * Map all javascript keycodes to easy-to-remember letters/words
+ 13  */
+ 14 jaws.setupInput = function() {
+ 15   var k = []
+ 16   
+ 17   k[8] = "backspace"
+ 18   k[9] = "tab"
+ 19   k[13] = "enter"
+ 20   k[16] = "shift"
+ 21   k[17] = "ctrl"
+ 22   k[18] = "alt"
+ 23   k[19] = "pause"
+ 24   k[20] = "capslock"
+ 25   k[27] = "esc"
+ 26   k[32] = "space"
+ 27   k[33] = "pageup"
+ 28   k[34] = "pagedown"
+ 29   k[35] = "end"
+ 30   k[36] = "home"
+ 31   k[37] = "left"
+ 32   k[38] = "up"
+ 33   k[39] = "right"
+ 34   k[40] = "down" 
+ 35   k[45] = "insert"
+ 36   k[46] = "delete"
+ 37   
+ 38   k[91] = "left_window_key leftwindowkey"
+ 39   k[92] = "right_window_key rightwindowkey"
+ 40   k[93] = "select_key selectkey"
+ 41   k[106] = "multiply *"
+ 42   k[107] = "add plus +"
+ 43   k[109] = "subtract minus -"
+ 44   k[110] = "decimalpoint"
+ 45   k[111] = "divide /"
+ 46   
+ 47   k[144] = "numlock"
+ 48   k[145] = "scrollock"
+ 49   k[186] = "semicolon ;"
+ 50   k[187] = "equalsign ="
+ 51   k[188] = "comma ,"
+ 52   k[189] = "dash -"
+ 53   k[190] = "period ."
+ 54   k[191] = "forwardslash /"
+ 55   k[192] = "graveaccent `"
+ 56   k[219] = "openbracket ["
+ 57   k[220] = "backslash \\"
+ 58   k[221] = "closebracket ]"
+ 59   k[222] = "singlequote '"
+ 60   
+ 61   var m = []
+ 62   
+ 63   m[0] = "left_mouse_button"
+ 64   m[1] = "center_mouse_button"
+ 65   m[2] = "right_mouse_button"
+ 66 
+ 67   var ie_m = [];
+ 68   ie_m[1] = "left_mouse_button";
+ 69   ie_m[2] = "right_mouse_button";
+ 70   ie_m[4] = "center_mouse_button"; 
+ 71   
+ 72   mousebuttoncode_to_string = m
+ 73   ie_mousebuttoncode_to_string = ie_m;
+ 74 
+ 75 
+ 76   var numpadkeys = ["numpad0","numpad1","numpad2","numpad3","numpad4","numpad5","numpad6","numpad7","numpad8","numpad9"]
+ 77   var fkeys = ["f1","f2","f3","f4","f5","f6","f7","f8","f9"]
+ 78   var numbers = ["0","1","2","3","4","5","6","7","8","9"]
+ 79   var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+ 80   for(var i = 0; numbers[i]; i++)     { k[48+i] = numbers[i] }
+ 81   for(var i = 0; letters[i]; i++)     { k[65+i] = letters[i] }
+ 82   for(var i = 0; numpadkeys[i]; i++)  { k[96+i] = numpadkeys[i] }
+ 83   for(var i = 0; fkeys[i]; i++)       { k[112+i] = fkeys[i] }
+ 84   
+ 85   keycode_to_string = k
+ 86 
+ 87   window.addEventListener("keydown", handleKeyDown)
+ 88   window.addEventListener("keyup", handleKeyUp)
+ 89 
+ 90   var jawswindow = jaws.canvas || jaws.dom
+ 91   jawswindow.addEventListener("mousedown", handleMouseDown, false);
+ 92   jawswindow.addEventListener("mouseup", handleMouseUp, false);
+ 93   jawswindow.addEventListener("touchstart", handleTouchStart, false);
+ 94   jawswindow.addEventListener("touchend", handleTouchEnd, false);
+ 95 
+ 96   window.addEventListener("blur", resetPressedKeys, false);
+ 97 
+ 98   // this turns off the right click context menu which screws up the mouseup event for button 2
+ 99   document.oncontextmenu = function() {return false};
+100 }
+101 
+102 /** @private
+103  * Reset input-hash. Called when game is blurred so a key-controlled player doesn't keep on moving when the game isn't focused.
+104  */
+105 function resetPressedKeys(e) {
+106   pressed_keys = {};
+107 }
+108 
+109 /** @private
+110  * handle event "onkeydown" by remembering what key was pressed
+111  */
+112 function handleKeyUp(e) {
+113   event = (e) ? e : window.event
+114   var human_names = keycode_to_string[event.keyCode].split(" ")
+115   human_names.forEach( function(human_name) {
+116    pressed_keys[human_name] = false
+117     if(on_keyup_callbacks[human_name]) { 
+118       on_keyup_callbacks[human_name](human_name)
+119       e.preventDefault()
+120     }
+121     if(prevent_default_keys[human_name]) { e.preventDefault() }
+122   });
+123 }
+124 
+125 /** @private
+126  * handle event "onkeydown" by remembering what key was un-pressed
+127  */
+128 function handleKeyDown(e) {
+129   event = (e) ? e : window.event  
+130   var human_names = keycode_to_string[event.keyCode].split(" ")
+131   human_names.forEach( function(human_name) {
+132     pressed_keys[human_name] = true
+133     if(on_keydown_callbacks[human_name]) { 
+134       on_keydown_callbacks[human_name](human_name)
+135       e.preventDefault()
+136     }
+137     if(prevent_default_keys[human_name]) { e.preventDefault() }
+138   });
+139 }
+140 /** @private
+141  * handle event "onmousedown" by remembering what button was pressed
+142  */
+143 function handleMouseDown(e) {
+144   event = (e) ? e : window.event  
+145   var human_name = mousebuttoncode_to_string[event.button] // 0 1 2
+146   if (navigator.appName == "Microsoft Internet Explorer"){
+147 	  human_name = ie_mousebuttoncode_to_string[event.button];
+148   }
+149   pressed_keys[human_name] = true
+150   if(on_keydown_callbacks[human_name]) { 
+151     on_keydown_callbacks[human_name](human_name)
+152     e.preventDefault()
+153   }
+154 }
+155 
+156 
+157 /** @private
+158  * handle event "onmouseup" by remembering what button was un-pressed
+159  */
+160 function handleMouseUp(e) {
+161   event = (e) ? e : window.event
+162   var human_name = mousebuttoncode_to_string[event.button]  
+163 
+164   if (navigator.appName == "Microsoft Internet Explorer"){
+165 	  human_name = ie_mousebuttoncode_to_string[event.button];
+166   }
+167   pressed_keys[human_name] = false
+168   if(on_keyup_callbacks[human_name]) { 
+169     on_keyup_callbacks[human_name](human_name)
+170     e.preventDefault()
+171   }
+172 }
+173 
+174 /** @private
+175  * handle event "touchstart" by remembering what button was pressed
+176  */
+177 function handleTouchStart(e) {
+178 	event = (e) ? e : window.event  
+179 	pressed_keys["left_mouse_button"] = true
+180 	jaws.mouse_x = e.touches[0].pageX - jaws.canvas.offsetLeft;
+181 	jaws.mouse_y = e.touches[0].pageY - jaws.canvas.offsetTop;
+182 	//e.preventDefault()
+183 }
+184 
+185 /** @private
+186  * handle event "touchend" by remembering what button was pressed
+187  */
+188 function handleTouchEnd(e) {
+189   event = (e) ? e : window.event  
+190   pressed_keys["left_mouse_button"] = false
+191 	jaws.mouse_x = undefined;
+192 	jaws.mouse_y = undefined;
+193 
+194 }
+195 
+196 var prevent_default_keys = []
+197 /** 
+198  * Prevents default browseraction for given keys.
+199  * @example
+200  * jaws.preventDefaultKeys( ["down"] )  // Stop down-arrow-key from scrolling page down
+201  */
+202 jaws.preventDefaultKeys = function(array_of_strings) {
+203   var list = arguments;
+204   if(list.length == 1 && jaws.isArray(list[0])) list = list[0];
+205 
+206   for(var i=0; i < list.length; i++) {
+207     prevent_default_keys[list[i]] = true;
+208   }
+209 }
+210 
+211 /**
+212  * Check if *keys* are pressed. Second argument specifies use of logical AND when checking multiple keys.
+213  * @example
+214  * jaws.pressed("left a");          // returns true if left arrow key OR a is pressed
+215  * jaws.pressed("ctrl c", true);    // returns true if ctrl AND a is pressed
+216  */
+217 jaws.pressed = function(keys, logical_and) {
+218   if(jaws.isString(keys)) { keys = keys.split(" ") }
+219   if(logical_and) { return  keys.every( function(key) { return pressed_keys[key] } ) }
+220   else            { return  keys.some( function(key) { return pressed_keys[key] } ) }
+221 }
+222 
+223 /**
+224  * Check if *keys* are pressed, but only return true Once for any given keys. Once keys have been released, pressedWithoutRepeat can return true again when keys are pressed.
+225  * Second argument specifies use of logical AND when checking multiple keys.
+226  * @example
+227  * if(jaws.pressedWithoutRepeat("space")) { player.jump() }  // with this in the gameloop player will only jump once even if space is held down
+228  */
+229 jaws.pressedWithoutRepeat = function(keys, logical_and) {
+230   if( jaws.pressed(keys, logical_and) ) {
+231     if(!previously_pressed_keys[keys]) { 
+232       previously_pressed_keys[keys] = true
+233       return true 
+234     }
+235   }
+236   else {
+237     previously_pressed_keys[keys] = false
+238     return false
+239   }
+240 }
+241 
+242 /** 
+243  * sets up a callback for a key (or array of keys) to call when it's pressed down
+244  * 
+245  * @example
+246  * // call goLeft() when left arrow key is  pressed
+247  * jaws.on_keypress("left", goLeft) 
+248  *
+249  * // call fireWeapon() when SPACE or CTRL is pressed
+250  * jaws.on_keypress(["space","ctrl"], fireWeapon)
+251  */
+252 jaws.on_keydown = function(key, callback) {
+253   if(jaws.isArray(key)) {
+254     for(var i=0; key[i]; i++) {
+255       on_keydown_callbacks[key[i]] = callback
+256     }
+257   }
+258   else {
+259     on_keydown_callbacks[key] = callback
+260   }
+261 }
+262 
+263 /** 
+264  * sets up a callback when a key (or array of keys) to call when it's released 
+265  */
+266 jaws.on_keyup = function(key, callback) {
+267   if(jaws.isArray(key)) {
+268     for(var i=0; key[i]; i++) {
+269       on_keyup_callbacks[key[i]] = callback
+270     }
+271   }
+272   else {
+273     on_keyup_callbacks[key] = callback
+274   }
+275 }
+276 
+277 /** @private
+278  * Clean up all callbacks set by on_keydown / on_keyup 
+279  */
+280 jaws.clearKeyCallbacks = function() {
+281   on_keyup_callbacks = []
+282   on_keydown_callbacks = []
+283 }
+284 
+285 return jaws;
+286 })(jaws || {});
+287 

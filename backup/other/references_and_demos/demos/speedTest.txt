@@ -1,0 +1,20 @@
+// Initialize data
+var str = 'abcdefghijklmnopqrstuvwxyz';
+
+// Test case 1:
+var start = new Date().getTime();
+
+for (i = 0; i < 50000; ++i) {
+	test = str.substring(0, 15);
+}
+
+console.log(new Date().getTime() - start);
+
+// Test case 2:
+start = new Date().getTime();
+
+for (i = 0; i < 50000; ++i) {
+	test = str.length < 20;
+}
+
+console.log(new Date().getTime() - start);

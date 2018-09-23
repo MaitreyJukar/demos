@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Invert Color",
+  "description": "This extension inverts the colors of your web-page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+	  "js": ["contentscript.js"],
+	  "css": ["mystyles.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}

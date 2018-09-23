@@ -1,0 +1,28 @@
+props : {
+	realCoefficients : [{
+			numerator : {
+				rational : 2,
+				irrational : [{
+						value : 2,
+						type : 'complex-irrational-power',
+						power : 0.5
+					}
+				]
+			},
+			denominator : 3
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : 2,
+				irrational : [{
+						value : 2,
+						type : 'complex-irrational-power',
+						power : 0.5
+					}
+				]
+			},
+			denominator : 3
+		}
+	]
+}

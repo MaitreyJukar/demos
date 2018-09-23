@@ -1,0 +1,41 @@
+var kappa = 0.5522847498307936,
+ellipseSegments = [
+	new Segment([-1, 0], [0, kappa], [0, -kappa]),
+	new Segment([0, -1], [-kappa, 0], [kappa, 0]),
+	new Segment([1, 0], [0, -kappa], [0, kappa]),
+	new Segment([0, 1], [kappa, 0], [-kappa, 0])
+];
+
+function createPath(segments, closed, args) {
+	var props = Base.getNamed(args),
+	path = new Path(props && props.insert === false && Item.NO_INSERT);
+	path._add(segments);
+	//path._closed = closed;
+	return path.set(props);
+}
+
+function createEllipse(center, radius, args) {
+	var segments = new Array(2);
+	for (var i = 0; i < 2; i++) {
+		var segment = ellipseSegments[i];
+		segments[i] = new Segment(
+				segment._point.multiply(radius).add(center),
+				segment._handleIn.multiply(radius),
+				segment._handleOut.multiply(radius));
+	}
+	return createPath(segments, true, args);
+}
+
+Ellipse1 = function () {
+	var ellipse = Shape._readEllipse(arguments);
+	return createEllipse(ellipse.center, ellipse.radius, arguments);
+}
+
+var shape = new Ellipse1({
+    center: [110, 50],
+    radius: [130, 60],
+    strokeColor: 'black'
+});
+
+shape.position=view.center;
+

@@ -1,0 +1,90 @@
+var previousPosition,
+    firstPoint,
+    previousAngle,
+    pivot;
+var pivot=null;
+var golfCoursePoints=[
+    new Point(10, 10),
+    new Point(500, 10),
+    new Point(500, 500),
+    new Point(300, 500),
+    new Point(300, 300),
+    new Point(0, 300)
+];
+
+
+var golfCourse=new Path(golfCoursePoints);
+golfCourse.strokeColor = 'black';
+golfCourse.fillColor = 'green';
+golfCourse.closed=true;
+
+var obstacle1Points=[
+    new Point(0, 0),
+    new Point(70, 0),
+    new Point(100, 20),
+    new Point(60, 100),
+    new Point(0, 70)
+];
+
+var obstacle1RotationPoints=[
+    obstacle1Points[2],
+    obstacle1Points[4]
+];
+
+var obstacle1Rotator1=new Path.Circle(obstacle1RotationPoints[0],10);
+var obstacle1Rotator2=new Path.Circle(obstacle1RotationPoints[1],10);
+
+obstacle1Rotator1.fillColor='red';
+obstacle1Rotator2.fillColor='red';
+
+var obstacle1=new Path(obstacle1Points);
+obstacle1.strokeColor = 'black';
+obstacle1.fillColor = 'blue';
+obstacle1.closed=true;
+
+var obstacle1Group=new Group();
+obstacle1Group.addChildren([obstacle1,obstacle1Rotator1,obstacle1Rotator2]);
+
+obstacle1Group.position=new Point(100, 400);
+
+obstacle1.onMouseDown=function(event){
+    previousPosition=obstacle1.position;
+}
+
+obstacle1.onMouseDrag=function(event){
+    obstacle1Group.position+=event.delta;
+    pivot=obstacle1Group.position;
+}
+
+
+obstacle1Rotator1.onMouseDown=function(event){
+    firstPoint=obstacle1Rotator1.position;
+    pivot=obstacle1.position;
+    var xAxisPoint=new Point(pivot.x+10,pivot.y);
+    previousAngle=findAngle(firstPoint,pivot,xAxisPoint,true);
+    previousAngle=event.point.y<pivot.y?previousAngle:-previousAngle;
+}
+
+obstacle1Rotator1.onMouseDrag=function(event){
+    //var pivot=obstacle1.position;
+    obstacle1.bounds.selected=true;
+    var xAxisPoint=new Point(pivot.x+10,pivot.y);
+    var angle=findAngle(event.point,pivot,xAxisPoint,true);
+    //console.log(angle);
+    angle=event.point.y<pivot.y?angle:-angle;
+    var rotateAngle=previousAngle-angle;
+    //console.log(event.point.y+'  '+pivot.y);
+    obstacle1Group.rotate(rotateAngle,pivot);
+    firstPoint=obstacle1Rotator1.position;
+    previousAngle=angle;
+}
+
+var findAngle=function findAngle(A,B,C,degrees) {
+    var AB = Math.sqrt(Math.pow(B.x-A.x,2)+ Math.pow(B.y-A.y,2));    
+    var BC = Math.sqrt(Math.pow(B.x-C.x,2)+ Math.pow(B.y-C.y,2)); 
+    var AC = Math.sqrt(Math.pow(C.x-A.x,2)+ Math.pow(C.y-A.y,2));
+    if(degrees){
+        return Math.acos((BC*BC+AB*AB-AC*AC)/(2*BC*AB))*180/Math.PI;
+    }
+    return Math.acos((BC*BC+AB*AB-AC*AC)/(2*BC*AB));
+}

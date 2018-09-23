@@ -1,0 +1,914 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+    <head>
+        <title>Tangrams</title>
+        <script src="MakeSVG.js" type="text/javascript"></script>
+        <script src="Shape.js" type="text/javascript"></script>
+        <script src="Point.js" type="text/javascript"></script>
+        
+        <script>
+        <![CDATA[
+            var gc_xmin = 40;
+	        var gc_xmax = 390;
+	        var gc_ymin = 43;
+	        var gc_ymax = 390;
+	
+            var m_QuestionShape
+            var gc_shapeColor = "rgb(193,173,214)";
+	        var gc_shape1Color = "#CC9900";
+	        var gc_shape2Color = "#64BFFF";
+	        var gc_shape3Color = "#339900";
+	        var gc_shape4Color = "#FF6666";
+	        var gc_shape5Color = "#FFFF00";
+	        var gc_shape6Color = "#990000";
+	        var gc_shape7Color = "#CCCCFF";
+	        var gc_shape8Color = "#FF0000";
+	        
+	        var nCurrentShape = 1;
+	        
+	        var xOffset = 150;
+	        var yOffset = 150;
+	        var sqrt2 = Math.sqrt(2);
+	        
+	        var oCurrentShapeObject;
+        	
+        	var m_SolShape;
+        	var m_DragShape;
+	        var gc_sidelen = 51;
+	        var svg;
+	        
+	        function Init(nShape)
+	        {
+	            CreateShape(nShape);
+	        }
+	        
+            function CreateFirstShape(strColor) 
+            {
+                svg = MakeSVG("Shapes", "Parent");
+                
+                var xOffset = 150;
+		        var yOffset = 150;
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+                
+                var arrPoints = new Array(xOffset,yOffset-gc_sidelen/sqrt2, xOffset-gc_sidelen/sqrt2,yOffset, xOffset-gc_sidelen/(2*sqrt2),yOffset+gc_sidelen/(2*sqrt2), xOffset-gc_sidelen*(3)/(2*sqrt2),yOffset+gc_sidelen*(3)/(2*sqrt2),	xOffset-gc_sidelen*(3)/(2*sqrt2),yOffset+gc_sidelen*(7)/(2*sqrt2), xOffset-gc_sidelen/(2*sqrt2),yOffset+gc_sidelen*(9)/(2*sqrt2), xOffset+gc_sidelen*(-1+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(9)/(2*sqrt2), xOffset+gc_sidelen*(-1+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(13-4*sqrt2)/(2*sqrt2), xOffset+gc_sidelen*(1+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(13-4*sqrt2)/(2*sqrt2),	xOffset+gc_sidelen*(3+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(15-4*sqrt2)/(2*sqrt2), xOffset+gc_sidelen*(5+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(13-4*sqrt2)/(2*sqrt2), xOffset+gc_sidelen*(3+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(13-4*sqrt2)/(2*sqrt2),	xOffset+gc_sidelen*(-1+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(9-4*sqrt2)/(2*sqrt2),	xOffset+gc_sidelen*(3)/(2*sqrt2),yOffset+gc_sidelen*(5)/(2*sqrt2), xOffset,yOffset+gc_sidelen/(sqrt2), xOffset+gc_sidelen/sqrt2,yOffset);
+                
+                var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+                
+                CreateHintShapes()
+		        
+		        DrawSmallShapes(strColor);
+		        
+        		m_SolShape[0].Move(xOffset-(gc_sidelen*5)/(6*sqrt2),yOffset+(gc_sidelen*7/2)/(sqrt2), -45);
+        		
+		        m_SolShape[1].Move(xOffset+gc_sidelen*(3+4*sqrt2)/(2*sqrt2),yOffset+gc_sidelen*(41-12*sqrt2)/(6*sqrt2),-135);
+		        
+		        m_SolShape[5].Move(xOffset+gc_sidelen/(6*sqrt2),yOffset+(gc_sidelen*5)/(2*sqrt2),135);
+		        
+		        m_SolShape[2].Move(xOffset,yOffset, 45);
+		        
+		        m_SolShape[4].Move(xOffset+gc_sidelen*(1+12*sqrt2)/(6*sqrt2),yOffset+gc_sidelen*(35-12*sqrt2)/(6*sqrt2),-90);
+		        
+		        m_SolShape[6].Move(xOffset+gc_sidelen*(-3+8*sqrt2)/(6*sqrt2),yOffset+gc_sidelen*(27-4*sqrt2)/(6*sqrt2),180);
+		        
+		        
+		        m_SolShape[3].Move(xOffset-gc_sidelen/sqrt2,yOffset+gc_sidelen*sqrt2,-45);
+		        m_SolShape[3].Flip();
+            }
+            
+            function CreateHintShapes()
+            {
+                var oShapeType = m_QuestionShape.oGroup;
+                
+                svg.appendChild(oShapeType);
+                m_SolShape = new Array();
+                
+		        //Creating small triangle
+		        m_SolShape[0] = CreateSmallTriangle(6,gc_shapeColor, "SmallTriangle1");
+		        
+		        svg.appendChild(m_SolShape[0].oGroup);
+		        
+		        //Creating small triangle
+		        m_SolShape[1] = CreateSmallTriangle(5,gc_shapeColor, "SmallTriangle2");
+		        svg.appendChild(m_SolShape[1].oGroup);
+		        
+		        //Creating square
+		        m_SolShape[2] = CreateSquare(4,gc_shapeColor, "SmallRect");
+		        svg.appendChild(m_SolShape[2].oGroup);
+		        
+		        //Creating parallelogram
+		        m_SolShape[3] = CreateParallelogram(3,gc_shapeColor, "Parallelogram");
+		        svg.appendChild(m_SolShape[3].oGroup);
+		        
+		        //Creating medium triangle
+		        m_SolShape[4] = CreateMediumTriangle(2,gc_shapeColor, "MediumTriangle1");
+		        svg.appendChild(m_SolShape[4].oGroup);
+		        
+		        //Creating large triangle
+		        m_SolShape[5] = CreateLargeTriangle(1,gc_shapeColor, "LargetTriangle1");
+		        svg.appendChild(m_SolShape[5].oGroup);
+		        
+		        //Creating large triangle
+		        m_SolShape[6] = CreateLargeTriangle(0,gc_shapeColor, "LargetTriangle2");
+		        svg.appendChild(m_SolShape[6].oGroup);
+            }
+            
+            function DrawSmallShapes(shapeColor)
+            {
+                m_DragShape = new Array();
+                
+                //Creating small triangle		        
+		        m_DragShape[0] = CreateSmallTriangle(16,shapeColor, "SmallTriangle1");
+		        svg.appendChild(m_DragShape[0].oGroup);
+		        
+		        //Creating small triangle
+		        m_DragShape[1] = CreateSmallTriangle(15,shapeColor, "SmallTriangle2");
+		        svg.appendChild(m_DragShape[1].oGroup);
+		        
+		        //Creating square
+		        m_DragShape[2] = CreateSquare(14,shapeColor, "SmallRect");
+		        svg.appendChild(m_DragShape[2].oGroup);
+		        
+		        //Creating parallelogram
+		        m_DragShape[3] = CreateParallelogram(13,shapeColor, "Parallelogram");
+		        svg.appendChild(m_DragShape[3].oGroup);
+		        
+		        //Creating medium triangle
+		        m_DragShape[4] = CreateMediumTriangle(12,shapeColor, "MediumTriangle1");
+		        svg.appendChild(m_DragShape[4].oGroup);
+		        
+		        //Creating large triangle
+		        m_DragShape[5] = CreateLargeTriangle(11,shapeColor, "LargetTriangle1");
+		        svg.appendChild(m_DragShape[5].oGroup);
+		        
+		        //Creating large triangle
+		        m_DragShape[6] = CreateLargeTriangle(10,shapeColor, "LargetTriangle2");
+		        svg.appendChild(m_DragShape[6].oGroup);
+            
+            }
+            
+            function CreateShape(iQuestionNo)
+            {
+            nCurrentShape = iQuestionNo;
+	            switch(iQuestionNo)
+	            {
+		            case 1:
+			            CreateFirstShape(gc_shape1Color); //man
+			            break;
+		            case 2:
+			            CreateSecondShape(gc_shape2Color); //fish
+			            break;
+		            case 3:
+			            CreateThirdShape(gc_shape3Color); //square
+			            break;
+		           case 4:
+			            CreateFourthShape(gc_shape4Color); //square
+			            break;
+		             case 5:
+			            CreateFifthShape(gc_shape5Color); //triangle
+			            break;
+		            case 6:
+			            CreateSixthShape(gc_shape6Color); //up arrow
+			            break;
+		            case 7:
+			            CreateSeventhShape(gc_shape7Color); //shoe
+			            break;
+		            case 8:
+			            CreateEighthShape(gc_shape8Color); //giraffe
+			            break;
+	            }
+	            
+	            InitPosition();
+           }
+            
+            function Reposition(bUnflip,iColor)
+	        {
+		        m_selObject = undefined;
+		        for(var i = 0; i < 7; i++)
+		        {
+			        m_SolShape[i].Hide();
+			        if(bUnflip)
+			        {
+				        //m_SolShape[i].Unflip();
+				        //m_DragShape[i].SetColor(iColor);
+			        }
+			        else
+			        {
+				       //m_DragShape[i].Deselect();
+			        }
+			        //m_DragShape[i].Unflip();
+		        }
+		        
+		        m_DragShape[0].Move(44+gc_sidelen/(3*sqrt2),476+gc_sidelen/sqrt2,135);
+		        m_DragShape[1].Move(50+gc_sidelen/sqrt2,470+gc_sidelen/(3*sqrt2),-135);
+		        m_DragShape[2].Move(141+gc_sidelen/sqrt2,432+gc_sidelen/sqrt2,45);
+		        m_DragShape[3].Move(354+gc_sidelen/(2*sqrt2),431+gc_sidelen*3/(2*sqrt2),45);
+		        m_DragShape[4].Move(228+gc_sidelen/3,430+gc_sidelen,135);
+		        m_DragShape[5].Move(55+gc_sidelen*sqrt2,476+gc_sidelen*2*sqrt2/3,45);
+		        m_DragShape[6].Move(229+gc_sidelen*sqrt2,476+gc_sidelen*2*sqrt2/3,45);
+        		
+	        }
+            
+            function InitPosition()
+            {
+                for(var n = 0 ; n < m_DragShape.length ; ++n)
+		        {
+		            //m_DragShape[n].DrawVertex();
+		            m_DragShape[n].oShape.addEventListener("touchstart", ShapeDown, false);
+                    m_DragShape[n].oShape.addEventListener("touchend", ShapeUp, false);
+		            m_DragShape[n].oShape.addEventListener("mousedown", ShapeDown, false);
+                    m_DragShape[n].oShape.addEventListener("mouseup", ShapeUp, false);
+                    m_DragShape[n].AddVertexListener();
+        		}
+		        Reposition(true,0)
+            }
+            
+            function CreateSecondShape(strColor)
+	        {
+	            svg = MakeSVG("Shapes", "Parent");
+		        var xOffset = 150;
+		        var yOffset = 150;
+		        
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+        		
+		        var arrPoints = new Array(xOffset,yOffset,xOffset-gc_sidelen/(sqrt2),yOffset-gc_sidelen/(sqrt2),xOffset-gc_sidelen/(sqrt2),yOffset+gc_sidelen/(sqrt2),xOffset-gc_sidelen,yOffset+gc_sidelen,xOffset-gc_sidelen,yOffset+gc_sidelen*2,xOffset+gc_sidelen*(sqrt2-1),yOffset+gc_sidelen*(2+sqrt2),xOffset+gc_sidelen*(3*sqrt2-1),yOffset+gc_sidelen*(2+sqrt2),xOffset+gc_sidelen*(2*sqrt2),yOffset+gc_sidelen*(3),xOffset+gc_sidelen*(2*sqrt2+1),yOffset+gc_sidelen*(2),xOffset+gc_sidelen,yOffset+gc_sidelen*(2),xOffset,yOffset+gc_sidelen,xOffset+gc_sidelen,yOffset);
+		        
+		        var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+                
+                CreateHintShapes()
+                
+                m_SolShape[3].Flip();
+		        m_SolShape[3].Move(xOffset,yOffset+gc_sidelen/2,0);
+        		
+		        m_SolShape[0].Move(xOffset-gc_sidelen*sqrt2/3,yOffset,135);
+        		
+		        m_SolShape[2].Move(xOffset-gc_sidelen/2,yOffset+gc_sidelen*3/2,0);
+        		
+		        m_SolShape[1].Move(xOffset+gc_sidelen/3,yOffset+gc_sidelen*5/3,-90);
+        		
+		        m_SolShape[5].Move(xOffset+gc_sidelen*(sqrt2-1),yOffset+gc_sidelen*(6+sqrt2)/(3),-135);
+        		
+		        m_SolShape[6].Move(xOffset+gc_sidelen*(2*sqrt2-1),yOffset+gc_sidelen*(6+2*sqrt2)/(3),45);
+        		
+		        m_SolShape[4].Move(xOffset+gc_sidelen*(2*sqrt2),yOffset+gc_sidelen*(7)/(3),-135);
+		        DrawSmallShapes(strColor);
+	        }
+	        
+	        function CreateThirdShape(strColor)
+	        {
+	            svg = MakeSVG("Shapes", "Parent");
+		        var xOffset = 150;
+		        var yOffset = 150;
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+        		
+        		
+		        var arrPoints = new Array(xOffset,yOffset,xOffset,yOffset+gc_sidelen*2*sqrt2,xOffset+gc_sidelen*2*sqrt2,yOffset+gc_sidelen*2*sqrt2,xOffset+gc_sidelen*2*sqrt2,yOffset);
+		        
+		        
+		        
+		        var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+		        m_QuestionShape.Move(xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*sqrt2,0);
+		        
+		        
+		        CreateHintShapes()
+		        
+		        m_SolShape[5].Move(xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*sqrt2/3,-135);
+        		
+		        m_SolShape[6].Move(xOffset+gc_sidelen*sqrt2/3,yOffset+gc_sidelen*sqrt2,135);
+        		
+		        m_SolShape[0].Move(xOffset+(gc_sidelen*11)/(3*sqrt2),yOffset+(gc_sidelen)/(sqrt2),-45);
+        		
+		        m_SolShape[2].Move(xOffset+(gc_sidelen*3)/(sqrt2),yOffset+(gc_sidelen)*(sqrt2),45);
+		        
+		        m_SolShape[1].Move(xOffset+(gc_sidelen)*(sqrt2),yOffset+(gc_sidelen*8)/(3*sqrt2),45);
+		        
+		        m_SolShape[3].Move(xOffset+gc_sidelen*3/(2*sqrt2),yOffset+gc_sidelen*7/(2*sqrt2),-45);
+        		
+		        m_SolShape[4].Move(xOffset+gc_sidelen*(5*sqrt2)/(3),yOffset+gc_sidelen*(5*sqrt2)/(3),-180);
+                
+		        DrawSmallShapes(strColor);
+                
+	        }
+	        
+	        function CreateFourthShape(strColor)
+	        {
+		        svg = MakeSVG("Shapes", "Parent");
+		        var xOffset = 210;
+		        var yOffset = 100;
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+        		
+		        var arrPoints = new Array(xOffset,yOffset,xOffset-gc_sidelen*sqrt2,yOffset+gc_sidelen*sqrt2,xOffset-gc_sidelen*sqrt2,yOffset+gc_sidelen*(3*sqrt2),xOffset,yOffset+gc_sidelen*(2*sqrt2),xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*(3*sqrt2),xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*sqrt2);
+				var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+        		
+        		
+        		CreateHintShapes()
+        		
+		        m_SolShape[5].Move(xOffset-gc_sidelen*(2*sqrt2)/(3),yOffset+gc_sidelen*2*sqrt2,135);
+        		
+		        m_SolShape[6].Move(xOffset+gc_sidelen*(2*sqrt2)/(3),yOffset+gc_sidelen*2*sqrt2,-45);
+        		
+		        m_SolShape[2].Move(xOffset,yOffset+(gc_sidelen*3)/(sqrt2),-45);
+        		
+		        m_SolShape[3].Flip();
+		        m_SolShape[3].Move(xOffset-gc_sidelen/(2*sqrt2),yOffset+(gc_sidelen*3)/(2*sqrt2),-45);
+        		
+		        m_SolShape[4].Move(xOffset+gc_sidelen*(sqrt2)/(3),yOffset+gc_sidelen*(2*sqrt2)/(3),-90);
+        		
+		        m_SolShape[0].Move(xOffset-gc_sidelen*2*sqrt2/3,yOffset+gc_sidelen*sqrt2,-45);
+        		
+		        m_SolShape[1].Move(xOffset+gc_sidelen/sqrt2,yOffset+gc_sidelen*7/(3*sqrt2),-135);
+        		
+		        DrawSmallShapes(strColor);
+	        }
+	        
+	        function CreateFifthShape(strColor)
+	        {
+		        svg = MakeSVG("Shapes", "Parent");
+		        var xOffset = 215;
+		        var yOffset = 120;
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+        		
+		       var arrPoints = new Array(xOffset,yOffset,xOffset-gc_sidelen*2*sqrt2,yOffset+gc_sidelen*2*sqrt2,xOffset+gc_sidelen*2*sqrt2,yOffset+gc_sidelen*2*sqrt2);
+		       var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+		        m_QuestionShape.Move(xOffset,yOffset + gc_sidelen*4*sqrt2/3,0);
+		        
+		        CreateHintShapes()
+		        m_SolShape[5].Move(xOffset-gc_sidelen*sqrt2,yOffset+gc_sidelen*(5*sqrt2)/3,45);
+        		
+		        m_SolShape[6].Move(xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*(5*sqrt2)/3,45);
+        		
+		        m_SolShape[2].Move(xOffset,yOffset+(gc_sidelen*3)/(sqrt2),-45);
+        		
+		        m_SolShape[3].Flip();
+		        m_SolShape[3].Move(xOffset-gc_sidelen/(2*sqrt2),yOffset+(gc_sidelen*3)/(2*sqrt2),-45);
+        		
+		        m_SolShape[4].Move(xOffset+gc_sidelen*(sqrt2)/(3),yOffset+gc_sidelen*(2*sqrt2)/(3),-90);
+        		
+        		
+		        m_SolShape[0].Move(xOffset-gc_sidelen*2*sqrt2/3,yOffset+gc_sidelen*sqrt2,-45);
+        		
+		        m_SolShape[1].Move(xOffset+gc_sidelen/sqrt2,yOffset+gc_sidelen*7/(3*sqrt2),-135);
+		        DrawSmallShapes(strColor);
+	        }
+	        
+	        function CreateSixthShape(strColor)
+	        {
+		        svg = MakeSVG("Shapes", "Parent");
+		        var xOffset = 215;
+		        var yOffset = 120;
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+        		
+		       var arrPoints = new Array(xOffset,yOffset,xOffset-gc_sidelen*2,yOffset+gc_sidelen*2,xOffset-gc_sidelen,yOffset+gc_sidelen*2,xOffset-gc_sidelen,yOffset+gc_sidelen*4,xOffset+gc_sidelen,yOffset+gc_sidelen*4,xOffset+gc_sidelen,yOffset+gc_sidelen*2,xOffset+gc_sidelen*2,yOffset+gc_sidelen*2);
+		       var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+		       
+		       CreateHintShapes();
+		       
+		        m_SolShape[5].Move(xOffset-gc_sidelen*2/3,yOffset+gc_sidelen*4/3,180);
+        		
+		        m_SolShape[6].Move(xOffset+gc_sidelen*2/3,yOffset+gc_sidelen*4/3,-90);
+        		
+		        m_SolShape[2].Move(xOffset-gc_sidelen/2,yOffset+gc_sidelen*5/2,0);
+        		
+		        m_SolShape[3].Flip();
+		        m_SolShape[3].Move(xOffset+gc_sidelen/2,yOffset+gc_sidelen*3,-90);
+        		
+		        m_SolShape[4].Move(xOffset,yOffset+gc_sidelen*11/3,45);
+        		
+        		
+		        m_SolShape[0].Move(xOffset-gc_sidelen*2/3,yOffset+gc_sidelen*10/3,0);
+        		
+		        m_SolShape[1].Move(xOffset+gc_sidelen*2/3,yOffset+gc_sidelen*7/3,90);
+		        DrawSmallShapes(strColor);
+	        }
+	        
+	        function CreateSeventhShape(strColor)
+	        {
+		        svg = MakeSVG("Shapes", "Parent");
+		        var xOffset = 240;
+		        var yOffset = 80;
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+        		
+		       var arrPoints = new Array(xOffset,yOffset,xOffset,yOffset+gc_sidelen*(3*sqrt2-1),xOffset+gc_sidelen*(1-2*sqrt2)/sqrt2,yOffset+gc_sidelen*(5+sqrt2)/(sqrt2),xOffset+gc_sidelen*(-1-2*sqrt2)/sqrt2,yOffset+gc_sidelen*(5+sqrt2)/(sqrt2),xOffset-gc_sidelen*2,yOffset+gc_sidelen*(3*sqrt2+1),xOffset-gc_sidelen,yOffset+gc_sidelen*(3*sqrt2+1),xOffset,yOffset+gc_sidelen*(3*sqrt2),xOffset+gc_sidelen*(sqrt2-1),yOffset+gc_sidelen*(3*sqrt2),xOffset+gc_sidelen*(sqrt2-1),yOffset+gc_sidelen*(3*sqrt2+1),xOffset+gc_sidelen*(sqrt2),yOffset+gc_sidelen*(3*sqrt2+1),xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*sqrt2);
+		       var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+		       
+		       
+		       CreateHintShapes();
+		       
+		        m_SolShape[5].Move(xOffset+gc_sidelen*(sqrt2)/(3),yOffset+gc_sidelen*sqrt2,135);
+        		
+		        m_SolShape[6].Move(xOffset+gc_sidelen*(2*sqrt2)/(3),yOffset+gc_sidelen*2*sqrt2,-45);
+        		
+		        m_SolShape[4].Move(xOffset+gc_sidelen*(sqrt2)/(3),yOffset+gc_sidelen*(8*sqrt2)/(3),-90);
+        		
+		        m_SolShape[0].Move(xOffset-gc_sidelen*2,yOffset+gc_sidelen*(16+3*sqrt2)/(3*sqrt2),-135);
+		       
+		        m_SolShape[1].Move(xOffset-gc_sidelen*4/3,yOffset+gc_sidelen*(9*sqrt2+2)/(3),-180);
+        	
+		        m_SolShape[2].Move(xOffset+gc_sidelen*(2*sqrt2-1)/2,yOffset+gc_sidelen*(6*sqrt2+1)/2,0);
+        		
+		        m_SolShape[3].Move(xOffset-gc_sidelen/2,yOffset+gc_sidelen*3*sqrt2,90);
+        		
+		        DrawSmallShapes(strColor);
+	        }
+	        
+	        
+	        function CreateEighthShape(strColor)
+	        {
+		        svg = MakeSVG("Shapes", "Parent");
+		        var xOffset = 175;
+		        var yOffset = 50;
+		        var sqrt2 = Math.sqrt(2);
+            
+                m_QuestionShape = new Shape();
+                m_QuestionShape.name = "asd"
+                var oDiv = document.getElementById("Shapes")
+        		
+		       var arrPoints = new Array(xOffset,yOffset,xOffset-gc_sidelen*sqrt2,yOffset+gc_sidelen*sqrt2,xOffset,yOffset+gc_sidelen*sqrt2,xOffset,yOffset+gc_sidelen*(17)/(2*sqrt2),xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*(13)/(2*sqrt2),xOffset+gc_sidelen*sqrt2,yOffset+gc_sidelen*(17)/(2*sqrt2),xOffset+gc_sidelen*2*sqrt2,yOffset+gc_sidelen*(13)/(2*sqrt2),xOffset+gc_sidelen/sqrt2,yOffset+gc_sidelen*(7)/(2*sqrt2),xOffset+gc_sidelen/sqrt2,yOffset+gc_sidelen*(3)/(2*sqrt2),xOffset,yOffset+gc_sidelen/(2*sqrt2));
+		       var oShape111 = m_QuestionShape.Shape1(-1,gc_shapeColor, arrPoints, "MainDrawing");
+		       
+		       
+		       CreateHintShapes();
+		       
+		        m_SolShape[4].Move(xOffset-gc_sidelen*sqrt2/(3),yOffset+gc_sidelen*2*sqrt2/(3),180);
+        		
+		        m_SolShape[3].Move(xOffset+gc_sidelen/(2*sqrt2),yOffset+gc_sidelen*sqrt2,45);
+        		
+		        m_SolShape[0].Move(xOffset+gc_sidelen/(3*sqrt2),yOffset+gc_sidelen*7/(2*sqrt2),135);
+        		
+        		
+		        m_SolShape[1].Move(xOffset+gc_sidelen*5/(3*sqrt2),yOffset+(gc_sidelen*11)/(2*sqrt2),-45);
+        		
+		        m_SolShape[2].Move(xOffset+gc_sidelen/sqrt2,yOffset+(gc_sidelen*9)/(2*sqrt2),45);
+        		
+        		
+		        m_SolShape[5].Move(xOffset+gc_sidelen*(sqrt2)/(3),yOffset+gc_sidelen*(13)/(2*sqrt2),135);
+        		
+		        m_SolShape[6].Move(xOffset+gc_sidelen*(4*sqrt2)/(3),yOffset+gc_sidelen*(13)/(2*sqrt2),135);
+        		
+		        DrawSmallShapes(strColor);
+	        }
+            
+            
+            function Snap(shape)
+	        {
+	            //alert(shape.oGroup.getAttribute("name") + " m_SolShape[i].name " + m_SolShape[0].oGroup.getAttribute("name"))
+		        if(shape.Snap(m_QuestionShape))
+		        {
+			        return;
+		        }
+		        for(var i = 0; i < 7; i++)
+		        {
+		            
+			        if(shape.oGroup.getAttribute("name") != m_SolShape[0].oGroup.getAttribute("name"))
+			        {
+				        if(shape.Snap(m_SolShape[i]))
+				        {
+				            
+					        return;
+				        }
+				        
+			        }
+		        }
+	        }
+           
+            function DebugText(strDebug)
+            {
+               // var oDebug = document.getElementById("Debug");
+               // oDebug.value += strDebug + " \r ";
+            
+            }
+            
+            function Clear(event)
+            {
+                var oDebug = document.getElementById("Debug");
+                oDebug.value = "";
+            
+            }
+            
+            function SetCurrentShape(oShape)
+            {
+                var i;
+                 var nLength = m_SolShape.length;
+                for(i = 0 ; i < nLength ; ++i)
+                {
+                    if(oShape.getAttribute("name") == m_DragShape[i].oGroup.id)
+                    {
+                        oCurrentShapeObject = m_DragShape[i];
+                        //alert("aaaaa")
+                        oCurrentShapeObject.SelectShape();
+                        svg.appendChild(oCurrentShapeObject.oGroup);
+                    }
+                    else
+                    {
+                        m_DragShape[i].UnSelectShape(); 
+                    }
+                }
+            }
+            
+            function ShapeDown(event)
+            {
+                var oShape = this;
+                SetCurrentShape(oShape);
+                
+                //svg.removeChild(oCurrentShapeObject.oGroup);
+                svg.appendChild(oCurrentShapeObject.oGroup);
+                oCurrentShapeObject.MouseDown(event);
+            }
+            
+            function ShapeMoved(event)
+            {
+                oCurrentShapeObject;
+                oCurrentShapeObject.MouseMove(event);
+            }
+            
+            function ShapeUp(event)
+            {
+                oCurrentShapeObject.MouseUp(event);
+            }
+            
+            function ShapeCircleDown(event)
+            {
+                
+                var oShape = this;
+                //alert(oShape)
+                SetCurrentShape(oShape);
+                oCurrentShapeObject.RotateShapeDown(event);
+            }
+            
+            function ShapeCircleMoved(event)
+            {
+                oCurrentShapeObject.RotateShape(event);
+            }
+            
+            function ShapeCircleUp(event)
+            {
+                oCurrentShapeObject.RotateShapeUp(event);
+            }
+            
+            function StageMouseUp(event)
+            {
+                var oBody = document.getElementById("CorrectMessage");
+		        oBody.style.display = "none";
+	            var oBody = document.getElementById("WrongMessage");
+		        
+		        oBody.style.display = "none";
+                if(oCurrentShapeObject != undefined && oCurrentShapeObject != null)
+                {
+                    oCurrentShapeObject.RotateShapeUp(event);
+                    oCurrentShapeObject.MouseUp(event);
+                }
+            }
+            
+            function StageMouseMove(event)
+            {
+                event.preventDefault();
+                if(oCurrentShapeObject != undefined && oCurrentShapeObject != null)
+                {
+                    ShapeCircleMoved(event);
+                    ShapeMoved(event);
+                }
+            }
+            
+            
+            function Colinear(lp1, lp2, point)
+	        {
+		        //i component of the first vector
+		        var v1i = lp2.x - lp1.x;
+		        //j component of the first vector
+		        var v1j = lp2.y - lp1.y;
+		        //i component of the second vector
+		        var v2i = point.x - lp2.x;
+		        //j component of the second vector
+		        var v2j = point.y - lp2.y;
+		        var result = v1i * v2j - v1j * v2i;
+
+		        if (Math.abs(result) < 40)
+		        {
+
+			        var xDist = 0;
+			        var yDist = 0;
+			        if (v1j != 0)
+			        {
+				        xDist = (v1i * v2j) / v1j + lp2.x - point.x;
+			        }
+			        if (v1i != 0)
+			        {
+				        yDist = (v1j * v2i) / v1i + lp2.y - point.y;
+			        }
+			        if (Math.abs(xDist) < 1 && Math.abs(yDist) < 1)
+			        {
+				        result = 0;
+			        }
+		        }
+		        return result;
+	        }
+	        
+	        
+	        
+	        
+	        
+	        function IntersectingLines(l1p1, l1p2, l2p1, l2p2)
+	        {
+		        //i component of the first vector
+		        var v1i = l1p2.x - l1p1.x;
+		        //j component of the first vector
+		        var v1j = l1p2.y - l1p1.y;
+		        //i component of the second vector
+		        var v2i = l2p2.x - l2p1.x;
+		        //j component of the second vector
+		        var v2j = l2p2.y - l2p1.y;
+
+		        var crossproduct = v1i * v2j - v1j * v2i;
+
+		        if (Math.abs(crossproduct) < 3)
+		        {
+			        crossproduct = 0;
+		        }
+		        var dir1 = Colinear(l1p1, l1p2, l2p1);
+		        var dir2 = Colinear(l1p1, l1p2, l2p2);
+
+		        var dir3 = Colinear(l2p1, l2p2, l1p1);
+		        var dir4 = Colinear(l2p1, l2p2, l1p2);
+
+		        //equation of line 1
+
+		        //check for intersection
+		        if (dir1 * dir2 < 0 && dir3 * dir4 < 0)
+		        {
+			        return 1;
+		        }
+		        else if (dir1 * dir2 > 0 || dir3 * dir4 > 0)
+		        {
+			        return 0;
+		        }
+		        else if (dir1 * dir2 == 0 || dir3 * dir4 == 0)
+		        {
+			        if (crossproduct != 0)
+			        {
+				        return -2;
+			        }
+			        else
+			        {
+				        //check for overlapping
+				        if (Math.abs(v1i) > Math.abs(v2j))
+				        {
+					        //arrange in ascending order
+					        var x11 = (l1p1.x <= l1p2.x) ? l1p1.x : l1p2.x;
+					        var x12 = (l1p1.x <= l1p2.x) ? l1p2.x : l1p1.x;
+
+					        var x21 = (l2p1.x <= l2p2.x) ? l2p1.x : l2p2.x;
+					        var x22 = (l2p1.x <= l2p2.x) ? l2p2.x : l2p1.x;
+
+					        if ((x21 - x12) > -1 || (x11 - x22) > -1)
+					        {
+						        return 0;
+					        }
+					        else
+					        {
+						        return -1;
+					        }
+				        }
+				        else
+				        {
+					        var y11 = (l1p1.y <= l1p2.y) ? l1p1.y : l1p2.y;
+					        var y12 = (l1p1.y <= l1p2.y) ? l1p2.y : l1p1.y;
+
+					        var y21 = (l2p1.y <= l2p2.y) ? l2p1.y : l2p2.y;
+					        var y22 = (l2p1.y <= l2p2.y) ? l2p2.y : l2p1.y;
+
+					        //if the proximity is greater than on pixel then the lines are not
+					        //overlapping
+					        if ((y21 - y12) > -1 || (y22 - y11) >= -1)
+					        {
+						        return 0;
+					        }
+					        else
+					        {
+						        return -1;
+					        }
+				        }
+			        }
+		        }
+	        }
+	        
+	        function OnCheck(event)
+	        {
+		        var count = 0;
+		        var result = false;
+		        //check if any of the shapes intersect each other
+		        
+		        for(var i = 0; i < 7 && !result; i++)
+		        {
+			        for(var j = 0; j < 7 && !result; j++)
+			        {
+				        if(j <= i)
+				        {
+				            DebugText("cont");
+					        continue;
+				        }
+				        count++;
+				        
+				        result = m_DragShape[i].IntersectShape(m_DragShape[j]);
+				        DebugText("i = " + i + " j = " + j + " m_DragShape ----= " + m_DragShape[j].oGroup.getAttribute("name") + " result " + result)
+				        //DebugText("1111 " + result)
+			        }
+		        }
+		        //check if there is no intersection
+        		
+		        var bInSolution = true;
+		        //check if the center in solution
+		        
+		        for(var i = 0; i < 7 && !result; i++)
+		        {
+			        bInSolution = false;
+			        
+			        for(var j = 0; j < 7 && !result; j++)
+			        {
+			        //DebugText("Man ppppppppp")
+				        if(m_SolShape[j].PointInPoly(m_DragShape[i].GetCenterPoint()) >= 0)
+				        {
+					        bInSolution = true;
+					        
+					        break;
+				        }
+			        }
+			        if(!bInSolution)
+			        {
+			            //alert("Not in solution :" + bInSolution + i);
+				        result = true;
+			        }
+        			
+		        }
+        		
+		        //Check if the corners are on or inside any of the polygons
+		        for(var iShape = 0; iShape < 7 && !result; iShape++)
+		        {
+			        var nPoints = m_DragShape[iShape].GetPointsCount();
+        			
+			        for(var i = 0; i < nPoints && !result; i++)
+			        {
+				        bInSolution = true;
+				        var point = m_DragShape[iShape].GetPoint(i);
+				        for(var j = 0 ; j < 7; j++)
+				        {
+				            
+					        if(m_SolShape[j].PointInPoly(point) != -1)
+					        {
+					            DebugText(point.y + " Man-------- ppppppppp " + point.x + " m_DragShape[iShape] " + m_DragShape[iShape].oGroup.getAttribute("name"))
+					            
+						        break;
+					        }
+				        }
+				        //if j == 7 then the point does not lie on or inside any of the solution
+				        //shapes therefore incorrect solution
+				        if(j == 7)
+				        {
+					        bInSolution = false;
+					       DebugText(point.y + " ---------Man-------- ppppppppp " + point.x + " m_DragShape[iShape] " + m_DragShape[iShape].oGroup.getAttribute("name"));
+					        result = true;
+				        }
+			        }
+		        }
+        		//alert("asd " + result);
+		        //Once all the checking is done
+		        
+		        if(result == false)
+		        {
+		            var oBody = document.getElementById("CorrectMessage");
+			        oBody.style.display = "block";
+		        }
+		        else
+		        {
+		            var oBody = document.getElementById("WrongMessage");
+			        
+			        oBody.style.display = "block";
+		        }
+	        }
+	        
+	        function OnFlip(event)
+	        {
+		        if(oCurrentShapeObject != undefined)
+		        {
+			        oCurrentShapeObject.Flip();
+		        }
+	        }
+	        
+	        function OnHint(event)
+	        {
+	            var index = RandomBetween(0,6);
+		        var count = 0;
+		        while(m_SolShape[index].IsVisible() && count < 7)
+		        {
+			        index = (index + 1)%7;
+			        count++;
+		        }
+		        m_SolShape[index].Show();
+	            //alert("Not yet implemented!");
+	        }
+	        
+	        function RandomBetween(min,max)
+	        {
+		        var range = max - min;
+		        var randomNum = Math.round(Math.random()*range) + min;
+  		        return randomNum;
+	        }
+	        
+	        function onReset1(event, nShape)
+	        {
+	            onReset(event, nCurrentShape)
+	        }
+	        function onReset(event, nShape)
+	        {
+	            m_SolShape = null;
+        	    m_DragShape = null;
+	            if(document.getElementById("Shapes") != null && svg != null)
+	            document.getElementById("Shapes").removeChild(svg);
+	            svg = null;
+	            //alert(nShape)
+	            Init(nShape);
+	            //alert("Not yet implemented!");
+	        }
+	        
+	        function InstructionClick(event)
+	        {
+	            window.open("Instructions.htm")
+	        }
+	        
+	        function CloseClick(event)
+	        {
+	            window.close()
+	        }
+	        
+	        function ShapeClick(event)
+	        {
+	            alert("Not yet implemented!");
+	        }
+	        
+            ]]>
+    </script>
+    </head>
+
+    <body scroll="no" style="background-color:Black;overflow-x:hidden;overflow-y:hidden;width:100%;height:100%" onmouseup="StageMouseUp(event)" onmousemove="StageMouseMove(event)" ontouchend="StageMouseUp(event)" ontouchmove="StageMouseMove(event)">
+        <img src="Tangrams.png" width="799px" height="599px" style="position:absolute;left:0px;top:0px;"/>
+        <div id="Shapes" style="position:absolute;left:0px;top:0px;width:1000px;height:1000px"></div>
+        
+        <div id="Check" style="width:25px;height:25px;position: absolute; left: 695px; top: 133px; background-image: url(Check.png);" onclick="OnCheck(event)"></div>
+        
+        <div id="Flip" style="width:25px;height:25px;position: absolute; left: 425px; top: 133px; background-image: url(Flip.png);" onclick="OnFlip(event)"></div>
+        
+        <div id="Reset" style="width: 25px; height: 25px; position: absolute; left: 507px; top: 133px; background-image: url(Reset.png);" onclick="onReset1(event)"></div>
+        
+        <div id="Hint" style="width: 25px; height: 25px; position: absolute; left: 607px; top: 133px; background-image: url(Hint.png);" onclick="OnHint(event)"></div>
+        
+        <div onclick="InstructionClick(event)" id="Instruction" style="position: absolute; width: 33px; height: 32px; top: 568px; left: 414px; background-image: url(Instruction.png);"></div>
+        <div onclick="CloseClick(event)" id="Close" style="position: absolute; width: 37px; height: 37px; top: 6px; left: 755px; background-image: url(Close.png);"></div>
+        
+        <div onclick="onReset(event, 1)" id="Man" style="position: absolute; width: 73px; height: 73px; top: 210px; left: 425px; background-image: url(Man.png);"></div>
+        <div onclick="onReset(event,2)" id="Fish" style="position: absolute; width: 73px; height: 73px; top: 210px; left: 505px; background-image: url(Fish.png);"></div>
+
+        <div onclick="onReset(event,3)" id="Square" style="position: absolute; width: 73px; height: 73px; top: 210px; left: 589px; background-image: url(Square.png);"></div>
+
+        <div onclick="onReset(event,4)" id="Chevron" style="position: absolute; width: 73px; height: 73px; top: 210px; left: 673px; background-image: url(Chevron.png);"></div>
+
+        <div onclick="onReset(event,5)" id="Triangle" style="position: absolute; width: 73px; height: 73px; top: 306px; left: 425px; background-image: url(Triangle.png);"></div>
+
+        <div onclick="onReset(event,6)" id="Arrow" style="position: absolute; width: 73px; height: 73px; top: 306px; left: 505px; background-image: url(Arrow.png);"></div>
+
+        <div onclick="onReset(event,7)" id="Shoe" style="position: absolute; width: 73px; height: 73px; top: 306px; left: 589px; background-image: url(Shoe.png);"></div>
+
+        <div onclick="onReset(event,8)" id="Girraf" style="position: absolute; width: 73px; height: 73px; top: 306px; left: 673px; background-image: url(Girraf.png);"></div>
+        <div id="CorrectMessage" style="display:none;position:absolute;width:800px;height:600px;top:0px;left:0px; background-image: url(CorrectMessage.png);"></div>
+                <div id="WrongMessage" style="display:none;position:absolute;width:800px;height:600px;top:0px;left:0px; background-image: url(WrongMessage.png);"></div>
+                
+                <script type="text/javascript">
+                Init(1);
+                </script>
+    </body>
+</html>

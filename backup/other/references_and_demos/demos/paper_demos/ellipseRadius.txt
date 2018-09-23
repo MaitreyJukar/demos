@@ -1,0 +1,29 @@
+radius1=100;
+radius2=20;
+
+var ellipse = new Path.Ellipse({
+    center: view.center,
+    radius: [radius1, radius2],
+    strokeColor: 'black'
+});
+
+var radiusLong = new Path.Line(ellipse.bounds.leftCenter,ellipse.bounds.rightCenter);
+var radiusShort = new Path.Line(ellipse.bounds.topCenter,ellipse.bounds.bottomCenter);
+
+radiusLong.strokeColor = 'red';
+radiusShort.strokeColor = 'green';
+
+drawRadiusAtAngle = function(angle){
+    var radians = angle*Math.PI/180;
+    var length = 
+    2*(radius1*radius2)/
+    (Math.sqrt((radius1*radius1*Math.sin(radians)*Math.sin(radians))
+    +(radius2*radius2*Math.cos(radians)*Math.cos(radians))));
+    
+    var newRadius = new Path.Line([0,0],[length,0]);
+    newRadius.strokeColor = 'blue';
+    newRadius.position=ellipse.position;
+    newRadius.rotate(angle);
+}
+
+drawRadiusAtAngle(15);

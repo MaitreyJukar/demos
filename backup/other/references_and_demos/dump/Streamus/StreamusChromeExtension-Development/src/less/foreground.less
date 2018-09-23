@@ -1,0 +1,80 @@
+﻿@import "reset";
+@import "activePane";
+@import "activePaneFilter";
+@import "adminMenuArea";
+@import "appBar";
+@import "boxShadow";
+@import "button";
+@import "checkbox";
+@import "contentBar";
+@import "dialog";
+@import "flexColumn";
+@import "flexRow";
+@import "font";
+@import "grouping";
+@import "instruction";
+@import "listItem";
+@import "menu";
+@import "navBar";
+@import "notification";
+@import "overlay";
+@import "panel";
+@import "radio";
+@import "rangeInput";
+@import "scrollbar";
+@import "searchArea";
+@import "searchInputArea";
+@import "selectionBar";
+@import "sortable";
+@import "spinner";
+@import "streamControlBar";
+@import "switch";
+@import "text";
+@import "textInput";
+@import "timeArea";
+@import "tooltip";
+@import "video";
+@import "volumeArea";
+
+// Force UI to full size if Streamus has been loaded into a tab by detecting min-width/min-height greater than maximum extension width/height.
+@media (min-width:810px), (min-height:610px) {
+    html,
+    body {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.foreground {
+    // Default dimensions of Streamus as a browser extension
+    /*width: 640px;
+    height: 480px;*/
+    width: 800px;
+    height: 600px;
+    margin: 0;
+    // Ensure that elements which are transformed outside the viewport don't cause overflow.
+    overflow: hidden;
+    font: 13px 'Roboto';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-user-select: none;
+    color: @white;
+}
+
+.foregroundArea.is-clickingScrollbar {
+    pointer-events: none;
+}
+
+.playlistsArea,
+.searchArea {
+    height: calc(100% - 56px) !important;
+}
+
+.playlistsArea,
+.searchArea.is-visible {
+    top: 56px !important;
+}
+
+.shuttingDown {
+    width: 700px;
+}

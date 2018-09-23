@@ -1,0 +1,73 @@
+﻿@import "color";
+@import "utility";
+@import "transition";
+
+.button {
+    display: inline-flex;
+    .u-clickable;
+    align-items: center;
+    justify-content: center;
+}
+
+.button--flat {
+    padding: 8px;
+    margin: 0 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: @blue--500;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color @transition-duration--fast @transition-easeOutSine;
+
+    &:hover:not(.is-disabled) {
+        background-color: @gray--hoverButton
+    }
+
+    &:active:not(.is-disabled) {
+        background-color: @gray--activeButton
+    }
+}
+
+.button--icon {
+    // Ensure that wrapping <svg> doesn't increase height of button
+    line-height: 0;
+
+    &.is-enabled {
+        fill: @blue--500;
+
+        &:hover {
+            fill: @blue--700;
+        }
+    }
+
+    &.is-disabled {
+        opacity: .26;
+    }
+}
+
+.button--icon--primary {
+    opacity: 0.87;
+
+    &:hover:not(.is-disabled) {
+        opacity: 1;
+    }
+}
+
+.button--icon--secondary {
+    opacity: .54;
+
+    &:hover:not(.is-disabled),
+    &.is-enabled {
+        opacity: .87;
+    }
+}
+
+.button--large {
+    width: 48px;
+    height: 48px;
+}
+
+.button--medium {
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+     <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+     <!--<script type="text/javascript" src="http://discoveryeducation.speechstream.net/SpeechStream/v190/texthelpMain.js"></script>-->
+     <!--<script type="text/javascript" src="js/texthelpMain.js"></script>
+     <script src="js/speechStream2.js" type="text/javascript"></script>-->
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <style type="text/css">
+          #Main{width:1000px; text-align:left; border:solid 1px #999999; padding:5px}
+          #SpeakerParent{width:30px;height:30px;float:left;}
+          #Title{float:left; color:#888800; font-size:20px;width:200px;}
+     </style>
+
+     <title></title>
+</head>
+<body>
+     <center>
+          <div id="Main" texthelpcmd="list" texthelpcmd1="bookid:787" texthelpcmd2="pageid:pqr">
+               <div id="Title">Texthelp demo</div>               
+<div id="SpeakerParent">
+               </div>
+              <div id="speech" >
+               <span id="speechContent1" style="clear:both;">  
+		 create length of a garden is 100 angle and its width is 50 angle. 
+		   </span>
+		   <span id="speechContent2" style="clear:both;">
+		   What if the garden was measured with a different set of feet?                   
+		   </span>
+                  </div>
+          </div>
+          <div>
+            eba_cust_id = "1740"    <br />
+            eba_book_id = "051213";      <br />
+            eba_page_id = "051334";   <br />
+            eba_server = "discoveryeducation.speechstream.net";<br/>
+            JS file = "http://discoveryeducation.speechstream.net/SpeechStream/v190/texthelpMain.js"
+          </div>
+          <div>
+            <div style="padding-top:15px;">Change text here</div>
+            <textarea id="oTextArea" rows="6" cols="20"></textarea>
+            <div>
+            <input type="button" value="Change Text" onclick="SetText();" />
+            <input type="button" value="Load Files" onclick="loadFiles();" />
+            </div>
+          </div>
+     </center>
+     <div style="display:none">
+          <img src="img/sound up.png" />
+          <img src="img/sound down.png" />
+          <img src="img/sound rollover.png" />
+          <img src="img/pause_up.png" />
+          <img src="img/pause_down.png" />
+          <img src="img/pause_rollover.png" />
+          <img src="img/play_up.png" />
+          <img src="img/play_down.png" />
+          <img src="img/play_rollover.png" />
+     </div>
+     <script type="text/javascript">
+         var self = this;
+
+             
+             function SetText() {
+                 $("#speechContent1").html($("#oTextArea").val());
+             }
+
+//             AddCSS("TTS", new Array("img/sound up.png", "img/sound rollover.png", "img/sound down.png"));
+//             initializeTextHelp("blue", "transparent", "orange", "transparent");
+//             LoadSpeaker("SpeakerParent", ["Title", "speechContent1", "speechContent2", "speechContent3"], "TTS");
+
+             function loadFiles() {
+				var jqXhr = $.ajax({
+                     url: 'js/speechStream2.js',
+                     async: false
+                 })
+                 .success(function (data) { console.log('speechStream Loaded'); });
+                 var jqXhr = $.ajax({
+                     //url: 'http://discoveryeducation.speechstream.net/SpeechStream/v191/texthelpMain.js',
+                     url: 'js/texthelpMain.js',
+                     async : false
+                 })
+                 .success(function (data) { console.log('texthelpMain Loaded') });
+                 
+
+                 AddCSS("TTS", new Array("img/sound up.png", "img/sound rollover.png", "img/sound down.png"));
+				 
+                 //initializeTextHelp("blue", "transparent", "orange", "transparent");
+                 LoadSpeaker("SpeakerParent", ["speech"], "TTS");
+             }
+//         }
+
+        //RangeTextColor, RangeBackgroundColor, WordTextColor, WordBakgroundColor
+        
+        //LoadSpeaker("SpeakerParent", ["speechContent3"])
+     </script>
+
+</body>
+</html>

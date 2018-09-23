@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg id="tempsvg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" onclick="alert('asdasdas')">
+    <script type="text/ecmascript">
+    <![CDATA[
+            function VertexMouseOver(event)
+            {
+            event.target.style.opacity = 1;
+            }
+
+            function VertexMouseOut(event)
+            {
+            event.target.style.opacity = 0;
+            }
+            
+            function ShapeUp(event)
+            {
+                MouseUp(event);
+            }
+            
+            function ShapeCircleDown(event)
+            {
+                RotateShapeDown(event);
+            }
+            
+            
+            
+            
+            var nRotationDownX = 0;
+            var nRotationDownY = 0;
+            
+            var bRotateMouseDown = false;
+
+            var angle1
+
+            RotateShapeDown = function(event)
+            {
+                bRotateMouseDown = true;
+                nRotationDownX = event.pageX;
+                nRotationDownY = event.pageY;
+                var nX = event.pageX - (nCenterX + nRotationDownX);
+                var nY = event.pageY - (nCenterY + nRotationDownY);
+                
+                angle1 = -1 * (Math.atan2(nX , nY)) / Math.PI * 180;
+                
+                nTemp = nRotation;
+                DebugText(nTranslateX +"   angle1 = " + nRotation + " --tranY "+ nTranslateY)
+            }
+            var nTemp = 0;
+            RotateShape = function(event)
+            {
+               
+              if(bRotateMouseDown)
+              {
+                var nX = event.pageX - (nCenterX + nRotationDownX);
+                var nY = event.pageY - (nCenterY + nRotationDownY);
+                
+                var angle2 = -1 * (Math.atan2(nX , nY)) / Math.PI * 180;
+                
+                
+                
+                nRotation = angle2 + nTemp - angle1;
+                
+                //nTemp = angle1;
+                if(nRotation < 0)
+	            {
+		            nRotation += 360;
+	            }
+	            DebugText(nRotation)
+                oGroup.setAttribute("transform", "translate("+nTranslateX+","+nTranslateY+") rotate("+nRotation+"," + (nCenterX) + "," + (nCenterY) + ")");
+              }
+            }
+
+            RotateShapeUp = function(event)
+            {
+                bRotateMouseDown = false;
+            }
+            
+            function DebugText(strDebug)
+            {
+                var oDebug = document.getElementById("Debug");
+                oDebug.value += strDebug + " \r ";
+            
+            }
+        ]]>
+    </script>
+    <g id="SmallRect" transform="translate(292.5, 145.5) rotate(45, 25.5, 25.5)">
+        <polygon name="SmallRect" points="0,0 0,51 51,51 51,0" style="fill: rgb(204, 153, 0); stroke: black; stroke-width: 1;"  onclick="alert('-------')"/><circle name="SmallRect" cx="0" cy="0" r="5" onmouseover="VertexMouseOver(event)" onmouseout="VertexMouseOut(event)" style="fill: blue; stroke: pink; stroke-width: 1; fill-opacity: 1; stroke-opacity: 1; opacity: 0;" onmousedown="ShapeCircleDown(event)" onmouseup="ShapeCircleUp(event)"/>
+        <circle name="SmallRect" cx="0" cy="51" r="5" onmouseover="VertexMouseOver(event)" onmouseout="VertexMouseOut(event)" style="fill: blue; stroke: pink; stroke-width: 1; fill-opacity: 1; stroke-opacity: 1; opacity: 0;" onmousedown="ShapeCircleDown(event)" onmouseup="ShapeCircleUp(event)"/>
+        <circle name="SmallRect" cx="51" cy="51" r="5" onmouseover="VertexMouseOver(event)" onmouseout="VertexMouseOut(event)" style="fill: blue; stroke: pink; stroke-width: 1; fill-opacity: 1; stroke-opacity: 1; opacity: 0;" onmousedown="ShapeCircleDown(event)" onmouseup="ShapeCircleUp(event)"/>
+        <circle name="SmallRect" cx="51" cy="0" r="5" onmouseover="VertexMouseOver(event)" onmouseout="VertexMouseOut(event)" style="fill: blue; stroke: pink; stroke-width: 1; fill-opacity: 1; stroke-opacity: 1; opacity: 0;" onmousedown="ShapeCircleDown(event)" onmouseup="ShapeCircleUp(event)"/>
+    </g>
+</svg>

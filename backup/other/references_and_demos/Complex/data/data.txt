@@ -1,0 +1,222 @@
+props : {
+	realCoefficients : [{
+			numerator : {
+				rational : 2,
+				irrational : [{
+						value : 12,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 3
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : -5,
+				irrational : [{
+						value : 3,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 6
+		}
+	]
+}
+
+
+***************************/****************************************/***************************************/*********************************
+
+TEST CASE 1:
+
+a=ComplexNumbers.generateComplexNumber({
+realCoefficients : [{
+			numerator : {
+				rational : 2,
+				irrational : [{
+						value : 6,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 3
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : -5,
+				irrational : [{
+						value : 3,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 6
+		}
+	]
+})
+
+
+b=ComplexNumbers.generateComplexNumber({
+realCoefficients : [{
+			numerator : {
+				rational : 7,
+				irrational : [{
+						value : 6,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : 3,
+				irrational : [{
+						value : 2,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 5
+		}
+	]
+})
+
+ComplexNumbers.multiplyComplexNumbers(a,b)
+
+***************************/****************************************/***************************************/*********************************
+
+TEST CASE 2:
+
+a=ComplexNumbers.generateComplexNumber({
+realCoefficients : [{
+			numerator : {
+				rational : 2,
+				irrational : [{
+						value : 6,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : -5,
+				irrational : [{
+						value : 3,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	]
+})
+
+
+b=ComplexNumbers.generateComplexNumber({
+realCoefficients : [{
+			numerator : {
+				rational : 7,
+				irrational : [{
+						value : 6,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : 3,
+				irrational : [{
+						value : 2,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	]
+})
+
+ComplexNumbers.multiplyComplexNumbers(a,b)
+
+
+*****************************************************************************************************************************************************
+
+a=ComplexNumbers.generateComplexNumber({
+realCoefficients : [{
+			numerator : {
+				rational : 2,
+				irrational : [{
+						value : 6,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : -5,
+				irrational : [{
+						value : 3,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	]
+})
+
+b=ComplexNumbers.generateComplexNumber({
+realCoefficients : [{
+			numerator : {
+				rational : 2,
+				irrational : [{
+						value : 6,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	],
+	imaginaryCoefficients : [{
+			numerator : {
+				rational : 5,
+				irrational : [{
+						value : 3,
+						type : 'complex-irrational-root',
+						root : 2
+					}
+				]
+			},
+			denominator : 1
+		}
+	]
+})
+
+ComplexNumbers.multiplyComplexNumbers(a,b)

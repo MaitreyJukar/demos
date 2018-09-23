@@ -1,0 +1,28 @@
+radius1=200;
+radius2=120;
+
+var ellipse = new Path.Ellipse({
+    center: view.center,
+    radius: [radius1, radius2],
+    strokeColor: 'black'
+});
+
+
+var radiusLong = new Path.Line(ellipse.bounds.leftCenter,ellipse.bounds.rightCenter);
+var radiusShort = new Path.Line(ellipse.bounds.topCenter,ellipse.bounds.bottomCenter);
+
+radiusLong.strokeColor = 'red';
+radiusShort.strokeColor = 'green';
+
+var fociDistance = Math.sqrt(Math.abs((radius2*radius2) - (radius1*radius1)));
+
+createCircle = function(x,y){
+    return new Path.Circle({
+       radius: 5,
+       center: new Point(x,y),
+       fillColor: 'blue'
+    });
+}
+console.log(fociDistance);
+var foci1 = createCircle(ellipse.position.x+fociDistance,ellipse.position.y);
+var foci2 = createCircle(ellipse.position.x-fociDistance,ellipse.position.y);

@@ -1,0 +1,22 @@
+
+/**
+* Handle lazy drag of sticky slider.
+* Asynchronous means of triggering drag handler to provide better performance on touch devices.
+* 
+* @method _lazyStickySliderDragged
+* @param {Object} event Event
+*/
+_lazyStickySliderDragged: function (ballView, event) {
+    var self = this;
+    this._currentEvent = event;
+    this._currentBallView = ballView;
+    if (!self._bUpdationRequested) {
+        window.setTimeout(function () {
+            self._stickySliderDragged(self._currentBallView, self._currentEvent);
+            self._bUpdationRequested = false;
+            self._currentEvent = null;
+            self._currentBallView = null;
+        }, 1);
+        self._bUpdationRequested = true;
+    }
+}

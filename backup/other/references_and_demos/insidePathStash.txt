@@ -1,0 +1,30 @@
+
+        
+        _isInsidePath: function (point) {
+            var modelNamespace = MathInteractives.Interactivities.PicturePerfect.Models.RepairRoads;
+            if (this.repairRoadsView.model.get('pathDisplayed') === modelNamespace.ROADTYPES.RECTANGLESHAPED) {
+                return this._isInsideRectanglePath(point);
+            }
+            else {
+                return this._isInsideZigzagPath(point);
+            }
+        },
+
+        _isInsideRectanglePath: function (point) {
+            var rectPathCoordinates = this.repairRoadsView.model.get('rectPathCoordinates');
+
+            if ((point.y < rectPathCoordinates.outerRectCoordinates[0].y) ||
+                (point.y > rectPathCoordinates.outerRectCoordinates[2].y) ||
+                (point.x < rectPathCoordinates.outerRectCoordinates[0].x) ||
+                (point.x > rectPathCoordinates.outerRectCoordinates[1].x)) {
+                return false;
+            }
+
+            if ((point.x > rectPathCoordinates.innerRectCoordinates[0].x) &&
+                (point.x < rectPathCoordinates.innerRectCoordinates[1].x) &&
+                (point.y > rectPathCoordinates.innerRectCoordinates[0].y) &&
+                (point.y < rectPathCoordinates.innerRectCoordinates[2].y)) {
+                return false;
+            }
+            return true;
+        },

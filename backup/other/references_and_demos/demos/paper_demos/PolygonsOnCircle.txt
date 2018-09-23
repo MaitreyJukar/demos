@@ -1,0 +1,24 @@
+
+var originX=500;
+var originY=350;
+var xAxisLength=1000;
+var yAxisLength=1000;
+var circleRadius=200;
+var noOfSides=9;
+
+//Create a Circle
+var circle = new Path.Circle(new Point(originX, originY), circleRadius);
+circle.strokeWidth = 1;
+circle.strokeColor = 'black';
+
+
+
+var CP = new paper.Point(originX,originY);
+var PollyIn = new paper.Path.RegularPolygon(CP, noOfSides, circleRadius);
+PollyIn.strokeColor = 'red';
+PollyIn.strokeWidth = 1;
+
+var CP = new paper.Point(originX,originY);
+var PollyOut = new paper.Path.RegularPolygon(CP, noOfSides, (circleRadius/Math.cos(Math.PI/noOfSides)));
+PollyOut.strokeColor = 'blue';
+PollyOut.strokeWidth = 1;

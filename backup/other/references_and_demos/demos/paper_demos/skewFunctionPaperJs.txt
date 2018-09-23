@@ -1,0 +1,35 @@
+_addSkewFunctionToPath : function () {
+	var self = this;
+	this.paperScope.Path.prototype.skew = function (x, y, center) {
+		var skew = {},
+		toRadians = Math.PI / 180,
+		shear = null;
+
+		skew.x = x;
+		skew.y = y != null ? y : x;
+		center = center != null ? center : this.position;
+
+		shear = new self.paperScope.Point(Math.tan(skew.x * toRadians),
+				Math.tan(skew.y * toRadians));
+
+		return this.shear(shear, center);
+	}
+},
+
+_addSkewFunctionToGroup : function () {
+	var self = this;
+	this.paperScope.Group.prototype.skew = function (x, y, center) {
+		var skew = {},
+		toRadians = Math.PI / 180,
+		shear = null;
+
+		skew.x = x;
+		skew.y = y != null ? y : x;
+		center = center != null ? center : this.position;
+
+		shear = new self.paperScope.Point(Math.tan(skew.x * toRadians),
+				Math.tan(skew.y * toRadians));
+
+		return this.shear(shear, center);
+	}
+}

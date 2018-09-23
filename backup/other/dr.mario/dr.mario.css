@@ -1,0 +1,356 @@
+body{
+margin:0px;
+}
+@font-face{
+font-family:"arcade";
+src:url("arcade2.eot");
+}
+@font-face{
+font-family:"arcade";
+src:url("arcade2.ttf");
+}
+#instructions{
+position:absolute;
+top:345px;
+width:540px;
+height:91px;
+padding-top:0px;
+color:#fff;
+text-align:center;
+font-family:arcade;
+background:#3baaff;
+font-size:12px;
+}
+#dpad{
+display:none;
+}
+.mariobutton{
+border:1px solid #000;
+border-radius:4px;
+background:#0f0;
+font-size:15px;
+font-weight:bold;
+padding-left:4px;
+padding-right:4px;
+cursor:pointer;
+}
+.drmario{
+width:540px;
+height:450px;
+overflow:hidden;
+zoom:1;
+background:#000 url(bg.png) 0 0;
+font-size:12px;
+font-family:arcade;
+-moz-user-select:none;
+}
+.drmario a{
+color:#fff;
+text-decoration:none;
+}
+.drmario ul,.drmario li{
+list-style:none;
+margin:0;
+padding:0;
+}
+.drmario .game_cover{
+position:relative;
+}
+.drmario .game_cover .game_start{
+position:absolute;
+left:69px;
+top:51px;
+width:402px;
+height:144px;
+overflow:hidden;
+zoom:1;
+outline:none;
+text-indent:-1000px;
+background:url(cover.png) -71px -16px no-repeat;
+}
+.drmario .game_cover .game_info{
+position:absolute;
+left:110px;
+top:250px;
+width:319px;
+height:82px;
+overflow:hidden;
+zoom:1;
+background:url(cover.png) -112px -333px no-repeat;
+color:#fff;
+}
+.drmario .game_cover .game_info p{
+margin:5px 90px;
+}
+.drmario .game_cover .game_info p.title{
+margin-top:26px;
+text-align:center;
+font-size:19px;
+font-weight:bold;
+cursor:pointer;
+border:1px solid #fff;
+}
+.drmario .game_panel{
+overflow:hidden;
+zoom:1;
+display:none;
+}
+.drmario .game_panel .column{
+float:left;
+text-align:center;
+width:170px;
+padding:30px 0;
+}
+.drmario .game_panel .cell2{
+width:200px;
+padding-top:65px;
+}
+.drmario .game_panel .column .score_panel{
+margin:0 auto;
+width:151px;
+height:147px;
+overflow:hidden;
+zoom:1;
+background:url(lib.png) -4px -25px no-repeat;
+}
+.drmario .game_panel .column .score_panel li{
+margin:35px 25px 0;
+text-align:left;
+}
+.drmario .game_panel .column .score_panel li.top_score{
+margin-top:5px;
+margin-bottom:-20px;
+}
+.drmario .game_panel .column .score_panel li.score{
+margin-top:5px;
+}
+.drmario .game_panel .column .microscope{
+position:relative;
+margin:70px auto 0;
+width:151px;
+height:148px;
+overflow:hidden;
+zoom:1;
+background:url(lib.png) -5px -216px no-repeat;
+}
+.drmario .game_panel .column .microscope .virus{
+width:26px;
+height:24px;
+background:url(lib.png) -517px -116px no-repeat;
+}
+.drmario .game_panel .column .microscope .red{
+position:absolute;
+left:45px;
+top:40px;
+background-position:-517px -125px;
+}
+.drmario .game_panel .column .microscope .yellow{
+position:absolute;
+left:95px;
+top:40px;
+background-position:-517px -275px;
+}
+.drmario .game_panel .column .microscope .blue{
+position:absolute;
+left:70px;
+top:80px;
+background-position:-517px -425px;
+}
+.drmario .game_panel .column .playarea{
+position:relative;
+margin:0 auto;
+width:184px;
+height:328px;
+overflow:hidden;
+zoom:1;
+background:url(lib.png) -168px -36px no-repeat;
+}
+.drmario .game_panel .column .playarea .table{
+position:absolute;
+left:16px;
+top:72px;
+width:100%;
+z-index:10;
+}
+.drmario .game_panel .column .playarea .table .bottle{
+position:absolute;
+left:0;
+top:0;
+z-index:10;
+background:#000;
+}
+.drmario .game_panel .column .playarea .table .playbox{
+position:absolute;
+left:60px;
+top:-15px;
+z-index:20;
+}
+.drmario .game_panel .column .playarea .result{
+position:absolute;
+left:28px;
+top:140px;
+z-index:30;
+width:120px;
+height:80px;
+border:5px solid #D70A68;
+background:#FFE000;
+text-align:center;
+}
+.drmario .game_panel .column .playarea .result p{
+margin:0;
+margin-top:20px;
+}
+.drmario .game_panel .column .playarea .result p strong{
+display:block;
+line-height:1.5;
+}
+.drmario .game_panel .column .playarea .next_stage{
+display:none;
+}
+.drmario .game_panel .column .playarea .game_over{
+display:none;
+}
+.drmario .game_panel .column .gamename{
+margin:0 auto;
+width:131px;
+height:37px;
+overflow:hidden;
+zoom:1;
+text-indent:-1000px;
+background:url(lib.png) -372px 0 no-repeat;
+}
+.drmario .game_panel .column .mario{
+position:relative;
+margin:15px auto;
+width:120px;
+height:105px;
+background:url(lib.png) -376px -40px no-repeat;
+}
+.drmario .game_panel .column .mario_drop1{
+background-position:-200px -120px;
+}
+.drmario .game_panel .column .mario_drop2{
+background-position:-200px -225px;
+}
+.drmario .game_panel .column .game_over{
+background-position:-376px -150px;
+}
+.drmario .game_panel .column .game_over .medicine{
+display:none;
+}
+.drmario .game_panel .column .mario .medicine{
+position:absolute;
+left:30px;
+top:7px;
+z-index:100;
+}
+.drmario .game_panel .column .msgbox{
+margin:0 auto;
+width:136px;
+height:191px;
+overflow:hidden;
+zoom:1;
+background:url(lib.png) -368px -259px no-repeat;
+}
+.drmario .game_panel .column .msgbox li{
+text-align:left;
+margin:35px 25px 0;
+}
+.drmario .game_panel .column .msgbox li.level{
+margin-top:5px;
+margin-bottom:-20px;
+}
+.drmario .game_panel .column .msgbox li.speed{
+margin-top:5px;
+margin-bottom:-20px;
+}
+.drmario .game_panel .column .msgbox li.remain{
+margin-top:5px;
+}
+.drmario .medicine td{
+width:13px;
+height:13px;
+margin:1px;
+background:url(lib.png) -1000px -1000px no-repeat;
+}
+.drmario .medicine .m_red_left{
+background-position:-30px -400px;
+}
+.drmario .medicine .m_red_right{
+background-position:-45px -400px;
+}
+.drmario .medicine .m_red_up{
+background-position:0 -400px;
+}
+.drmario .medicine .m_red_down{
+background-position:-15px -400px;
+}
+.drmario .medicine .m_red_single{
+background-position:-60px -400px;
+}
+.drmario .medicine .m_red_boom{
+background-position:-75px -400px;
+}
+.drmario .medicine .m_yellow_left{
+background-position:-120px -400px;
+}
+.drmario .medicine .m_yellow_right{
+background-position:-135px -400px;
+}
+.drmario .medicine .m_yellow_up{
+background-position:-90px -400px;
+}
+.drmario .medicine .m_yellow_down{
+background-position:-105px -400px;
+}
+.drmario .medicine .m_yellow_single{
+background-position:-150px -400px;
+}
+.drmario .medicine .m_yellow_boom{
+background-position:-165px -400px;
+}
+.drmario .medicine .m_blue_left{
+background-position:-210px -400px;
+}
+.drmario .medicine .m_blue_right{
+background-position:-225px -400px;
+}
+.drmario .medicine .m_blue_up{
+background-position:-180px -400px;
+}
+.drmario .medicine .m_blue_down{
+background-position:-195px -400px;
+}
+.drmario .medicine .m_blue_single{
+background-position:-240px -400px;
+}
+.drmario .medicine .m_blue_boom{
+background-position:-255px -400px;
+}
+.drmario .medicine .v_red{
+background-position:-270px -400px;
+}
+.drmario .medicine .v_red_act{
+background-position:-285px -400px;
+}
+.drmario .medicine .v_red_boom{
+background-position:-75px -400px;
+}
+.drmario .medicine .v_yellow{
+background-position:-300px -400px;
+}
+.drmario .medicine .v_yellow_act{
+background-position:-315px -400px;
+}
+.drmario .medicine .v_yellow_boom{
+background-position:-165px -400px;
+}
+.drmario .medicine .v_blue{
+background-position:-330px -400px;
+}
+.drmario .medicine .v_blue_act{
+background-position:-345px -400px;
+}
+.drmario .medicine .v_blue_boom{
+background-position:-255px -400px;
+}

@@ -1,0 +1,119 @@
+
+var userPointsArray=[];
+var cpuPointsArray=[];
+//Create a Path
+var userPath = new Path();
+var cpuPath = new Path();
+
+for(var x=0;x<500;x++){
+    userPath.add(new Point(x, 0));
+    userPointsArray.push([x,0]);
+    if(x>=50&&x<450){
+        cpuPath.add(new Point(x, 50));
+        cpuPointsArray.push([x,50]);
+    }
+}
+
+for(var y=0;y<500;y++){
+    userPath.add(new Point(500, y));
+    userPointsArray.push([500,y]);
+    if(y>=50&&y<450){
+        cpuPath.add(new Point(450, y));
+        cpuPointsArray.push([450,y]);
+    }
+    
+}
+
+for(var x=500;x>0;x--){
+    userPath.add(new Point(x, 500));
+    userPointsArray.push([x,500]);
+    if(x>=50&&x<450){
+        cpuPath.add(new Point(x, 450));
+        cpuPointsArray.push([x,450]);
+    }
+}
+
+for(var y=500;y>0;y--){
+    userPath.add(new Point(0, y));
+    userPointsArray.push([0,y]);
+    if(y>=50&&y<450){
+        cpuPath.add(new Point(50, y));
+        cpuPointsArray.push([50,y]);
+    }
+}
+
+userPath.simplify();
+
+userPath.strokeWidth = 5;
+
+userPath.strokeColor = 'black';
+
+
+cpuPath.simplify();
+
+cpuPath.strokeWidth = 5;
+
+cpuPath.strokeColor = 'black';
+
+var userCar = new Path.Circle({
+    radius : 10,
+    center: new Point(0,0),
+    fillColor : 'green'
+});
+
+
+var cpuCar = new Path.Circle({
+    radius : 10,
+    center: new Point(0,0),
+    fillColor : 'blue'
+});
+
+var fastButton = new Path.Circle({
+    radius : 10,
+    center: new Point(200,100),
+    fillColor : 'green'
+});
+
+fastButton.onMouseDown=function(){
+    if(speed<5){
+        speed++;
+    }
+}
+
+var slowButton = new Path.Circle({
+    radius : 10,
+    center: new Point(250,100),
+    fillColor : 'red'
+});
+
+slowButton.onMouseDown=function(){
+    if(speed>0){
+        speed--;
+    }
+}
+
+var speed=1;
+var index=0;
+var cpuIndex=0;
+var tempIndex;
+var tempCpuIndex;
+
+var masterGroup = new Group();
+masterGroup.addChildren([userPath,userCar,cpuCar]);
+//masterGroup.position=view.center;
+var xPos=0;
+var yPos=0;
+function onFrame(event) {
+    if(index<6000){
+        tempIndex=(index%2000);
+        userCar.position.x=userPointsArray[tempIndex][0];
+        userCar.position.y=userPointsArray[tempIndex][1];
+        index+=speed;
+    }
+    if(cpuIndex<4800){
+        tempCpuIndex=cpuIndex%1600;
+        cpuCar.position.x=cpuPointsArray[tempCpuIndex][0];
+        cpuCar.position.y=cpuPointsArray[tempCpuIndex][1];
+        cpuIndex+=3;
+    }
+}

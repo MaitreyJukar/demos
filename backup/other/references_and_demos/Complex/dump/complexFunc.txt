@@ -1,0 +1,44 @@
+
+        complexSquareRoot: function (number) {            
+            if (typeof number !== 'number') {
+                return NaN;
+            }
+            if (number > 0) {
+                return Math.sqrt(number).toString();
+            }
+            else {
+                var coeff = Math.sqrt(Math.abs(number)).toString();
+                return coeff === "1" ? 'i' : coeff + 'i';
+            }
+        },
+
+        complexSquare: function (number) {
+            var isComplex = false,
+                real = null,
+                imag = null;
+            if (typeof number !== 'number') {
+                if (typeof number === 'string') {
+                    if (number.indexOf(i) > -1) {
+                        isComplex = true;                        
+                    }
+                    var input = number.replace('i', '').parseFloat();
+                    if (!input.isNaN()) {
+                        number = input;
+                    }
+                    else {
+                        return NaN;
+                    }
+                }
+                else {
+                    return NaN;
+                }
+            }
+            if (!isComplex) {
+                return Math.pow(number, 2).toString();
+            }
+            else {
+                var coeff = Math.sqrt(Math.abs(number)).toString();
+                return coeff === "1" ? 'i' : coeff + 'i';
+            }
+            
+        }

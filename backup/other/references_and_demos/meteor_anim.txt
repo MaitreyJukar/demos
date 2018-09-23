@@ -1,0 +1,307 @@
+
+@-webkit-keyframes METEOR-ANIMATION {
+    0% {
+        background-position: 0 0;
+    }
+
+    6% {
+        background-position: 0 -599px;
+    }
+
+    12% {
+        background-position: 0 -1198px;
+    }
+
+    18% {
+        background-position: 0 -1797px;
+    }
+
+    24% {
+        background-position: 0 -2396px;
+    }
+
+    30% {
+        background-position: 0 -2995px;
+    }
+
+    36% {
+        background-position: 0 -3594px;
+    }
+
+    42% {
+        background-position: 0 -4193px;
+    }
+
+    48% {
+        background-position: 0 -4792px;
+    }
+
+    54% {
+        background-position: 0 -5391px;
+    }
+
+    60% {
+        background-position: 0 -5990px;
+    }
+
+    66% {
+        background-position: 0 -6589px;
+    }
+
+    72% {
+        background-position: 0 -7188px;
+    }
+
+    78% {
+        background-position: 0 -7787px;
+    }
+
+    84% {
+        background-position: 0 -8386px;
+    }
+
+    90% {
+        background-position: 0 -8985px;
+    }
+
+    96% {
+        background-position: 0 -9584px;
+    }
+
+    100% {
+        background-position: 0 -10183px;
+    }
+}
+
+@-moz-keyframes METEOR-ANIMATION {
+    0% {
+        background-position: 0 0;
+    }
+
+    6% {
+        background-position: 0 -599px;
+    }
+
+    12% {
+        background-position: 0 -1198px;
+    }
+
+    18% {
+        background-position: 0 -1797px;
+    }
+
+    24% {
+        background-position: 0 -2396px;
+    }
+
+    30% {
+        background-position: 0 -2995px;
+    }
+
+    36% {
+        background-position: 0 -3594px;
+    }
+
+    42% {
+        background-position: 0 -4193px;
+    }
+
+    48% {
+        background-position: 0 -4792px;
+    }
+
+    54% {
+        background-position: 0 -5391px;
+    }
+
+    60% {
+        background-position: 0 -5990px;
+    }
+
+    66% {
+        background-position: 0 -6589px;
+    }
+
+    72% {
+        background-position: 0 -7188px;
+    }
+
+    78% {
+        background-position: 0 -7787px;
+    }
+
+    84% {
+        background-position: 0 -8386px;
+    }
+
+    90% {
+        background-position: 0 -8985px;
+    }
+
+    96% {
+        background-position: 0 -9584px;
+    }
+
+    100% {
+        background-position: 0 -10183px;
+    }
+}
+
+@-o-keyframes METEOR-ANIMATION {
+    0% {
+        background-position: 0 0;
+    }
+
+    6% {
+        background-position: 0 -599px;
+    }
+
+    12% {
+        background-position: 0 -1198px;
+    }
+
+    18% {
+        background-position: 0 -1797px;
+    }
+
+    24% {
+        background-position: 0 -2396px;
+    }
+
+    30% {
+        background-position: 0 -2995px;
+    }
+
+    36% {
+        background-position: 0 -3594px;
+    }
+
+    42% {
+        background-position: 0 -4193px;
+    }
+
+    48% {
+        background-position: 0 -4792px;
+    }
+
+    54% {
+        background-position: 0 -5391px;
+    }
+
+    60% {
+        background-position: 0 -5990px;
+    }
+
+    66% {
+        background-position: 0 -6589px;
+    }
+
+    72% {
+        background-position: 0 -7188px;
+    }
+
+    78% {
+        background-position: 0 -7787px;
+    }
+
+    84% {
+        background-position: 0 -8386px;
+    }
+
+    90% {
+        background-position: 0 -8985px;
+    }
+
+    96% {
+        background-position: 0 -9584px;
+    }
+
+    100% {
+        background-position: 0 -10183px;
+    }
+}
+
+@keyframes METEOR-ANIMATION {
+    0% {
+        background-position: 0 0;
+    }
+
+    6% {
+        background-position: 0 -599px;
+    }
+
+    12% {
+        background-position: 0 -1198px;
+    }
+
+    18% {
+        background-position: 0 -1797px;
+    }
+
+    24% {
+        background-position: 0 -2396px;
+    }
+
+    30% {
+        background-position: 0 -2995px;
+    }
+
+    36% {
+        background-position: 0 -3594px;
+    }
+
+    42% {
+        background-position: 0 -4193px;
+    }
+
+    48% {
+        background-position: 0 -4792px;
+    }
+
+    54% {
+        background-position: 0 -5391px;
+    }
+
+    60% {
+        background-position: 0 -5990px;
+    }
+
+    66% {
+        background-position: 0 -6589px;
+    }
+
+    72% {
+        background-position: 0 -7188px;
+    }
+
+    78% {
+        background-position: 0 -7787px;
+    }
+
+    84% {
+        background-position: 0 -8386px;
+    }
+
+    90% {
+        background-position: 0 -8985px;
+    }
+
+    96% {
+        background-position: 0 -9584px;
+    }
+
+    100% {
+        background-position: 0 -10183px;
+    }
+}
+
+.de-mathematics-interactive.picture-perfect .meteor-animation-screen {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    -webkit-animation: METEOR-ANIMATION 0.289s infinite;
+    -moz-animation: METEOR-ANIMATION 0.289s infinite;
+    -o-animation: METEOR-ANIMATION 0.289s infinite;
+    animation: METEOR-ANIMATION 0.289s infinite;
+}

@@ -1,0 +1,620 @@
+.de-mathematics-interactive.zip-line .explore-tab-holder {
+    position: absolute;
+    width: 928px;
+    height: 599px;
+    background-color: #f7f7f7;
+    box-shadow: 14px 0px 100px gray inset;
+}
+
+/*********************** Slot Animation Start ****************************/
+
+.de-mathematics-interactive.zip-line .equation-animation-slots-holder {
+    height: auto;
+    position: relative;
+    width: 99px;
+}
+
+.de-mathematics-interactive.zip-line .equation-animation-slot {
+    height: 75px;
+    position: relative;
+    width: 99px;
+}
+
+.de-mathematics-interactive.zip-line .equation-animation-slot-value-holder {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    font: bold 16px Montserrat;
+    color: #000000;
+}
+
+/*********************** Slot Animation End ****************************/
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-direction-text-background-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-direction-text-container-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-direction-text-container-2 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 908px;
+    height: 78px;
+    border-radius: 5px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-direction-text-background-container {
+    background-color: rgba(34,34,34,0.2);
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-activity-area-container {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 908px;
+    height: 500px;
+    display: block;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-all-equations-display-container {
+    position: absolute;
+    width: 376px;
+    height: 109px;
+    display: block;
+    background: lightgrey;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+    top: 15px;
+    color: #222222;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-hOfx-equation-container {
+    position: absolute;
+    top: 140px;
+    height: 25px;
+    width: 130px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+    color: #222222;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-all-equations-display-left-sub-container {
+    position: relative;
+    height: inherit;
+    width: 20px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-all-equations-display-right-sub-container {
+    position: relative;
+    height: inherit;
+    width: 350px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-all-equations-display-right-sub-container-equation-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-all-equations-display-right-sub-container-equation-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-all-equations-display-right-sub-container-equation-3 {
+    position: relative;
+    width: inherit;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.de-mathematics-interactive.zip-line .step-1-equation-common-class {
+    position: relative;
+    float: left;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-all-steps-container {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0px;
+    left: 0px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-container {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-all-equations-container {
+    position: absolute;
+    top: 124px;
+    left: 200px;
+    width: 500px;
+    height: 180px;
+    /*background: red;*/
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: inherit;
+    height: 90px;
+}
+
+.de-mathematics-interactive.zip-line .equation-slots-common-class {
+    position: relative;
+    float: left;
+}
+
+.de-mathematics-interactive.zip-line .step-0-right-hand-side-container {
+    position: relative;
+    width: 303px;
+    height: 75px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff, #d2d2d2);
+    background: -webkit-linear-gradient(top, #ffffff, #d2d2d2);
+    background: -o-linear-gradient(top, #ffffff, #d2d2d2);
+    background: -ms-linear-gradient(top, #ffffff, #d2d2d2);
+    background: linear-gradient(top, #ffffff, #d2d2d2);
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-right-hand-side-container {
+    width: 202px;
+}
+
+.de-mathematics-interactive.zip-line .step-0-left-hand-side-container,
+.de-mathematics-interactive.zip-line .step-0-equal-to-sign-container {
+    line-height: 72px;
+    color: #000000;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.zip-line .step-0-equal-to-sign-container {
+    padding: 0px 10px 0px 10px;
+}
+
+.de-mathematics-interactive.zip-line .step-0-equation-indivisual-slots-common-class {
+    border: 1px solid #101010;
+    width: 99px;
+    height: inherit;
+    overflow: hidden;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-container {
+    top: 90px;
+    left: 7px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-buttons-container {
+    position: absolute;
+    top: 364px;
+    left: 200px;
+    width: 500px;
+    height: 40px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-generate-system-button-container {
+    position: relative;
+    float: left;
+    margin-left: 100px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-solve-button-container {
+    position: relative;
+    float: right;
+    margin-right: 100px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-container {
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-substitute-button-container {
+    position: absolute;
+    top: 170px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-2-check-button-container {
+    position: relative;
+    float: right;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-container {
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-3-container {
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-4-container {
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-5-container {
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-bottom-buttons-container {
+    position: absolute;
+    top: 460px;
+    width: inherit;
+    height: 40px;
+}
+
+.de-mathematics-interactive.zip-line .buttons-base-class,
+.de-mathematics-interactive.zip-line .try-another-button-base-class,
+.de-mathematics-interactive.zip-line .direction-text-tts-button-base-class.custom-btn.custom-btn-type-tts {
+    background-color: #0086a7;
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.41);
+    box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.41);
+}
+
+.de-mathematics-interactive.zip-line .buttons-base-class.hover,
+.de-mathematics-interactive.zip-line .try-another-button-base-class.hover,
+.de-mathematics-interactive.zip-line .direction-text-tts-button-base-class.custom-btn.custom-btn-type-tts.hover {
+    background-color: #01b2de;
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.41);
+    box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.41);
+}
+
+.de-mathematics-interactive.zip-line .buttons-base-class.down,
+.de-mathematics-interactive.zip-line .try-another-button-base-class.down,
+.de-mathematics-interactive.zip-line .direction-text-tts-button-base-class.custom-btn.custom-btn-type-tts.down {
+    box-shadow: rgb(0, 0, 0) 0px 4px 9px -3px inset;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-next-button-container {
+    position: absolute;
+    right: 10px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-back-button-container {
+    position: absolute;
+    left: 10px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-substitute-button-container {
+    position: absolute;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-part-container {
+    position: absolute;
+    width: 650px;
+    height: 230px;
+    top: 220px;
+    display: none;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-container {
+    position: relative;
+    height: inherit;
+    width: 180px;
+    display: inline-block;
+    float: left;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-part-seperator-line-container {
+    position: relative;
+    height: inherit;
+    width: 2px;
+    display: inline-block;
+    background-color: #797979;
+    float: left;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-container {
+    position: relative;
+    height: inherit;
+    width: 458px;
+    display: inline-block;
+    float: left;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-3 {
+    position: relative;
+    width: inherit;
+    height: 40px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-0-equation-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-1-equation-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-2-equation-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-3-equation-container {
+    position: relative;
+    height: 25px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-substep-0-equation-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-0-equation-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-left-hand-side-container-sign-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-left-hand-side-container-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-right-hand-side-container-sign-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-right-hand-side-container-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-one-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-minus-sign-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-two-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-equal-to-sign-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-zero-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-one-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-minus-sign-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-two-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-equal-to-sign-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-zero-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-input-box-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-equation-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-left-bracket-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-right-bracket-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-degree-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-minus-sign-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-four-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-1,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-a-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-a-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-2,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-c-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-c-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-equal-to-sign-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-d-input-box-container {
+    color: #0086a7;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-left-hand-side-container-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-equal-to-sign-container-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-right-hand-side-container-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-left-hand-side-container-sign-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-left-hand-side-container-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-right-hand-side-container-sign-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-right-hand-side-container-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-one-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-minus-sign-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-two-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-equal-to-sign-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-zero-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-one-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-minus-sign-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-two-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-equal-to-sign-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-zero-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-two-term-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-two-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-one-term-coefficient-sign-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-degree-one-term-coefficient-sign-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-one-term-coefficient-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-one-term-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-zero-term-coefficient-sign-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-zero-term-coefficient-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-two-term-coefficient-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-1-degree-two-term-coefficient-sign-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-degree-one-term-coefficient-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-degree-one-term-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-degree-zero-term-coefficient-sign-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-degree-zero-term-coefficient-sub-step-0,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-input-box-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-minus-sign-container-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-left-bracket-container-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-right-bracket-container-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-fOx-container-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-minus-sign-container-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-left-bracket-container-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-fOx-container-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-right-bracket-container-2,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-left-bracket-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-right-bracket-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-degree-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-minus-sign-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-four-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-1,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-a-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-a-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-2,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-c-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-c-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-equal-to-sign-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-d-input-box-container {
+    float: left;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-left-hand-side-container-sign-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-left-hand-side-container-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-right-hand-side-container-sign-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-2-right-hand-side-container-sub-step-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-substep-1-equation-container {
+    color: #8d8d8d;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-one-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-minus-sign-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-two-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-equal-to-sign-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-zero-container-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-one-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-minus-sign-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-left-hand-side-container-two-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-equal-to-sign-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-extreme-right-zero-container-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sign-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sub-step-3,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-coefficient-input-box-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-term-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-two-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-coefficient-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-one-term-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sign-sub-step-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-0-equation-3-degree-zero-term-coefficient-sub-step-2,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-left-bracket-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-right-bracket-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-b-degree-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-minus-sign-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-four-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-1,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-a-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-a-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-2,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-c-input-box-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-c-value-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-equal-to-sign-container,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-d-input-box-container {
+    color: #222222;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-division-line-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-division-line-2,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-division-line-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-division-line-2 {
+    position: relative;
+    height: 2px;
+    display: inline-block;
+    background-color: #a3a3a3;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-division-line-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-left-part-division-line-2 {
+    width: 170px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-division-line-1,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-1-calculation-right-part-division-line-2 {
+    width: 325px;
+    left: 10px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-calculation-part-container {
+    position: absolute;
+    top: 200px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-sub-heading-container {
+    position: relative;
+    color: #222222;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+    height: 26px;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-discriminant-text-holder {
+    position: relative;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-discriminant-formula-holder {
+    position: relative;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.zip-line .discriminant-formula-common-class,
+.de-mathematics-interactive.zip-line .discriminant-equation-common-class {
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-discriminant-division-line {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: #222222;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-equation-holder {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 40px;
+    color: #222222;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-buttons-container {
+    position: relative;
+    display: block;
+}
+
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-evaluate-button-container,
+.de-mathematics-interactive.zip-line .explore-tab-holder-step-2-check-button-container {
+    position: absolute;
+}
+
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-1,
+.de-mathematics-interactive.zip-line .step-2-discriminant-equations-multi-dot-contaner-2 {
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #222222;
+    top: 8px;
+}
+
+/*Keep the following classes (.degree-two-common-class , .hidden & .visible) at the end only.*/
+
+.de-mathematics-interactive.zip-line .degree-two-common-class {
+    font-size: 10px;
+}
+
+.de-mathematics-interactive.zip-line .hidden {
+    display: none;
+}
+
+.de-mathematics-interactive.zip-line .visible {
+    display: block;
+}
