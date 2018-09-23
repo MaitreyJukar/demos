@@ -1,0 +1,195 @@
+/*********************************** Color and UI styling for combo *************************************/
+.custom-drop-down 
+{
+    background: url('../../../../../img/techbook2/tools/lang/en/tools/unit-converter/arrow-up-down.png') no-repeat right #F5F5F5;
+    margin: 0px;
+    color: #393939;
+    font-size: 18px;
+    font-weight: bold;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: helvetica;
+	border: 1px solid #8D8D8D;
+    border-radius: 6px;
+    overflow:hidden;
+    background-image: linear-gradient(bottom, rgb(247,247,247) 67%, rgb(227,227,227) 38%, rgb(245,245,245) 91%);
+    background-image: -o-linear-gradient(bottom, rgb(247,247,247) 67%, rgb(227,227,227) 38%, rgb(245,245,245) 91%);
+    background-image: -moz-linear-gradient(center bottom , #D6D6D6 21%, #F0F0F0 61%, #F5F5F5 81%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,247,247) 67%, rgb(227,227,227) 38%, rgb(245,245,245) 91%);
+
+    background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.67, rgb(247,247,247)),
+	    color-stop(0.38, rgb(227,227,227)),
+	    color-stop(0.91, rgb(245,245,245))
+    );
+    background-image:-ms-linear-gradient(bottom, rgb(247, 247, 247) 0%, rgb(227, 227, 227) 41%, rgb(245, 245, 245) 91%);
+    border:1px solid #2A2A2A;
+    
+}
+
+.custom-drop-down-hover {
+    border: 1px solid #A8A8A8;
+    background-color: #F8F8F8;
+	
+}
+
+.CustomCombo 
+{
+    /*
+    color: #231f20;
+    font-size: 14px;
+    height: 20px !important;
+    z-index: 0;
+    */
+}
+
+.CustomComboHolder {
+    cursor: default;
+    /*
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    */
+    padding-left: 2px;
+    height: 100%;
+    overflow: hidden;
+    /*text-shadow: 1px 1px 1px #CCC;*/
+    letter-spacing: 1px;
+}
+
+.CustomComboHolderDisabled {
+    cursor: default;
+    color: #b9b9b9;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.CustomComboDisabled {
+    cursor: default;
+    color: #b9b9b9;
+}
+
+.CustomComboItemDisabled {
+    color: #b9b9b9;
+}
+
+.CustomComboItem 
+{
+    font-family: Montserrat-Bold;
+    font-size:13px;
+    cursor: default; /*padding: 2px;*/
+    padding-left: 2px;
+    background-color: transparent; /*       Change line-height constant in javascript if u change it here       */
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    word-break: break-all;
+    padding: 1px 3px 1px 3px;
+    padding-right:15px;
+}
+
+.CustomComboSelectedItem {
+    font-family: Montserrat-Bold;
+	font-size: 15px;
+	font-weight: bold;
+    text-align:left;
+    margin-top:8px;
+    vertical-align: middle;
+    height: 35px;
+    padding-left:8px;
+    white-space: nowrap;
+    overflow: hidden;      
+    text-overflow: ellipsis;     
+}
+
+    .CustomComboDropDown sup, .CustomComboDropDown sub, .CustomComboSelectedItem sup, .CustomComboSelectedItem sub {
+        vertical-align: 0;
+        position: relative;
+        font-size: 9px;
+    }
+
+    .CustomComboDropDown sup, .CustomComboSelectedItem sup {
+        bottom: 5px;
+    }
+
+    .CustomComboDropDown sub, .CustomComboSelectedItem sub {
+        top: 3px;
+    }
+
+.CustomComboButton {
+    width: 23px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    background-position: 7px 10px !important;
+    /*ackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAAAOklEQVQokWNgQAIRERH/GYgEjNg0rVixghG7cjSN2GwipJkRn/OIsXkIALL9SH6owhikxiMKICXlAADBwBwV3e5uNwAAAABJRU5ErkJggg==);*/
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAYAAAD9lDaoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAALtJREFUKFN9kDEKhDAQRb2WWAgR7O2CpYWF1l7A1gN4gRSChQErbyBWOYCFN/mbzK7EEd3iMfyfBxkmAMBY19UO3rGwLAuiKMI0TTY+SMYYJEmCMAwRxzG2bbP1RTqOA1JKEk6yLMO+7ySS1DQNE07quv5KWmvkef7KMAx+uX88lneCeZ7R9/0r7hxkpmn6uLgQwj7/vhvHkY54l5RSXnJ0XceEtm1JYJKjqioSiqKw0fdMcpRlace1Q/ABFaFIEmy+U6EAAAAASUVORK5CYII=');
+}
+
+.CustomComboButtonImage 
+{
+    background-repeat:no-repeat !important;
+   /* background-position: 0px -96px;*/
+}
+
+.CustomComboButtonImage_Hover {
+    /*background-position: 0px -64px;*/
+}
+
+.CustomComboButtonImage_Active {
+    background-position: 0px -32px;
+}
+
+.CustomComboButtonImage_Disabled {
+    background-position: 0px 0px;
+    cursor: default !important;
+}
+
+.CustomComboGroup {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.CustomComboDropDown {
+    /*  line-height:15px; */
+    position: absolute;
+    z-index: 10000;
+    margin-top: 5px;
+    border-style: solid; /*border-radius: 5px;*/
+    border-color: #cccccc;
+    border-width: 1px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*box-shadow: 2px 2px 3px 0px #666666;       -moz-box-shadow: 2px 2px 3px 0px #666666;       -webkit-box-shadow: 2px 2px 3px 0px #666666;*/
+}
+
+.CustomComboItemSelected {
+    background-color: highlight;
+    color: #ffffff;
+}
+
+.combo-hint
+{
+    background-color: White;
+    color: gray;
+    position:absolute;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 2px;
+    padding:4px;
+    font-size:12px;
+    z-index:10001;
+    display:none;
+}

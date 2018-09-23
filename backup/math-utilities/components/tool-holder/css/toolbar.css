@@ -1,0 +1,230 @@
+﻿/*  Header  */
+
+.math-utilities-components-tool-holder {
+    height: inherit;
+    min-height: 768px;
+    min-width: 1024px;
+    width: inherit;
+}
+
+.math-utilities-components-tool-holder .math-tool-top-toolbar {
+    height: 48px;
+    top: 0;
+}
+
+.math-utilities-components-tool-holder .top-toolbar-container {
+    background-image: url('../img/header-footer-slice.png');
+    background-position: 0 -121px;
+    height: 48px;
+    min-width: 1024px;
+}
+
+
+/*  Tool title  */
+
+.math-utilities-components-tool-holder .tool-title-container {
+    display: inline-block;
+    width: 70%;
+}
+
+.math-utilities-components-tool-holder .tool-text {
+    color: #fff;
+    float: left;
+    font-family: Montserrat-Bold, Arial, sans-serif;
+    font-size: 24px;
+    left: 5px;
+    margin-top: 12px;
+    position: relative;
+    text-shadow: 1px 2px 2px #3a3737;
+    vertical-align: middle;
+    width: inherit;
+}
+
+
+/*  User defined  */
+
+
+/*  Icon image for the tool  */
+
+.math-utilities-components-tool-holder .tool-icon {
+    float: left;
+    height: 37px;
+    margin-top: 6px;
+    width: 44px;
+}
+
+
+/*  Header buttons  */
+
+.math-utilities-components-tool-holder .header-btn {
+    cursor: pointer;
+    float: left;
+    height: 36px;
+    margin-right: 12px;
+    width: 36px;
+}
+
+.math-utilities-components-tool-holder .top-toolbar-button-container {
+    display: inline-block;
+    float: right;
+    margin-top: 6px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-help {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -506px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-help:hover {
+    background-position: 0 -460px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-help:active {
+    background-position: 0 -414px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-help:disabled {
+    background-position: 0 -368px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-restore {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -870px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-restore:hover {
+    background-position: 0 -824px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-restore:active {
+    background-position: 0 -778px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-restore:disabled {
+    background-position: 0 -732px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-hide {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -138px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-hide:hover {
+    background-position: 0 -92px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-hide:active {
+    background-position: 0 -46px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-hide:disabled {
+    background-position: 0 0;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-close {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -322px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-close:hover {
+    background-position: 0 -276px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-close:active {
+    background-position: 0 -230px;
+}
+
+.math-utilities-components-tool-holder .math-tool-btn-close:disabled {
+    background-position: 0 -184px;
+}
+
+
+/*  Footer  */
+
+.math-utilities-components-tool-holder .bottom-toolbar-container {
+    background-image: url('../img/header-footer-slice.png');
+    background-position: 0 -65px;
+    height: 55px;
+    min-width: 1024px;
+}
+
+.math-utilities-components-tool-holder .bottom-toolbar-container.default-state {
+    margin-top: -10px;
+}
+
+.math-utilities-components-tool-holder .toolbar-button-container {
+    height: 55px;
+    position: relative;
+    width: 100%;
+}
+
+.math-utilities-components-tool-holder .button-holder {
+    float: left;
+}
+
+.math-utilities-components-tool-holder .math-tool-bottom-toolbar {
+    bottom: 0;
+    height: 55px;
+    position: relative;
+}
+
+
+/*  Footer buttons  */
+
+.math-utilities-components-tool-holder .footer-btn {
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    width: 65px;
+}
+
+.math-utilities-components-tool-holder .footer-btn-icon {
+    height: 35px;
+    margin: auto;
+    position: relative;
+    top: 12px;
+    width: 42px;
+}
+
+.math-utilities-components-tool-holder .footer-btn-seperator {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -956px;
+    float: left;
+    height: 37px;
+    position: relative;
+    top: 5px;
+    width: 1px;
+}
+
+.math-utilities-components-tool-holder .math-tool-save-btn-icon {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -642px;
+}
+
+.math-utilities-components-tool-holder .math-tool-open-btn-icon {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -552px;
+}
+
+.math-utilities-components-tool-holder .math-tool-screenshot-btn-icon {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -687px;
+}
+
+.math-utilities-components-tool-holder .math-tool-print-btn-icon {
+    background-image: url('../img/tool-holder-buttons.png');
+    background-position: 0 -597px;
+}
+
+
+/*  Tool Container  */
+
+.math-utilities-components-tool-holder .tool-holder-tool-container {
+    min-width: 1024px;
+    overflow: hidden;
+}
+
+.math-utilities-components-tool-holder .tool-holder {
+    height: 100%;
+    position: relative;
+}

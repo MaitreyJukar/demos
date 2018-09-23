@@ -1,0 +1,17 @@
+define('utilsAutoload', ['js/math-utilities/components/event-dispatcher/event-manager',
+    'js/math-utilities/components/event-dispatcher/event-dispatcher',
+    'js/math-utilities/components/fract-dec/js/models/fract-dec',
+    'js/math-utilities/components/tooltip/js/models/tooltip',
+    'js/math-utilities/components/tooltip/js/views/tooltip',
+    'templates/core/math-utilities/components/tooltip/tooltip',
+    'js/math-utilities/components/undo-redo/models/action',
+    'js/math-utilities/components/undo-redo/models/undo-redo-event',
+    'js/math-utilities/components/undo-redo/models/undo-manager',
+    'js/math-utilities/components/undo-redo/views/undo-manager',
+    'js/math-utilities/components/utils/models/math-helper',
+    'js/math-utilities/components/utils/models/screen-utils',
+    'js/math-utilities/components/utils/models/browser-check',
+    'js/math-utilities/components/utils/touch-simulator',
+    'js/math-utilities/components/utils/models/serializing-deserializing/scripts/models/serialize-deserialize',
+    'js/math-utilities/components/utils/models/util'
+], function() {});
