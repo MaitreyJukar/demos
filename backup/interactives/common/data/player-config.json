@@ -1,0 +1,3779 @@
+{
+    "resources": {
+        "theme1": {
+            "isNewJsonType": true,
+            "fonts": [
+                {
+                    "url": [
+                        {
+                            "path": "webfonts/Montserrat/montserrat-regular.woff",
+                            "type": "woff"
+                        },
+                        {
+                            "path": "webfonts/Montserrat/montserrat-regular.woff2",
+                            "type": "woff2"
+                        }
+                    ],
+                    "name": "Montserrat",
+                    "basePath": "MATH_UTILITIES_CSS"
+                },
+                {
+                    "url": [
+                        {
+                            "path": "webfonts/Montserrat/montserrat-bold.woff",
+                            "type": "woff"
+                        },
+                        {
+                            "path": "webfonts/Montserrat/montserrat-bold.woff2",
+                            "type": "woff2"
+                        }
+                    ],
+                    "name": "Montserrat-Bold",
+                    "basePath": "MATH_UTILITIES_CSS"
+                }
+            ],
+            "css": [
+                {
+                    "url": "player.css",
+                    "basePath": "COMMON_CSS"
+                },
+                {
+                    "url": "animate.css",
+                    "basePath": "ANIMATE_CSS"
+                },
+                {
+                    "url": "math-interactive-reset.css",
+                    "basePath": "COMMON_CSS"
+                }
+            ],
+            "js": [
+                {
+                    "url": "components/models/speech-stream.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/animation-utils.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/stop-watch.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/screen-utils.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/utils.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "plugin/html2canvas/html2canvas-custom.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "plugin/canvg/canvg-custom.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/browser-check.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/validator.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/base.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/base-interactive.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/base.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/views/button.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/models/button.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/views/tooltip.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/models/tooltip.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/tts-generator.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/tts-generator.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/definition-box.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/definition-box.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/pop-up.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/pop-up.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/player.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/player-header.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/tab.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/activity-area.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/canvas-item.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/player.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/player-header.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/tab.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/activity-area.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/activity-area.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/tabs.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/canvas-item.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/canvas-items.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/base.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "jquery.tablesorter.min.js",
+                    "basePath": "JQUERY_JS"
+                },
+                {
+                    "url": "jquery.ui.touch.js",
+                    "basePath": "JQUERY_JS"
+                },
+                {
+                    "url": "player/views/screen-shot-modal.js",
+                    "basePath": "COMMON_SCRIPT"
+                }
+            ],
+            "components": [
+                "manager",
+                "drag-drop",
+                "theme1-input-box",
+                "context-menu",
+                "hint-feedback",
+                "theme1-custom-combo-box",
+                "local-instruction",
+                "theme1-custom-spinner",
+                "theme1-data-table",
+                "tooltip",
+                "counter-label",
+                "canvas-acc",
+                "intro-box",
+                "feedback-badge",
+                "theme1-slider",
+                "theme1-check-box",
+                "theme1-radio-button",
+                "theme1-data-table",
+                "drag-select",
+                "animate-css",
+                "utils-autoload"
+            ],
+            "templates": [
+                {
+                    "url": "player/popUp.js",
+                    "basePath": "COMMON_TEMPLATE"
+                },
+                {
+                    "url": "player/header.js",
+                    "basePath": "COMMON_TEMPLATE"
+                },
+                {
+                    "url": "player/definitionBox.js",
+                    "basePath": "COMMON_TEMPLATE"
+                },
+                {
+                    "url": "components/tooltip.js",
+                    "basePath": "COMMON_TEMPLATE"
+                },
+                {
+                    "url": "player/screenShotModal.js",
+                    "basePath": "COMMON_TEMPLATE"
+                }
+            ],
+            "media": {
+                "image": [
+                    {
+                        "id": "player-lr",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "player-m",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "buttons-icons",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "header-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "hint-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "tts-play-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "tts-pause-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "tts-sound-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "action-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "action-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "general-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "general-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "save-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "save-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "multi-toggle-black-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "multi-toggle-black-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "delete-bin-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "close-orange-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "close-orange-cross-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "close-purple-cross-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "on-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "on-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "off-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "off-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-blue-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-blue-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-green-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-green-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-red-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-red-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-blue-small-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "draggable-blue-small-button-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-button-definition-box",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-button-definition-box-mid",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "dot-helper",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-left-arrow-head",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-right-arrow-head",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-dot",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-dot-outline",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "arrow-line",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "dot-helper-pan",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-left-arrow-head-pan",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-right-arrow-head-pan",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-dot-pan",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "purple-dot-outline-pan",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "arrow-line-pan",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "users-graph-line",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "feedback-graph-line",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "tooltip-left",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "tooltip-middle",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "tooltip-right",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "sound-mgr-button",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "red-tile-left-right",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "red-tile-middle",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "green-tile-left-right",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "green-tile-middle",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "shadow-left",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "shadow-middle",
+                        "url": "sprites/sprite-vertical.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "shadow-right",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "left-arrow",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    },
+                    {
+                        "id": "right-arrow",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    }
+                ],
+                "audio": [ ],
+                "video": [ ]
+            }
+        },
+        "theme2": {
+            "isNewJsonType": true,
+            "fonts": [
+                {
+                    "url": [
+                        {
+                            "path": "webfonts/Montserrat/montserrat-regular.woff2",
+                            "type": "woff2"
+                        },
+                        {
+                            "path": "webfonts/Montserrat/montserrat-regular.woff",
+                            "type": "woff"
+                        }
+                    ],
+                    "name": "Montserrat",
+                    "basePath": "MATH_UTILITIES_CSS"
+                },
+                {
+                    "url": [
+                        {
+                            "path": "webfonts/Montserrat/montserrat-bold.woff2",
+                            "type": "woff2"
+                        },
+                        {
+                            "path": "webfonts/Montserrat/montserrat-bold.woff",
+                            "type": "woff"
+                        }
+                    ],
+                    "name": "Montserrat-Bold",
+                    "basePath": "MATH_UTILITIES_CSS"
+                }
+            ],
+            "css": [
+                {
+                    "url": "player.css",
+                    "basePath": "COMMON_CSS"
+                },
+                {
+                    "url": "math-interactive-reset.css",
+                    "basePath": "COMMON_CSS"
+                }
+            ],
+            "js": [
+                {
+                    "url": "jquery.ui.touch.js",
+                    "basePath": "JQUERY_JS"
+                },
+                {
+                    "url": "components/models/speech-stream.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/animation-utils.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "utils/models/stop-watch.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "utils/models/screen-utils.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "utils/models/math-utils.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "utils/models/canvas-raster-loader.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "utils/models/utils.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/svg-utils.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/data-structure.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "plugin/html2canvas/html2canvas-custom.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "canvg/rgbcolor.js",
+                    "basePath": "COMMON_VENDOR",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "canvg/stackblur.js",
+                    "basePath": "COMMON_VENDOR",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "plugin/canvg/canvg-custom.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "utils/models/browser-check.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "utils/models/validator.js",
+                    "basePath": "COMMON_SCRIPT",
+                    "isNextStepLoad": true
+                },
+                {
+                    "url": "player/models/base.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/base-interactive.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/base.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/views/button-theme2.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/models/button-theme2.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/views/button-theme2-extended.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/views/theme2-tooltip.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "components/models/theme2-tooltip.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/tts-generator.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/tts-generator.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/player.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/player-header.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/tab.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/activity-area.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/player.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/player-header.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/tab.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/activity-area.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/activity-area.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/tabs.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/models/canvas-item.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/canvas-items.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/collections/base.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "jquery.tablesorter.min.js",
+                    "basePath": "JQUERY_JS"
+                },
+                {
+                    "url": "plugin/custom-slider.js",
+                    "basePath": "COMMON_SCRIPT"
+                },
+                {
+                    "url": "player/views/screen-shot-modal.js",
+                    "basePath": "COMMON_SCRIPT"
+                }
+            ],
+            "components": [
+                "manager",
+                "drag-drop",
+                "theme2-help",
+                "theme2-drag-drop",
+                "theme2-input-box",
+                "theme2-custom-spinner",
+                "theme2-empty-modal",
+                "theme2-overview-tab",
+                "theme2-data-table",
+                "theme2-direction-text",
+                "theme2-pop-up-box",
+                "context-menu",
+                "theme2-check-box",
+                "theme2-combobox",
+                "theme2-radio-button",
+                "theme2-slider",
+                "theme2-canvas-acc",
+                "theme2-feedback",
+                "theme2-toggle-button",
+                "animate-css",
+                "theme2-tooltip",
+                "utils-autoload"
+            ],
+            "templates": [
+                {
+                    "url": "player/header.js",
+                    "basePath": "COMMON_TEMPLATE"
+                },
+                {
+                    "url": "components/tooltip.js",
+                    "basePath": "COMMON_TEMPLATE"
+                },
+                {
+                    "url": "components/sliderHandle.js",
+                    "basePath": "COMMON_TEMPLATE"
+                },
+                {
+                    "url": "player/screenShotModal.js",
+                    "basePath": "COMMON_TEMPLATE"
+                }
+            ],
+            "media": {
+                "image": [
+                    {
+                        "id": "buttons-icons",
+                        "url": "sprites/sprite.png",
+                        "basePath": "COMMON_IMAGE"
+                    }
+                ],
+                "audio": [ ],
+                "video": [ ]
+            }
+        },
+        "components": {
+            "manager": {
+                "componentType": 0,
+                "themeType": 0,
+                "stepNumber": 1,
+                "css": [ ],
+                "js": [ ],
+                "templates": [ ],
+                "requireModules": [
+                    {
+                        "module": "accessibilityAutoload"
+                    }
+                ]
+            },
+            "button": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/button.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/button.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/tooltip.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/tooltip.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "legend-button": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/legend-button.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/legend-button.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "pan-balance": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/pan.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/pan-balance-equation.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/pan-balance.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/pan-balance.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/pan-balance-draggable-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/pan-balance-structured.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/pan-balance-structured.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/drag-select.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/drag-select.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/panBalance.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/panBalanceStructured.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/panBalanceDraggableTile.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "pan-balance",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "temporary-bin",
+                            "url": "player/temporary-bin.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-green-left-right",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-green-draggable-left-right",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-green-mid",
+                            "url": "sprites/sprite-vertical.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-green-draggable-mid",
+                            "url": "sprites/sprite-vertical.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-red-left-right",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-red-draggable-left-right",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-red-mid",
+                            "url": "sprites/sprite-vertical.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "pan-balance-red-draggable-mid",
+                            "url": "sprites/sprite-vertical.png",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "theme1-input-box": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/input-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/input-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "context-menu": {
+                "componentType": 0,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/contextmenu.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/contextmenu.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "hint-feedback": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/hint-feedback.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/hint-feedback.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/hintFeedback.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "grid-area": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/ratio-bar.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/ratio-bar.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/grid-area.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/grid-area.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/score-meter.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "local-instruction": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/local-instruction.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/local-instruction.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "theme1-custom-spinner": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/custom-spinner.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/custom-spinner.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/customSpin.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme1-number-line": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/numberLine.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "advance-number-line": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/advance-number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/advance-number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/numberLineAdvance.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "drag-drop-numberline": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/drag-drop-numberline.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/drag-drop-numberline.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/dragDrop.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "drag-drop-panbalance": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/drag-drop-panbalance.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/drag-drop-panbalance.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/dragDropPanBalance.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme1-custom-combo-box": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/custom-combobox.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/custom-combobox.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "customCombo",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "intro-box": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/intro-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/intro-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/introBox.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "feedback-badge": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/feedback-badge.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/feedback-badge.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "theme1-slider": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/slider.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/slider.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "slider-pink-handler",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "theme1-check-box": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/check-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/check-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/checkBox.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "check-box-states",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "theme1-radio-button": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/radio-button.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/radio-button.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/radioButton.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "radio-button-states",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "counter-label": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/counter-label.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/counter-label.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/counterLabel.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "motion-graph": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/motion-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/motion-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "trashcan-up",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "trashcan-disabled",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "trashcan-hover",
+                            "url": "sprites/sprite.png",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "theme1-data-table": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/data-table.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/data-table.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/tableSortNotation.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "graph": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/graphIt.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "drag-select": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/drag-select.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/drag-select.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "drag-drop": {
+                "componentType": 0,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/drag-drop.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/dragDrop.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "ruler": {
+                "componentType": 1,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/ruler.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/ruler.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/ruler.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "sound-manager": {
+                "componentType": 0,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/sound-manager.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/sound-manager.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "sound-preloder",
+                            "url": "sound-manager/preloader.gif",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "tooltip": {
+                "componentType": 0,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/tooltip.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/tooltip.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/tooltip.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "virtual-keyboard": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "css": [
+                    {
+                        "url": "tools/common/common.css",
+                        "basePath": "MATH_UTILITIES_CSS"
+                    },
+                    {
+                        "url": "css/mathquill.css",
+                        "basePath": "MATHQUILL"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "components/zeus-mathquill/js/mathquill.js",
+                        "basePath": "MATH_UTILITIES_JS"
+                    }
+                ],
+                "requireModules": [
+                    {
+                        "module": "ttiBasicsAutoload"
+                    }
+                ]
+            },
+            "tools-graph": {
+                "componentType": 1,
+                "themeType": 0,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "isNextStepLoad": true,
+                        "url": "components/models/theme2-tools-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "requireModules": [
+                    {
+                        "module": "ttiBasicsAutoload"
+                    },
+                    {
+                        "module": "equationPlotterAutoload"
+                    }
+                ]
+            },
+            "tools-graph-accessibility": {
+                "componentType": 1,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "isNextStepLoad": true,
+                        "url": "components/models/theme2-tools-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "requireModules": [
+                    {
+                        "module": "ttiBasicsAutoload"
+                    },
+                    {
+                        "module": "accessibilityAutoload"
+                    }
+                ]
+            },
+            "theme2-button": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/button-theme2.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/button-theme2.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/tooltip.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/tooltip.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "theme2-help": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/theme2-help.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-help.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2Help.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-drag-drop": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-drag-drop-tile.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-drag-drop-tile.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-tile-bin-castor.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-tile-bin-castor.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-tile-drop-slot.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-tile-drop-slot.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-tile-footprint.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-tile-footprint.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-input-box": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-input-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-input-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "theme2-custom-spinner": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-custom-spinner.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-custom-spinner.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2CustomSpinner.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+             "theme2-custom-spinner-extended": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/theme2-custom-spinner-extended.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "theme2-empty-modal": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-empty-modal.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-empty-modal.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2EmptyModal.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-accordion": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/theme2-accordion.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ]
+            },
+            "theme2-overview-tab": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/theme2-overviewTab.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-overviewTab.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2OverviewTab.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-explorer-graph": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/explorer-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/explorer-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/explorerGraph.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-explore-shape": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/explore-shape.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/explore-shape.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/explorerShapeEllipse.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/explorerShapeCircle.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-curve-graph": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "paper-full.js",
+                        "basePath": "PAPER_JS",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/curve-graph.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "components/views/curve-graph.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ]
+            },
+            "theme2-data-table": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-data-table.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-data-table.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/tableSortNotation.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-direction-text": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-direction-text.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-direction-text.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/directionText.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-pop-up-box": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-pop-up-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-pop-up-box.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2PopUpBox.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-check-box": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/theme2-check-box.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-check-box.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2CheckBox.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-combobox": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/theme2-combobox.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-combobox.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2Combobox.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-radio-button": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/theme2-radio-button.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-radio-button.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2RadioButton.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-slider": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+				"media":{
+					"cur": [
+						{
+					        "id": "closed-hand",
+							"url": "cursor/closedhand.cur",
+							"basePath": "COMMON_IMAGE"
+					    },
+						{
+					        "id": "open-hand",
+							"url": "cursor/openhand.cur",
+							"basePath": "COMMON_IMAGE"
+					     }
+					]
+				},
+                "js": [
+                    {
+                        "url": "components/views/theme2-slider.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-slider.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/sliderHandle.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-feedback": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-feedback.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-feedback.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2Feedback.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-toggle-button": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/theme2-toggle-button.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-toggle-button.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2ToggleSlider.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-tooltip": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/views/theme2-tooltip.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-tooltip.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-bounded-tooltip-list.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-bounded-tooltip.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-bounded-tooltip-list.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-bounded-tooltip.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/views/theme2-canvas-tooltip.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/theme2-canvas-tooltip.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "paper-js": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "paperJS"
+                    }
+                ]
+            },
+            "jquery-ui": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "jqueryUICustom"
+                    }
+                ]
+            },
+            "jquery-ui-touch": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "jqueryUITouch"
+                    }
+                ]
+            },
+            "jquery-mousewheel": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "jqueryMouseWheel"
+                    }
+                ]
+            },
+            "jquery-table-sorter": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "jqueryTableSorter"
+                    }
+                ]
+            },
+            "tts-help-main": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "ttsHelpMain"
+                    }
+                ]
+            },
+            "custom-slider": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "customSlider"
+                    }
+                ]
+            },
+            "highcharts": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "highCharts"
+                    }
+                ]
+            },
+            "highcharts-more": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "highChartsMore"
+                    }
+                ]
+            },
+            "utils-autoload": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "js": [
+                ],
+                "requireModules": [
+                    {
+                        "module": "ttiBasicsAutoload"
+                    }
+                ]
+            },
+            "canvas-acc": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "player/models/canvas-item.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "player/collections/canvas-items.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "player/models/canvas-acc.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "player/views/canvas-acc.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-canvas-acc": {
+                "componentType": 0,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "player/models/canvas-item.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "player/collections/canvas-items.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "player/models/canvas-acc.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "player/views/canvas-acc.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": true
+                    }
+                ]
+            },
+            "theme2-number-line": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2NumberLine.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "theme2-checkbox-extended": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/theme2-check-box-extended.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "theme2-number-line-extended": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/theme2-number-line-extended.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "theme2-custom-image-spinner": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-custom-image-spinner.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-custom-image-spinner.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2CustomImageSpinner.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "animate-css": {
+                "componentType": 4,
+                "themeType": 0,
+                "stepNumber": 1,
+                "css": [
+                    {
+                        "url": "animate.css",
+                        "basePath": "ANIMATE_CSS"
+                    }
+                ]
+            },
+            "cango-3d": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "cango-3d/Cango3D-7v00-custom.js",
+                        "basePath": "PLUGIN",
+                        "isNextStepLoad": true
+                    },
+                    {
+                        "url": "components/models/cango3d-wrapper.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+
+            "theme2-3d-shape": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-3d-shape.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+
+            "theme2-tutorial-player": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/theme2-tutorial-player.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "components/views/theme2-tutorial-player.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ]
+            },
+            "equation-manager": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/equation-manager/tile-items/tile-item.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "components/models/equation-manager/marquee.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/base-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/reposition-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/build-reposition-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/combine-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/break-exponent-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/apply-exponent-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/change-sign-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/build-reposition-individual-tile-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/break-base-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/add-tile-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/replace-tile-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/delete-tile-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/swap-tile-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/shift-parentheses-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/commands/command-factory.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/equation-manager.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/equation-manager.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/marquee.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/form-expression-equation-manager.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/tile-items/equation-component.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/tile-items/base-tile-item.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/tile-items/base-exp-tile-item.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/tile-items/parenthesis-tile-item.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/tile-items/big-parenthesis-tile-item.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager/tile-items/fraction-tile-item.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/tile-item-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/equation-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/fraction-tileitem-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/parenthesis-tileitem-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/big-parenthesis-tile-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/base-tileitem-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager/baseexp-tileitem-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/equation-manager/baseExpTile.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/equation-manager/baseTile.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "equation-manager-pro-step-1": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "components/models/equation-manager-pro/equation-manager-pro.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/equation-manager-pro.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+					 {
+                        "url": "components/views/equation-manager-pro/equation-manager-pro-acc.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "templates": [
+
+                ]
+            },
+            "equation-manager-pro-step-2": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/tile-item.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/tree-node.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/marquee.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/marquee.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/equation.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/base-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/combine-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/check-parentheses-rules.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/check-fraction-rules.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/parentheses-exponent-click.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/break-base.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/take-out-common-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/reposition-command.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/add-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/replace-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/base-exp-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/parentheses-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/squared-parentheses-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/fraction-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/expression.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/term-tile.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/tile-items/tile-item.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/tile-item-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/equation-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/expression-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/fraction-tile-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/parentheses-tile-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/squared-parentheses-tile-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/term-tile-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/tile-items/base-exp-tile-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/equation-manager-pro/commands/command-factory.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/equation-manager-pro/derived-context-menu.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/equation-manager-pro/baseTilePro.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/equation-manager-pro/equationViewTemplate.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/equation-manager-pro/parenthesesTemplate.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+					{
+						"url": "components/equation-manager-pro/binTileArray.js",
+                        "basePath": "COMMON_TEMPLATE"
+					},
+					{
+						"url": "components/equation-manager-pro/buttonGroup.js",
+                        "basePath": "COMMON_TEMPLATE"
+					},
+					{
+						"url": "components/equation-manager-pro/exprContainer.js",
+                        "basePath": "COMMON_TEMPLATE"
+					},
+					{
+						"url": "components/equation-manager-pro/headerExprContainer.js",
+                        "basePath": "COMMON_TEMPLATE"
+					},
+					{
+						"url": "components/equation-manager-pro/mathematicalOperators.js",
+                        "basePath": "COMMON_TEMPLATE"
+					},
+					{
+						"url": "components/equation-manager-pro/fractionExpr.js",
+                        "basePath": "COMMON_TEMPLATE"
+					},
+					{
+						"url": "components/equation-manager-pro/termTileExpr.js",
+                        "basePath": "COMMON_TEMPLATE"
+					},
+					{
+						"url": "components/equation-manager-pro/parenthesesExpr.js",
+                        "basePath": "COMMON_TEMPLATE"
+					}
+				]
+            },
+            "virus-zapper": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "virus-zapper/virus-zapper.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "json": [ ],
+                "js": [
+                    {
+                        "url": "interactive/virus-zapper/views/virus-zapper.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/models/virus-zapper.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/views/ques-ans-panel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/models/ques-ans-panel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/views/virus-data-wrapper.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/views/number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/models/virus-data-wrapper.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/models/number-line.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/views/virus-display-animation.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/virus-zapper/numberLine.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/quesAnsPanel.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/qsnDisplay.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/tableQsnDisplay.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/virusDisplay.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/bonusVirus.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/customVirus.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/dataTab.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/virus-zapper/exploreTab.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "Overview_image",
+                            "url": "virus-zapper/Overview_image.jpg",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        },
+                        {
+                            "id": "virus-zapper-sprite-1",
+                            "url": "virus-zapper/sprite-1.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        },
+                        {
+                            "id": "virus-zapper-sprite-2",
+                            "url": "virus-zapper/sprite-2.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "trignometric-graph": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "trignometric-graph/trignometric-graph.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "json": [ ],
+                "js": [
+                    {
+                        "url": "interactive/trignometric-graph/models/trignometricGraphing.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/trignometric-graph/views/trignometricGraphing.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/trignometric-graph/models/trignometricMapping.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/trignometric-graph/views/trignometricMapping.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/trignometric-graph/models/trignometricGaphPlotting.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/trignometric-graph/views/trignometricGaphPlotting.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/trignometric-graph/exploreTrigGraph.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/trignometric-graph/trignometricMapping.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/trignometric-graph/surdsFormat.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [ ]
+                }
+            },
+            "line-stretcher": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "line-stretcher/line-stretcher.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS",
+                        "isNextStepLoad": true
+                    }
+                ],
+                "json": [ ],
+                "js": [
+                    {
+                        "url": "interactive/line-stretcher/views/line-stretcher.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/line-stretcher/models/line-stretcher.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/line-stretcher/explore.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "line-stretcher-overview",
+                            "url": "line-stretcher/Overview_image.jpg",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        },
+                        {
+                            "id": "explore-grid",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "url": "line-stretcher/Grid_L.png"
+                        },
+                        {
+                            "id": "horizontal-sequence-sprite",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "url": "line-stretcher/horizontal_sequence_sprite.png"
+                        },
+                        {
+                            "id": "vertical-sequence-sprite",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "url": "line-stretcher/vertical_sequence_sprite.png"
+                        },
+                        {
+                            "id": "diagonal-sequence-sprite",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "url": "line-stretcher/diagonal_sequence_sprite.png"
+                        },
+                        {
+                            "id": "raster-sprite",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "url": "line-stretcher/raster_sprite.png",
+                            "forceLoad": true
+                        },
+                        {
+                            "id": "book-group",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "url": "line-stretcher/Book_grp_2.png",
+                            "forceLoad": true
+                        }
+                    ]
+                }
+            },
+            "data-set-selector": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/views/data-set-selector.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/data-set-selector.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/collections/data-set-collection.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/dataSetSelectorScreen.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/dataSetContainer.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "components/editSymbol.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [ ]
+                }
+            },
+            "conic-explorer": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "conic-explorer/conic-explorer.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "interactive/conic-explorer/views/conic-explorer.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/conic-explorer/views/data-tab.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/conic-explorer/models/conic-explorer.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/conic-explorer/conicExplorerGraph.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/conic-explorer/dataTab.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/conic-explorer/equationHolder.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "explore-shapes",
+                            "url": "ellipse-explorer/shape_images.png",
+                            "basePath": "COMMON_IMAGE",
+                            "forceLoad": true
+                        }
+                    ]
+                }
+            },
+            "interactives-math-utilities-graph": {
+                "componentType": 0,
+                "themeType": 1,
+                "stepNumber": 1,
+                "css": [
+                    {
+                        "url": "grid-graph.css",
+                        "basePath": "COMMON_CSS"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "components/models/math-utilities-graph/grid-graph-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/math-functions-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/equation-parser-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/geometric-functions-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/plotter-model-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/profiling-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/math-utilities-graph/grid-graph-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/math-utilities-graph/plotter-view-new.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "google-mapper-math-utilities-graph": {
+                "componentType": 1,
+                "themeType": 1,
+                "stepNumber": 1,
+                "css": [
+                    {
+                        "url": "grid-graph.css",
+                        "basePath": "COMMON_CSS"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "components/models/math-utilities-graph/grid-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/math-functions.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/equation-parser.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/geometric-functions.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/plotter-model.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/models/math-utilities-graph/profiling.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/math-utilities-graph/grid-graph.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/math-utilities-graph/plotter-view.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "archaeological-dig-step-2": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "archaeological-dig/archaeological-dig.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "interactive/archaeological-dig/views/explore.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/archaeological-dig/views/left-panel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/archaeological-dig/views/right-panel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/archaeological-dig/explore.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/archaeological-dig/leftPanel.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/archaeological-dig/rightPanel.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/archaeological-dig/objectInfoTooltip.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "archaeological-dig-background",
+                            "url": "archaeological-dig/background.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        },
+                        {
+                            "id": "archaeological-dig-icons",
+                            "url": "archaeological-dig/icons.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        },
+                        {
+                            "id": "archaeological-dig-images",
+                            "url": "archaeological-dig/images.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        },
+                        {
+                            "id": "men-animation",
+                            "url": "archaeological-dig/animation.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        },
+                        {
+                            "id": "pop-up",
+                            "url": "archaeological-dig/popup.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "archaeological-dig-step-1": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "interactive/archaeological-dig/models/archaeological-dig-interactive.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "interactive/archaeological-dig/views/overview.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/archaeological-dig/overview.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "archaeological-dig-overview",
+                            "url": "archaeological-dig/overview.jpg",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        }
+                    ]
+                }
+            },
+            "shape-decomposition-step-1": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "paper-full.js",
+                        "basePath": "PAPER_JS",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "interactive/shape-decomposition/models/shape-decomposition.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "interactive/shape-decomposition/views/overview.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/shape-decomposition/overview.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "overview-bg-1",
+                            "url": "shape-decomposition/overview-bg-1.jpg",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        },
+                        {
+                            "id": "overview-bg-2",
+                            "url": "shape-decomposition/overview-bg-2.jpg",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        }
+                    ]
+                }
+            },
+            "shape-decomposition-step-2": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "shape-decomposition/shape-decomposition.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "interactive/shape-decomposition/views/explore.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-decomposition/views/left-panel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-decomposition/views/paper-event-functions.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-decomposition/views/button-clicks.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-decomposition/views/right-panel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+					{
+                        "url": "interactive/shape-decomposition/views/canvas-accessibility.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/shape-decomposition/explore.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/shape-decomposition/tableRow.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "bg-image",
+                            "url": "shape-decomposition/bg-image.jpg",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        },
+                        {
+                            "id": "reflect",
+                            "url": "shape-decomposition/icon-reflect.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        },
+                        {
+                            "id": "rotate",
+                            "url": "shape-decomposition/icon-rotate.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE",
+                            "isNextStepLoad": false
+                        }
+                    ],
+                    "cur": [
+                        {
+                            "id": "closed-hand",
+                            "url": "cursor/closedhand.cur",
+                            "basePath": "COMMON_IMAGE"
+                        },
+                        {
+                            "id": "open-hand",
+                            "url": "cursor/openhand.cur",
+                            "basePath": "COMMON_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "exponent-accordion-step-1": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "interactive/exponent-accordion/initialize.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/models/exponent-accordion.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/overview.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/exponent-accordion/overview.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "media": {
+                    "image": [
+                    ]
+                }
+            },
+            "exponent-accordion-step-2": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "exponent-accordion/exponent-accordion.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "interactive/exponent-accordion/models/create-expression.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/form-expression-equation-manager.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/equation-manager-interactive.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/form-expression.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/tutorial-form-expression.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/tutorial-screen.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/data.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/derived-accordion.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/views/derived-context-menu.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/exponent-accordion/tiles.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/formExpression.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/tutorial-screen.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/term-tile.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/exponent-accordion/data.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "sprites",
+                            "url": "exponent-accordion/sprites.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        }
+                    ]
+                }
+            },
+            "theme2-carousel": {
+                "componentType": 1,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "components/models/theme2-carousel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "components/views/theme2-carousel.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "components/theme2Carousel.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+
+                    {
+                        "url": "components/theme2CarouselColumn.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ]
+            },
+            "shape-slicer-step-1": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 1,
+                "js": [
+                    {
+                        "url": "interactive/shape-slicer/initialize.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/shape-slicer.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/overview.js",
+                        "basePath": "COMMON_SCRIPT",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/shape-slicer/overview.js",
+                        "basePath": "COMMON_TEMPLATE",
+                        "isNextStepLoad": false
+                    }
+                ],
+                "media": {
+                    "image": [
+
+                    ]
+                }
+            },
+            "shape-slicer-step-2": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "css": [
+                    {
+                        "url": "shape-slicer/shape-slicer.css",
+                        "basePath": "COMMON_INTERACTIVE_CSS"
+                    }
+                ],
+                "js": [
+                    {
+                        "url": "interactive/shape-slicer/views/custom-trackball.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/explore-shape-slicer.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+					{
+                        "url": "interactive/shape-slicer/views/gallery-canvas.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/gallery-shape-slicer.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/colors.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+
+                    {
+                        "url": "interactive/shape-slicer/models/color-picker.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/color-picker.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/shape-3d.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/cube.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/cube.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/shape-2d.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/shape-2d.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/edit-popup.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ],
+                "templates": [
+                    {
+                        "url": "interactive/shape-slicer/exploreShapeSlicer.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/galleryShapeSlicer.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/colorPicker.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/shapeButton.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/editPopup.js",
+                        "basePath": "COMMON_TEMPLATE"
+                    }
+                ],
+                "media": {
+                    "image": [
+                        {
+                            "id": "sprites",
+                            "url": "shape-slicer/sprites.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        },
+						{
+                            "id": "color-picker",
+                            "url": "shape-slicer/color-picker-sprite.png",
+                            "basePath": "COMMON_INTERACTIVE_IMAGE"
+                        }
+                    ]
+                }
+            },
+
+            "shape-slicer-shapes": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "interactive/shape-slicer/models/cone.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/sphere.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/cylinder.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/prism.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/tetrahedron.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/cone.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/sphere.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/cylinder.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/prism.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/tetrahedron.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            },
+            "prism-pyramid-slicer-shapes": {
+                "componentType": 2,
+                "themeType": 2,
+                "stepNumber": 2,
+                "js": [
+                    {
+                        "url": "interactive/shape-slicer/models/pyramid.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/models/triangular-prism.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/pyramid.js",
+                        "basePath": "COMMON_SCRIPT"
+                    },
+                    {
+                        "url": "interactive/shape-slicer/views/triangular-prism.js",
+                        "basePath": "COMMON_SCRIPT"
+                    }
+                ]
+            }
+        }
+    }
+}

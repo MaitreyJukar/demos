@@ -1,0 +1,41 @@
+﻿<div id="{{idPrefix}}{{idSuffix}}delete-dataset-tooltip-container" class="data-set-selector delete-dataset-tooltip"></div>
+{{#each models}}
+<div id="{{../idPrefix}}{{../idSuffix}}data-set-{{@index}}" class="data-set-selector data-set data-set-{{@index}}" data-set-index="{{@index}}">
+  <div id="{{../idPrefix}}{{../idSuffix}}data-set-image-container-{{@index}}" class="data-set-selector data-set-image-container" data-set-index="{{@index}}">
+    <div id="{{../idPrefix}}{{../idSuffix}}data-set-image-{{@index}}" class="data-set-selector data-set-image data-set-image-{{@index}}" data-set-index="{{@index}}"></div>
+  </div>
+  <div id="{{../idPrefix}}{{../idSuffix}}data-set-title-container-{{@index}}" class="data-set-selector data-set-title-container {{#if attributes.isUserData}}user-data-set-container{{/if}}" data-set-index="{{@index}}">
+    <div id="{{../idPrefix}}{{../idSuffix}}data-set-title-{{@index}}" class="data-set-selector data-set-title" data-set-index="{{@index}}">{{{attributes.dataSetName}}}</div>
+  </div>
+  {{#if ../showNumbers}}
+  <div id="{{../idPrefix}}{{../idSuffix}}data-set-number-container-{{@index}}" class="data-set-selector data-set-number-container">
+    <div id="{{../idPrefix}}{{../idSuffix}}data-set-number-text-{{@index}}" class="data-set-selector data-set-number-text">{{@index}}</div>
+  </div>
+  {{/if}}
+  {{#if attributes.isUserData}}
+  <div id="{{../../idPrefix}}{{../../idSuffix}}data-set-delete-btn-container-{{@index}}" class="data-set-selector data-set-delete-btn-container" data-set-index="{{@index}}">
+    <div id="{{../../idPrefix}}{{../../idSuffix}}data-set-delete-btn-{{@index}}" class="data-set-selector data-set-delete-btn" data-set-index="{{@index}}">
+      <div id="{{../../idPrefix}}{{../../idSuffix}}data-set-delete-btn-icon-{{@index}}" class="data-set-selector data-set-delete-btn-icon" data-set-index="{{@index}}"></div>
+    </div>
+  </div>
+  {{/if}}  
+</div>
+{{/each}}
+{{#if userDataFree}}
+<div id="{{idPrefix}}{{idSuffix}}add-your-own" class="data-set-selector add-your-own">
+  <div id="{{idPrefix}}{{idSuffix}}add-your-own-text-container" class="data-set-selector add-your-own-text-container">
+    <div id="{{idPrefix}}{{idSuffix}}add-your-own-text" class="data-set-selector add-your-own-text">
+      {{addBtnText}}
+      <div id="{{idPrefix}}{{idSuffix}}add-your-own-btn-container" class="data-set-selector add-your-own-btn-container">
+        <div id="{{idPrefix}}{{idSuffix}}add-your-own-btn" class="data-set-selector add-your-own-btn"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/if}}
+{{#if showEmptyDataSets}}
+{{#each emptyDataSets}}
+<div id="{{../idPrefix}}{{../idSuffix}}empty-data-set-{{this}}" class="data-set-selector empty-data-set-{{this}} empty-data-set">
+</div>
+{{/each}}
+{{/if}}

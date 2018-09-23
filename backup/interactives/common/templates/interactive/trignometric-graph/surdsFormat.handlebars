@@ -1,0 +1,200 @@
+﻿<div id="{{idPrefix}}surd-format" class="surd-format">
+  <math>
+
+    {{#if radiusValType.Type1}}
+
+    {{/if}}
+
+    {{#if radiusValType.Type2}}
+    <mn>{{radiusNormal}}</mn><mo>.</mo><mn>{{radiusDecimal}}</mn><mo>&#183;</mo>
+    {{/if}}
+
+    {{#if radiusValType.Type3}}
+    <mn>{{radiusNormal}}</mn><mo>&#183;</mo>
+    {{/if}}
+    
+    <mi>{{trignometricType}}</mi>
+    
+    <mfenced><mrow>
+
+      {{#if distanceValType.Type1}}
+      
+      {{/if}}
+
+      {{#if distanceValType.Type2}}
+      <mn>{{distanceNormal}}</mn><mo>.</mo><mn>{{distanceDecimal}}</mn><mo>&#183;</mo>
+      {{/if}}
+
+      {{#if distanceValType.Type3}}
+      <mn>{{distanceNormal}}</mn><mo>&#183;</mo>
+      {{/if}}
+      
+
+      {{#if angleType.Type1}}
+        <mn>{{angleNormal}}</mn>
+      {{/if}}
+
+      {{#if angleType.Type2}}
+        <mo>{{angleType.angleOperator}}</mo><mi mathvariant="normal">&#960;</mi>
+      {{/if}}
+
+      {{#if angleType.Type3}}
+        <mfrac><mrow><mn>{{angleNormal}}</mn></mrow><mn>{{angleDenominator}}</mn></mfrac>
+      {{/if}}
+
+    </mrow></mfenced>
+    
+    <mo>=</mo>
+
+    {{#if denominatorPresent}}
+
+    {{#if surdType.Type1}} <!-- sqrt(sqrt(x)+sqrt(x)))/y-->    
+    <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><msqrt><mn>{{val1}}</mn></msqrt><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></msqrt></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+
+    {{#if surdType.Type2}} <!-- sqrt(x+sqrt(x)))/y-->
+    <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></msqrt></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+
+    {{#if surdType.Type3}}   <!-- sqrt(sqrt(x)+x))/y-->
+    <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><msqrt><mn>{{val1}}</mn></msqrt><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><mn>{{val2}}</mn></msqrt></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+
+    {{#if surdType.Type4}}  <!-- sqrt(x+x))/y-->
+    <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><mn>{{val2}}</mn></msqrt></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+
+    {{#if surdType.Type5}}  <!-- sqrt(x+sqrt(x+x))/y-->
+          <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn></mrow><mn>{{val3}}</mn></mfrac><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn><mo>&#160;</mo><mo>{{operator1}}</mo><mo>&#160;</mo><msqrt><mn>{{val4}}</mn></msqrt></msqrt></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type6}}  <!-- x/y-->
+      <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{val1}}</mn></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+    
+     {{#if surdType.Type7}}  <!-- sqrt(x)/y-->    <!-- Tan value 0.5774 & 1.7321 -->
+      <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn></msqrt></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+  
+    {{#if surdType.Type8}} <!-- x/sqrt(y)-->
+      <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{val1}}</mn></mrow><mrow><mn>{{val3}}</mn><msqrt><mn>{{val2}}</mn></msqrt></mrow></mfrac>
+    {{/if}}
+    
+    {{#if surdType.Type9}}  <!-- sqrt(x)/sqrt(y)-->
+      <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn></msqrt></mrow><msqrt><mn>{{val3}}</mn></msqrt></mfrac>
+    {{/if}}
+
+    {{#if surdType.Type10}}  <!-- x -->
+      <mo>{{mainOperator}}</mo><mo>&#160;</mo><mn>{{val1}}</mn>
+    {{/if}}
+
+    {{#if surdType.Type11}}  <!-- sqrt(x+sqrt(x+sqrt(x)))/y-->
+        <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn></mrow><mn>{{val3}}</mn></mfrac><msqrt><mn>{{val1}}</mn><mo>{{operator}}</mo><msqrt><mn>{{val2}}</mn><mo>{{operator1}}</mo><msqrt><mn>{{val4}}</mn></msqrt></msqrt></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type12}}  <!-- Tan value 0.1989 && 5.0273 -->
+        <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn></mrow><mn>{{val3}}</mn></mfrac><mfenced><mrow><msqrt><mn>{{val1}}</mn><mo>{{operator1}}</mo><mn>{{val2}}</mn><msqrt><mn>{{val4}}</mn></msqrt></msqrt><mo>{{operator2}}</mo><msqrt><mn>{{val5}}</mn><mo>&#160;</mo></msqrt><mo>{{operator3}}</mo><mn>{{val6}}</mn></mrow></mfenced>
+    {{/if}}
+
+    {{#if surdType.Type13}}  <!-- Tan value 0.2679 && 3.7321-->
+      <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><mfenced><mrow><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></mrow></mfenced></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+
+    {{#if surdType.Type14}}  <!-- Tan value 0.4142 && 2.4142 -->
+      <mfrac><mrow><mo>{{mainOperator}}</mo><mo>&#160;</mo><mn>{{radius}}</mn><mo>&#160;</mo><mfenced><mrow><msqrt><mn>{{val1}}</mn></msqrt><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><mn>{{val2}}</mn></mrow></mfenced></mrow><mn>{{val3}}</mn></mfrac>
+    {{/if}}
+
+    {{#if surdType.Type15}} <!-- Tan value 0.6682 && 1.4966 -->
+        <mfrac><mrow><mo>{{mainOperator}}</mo><mn>{{radius}}</mn></mrow><mn>{{val3}}</mn></mfrac><mo>&#160;</mo><mfenced><mrow><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator1}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></msqrt><mo>&#160;</mo><mo>{{operator2}}</mo><mo>&#160;</mo><mn>{{val4}}</mn></mrow></mfenced><mo>&#160;</mo><msqrt><mn>{{val5}}</mn></msqrt><mo>&#160;</mo><mo>{{operator3}}</mo><mo>&#160;</mo><mn>{{val6}}</mn>
+    {{/if}}
+
+    {{#if surdType.Type16}}  <!-- ∞ -->
+    <mo>{{mainOperator}}</mo><mo>&#160;</mo><mn>{{Infinity}}</mn>
+    {{/if}}
+
+    {{else}}
+
+    {{#if surdType.Type1}} <!-- sqrt(sqrt(x)+sqrt(x)))/y-->    
+      <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><msqrt><mn>{{val1}}</mn></msqrt><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type2}} <!-- sqrt(x+sqrt(x)))/y-->
+    <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type3}}   <!-- sqrt(sqrt(x)+x))/y-->
+    <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><msqrt><mn>{{val1}}</mn></msqrt><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><mn>{{val2}}</mn></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type4}}  <!-- sqrt(x+x))/y-->
+    <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><mn>{{val2}}</mn></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type5}}  <!-- sqrt(x+sqrt(x+x))/y-->
+        <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn><mo>&#160;</mo><mo>{{operator1}}</mo><mo>&#160;</mo><msqrt><mn>{{val4}}</mn></msqrt></msqrt></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type6}}  <!-- x/y-->
+      <mo>{{mainOperator}}</mo><mn>{{val1}}</mn>
+    {{/if}}
+    
+     {{#if surdType.Type7}}  <!-- sqrt(x)/y-->
+      <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn></msqrt>
+    {{/if}}
+  
+    {{#if surdType.Type8}} <!-- x/sqrt(y)-->
+      <mo>{{mainOperator}}</mo><mn>{{val1}}</mn>
+    {{/if}}
+    
+    {{#if surdType.Type9}}  <!-- sqrt(x)/sqrt(y)-->
+      <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn></msqrt>
+    {{/if}}
+
+    {{#if surdType.Type10}}  <!-- x -->
+      <mo>{{mainOperator}}</mo><mo>&#160;</mo><mn>{{val1}}</mn>
+    {{/if}}
+
+    {{#if surdType.Type11}}  <!-- sqrt(x+sqrt(x+sqrt(x)))-->
+        <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><msqrt><mn>{{val1}}</mn><mo>{{operator}}</mo><msqrt><mn>{{val2}}</mn><mo>{{operator1}}</mo><msqrt><mn>{{val4}}</mn></msqrt></msqrt></msqrt>
+    {{/if}}
+  
+   {{#if surdType.Type12}}  <!-- Tan value 0.1989 & 0.6682 && 1.4966 && 5.0273 -->
+    {{#if fenced}}
+       <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mfenced><mrow><msqrt><mn>{{val1}}</mn><mo>{{operator1}}</mo><mn>{{val2}}</mn><msqrt><mn>{{val4}}</mn></msqrt></msqrt><mo>{{operator2}}</mo><msqrt><mn>{{val5}}</mn><mo>&#160;</mo></msqrt><mo>{{operator3}}</mo><mn>{{val6}}</mn></mrow></mfenced>
+     {{else}}
+        <mrow><msqrt><mn>{{val1}}</mn><mo>{{operator1}}</mo><mn>{{val2}}</mn><msqrt><mn>{{val4}}</mn></msqrt></msqrt><mo>{{operator2}}</mo><msqrt><mn>{{val5}}</mn><mo>&#160;</mo></msqrt><mo>{{operator3}}</mo><mn>{{val6}}</mn></mrow>
+      {{/if}}
+    {{/if}}
+
+    {{#if surdType.Type13}}  <!-- Tan value 0.2679 && 3.7321-->
+      {{#if fenced}}
+        <mo>{{mainOperator}}</mo><mn>{{radius}}</mn><mo>&#160;</mo><mfenced><mrow><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></mrow></mfenced>
+      {{else}}
+        <mrow><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></mrow>
+      {{/if}}
+    {{/if}}
+
+    {{#if surdType.Type14}}  <!-- Tan value 0.4142 && 2.4142 -->
+     {{#if fenced}}
+        <mo>{{mainOperator}}</mo><mo>&#160;</mo><mn>{{radius}}</mn><mo>&#160;</mo><mfenced><mrow><msqrt><mn>{{val1}}</mn></msqrt><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><mn>{{val2}}</mn></mrow></mfenced>
+     {{else}}
+        <mrow><msqrt><mn>{{val1}}</mn></msqrt><mo>&#160;</mo><mo>{{operator}}</mo><mo>&#160;</mo><mn>{{val2}}</mn></mrow>
+      {{/if}}
+    {{/if}}
+
+    {{#if surdType.Type15}} <!-- Tan value 0.6682 && 1.4966 -->
+      {{#if fenced}}
+        <mo>{{mainOperator}}</mo><mo>&#160;</mo><mn>{{radius}}</mn><mo>&#160;</mo><mfenced><mrow><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator1}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></msqrt><mo>&#160;</mo><mo>{{operator2}}</mo><mo>&#160;</mo><mn>{{val4}}</mn></mrow></mfenced><mo>&#160;</mo><msqrt><mn>{{val5}}</mn></msqrt><mo>&#160;</mo><mo>{{operator3}}</mo><mo>&#160;</mo><mn>{{val6}}</mn>
+      {{else}}
+        <mrow><msqrt><mn>{{val1}}</mn><mo>&#160;</mo><mo>{{operator1}}</mo><mo>&#160;</mo><msqrt><mn>{{val2}}</mn></msqrt></msqrt><mo>&#160;</mo><mo>{{operator2}}</mo><mo>&#160;</mo><mn>{{val4}}</mn></mrow><mo>&#160;</mo><msqrt><mn>{{val5}}</mn></msqrt><mo>&#160;</mo><mo>{{operator3}}</mo><mo>&#160;</mo><mn>{{val6}}</mn>
+      {{/if}}
+    {{/if}}
+
+    {{#if surdType.Type16}}  <!-- ∞ -->
+      <mo>{{mainOperator}}</mo><mo>&#160;</mo><mn>{{Infinity}}</mn>
+    {{/if}}
+
+    {{/if}}
+
+  </math>
+</div>

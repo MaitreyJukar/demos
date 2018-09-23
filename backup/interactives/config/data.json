@@ -1,0 +1,57 @@
+﻿{
+	"comment":"preloader INCLUDES FILES TO BE MINIFIED AS interactive-engine-initialize.js. batchExclusions INCLUDES NAMES OF FOLDERS WHICH ARE NOT TO BE MINIFIED",
+    "preloader": {
+        "js": [
+            {
+                "basePath": "resourceBasePath",
+                "filePath": "intialize.js"
+            },
+            {
+                "basePath": "resourceBasePath",
+                "filePath": "player/models/path.js"
+            },
+            {
+                "basePath": "resourceBasePath",
+                "filePath": "player/models/interactivity-preloader.js"
+            },
+            {
+                "basePath": "resourceBasePath",
+                "filePath": "player/views/interactivity-preloader.js"
+            },
+            {
+                "basePath": "basepath",
+                "filePath": "/common/templates/player/player.js"
+            },
+            {
+                "basePath": "resourceBasePath",
+                "filePath": "utils/models/debugger.js"
+            },
+            {
+                "basePath": "resourceBasePath",
+                "filePath": "utils/models/interactive-require-config.js"
+            }
+        ],
+        "css": [
+            {
+                "basePath": "basepath",
+                "filePath": "/common/css/preloader.css"
+            }
+        ]
+    },
+    "batchExclusions": [
+        ".git",
+        ".svn",
+        "aspnet_client",
+        "common",
+        "config",
+        "demo-functions",
+        "demo-interactive",
+        "documentation",
+        "documents",
+        "stand-alone-player",
+        "temporary-static",
+        "testing-stub",
+        "theme2-interactive",
+        "sample-interactive-theme-2"
+    ]
+}

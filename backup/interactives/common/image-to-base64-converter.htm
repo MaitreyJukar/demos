@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sample</title>
+    <script>
+        var MathInteractives = {};
+        MathInteractives.Common = {};
+        MathInteractives.Common.Utilities = {};
+        MathInteractives.Common.Utilities.Models = {};
+    </script>
+    <script type="text/javascript" src="js/vendor/jquery/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/underscore/underscore.js"></script>
+    <script type="text/javascript" src="js/vendor/backbone/backbone.js"></script>
+    <script type="text/javascript" src="js/utils/models/browser-check.js"></script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
+    <script type="text/javascript" src="js/canvg.js"></script>    
+    <script type="text/javascript" src="js/utils/models/screen-utils.js"></script>
+    <script>
+        MathInteractives.Common.Utilities.Models.ScreenUtils.init();
+        function TestCrossDomain(test) {
+            alert("TestCrossDomain : " + test);
+        }
+        $(window).on("message", function (event) {
+            var originalEvent = event.originalEvent,
+                imageURL = event.originalEvent.data,
+                data, image, $image;
+            if (!imageURL) {
+                return;
+            }
+            image = document.createElement('img');
+            $image = $(image);
+            $image.css('background-color','transparent');            
+            image.onload = function () {                
+                MathInteractives.Common.Utilities.Models.ScreenUtils.getScreenShot({
+                    container: $(image),
+                    type: MathInteractives.Common.Utilities.Models.ScreenUtils.types.BASE64,
+                    background:'transparent',
+                    complete: function (imageBase64) {
+                        document.body.removeChild(image);
+                        data = {
+                            nameSpace: 'MathInteractives',
+                            url: imageURL,
+                            imageBase64: imageBase64,
+                            success: true
+                        }
+                        originalEvent.source.postMessage(JSON.stringify(data), originalEvent.origin);
+                    }
+                });
+            }
+            image.onerror = function () {
+                document.body.removeChild(image);
+                data = {
+                    nameSpace:'MathInteractives',
+                    url: imageURL,
+                    imageBase64: null,
+                    success: false
+                }
+                originalEvent.source.postMessage(JSON.stringify(data), originalEvent.origin);
+            }
+            image.src = imageURL;
+            document.body.appendChild(image);
+        });
+    </script>
+</head>
+<body>
+    <!--<img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg"/>-->
+</body>
+</html>

@@ -1,0 +1,1861 @@
+{
+    "id": "g7-u12-c1-i1-prism-pyramid-slicer",
+    "locAccData": [
+        {
+            "elements": [
+                {
+                    "accId": "player-tab-0",
+                    "id": "player-tab-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Overview"
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 275,
+                    "type": "text"
+                },
+                {
+                    "accId": "player-tab-1",
+                    "id": "player-tab-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Explore"
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 2000,
+                    "type": "text"
+                },
+                {
+                    "accId": "player-tab-2",
+                    "id": "player-tab-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Gallery"
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 3000,
+                    "type": "text"
+                }
+            ],
+            "id": "tab-contents",
+            "name": "tab-contents"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "heading",
+                    "id": "heading",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Prism and Pyramid Slicer"
+                            }
+                        }
+                    ],
+                    "tabIndex": 200,
+                    "type": "text"
+                }
+            ],
+            "id": "title-screen",
+            "name": "title-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "overview-header",
+                    "id": "overview-header",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Prism and Pyramid&nbsp;Slicer",
+                                "acc": "Prism and Pyramid Slicer"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "overview-text",
+                    "id": "overview-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Slicing solids with a plane results in two-dimensional cross sections. Create your own designs with cross sections of prisms and pyramids.\n",
+                                "acc": "Slicing solids with a plane results in two dimensional cross sections. Create your own designs with cross sections of prisms and pyramids"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "overview-screen",
+            "name": "overview-screen"
+        },
+        {
+            "elements": [
+                {
+                    "id": "explore-tab-direction-text-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Choose a solid to slice with a plane. Then create an image using the&nbsp;slices.",
+                                "acc": "Choose a solid to slice with a plane. Then create an image using the slices."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Try Another"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "id": "reset-tooltip",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Reset"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "id": "rotate-label-container",
+                    "accId": "rotate-label-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Rotate:",
+                                "acc": "Rotate"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "id": "rotate-about-x-axis",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Rotate about <i>x</i>-axis"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "id": "rotate-about-y-axis",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Rotate about <i>y</i>-axis"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "id": "rotate-about-z-axis",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Rotate about <i>z</i>-axis"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "slice-button-container-text",
+                    "id": "slice-button-container-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Slice!"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "tool-tip-text",
+                    "id": "tool-tip-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Maximum number of slices made. Delete a slice or clear your image in order to make more slices."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Choose three dots that do not lie on the same edge. Deselect a dot and choose a new one."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Choose three dots that do not lie on the same face. Deselect a dot and choose a new one."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "reset-popup",
+                    "id": "reset-popup",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Try Another?"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Are you sure you want to try another? Your current progress for this solid will be lost."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Yes"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Cancel"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Clear?"
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Are you sure you would like to clear your image? Your current progress in the workspace will be lost."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "background-color-label-container",
+                    "id": "background-color-label-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Background Color:",
+                                "acc": "Background Color"
+                            }
+                        }
+                    ],
+                    "tabIndex": 725
+                },
+                {
+                    "accId": "white-color-selector",
+                    "id": "white-color-selector",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "white selected"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "use spacebar to change background color to white."
+                            }
+                        }
+                    ],
+                    "tabIndex": 730,
+                    "type": "text"
+                },
+                {
+                    "accId": "gray-color-selector",
+                    "id": "gray-color-selector",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "black selected"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "use spacebar to change background color to black."
+                            }
+                        }
+                    ],
+                    "tabIndex": 740,
+                    "type": "text"
+                }
+
+            ],
+            "id": "explore-tab-screen",
+            "name": "explore-tab-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "explore-tab-activity-area",
+                    "id": "explore-tab-activity-area",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The activity region has two sections. The solid and image section. In the solid section you can select a solid and any three dots on the shape to make a slice. In the image section you can reposition your slices to make your image. Use Try another to try again."
+                            }
+                        }
+                    ],
+                    "tabIndex": 550,
+                    "offsetTop": -1,
+                    "offsetLeft": -2,
+                    "type": "text"
+                },
+                {
+                    "accId": "explore-tab-left-part-container",
+                    "id": "explore-tab-left-part-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Solid Section. There are three solids, cube,prism and pyramid. Tab to the solids and use spacebar to select a solid. Use the rotate handles to rotate the solid. Use reset to reset the orientation of the solid. Use slice to create a slice of the solid."
+                            }
+                        }
+                    ],
+                    "tabIndex": 575,
+                    "offsetLeft": -2,
+                    "offsetTop": -2,
+                    "type": "text"
+                },
+                {
+                    "accId": "canvas-acc-container",
+                    "id": "canvas-acc-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "%@$%"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Use spacebar to select dot."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Use spacebar to deselect dot."
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Dot selected"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Dot deselected"
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Slice has been made. Use the slice button to use the slice in your image."
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The solid has been rotated about %@$% axis"
+                            }
+                        }
+                    ],
+                    "offsetLeft": -2,
+                    "offsetTop": -2,
+                    "tabIndex": 640,
+                    "type": "text"
+                },
+                {
+                    "accId": "explore-tab-right-part-container",
+                    "id": "explore-tab-right-part-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You can select the background color to be white or black. Use the slices to make your image. Use the clear button to clear the image. Use the save image button to save the image. Use the view gallery button to go to the gallery."
+                            }
+                        }
+                    ],
+                    "tabIndex": 720,
+                    "offsetLeft": -2,
+                    "offsetTop": -2,
+                    "type": "text"
+                }
+
+            ],
+            "id": "acc-text-screen",
+            "name": "acc-text-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "gallery-activity-area",
+                    "id": "gallery-activity-area",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Your images are stored in the gallery. You can edit your images in the explore screen. Select Back to go to the Explore screen. Select Clear All to delete all your images. Select Previous to go the previous image section. Select Next to go to the Next image section."
+                            }
+                        }
+                    ],
+                    "tabIndex": 1050,
+                    "offsetLeft": -2,
+                    "offsetTop": -1,
+                    "type": "text"
+                },
+                {
+                    "accId": "left-arrow-button-0-holder",
+                    "id": "left-arrow-button-0-holder",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Previous"
+                            }
+                        }
+                    ],
+                    "tabIndex": 1805,
+                    "type": "text",
+                    "role": "button"
+                },
+                {
+                    "accId": "right-arrow-button-0-holder",
+                    "id": "right-arrow-button-0-holder",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Next"
+                            }
+                        }
+                    ],
+                    "tabIndex": 1800,
+                    "type": "text",
+                    "role": "button"
+                },
+                {
+                    "accId": "in-out-cards-0-wrapper",
+                    "id": "in-out-cards-0-wrapper",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Saved images section. %@$% Use spacebar to select."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Your image number %@$% is stored."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Your image numbers %@$% and %@$% are stored."
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Your image numbers %@$% to %@$% are stored."
+                            }
+                        }
+                    ],
+                    "tabIndex": 1100,
+                    "type": "text",
+                    "role": "button"
+                },
+                {
+                    "accId": "gallery-tab-back-button",
+                    "id": "gallery-tab-back-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Back"
+                            }
+                        }
+                    ],
+                    "tabIndex": 1900,
+                    "type": "text",
+                    "role": "button"
+                }
+            ],
+            "id": "gallery-acc-text-screen",
+            "name": "gallery-acc-text-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "edit-image-container",
+                    "id": "edit-image-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Image %@$% selected. You can close, edit, or delete the image."
+                            }
+                        }
+                    ],
+                    "tabIndex": 1595,
+                    "type": "text"
+                },
+                {
+                    "accId": "gallery-close-button",
+                    "id": "gallery-close-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Close"
+                            }
+                        }
+                    ],
+                    "tabIndex": 1600,
+                    "role": "button",
+                    "type": "text"
+                },
+                {
+                    "accId": "edit-button",
+                    "id": "edit-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Edit"
+                            }
+                        }
+                    ],
+                    "tabIndex": 1625,
+                    "role": "button",
+                    "type": "text"
+                },
+                {
+                    "accId": "delete-button",
+                    "id": "delete-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Delete"
+                            }
+                        }
+                    ],
+                    "tabIndex": 1650,
+                    "role": "button",
+                    "type": "text"
+                }
+            ],
+            "id": "gallery-popup-buttons",
+            "name": "gallery-popup-buttons"
+        },
+        {
+            "elements": [
+
+                {
+                    "accId": "right-part-text-container",
+                    "id": "right-part-text-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Your slice will appear here after selecting three dots and selecting <i>Slice!</i>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "button-texts",
+                    "id": "button-texts",
+                    "messages": [
+                        {
+                            "id": "clear-button-text",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Clear"
+                            }
+                        },
+                        {
+                            "id": "save-image-button-text",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Save Image"
+                            }
+                        },
+                        {
+                            "id": "view-gallery-button-text",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "View Gallery"
+                            }
+                        },
+                        {
+                            "id": "color-picker-tooltip-text",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Color Options"
+                            }
+                        },
+                        {
+                            "id": "trash-tooltip-text",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Delete"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "empty-activity-text",
+                    "id": "empty-activity-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Your slice will appear here after selecting three dots and selecting Slice"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "right-panel-canvas-acc-container",
+                    "id": "right-panel-canvas-acc-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Use spacebar and tab through the slices. Use the arrow keys to translate the slice. Use the e, or, R keys to rotate the slice in a clockwise or counterclockwise direction respectively. Use the 'd' key to delete the slice. Use the 'c' key to open the color picker."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The selected slice has been translated %@$%."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "to the left"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "up"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "to the right"
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "down"
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You have reached the %@$% point of the image section."
+                            }
+                        },
+                        {
+                            "id": "7",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The selected slice has been rotated in a %@$% direction."
+                            }
+                        },
+                        {
+                            "id": "8",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "clockwise"
+                            }
+                        },
+                        {
+                            "id": "9",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "counterclockwise"
+                            }
+                        },
+                        {
+                            "id": "10",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Slice deleted."
+                            }
+                        },
+                        {
+                            "id": "11",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Slice %@$% selected."
+                            }
+                        },
+                        {
+                            "id": "12",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "rightmost"
+                            }
+                        },
+                        {
+                            "id": "13",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "leftmost"
+                            }
+                        },
+                        {
+                            "id": "14",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "topmost"
+                            }
+                        },
+                        {
+                            "id": "15",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "bottommost"
+                            }
+                        },
+                        {
+                            "id": "16",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Image %@$% saved."
+                            }
+                        }
+                    ],
+                    "tabIndex": 750,
+                    "type": "text",
+                    "offsetLeft": -2,
+                    "offsetTop": 0
+                }
+            ],
+            "id": "right-panel-screen",
+            "name": "right-panel-screen"
+        },
+        {
+            "elements": [
+                {
+                    "id": "cube-button-label",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Cube"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "triangularprism-button-label",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Prism"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "pyramid-button-label",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Pyramid"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "shape-buttons-screen",
+            "name": "shape-buttons-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "shape-button-container-0",
+                    "id": "shape-button-container-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Cube %@$%"
+                            }
+                        }
+                    ],
+                    "tabIndex": 605
+                },
+                {
+                    "accId": "shape-button-container-1",
+                    "id": "shape-button-container-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Prism %@$%"
+                            }
+                        }
+                    ],
+                    "tabIndex": 610
+                },
+                {
+                    "accId": "shape-button-container-2",
+                    "id": "shape-button-container-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Pyramid %@$%"
+                            }
+                        }
+                    ],
+                    "tabIndex": 615
+                },
+                {
+                    "accId": "shape-button-common-text",
+                    "id": "shape-button-common-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": ", Use spacebar to select"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "selected"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "selected. Use spacebar and tab through the dots. Use spacebar to select a dot. Select three dots to make a slice. Use spacebar to create the slice."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "rotate-about-x-axis-button-container",
+                    "id": "rotate-about-x-axis-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Rotate solid about x axis"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 660
+                },
+                {
+                    "accId": "rotate-about-y-axis-button-container",
+                    "id": "rotate-about-y-axis-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Rotate solid about y axis"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 670
+                },
+                {
+                    "accId": "rotate-about-z-axis-button-container",
+                    "id": "rotate-about-z-axis-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Rotate solid about z axis"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 680
+                },
+                {
+                    "accId": "reset-button-container",
+                    "id": "reset-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Reset"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 690
+                },
+                {
+                    "accId": "slice-button-container",
+                    "id": "slice-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Slice"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 650
+                },
+                {
+                    "accId": "clear-button-container",
+                    "id": "clear-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Clear"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 900
+                },
+                {
+                    "accId": "save-image-button-container",
+                    "id": "save-image-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Save Image"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 910
+                },
+                {
+                    "accId": "view-gallery-button-container",
+                    "id": "view-gallery-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "View Gallery"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 920
+                }
+
+            ],
+            "id": "button-acc-screen",
+            "name": "button-acc-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "header-text",
+                    "id": "header-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Color Options"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "color-picker-container",
+                    "id": "color-picker-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Color Options. You can change the color, brightness, and opacity of the slice."
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "tabIndex": 830
+                },
+                {
+                    "accId": "color-picker-acc-disk-container",
+                    "id": "color-picker-acc-disk-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Color Wheel. Use spacebar to select."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Color changed."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You have reached the end of the color wheel."
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Color selector selected. Use arrow keys to change the color of the slice."
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "offsetLeft": -3,
+                    "offsetTop": -2,
+                    "tabIndex": 840
+                },
+                {
+                    "accId": "close-button",
+                    "id": "close-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Close"
+                            }
+                        }
+                    ],
+                    "type": "text",
+                    "role": "button",
+                    "tabIndex": 895
+                }
+            ],
+            "id": "color-picker-screen",
+            "name": "Color Picker Screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "luminance-slider-slider-handle",
+                    "id": "luminance-slider-slider-handle",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Brightness Slider. Tab to brightness handle and use arrow keys to change the brightness."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Brightness handle selected."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "brightness increased"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "brightness decreased"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You have set the minimum brightness."
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You have set the maximum brightness."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "luminance-slider-container-screen",
+            "name": "luminance-slider-container-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "opacity-slider-slider-handle",
+                    "id": "opacity-slider-slider-handle",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Opacity Slider. Tab to slider handle and use arrow keys to change the opacity."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Opacity handle selected."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "opacity increased."
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "opacity decreased."
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You have set the minimum opacity."
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You have set the maximum opacity."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "opacity-slider-container-screen",
+            "name": "opacity-slider-container-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "color-picker-messages",
+                    "id": "color-picker-messages",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Close"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Brightness"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Opacity"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "color-picker-messages-screen",
+            "name": "color-picker-messages-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "edit-image-popup",
+                    "id": "edit-image-popup",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Edit?"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Are you sure you want to edit the image? Your current progress in the workspace will be lost."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "delete-image-popup",
+                    "id": "delete-image-popup",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Delete?"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Are you sure you want to delete the&nbsp;image?"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "popup-button-text",
+                    "id": "popup-button-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Yes"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Cancel"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "View Gallery"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "gallery-modal-text",
+                    "id": "gallery-modal-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Close"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Edit"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Delete"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "gallery-tab-direction-text-text",
+                    "id": "gallery-tab-direction-text-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Your Gallery"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": " Clear All"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "gallery-tab-back-button",
+                    "id": "gallery-tab-back-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Back"
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "type": "text"
+                },
+                {
+                    "accId": "clear-all-popup",
+                    "id": "clear-all-popup",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Clear All?"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Are you sure you want to clear all images? All progress will be lost."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "whoops-popup",
+                    "id": "whoops-popup",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Whoops",
+                                "loc": "Whoops!"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": " You have saved the maximum number of images to your gallery. Press View Gallery and delete at least one image in order to save this one.",
+                                "loc": " You have saved the maximum number of images to your gallery. Press <em>View Gallery</em> and delete at least one image in order to save this one."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-previous-button-text",
+                    "id": "carousel-previous-button-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Previous"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-next-button-text",
+                    "id": "carousel-next-button-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Next"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "image-text",
+                    "id": "image-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Image %@$%. Use spacebar to select"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "gallery-screen",
+            "name": "Gallery Screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "gallery-tab-back-button",
+                    "id": "gallery-tab-back-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Back",
+                                "loc": "Back"
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "type": "text"
+                }
+            ],
+            "id": "gallery-button-screen",
+            "name": "gallery-button-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "three-js-ie-9-text",
+                    "id": "three-js-ie-9-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "This interactive is not supported on your web browser. Please upgrade your browser or try another browser."
+                            }
+                        }
+                    ],
+                    "tabIndex": 500,
+                    "type": "text"
+                }
+            ],
+            "id": "ie-9-pop-up-screen",
+            "name": "ie-9-pop-up-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "shape-buttons-panel-help-text",
+                    "id": "shape-buttons-panel-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select a solid here."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "reset-button-container-help-text",
+                    "id": "reset-button-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select to return the solid to its original orientation."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "rotate-about-y-axis-button-container-help-text",
+                    "id": "rotate-about-y-axis-button-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select a button to rotate the solid in any direction."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "left-canvas-container-help-text",
+                    "id": "left-canvas-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Select three dots that do not lie on the same edge or face. Press <em>Slice!</em> to see the cross section.",
+                                "acc": "Select three dots that do not lie on the same edge or face. Press Slice to cut the cross section."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "right-panel-canvas-container-help-text",
+                    "id": "right-panel-canvas-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "When a slice is selected you can rotate it, delete it, or change its color."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "color-picker-container-help-text",
+                    "id": "color-picker-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Choose a color for your slice. You can adjust the transparency and&nbsp;brightness.",
+                                "acc": "Choose a color for your slice. You can adjust the transparency and brightness."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "clear-button-container-help-text",
+                    "id": "clear-button-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Select the Clear button to clear the workspace.",
+                                "loc": "Select the <em>Clear</em> button to clear the workspace."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "save-image-button-container-help-text",
+                    "id": "save-image-button-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Select the Save Image button to save your image.",
+                                "loc": "Select the <i>Save Image</i> button to save your image."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "view-gallery-button-container-help-text",
+                    "id": "view-gallery-button-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Select the View Gallery button to go to the Gallery screen.",
+                                "loc": "Select the <em>View Gallery</em> button to go to the <em>Gallery</em> screen."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "explore-tab-direction-text-direction-text-buttonholder-help-text",
+                    "id": "explore-tab-direction-text-direction-text-buttonholder-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Select the Try Another button to start over with a new solid.",
+                                "loc": "Select the <em>Try Another</em> button to start over with a new solid."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "background-color-selector-container-help-text",
+                    "id": "background-color-selector-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select to choose the background color."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "in-out-cards-container-help-text",
+                    "id": "in-out-cards-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The images you have saved are displayed in the gallery. Select one to either edit or delete the image.",
+                                "loc": "In the <em>Gallery</em> &nbsp;you can see all the images you have saved. Select one to get a larger view."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "color-picker-button-container-help-text",
+                    "id": "color-picker-button-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Select this button to view the color&nbsp;options.",
+                                "acc": "Select this button to view the color options."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "trash-button-container-help-text",
+                    "id": "trash-button-container-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select to delete this slice."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "button-side-bar-help-text",
+                    "id": "button-side-bar-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "You can select <em>Close</em> to go back to the <em>Gallery</em> screen, select <em>Edit</em> to bring this image back into <em>Explore</em> screen, or select <em>Delete</em> to remove this image from the <em>Gallery</em>&nbsp;screen.",
+                                "acc": "You can select Close to go back to the Gallery screen, select Edit to bring this image back into Explore screen, or select Delete to remove this image from the Gallery screen."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "gallery-tab-back-button-help-text",
+                    "id": "gallery-tab-back-button-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Select to go back to the Explore screen.",
+                                "loc": "Select to go back to the <em>Explore</em>&nbsp;screen."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "gallery-tab-direction-text-container-direction-text-buttonholder-help-text",
+                    "id": "gallery-tab-direction-text-container-direction-text-buttonholder-help-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select to clear all your data."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "help-screen",
+            "name": "help-screen"
+        }
+    ]
+}

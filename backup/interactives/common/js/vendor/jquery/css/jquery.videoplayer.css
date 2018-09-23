@@ -1,0 +1,19 @@
+﻿body
+{
+}
+
+video
+{
+     /*  override with your own video size  	width:480px;     height: 270px; 	  */
+}
+
+.media-state
+{
+     position: absolute;
+     z-index: 1;
+}
+
+.media-state.waiting
+{
+     background-repeat: no-repeat;
+}

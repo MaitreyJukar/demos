@@ -1,0 +1,638 @@
+{
+    "id": "g7-u10-c1-i1-picture-perfect",
+    "locAccData": [
+        {
+            "elements": [
+                {
+                    "accId": "heading",
+                    "id": "heading",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Road Repair"
+                            }
+                        }
+                    ],
+                    "tabIndex": 200,
+                    "type": "text"
+                }
+            ],
+            "id": "title-screen",
+            "name": "title-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "player-tab-0",
+                    "id": "player-tab-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "acc": "",
+                                "commonId": "comm3",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "tabIndex": 220,
+                    "type": "text"
+                },
+                {
+                    "accId": "player-tab-1",
+                    "id": "player-tab-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Repair Roads"
+                            }
+                        }
+                    ],
+                    "tabIndex": 2000,
+                    "type": "text"
+                }
+            ],
+            "id": "tab-contents",
+            "name": "tab-contents"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "overview-header",
+                    "id": "overview-header",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Road Repair"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "overview-text",
+                    "id": "overview-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Oh no! A meteor has destroyed the road. Use the angles on each piece to repair it. Good luck!"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "overview-tab-screen",
+            "name": "overview-tab"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "direction-text-box-text",
+                    "id": "direction-text-box-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Use the angle measures to create complementary and supplementary angles to repair the road."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "acc": "",
+                                "commonId": "comm1",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "button-text",
+                    "id": "button-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Start"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "button-text-next",
+                    "id": "button-text-next",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "High Difficulty Level"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Low Difficulty Level"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "pop-up-text",
+                    "id": "pop-up-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "acc": "",
+                                "commonId": "comm26",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Are you sure you want to try to repair another road? You will lose all progress."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "message": {
+                                "acc": "",
+                                "commonId": "comm21",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "message": {
+                                "acc": "",
+                                "commonId": "comm23",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "tooltip-text",
+                    "id": "tooltip-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "<div class='angles-container'><div class='complementary-wrapper'><div class='complementary-container'><span class='complementary-angles'></span>&nbsp;&nbsp;<span class='complementary-text'>Complementary Angles</span></div></div></div>"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "<div class='angles-container'><div class='supplementary-wrapper'><div class='supplementary-container'><span class='supplementary-angles'></span>&nbsp;&nbsp;<span class='supplementary-text'>Supplementary Angles</span></div></div></div>"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "<div class='angles-container'><div class='complementary-wrapper'><div class='complementary-container'><span class='complementary-angles'></span>&nbsp;&nbsp;<span class='complementary-text'>Complementary Angles</span></div></div></br><div class='supplementary-wrapper'><div class='supplementary-container'><span class='supplementary-angles'></span>&nbsp;&nbsp;<span class='supplementary-text'>Supplementary Angles</span></div></div></div>"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "repair-road-feedback-title",
+                    "id": "repair-road-feedback-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "ROAD REPAIRED"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "repair-road-feedback-msg",
+                    "id": "repair-road-feedback-msg",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Nice job! You have successfully used complementary and supplementary angles to repair the road!"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "negative-repair-road-feedback-title",
+                    "id": "negative-repair-road-feedback-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "you are almost there",
+                                "loc": "YOU ARE ALMOST THERE..."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "negative-repair-road-feedback-msg",
+                    "id": "negative-repair-road-feedback-msg",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "You've put the pieces together in the right way, but it doesn't fit along the original path. Rotate the entire group to make it fit correctly."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "feedback-ok-button",
+                    "id": "feedback-ok-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+                                "acc": "",
+                                "commonId": "comm22",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "type": "text"
+                },
+                {
+                    "accId": "canvas-acc-container",
+                    "id": "canvas-acc-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The %@$% road has been broken into %@$% pieces. Press space to enter the activity area. Tab through the pieces to select them. Use the arrow keys to move a piece or a compound unit of combined pieces. Press E or R to rotate a piece or compound unit. Use Try Another to try repairing another road."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The angles in this %@$% that can join to other pieces are %@$% degrees, %@$% degrees, %@$% degrees and %@$% degrees."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The selected piece has been translated %@$%"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The selected piece has been rotated in a %@$% direction"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "%@$% and %@$% form a complementary pair of angles %@$% "
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "%@$% and %@$% form a supplementary pair of angles %@$% "
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The angles in this %@$% that can join to other pieces are %@$% degrees, %@$% degrees and %@$% degrees"
+                            }
+                        },
+                        {
+                            "id": "7",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The screen shows the road that you repaired by completing the puzzle. Use %@$% or Try Another to try repairing another road."
+                            }
+                        },
+                        {
+                            "id": "8",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "The selected piece has snapped to the road"
+                            }
+                        },
+                        {
+                            "id": "9",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You are almost there. You've put the pieces together in the right way, but it is not on the path. Move or rotate the entire group to make it fit along the original path. "
+                            }
+                        },
+                        {
+                            "id": "10",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "You cannot move the piece as it has reached the end of the activity area."
+                            }
+                        }
+                    ],
+                    "offsetLeft": -2,
+                    "offsetTop": -2,
+                    "tabIndex": 545,
+                    "type": "text"
+                },
+                {
+                    "accId": "repair-road-activity-area",
+                    "id": "repair-road-activity-area",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "There is a %@$% road. Use the Start button to begin the road repair puzzle"
+                            }
+                        }
+                    ],
+                    "offsetLeft": -2,
+                    "offsetTop": -2,
+                    "tabIndex": 500,
+                    "type": "text"
+                }
+            ],
+            "id": "repair-roads-screen",
+            "name": "repair-roads-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "type-of-path",
+                    "id": "type-of-path",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Z shaped"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "rectangular"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "type-of-direction",
+                    "id": "type-of-direction",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "to the left"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "to the right"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "up"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "down"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "type-of-rotation",
+                    "id": "type-of-rotation",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "clockwise"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "counterclockwise"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "type-of-piece",
+                    "id": "type-of-piece",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "piece"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "compound unit"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "end-tag-for-angle",
+                    "id": "end-tag-for-angle",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "and"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": ","
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "angle-made-of-two-angles",
+                    "id": "angle-made-of-two-angles",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "%@$% and %@$% equal %@$%"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "acc-string-screen",
+            "name": "acc-string-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "start-button-container",
+                    "id": "start-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Start"
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 510
+                },
+                {
+                    "accId": "next-button-container",
+                    "id": "next-button-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "%@$%"
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 560
+                }
+            ],
+            "id": "button-acc-screen",
+            "name": "button-acc-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "start-instruction",
+                    "id": "start-instruction",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select to begin a new road repair puzzle."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "drag-rotate-instruction",
+                    "id": "drag-rotate-instruction",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Use the arrow keys to move a selected piece. Press E or R to rotate a piece.",
+                                "loc": "Press and drag a piece in the center to move it. Press and drag corners to rotate."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Move pieces together to build the road. When related pieces are close together, they will snap into place."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "next-instruction",
+                    "id": "next-instruction",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select to try repairing another road."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "help-screen",
+            "name": "help-screen"
+        }
+    ]
+}

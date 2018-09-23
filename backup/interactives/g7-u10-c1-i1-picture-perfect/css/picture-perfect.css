@@ -1,0 +1,294 @@
+﻿
+.de-mathematics-interactive.picture-perfect .repair-road-tab-container, .de-mathematics-interactive.picture-perfect .repair-road-activity-area {
+    height: 599px;
+    width: 928px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.de-mathematics-interactive.picture-perfect .activity-canvas {
+-ms-touch-action: none;
+touch-action: none;
+
+}
+
+/************************************************************** START OF BACKGROUND POSITIONS ********************************************************/
+
+.de-mathematics-interactive.picture-perfect .repair-road-tab-container.rectangle-path {
+    background-position: 0px 0px;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-tab-container.broken-rectangle-path {
+    background-position: 0px -600px;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-tab-container.zigzag-path {
+    background-position: 0px -1200px;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-tab-container.broken-zigzag-path {
+    background-position: 0px -1800px;
+}
+
+/************************************************************** END OF BACKGROUND POSITIONS ********************************************************/
+
+/************************************************************** START OF ANIMATION POSITIONS ********************************************************/
+
+.de-mathematics-interactive.picture-perfect .meteor-animation-screen {
+    position: absolute;
+    top: 0px;
+    height: 599px;
+    width: 928px;
+    background-repeat: no-repeat;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.de-mathematics-interactive.picture-perfect .red-animation-modal {
+    position: absolute;
+    top: 0px;
+    height: 599px;
+    width: 928px;
+    background-color: #ff0000;
+    opacity: 0;
+}
+
+/************************************************************** END OF ANIMATION POSITIONS ********************************************************/
+
+/************************************************************** START OF DIRECTION TEXT ********************************************************/
+
+.de-mathematics-interactive.picture-perfect .direction-text-container {
+    height: 78px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.de-mathematics-interactive.picture-perfect .green-button {
+    background-color: #598e44;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.picture-perfect .green-button.disabled {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive.picture-perfect .green-button.hover {
+    background-color: #5e9848;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.picture-perfect .green-button.down {
+    background-color: #598e44;
+    box-shadow: inset 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.picture-perfect .custom-btn.green-button .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #2d4823 inset;
+    position: absolute;
+    height: 100%;
+    border-radius: 3px;
+    width: 100%;
+    top: 0px;
+}
+
+.de-mathematics-interactive.picture-perfect .tts-green-button {
+    box-shadow: inset 0px -2px #2d4823;
+}
+
+.de-mathematics-interactive.picture-perfect .tts-green-button.active {
+    background-color: #598e44;
+}
+
+.de-mathematics-interactive.picture-perfect .tts-green-button.hover {
+    background-color: #5e9848;
+}
+
+.de-mathematics-interactive.picture-perfect .tts-green-button.down {
+    background-color: #598e44;
+}
+
+/************************************************************** END OF DIRECTION TEXT ********************************************************/
+
+/************************************************************** START OF CANVAS CONTAINER ********************************************************/
+
+.de-mathematics-interactive.picture-perfect .canvas-container {
+    height: 512px;
+    position: absolute;
+    top: 88px;
+    width: 928px;
+    display: none;
+}
+
+/************************************************************** END OF CANVAS CONTAINER ********************************************************/
+
+/************************************************************** START OF START BUTTON ********************************************************/
+
+.de-mathematics-interactive.picture-perfect .start-button-container {
+    position: absolute;
+    bottom: 10px;
+    right: 11px;
+    z-index: 10;
+}
+
+/************************************************************** END OF START BUTTON ********************************************************/
+
+/************************************************************** START OF NEXT BUTTON ********************************************************/
+
+.de-mathematics-interactive.picture-perfect .next-button-container {
+    position: absolute;
+    bottom: 10px;
+    right: 11px;
+    z-index: 10;
+}
+
+/************************************************************** END OF NEXT BUTTON ********************************************************/
+
+.de-mathematics-interactive.picture-perfect .dummy-tooltip-div {
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    right: 123px;
+}
+
+.de-mathematics-interactive.picture-perfect .dummy-tooltip-div.rect-shape-road {
+    top: 315px;
+}
+
+.de-mathematics-interactive.picture-perfect .dummy-tooltip-div.z-shape-road {
+    top: 220px;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-feedback-title-text {
+    color: #4b1300;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-feedback-msg-text {
+    color: #ffffff;
+}
+
+.de-mathematics-interactive.picture-perfect .theme2-pop-up-dialogue.theme2-pop-up-dialogue-defaultType {
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0px 0px 0px 0px;
+    top: 282px!important;
+}
+
+.de-mathematics-interactive.picture-perfect .tts-others {
+    left: 412px!important;
+    margin-top: 44px;
+}
+
+.de-mathematics-interactive.picture-perfect .tts-ios {
+    left: 414px!important;
+    margin-top: 44px;
+}
+
+.de-mathematics-interactive.picture-perfect .tts-ios-title {
+    width: 99%!important;
+}
+
+/************************************************************** START OF NEGATIVE FEEDBACK ********************************************************/
+.de-mathematics-interactive.picture-perfect .repair-road-negative-feedback-title-text {
+    line-height: 1;
+    color: #4b1300;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-negaitive-tts {
+    margin-top: 72px!important;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-negative-feedback-body {
+    padding: 14px 20px 20px 20px!important;
+    color: #ffffff;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-negaitive-feedback-popup-title {
+    margin-top: 30px!important;
+}
+
+.de-mathematics-interactive.picture-perfect .repair-road-update-focus-for-negative-feedback {
+    top: 27px!important;
+    width: 100%;
+    left: 0%;
+}
+/************************************************************** End OF NEGATIVE FEEDBACK ********************************************************/
+
+
+/************************************************************** START OF POPUP TTS BUTTON********************************************************/
+.de-mathematics-interactive.picture-perfect .theme2-pop-up-dialogue-defaultType .custom-btn.custom-btn-tts-blue {
+    box-shadow: inset 0px -2px #2d4823;
+}
+
+.de-mathematics-interactive.picture-perfect .theme2-pop-up-dialogue-defaultType .custom-btn.custom-btn-tts-blue.active {
+    background-color: #598e44!important;
+}
+
+.de-mathematics-interactive.picture-perfect .theme2-pop-up-dialogue-defaultType .custom-btn.custom-btn-tts-blue.hover {
+    background-color: #5e9848!important;
+}
+
+.de-mathematics-interactive.picture-perfect .theme2-pop-up-dialogue-defaultType .custom-btn.custom-btn-tts-blue.down {
+    background-color: #598e44!important;
+}
+
+/************************************************************** End OF POPUP TTS BUTTON********************************************************/
+/************************************************************** START OF TOOLTIP TEXT********************************************************/
+.de-mathematics-interactive.picture-perfect .angles-container {
+    height: 100%;
+    display: table;
+}
+
+.de-mathematics-interactive.picture-perfect .complementary-wrapper,
+.de-mathematics-interactive.picture-perfect .supplementary-wrapper {
+    font-size: 12px;
+    display: table-row;
+}
+
+.de-mathematics-interactive.picture-perfect .complementary-container,
+.de-mathematics-interactive.picture-perfect .supplementary-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive.picture-perfect .complementary-wrapper .complementary-text {
+    vertical-align: middle;
+    color: #aa00b5;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.picture-perfect .complementary-wrapper .complementary-angles,
+.de-mathematics-interactive.picture-perfect .supplementary-wrapper .supplementary-angles {
+    width: 40px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive.picture-perfect .complementary-wrapper .complementary-angles {
+    background-color: #aa00b5;
+}
+
+.de-mathematics-interactive.picture-perfect .supplementary-wrapper .supplementary-text {
+    vertical-align: middle;
+    color: #336699;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.picture-perfect .supplementary-wrapper .supplementary-angles {
+    background-color: #336699;
+}
+
+.de-mathematics-interactive.picture-perfect .theme2-tooltip.tooltip-form-validation-container {
+    background-color: white;
+    border: 1px white;
+    border-radius: 0;
+}
+
+.de-mathematics-interactive.picture-perfect .theme2-tooltip.tooltip-form-validation-container .arrow-div,
+.de-mathematics-interactive.picture-perfect .theme2-tooltip.tooltip-form-validation-container .border-div {
+    border-bottom-color: white;
+}
+/************************************************************** END OF TOOLTIP TEXT********************************************************/

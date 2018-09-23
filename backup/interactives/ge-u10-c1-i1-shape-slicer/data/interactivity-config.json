@@ -1,0 +1,109 @@
+{
+    "config": {
+        "cssClass": "shape-slicer",
+        "idPrefix": "shape-slicer",
+        "isSaveStateAllowed": true,
+        "isTwoStepLoad": true,
+        "model": {
+            "class": "ShapeSlicer",
+            "commonInteractive": true,
+            "data": {
+                "type": 1
+            }
+        },
+        "module": "ShapeSlicer",
+        "newSaveState": true,
+        "playerTheme": 2,
+        "tabsData": [
+            {
+                "commonInteractive": true,
+                "module": "ShapeSlicer",
+                "overviewTabData": {
+                    "leftImageContainerID": "overview-bg-1",
+                    "screenID": "overview-screen"
+                },
+                "templateName": "overview",
+                "view": {
+                    "class": "Overview",
+                    "data": {
+                        "el": "#overview-tab-holder"
+                    }
+                }
+            },
+            {
+                "commonInteractive": true,
+                "templateName": "exploreShapeSlicer",
+                "view": {
+                    "class": "ExploreShapeSlicer",
+                    "data": {
+                        "el": "#explore-shape-slicer-container"
+                    },
+                    "module": "ShapeSlicer"
+                }
+            },
+            {
+                "commonInteractive": true,
+                "templateName": "galleryShapeSlicer",
+                "view": {
+                    "class": "GalleryShapeSlicer",
+                    "data": {
+                        "el": "#gallery-shape-slicer-container"
+                    },
+                    "module": "ShapeSlicer"
+                }
+            }
+        ],
+        "themeType": 2
+    },
+    "resources": {
+        "components": [
+            "shape-slicer-step-1",
+            "shape-slicer-step-2",
+            "shape-slicer-shapes",
+            "theme2-carousel"
+        ],
+        "css": [
+        ],
+        "isNewJsonType": true,
+        "js": [
+            {
+                "basePath": "PAPER_JS",
+                "url": "paper-full.js"
+            },
+            {
+                "basePath": "THREE_JS",
+                "url": "Three.js"
+            },
+            {
+                "basePath": "THREE_JS",
+                "url": "Detector.js"
+            }
+        ],
+        "json": [
+        ],
+        "media": {
+            "cur": [
+                {
+                    "basePath": "COMMON_IMAGE",
+                    "id": "closed-hand",
+                    "url": "cursor/closedhand.cur"
+                },
+                {
+                    "basePath": "COMMON_IMAGE",
+                    "id": "open-hand",
+                    "url": "cursor/openhand.cur"
+                },
+                {
+                    "id": "overview-bg-1",
+                    "url": "shape-slicer/overview-bg-1.jpg",
+                    "basePath": "COMMON_INTERACTIVE_IMAGE",
+                    "isNextStepLoad": false
+                }
+            ],
+            "image": [
+            ]
+        },
+        "templates": [
+        ]
+    }
+}

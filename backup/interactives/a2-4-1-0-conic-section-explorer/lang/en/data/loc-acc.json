@@ -1,0 +1,849 @@
+{
+    "id": "a2-4-1-0-conic-section-explorer",
+    "locAccData": [
+        {
+            "elements": [
+                {
+                    "accId": "heading",
+                    "id": "heading",
+					"tabIndex": 200,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": true,
+                            "message": {
+                                "loc": "Conic Section Explorer"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "title-screen",
+            "name": "Title Screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "player-tab-0",
+                    "id": "player-tab-0",
+					"tabIndex": 220,
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Overview"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "player-tab-1",
+                    "id": "player-tab-1",
+					"tabIndex": 1000,
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Explore"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "tab-contents",
+            "name": "tab-contents"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "overview-header",
+                    "id": "overview-header",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Conic Section Explorer"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "overview-text",
+                    "id": "overview-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "See the different shapes formed when a plane intersects a 3D double cone."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "overview-tab-screen",
+            "name": "overviewTab"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "direction-text-box-text",
+                    "id": "direction-text-box-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Change the values to see how they affect the graph."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Start Over"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+				{
+                    "id": "try-another-pop-up-text",
+                    "accId": "try-another-pop-up-text",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+                                "loc": "Are you sure you would like to start over? You will lose your progress for the current attempt.",
+								"acc": "Are you sure you would like to try a new set of bubbles?"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "try-another-pop-up-title",
+                    "accId": "try-another-pop-up-title",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+                                "loc": "Start Over?"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "try-another-pop-up-yes-button",
+                    "accId": "try-another-pop-up-yes-button",
+                    "type": "text",
+                    "role": "button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+                                "loc": "Yes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "try-another-pop-up-cancel-button",
+                    "accId": "try-another-pop-up-cancel-button",
+                    "type": "text",
+                    "role": "button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+                                "loc": "Cancel"
+                            }
+                        }
+                    ]
+                },
+				{
+					 "id": "plane-label",
+					 "type": "text",
+					 "messages": [
+					     {
+					         "id": "0",
+					         "message": {
+					             "loc": "Plane"
+								} 
+						  }
+					]
+				},
+				{
+					 "id": "plane-slop-label",
+					 "type": "text",
+					 "messages": [
+					     {
+					         "id": "0",
+					         "message": {
+					             "loc": "<i>m:</i>"
+								} 
+						  }
+					]
+				},
+				{
+					 "id": "plane-offset-label",
+					 "type": "text",
+					 "messages": [
+					     {
+					         "id": "0",
+					         "message": {
+					             "loc": "<i>b:</i>"
+								} 
+						  }
+					]
+				},
+				{
+					 "id": "cone-label",
+					 "type": "text",
+					 "messages": [
+					     {
+					         "id": "0",
+					         "message": {
+					             "loc": "Cone"
+								} 
+						  }
+					]
+				},
+				{
+					 "id": "cone-height-label",
+					 "type": "text",
+					 "messages": [
+					     {
+					         "id": "0",
+					         "message": {
+					             "loc": "<i>h:</i>"
+								} 
+						  }
+					]
+				},
+				{
+					 "id": "cone-slop-label",
+					 "type": "text",
+					 "messages": [
+					     {
+					         "id": "0",
+					         "message": {
+					             "loc": "<i>s:</i>"
+								} 
+						  }
+					]
+				},
+				{
+                    "id": "zoom-in-tooltip",
+                    "accId": "zoom-in-tooltip",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+							    "loc": "Zoom in"
+						    }
+                        }
+                    ]
+                },
+				{
+                    "id": "zoom-out-tooltip",
+                    "accId": "zoom-out-tooltip",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+							    "loc": "Zoom out"
+						    }
+                        }
+                    ]
+                },
+				{
+                    "id": "reset-tooltip",
+                    "accId": "reset-tooltip",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+							    "loc": "Reset"
+						    }
+                        }
+                    ]
+                },
+				{
+                    "id": "rotate-about-x-axis",
+                    "accId": "rotate-about-x-axis",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+							    "loc": "Rotate about <i>x</i>-axis"
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "rotate-about-y-axis",
+                    "accId": "rotate-about-y-axis",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+							    "loc": "Rotate about <i>y</i>-axis"
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "rotate-about-z-axis",
+                    "accId": "rotate-about-z-axis",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+							    "loc": "Rotate about <i>z</i>-axis"
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "conic-rotate-angle-text",
+                    "accId": "conic-rotate-angle-text",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "message": {
+							    "loc": "Rotate:"
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "explore-tab-content-container",
+                    "accId": "explore-tab-content-container",
+                    "type": "text",
+					"tabIndex":525,
+					"offsetTop":-3,
+					"offsetLeft":-3,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The head on view of a double cone is shown. A plane cutting the cone shown and the corresponding figure is shown on the graph. Use the rotate icons to rotate it about the x, y, or z axes. Use the reset button to reset the cone to the head on view. Use the m value stepper to adjust the slope of the plane and the b value stepper to adjust the vertical plane intercept. Use the h value stepper to adjust the height of the cone and the s value stepper to adjust the slope of the cone. Use the start over button to reset the entire screen. Use the zoom in, zoom out and reset buttons on the graph to zoom in, zoom out or reset respectively."
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "canvas-container",
+                    "accId": "canvas-container",
+                    "type": "text",
+					"tabIndex":535,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The head on view of a double cone is shown."
+						    }
+                        },
+                        {
+                            "id": "1",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "You have rotated the cone about the %@$% axis by %@$% degrees."
+						    }
+                        },
+                        {
+                            "id": "2",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "x"
+						    }
+                        },
+                        {
+                            "id": "3",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "y"
+						    }
+                        },
+                        {
+                            "id": "4",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "z"
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "plane-data-container",
+                    "accId": "plane-data-container",
+                    "type": "text",
+					"tabIndex":600,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The slope of the plane is %@$% . The vertical intercept of the plane is %@$% . Use spacebar to adjust the slope and vertical intercept of the plane."
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "cone-data-container",
+                    "accId": "cone-data-container",
+                    "type": "text",
+					"tabIndex":700,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The height of the cone is %@$% . The slope of the cone is  %@$% . Use spacebar to adjust the height and slope of the cone."
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "graph-canvas-container",
+                    "accId": "graph-canvas-container",
+                    "type": "text",
+					"tabIndex":800,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "A graph of the shape of the cone cut by the plane is shown. A %@$% is shown. Use spacebar to zoom in, zoom out or reset the graph."
+						    }
+                        },
+						{
+                            "id": "1",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Ellipse"
+						    }
+                        },
+						{
+                            "id": "2",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "parabola"
+						    }
+                        },
+						{
+                            "id": "3",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "hyperbola"
+						    }
+                        },
+						{
+                            "id": "4",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "line"
+						    }
+                        },
+						{
+                            "id": "5",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "point"
+						    }
+                        },
+						{
+                            "id": "6",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The graph has zoomed in"
+						    }
+                        },
+						{
+                            "id": "7",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The graph is reset to its default"
+						    }
+                        },
+						{
+                            "id": "8",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The graph has zoomed out"
+						    }
+                        },
+						{
+                            "id": "9",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "circle"
+						    }
+                        },
+						{
+                            "id": "10",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "A graph of the shape of the cone cut by the plane is shown. An %@$% is shown. Use spacebar to zoom in, zoom out or reset the graph."
+						    }
+                        }
+                    ]
+                }
+            ],
+            "id": "explore-screen",
+            "name": "explore-screen"
+        },
+		{
+            "elements": [
+                {
+					"id": "conic-reset-button",
+                    "accId": "conic-reset-button",
+                    "type": "text",
+					"role":"button",
+					"tabIndex":575,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Reset"
+						    }
+                        }
+                    ]
+                },
+                {
+					"id": "conic-rotate-about-x-axis-button",
+                    "accId": "conic-rotate-about-x-axis-button",
+                    "type": "text",
+					"role":"button",
+					"tabIndex":545,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Rotate about the x axis"
+						    }
+                        }
+                    ]
+                },
+                {
+					"id": "conic-rotate-about-y-axis-button",
+                    "accId": "conic-rotate-about-y-axis-button",
+                    "type": "text",
+					"role":"button",
+					"tabIndex":555,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Rotate about the y axis"
+						    }
+                        }
+                    ]
+                },
+                {
+					"id": "conic-rotate-about-z-axis-button",
+                    "accId": "conic-rotate-about-z-axis-button",
+                    "type": "text",
+					"role":"button",
+					"tabIndex":565,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Rotate about the z axis"
+						    }
+                        }
+                    ]
+                },
+                {
+					"id": "graph-zoom-in-button",
+                    "accId": "graph-zoom-in-button",
+                    "type": "text",
+					"role":"button",
+					"tabIndex":815,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Zoom in"
+						    }
+                        }
+                    ]
+                },
+                {
+					"id": "graph-reset-button",
+                    "accId": "graph-reset-button",
+                    "type": "text",
+					"role":"button",
+					"tabIndex":825,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Reset"
+						    }
+                        }
+                    ]
+                },
+                {
+					"id": "graph-zoom-out-button",
+                    "accId": "graph-zoom-out-button",
+                    "type": "text",
+					"role":"button",
+					"tabIndex":835,
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Zoom out"
+						    }
+                        }
+                    ]
+                },
+				{
+					"id": "spinner-text",
+                    "accId": "spinner-text",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to increase the slope of the plane."
+						    }
+                        },
+						{
+                            "id": "1",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to decrease the slope of the plane."
+						    }
+                        },
+						{
+                            "id": "2",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The slope of the plane is %@$% ."
+						    }
+                        },
+						{
+                            "id": "3",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to increase the vertical intercept of the plane."
+						    }
+                        },
+						{
+                            "id": "4",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to decrease the vertical intercept of the plane."
+						    }
+                        },
+						{
+                            "id": "5",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The vertical intercept of the plane is %@$% ."
+						    }
+                        },
+						{
+                            "id": "6",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to increase the height of the cone."
+						    }
+                        },
+						{
+                            "id": "7",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to decrease the height of the cone."
+						    }
+                        },
+						{
+                            "id": "8",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The height of the cone is %@$% ."
+						    }
+                        },
+						{
+                            "id": "9",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to increase the slope of the cone."
+						    }
+                        },
+						{
+                            "id": "10",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "Use spacebar to decrease the slope of the cone."
+						    }
+                        },
+						{
+                            "id": "11",
+							"isAccTextSame": false,
+                            "message": {
+							    "acc": "The slope of the cone is  %@$% ."
+						    }
+                        }
+                    ]
+                }
+            ],
+            "id": "button-screen",
+            "name": "button-screen"
+        },
+        {
+            "id": "help-screen",
+            "name": "help-screen",
+            "elements": [
+                {
+                    "id": "plane-slop-custom-spinner-container-help",
+                    "accId": "plane-slop-custom-spinner-container-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Change <i>m</i> to adjust the slope of the plane.",
+								"acc": "Change m to adjust the slope of the plane."
+                            }
+                        }
+                    ]
+                },
+				{
+                    "id": "plane-offset-custom-spinner-container-help",
+                    "accId": "plane-offset-custom-spinner-container-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Change <i>b</i> to adjust the vertical plane intercept.",
+								"acc": "Change b to adjust the vertical plane intercept."
+                            }
+                        }
+                    ]
+                },
+				{
+                    "id": "cone-height-custom-spinner-container-help",
+                    "accId": "cone-height-custom-spinner-container-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Change <i>h</i> to adjust the height of the cone.",
+								"acc": "Change h to adjust the height of the cone."
+                            }
+                        }
+                    ]
+                },
+				{
+                    "id": "cone-slop-custom-spinner-container-help",
+                    "accId": "cone-slop-custom-spinner-container-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Change <i>s</i> to adjust the slope of the cone.",
+								"acc": "Change s to adjust the slope of the cone."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "conic-rotate-angle-text-help",
+                    "accId": "conic-rotate-angle-text-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Select the button to rotate about the <i>x, y</i> or the <i>z</i> axis. You may grab and rotate the cone as well.",
+								"acc": "Select the button to rotate about the x, y or the z axis. You may grab and rotate the cone as well."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "conic-reset-button-help",
+                    "accId": "conic-reset-button-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc":"Select this button to reset the 3D view."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "graph-reset-button-help",
+                    "accId": "graph-reset-button-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc":"These buttons will change the zoom level of the graph. Select the reset button to re-center and set zoom level back to its default."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "graph-canvas-container-help",
+                    "accId": "graph-canvas-container-help",
+                    "type": "text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc":"Press and drag on the graph to pan the view."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

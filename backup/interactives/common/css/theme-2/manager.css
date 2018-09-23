@@ -1,0 +1,42 @@
+﻿
+.math-utilities-manager .acc-read-elem {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    color: transparent;
+    text-shadow: none !important;
+    font-size: 0;
+    line-height: 0;
+    word-spacing: 0;
+    letter-spacing: 0;
+    user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+
+.math-utilities-manager .acc-read-elem:focus {
+    outline: 1px dotted #000;
+}
+
+.math-utilities-manager .localised-text {
+    position:relative;
+    display:block;
+}
+
+.math-utilities-manager .math-utilities-manager-access{
+    text-shadow: none;
+}
+
+.math-utilities-manager .math-utilities-manager-access:focus {
+    outline: 1px dotted #000;
+}
+
+.math-utilities-manager input[type="checkbox"].math-utilities-manager-access:focus {
+    outline: black dotted 1px;
+}
+
+.math-utilities-manager input[type="radio"].math-utilities-manager-access:focus {
+    outline: black dotted 1px;
+    outline-offset: 0px;
+}

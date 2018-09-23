@@ -1,0 +1,18 @@
+﻿
+
+{{#if playerTheme}}
+<div id="{{idPrefix}}header-tab-drawer-btn" class="header-tab-drawer-btn"></div>
+<div class="header-horizontal-divider"></div>
+{{/if}}
+
+<div class="heading" id="{{idPrefix}}heading"></div>
+
+{{#if playerTheme}}
+<div class="header-dot"></div>
+<div class="header-subtitle header-subtitle-hover" id="{{idPrefix}}header-subtitle"></div>
+{{/if}}
+
+{{#each headerButtons}}
+<div class="header-btn" id="{{../idPrefix}}{{this.id}}">
+</div>
+{{/each}} 

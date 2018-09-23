@@ -1,0 +1,2541 @@
+{
+    "id": "ge-u1-c4-i2-mini-golf",
+    "locAccData": [
+        {
+            "elements": [
+                {
+                    "accId": "heading",
+                    "id": "heading",
+                    "tabIndex": 200,
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Mini Golf"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "title-screen",
+            "name": "Title Screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "overview-header",
+                    "id": "overview-header",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Mini Golf"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "overview-text",
+                    "id": "overview-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Set up angles of incidence and angles of reflection to score a hole in one.",
+                                "loc": "Set up angles of incidence and angles of reflection to score a hole-in-one."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "overview-tab",
+            "name": "overviewTab"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "player-tab-0",
+                    "id": "player-tab-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Overview"
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "type": "text"
+                },
+                {
+                    "accId": "player-tab-1",
+                    "id": "player-tab-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Play Game"
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "type": "text"
+                }
+            ],
+            "id": "tab-contents",
+            "name": "tab-contents"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "score-card-btn",
+                    "id": "score-card-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Score Card"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "accId": "scorecard-back-btn",
+                    "id": "scorecard-back-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Back"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "accId": "clear-scorecard-btn",
+                    "id": "clear-scorecard-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Reset Score"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "accId": "reset-course-btn",
+                    "id": "reset-course-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Reset"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "score-card-close-btn-text",
+                    "id": "score-card-close-btn-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Close"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "skip-animation-btn-text",
+                    "id": "skip-animation-btn-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Skip Animation"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "buttons-text",
+            "name": "buttons-text"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "reset-pop-up-text",
+                    "id": "reset-pop-up-text",
+                    "messages": [
+                        {
+                            "id": "title",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "reset",
+                                "loc": "Reset?"
+                            }
+                        },
+                        {
+                            "id": "body-text",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Are you sure you want to reset? The angles you formed will be cleared.",
+                                "loc": "Are you sure you want to reset? The angles you formed will be cleared."
+                            }
+                        },
+                        {
+                            "id": "okay-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "OK"
+                            }
+                        },
+                        {
+                            "id": "cancel-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Cancel"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "clear-scorecard-pop-up-text",
+                    "id": "clear-scorecard-pop-up-text",
+                    "messages": [
+                        {
+                            "id": "title",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Reset score",
+                                "loc": "Reset Score"
+                            }
+                        },
+                        {
+                            "id": "body-text",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Are you sure you want to clear all the data?",
+                                "loc": "Are you sure you want to clear all the data?"
+                            }
+                        },
+                        {
+                            "id": "okay-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "OK"
+                            }
+                        },
+                        {
+                            "id": "cancel-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Cancel"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "misjudged-shot-pop-up-text",
+                    "id": "misjudged-shot-pop-up-text",
+                    "messages": [
+                        {
+                            "id": "title",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Misjudged Shot.",
+                                "loc": "Misjudged shot."
+                            }
+                        },
+                        {
+                            "id": "body-text",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Adjust your angle of reflection to get a hole in one.",
+                                "loc": "Adjust your angle of reflection to get a hole-in-one."
+                            }
+                        },
+                        {
+                            "id": "okay-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "OK"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "hole-in-1-pop-up-text",
+                    "id": "hole-in-1-pop-up-text",
+                    "messages": [
+                        {
+                            "id": "title",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Hole In One",
+                                "loc": "Hole-In-One!"
+                            }
+                        },
+                        {
+                            "id": "body-text",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Good Job! You have unlocked %@$%.",
+                                "loc": "Good Job! You have unlocked %@$%."
+                            }
+                        },
+                        {
+                            "id": "body-text-already-unlocked",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Good Job! Now try to score a hole in one in %@$%.",
+                                "loc": "Good Job! Now try to score a hole-in-one in %@$%."
+                            }
+                        },
+                        {
+                            "id": "body-text-course-4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Good Job! You have completed all the courses. You may select a previously unlocked course or try this one again.",
+                                "loc": "Good Job! You have completed all the courses. You may select a previously unlocked course or try this one again."
+                            }
+                        },
+                        {
+                            "id": "play-again-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Play Again"
+                            }
+                        },
+                        {
+                            "id": "next-hole-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Next Course"
+                            }
+                        },
+                        {
+                            "id": "new-course-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "New Course"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "obstacle-drag-pop-up-text",
+                    "id": "obstacle-drag-pop-up-text",
+                    "messages": [
+                        {
+                            "id": "title",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Alert",
+                                "loc": "Alert!"
+                            }
+                        },
+                        {
+                            "id": "body-text",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Please move the ball path away from the object to unlock its position."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "pop-up-texts",
+            "name": "pop-up-texts"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "carousel-direction-text",
+                    "id": "carousel-direction-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Choose a course. Unlock more as you go. A Scoreboard button is available to check your scores.",
+                                "loc": "Choose a course. Unlock more as you go!"
+                            }
+                        }
+                    ],
+                    "tabIndex": 0,
+                    "type": ""
+                },
+                {
+                    "accId": "course-direction-text",
+                    "id": "course-direction-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Design a path to get a hole in one.",
+                                "loc": "Design a path to get a hole-in-one."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "direction-text-button-text",
+                    "id": "direction-text-button-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "New Course"
+                            }
+                        }
+                    ],
+                    "type": ""
+                }
+            ],
+            "id": "direction-texts",
+            "name": "direction-texts"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "carousel-page-score-card-btn",
+                    "id": "carousel-page-score-card-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Score card",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 530,
+                    "type": "text"
+                }
+            ],
+            "id": "carousel-page",
+            "name": "carousel-page"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "carousel-view-slide-number-indicator",
+                    "id": "carousel-view-slide-number-indicator",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "%@$% of %@$%"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-0-play-count-text",
+                    "id": "carousel-view-slide-0-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-1-play-count-text",
+                    "id": "carousel-view-slide-1-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-2-play-count-text",
+                    "id": "carousel-view-slide-2-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-3-play-count-text",
+                    "id": "carousel-view-slide-3-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-0-hole-in-1-text",
+                    "id": "carousel-view-slide-0-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-1-hole-in-1-text",
+                    "id": "carousel-view-slide-1-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-2-hole-in-1-text",
+                    "id": "carousel-view-slide-2-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-3-hole-in-1-text",
+                    "id": "carousel-view-slide-3-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-0-number",
+                    "id": "carousel-view-slide-0-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 1"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-1-number",
+                    "id": "carousel-view-slide-1-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 2"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-2-number",
+                    "id": "carousel-view-slide-2-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 3"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-3-number",
+                    "id": "carousel-view-slide-3-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 4"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-0-title",
+                    "id": "carousel-view-slide-0-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Putt Putt Classic",
+                                "loc": "Putt-Putt Classic"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-1-title",
+                    "id": "carousel-view-slide-1-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "The Cosmos"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-2-title",
+                    "id": "carousel-view-slide-2-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Pirate's Cove"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-3-title",
+                    "id": "carousel-view-slide-3-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Medieval"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-1-lock-text",
+                    "id": "carousel-view-slide-1-lock-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Locked"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-2-lock-text",
+                    "id": "carousel-view-slide-2-lock-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Locked"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-3-lock-text",
+                    "id": "carousel-view-slide-3-lock-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Locked"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-1-feedback-text-1",
+                    "id": "carousel-view-slide-1-feedback-text-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Get a hole-in-one on<br>\"Putt-Putt Classic\" to unlock!"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-2-feedback-text-1",
+                    "id": "carousel-view-slide-2-feedback-text-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Get a hole-in-one on<br>\"The Cosmos\" to unlock!"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-slide-3-feedback-text-1",
+                    "id": "carousel-view-slide-3-feedback-text-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Get a hole-in-one on<br>\"Pirate's Cove\" to unlock!"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-carousel-acc-div",
+                    "id": "carousel-view-carousel-acc-div",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Course number %@$%. Current name is %@$%. Use the arrow keys to go to a different course. Use space to play this course.",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "%@$% course reached. ",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "first",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "First",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "last",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Last",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "locked-course",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Course number %@$%, %@$% is locked. Use the arrow keys to go to a different course.",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "one-time-popup-text",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " A tutorial explaining how to play will be shown at the start of this course."
+                            }
+                        }
+                    ],
+                    "tabIndex": 520,
+                    "type": "text"
+                },
+                {
+                    "accId": "carousel-view-carousel-temp-focus-div",
+                    "id": "carousel-view-carousel-temp-focus-div",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": " ",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "carousel-screen",
+            "name": "carousel-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "score-card-title",
+                    "id": "score-card-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Your scorecard is below. A Back button is provided to go back to the previous screen.",
+                                "loc": "Score Card"
+                            }
+                        },
+                        {
+                            "id": "clear-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": " A Reset score button is also there to rest the score.",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "close-btn",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": " A close button is provided to close the scorecard.",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "tabIndex": 7,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-number",
+                    "id": "course-0-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 1"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-title",
+                    "id": "course-0-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Putt putt classic",
+                                "loc": "Putt-Putt Classic"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-number",
+                    "id": "course-1-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 2"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-title",
+                    "id": "course-1-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "The Cosmos"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-2-number",
+                    "id": "course-2-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 3"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-2-title",
+                    "id": "course-2-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Pirate's Cove"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-3-number",
+                    "id": "course-3-number",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Course 4"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-3-title",
+                    "id": "course-3-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Medieval Hole"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-lock-text",
+                    "id": "course-1-lock-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Locked"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-2-lock-text",
+                    "id": "course-2-lock-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Locked"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-3-lock-text",
+                    "id": "course-3-lock-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Locked"
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-play-count-text",
+                    "id": "course-0-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-play-count-text",
+                    "id": "course-1-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-2-play-count-text",
+                    "id": "course-2-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-3-play-count-text",
+                    "id": "course-3-play-count-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Times Played: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-hole-in-1-text",
+                    "id": "course-0-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-hole-in-1-text",
+                    "id": "course-1-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-2-hole-in-1-text",
+                    "id": "course-2-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "course-3-hole-in-1-text",
+                    "id": "course-3-hole-in-1-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Holes-In-One: "
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": "text"
+                },
+                {
+                    "accId": "score-card-main-panel",
+                    "id": "score-card-main-panel",
+                    "messages": [
+                        {
+                            "id": "unlocked-course",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Course number %@$%, %@$% has been played %@$% times. You have got %@$% holes in ones in this course. ",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "locked-course",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Course number %@$%, %@$% is locked. ",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "end",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Tab to the Back button.",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": 4,
+                    "offsetTop": 4,
+                    "tabIndex": 4901,
+                    "type": "text"
+                },
+                {
+                    "accId": "score-card-back-button",
+                    "id": "score-card-back-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Back",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4903,
+                    "type": "text"
+                },
+                {
+                    "accId": "score-card-clear-button",
+                    "id": "score-card-clear-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Reset score",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4905,
+                    "type": "text"
+                },
+                {
+                    "accId": "score-card-close-button",
+                    "id": "score-card-close-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Close",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4907,
+                    "type": "text"
+                }
+            ],
+            "id": "score-card",
+            "name": "score-card"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "reset-btn",
+                    "id": "reset-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Reset"
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "type": "text"
+                },
+                {
+                    "accId": "got-it-btn",
+                    "id": "got-it-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Got It!"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "take-shot-btn",
+                    "id": "take-shot-btn",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Take Shot"
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "type": "text"
+                },
+                {
+                    "accId": "direction-text",
+                    "id": "direction-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Design a path to get a hole in one.",
+                                "loc": "Design a path to get a hole-in-one."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-number-indicator-0",
+                    "id": "course-number-indicator-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Course 1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-number-indicator-1",
+                    "id": "course-number-indicator-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Course 2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-number-indicator-2",
+                    "id": "course-number-indicator-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Course 3"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-number-indicator-3",
+                    "id": "course-number-indicator-3",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Course 4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-title-0",
+                    "id": "course-title-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Putt putt classic",
+                                "loc": "Putt-Putt Classic"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-title-1",
+                    "id": "course-title-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "The Cosmos"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-title-2",
+                    "id": "course-title-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Pirate's Cove"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "course-title-3",
+                    "id": "course-title-3",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Medieval"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "main-container-0",
+                    "id": "main-container-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 550,
+                    "type": "text"
+                },
+                {
+                    "accId": "main-container-text",
+                    "id": "main-container-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Course number %@$%, %@$% is given below. The golf ball is present on the course. Its position can be changed using the arrow keys. Each time the ball collides with an obstacle, a sticky slider appears which can be used to change the angle of incidence and reflection.",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": " %@$% obstacles are given which can be placed on the course.",
+                                "loc": ""
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": " A take shot button will appear when the ball is positioned over the hole. Skip animation button will appear on the screen when the shot playing animation is played. Reset button is provided to reset the course. A Scorecard button is also present. The New Course button can be used to try a new course.",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "main-container-1",
+                    "id": "main-container-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 550,
+                    "type": "text"
+                },
+                {
+                    "accId": "main-container-2",
+                    "id": "main-container-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 550,
+                    "type": "text"
+                },
+                {
+                    "accId": "main-container-3",
+                    "id": "main-container-3",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 550,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-custom-popup-text",
+                    "id": "course-0-custom-popup-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "How to play Move the ball to barrier and release. Adjust the angle. Move the ball over the hole and release. Press Take Shot."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-custom-popup-text",
+                    "id": "course-1-custom-popup-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Obstacles Drag an obstacle on the course. Use obstacle to bank shot."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "course",
+            "name": "course"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "canvas-holder-0-acc-container",
+                    "id": "canvas-holder-0-acc-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 560,
+                    "type": "text"
+                },
+                {
+                    "accId": "take-shot-btn-holder-0",
+                    "id": "take-shot-btn-holder-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Take shot",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 570,
+                    "type": "text"
+                },
+                {
+                    "accId": "reset-course-btn-0",
+                    "id": "reset-course-btn-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Reset course",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 580,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-score-card-btn-0",
+                    "id": "course-score-card-btn-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Score card",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 590,
+                    "type": "text"
+                },
+                {
+                    "accId": "skip-animation-btn-0",
+                    "id": "skip-animation-btn-0",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Skip animation",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4000,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-custom-popup-title",
+                    "id": "course-0-custom-popup-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "How to Play"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-custom-popup-image-1-description-text",
+                    "id": "course-0-custom-popup-image-1-description-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Move ball to barrier and release."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-custom-popup-image-2-description-text",
+                    "id": "course-0-custom-popup-image-2-description-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Adjust angle."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-custom-popup-image-3-description-text",
+                    "id": "course-0-custom-popup-image-3-description-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Move ball over hole and release."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-image-4-button-text-container",
+                    "id": "course-0-image-4-button-text-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Take Shot"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-custom-popup-image-4-description-text",
+                    "id": "course-0-custom-popup-image-4-description-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Press \"Take Shot\"."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-0-got-it-button",
+                    "id": "course-0-got-it-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Got it."
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4945,
+                    "type": "text"
+                }
+            ],
+            "id": "course-0-screen",
+            "name": "course-0-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "canvas-holder-1-acc-container",
+                    "id": "canvas-holder-1-acc-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "putt putt dummy ",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 561,
+                    "type": "text"
+                },
+                {
+                    "accId": "take-shot-btn-holder-1",
+                    "id": "take-shot-btn-holder-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Take shot",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 570,
+                    "type": "text"
+                },
+                {
+                    "accId": "reset-course-btn-1",
+                    "id": "reset-course-btn-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Reset course",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 580,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-score-card-btn-1",
+                    "id": "course-score-card-btn-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Score card",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 590,
+                    "type": "text"
+                },
+                {
+                    "accId": "skip-animation-btn-1",
+                    "id": "skip-animation-btn-1",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Skip animation",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4000,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-custom-popup-title",
+                    "id": "course-1-custom-popup-title",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Obstacles"
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-custom-popup-image-1-description-text",
+                    "id": "course-1-custom-popup-image-1-description-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Drag an obstacle on the course."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-custom-popup-image-2-description-text",
+                    "id": "course-1-custom-popup-image-2-description-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Use obstacle to bank shot."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "course-1-got-it-button",
+                    "id": "course-1-got-it-button",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Got it."
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4945,
+                    "type": "text"
+                }
+            ],
+            "id": "course-1-screen",
+            "name": "course-1-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "canvas-holder-2-acc-container",
+                    "id": "canvas-holder-2-acc-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "putt putt dummy ",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 562,
+                    "type": "text"
+                },
+                {
+                    "accId": "take-shot-btn-holder-2",
+                    "id": "take-shot-btn-holder-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Take shot",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 570,
+                    "type": "text"
+                },
+                {
+                    "accId": "reset-course-btn-2",
+                    "id": "reset-course-btn-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Reset course",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 580,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-score-card-btn-2",
+                    "id": "course-score-card-btn-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Score card",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 590,
+                    "type": "text"
+                },
+                {
+                    "accId": "skip-animation-btn-2",
+                    "id": "skip-animation-btn-2",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Skip animation",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4000,
+                    "type": "text"
+                }
+            ],
+            "id": "course-2-screen",
+            "name": "course-2-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "canvas-holder-3-acc-container",
+                    "id": "canvas-holder-3-acc-container",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "putt putt dummy ",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "offsetLeft": -4,
+                    "offsetTop": -4,
+                    "tabIndex": 563,
+                    "type": "text"
+                },
+                {
+                    "accId": "take-shot-btn-holder-3",
+                    "id": "take-shot-btn-holder-3",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Take shot",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 570,
+                    "type": "text"
+                },
+                {
+                    "accId": "reset-course-btn-3",
+                    "id": "reset-course-btn-3",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Reset course",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 580,
+                    "type": "text"
+                },
+                {
+                    "accId": "course-score-card-btn-3",
+                    "id": "course-score-card-btn-3",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Score card",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 590,
+                    "type": "text"
+                },
+                {
+                    "accId": "skip-animation-btn-3",
+                    "id": "skip-animation-btn-3",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "Skip animation",
+                                "loc": ""
+                            }
+                        }
+                    ],
+                    "role": "button",
+                    "tabIndex": 4000,
+                    "type": "text"
+                }
+            ],
+            "id": "course-3-screen",
+            "name": "course-3-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "carousel-view-help",
+                    "id": "carousel-view-help",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "acc": "Use the arrows to navigate between putting greens.",
+                                "loc": "Use the arrows to navigate between putting greens."
+                            }
+                        }
+                    ],
+                    "role": "",
+                    "type": ""
+                },
+                {
+                    "accId": "score-card-btn-help",
+                    "id": "score-card-btn-help",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Select the <em>Score Card</em> to see your overall performance.",
+                                "acc": "Select the Score Card to check your overall performance."
+                            }
+                        }
+                    ],
+                    "tabIndex": 0,
+                    "type": ""
+                },
+                {
+                    "accId": "obstacles-help",
+                    "id": "obstacles-help",
+                    "messages": [
+                        {
+                            "id": "holder",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Place obstacles on the course to create new angle possibilities and help route your shot directly to the hole."
+                            }
+                        },
+                        {
+                            "id": "placed-obstacle",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Select object and use handles to rotate object to desired orientation."
+                            }
+                        },
+                        {
+                            "id": "multiple-obstacles",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "You may place more than one object on the course at a time to plan your shot."
+                            }
+                        }
+                    ],
+                    "tabIndex": 0,
+                    "type": ""
+                },
+                {
+                    "accId": "bridge-help",
+                    "id": "bridge-help",
+                    "messages": [
+                        {
+                            "id": "bridge",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Adjust the location of the bridge by moving it along the river."
+                            }
+                        },
+                        {
+                            "id": "bridge-wall",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "You may bank the ball off the inside walls of the bridge supports."
+                            }
+                        },
+                        {
+                            "id": "bridge-movement",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "To adjust the bridge, be sure the ball and any control handles are not touching the bridge."
+                            }
+                        }
+                    ],
+                    "tabIndex": 0,
+                    "type": ""
+                },
+                {
+                    "accId": "reset-course-btn-holder-help",
+                    "id": "reset-course-btn-holder-help",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": true,
+                            "message": {
+                                "acc": "Refresh the putting green, and start over.",
+                                "loc": "Refresh the putting green, and start over."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "accId": "new-course-btn-help",
+                    "id": "new-course-btn-help",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Select to try with a new course.",
+                                "acc": "Select to try with new course."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "ball-help",
+                    "id": "ball-help",
+                    "messages": [
+                        {
+                            "id": "mat-ball",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Use handles to rotate the ball desired orientation."
+                            }
+                        },
+                        {
+                            "id": "start-ball",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Drag the ball to a barrier to set up a shot."
+                            }
+                        },
+                        {
+                            "id": "sticky-slider",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Drag the handle to adjust where the ball hits the barrier."
+                            }
+                        },
+                        {
+                            "id": "destination-ball",
+                            "isAccTextSame": true,
+                            "message": {
+                                "loc": "Drag the ball to change the angles."
+                            }
+                        },
+                        {
+                            "id": "hole",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": "Drag the ball to the hole to get the Take Shot button. Select <em>Take Shot</em> to try your shot.",
+                                "acc": "Drag the ball to the hole to get the Take Shot button. Select Take Shot to try your shot."
+                            }
+                        }
+                    ],
+                    "type": ""
+                }
+            ],
+            "id": "help-screen",
+            "name": "help-screen"
+        },
+        {
+            "elements": [
+                {
+                    "accId": "mat-ball",
+                    "id": "mat-ball",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Carpet ball. Use arrow keys to change its position within the carpet. Use the r or e keys to rotate it clockwise or anticlockwise respectively."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "destination-ball",
+                    "id": "destination-ball",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Current ball. Use the arrow keys to change its position."
+                            }
+                        },
+						 {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": "Current ball is over the hole. Take shot button is available. Use tab to go to the Take Shot button and try your shot."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "sticky-slider-text",
+                    "id": "sticky-slider-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": " Sticky slider number %@$%."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "loc": " New sticky slider %@$% added."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Angle of incidence is %@$%  degrees and angle of reflection is %@$% degrees."
+                            }
+                        },
+                        {
+                            "id": "one-deg-incident",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Angle of incidence is 1 degree and angle of reflection is %@$% degrees."
+                            }
+                        },
+                        {
+                            "id": "one-deg-reflection",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Angle of incidence is %@$% degrees and angle of reflection is 1 degree."
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Use the arrow keys to change its position and space to set new position. Use delete button to delete this slider."
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " New angle of incidence is %@$% degrees and angle of reflection is %@$% degrees."
+                            }
+                        },
+                        {
+                            "id": "new-one-deg-incident",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " New angle of incidence is 1 degree and angle of reflection is %@$% degrees."
+                            }
+                        },
+                        {
+                            "id": "new-one-deg-reflection",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " New angle of incidence is %@$% degrees and angle of reflection is 1 degree."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "canvas-acc-cont-text",
+                    "id": "canvas-acc-cont-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " %@$% course. A main ball is present which is the starting position of the golf ball. Rotation handles are present on the main ball which can be used to change its orientation."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Sticky sliders are present on the points of collisions."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " There is an obstacle on the course. %@$% obstacles have been added to the course."
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " A bridge is also present which can be shifted along the river if no sticky sliders are present on it and it doesn’t cross the ball’s path. Use space to enter the course."
+                            }
+                        },
+						  {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Use space to enter the course."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "obstacle-text",
+                    "id": "obstacle-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Use the arrow key to move it. Use space to set its position."
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Use delete button to remove the obstacle."
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Cannot place obstacle here."
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Obstacle %@$%  has been placed on the course."
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Obstacle deleted from course."
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Obstacle number %@$%. "
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Use tab to go to the next obstacle."
+                            }
+                        },
+						 {
+                            "id": "7",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Use the r or e keys to rotate it clockwise or anticlockwise respectively."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                },
+                {
+                    "accId": "bridge-text",
+                    "id": "bridge-text",
+                    "messages": [
+                        {
+                            "id": "0",
+                            "isAccTextSame": false,
+                            "message": {
+                                "acc": "",
+                                "loc": " Bridge. Use the arrow keys to shift the bridge along the river and space to set its position."
+                            }
+                        }
+                    ],
+                    "type": "text"
+                }
+            ],
+            "id": "canvas-text-screen",
+            "name": "canvas-text-screen"
+        }
+    ]
+}

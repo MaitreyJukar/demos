@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<root>
+  <output path="..\js\components\models\components-models.js">
+    <input path="..\js\components\models\button.js"></input>
+    <input path="..\js\components\models\contextmenu.js"></input>
+    <input path="..\js\components\models\custom-combobox.js"></input>
+	<input path="..\js\components\models\input-box.js"></input>
+    <input path="..\js\components\models\custom-spinner.js"></input>
+    <input path="..\js\components\models\data-table.js"></input>
+    <input path="..\js\components\models\feedback-badge.js"></input>
+    <input path="..\js\components\models\grid-area.js"></input>
+    <input path="..\js\components\models\hint-feedback.js"></input>
+    <input path="..\js\components\models\local-instruction.js"></input>
+    <input path="..\js\components\models\pan-balance.js"></input>
+    <input path="..\js\components\models\speech-stream.js"></input>
+    <input path="..\js\components\models\tooltip.js"></input>
+    <input path="..\js\components\models\number-line.js"></input>
+    <input path="..\js\components\models\intro-box.js"></input>
+    <input path="..\js\components\models\graph.js"></input>
+    <input path="..\js\components\models\advance-number-line.js"></input>
+    <input path="..\js\components\models\drag-drop-numberline.js"></input>
+    <input path="..\js\components\models\slider.js"></input>
+    <input path="..\js\components\models\single-tile.js"></input>
+    <input path="..\js\components\models\custom-draggable-tile.js"></input>
+    <input path="..\js\components\models\input-box.js"></input>
+  </output>
+
+  <output path="..\js\components\views\components-views.js">
+    <input path="..\js\components\views\button.js"></input>
+    <input path="..\js\components\views\contextmenu.js"></input>
+    <input path="..\js\components\views\custom-combobox.js"></input>
+	<input path="..\js\components\views\input-box.js"></input>
+    <input path="..\js\components\views\custom-spinner.js"></input>
+    <input path="..\js\components\views\data-table.js"></input>
+    <input path="..\js\components\views\feedback-badge.js"></input>
+    <input path="..\js\components\views\grid-area.js"></input>
+    <input path="..\js\components\views\hint-feedback.js"></input>
+    <input path="..\js\components\views\local-instruction.js"></input>
+    <input path="..\js\components\views\pan-balance.js"></input>
+    <input path="..\js\components\views\score-meter.js"></input>
+    <input path="..\js\components\views\tooltip.js"></input>
+    <input path="..\js\components\views\number-line.js"></input>
+    <input path="..\js\components\views\intro-box.js"></input>
+    <input path="..\js\components\views\graph.js"></input>
+    <input path="..\js\components\views\advance-number-line.js"></input>
+    <input path="..\js\components\views\drag-drop-numberline.js"></input>
+    <input path="..\js\components\views\slider.js"></input>
+    <input path="..\js\components\views\single-tile.js"></input>
+    <input path="..\js\components\views\custom-draggable-tile.js"></input>
+    <input path="..\js\components\views\input-box.js"></input>
+  </output>
+
+  <output path="..\js\manager\models\manager-models.js">
+    <input path="..\js\manager\models\element.js"></input>
+    <input path="..\js\manager\models\manager.js"></input>
+    <input path="..\js\manager\models\message.js"></input>
+    <input path="..\js\manager\models\node.js"></input>
+    <input path="..\js\manager\models\text_node.js"></input>
+  </output>
+  <output path="..\js\manager\views\manager-views.js">
+    <input path="..\js\manager\views\manager.js"></input>
+    <input path="..\js\manager\views\element.js"></input>
+  </output>
+  <output path="..\js\manager\collections\manager-collections.js">
+    <input path="..\js\manager\collections\elements.js"></input>
+    <input path="..\js\manager\collections\messages.js"></input>
+    <input path="..\js\manager\collections\nodes.js"></input>
+  </output>
+
+  <output path="..\js\player\models\player-models.js">
+    <input path="..\js\player\models\base.js"></input>
+    <input path="..\js\player\models\activity-area.js"></input>
+    <input path="..\js\player\models\base-interactive.js"></input>
+    <input path="..\js\player\models\canvas-acc.js"></input>
+    <input path="..\js\player\models\canvas-item.js"></input>
+    <input path="..\js\player\models\definition-box.js"></input>
+    <input path="..\js\player\models\player-header.js"></input>
+    <input path="..\js\player\models\player.js"></input>
+    <input path="..\js\player\models\pop-up.js"></input>
+    <input path="..\js\player\models\tab.js"></input>
+    <input path="..\js\player\models\tts-generator.js"></input>
+  </output>
+
+  <output path="..\js\player\views\player-views.js">
+    <input path="..\js\player\views\activity-area.js"></input>
+    <input path="..\js\player\views\base.js"></input>
+    <input path="..\js\player\views\canvas-acc.js"></input>
+    <input path="..\js\player\views\definition-box.js"></input>
+    <input path="..\js\player\views\player-header.js"></input>
+    <input path="..\js\player\views\player.js"></input>
+    <input path="..\js\player\views\pop-up.js"></input>
+    <input path="..\js\player\views\tab.js"></input>
+    <input path="..\js\player\views\tts-generator.js"></input>
+  </output>
+
+  <output path="..\js\player\collections\player-collections.js">
+    <input path="..\js\player\collections\activity-area.js"></input>
+    <input path="..\js\player\collections\canvas-items.js"></input>
+    <input path="..\js\player\collections\tabs.js"></input>
+  </output>
+
+  <output path="..\js\utils\models\utils-models.js">
+    <input path="..\js\utils\models\browser-check.js"></input>
+    <input path="..\js\utils\models\screen-utils.js"></input>
+    <input path="..\js\utils\models\utils.js"></input>
+    <input path="..\js\utils\models\validator.js"></input>
+    <input path="..\js\utils\models\stop-watch.js"></input>
+    <input path="..\js\utils\models\animation-utils.js"></input>
+  </output>
+
+  <output path="../templates/common-template.js">
+    <input path="..\templates\manager\elementAcc.js"></input>
+    <input path="..\templates\manager\elementNoAcc.js"></input>
+    <input path="..\templates\player\popUp.js"></input>
+    <input path="..\templates\player\header.js"></input>
+    <input path="..\templates\player\definitionBox.js"></input>
+    <input path="..\templates\components\customSpin.js"></input>
+    <input path="..\templates\components\tooltip.js"></input>
+    <input path="..\templates\components\dragDrop.js"></input>
+    <input path="..\templates\components\numberLineAdvance.js"></input>
+    <input path="..\templates\components\introBox.js"></input>
+    <input path="..\templates\components\panBalance.js"></input>
+    <input path="..\templates\components\numberLine.js"></input>
+  </output>
+  <output path="..\js\components\models\math-utilities-graph\math-utilities-graph-models.js">
+    <input path="..\js\components\models\math-utilities-graph\grid-graph.js"></input>
+    <input path="..\js\components\models\math-utilities-graph\math-functions.js"></input>
+    <input path="..\js\components\models\math-utilities-graph\equation-parser.js"></input>
+    <input path="..\js\components\models\math-utilities-graph\geometric-functions.js"></input>
+    <input path="..\js\components\models\math-utilities-graph\plotter-model.js"></input>
+    <input path="..\js\components\models\math-utilities-graph\plot-worker.js"></input>
+    <input path="..\js\components\models\math-utilities-graph\profiling.js"></input>
+  </output>
+  <output path="..\js\components\views\math-utilities-graph\math-utilities-graph-views.js">
+    <input path="..\js\components\views\math-utilities-graph\grid-graph.js"></input>
+    <input path="..\js\components\views\math-utilities-graph\plotter-view.js"></input>
+  </output>
+</root>

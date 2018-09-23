@@ -1,0 +1,33 @@
+﻿<div class="base-exponent-inner {{level}}">
+    {{#if isAccessible}}
+        <div class="acc-div acc-read-elem math-utilities-manager-access"></div>
+    {{/if}}
+    <div class="base-container {{base-class}} {{level}} " data-tiletype="{{baseTileType}}">
+        <div class="base-value">{{{base}}}</div>
+        <div class="box">
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+        </div>
+        {{#if isAccessible}}
+        <div class="acc-div acc-read-elem math-utilities-manager-access">{{base}}</div>
+        {{/if}}
+    </div>
+    <div class="exponent-container {{exponent-class}} {{level}}" data-tiletype="{{expTileType}}">
+        <div class="exponent-value">{{{exponent}}}</div>
+        <div class="box">
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+            <div class="inside-divs"></div>
+        </div>
+        {{#if isAccessible}} 
+        <div class="acc-div acc-read-elem math-utilities-manager-access">{{exponent}}</div>
+        {{/if}}
+    </div>
+</div>

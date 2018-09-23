@@ -1,0 +1,25 @@
+{{#if operator.multiplication}}
+	{{#if operator.hide}}
+	<div class='hide-operator equation-common'></div>
+	{{else}}
+	<div class='multiplication-operator equation-common'></div>
+	{{/if}}
+{{else}} 
+	{{#if operator.addition}}
+		<div class='addition-operator equation-common'>&nbsp;&#43;&nbsp;</div>
+	{{else}} 
+		{{#if operator.equals}}
+			<div class='equal-to-sign equation-common'>&nbsp;=&nbsp;</div>
+		{{else}}
+			{{#if operator.division}}
+				<div class='division-operator equation-common'></div>
+			{{else}}
+				{{#if operator.subtraction}}
+					<div class='subtraction-operator equation-common'></div>
+				{{else}}
+					<div class='no-operator equation-common'></div>
+				{{/if}}
+			{{/if}}
+		{{/if}}
+	{{/if}}
+{{/if}}

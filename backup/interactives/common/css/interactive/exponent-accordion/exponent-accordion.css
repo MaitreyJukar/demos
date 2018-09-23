@@ -1,0 +1,3529 @@
+.de-mathematics-interactive.exponent-accordion .direction-text-textHolder {
+    padding: 0px 12px;
+}
+
+.de-mathematics-interactive.exponent-accordion .direction-text-ttsHolder {
+    margin: 0px;
+    margin-right: 12px;
+}
+
+.de-mathematics-interactive.exponent-accordion .animation-progress-div {
+    height: 644px;
+    width: 930px;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(1,1,1,0);
+    pointer-events: auto;
+    top: -44px;
+    left: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tooltip-demo-container {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 882px;
+    height: 340px;
+}
+
+.de-mathematics-interactive.exponent-accordion .inline-feedback-container {
+    position: absolute;
+    top: 268px;
+    left: 464px;
+    width: 1px;
+    height: 1px;
+}
+
+.de-mathematics-interactive.exponent-accordion .marquee-inline-feedback-container {
+    position: absolute;
+    top: 216px;
+    left: 464px;
+    width: 1px;
+    height: 1px;
+}
+
+.de-mathematics-interactive.exponent-accordion .marquee-inline-feedback-container.show-at-top {
+    top: 0;
+}
+
+.de-mathematics-interactive.exponent-accordion .direction-text-container {
+    width: 909px;
+    height: 78px;
+    margin: auto;
+    border: solid 1px rgba(255,255,255,.23);
+    background-color: #282828;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.direction-text {
+    top: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorials-tab .data-set-selector.direction-text {
+    top: 10px;
+}
+
+/*
+.de-mathematics-interactive.exponent-accordion .data-set-selector.direction-text {
+    width: 907px;
+    height: 77px;
+    margin: auto;
+    background-color: #282828;
+    top: 10px;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+
+}
+
+*/
+
+
+.de-mathematics-interactive.exponent-accordion .bin-tiles-dragging-ui {
+    opacity: 0.8;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .base-draggable-tiles, .de-mathematics-interactive.exponent-accordion .positive-exponent-draggable-tiles, .de-mathematics-interactive.exponent-accordion .negative-exponent-draggable-tiles, .de-mathematics-interactive.exponent-accordion .parenthesis-draggable-tiles {
+    height: 100%;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .btn-yellow .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #826200 inset;
+    position: absolute;
+    height: 100%;
+    border-radius: 3px;
+    width: inherit;
+    top: 0px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .btn-yellow {
+    color: #222222;
+    background-color: #ffc000;
+    box-shadow: 0px 3px 9px -3px #000;
+    text-align: left;
+}
+
+.de-mathematics-interactive.exponent-accordion .btn-yellow.hover {
+    background-color: #fed65b;
+}
+
+.de-mathematics-interactive.exponent-accordion .btn-yellow.down {
+    box-shadow: inset 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.exponent-accordion .btn-yellow.active {
+    opacity: 0.99;
+}
+
+.de-mathematics-interactive.exponent-accordion .tts-yellow.active {
+    background-color: #ffc000;
+    box-shadow: inset 0px -2px #826200;
+    color: #222222;
+}
+
+.de-mathematics-interactive.exponent-accordion .tts-yellow.hover {
+    background-color: #fed65b;
+}
+
+.de-mathematics-interactive.exponent-accordion .tts-yellow.down {
+    background-color: #ffc000;
+    box-shadow: inset 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button .handle.hover {
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+.de-mathematics-interactive.exponent-accordion .theme2-tooltip.tooltip-form-validation-container.expression-incomplete-base-class {
+    /*padding: 10px 20px;*/
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.de-mathematics-interactive.exponent-accordion .exponent-tooltip-buttons-container {
+    position: relative;
+    width: 173px;
+}
+
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .pause-tts-container,
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .play-tts-container,
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .sound-tts-container {
+    background-color: #ffc000;
+    color: #222222;
+}
+
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .pause-tts-container.hover,
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .play-tts-container.hover,
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .sound-tts-container.hover {
+    background-color: #fed65b;
+}
+
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .pause-tts-container.down,
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .play-tts-container.down,
+.de-mathematics-interactive.exponent-accordion .expression-incomplete-base-class .sound-tts-container.down {
+    background-color: #ffc000;
+}
+
+.de-mathematics-interactive.exponent-accordion .build-mode-inline-feedback {
+    max-width: 582px;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .close-btn-in-tooltip {
+    width: 12px;
+    float: right;
+    position: relative;
+    top: -8px;
+    right: -6px;
+}
+
+.de-mathematics-interactive.exponent-accordion .close-btn-base-class {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .close-btn-base-class.hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .close-btn-base-class.down {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .text-in-tooltip {
+    float: left;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .base-draggable-tiles {
+    height: 48px;
+    width: 48px;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-draggable-tiles.hover {
+    background-color: #0797bb;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .exponent-draggable-tiles {
+    height: 35px;
+    width: 35px;
+}
+
+.de-mathematics-interactive.exponent-accordion .exponent-draggable-tiles.hover {
+    background-color: #15b484;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis-draggable-tiles.hover {
+    background-color: #686868;
+}
+
+
+/*******CSS FOR TILES AFTER DROPPED********/
+
+
+
+.de-mathematics-interactive.exponent-accordion .base-tile-in-term {
+    position: relative;
+    height: 48px;
+    width: 48px;
+    background: white;
+    display: inline-block;
+    top: 52px;
+    left: -16px;
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .exponent-tile-in-term {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    top: -40px;
+    left: 23px;
+    background: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-tile-container {
+    position: relative;
+    height: 100px;
+    width: 80px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .exponent-tooltip-buttons-container {
+    position: relative;
+    float: left;
+}
+
+.de-mathematics-interactive.exponent-accordion .apply-exponent-button {
+}
+
+.de-mathematics-interactive.exponent-accordion .white-button {
+    position: relative;
+    float: left;
+    background-color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .change-sign-button {
+    margin-top: 8px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .white-button.active {
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.exponent-accordion .white-button.hover {
+    background-color: #dedede;
+}
+
+.de-mathematics-interactive.exponent-accordion .white-button.down {
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 9px -3px #000 inset;
+}
+
+.de-mathematics-interactive.exponent-accordion .white-button .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #CBCBCB inset;
+    position: absolute;
+    height: 100%;
+    border-radius: 3px;
+    width: inherit;
+    top: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab {
+    width: 928px;
+    height: 599px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .direction-text-holder {
+    padding-top: 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorials-tab .tutorial-area .direction-text-holder {
+    padding-top: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .main-activity-area-container {
+    height: 501px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .main-activity-area-container {
+    position: relative;
+    width: 928px;
+    height: 501px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .form-expression-container {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .bin-tile-containment {
+    height: 428px;
+    position: absolute;
+    width: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorials-tab .bin-tile-containment {
+    width: 916px;
+    margin-left: 6px;
+    height: 428px;
+    position: absolute;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tiles-roster {
+    position: relative;
+    height: 461px;
+    width: 290px;
+    float: left;
+    margin-top: 29px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tiles-roster .animated.fadeIn {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tile-dispenser-separator {
+    width: 1px;
+    height: 476px;
+    position: relative;
+    float: left;
+    background: #FFFFFF;
+    opacity: 0.2;
+    top: 18px;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region-container {
+    position: relative;
+    float: left;
+    width: 636px;
+    height: 501px;
+}
+
+.de-mathematics-interactive.exponent-accordion .replay-btn-container {
+    position: absolute;
+    width: 100%;
+    bottom: 86px;
+}
+
+.de-mathematics-interactive.exponent-accordion .replay-btn {
+    z-index: 2;
+}
+
+.de-mathematics-interactive.exponent-accordion .replay-btn.disabled {
+    opacity: 1;
+}
+
+.de-mathematics-interactive.exponent-accordion .replay-btn-container.solve-mode {
+    /*bottom: 184px;*/
+    bottom: 181px;
+}
+
+/*
+.de-mathematics-interactive.exponent-accordion .tutorial-3 .replay-btn-container.solve-mode,
+.de-mathematics-interactive.exponent-accordion .tutorial-0 .replay-btn-container.solve-mode {
+    bottom: 196px;
+}
+*/
+
+.de-mathematics-interactive.exponent-accordion .replay-btn-container.solve-mode.withScroll {
+    bottom: 193px;
+}
+
+.de-mathematics-interactive.exponent-accordion .replay-btn {
+    margin: auto;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button-container {
+    width: 220px;
+    margin-left: 35px;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button.on {
+    background-color: #0086a7;
+    box-shadow: inset 2px 3px #002b3e;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button {
+    display: inline-block;
+    position: relative;
+    margin: 0px 10px 0px 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button.disabled {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button.on-inactive {
+    background-color: #0086a7;
+    box-shadow: inset 2px 3px #002b3e;
+}
+
+/*height: 300px;*/
+.de-mathematics-interactive.exponent-accordion .droppable-region-buttons-container {
+    height: 50px;
+    position: absolute;
+    top: 430px;
+    left: 49px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .done-button {
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .done-button .custom-btn-text{
+    line-height: 39px !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .build-mode-undo-button, .de-mathematics-interactive.exponent-accordion .solve-mode-undo-button, .de-mathematics-interactive.exponent-accordion .build-mode-reset-button, .de-mathematics-interactive.exponent-accordion .solve-mode-reset-button {
+    height: 38px;
+    position: relative;
+    width: 45px;
+    margin-right: 20px;
+    float: left;
+}
+
+.de-mathematics-interactive.exponent-accordion .solve-mode-reset-button, .de-mathematics-interactive.exponent-accordion .solve-mode-undo-button {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.de-mathematics-interactive.exponent-accordion .view-data-button {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-tile-dispenser-title,
+.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser-title,
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-dispenser-title {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-family: montserrat;
+    margin-bottom: 6px;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-tile-dispenser-title.disabled-bin-title,
+.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser-title.disabled-bin-title,
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-dispenser-title.disabled-bin-title,
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button-title.disabled-bin-title {
+    color: #888;
+}
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-toggle-button-title {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-family: montserrat;
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-tile-dispenser {
+    position: relative;
+    float: left;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.de-mathematics-interactive.exponent-accordion .random-expression-button {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .base-tile-dispenser-container {
+    /*height: 140px;*/
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: table;
+    margin-bottom: 12px;
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser-container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: table;
+    margin-bottom: 21px;
+}
+
+.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser {
+    position: relative;
+    float: left;
+    height: 81px;
+    width: 100%;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser {
+    position: relative;
+    display: inline-block;
+    width: 230px;
+}
+
+.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser-sub-container {
+    position: relative;
+    width: 100%;
+    height: 88px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.de-mathematics-interactive.exponent-accordion .has-multiple-tile-dispensers {
+    float: left;
+}
+
+.de-mathematics-interactive.exponent-accordion .positive-exponents-tile-dispenser {
+    position: relative;
+    width: 160px;
+    margin: auto;
+    display: table;
+}
+
+.de-mathematics-interactive.exponent-accordion .positive-exponents-tile-dispenser .tiles-container {
+    width: 120px;
+    margin: auto;
+}
+
+.de-mathematics-interactive.exponent-accordion .exponents-tile-dispenser-separator {
+    position: relative;
+    height: 100%;
+    width: 1px;
+    background: #000;
+    display: inline-block;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .negative-exponents-tile-dispenser .tiles-container {
+    width: 120px;
+    margin: auto;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-dispenser-container {
+    height: 79px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 23px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-dispenser-title {
+    position: relative;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-dispenser {
+    position: relative;
+    margin: auto;
+    display: table;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .parenthesis-tile-containers .parenthesis-draggable-tiles .tile-font/*,
+.de-mathematics-interactive.exponent-accordion .tutorial-area .parenthesis-tile-containers .parenthesis-draggable-tiles .tile-font*/ {
+    padding-bottom: 3px;
+    padding-top: 3px !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .base-tile-containers .base-draggable-tiles .tile-font,
+.de-mathematics-interactive.exponent-accordion .tutorial-area .base-tile-containers .base-draggable-tiles .tile-font {
+    padding-bottom: 3px;
+    padding-top: 3px !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .exponent-tile-containers .exponent-draggable-tiles .tile-font,
+.de-mathematics-interactive.exponent-accordion .tutorial-area .exponent-tile-containers .exponent-draggable-tiles .tile-font {
+    padding-bottom: 2px;
+    padding-top: 2px !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .parenthesis-tile-containers .parenthesis-draggable-tiles.disabled .tile-font/*,
+.de-mathematics-interactive.exponent-accordion .tutorial-area .parenthesis-tile-containers .parenthesis-draggable-tiles.disabled .tile-font*/ {
+    padding-bottom: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .base-tile-containers .base-draggable-tiles.disabled .tile-font {
+    padding-bottom: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .base-tile-containers .base-draggable-tiles.disabled,
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .exponent-tile-containers .exponent-draggable-tiles.disabled,
+.de-mathematics-interactive.exponent-accordion .form-expression-tab .parenthesis-tile-containers .parenthesis-draggable-tiles.disabled {
+    opacity: 0.5;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .base-tile-containers, .de-mathematics-interactive.exponent-accordion .exponent-tile-containers, .de-mathematics-interactive.exponent-accordion .parenthesis-tile-containers {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 2px;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-tile-containers .box .inside-divs,
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-containers .box .inside-divs,
+.de-mathematics-interactive.exponent-accordion .exponent-tile-containers .box .inside-divs {
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.74);
+}
+
+.de-mathematics-interactive.exponent-accordion .base-tile-containers,
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-containers,
+.de-mathematics-interactive.exponent-accordion .exponent-tile-containers {
+    text-shadow: rgba(0, 0, 0, 0.74902) 1px 1px 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .exponent-tile-containers .box {
+    position: relative;
+    top: -2px;
+}
+
+.de-mathematics-interactive.exponent-accordion .positive-exponent-draggable-tiles .tile-font, .de-mathematics-interactive.exponent-accordion .negative-exponent-draggable-tiles .tile-font {
+    font-size: 13px !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis-tile-dispenser .tiles-container {
+    margin: auto;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-tile-dispenser .tiles-container {
+    width: 232px;
+    margin: auto;
+}
+
+.de-mathematics-interactive.exponent-accordion .open-parenthesis {
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis-draggable-tiles .close-parenthesis {
+    display: inline-block;
+    margin-left: 20px;
+}
+/*********** Droppable *************/
+
+.de-mathematics-interactive.exponent-accordion .droppable-region .droppable-region-1 {
+    width: 300px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region .droppable-region-2 {
+    width: 300px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region .droppable-region-separator {
+    min-width: 200px;
+    max-width: 380px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .droppable-region .droppable-region-1 .dropped-tile {
+    position: relative;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region .droppable-region-2 .dropped-tile {
+    position: relative;
+    display: inline-block;
+}
+
+
+/*============================= Build Mode ===================================*/
+.de-mathematics-interactive.exponent-accordion .droppable-region-holder {
+    width: 100%;
+    height: 396px;
+    position: relative;
+    margin: auto;
+    white-space: nowrap;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-area .droppable-region-holder {
+    height: 424px;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region-start-multiplication {
+    position: relative;
+    width: 490px;
+    height: 117px;
+    margin: auto;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 26px;
+    margin-top: 26px;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region-start-division {
+    position: relative;
+    width: 430px;
+    height: 229px;
+    margin: auto;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.de-mathematics-interactive.exponent-accordion .multiplication-img {
+    width: 314px;
+    height: 59px;
+    display: inline-block;
+    position: relative;
+    margin-top: 27px;
+}
+
+.de-mathematics-interactive.exponent-accordion .division-img {
+    width: 314px;
+    height: 152px;
+    display: inline-block;
+    position: relative;
+    margin-top: 21px;
+}
+
+.de-mathematics-interactive.exponent-accordion .division-numerator {
+    width: 314px;
+    height: 59px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .division-denominator {
+    width: 314px;
+     height: 59px;
+    position: absolute;
+    top: 94px;
+    left: 0px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .division-text {
+}
+
+.de-mathematics-interactive.exponent-accordion .horizontal-saperator {
+    background-color: #ffffff;
+    height: 1px;
+    margin: auto;
+    position: relative;
+    width: 550px;
+    opacity: 0.2;
+}
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-container {
+    width: 424px;
+    height: 260px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: montserrat;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .align-center {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}*/
+
+.de-mathematics-interactive.exponent-accordion .raised-to-power-img {
+    width: 424px;
+    height: 231px;
+    display: inline-block;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region {
+    position: relative;
+    top: 140px;
+    width: 96%;
+    /*width: 500px;*/
+    /*height: 300px;*/
+    margin: auto;
+    /*-webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);*/
+    white-space: nowrap;
+    /*border: 1px solid #FFF;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .hide-overflow {
+    overflow: hidden;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region .equation-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.division .form-equation-draggable-containment {
+    position: absolute;
+    left: 0;
+    top: -98px;
+    width: 100%;
+    height: 428px;
+    display: block;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .form-equation-draggable-containment {
+    position: absolute;
+    left: 0;
+    top: -140px;
+    width: 100%;
+    height: 428px;
+    display: block;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.delete-border {
+    /*border: 1px solid #FFF;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication {
+    height: 150px;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.division {
+    height: 231px;
+    top: 98px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-area {
+    height: 100%;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-area .fraction-component-numerator, .de-mathematics-interactive.exponent-accordion .form-expression-area .fraction-component-denominator {
+    margin-top: 0px;
+    /*width: 96%;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-area .equation-view-component {
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    /*overflow: hidden;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-area .equation-view {
+    position: relative;
+    height: 162px;
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 0 10px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .form-expression-area .fraction-component {
+    position: relative;
+    height: 231px;
+    /* Removed this since raised to power fraction was taking a lot of space and it pushed the parentheses to the extreme ends*/
+    /*width: 100%;*/
+    display: inline-block;
+    /*border-left: 1px solid transparent;
+    border-right: 1px solid transparent;*/
+    min-width: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion.exponent-accordion-5 .form-expression-area .big-parenthesis .fraction-component {
+    min-width: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-area .fraction-component > .base {
+    height: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion .parentheses-drag-helper {
+    width: 48px;
+    height: 48px;
+    background-color: grey;
+    position: relative;
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border-radius: 9px;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.74902) 1px 1px 3px;
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive.exponent-accordion .parentheses-drag-helper-value {
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 4.5px;
+    padding-bottom: 3px;
+}
+
+/*============================ Workspace ====================================*/
+
+.de-mathematics-interactive.exponent-accordion .workspace-container {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .undo-button {
+    margin: 10px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-button {
+    margin: 10px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-scrollable {
+    height: 340px;
+    position: relative;
+    /*min-width: 100%; Removing, since specs mention padding on both sides*/
+    width: 909px;
+    margin: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.23);
+    border-top: none;
+    /*outline: 1px red solid;  TODO future scroll on tablet */
+    -webkit-overflow-scrolling: touch;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-area .workspace-scrollable {
+    /*overflow-x: hidden;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-0 .workspace-scrollable,
+.de-mathematics-interactive.exponent-accordion .tutorial-3 .workspace-scrollable {*/
+    overflow-x: scroll;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-scrollable {
+    /*outline: 1px red solid;*/
+    z-index: 2;
+}
+
+.de-mathematics-interactive.player-theme-2 .theme2-tooltip.tooltip-form-validation-container {
+    z-index: 3;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-scrollable .equation-container {
+    position: relative;
+    display: inline-block;
+    min-width: 100%;
+    height: 318px;
+    overflow: hidden;
+    /*height: 89%;* TODO future scroll on tablet */
+    /*outline: 1px white solid;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-scrollable.ie .equation-container {
+    height: calc( 100% - 18px);
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-scrollable .equation-container {
+    height: 315px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .workspace-title-text,
+.de-mathematics-interactive.exponent-accordion .droppable-region-container .droppable-region-title-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .droppable-region-title-text {
+    display: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .swipe-region {
+    display: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-container .swipe-region {
+    position: relative;
+    height: 25px;
+    width: 910px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #848484;
+    top: -26px;
+    left: 9px;
+    text-align: center;
+    display: block;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-container .swipe-region-text {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-container .double-angle {
+    position: relative;
+    font-size: 24px;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-container .double-angle-left {
+    top: 1px;
+    margin-right: 7px;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-container .double-angle-right {
+    top: 1px;
+    margin-left: 7px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area {
+    position: relative; /*display: block;*/
+    display: inline-block;
+    height: 100%;
+    min-width: 100%;
+   -ms-touch-action:none;
+    touch-action:none;
+}
+
+.de-mathematics-interactive.exponent-accordion.exponent-accordion-1 .workspace-expression-area,
+.de-mathematics-interactive.exponent-accordion.exponent-accordion-2 .workspace-expression-area {
+    top: 111px;
+    height: 100px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-draggable-containment {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorials-tab .workspace-draggable-containment {
+    height: 235px;
+    top: 44px;
+}
+
+.de-mathematics-interactive.exponent-accordion .equation-container .overlay-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.de-mathematics-interactive.exponent-accordion .equation-view-component {
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .fraction-component {
+    position: relative;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-numerator {
+    height: 105px;
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid transparent;
+    /*min-width: 96%;*/
+    margin-top: 8px;
+    border: 1px solid transparent;
+    display: block;
+    padding: 0px 10px 2px 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-numerator .div-one {
+    font-size: 40px;
+    vertical-align: baseline;
+    line-height: 143px;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-viniculum {
+    position: relative;
+    top: -4px;
+    height: 4px;
+    margin: auto;
+    display: block;
+    padding: 0 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-viniculum .inner {
+    height: 4px;
+    border-bottom: 4px solid #FFFFFF;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-viniculum.dragging .inner {
+    border-bottom-style: dotted;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-denominator {
+    height: 105px;
+    margin: auto;
+    border: 1px solid transparent;
+    display: block;
+    padding: 5px 10px 0px 10px;
+    /*min-width: 96%;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component > .base,
+.de-mathematics-interactive.exponent-accordion .fraction-component-numerator div,
+.de-mathematics-interactive.exponent-accordion .fraction-component-denominator div,
+.de-mathematics-interactive.exponent-accordion .marquee-div div,
+.de-mathematics-interactive.exponent-accordion .droppable-region .parenthesis.big-parenthesis .parenthesis,
+.de-mathematics-interactive.exponent-accordion .droppable-region .parenthesis.big-parenthesis .exponent,
+.de-mathematics-interactive.exponent-accordion .droppable-region.division .equation-view-component .bracket,
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .equation-view-component div {
+    display: inline-block; /*float: left;*/
+    vertical-align: top;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .base-container,
+.de-mathematics-interactive.exponent-accordion .exponent,
+.de-mathematics-interactive.exponent-accordion .bracket {
+    cursor: pointer;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-container.empty,
+.de-mathematics-interactive.exponent-accordion .exponent.empty {
+    cursor: default;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .term-container, .de-mathematics-interactive.exponent-accordion .base, .de-mathematics-interactive.exponent-accordion .exponent, .de-mathematics-interactive.exponent-accordion .bracket {
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container {
+    border-left: solid 3px rgba(0, 0, 0, 0);
+    border-right: solid 3px rgba(0, 0, 0, 0);
+    /*border-top: solid 3px rgba(0, 0, 0, 0);*/
+    /*border-bottom: solid 3px rgba(0, 0, 0, 0);*/
+    text-shadow: rgba(0, 0, 0, 0.74902) 1px 1px 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent {
+    /*width: 94px;*/
+    height: 64px;
+    text-align: left;
+    margin: 1px 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-only {
+    /*width: 55px;*/
+    height: 64px;
+    text-align: left;
+    margin: 1px 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container .base-exponent-inner .inactive,
+.de-mathematics-interactive.exponent-accordion .term-container .base-inner .inactive,
+.de-mathematics-interactive.exponent-accordion .term-container .base-inner .inactive,
+.de-mathematics-interactive.exponent-accordion .parenthesis .inactive {
+    opacity: 0.5;
+    cursor: default !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-area .no-hover,
+.de-mathematics-interactive.exponent-accordion .tutorial-area .no-hover.parenthesis .bracket,
+.de-mathematics-interactive.exponent-accordion .tutorial-area .no-hover div:not(.hover) > div:only-child {
+    cursor: default !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container .base-exponent-inner .inactive div,
+.de-mathematics-interactive.exponent-accordion .term-container .base-inner .inactive div,
+.de-mathematics-interactive.exponent-accordion .term-container .base-inner .inactive div,
+.de-mathematics-interactive.exponent-accordion .parenthesis .inactive div {
+    cursor: default !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container .base-exponent-inner,
+.de-mathematics-interactive.exponent-accordion .term-container .base-only-inner {
+    width: 100%;
+    height: 64px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container .base-inner {
+    /*width: 55px;*/
+    height: 64px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.ui-droppable-disabled.custom-droppable-disabled {
+    opacity: 0.5;
+    cursor: default !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.ui-droppable-disabled.custom-droppable-disabled div {
+    cursor: default !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent.level0,
+.de-mathematics-interactive.exponent-accordion .term-container.base-only.level0 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container .base-container.level0,
+.de-mathematics-interactive.exponent-accordion .term-container .exponent-container.level0 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-exponent-inner .box,
+.de-mathematics-interactive.exponent-accordion .term-container.base-only .base-inner .box,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .coefficient .box {
+    display: block;
+    margin: auto;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-exponent-inner .box .inside-divs,
+.de-mathematics-interactive.exponent-accordion .term-container.base-only .base-inner .box .inside-divs,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .coefficient .box .inside-divs,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .exponent .box .inside-divs {
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.74);
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-container .base-value,
+.de-mathematics-interactive.exponent-accordion .term-container.base-only .base-container .base-value,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .coefficient .coefficient-value {
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-only.lone-one .base-value{
+    margin-top: 5px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-container.empty .base-value {
+    display: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-container,
+.de-mathematics-interactive.exponent-accordion .term-container.base-only .base-container,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .coefficient {
+    border: solid 4px rgba(0, 0, 0, 0);
+    border-radius: 9px;
+    background-clip: padding-box;
+}
+
+
+/*.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-container.new-created-tile,
+.de-mathematics-interactive.exponent-accordion .term-container.base-only .base-container.new-created-tile,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .coefficient.new-created-tile {
+    webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: none;
+}*/
+
+
+
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .exponent-container,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .exponent {
+    border: solid 3px rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    background-clip: padding-box;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .exponent-container.new-created-tile,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .exponent.new-created-tile {
+    webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: none;
+}*/
+
+
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .exponent-container .exponent-value {
+    width: 100%;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .exponent-container.empty .exponent-value,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .exponent.empty .exponent-value {
+    display: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .exponent-container .box {
+    position: relative;
+    top: -3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-exponent-inner .base.empty .box,
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent .base-exponent-inner .exponent.empty .box,
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .exponent.empty .box {
+    display: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .term-container.base-exponent.level0,
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .term-container.base-only.level0 {
+    top: 39px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.base-exponent.level1,
+.de-mathematics-interactive.exponent-accordion .term-container.base-only.level1,
+.de-mathematics-interactive.exponent-accordion parenthesis.big-parenthesis .term-container.base-exponent.level2,
+.de-mathematics-interactive.exponent-accordion parenthesis.big-parenthesis .term-container.base-only.level2 {
+    /*bottom: -50px;*/
+    top: 27px;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-denominator .term-container.base-exponent.level1,
+.de-mathematics-interactive.exponent-accordion .fraction-component-denominator .term-container.base-only.level1 {
+    top: 9px;
+}
+
+.de-mathematics-interactive.exponent-accordion .depth-1 .term-container.base-exponent,
+.de-mathematics-interactive.exponent-accordion .depth-1 .term-container.base-only {
+    top: 10px;
+}
+
+/* Issues with marquee position*/
+/*.de-mathematics-interactive.exponent-accordion .fraction-component-denominator .term-container.base-exponent.level2 {
+    top: 6px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .depth-2 .term-container.base-exponent.level2,
+.de-mathematics-interactive.exponent-accordion .depth-2 .term-container.base-only.level2 {
+    /*bottom: 0px;*/
+    top: 25px;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .term-container.base-exponent.level2,
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .term-container.base-only.level2 {
+    top: 27px;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .fraction-component-denominator .term-container.base-exponent.level2,
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .fraction-component-denominator .term-container.base-only.level2 {
+    top: 9px;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-2 .term-container.base-exponent.level2 {*/
+/*bottom: 0px;*/
+/*top: 0px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-3 .term-container.base-exponent.level2 {*/
+/*bottom: 0px;*/
+/*top: 25px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .term-container.base-exponent.level3 {*/
+/*bottom: 0px;*/
+/*top: 0px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis.depth-1.level1 {
+    /*height: 88px;*/ /*bottom: -25px;*/
+    top: 17px;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-denominator .term-container.parenthesis.depth-1.level1 {
+    top: -1px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis.depth-1.level2 {
+    /*height: 88px;*/ /*bottom: -25px;*/
+    top: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.big-parenthesis .term-container.parenthesis.depth-1.level2 {
+    top: 17px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.big-parenthesis .fraction-component-denominator .term-container.parenthesis.depth-1.level2 {
+    top: -1px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis.depth-2 {
+    height: 135px; /*bottom: -25px;*/
+    top: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis.depth-2 {
+    height: 231px; /*bottom: -25px;*/
+    top: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .term-container.parenthesis.level0 {
+    top: 29px;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-2 .term-container.parenthesis.level1 {
+    height: 114px;*/ /*bottom: -25px;*/
+/*top: 25px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-3 .term-container.parenthesis.level1 {
+    height: 135px;*/ /*bottom: 0px;*/
+/*top: 0px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-3 .term-container.parenthesis.level2 {
+    height: 114px;*/ /*bottom: 0px;*/
+/*top: 0px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .base-exponent .base,
+.de-mathematics-interactive.exponent-accordion .base-only .base,
+.de-mathematics-interactive.exponent-accordion .parenthesis .coefficient {
+    position: relative; /*bottom: -25px;*/
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    line-height: 31px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0087A7;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    /*box-shadow: inset 0px -5px #004c5f;
+    -webkit-box-shadow: inset 0px -5px #004c5f;
+    -moz-box-shadow: inset 0px -5px #004c5f;*/
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+}
+
+.de-mathematics-interactive.exponent-accordion .base-exponent .base-container.hover,
+.de-mathematics-interactive.exponent-accordion .base-only .base.hover,
+.de-mathematics-interactive.exponent-accordion .parenthesis .coefficient.hover {
+    background-color: #0797bb;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-exponent .exponent-container.hover,
+.de-mathematics-interactive.exponent-accordion .parenthesis .exponent.hover {
+    background-color: #15b484;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .base-exponent .exponent-container.hover,
+.de-mathematics-interactive.exponent-accordion .workspace-container .parenthesis .exponent.hover {
+    background-color: #0797bb;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .marquee-div .base-exponent .exponent-container.hover,
+.de-mathematics-interactive.exponent-accordion .workspace-container .marquee-div .parenthesis .exponent.hover {
+    background-color: #0087A7;
+}
+
+.de-mathematics-interactive.exponent-accordion .base-exponent .base.empty,
+.de-mathematics-interactive.exponent-accordion .exponent.empty,
+.de-mathematics-interactive.exponent-accordion .base-exponent .base-container.hover.empty,
+.de-mathematics-interactive.exponent-accordion .base-exponent .exponent-container.hover.empty,
+.de-mathematics-interactive.exponent-accordion .parenthesis .exponent.hover.empty {
+    -webkit-box-shadow: inset 3px 3px 0px 1px rgba(0,0,0,0.29);
+    -moz-box-shadow: inset 3px 3px 0px 1px rgba(0,0,0,0.29);
+    box-shadow: inset 3px 3px 0px 1px rgba(0,0,0,0.29);
+    background-color: #bfbfbf;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.depth-1 > .base {
+    width: auto;
+    height: 86px;
+    margin-left: 4px;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .parenthesis.depth-2 > .base {
+    top: 21px;
+    width: auto;
+    height: 112px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.depth-2 > .base {
+    top: 21px;
+    width: auto;
+    height: 231px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-2 .parenthesis > .base.level1 {
+    width: auto;
+    height: 86px;*/ /*bottom: -25px;*/
+/*top: 25px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-3 .parenthesis > .base.level1 {
+    width: auto;
+    height: 112px;*/ /*bottom: -25px;*/
+/*top: 21px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-3 .parenthesis > .base.level2 {
+    width: auto;
+    height: 86px;
+    top: 25px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .exponent {
+    position: relative;
+    /*left: -6px;*/
+    margin-top: 1px;
+    margin-left: -6px;
+    margin-right: 1px;
+    width: 34px;
+    height: 34px;
+    line-height: 21px;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    background-color: #199E6F;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.exponent .box {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .exponent {
+    background-color: #0087A7;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .exponent .exponent-value{
+    margin-top: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .term-container.base-exponent .exponent .box {
+    display: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.exponent {
+    border: solid 3px rgba(0, 0, 0, 0);
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+    background-clip: padding-box;
+    position: relative;
+    /*left: 1px;*/
+    margin-left: 2px;
+    top: 2px;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis > .parenthesis.exponent {
+    top: 4px;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis.no-denominator > .parenthesis.exponent {
+    top: 18px;
+}
+
+.de-mathematics-interactive.exponent-accordion .multiplication .parenthesis.exponent .box {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-container .parenthesis.exponent .box {
+    display: none;
+}
+
+/* Issues with marquee position*/
+/*.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .coefficient {
+    top: 24px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .term-container.parenthesis .coefficient {
+    top: 21px;
+    margin-left: -4px;
+}
+
+.de-mathematics-interactive.exponent-accordion .bracket {
+    position: relative;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .bracket.level0 {
+    width: 29px;
+}
+
+.de-mathematics-interactive.exponent-accordion .bracket.left-bracket {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    margin-right: -8px;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .bracket.left-bracket.level0 {
+    margin-right: -21px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.big-parenthesis .bracket.level0 {
+    height: 231px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAADnCAYAAADiml1wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAD5mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE0LTExLTA1VDE2OjI1OjM4KzA1OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNC0xMS0wNVQxODowNzo0NCswNTozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0xMS0wNVQxODowNzo0NCswNTozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEE4RDMwRkQ2NEU4MTFFNEI5MTg4ODNCQkRERDQ3MUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEE4RDMwRkU2NEU4MTFFNEI5MTg4ODNCQkRERDQ3MUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QThEMzBGQjY0RTgxMUU0QjkxODg4M0JCRERENDcxQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QThEMzBGQzY0RTgxMUU0QjkxODg4M0JCRERENDcxQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvhDt2oAAAUBSURBVHhe7Z1PiFVlGMavZoo22R/TETEqyQyDzKhcVIs2GQVJRYsCaWGLIGhRBBFug6KCaFW4iIJoUeRCM4oWWVQmBGGrRCvNqUYL+zOaUjo9zznvdzh37jsz5945zxcM7w9+9/1852Mezr3nnnsFfc+c8fHxczqdzpfwMHzO1lLmwjNwC1wJ98AP4HqoA0eanAsfhX/As/ANOAzre1rRa66EOyE5DrdAb9/Auk3zQXgUkh1wKfT29a3brLkMvgvJIXgd9Pb1pdt0fASegmPwXusNrNucxA1wFPIk22q9gXSbU7gKHoDkBcj3ubdvSt3mNPLsPgjJ89DbM6Vus4GXQz7V5Cno7ZlUt9lQvsY8ufga32+9RrrNPuSFg5yA66G3p0e32advQ8ITbDH09nTpNvt0CfwJkteht6dLtzmAm2HiHujtqXSbA8j36xeQjMApn2a3OaA3wcRL0NtT6DZn4IeQnIa8enl7Wg+9DSbehN6e1kPpHkjOQPe9y+9IbbPNKn/31nLZTfEp0TLnw5/hefAsXAMPwArFkf4Ft5fL4vc/Vi5rTHy+W3IjTPwOF8Lq54ojJR/DsXLZuQBuKpclqtDT8KNyWbDZaoEqlLxnldwOl5ZLbej7Vsk8eGe51IaOwO/KZcFdVqWh5HOr5A44nwt16F6rhBeNG7lQh35lNXErH9Sh+6wmbuGDOpQXCJ5QiSxPL6lf7JfBFTlC91tNXJsj9KDVxJrcTy+5Mkdo/UQil+UI/dVqIsuJdMxqYljxHcnjFFxQLjtjOY6U/GaVDOUKHbVakCv0hNWCWR3KE6liVh9pFxEqJUKlRKiUCJUSoVIiVEqESolQKREqJUKlRKiUCJUSoVIiVEqESolQKREqJUKlRGjbnGu1IFfoIqsF8ZpKiVApESolQqVEqJQIlRKhUiJUSoRKiVApESolQqVEqJQIlRKhUiJUSoRKiVApESolQqXM6tCunFyh/C/4FfGaSolQKREqJUKl5Ar9X/7tykKrBblCOYqqIldo1+dpjiESc+C/sDrAHEd6EaznnMwRerHVxPEcoSusJkZzhC63mhjJEcoRvXUO5QhdZTXxbY7QK6wm9ucIXW018bX64sBrLgfkce4zOQIvVR8px/6lQFJM+1KHXm81sZsP6tAbrCY+4YM6dINVchQWI8aUoYvhunJZsBNyvKM09GZYP4l2WJWGcgBegkPUOKm8QBm60Sp5B/5dLnWhayHfo4nXrBaoQu+zSjjH7NNyWaII5Xeih8plwcuw+1qbZnW2aH3I7DE4BLv2KI70YavkFZjmg1a0/SkzDL+H/HT5E/IDvD5OrKDtI30Cpr9CvAh7AkmbR7oE/gCHIIfgXQ17nlrS5pHyKBlInoRuYEH9rJqBqyFHmpPt0NtT6TYHMN0TgW+R5dDbU+k2+/QBmGg0uN1t9iFH1POOD2Qb9Pb06DYbOh9+BgknTi+A3r4e3WZDX4XkR9jX7SXcZgN5YwXC+1pcA709k+o2p/FpSPhaNh68X9dtTiKvXs9A8gtcB7190+o2HRfBtyDhhP+roLevkW5zgmvhN5DshpdAb19j3abJW788Dk9C3rHhWTgPenv70m1C3uhkLyRHICeEe/sGcmKDXy14u49/IEfL8ypzIZy4b0bW/3A35O1cCO9XwJth1H/emnzgbQF2QbIPboLFh7tK/nJO/uYcVn692MWPWCik0/kPKIRb2H2mCs8AAAAASUVORK5CYII=);
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.depth-2 .bracket,
+.de-mathematics-interactive.exponent-accordion .parenthesis.big-parenthesis.no-denominator .bracket.level0 {
+    height: 114px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAABiCAYAAAC/MJjvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlDOUM3NkM4ODc0NzExRTRCMEM4RUYxRThCMzA5RDc0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlDOUM3NkM5ODc0NzExRTRCMEM4RUYxRThCMzA5RDc0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUM5Qzc2QzY4NzQ3MTFFNEIwQzhFRjFFOEIzMDlENzQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUM5Qzc2Qzc4NzQ3MTFFNEIwQzhFRjFFOEIzMDlENzQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5njUSQAAADHUlEQVRoQ+2ZzWsTQRjG09pWWqJSP4oHiVURFLwUBT8QFL9Ab4KKXrzUi4eCCELBv0HqwYPgVVAoCD148OaltGKoaFEQlfpRW8VqKrUFrSY+z+47cTaZbJKdtwchD/z2nT67PExmZ5LuTqpQKHSDcdAH2gE9L0xjE7gPPoFLoAVELqyHUuM0+Aiegj3i1Y3LXAlugEVwHSwHrusq4jSFA2ASPAYbxKsJp2mxHjwC06BHvKo4zRI4HMPgO9gnXixO08Eq8BzMgqo9dpoV2AbmwQcQO8ZOMwYuECoLKi4UpxlDMxgDFKeb65q6Q8lhQOXBEVB2TZlRIyOAmgAdIHK+OZVMA1K7wZWw+U9NTE6gVjAF1oI5sBnMgEBJe7oIBsNmagXoC5ui0vGog4PA6BtIg+Bc0p5Sw+BH2Ex1gjNhM/nHpzgED8NmoAtSvUIpO3Qv2MiGb+iYVKOTPPiGPgH2nDzOQ9J5ausN4DylFkCnb0+pV1KpDtCjEToh1WjnUoTu0Ah9K9Voq0boF6lGGY3Qz1KN1mmEzko1SmuEzks1atWY/MvA77AZSqOnf6QWpRFKqfeUioyrVmhEjVB9NUL19f+Eanz1UZGQxo3SVyNUX41QfTVC9aURmpZalEYo/+m1ldcIbZNqNKcR2i7VKKcR2iLVaFIjdI1Uo3caoaulGr3XCO2SajS+FB8/qxGakUrxkfK1RugWqVQWFLRDR3nwDeUSNS9lqAc8+IZuB2ZF5cAIG76hu6RSQyB4+NUMvSPV61UneQGoKVDcGfLpKecnx5S6BYqP5z6hJ6T+AjfDZiif0HNSb4PpsCky41An3Gnje/6fgNt5kfNJe9oLmgDHsvQNWqJHHv56MigPeKO+goiS9PQy4Ncda1lgoNLxqAK3jLh9xJ1L1/kApxnDEOBuZZflleE0K3AR8G7vtjwnTtPBIbAAzlpeRZxmCfsB9/Z6LS8Wp2lxCuTAecuritME3L8bADPgmHg14zKPgpdgFHA5uq6Jxf4jAwYBb8hVkHjnnIc20A+4g3sXJOqdDdf+PSwsbqldA8+4yvyUSv0FS3Xn6kEeRrwAAAAASUVORK5CYII=);
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.big-parenthesis.no-denominator .bracket.level0 {
+    height: 98px;
+    top: 14px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.depth-1 .bracket {
+    height: 86px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABWCAYAAADG8hYQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAD5mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE0LTExLTA1VDE2OjI1OjM4KzA1OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNC0xMS0wNVQxODowODo1NiswNTozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0xMS0wNVQxODowODo1NiswNTozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjUzNDEzNUQ2NEU4MTFFNEFDNzBFQkYwODBEOTgyMzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjUzNDEzNUU2NEU4MTFFNEFDNzBFQkYwODBEOTgyMzIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCNTM0MTM1QjY0RTgxMUU0QUM3MEVCRjA4MEQ5ODIzMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCNTM0MTM1QzY0RTgxMUU0QUM3MEVCRjA4MEQ5ODIzMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoHr5ggAAAI/SURBVFhH7djPi01hHMfxO37VTNyMsboGSaZJw0qKsEI2smTFTv4GKyUpxVaysFZkFlMW2ExspJGUBRoiMxZSE0nGdb0/x/ecnnPmufec57mLWTifevW99ztzP3N/nJp7TqPT6ezBFA5D94OkN0ZxD9OYsF0lxcUJzOICVtquJ99yA+7gAUZs15V3iQFcxBtssZ2Xd+m4jHfoWqK/1OiRAdxHCwexgHyKjR4tLGASyR905e70cB7KWeR+VvYS0qzFR6zCOD4hyQqbZfmOG1DRJS2yFJ9SDzuhtDGOZF/8pTIvoNxCsqv6EtLoI1VOYlg3Qgse2RyESoJfQhN/oDxE5Y/RzWvswCKGQ1+C8tLmahyIKXhrU9kbU/DeprI7pkCHdJqxmIIvNpVWTMFXm0qz34I1MQX6/LPEFLRtJok5EpXsQTHPIJe6oC5Q6oJlKtD/gywxBUM2k/ynb2IudUFdoNQFy1TQtKksxhToVDDNt5gCnSukmYspWG9T+RBTsNGmMttvwUxMwahN5VlMwXabP/Cqn4JptGMKJmz+O4fUd+UA26Do9Hczgg/lQzafIDn1CS04avOmzaCv+7p2MI/f2IpfCHoGx6CD6CqSByfRM6joLuYx6OwqF4xB7/wZZ5eo+h7cxgiOIP+AYqOHrvJ9xiZnl1myKNBVvjl0vVToXZohPMZpZ7eEdwldxdODzzk7L99yH2Zw3Nl15d5Zh2t4il22K5UeiafwHDq134/0MkdpdBxcZ/7EFehYD0ij8Rcu9SMTwQ20lwAAAABJRU5ErkJggg==);
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.depth-1 .right-bracket {
+    margin-left: -7px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.big-parenthesis .right-bracket.level0 {
+    margin-left: -17px;
+}
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-3 .parenthesis .right-bracket.level2 {
+    margin-left: 7px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-2 .parenthesis .right-bracket.level1 {
+    margin-left: 7px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .operator-container {
+    position: relative;
+    display: inline-block;
+    height: 48px;
+    left: -4px;
+    margin-right: -2px;
+    margin-left: 7px;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container.disabled_operator {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container.level0 {
+    height: 48px;
+    top: 25px;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .operator-container.level1 {
+    top: 42px;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .fraction-component-denominator .operator-container.level1 {
+    top: 24px;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container.level1 {
+    top: 25px;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container.level-1 {
+    top: -10px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-numerator .operator-container.level0 {
+    top: 42px;
+}
+
+.de-mathematics-interactive.exponent-accordion .parenthesis.big-parenthesis .operator-container.level2,
+.de-mathematics-interactive.exponent-accordion .operator-container.level2 {
+    top: 25px;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-denominator .operator-container.level0 {
+    top: 24px;
+}
+
+.de-mathematics-interactive.exponent-accordion .fraction-component-numerator .operator-container.level0 .operator.level1,
+.de-mathematics-interactive.exponent-accordion .big-parenthesis .operator-container.level1 .operator {
+    position: relative;
+    top: 19px;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container .operator.addition {
+    font-size: 25px;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container .operator.addition.level1 {
+    /* bottom: -95px;*/
+    top: 90px;
+}
+
+.de-mathematics-interactive.exponent-accordion .depth-2 .operator.addition {
+    /*bottom: -70px;*/
+    top: 67px;
+}
+
+.de-mathematics-interactive.exponent-accordion .depth-1 .operator.addition {
+    /*bottom: -44px;*/
+    top: 43px;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container .operator.multiplication {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 19px;
+}
+
+.de-mathematics-interactive.exponent-accordion .operator-container .operator.multiplication.level1 {
+    top: 19px;
+}
+
+/* Causes an issue with marquee in multiplication mode*/
+/*.de-mathematics-interactive.exponent-accordion .operator-container .operator.multiplication.level0 {
+    top: 50px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .depth-2 .operator-container .operator.multiplication {
+    /*bottom: -44px;*/
+    /*top: 70px;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .depth-1 .operator-container .operator.multiplication {
+    /*bottom: -44px;*/
+    top: 19px;
+}
+
+/**** MULTIPLICATION OPERATORS ****/
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .operator-container {
+    top: 54px;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .term-container.parenthesis .operator-container {
+    top: 25px;
+}
+
+.de-mathematics-interactive.exponent-accordion .droppable-region.multiplication .operator-container .operator.multiplication.level0 {
+    top: 19px;
+}
+
+/**** MULTIPLICATION OPERATORS END****/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-2 .operator-container .operator.multiplication.level2 {*/
+/*bottom: -44px;*/
+/*top: 44px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .tree-height-3 .operator-container .operator.multiplication.level2 {*/
+/*bottom: -70px;*/
+/*top: 70px;
+}*/
+
+/*.de-mathematics-interactive.exponent-accordion .operator-container .operator.multiplication.level3 {*/
+/*bottom: -44px;*/
+/*top: 44px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .term-container .acc-div,
+.de-mathematics-interactive.exponent-accordion .base .acc-div,
+.de-mathematics-interactive.exponent-accordion .exponent .acc-div,
+.de-mathematics-interactive.exponent-accordion .fraction-component .acc-div,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .acc-div {
+    position: absolute; /*left: -5%;     top: -5%;     width: 110%;     height: 110%;*/
+}
+
+/*See new hover border.*/
+/*.de-mathematics-interactive.exponent-accordion .hover-border.base-exponent .base-container {
+    border: 3px dotted #fff;
+    border-color: #a3e3f5;
+}
+
+.de-mathematics-interactive.exponent-accordion .hover-border.base-exponent .exponent-container {
+    border: 3px dotted #fff;
+    border-color: #a3e3f5;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .white-border-left {
+    border-left: 3px dotted #fff;
+}
+
+.de-mathematics-interactive.exponent-accordion .white-border-right {
+    border-right: 3px dotted #fff;
+}
+
+.de-mathematics-interactive.exponent-accordion .base.hover-border,
+.de-mathematics-interactive.exponent-accordion .exponent.hover-border {
+    border-color: #a3e3f5 !important;
+    background-clip: border-box !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .form-expression-area .current-draggable,
+.de-mathematics-interactive.exponent-accordion .droppable-region-holder .marquee-div.current-draggable {
+    opacity: 0.8;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .current-draggable,
+.de-mathematics-interactive.exponent-accordion .workspace-scrollable .marquee-div.current-draggable {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    opacity: 0.7;
+}
+
+
+
+/* -----------------------------------Exponent Accordion 1 & 2 ------------------------*/
+
+.de-mathematics-interactive.exponent-accordion-1 .droppable-region-start-multiplication, .de-mathematics-interactive.exponent-accordion-2 .droppable-region-start-multiplication {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+
+/* -----------------------------------End of Exponent Accordion 1 & 2------------------------*/
+
+/* -------------------- Workspace Mode ------------------*/
+
+
+.de-mathematics-interactive.exponent-accordion .workspace-bottom-container {
+    width: 100%;
+    position: relative;
+    height: 165px;
+    margin-top: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .is-touch .workspace-bottom-container {
+    top: -25px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-area .workspace-bottom-container {
+    top: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-area .workspace-bottom-container.withScroll {
+    top: -25px !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-bottom-left-container {
+    width: 587px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-bottom-right-container {
+    width: 326px;
+    /*height: 59%;*/
+    padding-left: 14px;
+    margin-top: 84px;
+    float: left;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-bottom-saperator {
+    height: 152px;
+    opacity: 0.2;
+    width: 1px;
+    background-color: #FFFFFF;
+    float: left;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-title {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-family: montserrat;
+    color: #ffc000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-container {
+    display: table;
+    width: 100%;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    height: 127px;
+    font-family: montserrat;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component > div {
+    vertical-align: top !important;
+    display: inline-block !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .ui-effects-wrapper {
+    /*width: 101px !important;*/
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container.base-exponent {
+    width: 95px !important; /* Reduce 6px coz of border 3px on both side*/ /*And set for workspace expression area only*/
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container .coefficient,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container .base,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container .exponent,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container.big-parenthesis .exponent,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container.big-parenthesis .base {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .bracket {
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .fraction-component {
+    vertical-align: top;
+    min-width: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion.exponent-accordion-5 .workspace-expression-area .big-parenthesis .fraction-component {
+    vertical-align: top;
+    min-width: 0px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component {
+    top: 45px;
+    min-width: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion-1 .workspace-expression-area .equation-view-component,
+.de-mathematics-interactive.exponent-accordion-2 .workspace-expression-area .equation-view-component {
+    top: 45px;
+    min-width: 0px;
+    padding: 0 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion.exponent-accordion-1 .workspace-expression-area .equation-view-component, .de-mathematics-interactive.exponent-accordion.exponent-accordion-2 .workspace-expression-area .equation-view-component {
+    top: 0px;
+    height: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container.base-exponent.level0,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container.base-only.level0 {
+    top: 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .operator-container.level-1 {
+    top: 25px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .operator-container.level0 {
+    top: -13px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .fraction-component-numerator .operator-container.level0 {
+    top: 42px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .fraction-component-denominator .operator-container.level0 {
+    top: 24px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component div {
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .term-container {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .equation-view-component .bracket {
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container .new-created-tile.base {
+    -webkit-box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: none;
+    /*left: -3px;*/
+    margin: 4px 4px 0px 4px;
+    border-radius: 3px;
+}
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container.base-exponent .new-created-tile.exponent {
+    -webkit-box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: none;
+    /*left: -3px;*/
+    margin-left: -3px;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-radius: 3px;
+}
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container .zero-glow,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container .new-created-tile.exponent.zero-glow {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1), inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: none;
+    /*left: -3px;*/
+    margin-left: -3px;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-radius: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion-4 .workspace-expression-area .term-container .zero-glow {
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: solid 3px rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    background-clip: padding-box;
+    /*left: -3px;*/
+    margin-top: 1px;
+    margin-left: -6px;
+    margin-right: 1px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container.parenthesis > .new-created-tile.exponent {
+    -webkit-box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 15px 0px #fdc026, inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: none;
+    /*left: -3px;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-radius: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container .zero-glow.hover-border,
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container .new-created-tile.exponent.hover-border {
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: solid 3px rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    margin-left: -6px;
+    margin-right: 1px;
+    margin-top: 1px;
+    border-color: #a3e3f5 !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .workspace-expression-area .term-container.base-exponent .new-created-tile.base.hover-border {
+    -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    border: solid 3px rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    margin: 0px;
+    border-color: #a3e3f5 !important;
+}
+
+/* -------------------- End Workspace Mode ------------------*/
+
+/********************************** Data Tab ************************/
+
+.de-mathematics-interactive.exponent-accordion .minus-sign-base {
+    margin-right: 4px;
+    position: relative;
+    font-size: 17px;
+    top: -3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .minus-sign-base {
+    margin-right: 2px;
+    position: relative;
+    font-size: 17px;
+    top: -1px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .minus-sign-base {
+    margin-right: 3px;
+    position: relative;
+    font-size: 10px;
+    top: -2px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-wrapper-container .scrollbar {
+    height: 368px;
+}
+
+.de-mathematics-interactive.exponent-accordion .minus-sign-exponent {
+    margin-right: 2px;
+}
+
+.de-mathematics-interactive.exponent-accordion .minus-sign-exponent-big-parenthesis {
+    vertical-align: top;
+    top: 1px;
+    position: relative;
+    font-size: 12px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .minus-sign-exponent-big-parenthesis {
+    font-size: 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .minus-sign-exponent-big-parenthesis {
+    vertical-align: top;
+    top: inherit;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-wrapper-container .contents{
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-tab {
+    height: 599px;
+    width: 928px;
+    position: relative;
+    padding-top: 10px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .data-tab-direction-text {
+    /*padding-top: 10px;*/
+    width: 909px;
+    height: 78px;
+    margin: auto;
+    border: solid 1px rgba(255,255,255,.23);
+    background-color: #282828;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-holder {
+    position: relative;
+    height: 410px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-container-title {
+    color: #FFFFFF;
+    background-color: #666699;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: montserrat;
+    text-align: center;
+    margin: 0px 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+    /*border-bottom: 2px solid #ffffff;*/
+    width: 891px; /*fix bug #3306*/
+}
+
+.de-mathematics-interactive.exponent-accordion .dummy-help-arrow-div {
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    left: 837px;
+    top: 48px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-tab-main-container {
+    margin-top: 7px;
+    position: relative;
+    height: 496px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-container {
+    margin: 0px 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-wrapper-container .accordion-data-header-class {
+    background-color: #FFFFFF;
+    font-family: montserrat;
+    font-size: 19px;
+    font-weight: bold;
+    color: #1f0c01;
+    height: 87px;
+    border-bottom: 1px solid #000000;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-wrapper-container .accordion-data-header-class.last-content {
+    border-bottom: 1px solid #fff;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-data-content-class {
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f0c01;
+    background-color: #FFFFFF;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion {
+    color: #000;
+    /*height: 366px;*/
+    /*overflow-y: auto;*/
+}
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-icon {
+    color: #FFFFFF;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-icon-container {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #6e4f91;
+    cursor: pointer;
+    height: 81px;
+    width: 50px;
+    line-height: 81px;
+    margin: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-icon-container.hover {
+    background-color: #8e69b7;
+}
+
+.de-mathematics-interactive.exponent-accordion .buttons-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .back-button {
+    float: left;
+    position: relative;
+    margin-left: 26px;
+    margin-top: 12px;
+}
+
+.de-mathematics-interactive.exponent-accordion .clear-data-button {
+    float: right;
+    position: relative;
+    margin-top: 12px;
+    margin-right: 26px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-counter {
+    /*float: left;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 81px;
+    width: 50px;
+    background-color: #6e4f91;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 3px;
+    line-height: 81px;
+    font-size: 16px;
+}
+
+.de-mathematics-interactive.exponent-accordion .panel-container {
+    /*overflow-x: auto;*/
+    white-space: nowrap;
+}
+
+.de-mathematics-interactive.exponent-accordion .panel-row-blue-patch {
+    float: left;
+    position: relative;
+    height: 96%;
+    width: 4px;
+    background-color: #6e4f91;
+    top: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .panel-row-container {
+    height: 105px;
+    border: 2px solid #ffffff;
+    border-left: 4px solid #FFFFFF;
+    border-right: 4px solid #FFFFFF;
+    background-color: #ebebeb;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.de-mathematics-interactive.exponent-accordion .only-multiplication-data-tab {
+    height: 56px;
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content {
+    display: inline-block;
+    position: relative;
+    height: 74%;
+    padding: 0px 10px;
+    top: 13px;
+}
+
+.de-mathematics-interactive.exponent-accordion .adjust-height {
+    height: 59%;
+}
+
+.de-mathematics-interactive.exponent-accordion .adjust--blue-patch-height {
+    height: 90%;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .header-expression-container {
+    display: table;
+    height: 100%;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .header-expression {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .vincullum,
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .vincullum {
+    width: 100%;
+    height: 2px;
+    background-color: #1F0C01;
+    margin-top: 2px;
+    display: block;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .vincullum {
+    background-color: #FFFFFF;
+    margin: 2px 0px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .vincullum {
+    width: 100%;
+    height: 1px;
+    background-color: #1F0C01;
+    margin-top: 2px;
+    display: block;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .operator-data-tab {
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 8px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .operator-data-tab {
+    position: relative;
+    top: -6px;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 9px;
+    display: inline-block;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .operator-data-tab {
+    position: relative;
+    display: inline-block;
+    top: -4px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 6px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .header-expression-container,
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .header-expression-container {
+    display: table;
+    margin: auto;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .header-expression,
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .header-expression {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .fraction-data-tab,
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .fraction-data-tab,
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .fraction-data-tab {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .adjust-bottom {
+    bottom: 14px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .adjust-bottom {
+    bottom: 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .adjust-bottom {
+    bottom: 15px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .adjust-bottom.adjust-bottom-for-big-parenthesis {
+    bottom: 31px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content,
+.de-mathematics-interactive.exponent-accordion .original-expression-holder {
+    height: 83px;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-holder {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .exponent-data-tab {
+    top: -8px;
+    position: relative;
+    font-size: 12px;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .exponent-data-tab {
+    top: -12px;
+    position: relative;
+    font-size: 14px;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .exponent-data-tab {
+    top: -7px;
+    margin-left: 1px;
+    position: relative;
+    font-size: 10px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .parenthesis-exponent-data-tab {
+    top: -14px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .parenthesis-exponent-data-tab {
+        top: -11px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .parenthesis-exponent-data-tab {
+    top: -9px;
+}
+
+
+
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .base-exp-data-tab,
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .base-exp-data-tab {
+    /*margin-right: 6px;*/ /*center align number with vinculum bug ref #3239*/
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .base-exp-data-tab {
+    /*margin-right: 3px;*/ /*center align number with vinculum bug ref #3239*/
+    padding-left: 1px;
+    padding-right: 1px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .numerator,
+.de-mathematics-interactive.exponent-accordion .denominator {
+    text-align: center; /*center align number with vinculum bug ref #3239*/
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .denominator {
+    margin-top: 6px;
+}
+.de-mathematics-interactive.exponent-accordion .original-expression-holder .denominator {
+    margin-top: 5px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .denominator {
+    margin-top: 4px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .original-expression-container .open-parenthesis-data-tab,
+.de-mathematics-interactive.exponent-accordion .original-expression-container .close-parenthesis-data-tab {
+    height: 86px;
+    width: 16px;
+    display: inline-block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABWCAYAAADG8hYQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAD5mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE0LTExLTA1VDE2OjI1OjM4KzA1OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNC0xMS0wNVQxODowODo1NiswNTozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0xMS0wNVQxODowODo1NiswNTozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjUzNDEzNUQ2NEU4MTFFNEFDNzBFQkYwODBEOTgyMzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjUzNDEzNUU2NEU4MTFFNEFDNzBFQkYwODBEOTgyMzIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCNTM0MTM1QjY0RTgxMUU0QUM3MEVCRjA4MEQ5ODIzMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCNTM0MTM1QzY0RTgxMUU0QUM3MEVCRjA4MEQ5ODIzMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoHr5ggAAAI/SURBVFhH7djPi01hHMfxO37VTNyMsboGSaZJw0qKsEI2smTFTv4GKyUpxVaysFZkFlMW2ExspJGUBRoiMxZSE0nGdb0/x/ecnnPmufec57mLWTifevW99ztzP3N/nJp7TqPT6ezBFA5D94OkN0ZxD9OYsF0lxcUJzOICVtquJ99yA+7gAUZs15V3iQFcxBtssZ2Xd+m4jHfoWqK/1OiRAdxHCwexgHyKjR4tLGASyR905e70cB7KWeR+VvYS0qzFR6zCOD4hyQqbZfmOG1DRJS2yFJ9SDzuhtDGOZF/8pTIvoNxCsqv6EtLoI1VOYlg3Qgse2RyESoJfQhN/oDxE5Y/RzWvswCKGQ1+C8tLmahyIKXhrU9kbU/DeprI7pkCHdJqxmIIvNpVWTMFXm0qz34I1MQX6/LPEFLRtJok5EpXsQTHPIJe6oC5Q6oJlKtD/gywxBUM2k/ynb2IudUFdoNQFy1TQtKksxhToVDDNt5gCnSukmYspWG9T+RBTsNGmMttvwUxMwahN5VlMwXabP/Cqn4JptGMKJmz+O4fUd+UA26Do9Hczgg/lQzafIDn1CS04avOmzaCv+7p2MI/f2IpfCHoGx6CD6CqSByfRM6joLuYx6OwqF4xB7/wZZ5eo+h7cxgiOIP+AYqOHrvJ9xiZnl1myKNBVvjl0vVToXZohPMZpZ7eEdwldxdODzzk7L99yH2Zw3Nl15d5Zh2t4il22K5UeiafwHDq134/0MkdpdBxcZ/7EFehYD0ij8Rcu9SMTwQ20lwAAAABJRU5ErkJggg==);
+}
+
+.de-mathematics-interactive.exponent-accordion .open-parenthesis-data-tab,
+.de-mathematics-interactive.exponent-accordion .close-parenthesis-data-tab {
+    height: 74px;
+    width: 16px;
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 4px;
+    transform: scaleY(0.93);
+    -ms-transform: scaleY(0.93);
+    -webkit-transform: scaleY(0.93);
+    -moz-transform: scaleY(0.93);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABKCAYAAACy5tTwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNDU1NzkwRjZCQzQxMUU0QUVGRUIzRkQ3NUFCRjU3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxNDU1NzkxMDZCQzQxMUU0QUVGRUIzRkQ3NUFCRjU3NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE0NTU3OTBENkJDNDExRTRBRUZFQjNGRDc1QUJGNTc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjE0NTU3OTBFNkJDNDExRTRBRUZFQjNGRDc1QUJGNTc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+D0SK5QAAAdxJREFUeNrsmMsrRHEUx+8giSwmsyEb47HQKK+iEf+ANBIlNSsL9pKssLBDEnvsWHiUEvKIEiXkEYuhlMfkETUoGY/vr4463YW5v3M30j316ZxZ/D7z6ze/e7pnXF6vt9swjEwwDPYNzYh3u91ryGegBwRJcqcjMGjBBDgHQyAfbIBoLEGc6fMWqAKnYBlkW92BOfbALhinfGN1BzzUWTSCSVAmERh0uOpgZ0CORKBiE4yRJFkiUNELPKBPKojQ4lZQLhGoGAVvYAS4JIJ7MA+KQY1EoGKacodUsETZDwokgjAIUR2UCFQcUa6VCk4o56o+IhGEWF0pEYRZ7ZcIblntkwgeWJ0lEXyw2iMRvLI6RSJ4lz6NhrQjOQJH4Aj+reDTriDiHKIj+BOCOLuCVLsCl12Bh9VRiSCN1Y8SQTqrLyQCPskdSgR5rF6VCApZvaIrSGKCHXClK1BzQiIbgbTvQYDyE42CWoIE0EB1P3jWFQToDlyCAd2rrO5/J/gCzfx116qgCZSAQbCo+zBl0MIF0K7bUNSwPQWOQZ3pVT+mQDWOWXANqk2v+TEFPrBOo389ePnttzU3C/VvTgVoAdtWG6S64230rQeg1Mrinx2o7XaBOVBEI77l+BZgAAGJVlRgWJ1vAAAAAElFTkSuQmCC);
+}
+
+
+.de-mathematics-interactive.exponent-accordion .open-parenthesis-data-tab {
+    /*transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);*/
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABKCAYAAACy5tTwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjgwRDFEODM4MTFCMTFFNDlBMjRGOEVCRjA5NDE5NzEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjgwRDFEODI4MTFCMTFFNDlBMjRGOEVCRjA5NDE5NzEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE0NTU3OTBGNkJDNDExRTRBRUZFQjNGRDc1QUJGNTc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjE0NTU3OTEwNkJDNDExRTRBRUZFQjNGRDc1QUJGNTc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+AE9h9QAAAe1JREFUeNrsmMsrRFEcx+clwpQbaYpSw8IzFooslBFSEhtZkNlZ2HiMlSQr4R+gWE1JKZlka0HEAlMeC49sZDZjNZEk43vqN3W6zb3d87uzvL/6dO+v5n7OPWfOOZ3fdQeDQZdi5INRMACWPQoP+sAkuAFlYBzc+Sw+3AY2wRnoBEnZahbiDZfAIBgTLWZ7LaMoAlHgp1ZTRv3KFoXgCBSAEPgyGxh9eME+aADNZg8bCdZBH/X53WVhkOToBdPgCuxY+Xs8un5vAzdYAWlVwSyoBAkQszq7MoJiMEf3e+BXVTABSug+prIwMoIwXX/AuaqgArRSHgffqoKQlMdV17YQdEn5I0fQJOUvHEGVlCc4Ak3KPzgCeUElOQI50nYFKbuCP7sClyNwBLkQ+O0KPM4gOgJH4AhyJcjjCD51x11lQVJ31FcWvEp5KUcg10HlHIF8tA1wBKdSXsMRvIEnyuu48+CAro1cQVTqQoAjuJUGs4c7lVfpOswVHIJr0E/VubJAHHOn6PtAmLsaL8AGiFg9K2TbDyK0wBa4AlFsD1Ep2MHdkZ5JIuZHNXdLuwQjYBe0GP3Iq2maWQOihjoGW1SUxzmbqqjkukEtOAHtVr+hyCGq2XlQD9aoRF4E9z7FxfdAH6DEmMyIreBfgAEAgixOVQgp7NUAAAAASUVORK5CYII=');
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-container .open-parenthesis-data-tab {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABWCAYAAADG8hYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxNC0xMS0wNVQxNjoyNTozOCswNTozMCIgeG1wOk1vZGlmeURhdGU9IjIwMTQtMTEtMDVUMTg6MDg6NTYrMDU6MzAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTQtMTEtMDVUMTg6MDg6NTYrMDU6MzAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI1MzQxMzVENjRFODExRTRBQzcwRUJGMDgwRDk4MjMyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI1MzQxMzVFNjRFODExRTRBQzcwRUJGMDgwRDk4MjMyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjUzNDEzNUI2NEU4MTFFNEFDNzBFQkYwODBEOTgyMzIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjUzNDEzNUM2NEU4MTFFNEFDNzBFQkYwODBEOTgyMzIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6B6+YIAAACC0lEQVR42uyYuUsDQRSHEzWi8UQtvCIqIiJaKILY2GihhYiVVrESBMFGsLC18M+wsFGIaGFluigWIhZiIR4EwavwxgM0En8jb+GxbDYzbzvZgY/N2818M5l9E5gXTKfTAUGrAfOgIKAEBuSBBXAOJtS9HINRO8EeqAJdYPXvrubII+AQ9Nmf6XSeBrug0ul5ts5R6hzO9B23zoPgBtS7DZLpQR24I4nrLIMOeRAEcfAAxrO+GwfrJPgBrTpvyH6jENyCdd3ksifSDKgGy7rZxdcgH1yCPMr1lI6Az2CcRt/W7WwXTNF122hf0mJEaOVVazLZodYMxmg2jyBpMgFLMEzXY9N/FiXIBf0UX0gE7SDsRdDD4iuJoJvF9xJBs1dBA4ufJYJaFn9KBCU8MSWCEItfJQJPzRf4Al/gCzIJPrwKvv1F9AW+4L8Iir0Kcr0KQhLBF4srJIJXr4IbFldJBKcsjkgERyxulAj2WdxinEk4eRWBLzqxnRrWVP5m8A4SbAalkkSKsaN/r0Swxs4KAxLBE0n4GdLo6KtoY8ffdkn94ASs0OeopH6gWh2JUpSVb6bb+RrMgXIwa7oGFmpWm+AF1ErKQKqVgR3aqcOupzkXewNIgiVJJYtLzsAi/bSApJqnqnhxEAMV2epITk2VxIaounEARnXXwIkOkAAbVpXPVMBLhVug51eAAQA4wYsec0DNYwAAAABJRU5ErkJggg==');
+}
+
+
+.de-mathematics-interactive.exponent-accordion .accordion-header-content .big-parenthesis-exponent-data-tab {
+    margin-left: 2px;
+    vertical-align: top;
+    top: inherit;
+    bottom: -1px;
+    position: relative;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .original-expression-container .big-parenthesis-exponent-data-tab {
+    margin-left: 3px;
+    vertical-align: top;
+    top: inherit;
+    bottom: 4px;
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .big-parenthesis-exponent-data-tab {
+    margin-left: 2px;
+    vertical-align: top;
+    top: inherit;
+    bottom: -1px;
+    position: relative;
+    font-size: 10px;
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .big-parenthesis-container,
+.de-mathematics-interactive.exponent-accordion .big-parenthesis-close-container {
+    display: inline-block;
+}
+
+.bracket-data-tab {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABKCAYAAACy5tTwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNDU1NzkwRjZCQzQxMUU0QUVGRUIzRkQ3NUFCRjU3NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxNDU1NzkxMDZCQzQxMUU0QUVGRUIzRkQ3NUFCRjU3NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE0NTU3OTBENkJDNDExRTRBRUZFQjNGRDc1QUJGNTc2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjE0NTU3OTBFNkJDNDExRTRBRUZFQjNGRDc1QUJGNTc2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+D0SK5QAAAdxJREFUeNrsmMsrRHEUx+8giSwmsyEb47HQKK+iEf+ANBIlNSsL9pKssLBDEnvsWHiUEvKIEiXkEYuhlMfkETUoGY/vr4463YW5v3M30j316ZxZ/D7z6ze/e7pnXF6vt9swjEwwDPYNzYh3u91ryGegBwRJcqcjMGjBBDgHQyAfbIBoLEGc6fMWqAKnYBlkW92BOfbALhinfGN1BzzUWTSCSVAmERh0uOpgZ0CORKBiE4yRJFkiUNELPKBPKojQ4lZQLhGoGAVvYAS4JIJ7MA+KQY1EoGKacodUsETZDwokgjAIUR2UCFQcUa6VCk4o56o+IhGEWF0pEYRZ7ZcIblntkwgeWJ0lEXyw2iMRvLI6RSJ4lz6NhrQjOQJH4Aj+reDTriDiHKIj+BOCOLuCVLsCl12Bh9VRiSCN1Y8SQTqrLyQCPskdSgR5rF6VCApZvaIrSGKCHXClK1BzQiIbgbTvQYDyE42CWoIE0EB1P3jWFQToDlyCAd2rrO5/J/gCzfx116qgCZSAQbCo+zBl0MIF0K7bUNSwPQWOQZ3pVT+mQDWOWXANqk2v+TEFPrBOo389ePnttzU3C/VvTgVoAdtWG6S64230rQeg1Mrinx2o7XaBOVBEI77l+BZgAAGJVlRgWJ1vAAAAAElFTkSuQmCC);
+}
+
+/**********************************End of Data Tab ***********************/
+
+
+
+
+/*----------------------------Common Override---------------------------*/
+
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-blue {
+    box-shadow: inset 0px -5px #004c5f;
+    border: 2px solid;
+    border-color: transparent;
+    background-clip: padding-box;
+    border-radius: 6px;
+}
+
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-blue.tile-pressed-state {
+    position: relative;
+    box-shadow: none;
+    top: 5px;
+    height: 43px !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-green.tile-pressed-state {
+    position: relative;
+    box-shadow: none;
+    top: 5px;
+    height: 31px !important;
+}
+
+
+/*
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-blue.disabled {
+    opacity: 0.5;
+}
+    */
+
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-blue.inactive {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-green {
+    box-shadow: inset 0px -5px #0e5a40;
+    border: 2px solid;
+    border-color: rgba(255, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 6px;
+}
+/*
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-green.disabled {
+    opacity: 0.5;
+}
+    */
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-green.inactive {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-black {
+    background-color: #424242;
+    box-shadow: inset 0px -5px #262626;
+    border: 2px solid;
+    border-color: rgba(255, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 6px;
+}
+
+/*
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-black.disabled {
+    opacity: 0.5;
+}
+    */
+.de-mathematics-interactive.exponent-accordion .custom-btn-type-draggable-black.inactive {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive.exponent-accordion .pure-and-simple-body-text {
+    color: #222222;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: montserrat;
+}
+
+.de-mathematics-interactive.exponent-accordion .pure-and-simple-title-text {
+    color: #666699;
+    font-size: 30px;
+    font-family: montserrat;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .pause-tts-container,
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .play-tts-container,
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .sound-tts-container {
+    background-color: #ffc000;
+    color: #222222;
+    box-shadow: inset 0px -2px #826200;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .pause-tts-container.hover,
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .play-tts-container.hover,
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .sound-tts-container.hover {
+    background-color: #fed65b;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .pause-tts-container.down,
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .play-tts-container.down,
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-tts-container-defaultType .sound-tts-container.down {
+    background-color: #ffc000;
+    box-shadow: inset 0px 3px 9px -3px #000;
+}
+
+/*----------------------------End Common Override---------------------------*/
+
+/*---------------------------- Tutorial's tab -----------------------------*/
+
+/*.de-mathematics-interactive.exponent-accordion-5 .tutorials-tab,
+.de-mathematics-interactive.exponent-accordion-4 .tutorials-tab {
+    width: 928px;
+    height: 599px;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .tutorial-button-base,
+.de-mathematics-interactive.exponent-accordion .tutorial-button-exponent,
+.de-mathematics-interactive.exponent-accordion .explore-button-base-1,
+.de-mathematics-interactive.exponent-accordion .explore-button-base-2,
+.de-mathematics-interactive.exponent-accordion .explore-button-exponent-1,
+.de-mathematics-interactive.exponent-accordion .explore-button-exponent-2 {
+    position: absolute;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-button-base {
+    top: 61px;
+    left: 87px;
+    font-size: 36px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-button-exponent {
+    top: 43px;
+    left: 172px;
+    font-size: 25px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-button-base-1 {
+    top: 93px;
+    left: 43px;
+    font-size: 22px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-button-base-2 {
+    top: 93px;
+    left: 165px;
+    font-size: 22px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-button-exponent-1 {
+    top: 81px;
+    left: 93px;
+    font-size: 16px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-button-exponent-2 {
+    top: 81px;
+    left: 215px;
+    font-size: 16px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .explore-button-base-2,
+.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .explore-button-base-1,
+.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .explore-button-exponent-2,
+.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .explore-button-exponent-1,
+.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .tutorial-button-base,
+.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .tutorial-button-exponent {
+    color: black;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.hover .tutorial-button-base,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.hover .explore-button-base,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.hover .data-set-selector.data-set-title,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.hover .data-set-selector.data-set-title,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.hover .tutorial-button-exponent,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.hover .explore-button-exponent {
+    color: #000;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.screen-1-tile-selected.hover .tutorial-button-base,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.screen-1-tile-selected.hover .explore-button-base,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.screen-1-tile-selected.hover .data-set-selector.data-set-title,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.screen-1-tile-selected.hover .data-set-selector.data-set-title,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.screen-1-tile-selected.hover .tutorial-button-exponent,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.screen-1-tile-selected.hover .explore-button-exponent {
+    color: #000;
+}
+/*.de-mathematics-interactive.exponent-accordion .explore-base-button-up {
+    color: black;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-exponent-button-up {
+    color: black;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-base-button-over {
+    color: #FFFFFF;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-exponent-button-over {
+    color: #FFFFFF;
+}*/
+
+.de-mathematics-interactive.exponent-accordion .explore-base-button-left-adjust {
+    left: 33px;
+}
+
+.de-mathematics-interactive.exponent-accordion .explore-exponent-button-left-adjust {
+    left: 86px;
+}
+
+.de-mathematics-interactive.exponent-accordion .scale-down-size {
+    transform: scaleY(0.75);
+    -webkit-transform: scaleY(0.75);
+    -ms-transform: scaleY(0.75);
+    -moz-transform: scaleY(0.75);
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-panel-content .big-parenthesis-exponent-data-tab.adjust-exponent-bottom {
+    bottom: -6px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .tutorials-tab {
+    width: 928px;
+    height: 599px;
+    /*position: relative;*/
+}
+
+
+
+.de-mathematics-interactive.exponent-accordion .tutorials-tab .tutorials-screen-1,
+.de-mathematics-interactive.exponent-accordion .tutorials-tab .tutorials-screen-2 {
+    height: 599px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container {
+    position: absolute;
+    width: 588px;
+    height: 342px;
+    display: inline-block;
+    top: 73px;
+    left: 163px;
+    /*top: 207px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    left: 50%;*/
+    margin: auto;
+    /*margin: 73px 0px 0px 90px; */
+    /* margin-bottom: auto; */
+}
+
+.de-mathematics-interactive.exponent-accordion.exponent-accordion-4 .data-set-selector.data-set-container.screen-2-tutorial-view {
+    width: 405px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles,
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles {
+    float: left;
+    width: 262px;
+    height: 262px;
+    position: relative;
+    margin: 0px 20px 20px 0;
+    background-color: #888888;
+    border-radius: 3px;
+    top: 50%;
+    left: 25%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0px 12px 0px 6px;
+    -webkit-box-shadow: inset -3px -8px 4px -6px #535353;
+    -moz-box-shadow: inset -3px -8px 4px -6px #535353;
+    box-shadow: inset -3px -8px 4px -6px #535353;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles {
+    background-position: -30px -808px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.screen-1-tile-selected {
+    background-position: -1018px -242px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles {
+    background-position: -674px -808px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.screen-1-tile-selected {
+    background-position: -352px -808px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.hover {
+    background-position: -1018px -242px;
+    background-color: #fdc026;
+    box-shadow: inset -3px -8px 4px -6px #826200;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.hover {
+    background-position: -352px -808px;
+    background-color: #fdc026;
+    box-shadow: inset -3px -8px 4px -6px #826200;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.down {
+    box-shadow: inset 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.down {
+    box-shadow: inset 0px 3px 9px -3px #000;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected {
+    background-color: #fdc026 !important;
+    box-shadow: inset -3px -8px 4px -6px #826200 !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set.screen-2-tile-selected {
+    background-color: #fdc026 !important;
+    color: #222222;
+    font-weight: bold;
+    box-shadow: inset -3px -8px 4px -6px #826200 !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set.screen-2-tile-selected .data-set-number-container {
+    color: white;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-number-container,
+.de-mathematics-interactive.exponent-accordion .data-set-number-text {
+    box-shadow: none !important;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-0.screen-1-tiles.screen-1-tile-selected.hover {
+    background-color: #fdc026 !important;
+    background-position: -1018px -242px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .data-set-1.screen-1-tiles.screen-1-tile-selected.hover {
+    background-color: #fdc026 !important;
+    background-position: -352px -808px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .screen-2-tiles {
+    float: left;
+    width: 162px;
+    height: 162px;
+    position: relative;
+    margin: 0px 20px 20px 0;
+    background-color: #888888;
+    border-radius: 3px;
+    box-shadow: inset -3px -8px 4px -6px #535353;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container.screen-2-tutorial-view {
+    top: 33px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .screen-2-tiles.hover {
+    background-color: #fdc026;
+    box-shadow: inset -3px -8px 4px -6px #826200;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set-container .screen-2-tiles.down {
+    box-shadow: inset 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-number-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: -157px;
+    left: 5px;
+    text-align: center;
+    background-color: #000000;
+    font-family: montserrat;
+    border-radius: 3px;
+}
+
+.de-mathematics-interactive.exponent-accordion .data-set-number-text {
+    top: 50%;
+    position: relative;
+    font-weight: bold;
+    font-family: montserrat;
+    font-size: 16px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-2-tiles .data-set-selector.data-set-title {
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    max-width: 124px;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    left: 50%;
+    width: 117px;
+}
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-2-tiles.hover .data-set-selector.data-set-title {
+    color: black;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-1-tiles .data-set-selector.data-set-title {
+    /*vertical-align: bottom;*/
+    font-size: 16px;
+    /*top: 86px;*/
+    padding-top: 172px;
+    position: relative;
+    color: white;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-1-tiles .data-set-selector.data-set-title-over {
+    color: black;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-1-tiles .data-set-selector.data-set-title-up {
+    color: black;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-1-tiles .data-set-selector.data-set-title-container {
+    position: relative;
+    /*bottom: 25px;*/
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .data-set-selector.data-set-title {
+    color: black;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .data-set-selector.data-set-title-over {
+    color: black;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .screen-1-tile-selected .data-set-selector.data-set-title-up {
+    color: black;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .data-set-selector.back-button-container {
+    float: left;
+    left: -45px;
+    top: 407px;
+}
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .data-set-selector.skip-tutorial-button-container {
+    float: right;
+    right: -47px;
+    top: 407px;
+}
+
+.de-mathematics-interactive.exponent-accordion .skip-tutorial-button-container .custom-btn-text,
+.de-mathematics-interactive.exponent-accordion .back-button-container .custom-btn-text {
+    color: #222222 !important;
+}
+
+
+/*------------------ css to set tutorial's tiles according to level start---------------*/
+
+.de-mathematics-interactive.exponent-accordion .accordion-level-1 {
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-level-2 {
+    left: 122px;
+    top:90px;
+    /*-webkit-transform: translateY(-50%); /*Issue #4094*/
+   /* -moz-transform: translateY(-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translateY(-50%);*/
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-level-3 {
+    top: 90px;
+    /*-webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translateY(-50%);*/
+    left: 30px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-level-4 {
+    left: 122px;
+}
+
+.de-mathematics-interactive.exponent-accordion .accordion-level-5 {
+    left: 30px;
+}
+
+/*------------------ css to set tutorial's tiles according to level end---------------*/
+
+.de-mathematics-interactive.exponent-accordion .screen-1-parenthesized-title {
+    font-size: 13px;
+    display: block;
+}
+
+
+
+
+.de-mathematics-interactive.exponent-accordion .tutorial-container {
+    position: absolute;
+    top: 0px;
+    height: inherit;
+    width: inherit;
+    display: none;
+    background-color: rgba(0,0,0,0);
+    z-index: 5;
+}
+
+.de-mathematics-interactive.exponent-accordion .cursor-none {
+    cursor: none;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-container-cursor {
+    height: 20px;
+    width: 15px;
+    position: absolute;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-container-fake-marquee-div {
+    border: 1px dashed rgb(141, 141, 141);
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+}
+
+@-webkit-keyframes flashBorder {
+    0%, 33%, 67%, 100% {
+        border-color: rgba(0,0,0,0);
+    }
+
+    17%, 50%, 83% {
+        border-color: #ffc000;
+    }
+}
+
+@keyframes flashBorder {
+    0%, 33%, 67%, 100% {
+        border-color: rgba(0,0,0,0);
+    }
+
+    17%, 50%, 83% {
+        border-color: #ffc000;
+    }
+}
+
+.de-mathematics-interactive.exponent-accordion .flashBorder {
+    -webkit-animation-name: flashBorder;
+    animation-name: flashBorder;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes pulse3x {
+    0%, 33%, 67%, 100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    17%, 50%, 83% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+}
+
+@keyframes pulse3x {
+    0%, 33%, 67%, 100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    17%, 50%, 83% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        -ms-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+}
+
+.de-mathematics-interactive.exponent-accordion .pulse {
+    -webkit-animation-name: pulse3x;
+    animation-name: pulse3x;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes flashShadow {
+    0%, 33%, 67%, 100% {
+        box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42), 0px 0px 15px 0px rgba(255,255,255,1);
+    }
+
+    17%, 50%, 83% {
+        box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    }
+}
+
+@keyframes flashShadow {
+    0%, 33%, 67%, 100% {
+        box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42), 0px 0px 15px 0px rgba(255,255,255,1);
+    }
+
+    17%, 50%, 83% {
+        box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.42);
+    }
+}
+
+.de-mathematics-interactive.exponent-accordion .flashShadow {
+    -webkit-animation-name: flashShadow;
+    animation-name: flashShadow;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes flashShadowReverse {
+    0%, 33%, 67%, 100% {
+        box-shadow: none;
+    }
+
+    17%, 50%, 83% {
+        box-shadow: 0px 0px 0px 4px #ffc000;
+    }
+}
+
+@keyframes flashShadowReverse {
+    0%, 33%, 67%, 100% {
+        box-shadow: none;
+    }
+
+    17%, 50%, 83% {
+        box-shadow: 0px 0px 0px 4px #ffc000;
+    }
+}
+
+.de-mathematics-interactive.exponent-accordion .flashShadowReverse {
+    -webkit-animation-name: flashShadowReverse;
+    animation-name: flashShadowReverse;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+
+
+/*
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .data-set-selector.direction-text .custom-btn.custom-btn-type-tts {
+    background-color: #ffc000;
+}
+*/
+
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .data-set-selector.data-set,
+.de-mathematics-interactive.player-theme-2.de-mathematics-interactive.exponent-accordion .data-set-1.screen-1-tiles .data-set-selector.data-set.hover {
+    border: none !important;
+}
+
+/*---------------------------- Tutorial's tab end-----------------------------*/
+
+/*---------------------------- Got it Popup Start----------------------------------*/
+.de-mathematics-interactive.exponent-accordion .popup-title-text {
+    color: #666699;
+    font-size: 30px;
+}
+
+.de-mathematics-interactive.exponent-accordion .popup-body-text {
+    color: #222222;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-dialogue-defaultType {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-dialogue-defaultType .custom-btn-text {
+    color: #222222 !important;
+    margin-right: 4px;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-dialogue-defaultType .theme2-pop-up-body {
+    width: 100%;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-dialogue-defaultType .theme2-pop-up-text {
+    width: 100% !important;
+}
+
+/*---------------------------- Got it Popup End----------------------------------*/
+
+
+/***********************************IMAGE SPRITES CSS ********************************************/
+
+
+
+.de-mathematics-interactive.exponent-accordion .bg {
+    background-position: -30px -30px;
+    width: 928px;
+    height: 599px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-area {
+    box-shadow: 0px 0px 0px 6px #ffc000 inset;
+    padding-top: 10px;
+    height: 589px;
+}
+
+.de-mathematics-interactive.exponent-accordion .multiplication-img {
+    background-position: -30px -689px;
+    width: 314px;
+    height: 59px;
+}
+
+.de-mathematics-interactive.exponent-accordion .division-img {
+    background-position: -1018px -30px;
+    width: 314px;
+    height: 152px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-screen-button-2 {
+    background-position: -1018px -242px;
+    width: 262px;
+    height: 262px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-screen-button-2-hover {
+    background-position: -30px -808px;
+    width: 262px;
+    height: 262px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-screen-button-1 {
+    background-position: -352px -808px;
+    width: 262px;
+    height: 262px;
+}
+
+.de-mathematics-interactive.exponent-accordion .tutorial-screen-button-1-hover {
+    background-position: -674px -808px;
+    width: 262px;
+    height: 262px;
+}
+
+/**************************IMAGE SPRITES CSS END*******************************************************/
+
+/*********************************** ACCESSIBILITY ********************************************/
+
+.de-mathematics-interactive.exponent-accordion .marquee-div .selected-elements-cover {
+    font-size: 0px;
+}
+
+/*********************************** ACCESSIBILITY END********************************************/
+
+/******************************** GOT IT POPUP CSS**********************/
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-dialogue-defaultType .theme2-pop-up-readable-text-region {
+    display: inline-block;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-btns-container.buttons-container-adjust-margin {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-title.theme2-pop-up-title-defaultType.adjust-margin-got-it-title {
+    margin-top: 30px;
+}
+
+.de-mathematics-interactive.exponent-accordion .got-it-popup-tts {
+    right: 0px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.de-mathematics-interactive.exponent-accordion .adjust-margin-got-it-buttons {
+    margin-bottom: 10px;
+}
+
+.de-mathematics-interactive.exponent-accordion .theme2-pop-up-body.got-it-popup-body {
+    padding: 15px 20px 19px 20px;
+}
+
+.de-mathematics-interactive.exponent-accordion .go-explore-tutorial-complete {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block;
+}
+
+
+
+
+/******************************** GOT IT POPUP CSS END **********************/

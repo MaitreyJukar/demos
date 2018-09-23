@@ -1,0 +1,7 @@
+<div id="{{idPrefix}}tile-container" class="tiles-container">
+    {{#tiles}}
+    <div id="{{../idPrefix}}{{../type}}-tile-container-value{{this}}" class="{{../type}}-tile-containers container-value{{this}}">
+        <div id="{{../idPrefix}}{{../type}}-tile-value{{this}}" class="{{../type}}-draggable-tiles tile-value{{this}}" data-tiletype="{{../tileType}}" data-tilevalue="{{this}}"></div>
+    </div>
+    {{/tiles}}
+</div>

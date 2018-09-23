@@ -1,0 +1,18 @@
+﻿<div id="{{idPrefix}}grid-holder-{{counter}}" class="grid-holder">
+  <div id="{{idPrefix}}grid-1-container-{{counter}}" class="grid-1-container">
+
+    {{#each grid1}}
+    <div id="{{idPrefix}}grid-element-{{gridRow}}-{{gridCol}}-{{counter}}" class="grid-1-element" row="{{gridRow}}" column="{{gridCol}}"></div>
+   
+    {{/each}}
+
+  </div>
+
+  <div id="{{idPrefix}}grid-2-container-{{counter}}" class="grid-2-container">
+
+    {{#each grid2}}    
+    <div id="{{idPrefix}}grid-element-{{gridRow}}-{{gridCol}}-{{counter}}" class="grid-2-element" row="{{gridRow}}" column="{{gridCol}}"></div>
+    {{/each}}
+
+  </div>
+</div>

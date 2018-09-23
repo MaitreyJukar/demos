@@ -1,0 +1,233 @@
+﻿div.de-mathematics-interactive div, div.de-mathematics-interactive span, div.de-mathematics-interactive applet, div.de-mathematics-interactive object, div.de-mathematics-interactive iframe,
+div.de-mathematics-interactive h1, div.de-mathematics-interactive h2, div.de-mathematics-interactive h3, div.de-mathematics-interactive h4, div.de-mathematics-interactive h5, div.de-mathematics-interactive h6, div.de-mathematics-interactive p, div.de-mathematics-interactive blockquote, div.de-mathematics-interactive pre, div.de-mathematics-interactive a, div.de-mathematics-interactive abbr, div.de-mathematics-interactive acronym,
+div.de-mathematics-interactive address, div.de-mathematics-interactive big, div.de-mathematics-interactive cite, div.de-mathematics-interactive code, div.de-mathematics-interactive del, div.de-mathematics-interactive dfn,
+div.de-mathematics-interactive em, div.de-mathematics-interactive font, div.de-mathematics-interactive img, div.de-mathematics-interactive ins, div.de-mathematics-interactive kbd, div.de-mathematics-interactive q, div.de-mathematics-interactive s, div.de-mathematics-interactive samp, div.de-mathematics-interactive small, div.de-mathematics-interactive strike,
+div.de-mathematics-interactive strong, div.de-mathematics-interactive sub, div.de-mathematics-interactive sup, div.de-mathematics-interactive tt, div.de-mathematics-interactive var, div.de-mathematics-interactive b, div.de-mathematics-interactive i, div.de-mathematics-interactive center, div.de-mathematics-interactive dl, div.de-mathematics-interactive dt,
+div.de-mathematics-interactive dd, div.de-mathematics-interactive ol, div.de-mathematics-interactive ul, div.de-mathematics-interactive li, div.de-mathematics-interactive fieldset, div.de-mathematics-interactive form, div.de-mathematics-interactive label, div.de-mathematics-interactive legend, div.de-mathematics-interactive table, div.de-mathematics-interactive caption, div.de-mathematics-interactive tbody, div.de-mathematics-interactive tfoot, div.de-mathematics-interactive thead, div.de-mathematics-interactive tr, div.de-mathematics-interactive th,
+div.de-mathematics-interactive td, div.de-mathematics-interactive article, div.de-mathematics-interactive aside, div.de-mathematics-interactive audio, div.de-mathematics-interactive canvas, div.de-mathematics-interactive details,
+div.de-mathematics-interactive figcaption, div.de-mathematics-interactive figure, div.de-mathematics-interactive footer, div.de-mathematics-interactive header, div.de-mathematics-interactive hgroup, div.de-mathematics-interactive mark, div.de-mathematics-interactive menu,
+div.de-mathematics-interactive meter, div.de-mathematics-interactive nav, div.de-mathematics-interactive output, div.de-mathematics-interactive progress, div.de-mathematics-interactive section, div.de-mathematics-interactive summary, div.de-mathematics-interactive time, div.de-mathematics-interactive video {
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+div.de-mathematics-interactive li {
+    line-height: normal;
+}
+
+div.de-mathematics-interactive sup {
+    vertical-align: super;
+    font-size: smaller;
+    top: 0px;
+    line-height: normal;
+    position: initial;
+}
+
+div.de-mathematics-interactive sub {
+    vertical-align: sub;
+    font-size: smaller;
+    line-height: normal;
+    position: initial;
+}
+
+div.de-mathematics-interactive i {
+    font-style: italic;
+    line-height: initial;
+    position: initial;
+}
+
+div.de-mathematics-interactive article, div.de-mathematics-interactive aside, div.de-mathematics-interactive dialog, div.de-mathematics-interactive figure, div.de-mathematics-interactive footer, div.de-mathematics-interactive header, div.de-mathematics-interactive hgroup,
+div.de-mathematics-interactive nav, div.de-mathematics-interactive section, div.de-mathematics-interactive blockquote {
+    display: block;
+}
+
+    div.de-mathematics-interactive nav ul {
+        list-style: none;
+    }
+
+div.de-mathematics-interactive ol {
+    list-style: decimal;
+}
+
+div.de-mathematics-interactive ul {
+    list-style: disc;
+}
+
+    div.de-mathematics-interactive ul ul {
+        list-style: circle;
+    }
+
+div.de-mathematics-interactive blockquote, div.de-mathematics-interactive q {
+    quotes: none;
+}
+
+    div.de-mathematics-interactive blockquote:before, div.de-mathematics-interactive blockquote:after, div.de-mathematics-interactive q:before, div.de-mathematics-interactive q:after {
+        content: none;
+    }
+
+div.de-mathematics-interactive ins {
+    text-decoration: underline;
+}
+
+div.de-mathematics-interactive del {
+    text-decoration: line-through;
+}
+
+div.de-mathematics-interactive mark {
+    background: none;
+}
+
+div.de-mathematics-interactive abbr[title], div.de-mathematics-interactive dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+div.de-mathematics-interactive table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+div.de-mathematics-interactive hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+div.de-mathematics-interactive input[type=submit], div.de-mathematics-interactive input[type=button], div.de-mathematics-interactive button {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+div.de-mathematics-interactive input, div.de-mathematics-interactive select, div.de-mathematics-interactive a img {
+    vertical-align: middle;
+}
+
+div.de-mathematics-interactive [class*="span"] {
+    float: none;
+    min-height: 0px;
+    margin-left: 0px;
+}
+
+div.de-mathematics-interactive input, div.de-mathematics-interactive input[type="text"] {
+    margin: 0em;
+    font: -webkit-small-control;
+    color: #000000;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    padding: 1px 0px;
+    border-radius: 0px;
+    line-height:normal;
+}
+
+div.de-mathematics-interactive input[disabled] {
+    cursor: default;
+}
+
+div.de-mathematics-interactive body, div.de-mathematics-interactive select, div.de-mathematics-interactive textarea {
+    color: initial;
+}
+
+div.de-mathematics-interactive input[type="radio"], div.de-mathematics-interactive input[type="checkbox"] {
+    margin: 3px 3px 3px 4px;
+    min-height: initial;
+}
+
+div.de-mathematics-interactive label {
+    display: initial;
+}
+
+div.de-mathematics-interactive {
+    line-height: normal;
+    font-size: 16px;
+}
+
+    div.de-mathematics-interactive td, div.de-mathematics-interactive th {
+        vertical-align: middle;
+    }
+
+    div.de-mathematics-interactive b {
+        font-weight: bold;
+    }
+
+    
+div.de-mathematics-interactive table,
+div.de-mathematics-interactive table{
+  display: table !important;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  border-collapse: separate !important;
+  border: 0px none rgb(128, 128, 128);
+  height: auto;
+  width: auto;
+  max-width: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  margin-right: 0px;
+}
+div.de-mathematics-interactive table tbody {
+  display: table-row-group;
+}
+div.de-mathematics-interactive table thead {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  border-bottom: 0px none rgb(128, 128, 128) !important;
+  font-weight: normal;
+  font-size: 16px;
+}
+div.de-mathematics-interactive table thead td {
+  padding: 1px;
+}
+div.de-mathematics-interactive table tr {
+  border-top: 0px none rgb(128, 128, 128);
+  display: table-row;
+}
+div.de-mathematics-interactive table tr:first-child {
+  border-top: 0px none rgb(128, 128, 128);
+}
+div.de-mathematics-interactive table tr td {
+  border-left: 0px none rgb(0, 0, 0);
+  padding: 0px !important;
+  text-align: start;
+}
+div.de-mathematics-interactive table tr td:first-child {
+  border-left: 0px none rgb(0, 0, 0);
+}
+div.de-mathematics-interactive .table-vHeader tbody tr td:first-child {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  font-weight: normal;
+  font-size: 16px;
+}
+div.de-mathematics-interactive .table-sHeader tbody tr:first-child {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Times New Roman;
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+}
+div.de-mathematics-interactive table thead th {
+  vertical-align:middle;
+  text-align: center;
+}
+
+div.de-mathematics-interactive .ui-state-default,
+div.de-mathematics-interactive .ui-widget-content .ui-state-default,
+div.de-mathematics-interactive .ui-widget-header .ui-state-default {
+  border: 0px none rgb(128, 128, 128);
+}
+
+div.de-mathematics-interactive .ui-state-disabled {
+  opacity:1;
+}

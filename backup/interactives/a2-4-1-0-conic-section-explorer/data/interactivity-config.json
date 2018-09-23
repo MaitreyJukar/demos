@@ -1,0 +1,122 @@
+﻿{
+    "config": {
+        "idPrefix": "conic-section-explorer",
+        "isSaveStateAllowed": false,
+        "isTwoStepLoad": true,
+        "model": {
+            "class": "ConicSectionExplorerData"
+        },
+        "module": "ConicSectionExplorer",
+        "newSaveState": true,
+        "playerTheme": 2,
+        "tabsData": [
+            {
+                "overviewTabData": {
+                    "leftImageContainerID": "overview-image",
+                    "screenID": "overview-tab-screen"
+                },
+                "templateName": "overviewTab",
+                "view": {
+                    "class": "OverviewTab",
+                    "data": {
+                        "el": "#overview-tab-container"
+                    }
+                }
+            },
+            {
+                "templateName": "exploreTab",
+                "view": {
+                    "class": "ExploreTab",
+                    "data": {
+                        "el": "#explore-tab-container"
+                    }
+                }
+            }
+        ],
+        "themeType": 2
+    },
+    "resources": {
+        "components": [
+			"cango-3d",
+            "tools-graph",
+            "theme2-custom-spinner-extended"
+        ],
+        "css": [
+            {
+                "isNextStepLoad": true,
+                "url": "conic-section-explorer.css"
+            }
+        ],
+        "isNewJsonType": true,
+        "js": [
+            {
+                "isNextStepLoad": false,
+                "url": "initialize.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "views/overview-tab.js"
+            },
+			{
+                "isNextStepLoad": false,
+                "url": "models/conic-section-explorer.js"
+            },
+			{
+                "url": "views/explore-tab.js"
+            },
+			{
+                "url": "views/cone-view.js"
+            },
+			{
+                "url": "paper-full.js",
+                "basePath": "PAPER_JS"
+            }
+        ],
+        "json": [
+        ],
+        "media": {
+            "audio": [
+            ],
+            "cur": [
+				{
+                    "id": "closed-hand",
+                    "url": "cursor/closedhand.cur",
+                    "basePath": "COMMON_IMAGE"
+                },
+                {
+                    "id": "open-hand",
+                    "url": "cursor/openhand.cur",
+                    "basePath": "COMMON_IMAGE"
+                }
+			],
+            "image": [
+				{
+                    "forceLoad": true,
+                    "id": "overview-image",
+                    "isNextStepLoad": false,
+                    "url": "overview.jpg"
+				},
+				 {
+                    "id": "sprite-image",
+                    "isNextStepLoad": true,
+                    "forceLoad": true,
+                    "url": "resources.png"
+                }
+            ],
+            "video": [
+            ]
+        },
+        "templates": [
+            {
+                "isNextStepLoad": false,
+                "url": "overviewTab.js"
+            },
+            {
+                "url": "exploreTab.js"
+            },
+			{
+				"url":"conicSection.js"
+			}
+        ]
+    }
+}

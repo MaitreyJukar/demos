@@ -1,0 +1,337 @@
+.de-mathematics-interactive.conic-section-explorer .explore-tab-container {
+    background-position: -2px -2px;
+    width: 928px;
+    height: 599px;
+    position: relative;
+    font-family: montserrat;
+}
+
+.de-mathematics-interactive.conic-section-explorer .direction-text-container {
+    padding-top: 10px;
+    /*    padding-bottom: 5px;*/
+}
+
+.de-mathematics-interactive.conic-section-explorer .explore-tab-content-container {
+    position: relative;
+    width: 928px;
+    height: 506px;
+    padding-top: 5px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .graph-view-wrapper {
+    position: relative;
+    float: left;
+    width: 511px;
+    height: 506px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .direction-text-container .direction-text-start-over {
+    background-color: #7855ad;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.conic-section-explorer .direction-text-container .direction-text-start-over.hover {
+    background-color: #8a61c8;
+}
+
+.de-mathematics-interactive.conic-section-explorer .direction-text-container .direction-text-start-over.down {
+    background-color: #8a61c8;
+    box-shadow: 0px 3px 9px -3px #000 inset;
+}
+
+.de-mathematics-interactive.conic-section-explorer .direction-text-start-over .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #604194 inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .activity-canvas,
+.de-mathematics-interactive.conic-section-explorer .graph-canvas {
+    position: absolute;
+    z-index: 1;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.de-mathematics-interactive.conic-section-explorer .custom-btn.custom-btn-type-tts {
+    box-shadow: inset 0px -2px #563D7B;
+}
+
+.de-mathematics-interactive.conic-section-explorer .custom-btn.custom-btn-type-tts.hover {
+    background-color: #8a61c8;
+}
+
+.de-mathematics-interactive.conic-section-explorer .custom-btn.custom-btn-type-tts.down {
+    background-color: #a575ee;
+}
+
+/************************************************************** START OF CONIC SECTION CONTAINER ********************************************************/
+
+.de-mathematics-interactive.conic-section-explorer .conic-section-wrapper {
+    position: relative;
+    width: 416px;
+    height: 506px;
+    float: left;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-section-container {
+    position: absolute;
+    left: 23px;
+    width: 384px;
+    height: 489px;
+    top: 1px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .canvas-container {
+    width: 384px;
+    height: 363px;
+    position: relative;
+}
+
+.de-mathematics-interactive.conic-section-explorer .spin-button-container {
+    height: 126px;
+    position: relative;
+    width: 384px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .plane-data-container {
+    position: relative;
+    float: left;
+    width: 203px;
+    height: 126px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .cone-data-container {
+    position: relative;
+    float: left;
+    width: 181px;
+    height: 126px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .plane-label,
+.de-mathematics-interactive.conic-section-explorer .cone-label {
+    text-align: center;
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+}
+
+
+.de-mathematics-interactive.conic-section-explorer .plane-slop-custom-spinner-container {
+    position: absolute;
+    left: 38px;
+    top: 31px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .plane-offset-custom-spinner-container {
+    position: absolute;
+    left: 133px;
+    top: 31px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .cone-height-custom-spinner-container {
+    position: absolute;
+    left: 39px;
+    top: 31px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .cone-slop-custom-spinner-container {
+    position: absolute;
+    left: 128px;
+    top: 31px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .plane-slop-label {
+    position: absolute;
+    top: 63px;
+    left: 10px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .plane-offset-label {
+    position: absolute;
+    top: 63px;
+    left: 110px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .cone-height-label {
+    position: absolute;
+    top: 63px;
+    left: 17px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .cone-slop-label {
+    position: absolute;
+    top: 63px;
+    left: 108px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-reset-button {
+    position: absolute;
+    top: 10px;
+    left: 332px;
+    z-index: 6;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-rotate-about-x-axis-button {
+    top: 109px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-rotate-about-x-axis-button .custom-btn-icon {
+    background-position: -96px -605px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-rotate-about-y-axis-button {
+    top: 154px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-rotate-about-y-axis-button .custom-btn-icon {
+    background-position: -49px -605px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-rotate-about-z-axis-button {
+    top: 199px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .conic-rotate-about-z-axis-button .custom-btn-icon {
+    background-position: -2px -605px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .rotate-button {
+    position: absolute;
+    left: 332px;
+    z-index: 6;
+    width: 43px;
+    height: 38px;
+    cursor: default;
+}
+
+.de-mathematics-interactive.conic-section-explorer .rotate-angle-text {
+    position: absolute;
+    top: 82px;
+    left: 322px;
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 6;
+}
+
+.de-mathematics-interactive.conic-section-explorer .plane-slope-button,
+.de-mathematics-interactive.conic-section-explorer .cone-height-button,
+.de-mathematics-interactive.conic-section-explorer .plane-offset-button,
+.de-mathematics-interactive.conic-section-explorer .cone-slop-button,
+.de-mathematics-interactive.conic-section-explorer .conic-reset-button,
+.de-mathematics-interactive.conic-section-explorer .rotate-button {
+    background-color: #0086a7;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.plane-slope-button,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.cone-height-button,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.plane-offset-button,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.cone-slop-button {
+    border-radius: 3px 3px 0px 0px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.plane-slope-button,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.cone-height-button,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.plane-offset-button,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.cone-slop-button {
+    border-radius: 0px 0px 3px 3px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .spin-textbox.vertical-aligned {
+    font-family: Montserrat,sans-serif;
+    font-size: 18px;
+    color: #515050;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.plane-slope-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.cone-height-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.plane-offset-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.cone-slop-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.plane-slope-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.cone-height-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.plane-offset-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.cone-slop-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .rotate-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .conic-reset-button .custom-btn-shadowHolder,
+.de-mathematics-interactive.conic-section-explorer .graph-all-btn .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #00678b inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.plane-slope-button .custom-spinner-font-awesome-icon-container,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.cone-height-button .custom-spinner-font-awesome-icon-container,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.plane-offset-button .custom-spinner-font-awesome-icon-container,
+.de-mathematics-interactive.conic-section-explorer .spin-up-arrow.cone-slop-button .custom-spinner-font-awesome-icon-container {
+    padding-top: 4px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.plane-slope-button .custom-spinner-font-awesome-icon-container,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.cone-height-button .custom-spinner-font-awesome-icon-container,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.plane-offset-button .custom-spinner-font-awesome-icon-container,
+.de-mathematics-interactive.conic-section-explorer .spin-down-arrow.cone-slop-button .custom-spinner-font-awesome-icon-container {
+    margin-top: -10px;
+}
+
+/************************************************************** END OF CONIC SECTION CONTAINER ********************************************************/
+/************************************************************** START OF GRAPH SECTION CONTAINER ********************************************************/
+.de-mathematics-interactive.conic-section-explorer .graph-zoom-in-button {
+    top: 11px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .graph-reset-button {
+    top: 56px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .graph-zoom-out-button {
+    top: 101px;
+}
+
+.de-mathematics-interactive.conic-section-explorer .graph-all-btn {
+    position: absolute;
+    right: 36px;
+    z-index: 6;
+    background-color: #0086a7;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.conic-section-explorer .graph-all-btn.hover,
+.de-mathematics-interactive.conic-section-explorer .plane-slope-button.hover,
+.de-mathematics-interactive.conic-section-explorer .cone-height-button.hover,
+.de-mathematics-interactive.conic-section-explorer .plane-offset-button.hover,
+.de-mathematics-interactive.conic-section-explorer .cone-slop-button.hover,
+.de-mathematics-interactive.conic-section-explorer .rotate-button.hover,
+.de-mathematics-interactive.conic-section-explorer .conic-reset-button.hover {
+    background-color: #00a1c4;
+}
+
+.de-mathematics-interactive.conic-section-explorer .graph-all-btn.down,
+.de-mathematics-interactive.conic-section-explorer .plane-slope-button.down,
+.de-mathematics-interactive.conic-section-explorer .cone-height-button.down,
+.de-mathematics-interactive.conic-section-explorer .plane-offset-button.down,
+.de-mathematics-interactive.conic-section-explorer .cone-slop-button.down,
+.de-mathematics-interactive.conic-section-explorer .rotate-button.down,
+.de-mathematics-interactive.conic-section-explorer .conic-reset-button.down {
+    box-shadow: 0px 3px 9px -3px #000 inset;
+    background-color: #00a1c4;
+}
+
+.de-mathematics-interactive.conic-section-explorer .graph-canvas-container {
+    position: absolute;
+    left: 7px;
+    height: 489px;
+    width: 478px;
+    top: 1px;
+}
+
+}
+
+/************************************************************** END OF GRAPH SECTION CONTAINER ********************************************************/

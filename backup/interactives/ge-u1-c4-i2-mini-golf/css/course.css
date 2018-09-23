@@ -1,0 +1,744 @@
+.de-mathematics-interactive.mini-golf svg {
+    visibility: hidden;
+}
+
+/*-------------------------------------- Direction text buttons class -------------------------*/
+.de-mathematics-interactive.mini-golf .white-button {
+    font-weight: bold;
+}
+
+
+.de-mathematics-interactive.mini-golf .white-button,
+.de-mathematics-interactive.mini-golf .white-button-tts.custom-btn.custom-btn-type-tts {
+    background-color: #ffffff;
+    color: #466E36;
+    box-shadow: 0px 3px 9px -3px #B3B3B3;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .white-button.active,
+.de-mathematics-interactive.mini-golf .white-button-tts.custom-btn.custom-btn-type-tts.active {
+    opacity: 1;
+}
+
+.de-mathematics-interactive.mini-golf .white-button.hover,
+.de-mathematics-interactive.mini-golf .white-button-tts.custom-btn.custom-btn-type-tts.hover {
+    background-color: #E9E9E9;
+    color: #466E36;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .white-button.down,
+.de-mathematics-interactive.mini-golf .white-button-tts.custom-btn.custom-btn-type-tts.down {
+    box-shadow: inset 0px 3px 9px -3px #B3B3B3;
+    background-color: #E9E9E9;
+}
+
+
+
+.de-mathematics-interactive.mini-golf .white-button .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #b3b3b3 inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+
+.de-mathematics-interactive.mini-golf .course-2-new-hole,
+.de-mathematics-interactive.mini-golf .course-2-new-hole-tts.custom-btn.custom-btn-type-tts {
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #222222;
+    box-shadow: 0px 3px 9px -3px #B3B3B3;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .course-2-new-hole.active,
+.de-mathematics-interactive.mini-golf .course-2-new-hole-tts.custom-btn.custom-btn-type-tts.active {
+    opacity: 1;
+}
+
+.de-mathematics-interactive.mini-golf .course-2-new-hole.hover,
+.de-mathematics-interactive.mini-golf .course-2-new-hole-tts.custom-btn.custom-btn-type-tts.hover {
+    background-color: #E9E9E9;
+    color: #222222;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .course-2-new-hole.down,
+.de-mathematics-interactive.mini-golf .course-2-new-hole-tts.custom-btn.custom-btn-type-tts.down {
+    box-shadow: inset 0px 3px 9px -3px #B3B3B3;
+    background-color: #E9E9E9;
+}
+
+
+
+.de-mathematics-interactive.mini-golf .course-2-new-hole .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #b3b3b3 inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+
+
+
+
+
+.de-mathematics-interactive.mini-golf .course-3-new-hole,
+.de-mathematics-interactive.mini-golf .course-3-new-hole-tts.custom-btn.custom-btn-type-tts {
+    background-color: #8BB51C;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 9px -3px #4C8304;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .course-3-new-hole.active,
+.de-mathematics-interactive.mini-golf .course-3-new-hole-tts.custom-btn.custom-btn-type-tts.custom-btn.custom-btn-type-tts.active {
+    opacity: 1;
+}
+
+.de-mathematics-interactive.mini-golf .course-3-new-hole.hover,
+.de-mathematics-interactive.mini-golf .course-3-new-hole-tts.custom-btn.custom-btn-type-tts.hover {
+    background-color: #9ECB25;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .course-3-new-hole.down,
+.de-mathematics-interactive.mini-golf .course-3-new-hole-tts.custom-btn.custom-btn-type-tts.down {
+    box-shadow: inset 0px 3px 9px -3px #4C8304;
+    background-color: #9ECB25;
+}
+
+
+
+.de-mathematics-interactive.mini-golf .course-3-new-hole .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #4C8304 inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+
+
+
+
+
+
+.de-mathematics-interactive.mini-golf .course-4-new-hole,
+.de-mathematics-interactive.mini-golf .course-4-new-hole-tts.custom-btn.custom-btn-type-tts {
+    font-weight: bold;
+    background-color: #7856AD;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 9px -3px #614196;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .course-4-new-hole.active,
+.de-mathematics-interactive.mini-golf .course-4-new-hole-tts.custom-btn.custom-btn-type-tts.active {
+    opacity: 1;
+}
+
+.de-mathematics-interactive.mini-golf .course-4-new-hole.hover,
+.de-mathematics-interactive.mini-golf .course-4-new-hole-tts.custom-btn.custom-btn-type-tts.hover {
+    background-color: #906EC5;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive.mini-golf .course-4-new-hole.down,
+.de-mathematics-interactive.mini-golf .course-4-new-hole-tts.custom-btn.custom-btn-type-tts.down {
+    background-color: #906EC5;
+    box-shadow: inset 0px 3px 9px -3px #614196;
+}
+
+
+
+.de-mathematics-interactive.mini-golf .course-4-new-hole .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #614196 inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+
+
+
+
+/* ****************** Course title, reset and obstacle holder ****************** */
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-obstacle-holder {
+    position: absolute;
+    height: 205px;
+    width: 240px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-obstacle-holder-2 {
+    background-position: -720px -1518px;
+    background-repeat: no-repeat;
+}
+
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder {
+    position: relative;
+    float: left;
+    margin-left: 23px;
+    width: 148px;
+    height: 93px;
+    border-radius: 3px;
+    border: 2px solid #78AC64;
+    font-family: Montserrat;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder-1 {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder-2 {
+    color: #83774E;
+    border: 2px solid #83774E;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder-3 {
+    color: #5D4718;
+    border: 2px solid #5D4718;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder .course-number-indicator {
+    width: inherit;
+    height: 34px;
+    line-height: 34px;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder .course-title {
+    border-top: 2px solid #78AC64;
+    font-weight: bold;
+    font-size: 18px;
+    height: 57px;
+    width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder .course-title-1 {
+    border-top: 2px solid #FFFFFF;
+}
+
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder .course-title-2 {
+    border-top: 2px solid #83774E;
+}
+
+
+.de-mathematics-interactive.mini-golf .courses-view-container .course-title-holder .course-title-3 {
+    border-top: 2px solid #5D4718;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .reset-course-btn-holder {
+    position: relative;
+    float: left;
+    margin-left: 7px;
+    width: 45px;
+    height: 38px;
+}
+
+.de-mathematics-interactive.mini-golf .skip-animation-btn-holder {
+    position: absolute;
+    /*top: 100px;
+    left: 50px;*/
+    z-index: 3;
+}
+
+.de-mathematics-interactive.mini-golf .take-shot-btn-holder {
+    position: absolute;
+    z-index: 10;
+}
+
+.de-mathematics-interactive.mini-golf .take-shot-btn {
+    position: relative;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .reset-course-btn {
+    position: relative;
+    z-index: 10;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .obstacles-holder {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    margin-top: 90px;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .level-1 .obstacles-holder {
+    margin-left: 440px;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .level-2 .obstacles-holder {
+    margin-left: 365px;
+}
+
+.de-mathematics-interactive.mini-golf .courses-view-container .level-3 .obstacles-holder {
+    margin-left: 395px;
+}
+
+/* ----------------- Score card button ----------------- */
+.de-mathematics-interactive.mini-golf .level-2 .course-score-card-btn-holder {
+    left: 17px;
+    bottom: 31px;
+    font-size: 18px;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-holder.down {
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-holder {
+    position: absolute;
+    width: 150px;
+    height: 38px;
+    bottom: 33px;
+    left: 26px;
+    z-index: 10;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn {
+    font-size: 18px;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-0 {
+    background-color: #3B622D;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-0.active {
+    box-shadow: 0 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-0.hover {
+    background-color: #659055;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-0.down {
+    background-color: #5D874C;
+    box-shadow: inset 0 3px 9px -3px #000;
+}
+
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-1 {
+    background-color: #375B5D;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-1.active {
+    box-shadow: 0 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-1.hover {
+    background-color: #517E80;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-1.down {
+    background-color: #264F51;
+    box-shadow: inset 0 3px 9px -3px #000;
+}
+
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-2 {
+    background-color: #B39650;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-2.active {
+    box-shadow: 0 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-2.hover {
+    background-color: #CFA94B;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-2.down {
+    background-color: #9b803d;
+    box-shadow: inset 0 3px 9px -3px #000;
+}
+
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-3 {
+    background-color: #996F2B;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-3.active {
+    box-shadow: 0 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-3.hover {
+    background-color: #B3853C;
+}
+
+.de-mathematics-interactive.mini-golf .course-score-card-btn-3.down {
+    background-color: #805D26;
+    box-shadow: inset 0 3px 9px -3px #000;
+}
+
+
+.de-mathematics-interactive.mini-golf .courses-view-container .main-container {
+    height: 599px;
+    width: 928px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.de-mathematics-interactive.mini-golf .level-0 .main-container {
+    background-position: 0px 0px;
+}
+
+.de-mathematics-interactive.mini-golf .level-1.main-container {
+    background-position: 0 -600px;
+}
+
+.de-mathematics-interactive.mini-golf .level-2 .main-container {
+    background-position: 0 -1200px;
+}
+
+.de-mathematics-interactive.mini-golf .level-3 .main-container {
+    background-position: 0px -1800px;
+}
+
+
+.de-mathematics-interactive.mini-golf .work-area {
+    height: 501px;
+    width: 928px;
+    position: relative;
+}
+
+.de-mathematics-interactive.mini-golf .direction-text {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.de-mathematics-interactive.mini-golf .canvas {
+    width: 928px;
+    height: 502px;
+    position: absolute;
+}
+
+.de-mathematics-interactive.mini-golf .canvas-holder {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.de-mathematics-interactive.mini-golf .canvas-holder-acc-container {
+    position: absolute;
+    width: 912px;
+    height: 485px;
+    margin: 8px;
+}
+
+.de-mathematics-interactive.mini-golf .level-2 .course-2-palm-leaves {
+    width: 172px;
+    height: 125px;
+    position: absolute;
+    bottom: 0px;
+    background-size: 100%;
+}
+
+/* ------------------ POP UP ------------------ */
+.de-mathematics-interactive.mini-golf .theme2-pop-up-dialogue-defaultType {
+    background-color: #FFF !important;
+}
+
+.de-mathematics-interactive.mini-golf .course-pop-up-title-color {
+    color: #0086A7;
+}
+
+.de-mathematics-interactive.mini-golf .course-pop-up-title-color-blue {
+    color: #4c1787;
+}
+
+.de-mathematics-interactive.mini-golf .course-pop-up-body-color {
+    color: #454545;
+}
+
+.de-mathematics-interactive.mini-golf .course-pop-up-btn.active {
+    background-color: #0086A7;
+    box-shadow: 0px 3px 9px -3px #00678B;
+}
+
+.de-mathematics-interactive.mini-golf .course-pop-up-btn .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #00678b inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+.de-mathematics-interactive.mini-golf .course-pop-up-btn.hover {
+    background-color: #11A6CB;
+}
+
+.de-mathematics-interactive.mini-golf .course-pop-up-btn.down {
+    box-shadow: 0px 3px 9px -3px #00678B inset;
+    background-color: #11A6CB;
+}
+/************************************custom popup css start*****************************************/
+
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-container {
+    position: relative;
+    height: 383px;
+    /* text-align: center; */
+    width: 863px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.93);
+    -moz-box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.93);
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.93);
+    border-radius: 3px;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-title-container {
+    width: 863px;
+    height: 82px;
+    color: black;
+    position: relative;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-title {
+    margin: auto;
+    width: 158px;
+    top: 19px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: #4c1787;
+    font-size: 24px;
+    position: relative;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-image-container {
+    width: 826px;
+    height: 235px;
+    position: relative;
+    margin: auto;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-container .image-cont {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-container .text-image-cont {
+    height: 250px;
+    width: 203px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-image-1 {
+    background-position: 0 -1890px;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-image-2 {
+    background-position: -160px -1890px;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-image-3 {
+    background-position: -320px -1890px;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-image-4 {
+    background-position: -480px -1890px;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-image-4-button-text-container {
+    position: relative;
+    top: 82px;
+    left: 35px;
+}
+
+.de-mathematics-interactive.mini-golf .image-description-number {
+    position: absolute;
+}
+
+.de-mathematics-interactive.mini-golf .image-description-text {
+    position: absolute;
+    left: 18px;
+    width: 147px;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-got-it-button-contanier {
+    position: absolute;
+    height: 40px;
+    width: 850px;
+    margin: auto;
+    bottom: 24px;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-got-it-button {
+    position: relative;
+    margin: auto;
+}
+
+.de-mathematics-interactive.mini-golf .course-0-custom-popup-image-0-cont.text-image-cont {
+    margin-left: 0px;
+}
+
+
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-container {
+    position: relative;
+    height: 383px;
+    width: 464px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.93);
+    -moz-box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.93);
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.93);
+    background-color: #ffffff;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-title-container {
+    width: 464px;
+    height: 82px;
+    color: black;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-title {
+    margin: auto;
+    width: 108px;
+    margin: auto;
+    top: 20px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: #4c1787;
+    font-size: 24px;
+    position: relative;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-image-container {
+    width: 411px;
+    height: 235px;
+    margin: auto;
+    position: relative;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-container .image-cont {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-container .text-image-cont {
+    height: 235px;
+    width: 203px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-image-1 {
+    background-position: -640px -1890px;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-custom-popup-image-2 {
+    background-position: -800px -1890px;
+}
+
+
+.de-mathematics-interactive.mini-golf .course-1-image-3-button-text-container {
+    position: relative;
+    top: 82px;
+    left: 30px;
+    color: white;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-got-it-button-contanier {
+    position: absolute;
+    height: 40px;
+    width: 464px;
+    bottom: 24px;
+    margin: auto;
+}
+
+.de-mathematics-interactive.mini-golf .course-1-got-it-button {
+    position: relative;
+    margin: auto;
+}
+
+
+
+.de-mathematics-interactive.mini-golf .description-text-cont {
+    position: relative;
+    left: 27px;
+    top: 20px;
+}
+
+.de-mathematics-interactive.mini-golf .button-text-container {
+    color: #ffffff;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.de-mathematics-interactive.mini-golf .one-time-popup-text-container {
+    font-family: montserrat;
+    font-weight: bold;
+    color: #222222;
+    font-size: 14px;
+}
+
+.de-mathematics-interactive.mini-golf .one-time-popup-got-it-button {
+    background-color: #0086a7;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+
+.de-mathematics-interactive.mini-golf .one-time-popup-got-it-button.active {
+    background-color: #0086A7;
+    box-shadow: 0px 3px 9px -3px #00678B;
+}
+
+.de-mathematics-interactive.mini-golf .one-time-popup-got-it-button {
+    box-shadow: 0px -2px #00678b inset;
+    position: relative;
+    border-radius: 3px;
+}
+
+.de-mathematics-interactive.mini-golf .one-time-popup-got-it-button.hover {
+    background-color: #11A6CB;
+}
+
+.de-mathematics-interactive.mini-golf .one-time-popup-got-it-button.down {
+    box-shadow: 0px 3px 9px -3px #00678B inset;
+    background-color: #11A6CB;
+}
+
+.de-mathematics-interactive.mini-golf .one-time-popup-got-it-button .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #00678b inset;
+    position: absolute;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+
+/************************************custom popup css end*******************************************/

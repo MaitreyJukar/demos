@@ -1,0 +1,29 @@
+<!--Start of Fraction-->
+	<!--Start of Numerator-->
+	{{#if isNumeratorEmpty}}
+		<div class='fraction-data-tab equation-common'><div class='numerator numerator-empty equation-common'>1
+	{{else}}
+		{{#if isFractionParentParenthesis}} 
+			<div class='fraction-data-tab adjust-bottom equation-common'><div class='numerator equation-common'>
+		{{else}}
+			<div class='fraction-data-tab equation-common'><div class='numerator equation-common'>
+		{{/if}}
+	{{/if}}
+	
+	{{{numeratorBody}}}
+	
+	</div> <!--End of Numerator-->
+
+	<div class='vinicullum'></div>
+	
+	<!--Start of Denominator-->
+	{{#if isDenominatorEmpty}}
+		<div class='denominator denominator-empty equation-common'>
+	{{else}}
+		<div class='denominator equation-common'>
+	{{/if}}
+	
+	{{{denominatorBody}}}
+	
+	</div> <!--End of Denominator-->
+</div> <!--End of Fraction-->

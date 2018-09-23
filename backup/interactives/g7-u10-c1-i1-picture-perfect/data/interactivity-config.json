@@ -1,0 +1,135 @@
+﻿{
+    "config": {
+        "idPrefix": "picture-perfect",
+        "isSaveStateAllowed": true,
+        "isTwoStepLoad": true,
+        "model": {
+            "class": "RepairRoads"
+        },
+        "module": "PicturePerfect",
+        "newSaveState": true,
+        "playerTheme": 2,
+        "tabsData": [
+            {
+                "overviewTabData": {
+                    "leftImageContainerID": "overview-image",
+                    "screenID": "overview-tab-screen"
+                },
+                "templateName": "overviewTab",
+                "view": {
+                    "class": "OverviewTab",
+                    "data": {
+                        "el": "#overview-tab-container"
+                    }
+                }
+            },
+            {
+                "templateName": "repairRoadTab",
+                "view": {
+                    "class": "RepairRoadTab",
+                    "data": {
+                        "el": "#repair-road-tab-container"
+                    }
+                }
+            }
+        ],
+        "themeType": 2
+    },
+    "resources": {
+        "components": [
+        ],
+        "css": [
+            {
+                "isNextStepLoad": true,
+                "url": "picture-perfect.css"
+            }
+        ],
+        "isNewJsonType": true,
+        "js": [
+            {
+                "isNextStepLoad": false,
+                "url": "initialize.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "models/repair-roads.js"
+            },
+            {
+                "url": "models/shape.js",
+				"isNextStepLoad": false
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "views/overview-tab.js"
+            },
+            {
+                "url": "views/repair-roads.js"
+            },
+            {
+                "url": "views/shape.js"
+            },
+			 {
+                "url": "paper-full.js",
+                "basePath": "PAPER_JS"
+            }
+        ],
+        "json": [
+        ],
+        "media": {
+            "audio": [
+            ],
+            "cur": [
+				{
+                    "id": "closed-hand",
+                    "url": "cursor/closedhand.cur",
+                    "basePath": "COMMON_IMAGE"
+                },
+                {
+                    "id": "open-hand",
+                    "url": "cursor/openhand.cur",
+                    "basePath": "COMMON_IMAGE"
+                }
+            ],
+            "image": [
+			{
+                    "forceLoad": true,
+                    "id": "overview-image",
+                    "isNextStepLoad": false,
+                    "url": "overview.jpg"
+                },
+                {
+                    "forceLoad": true,
+                    "id": "picture-perfect-image",
+                    "isNextStepLoad": false,
+                    "url": "picture-perfect-sprite.png"
+                },
+				{
+                    "id": "picture-perfect-animation-1",
+                    "url": "picture-perfect-animation-sprite-1.png"
+                },
+				{
+                    "id": "picture-perfect-animation-2",
+                    "url": "picture-perfect-animation-sprite-2.png"
+                },
+				{
+                    "id": "picture-perfect-animation-3",
+                    "url": "picture-perfect-animation-sprite-3.png"
+                }
+            ],
+            "video": [
+            ]
+        },
+        "templates": [
+            {
+                "isNextStepLoad": false,
+                "url": "overviewTab.js"
+            },
+            {
+                "url": "repairRoadTab.js"
+            },
+            {
+                "url": "animation.js"
+            }
+        ]
+    }
+}

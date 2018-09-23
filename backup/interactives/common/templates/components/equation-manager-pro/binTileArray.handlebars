@@ -1,0 +1,13 @@
+{{#each tileArray}}
+	<div id="{{../idPrefix}}{{../prefix}}-bin-tile-number-{{this/className}}" class="bin-tile-number-{{this/className}} bin-tiles" data-tiletype="{{../tileType}}" data-tilevalue="{{this/value}}"></div>
+{{/each}}
+{{#if tileOneText}}
+	{{#each frequencyTile1}}
+		<div id="{{../../idPrefix}}{{../prefix}}-bin-tile-{{../tileOneText}}-{{this}}" class="bin-tile-{{../tileOneText}}-{{this}} bin-tile-{{../tileOneText}} bin-tiles" data-tiletype="{{../../tileType}}" data-tilevalue="{{../tileOneText}}"></div>
+	{{/each}}
+{{/if}}
+{{#if tileTwoText}}
+	{{#each frequencyTile2}}
+		<div id="{{../../idPrefix}}{{../prefix}}-bin-tile-{{../tileTwoText}}-{{this}}" class="bin-tile-{{../tileTwoText}}-{{this}} bin-tile-{{../tileTwoText}} bin-tiles" data-tiletype="{{../../tileType}}" data-tilevalue="{{../tileTwoText}}"></div>
+	{{/each}}
+{{/if}}

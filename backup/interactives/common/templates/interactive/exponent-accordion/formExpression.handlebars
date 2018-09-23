@@ -1,0 +1,120 @@
+<div id="{{idPrefix}}form-expression-tab" class="form-expression-tab">
+  <div id="{{idPrefix}}animation-progress-div" class="animation-progress-div"></div>
+  <div id="{{idPrefix}}direction-text-holder" class="direction-text-holder">
+    <div id="{{idPrefix}}direction-text-container" class="direction-text-container"></div>
+  </div>
+  <div id="{{idPrefix}}main-activity-area-container" class="main-activity-area-container">
+    <div id="{{idPrefix}}form-expression-container" class="form-expression-container">
+      <div id="{{idPrefix}}bin-tile-containment" class="bin-tile-containment"></div>
+      <div id="{{idPrefix}}form-expression-tile-roster-container" class="form-expression-tiles-roster">
+        <div id="{{idPrefix}}base-exp-tile-container" class="base-exp-tile-container">
+          <div id="{{idPrefix}}base-tile-dispenser-container" class="base-tile-dispenser-container">
+            <div id="{{idPrefix}}base-tile-dispenser-title" class="base-tile-dispenser-title"></div>
+            <div id="{{idPrefix}}base-tile-dispenser" class="base-tile-dispenser"></div>
+          </div>
+          <div id="{{idPrefix}}exponents-tile-dispenser-container" class="exponents-tile-dispenser-container">
+            <div id="{{idPrefix}}exponents-tile-dispenser-title" class="exponents-tile-dispenser-title"></div>
+            <div id="{{idPrefix}}exponents-tile-dispenser-sub-container" class="exponents-tile-dispenser-sub-container">
+              <div id="{{idPrefix}}exponents-tile-dispenser" class="exponents-tile-dispenser"></div>
+            </div>
+          </div>
+        </div>
+        <div id="{{idPrefix}}parenthesis-tile-dispenser-container" class="parenthesis-tile-dispenser-container">
+          <div id="{{idPrefix}}parenthesis-tile-dispenser-title" class="parenthesis-tile-dispenser-title"></div>
+          <div id="{{idPrefix}}parenthesis-tile-dispenser" class="parenthesis-tile-dispenser"></div>
+        </div>
+
+        <div id="{{idPrefix}}raised-to-power-toggle-button-container" class="raised-to-power-toggle-button-container">
+          <div id="{{idPrefix}}raised-to-power-toggle-button-title" class="raised-to-power-toggle-button-title"></div>
+          <div id="{{idPrefix}}raised-to-power-toggle-button" class="raised-to-power-toggle-button"></div>
+        </div>
+      </div>
+
+      <div id="{{idPrefix}}form-expression-tile-dispenser-separator" class="form-expression-tile-dispenser-separator"></div>
+
+      <div id="{{idPrefix}}droppable-region-container" class="droppable-region-container">
+          <div id="{{idPrefix}}{{#if tutorialMode}}tutorial-{{/if}}droppable-region-title-text" class="droppable-region-title-text"></div>
+        <div id="{{idPrefix}}droppable-region-holder" class="droppable-region-holder">
+          <div id="{{idPrefix}}droppable-region-start-multiplication" class="droppable-region-start-multiplication">
+            <div id="{{idPrefix}}multiplication-text" class="multiplication-text"></div>
+            <div id="{{idPrefix}}multiplication-img" class="multiplication-img"></div>
+          </div>
+          <div id="{{idPrefix}}horizontal-saperator" class="horizontal-saperator"></div>
+          <div id="{{idPrefix}}droppable-region-start-division" class="droppable-region-start-division">
+            <div id="{{idPrefix}}division-text" class="division-text"></div>
+            <div id="{{idPrefix}}division-img" class="division-img">
+              <div id="{{idPrefix}}division-numerator" class="division-numerator"></div>
+              <div id="{{idPrefix}}division-denominator" class="division-denominator"></div>
+            </div>
+          </div>
+          <div id="{{idPrefix}}droppable-region" class="droppable-region">
+            <div id="{{idPrefix}}form-expression-equation-container" class="equation-container">
+              <div id="{{idPrefix}}form-expression-draggable-containment" class="form-equation-draggable-containment"></div>
+              <div id="{{idPrefix}}form-expression-area" class="form-expression-area">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="{{idPrefix}}droppable-region-buttons-container" class="droppable-region-buttons-container">
+          <div id="{{idPrefix}}build-mode-undo-button" class="build-mode-undo-button"></div>
+          <div id="{{idPrefix}}build-mode-reset-button" class="build-mode-reset-button"></div>
+          <div id="{{idPrefix}}random-expression-button" class="random-expression-button"></div>
+          <div id="{{idPrefix}}done-button" class="done-button"></div>
+        </div>
+        {{#if tutorialMode}}
+        <div id="{{idPrefix}}replay-btn-container" class="replay-btn-container">
+          <div id="{{idPrefix}}replay-btn" class="replay-btn"></div>
+        </div>
+        {{/if}}
+      </div>
+      <div id ="{{idPrefix}}dummy-droppable"></div>
+    </div>
+    <div id="{{idPrefix}}workspace-container" class="workspace-container">
+        <div id="{{idPrefix}}{{#if tutorialMode}}tutorial-{{/if}}workspace-title-text" class="workspace-title-text"></div>
+      <div id="{{idPrefix}}tooltip-demo-container" class="tooltip-demo-container"></div>
+      {{#if tutorialMode}}
+      <div id="{{idPrefix}}marquee-inline-feedback-container" class="marquee-inline-feedback-container"></div>
+      {{/if}}
+      <div id="{{idPrefix}}inline-feedback-container" class="inline-feedback-container"></div>
+      <div id="{{idPrefix}}workspace-scrollable" class="workspace-scrollable">
+
+        <div id="{{idPrefix}}workspace-equation-container" class="equation-container">
+          <div id="{{idPrefix}}workspace-draggable-containment" class="workspace-draggable-containment"></div>
+          <div id="{{idPrefix}}workspace-expression-area" class="workspace-expression-area">
+
+          </div>
+          <div id="{{idPrefix}}workspace-overlay-div" class="overlay-div">
+          </div>
+        </div>
+      </div>
+      <div id="{{idPrefix}}swipe-region" class="swipe-region">
+        <div id="{{idPrefix}}double-angle-left" class="double-angle double-angle-left"></div>
+        <div id="{{idPrefix}}swipe-region-text" class="swipe-region-text"></div>
+        <div id="{{idPrefix}}double-angle-right" class="double-angle double-angle-right"></div>
+      </div>
+      <div id="{{idPrefix}}workspace-bottom-container" class="workspace-bottom-container">
+        <div id="{{idPrefix}}workspace-bottom-left-container" class="workspace-bottom-left-container">
+          <div id="{{idPrefix}}original-expression-title" class="original-expression-title"></div>
+          <div id="{{idPrefix}}original-expression-container" class="original-expression-container">
+            <div id="{{idPrefix}}original-expression-holder" class="original-expression-holder"></div>
+          </div>
+        </div>
+        <div id="{{idPrefix}}workspace-bottom-saperator" class="workspace-bottom-saperator"></div>
+        <div id="{{idPrefix}}workspace-bottom-right-container" class="workspace-bottom-right-container">
+          <div id="{{idPrefix}}solve-mode-undo-button" class="solve-mode-undo-button"></div>
+          <div id="{{idPrefix}}solve-mode-reset-button" class="solve-mode-reset-button"></div>
+          <div id="{{idPrefix}}view-data-button" class="view-data-button"></div>
+        </div>
+      </div>
+      {{#if tutorialMode}}
+      <div id="{{idPrefix}}solve-mode-replay-btn-container" class="replay-btn-container solve-mode">
+        <div id="{{idPrefix}}solve-mode-replay-btn" class="replay-btn"></div>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+  <div id="{{idPrefix}}tutorial-container" class="tutorial-container" tabindex="-1">
+  </div>
+</div>

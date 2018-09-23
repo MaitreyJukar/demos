@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root>
+  <output path="../css/player-min.css">
+    <input path="../css/player.css"/>
+    <input path="../css/manager.css"/>
+    <input path="../css/grid-graph.css"/>
+    <input path="../css/math-interactive-reset.css"/>
+  </output>
+</root>

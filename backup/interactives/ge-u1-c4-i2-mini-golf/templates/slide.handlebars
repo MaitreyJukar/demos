@@ -1,0 +1,32 @@
+﻿{{#if unlocked}}
+<div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-course-details" class="{{containerId}}-slide-course-details {{containerId}}-slide-{{slideNumber}}-course-details">
+    <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-play-count-details" class="{{containerId}}-slide-play-count-details {{containerId}}-slide-{{slideNumber}}-play-count-details">
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-play-count-text" class="{{containerId}}-slide-play-count-text {{containerId}}-slide-{{slideNumber}}-play-count-text"></div>
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-play-count" class="{{containerId}}-slide-play-count {{containerId}}-slide-{{slideNumber}}-play-count">
+            {{{timesPlayed}}}
+        </div>
+    </div>
+    <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-hole-in-1-details" class="{{containerId}}-slide-hole-in-1-details {{containerId}}-slide-{{slideNumber}}-hole-in-1-details">
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-hole-in-1-text" class="{{containerId}}-slide-hole-in-1-text {{containerId}}-slide-{{slideNumber}}-hole-in-1-text"></div>
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-hole-in-1-count" class="{{containerId}}-slide-hole-in-1-count {{containerId}}-slide-{{slideNumber}}-hole-in-1-count">
+            {{{holesInOne}}}
+        </div>
+    </div>
+</div>
+{{else}}
+<div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-lock-modal" class="{{containerId}}-slide-lock-modal {{containerId}}-slide-{{slideNumber}}-lock-modal">
+    <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-lock-feedback" class="{{containerId}}-slide-lock-feedback {{containerId}}-slide-{{slideNumber}}-lock-feedback">
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-lock-holder" class="{{containerId}}-slide-lock-holder {{containerId}}-slide-{{slideNumber}}-lock-holder">
+            <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-lock-symbol" class="{{containerId}}-slide-lock-symbol {{containerId}}-slide-{{slideNumber}}-lock-symbol"></div>
+            <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-lock-text" class="{{containerId}}-slide-lock-text {{containerId}}-slide-{{slideNumber}}-lock-text"></div>
+        </div>
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-feedback-text-1" class="{{containerId}}-slide-feedback-text-1 {{containerId}}-slide-{{slideNumber}}-feedback-text-1"></div>
+    </div>
+</div>
+{{/if}}
+<div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-title-container" class="{{containerId}}-slide-title-container {{containerId}}-slide-{{slideNumber}}-title-container">
+    <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-title-holder" class="{{containerId}}-slide-title-holder {{containerId}}-slide-{{slideNumber}}-title-holder">
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-number" class="{{containerId}}-slide-number {{containerId}}-slide-{{slideNumber}}-number"></div>
+        <div id="{{idPrefix}}{{containerId}}-slide-{{slideNumber}}-title" class="{{containerId}}-slide-title {{containerId}}-slide-{{slideNumber}}-title"></div>
+    </div>
+</div>

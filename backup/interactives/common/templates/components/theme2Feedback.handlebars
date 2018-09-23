@@ -1,0 +1,19 @@
+﻿<div class="feedback-wrapper">
+    <div id="{{idPrefix}}feedback-text-wrapper" class="feedback-text-wrapper">
+        <div id="{{idPrefix}}feedback-header-text-container" class="feedback-header-text-container">
+        </div>
+        <div id="{{idPrefix}}feedback-text-container" class="feedback-text-container">
+        </div>
+        <div id="{{idPrefix}}feedback-tts-container"  class="feedback-tts-container">
+        </div>
+    </div>
+    <div class="feedback-buttons-container">
+
+        {{#each buttonPropertiesArray}}
+        <div id="{{../idPrefix}}feedback-button-{{@index}}-container" class="feedback-button-container">
+        </div>
+        {{/each}}
+
+    </div>
+
+</div>

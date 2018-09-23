@@ -1,0 +1,49 @@
+{{#if baseValNegative}}
+	{{#if baseNotNull}}
+		{{#if isVariable}}
+			<span class='base-exp-data-tab equation-common'>
+                <span class='open-bracket minus-open-bracket'>(</span>
+                <span class="minus-sign-base equation-common">&minus;</span>
+                <span class='equation-variable'><em>{{absBase}}</em></span>
+                <span class='closed-bracket minus-closed-bracket'>)</span>
+            </span>
+		{{else}}
+			<span class='base-exp-data-tab equation-common open-bracket-container'>
+                <span class='open-bracket minus-open-bracket'>(</span>
+                <span class="minus-sign-base equation-common">&minus;</span>
+                <span class='base-exp-data-tab equation-common'>{{absBase}}</span>
+                <span class='closed-bracket minus-closed-bracket'>)</span>
+            </span>
+		{{/if}}
+	{{else}}
+		<div class='static-empty-tile empty-tile'>
+			<div class='box'>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+			</div>
+		</div>
+	{{/if}}
+{{else}}
+	{{#if baseNotNull}}
+		{{#if isVariable}}
+			<span class='base-exp-data-tab equation-common equation-variable'><em>{{{base}}}</em></span>
+		{{else}}
+			<span class='base-exp-data-tab equation-common'>{{{base}}}</span>
+		{{/if}}
+	{{else}}
+		<div class='static-empty-tile empty-tile'>
+			<div class='box'>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+				<div class='inside-divs'></div>
+			</div>
+		</div>
+	{{/if}}
+{{/if}}

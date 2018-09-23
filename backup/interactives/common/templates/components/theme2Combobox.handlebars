@@ -1,0 +1,18 @@
+﻿{{#if comboBoxTop }}
+ <div id="{{idPrefix}}{{containerId}}-combo-container" class="combo-container">
+  <div id="{{idPrefix}}{{containerId}}-combo-top-box" class="combo-top-box">
+    <div class="top-box-text-container">{{defaultText}}</div>
+    <div class="top-box-down-arrow-parent">
+		<div class="top-box-down-arrow"></div>
+	</div>
+  </div>
+  <div class="combo-box-list">
+  </div>
+</div>
+{{ else }}
+<div id="{{idPrefix}}{{containerId}}-option-outer-container" class="option-outer-container" index="{{index}}">
+        <div class="option-inner-container combo-box-text">
+            {{{value}}}
+        </div>
+</div>
+{{/if}}

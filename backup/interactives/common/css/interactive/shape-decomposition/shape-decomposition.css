@@ -1,0 +1,502 @@
+/****************************Base Classes**************************/
+.de-mathematics-interactive.shape-decomposition .buttonBaseClass .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #036690 inset;
+    position: absolute;
+    height: 100%;
+    border-radius: 3px;
+    width: 100%;
+    top: 0px;
+}
+
+.de-mathematics-interactive.shape-decomposition .buttonBaseClass {
+    background-color: #0486a8;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+    .de-mathematics-interactive.shape-decomposition .buttonBaseClass.hover {
+        background-color: #07a6cf;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .buttonBaseClass.down {
+        box-shadow: inset 0px 3px 9px -3px #036690;
+        background-color: #07a6cf;
+    }
+
+
+
+
+de-mathematics-interactive.shape-decomposition .popupButtonBaseClass .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #806d00 inset;
+    position: absolute;
+    height: 100%;
+    border-radius: 3px;
+    width: 100%;
+    top: 0px;
+}
+
+.de-mathematics-interactive.shape-decomposition .popupButtonBaseClass {
+    background-color: #fbd500;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+    .de-mathematics-interactive.shape-decomposition .popupButtonBaseClass.hover {
+        background-color: #ffd248;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .popupButtonBaseClass.down {
+        box-shadow: inset 0px 3px 9px -3px #806d00;
+    }
+
+.de-mathematics-interactive.shape-decomposition .popup-title-text-class {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 45px;
+    color: #fbd500;
+}
+
+.de-mathematics-interactive.shape-decomposition .popup-body-text-class {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.de-mathematics-interactive.shape-decomposition .theme2-pop-up-tts-container-defaultType .custom-btn.custom-btn-tts-blue {
+    background-color: #fbd500;
+    box-shadow: inset 0px -2px #806d00;
+}
+
+    .de-mathematics-interactive.shape-decomposition .theme2-pop-up-tts-container-defaultType .custom-btn.custom-btn-tts-blue.hover {
+        background-color: #ffd248;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .theme2-pop-up-tts-container-defaultType .custom-btn.custom-btn-tts-blue.down {
+        box-shadow: inset 0px 3px 9px -3px #806d00;
+    }
+
+.de-mathematics-interactive.shape-decomposition .theme2-pop-up-tts-container-defaultType .custom-btn {
+    color: #222222;
+}
+
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder .tts-base-class {
+    background-color: #0486a8;
+    box-shadow: inset 0px -2px #00617c;
+}
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .tts-base-class.hover {
+        background-color: #07a6cf;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .tts-base-class.down {
+        background-color: #07a6cf;
+        box-shadow: 0px 3px 9px -3px #000 inset;
+    }
+
+.de-mathematics-interactive.shape-decomposition .icon-button-common-class {
+    position: relative;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+/***************************************End Of Base Classes******************************************************/
+
+.de-mathematics-interactive.shape-decomposition .invisible {
+    visibility: hidden;
+}
+
+/**************************************CSS Realted To Explore Tab*************************************************/
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder {
+    position: absolute;
+    width: 928px;
+    height: 599px;
+}
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-instruction-bars {
+        position: absolute;
+        top: 0px;
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder {
+        position: absolute;
+        box-sizing: border-box;
+        width: 928px;
+        height: 487px;
+        top: 103px;
+        padding-top:3px;
+    }
+
+
+        /**************************************CSS Realted To left Panel screen*************************************************/
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen {
+            position: relative;
+            float: left;
+            width: 656px;
+            height: 496px;
+        }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-buttons-container {
+                position: absolute;
+                width: 92px;
+                height: 240px;
+            }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-buttons-container .cut-button-container {
+                }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-buttons-container .copy-button-container {
+                }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-buttons-container .reflect-button-container .custom-btn-icon {
+                    top: 50%;
+                    -webkit-transform: translateY(50%);
+                    -ms-transform: translateY(50%);
+                    transform: translateY(50%);
+                }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-buttons-container .rotate-button-container .custom-btn-icon {
+                    top: 50%;
+                    -webkit-transform: translateY(50%);
+                    -ms-transform: translateY(50%);
+                    transform: translateY(50%);
+                }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-buttons-container .undo-button-container {
+                }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-canvas-acc-container {
+                position: absolute;
+                left: 89px;
+                width: 602px;
+                height: 504px;
+                margin-top: -12px;
+                margin-left: -12px;
+            }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-canvas-container {
+                position: absolute;
+                left: 89px;
+                width: 602px;
+                height: 507px;
+                margin-top: -12px;
+                margin-left: -12px;
+            }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-canvas-container .grid-canvas {
+                    position: absolute;
+                }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-canvas-container .work-canvas {
+                    position: absolute;
+                }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .left-panel-canvas-container .cut-line-button {
+                    position: absolute;
+                }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .temporary-tooltip-content-holder {
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+                color: transparent;
+            }
+
+                .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .temporary-tooltip-content-holder .tooltip-content {
+                    display: inline-block;
+                    font-family: Montserrat;
+                    font-weight: bold;
+                }
+
+                    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .left-panel-screen .temporary-tooltip-content-holder .tooltip-content span {
+                        font-size: 9px;
+                        vertical-align: text-top;
+                    }
+
+.de-mathematics-interactive.shape-decomposition .shape-tooltip .text-container {
+    text-align: center;
+}
+
+    .de-mathematics-interactive.shape-decomposition .shape-tooltip .text-container span {
+        font-size: 9px;
+        vertical-align: text-top;
+    }
+/*************************************End of Left Panel screen CSS*************************************************/
+
+
+/**************************************CSS Realted To Right Panel screen*************************************************/
+
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen {
+    position: absolute;
+    right: 15px;
+    width: 230px;
+    height: 496px;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #222222;
+}
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container {
+        position: relative;
+        width: 230px;
+        height: 434px;
+        margin: auto;
+        font-weight: bold;
+    }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper {
+            position: relative;
+            width: 226px;
+            height: 219px;
+            border: 2px solid #224c5c;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.4);
+        }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-conatiner {
+                height: 176px;
+            }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner {
+            position: relative;
+            width: inherit;
+            overflow-y: auto;
+            background-color: #ffffff;
+        }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .duplicate-shape-table-wrapper {
+            display: none;
+            position: absolute;
+            bottom: 0px;
+            width: 226px;
+            height: 186px;
+            border: 2px solid #858585;
+            -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.4);
+        }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .duplicate-shape-table-wrapper .duplicate-shape-table-conatiner {
+                height: 186px;
+            }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row:last-child {
+            border-width: 0px;
+        }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row:first-child,
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row:nth-child(2),
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row:nth-child(3) {
+            border-width: 1px;
+        }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row {
+            position: relative;
+            width: inherit;
+            height: 47px;
+            border-bottom: 1px solid #7f9398;
+        }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row .input-box-cell {
+                float: left;
+                margin: 4px 0;
+            }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row .input-box-container {
+                position: relative;
+            }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .input-box-badge {
+            width: 19px;
+            height: 19px;
+            position: absolute;
+            right: -10px;
+            top: -3px;
+            display: none;
+            background-color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 1px;
+            box-sizing: border-box;
+        }
+
+/*
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row .input-box-container.incorrect .input-box-badge {
+            display: block;
+            color: #dd0000;
+        }
+*/
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .footer-cell-1.correct .input-box-badge {
+            display: block;
+            color: #48b800;
+        }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .footer-cell-1.incorrect .input-box-badge {
+            display: block;
+            color: #dd0000;
+        }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row .input-box-container.correct .input-box-badge {
+            display: block;
+            color: #48b800;
+        }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row .shape-miniature-container {
+            float: left;
+            height: inherit;
+            width: 94px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+            .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row .shape-miniature-container .shape-miniature {
+                margin: auto;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+
+.de-mathematics-interactive.shape-decomposition .input-box-common-component {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 2px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 2px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 2px 3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.de-mathematics-interactive.shape-decomposition .correct .input-box-common-component {
+    border-color: #48b800;
+}
+
+.de-mathematics-interactive.shape-decomposition .incorrect .input-box-common-component {
+    border-color: #dd0000;
+}
+
+.de-mathematics-interactive.shape-decomposition .input-box-common-component:focus {
+    border-color: #ad00bd;
+}
+
+.de-mathematics-interactive.shape-decomposition .footer-cell-1 .input-box-lookalike {
+    border: 2px solid #888888;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #686868;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Sans-Serif;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 2px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 2px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 2px 3px 0px 0px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    float: left;
+    position: relative;
+}
+
+.de-mathematics-interactive.shape-decomposition .footer-cell-1.correct .input-box-lookalike {
+    border-color: #48b800;
+}
+
+.de-mathematics-interactive.shape-decomposition .footer-cell-1.incorrect .input-box-lookalike {
+    border-color: #dd0000;
+}
+
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .shape-table-conatiner .shape-table-row .unit-cell {
+    height: 47px;
+    margin-left: 10px;
+    display: table;
+    float: left;
+}
+
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .unit-cell .unit-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .superscript {
+    font-size: 11px;
+    margin-top: 13px;
+    position: relative;
+    float: left;
+}
+
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer {
+    width: inherit;
+    height: 43px;
+    position: relative;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #0486a8;
+}
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer .footer-cells {
+        float: right;
+        height: 43px;
+        text-align: center;
+        position: relative;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer .footer-cell-0 {
+        width: 94px;
+        display: table;
+    }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer .footer-cell-0 .total-text {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer .footer-cell-1 {
+        min-width: 71px;
+        margin: 2px 0;
+        height: 39px;
+    }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer .footer-cell-1 .total-area-box {
+            min-width: 67px;
+            width: inherit;
+            height: 35px;
+            line-height: 35px;
+        }
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer .footer-cell-2 {
+        margin-left: 10px;
+        width: 51px;
+    }
+
+        .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-table-container .actual-shape-table-wrapper .actual-shape-table-footer .footer-cell-2 .unit-cell-content {
+            display: table;
+            height: inherit;
+            position: relative;
+        }
+
+.de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-button-container {
+    position: relative;
+    width: 230px;
+    height: 62px;
+    margin: auto;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-button-container .done-button-container {
+        position: relative;
+        margin: auto;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-button-container .next-button-container {
+        position: relative;
+        margin: auto;
+    }
+
+    .de-mathematics-interactive.shape-decomposition .explore-tab-holder .explore-tab-activity-holder .right-panel-screen .right-panel-button-container .check-button-container {
+        position: relative;
+        margin: auto;
+    }
+/*************************************End of Right Panel screen CSS*************************************************/

@@ -1,0 +1,31 @@
+<div id="{{idPrefix}}course-{{courseNumber}}-custom-popup-container" class="course-{{courseNumber}}-custom-popup-container course-custom-popup-container">
+  <div id="{{idPrefix}}course-{{courseNumber}}-custom-popup-title-container" class="course-{{courseNumber}}-custom-popup-title-container course-custom-popup-title-container">
+    <div id="{{idPrefix}}course-{{courseNumber}}-custom-popup-title" class="course-{{courseNumber}}-custom-popup-title course-custom-popup-title"></div>
+
+  </div>
+  <div id="{{idPrefix}}course-{{courseNumber}}-custom-popup-image-container" class="course-{{courseNumber}}-custom-popup-image-container course-custom-popup-image-container">
+
+    {{#each imageCount}}
+    <!--create cont for image-->
+    <div id="{{../idPrefix}}course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-cont" class="course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-cont text-image-cont">
+      <div id="{{../idPrefix}}course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}" class="course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}} image-cont">
+        {{#if this.textDiv}}
+        <div id="{{../../idPrefix}}course-{{../../courseNumber}}-image-{{this.imageNumber}}-button-text-container" class="course-{{../../courseNumber}}-image-{{this.imageNumber}}-button-text-container button-text-container">
+        </div>
+        {{/if}}
+      </div>
+      <div id="{{../idPrefix}}course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description" class="course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description image-description">
+        <div id="{{../idPrefix}}course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description-text-cont" class="course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description-text-cont description-text-cont">
+          <div id="{{../idPrefix}}course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description-number" class="course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description-number image-description-number one-time-popup-text-container">{{this.imageNumber}}.
+          </div>
+          <div id="{{../idPrefix}}course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description-text" class="course-{{../courseNumber}}-custom-popup-image-{{this.imageNumber}}-description-text image-description-text one-time-popup-text-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div id="{{idPrefix}}course-{{courseNumber}}-got-it-button-contanier" class="course-{{courseNumber}}-got-it-button-contanier got-it-button-cont">
+    <div id="{{idPrefix}}course-{{courseNumber}}-got-it-button" class="course-{{courseNumber}}-got-it-button got-it-button"></div>
+  </div>
+</div>

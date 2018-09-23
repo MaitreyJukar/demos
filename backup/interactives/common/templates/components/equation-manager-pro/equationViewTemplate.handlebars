@@ -1,0 +1,47 @@
+<div id="{{idPrefix}}workspace-expression-area-equation-view" class="equation-view-component">
+  <div id="{{idPrefix}}lhs-expression-view" class="lhs-expression-view">
+    <div id="{{idPrefix}}lhs-expression-seperator-holder" class="lhs-expression-seperator-holder expression-seperator-holder"></div>
+    <div id="{{idPrefix}}lhs-expression-top-holder" class="lhs-expression-top-holder">
+      
+      <div id="{{idPrefix}}lhs-expression-view-expression" class="lhs-expression-view-expression">
+        {{#if isMobile}}
+        <div id="{{idPrefix}}lhs-swipe-region" class="lhs-swipe-region">
+          <div id="{{idPrefix}}lhs-double-angle-left" class="double-angle double-angle-left"></div>
+          <div id="{{idPrefix}}lhs-swipe-region-text" class="swipe-region-text"></div>
+          <div id="{{idPrefix}}lhs-double-angle-right" class="double-angle double-angle-right"></div>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+    <div id="{{idPrefix}}lhs-expression-bottom-holder" class="lhs-expression-bottom-holder">
+      <div id="{{idPrefix}}show-lhs-expression" class="show-lhs-expression">
+        <div id="{{idPrefix}}lhs-expression-container" class="lhs-expression-container"></div>
+      </div>
+    </div>
+
+  </div>
+  <div id="{{idPrefix}}equals-sign-container" class="equals-sign-container">
+    <div id="{{idPrefix}}equals-sign" class="equals-sign"></div>
+  </div>
+  <div id="{{idPrefix}}rhs-expression-view" class="rhs-expression-view">
+    <div id="{{idPrefix}}rhs-expression-seperator-holder" class="rhs-expression-seperator-holder expression-seperator-holder"></div>
+    <div id="{{idPrefix}}rhs-expression-top-holder" class="rhs-expression-top-holder">
+      <div id="{{idPrefix}}rhs-expression-view-expression" class="rhs-expression-view-expression">
+        {{#if isMobile}}
+        <div id="{{idPrefix}}rhs-swipe-region" class="rhs-swipe-region">
+          <div id="{{idPrefix}}rhs-double-angle-left" class="double-angle double-angle-left"></div>
+          <div id="{{idPrefix}}rhs-swipe-region-text" class="swipe-region-text"></div>
+          <div id="{{idPrefix}}rhs-double-angle-right" class="double-angle double-angle-right"></div>
+        </div>
+        {{/if}}
+      </div>
+      
+    </div>
+    <div id="{{idPrefix}}rhs-expression-bottom-holder" class="rhs-expression-bottom-holder">
+      <div id="{{idPrefix}}show-rhs-expression" class="show-rhs-expression">
+        <div id="{{idPrefix}}rhs-expression-container" class="rhs-expression-container"></div>
+      </div>
+    </div>
+  </div>
+  <div id="{{idPrefix}}drag-handle-containment" class="drag-handle-containment"></div>
+</div>

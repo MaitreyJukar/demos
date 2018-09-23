@@ -1,0 +1,28 @@
+{{#if bigParenthesis}}
+	<span class='big-parenthesis-container equation-common'><span class='open-parentheses-data-tab'>{{{bracket}}}</span>
+{{else}}
+	<span class='equation-common'><span class='equation-common open-bracket'>(</span>
+{{/if}}
+
+{{{parenthesesBody}}}
+
+{{#if bigParenthesis}}
+	<span class='close-parentheses-data-tab equation-common'>{{{bracket}}}</span></span>
+{{else}}
+	<span class='equation-common closed-bracket'>)</span></span>
+{{/if}}
+
+{{#if exponent}}
+	{{#if exponentNegative}}
+		{{#if bigParenthesis}}
+			<span class='minus-sign-exponent minus-sign-exponent-big-parenthesis equation-common'>&minus;</span>{{absExponent}}
+		{{else}}
+			<span class='minus-sign-exponent equation-common'>&minus;</span>{{absExponent}}
+		{{/if}}
+	{{/if}}
+	{{#if bigParenthesis}}
+		<div class='big-parenthesis-exponent-data-tab equation-common'>{{exponent}}</div>
+	{{else}}
+		<div class='parenthesis-exponent-data-tab exponent-data-tab equation-common'>{{exponent}}</div>
+	{{/if}}
+{{/if}}

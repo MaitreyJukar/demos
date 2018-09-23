@@ -1,0 +1,1456 @@
+/*Main Background Of first Interactivity*/
+.de-mathematics-interactive.archaeological-dig .explore-tab-main-container {
+    height: 599px;
+    width: 928px;
+    background-position: 0px 0px;
+}
+/*Main Background Of first Interactivity by extending class*/
+.de-mathematics-interactive.archaeological-dig .explore-tab-main-container.type-2-background {
+    height: 599px;
+    width: 928px;
+    background-position: 0px -649px;
+}
+/*Seting fixed position of main activity area.*/
+.de-mathematics-interactive.archaeological-dig .main-activity-area-container {
+    position: absolute;
+    top: 83px;
+    width: 928px;
+    height: 515px;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .symbol-plus, .de-mathematics-interactive.archaeological-dig .symbol-minus {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*CSS FOR LEFT PANEL CONTAINER ELEMENTS*/
+/**************************************/
+
+/*Main Container of left panel*/
+.de-mathematics-interactive.archaeological-dig .left-panel-container {
+    position: relative;
+    float: left;
+    height: 515px;
+    width: 356px;
+}
+
+/*Header Container*/
+.de-mathematics-interactive.archaeological-dig .artifact-header-container {
+    position: relative;
+    float: left;
+    margin: 27px 0px 0px 0px;
+    width: 258px;
+}
+/* Following are Sub Parts Of Header Container*/
+.de-mathematics-interactive.archaeological-dig .artifact-name {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    color: #614f39;
+    margin-left: 15px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-parts-container {
+    position: relative;
+    float: left;
+    margin: 2px 0px 0px 0px;
+}
+
+
+
+/**Following are classes that are used as icon in left panel**/
+/*these are small icons which are brown initially and after selecting converts to green background.*/
+
+/**These are divided into 3 categories i.e. Duck ,Jester and brush**/
+
+/*first duck*/
+.de-mathematics-interactive.archaeological-dig .parts-background-1-duck {
+    background-position: 0px 0px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-1-duck.selected {
+    background-color: #5f7e0f;
+    background-position: 0 -84px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-2-duck {
+    background-position: 0 -28px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-2-duck.selected {
+    background-color: #5f7e0f;
+    background-position: 0 -112px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-3-duck {
+    background-position: 0 -56px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-3-duck.selected {
+    background-color: #5f7e0f;
+    background-position: 0 -140px;
+}
+
+/*second jester*/
+.de-mathematics-interactive.archaeological-dig .parts-background-1-jester {
+    background-position: -99px 0;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-1-jester.selected {
+    background-color: #5f7e0f;
+    background-position: -99px -28px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-2-jester {
+    background-position: -99px -224px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-2-jester.selected {
+    background-color: #5f7e0f;
+    background-position: -99px -252px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-3-jester {
+    background-position: -99px -168px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-3-jester.selected {
+    background-color: #5f7e0f;
+    background-position: -99px -196px;
+}
+
+
+/*third brush*/
+.de-mathematics-interactive.archaeological-dig .parts-background-1-brush {
+    background-position: -99px -112px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-1-brush.selected {
+    background-color: #5f7e0f;
+    background-position: -99px -140px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-2-brush {
+    background-position: -99px -56px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-2-brush.selected {
+    background-color: #5f7e0f;
+    background-position: -99px -84px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-3-brush {
+    background-position: -99px -280px;
+}
+.de-mathematics-interactive.archaeological-dig .parts-background-3-brush.selected {
+    background-color: #5f7e0f;
+    background-position: -99px -308px;
+}
+
+/**End with icons classes**/
+
+
+.de-mathematics-interactive.archaeological-dig .border-part-1 {
+    border: 2px solid #a89169;
+    border-radius: 4px;
+}
+.de-mathematics-interactive.archaeological-dig .border-part-1.selected {
+    border: 2px solid #5f7e0f;
+}
+.de-mathematics-interactive.archaeological-dig .border-part-2 {
+    border: 2px solid #a89169;
+    border-radius: 4px;
+}
+.de-mathematics-interactive.archaeological-dig .border-part-2.selected {
+    border: 2px solid #5f7e0f;
+}
+.de-mathematics-interactive.archaeological-dig .border-part-3 {
+    border: 2px solid #a89169;
+    border-radius: 4px;
+}
+.de-mathematics-interactive.archaeological-dig .border-part-3.selected {
+    border: 2px solid #5f7e0f;
+}
+
+
+
+
+.de-mathematics-interactive.archaeological-dig .object-parts-information {
+    margin-top: 10px;
+}
+
+.de-mathematics-interactive.archaeological-dig .first-part-info {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+}
+.de-mathematics-interactive.archaeological-dig .left-padding-first-part {
+    left: 16px;
+}
+.de-mathematics-interactive.archaeological-dig .second-part-info {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+}
+
+.de-mathematics-interactive.archaeological-dig .left-padding-second-part {
+    left: 42px;
+}
+.de-mathematics-interactive.archaeological-dig .third-part-info {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+}
+.de-mathematics-interactive.archaeological-dig .left-padding-third-part {
+    left: 68px;
+}
+
+
+/*common class for artifact icons container*/
+.de-mathematics-interactive.archaeological-dig .box-ui {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+.de-mathematics-interactive.archaeological-dig .junks-score-container {
+    position: absolute;
+    left: 313px;
+    top: 25px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 16px;
+    color: #614f39;
+    line-height: 16px;
+}
+.de-mathematics-interactive.archaeological-dig .junks-score-corss-sign {
+    position: relative;
+    float: left;
+    margin-right: 4px;
+}
+
+.de-mathematics-interactive.archaeological-dig .junks-score-count {
+    position: relative;
+    float: left;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .border-effect {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.33);
+}
+/*End with Header container of left panel*/
+/*****************************/
+
+/*Following css for artifact information container i.e. middle part left panel*/
+.de-mathematics-interactive.archaeological-dig .artifact-information-container, .de-mathematics-interactive.archaeological-dig .object-found-container {
+    position: absolute;
+    top: 90px;
+    width: 361px;
+    height: 425px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-background-image {
+    position: relative;
+    margin-left: 12px;
+    padding: 14px 0px 0px 14px;
+    height: 272px;
+    width: 324px;
+    background-position: 0px 0px;
+}
+/*Container of artifact icons and there names*/
+.de-mathematics-interactive.archaeological-dig .first-part, .de-mathematics-interactive.archaeological-dig .second-part, .de-mathematics-interactive.archaeological-dig .third-part {
+    position: relative;
+    clear: left;
+    margin-bottom: 4px;
+    float: left;
+}
+/*Container of artifact icons*/
+.de-mathematics-interactive.archaeological-dig .first-part-image, .de-mathematics-interactive.archaeological-dig .second-part-image, .de-mathematics-interactive.archaeological-dig .third-part-image {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+.de-mathematics-interactive.archaeological-dig .first-part-image {
+    /* background-position: 0px 0px;*/
+}
+.de-mathematics-interactive.archaeological-dig .second-part-image {
+    /*background-position: 0px -68px;*/
+}
+.de-mathematics-interactive.archaeological-dig .third-part-image {
+    /*background-position: 0px -136px;*/
+}
+
+/*Container of artifact names*/
+.de-mathematics-interactive.archaeological-dig .first-part-name, .de-mathematics-interactive.archaeological-dig .second-part-name, .de-mathematics-interactive.archaeological-dig .third-part-name {
+    position: relative;
+    float: left;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 13px;
+    color: #614f39;
+    line-height: 22px;
+    height: 22px;
+    margin-left: 30px;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .artifact-image-container-duck {
+    position: absolute;
+    bottom: 151px;
+    left: 87px;
+    width: 197px;
+    height: 197px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-first-part-duck {
+    position: absolute;
+    background-position: -374px 0;
+    width: 197px;
+    height: 197px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-first-part-duck.selected {
+    background-position: 0 -945px;
+}
+
+.de-mathematics-interactive.archaeological-dig .artifact-second-part-duck {
+    position: absolute;
+    background-position: -374px -280px;
+    width: 56px;
+    height: 87px;
+    left: 46px;
+    top: 61px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-second-part-duck.selected {
+    background-position: -374px -594px;
+}
+
+.de-mathematics-interactive.archaeological-dig .artifact-third-part-duck {
+    position: absolute;
+    background-position: -374px -207px;
+    width: 71px;
+    height: 63px;
+    left: 59px;
+    top: -12px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-third-part-duck.selected {
+    background-position: -374px -521px;
+}
+
+
+
+.de-mathematics-interactive.archaeological-dig .artifact-image-container-jester {
+    position: absolute;
+    bottom: 165px;
+    left: 114px;
+    width: 197px;
+    height: 197px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-first-part-jester {
+    position: absolute;
+    background-position: -373px -1312px;
+    width: 172px;
+    height: 196px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-first-part-jester.selected {
+    background-position: -374px -1518px;
+}
+
+.de-mathematics-interactive.archaeological-dig .artifact-second-part-jester {
+    position: absolute;
+    background-position: -374px -1868px;
+    width: 120px;
+    height: 134px;
+    left: 0px;
+    top: -44px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-second-part-jester.selected {
+    background-position: -748px 0;
+}
+
+.de-mathematics-interactive.archaeological-dig .artifact-third-part-jester {
+    position: absolute;
+    background-position: -374px -1724px;
+    width: 52px;
+    height: 62px;
+    left: 101px;
+    top: 105px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-third-part-jester.selected {
+    background-position: -374px -1796px;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .artifact-image-container-brush {
+    position: absolute;
+    bottom: 202px;
+    left: 70px;
+    width: 197px;
+    height: 197px;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .artifact-first-part-brush {
+    position: absolute;
+    background-position: -748px -354px;
+    width: 133px;
+    height: 80px;
+    left: 87px;
+    top: 36px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-first-part-brush.selected {
+    background-position: -748px -444px;
+}
+
+.de-mathematics-interactive.archaeological-dig .artifact-second-part-brush {
+    position: absolute;
+    background-position: -748px -144px;
+    width: 110px;
+    height: 97px;
+    bottom: 0px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-second-part-brush.selected {
+    background-position: -748px -249px;
+}
+
+.de-mathematics-interactive.archaeological-dig .artifact-third-part-brush {
+    position: absolute;
+    background-position: -748px -534px;
+    width: 39px;
+    height: 31px;
+    left: 157px;
+    top: 33px;
+}
+.de-mathematics-interactive.archaeological-dig .artifact-third-part-brush.selected {
+    background-position: -748px -575px;
+}
+
+
+
+
+
+/*css for steper container*/
+.de-mathematics-interactive.archaeological-dig .steper-container {
+    position: relative;
+    margin: 1px 0px 0px 36px;
+    float: left; /*remove following properties after adding component*/
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/*Base class for steper*/
+.de-mathematics-interactive.archaeological-dig .steper-baseclass .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #302011 inset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    top: 0px;
+}
+
+.de-mathematics-interactive.archaeological-dig .steper-baseclass {
+    background-color: #614f39;
+    box-shadow: 2px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.archaeological-dig .steper-baseclass.down {
+    background-color: #614f39;
+    box-shadow: inset 0px 3px 9px -3px #302011;
+}
+
+.de-mathematics-interactive.archaeological-dig .steper-baseclass.disabled {
+    background-color: #614f39;
+    box-shadow: none;
+}
+.de-mathematics-interactive.archaeological-dig .steper-baseclass.hover {
+    background-color: #7d664b;
+}
+
+/*Five parts of steper container*/
+.de-mathematics-interactive.archaeological-dig .steper-left-bracket {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    line-height: 99px;
+}
+.de-mathematics-interactive.archaeological-dig .steper-x {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+.de-mathematics-interactive.archaeological-dig .steper-comma {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    line-height: 99px;
+}
+.de-mathematics-interactive.archaeological-dig .steper-y {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+.de-mathematics-interactive.archaeological-dig .steper-right-bracket {
+    position: relative;
+    float: left;
+    line-height: 99px;
+}
+/*End with steper parts*/
+
+/*dig button container*/
+.de-mathematics-interactive.archaeological-dig .dig-button-container {
+    position: relative;
+    margin: 32px 0px 0px 31px;
+    float: left; /*remove following properties after adding component*/
+    width: 112px;
+    height: 38px;
+}
+
+
+
+/*Base class for all buttons*/
+
+.de-mathematics-interactive.archaeological-dig .button-baseclass .custom-btn-shadowHolder {
+    box-shadow: 0px -2px #b94000 inset;
+    position: absolute;
+    height: 100%;
+    border-radius: 3px;
+    width: 100%;
+    top: 0px;
+}
+.de-mathematics-interactive.archaeological-dig .button-baseclass {
+    background-color: #d98000;
+    box-shadow: 0px 3px 9px -3px #000;
+}
+
+.de-mathematics-interactive.archaeological-dig .button-baseclass.hover {
+    background-color: #ec900d;
+}
+.de-mathematics-interactive.archaeological-dig .button-baseclass.down {
+    box-shadow: inset 0px 3px 9px -3px #b94000;
+}
+
+
+
+
+.de-mathematics-interactive.archaeological-dig .red-box-container {
+    position: absolute;
+    left: 41px;
+    bottom: 172px;
+    width: 268px;
+    height: 77px;
+    background-color: rgba(255,94,94,0.69);
+    border: 1px solid #a9312b;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.de-mathematics-interactive.archaeological-dig .cross-sign {
+    position: relative;
+    float: right;
+    margin-right: 4px;
+    font-weight: bold;
+    width: 13px;
+    height: 20px;
+}
+.de-mathematics-interactive.archaeological-dig .cross-sign-cursor {
+    cursor: pointer;
+}
+
+.de-mathematics-interactive.archaeological-dig .cross-sign-hover {
+    color: #c9c9c9;
+}
+
+.de-mathematics-interactive.archaeological-dig .cross-sign:active {
+    color: #b6b6b6;
+}
+
+.de-mathematics-interactive.archaeological-dig .red-box-text {
+    position: relative;
+    float: left;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/****/
+/*End with artifact information container*/
+/*********************************/
+
+/*Object found cotainer parts css start here. This is second middle container*/
+
+/*Round background contains object and round image*/
+.de-mathematics-interactive.archaeological-dig .round-background-container {
+    position: relative;
+    margin: 17px 0px 0px 78px;
+    width: 201px;
+    height: 203px;
+    background-position: 0 -450px;
+}
+/*Extending class when villain found*/
+.de-mathematics-interactive.archaeological-dig .round-background-container.villain-found {
+    margin: 11px 0px 0px 78px; /*This margin for villain background image.*/
+    background-position: 0 -663px;
+    width: 187px;
+    height: 189px;
+}
+
+/*Displays object after finding*/
+.de-mathematics-interactive.archaeological-dig .display-object-container {
+    position: relative;
+    width: 197px;
+    height: 197px;
+    margin: auto;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.de-mathematics-interactive.archaeological-dig .image-container {
+    margin: auto;
+    display: block;
+    margin-top: -18px;
+}
+
+.de-mathematics-interactive.archaeological-dig .bolt-display {
+    background-position: -374px -691px;
+}
+.de-mathematics-interactive.archaeological-dig .cassete-display {
+    background-position: -374px -898px;
+}
+.de-mathematics-interactive.archaeological-dig .tin-display {
+    background-position: 0 -1359px;
+}
+.de-mathematics-interactive.archaeological-dig .pin-display {
+    background-position: -374px -1105px;
+}
+.de-mathematics-interactive.archaeological-dig .battery-display {
+    background-position: 0 -1152px;
+}
+.de-mathematics-interactive.archaeological-dig .empty-display {
+    background-position: 0 -1989px;
+    width: 78px;
+    height: 78px;
+    top: 54px;
+}
+.de-mathematics-interactive.archaeological-dig .villain-display {
+    position: absolute;
+    background-position: 0 -1566px;
+    width: 129px;
+    height: 205px;
+    left: 29px;
+    bottom: 6px;
+}
+
+
+
+.de-mathematics-interactive.archaeological-dig .display-part-1-duck {
+    background-position: 0 -945px;
+}
+.de-mathematics-interactive.archaeological-dig .display-part-2-duck {
+    background-position: -374px -594px;
+    width: 56px;
+    height: 87px;
+    top: 47px;
+}
+.de-mathematics-interactive.archaeological-dig .display-part-3-duck {
+    background-position: -374px -521px;
+    width: 71px;
+    height: 63px;
+    top: 52px;
+}
+
+
+
+.de-mathematics-interactive.archaeological-dig .display-part-1-jester {
+    background-position: -748px -616px;
+    width: 142px;
+    height: 134px;
+    top: 17px;
+}
+.de-mathematics-interactive.archaeological-dig .display-part-2-jester {
+    background-position: -748px 0;
+    width: 120px;
+    height: 134px;
+    top: 16px;
+}
+.de-mathematics-interactive.archaeological-dig .display-part-3-jester {
+    background-position: -374px -1796px;
+    width: 52px;
+    height: 62px;
+    top: 52px;
+}
+
+
+
+
+.de-mathematics-interactive.archaeological-dig .display-part-1-brush {
+    background-position: -748px -444px;
+    width: 133px;
+    height: 80px;
+    top: 43px;
+}
+.de-mathematics-interactive.archaeological-dig .display-part-2-brush {
+    background-position: -748px -249px;
+    width: 110px;
+    height: 95px;
+    top: 36px;
+}
+.de-mathematics-interactive.archaeological-dig .display-part-3-brush {
+    background-position: -748px -575px;
+    width: 39px;
+    height: 31px;
+    top: 71px;
+}
+
+
+
+/**Classes for tooltip image****/
+.de-mathematics-interactive.archaeological-dig .bolt-tooltip {
+    background-position: -369px -710px;
+    width: 197px;
+    height: 152px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .cassete-tooltip {
+    background-position: -374px -913px;
+    width: 197px;
+    height: 152px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .tin-tooltip {
+    background-position: 5px -1376px;
+    width: 197px;
+    height: 152px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .pin-tooltip {
+    background-position: -372px -1115px;
+    width: 197px;
+    height: 152px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .battery-tooltip {
+    background-position: -2px -1173px;
+    width: 197px;
+    height: 152px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .body-tooltip {
+    background-position: -376px -374px;
+    width: 134px;
+    height: 134px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .sceptre-tooltip {
+    background-position: -374px -594px;
+    width: 56px;
+    height: 87px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .crown-tooltip {
+    background-position: -374px -519px;
+    width: 72px;
+    height: 67px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .box-tooltip {
+    background-position: -748px -616px;
+    width: 142px;
+    height: 134px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .jack-tooltip {
+    background-position: -748px 0px;
+    width: 121px;
+    height: 134px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .crank-tooltip {
+    background-position: -374px -1791px;
+    width: 52px;
+    height: 72px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .brush-head-tooltip {
+    background-position: -748px -249px;
+    width: 110px;
+    height: 95px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .handle-tooltip {
+    background-position: -748px -444px;
+    width: 133px;
+    height: 80px;
+    margin: auto;
+}
+.de-mathematics-interactive.archaeological-dig .jewel-tooltip {
+    background-position: -748px -574px;
+    width: 39px;
+    height: 31px;
+    margin: auto;
+}
+
+
+
+
+
+
+/*white box which displays information about current finding*/
+.de-mathematics-interactive.archaeological-dig .object-found-info {
+    position: absolute;
+    bottom: 178px;
+    left: 78px;
+    width: 213px;
+    height: 63px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 7px 7px #debd9a;
+    font-family: Montserrat;
+    font-weight: bold;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+/*Men face container*/
+.de-mathematics-interactive.archaeological-dig .object-found-men-face {
+    position: absolute;
+    left: 19px;
+    bottom: 166px;
+    width: 87px;
+    height: 94px;
+    background-position: 0 -1781px;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+/*extending class with happy state*/
+.de-mathematics-interactive.archaeological-dig .object-found-men-face.happy {
+    background-position: 0 -1885px;
+}
+
+/*Parts of object found info container*/
+.de-mathematics-interactive.archaeological-dig .object-found-header {
+    position: relative;
+    font-size: 14px;
+    color: #69583d;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-found-header.bummer {
+    font-size: 24px;
+    color: #5f7e0f;
+    line-height: 23px;
+    padding-top: 2px;
+}
+.de-mathematics-interactive.archaeological-dig .object-found-footer {
+    position: relative;
+    color: #5f7e0f;
+    text-align: center;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-found-footer.bummer {
+    font-size: 14px;
+    color: #69583d;
+    line-height: 14px;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-found-image {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+}
+.de-mathematics-interactive.archaeological-dig .object-found-name {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*End with object found info*/
+
+/*villain callout div. This contain image*/
+.de-mathematics-interactive.archaeological-dig .villain-callout-text-container {
+    position: absolute;
+    bottom: 102px;
+    left: 23px;
+    width: 316px;
+    height: 144px;
+    background-position: 0 -296px;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.de-mathematics-interactive.archaeological-dig .villain-callout-text {
+    position: relative;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    color: #564c3c;
+    padding-top: 18px;
+    text-align: center;
+    width: 316px;
+    height: 118px;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*villain Object collector div */
+
+.de-mathematics-interactive.archaeological-dig .villain-object-collector {
+    position: absolute;
+    left: 237px;
+    top: 60px;
+    width: 71px;
+    height: 73px;
+    background-position: 0 -862px;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.de-mathematics-interactive.archaeological-dig .villain-object-collector-counter {
+    position: relative;
+    float: left;
+    height: 73px;
+    margin-left: 7px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 73px;
+}
+
+/*Container for payup button*/
+.de-mathematics-interactive.archaeological-dig .payup-button-container {
+    position: absolute;
+    bottom: 43px;
+    left: 116px;
+    width: 112px;
+    height: 38px;
+}
+/*Container for continue button*/
+.de-mathematics-interactive.archaeological-dig .continue-button-container {
+    position: absolute;
+    bottom: 123px;
+    left: 120px;
+    width: 112px;
+    height: 38px;
+}
+
+/*Extending class for continue button to change position*/
+.de-mathematics-interactive.archaeological-dig .continue-button-container.reduce-bottom {
+    bottom: 43px;
+}
+
+/*End with Object found container*/
+/************************************/
+
+/*Container For background animation*/
+.de-mathematics-interactive.archaeological-dig .background-animation-container {
+    position: absolute;
+    bottom: 62px;
+    left: 12px;
+    width: 323px;
+    height: 374px;
+}
+
+.de-mathematics-interactive.archaeological-dig .dummy-junks-container {
+    position: absolute;
+    background-position: 0 -836px;
+    width: 33px;
+    height: 26px;
+    left: 280px;
+    top: 36px;
+}
+
+
+
+/* Css Of Right Panel View Elements*/
+.de-mathematics-interactive.archaeological-dig .right-panel-container {
+    position: relative;
+    float: left;
+    height: 515px;
+    width: 570px;
+}
+
+.de-mathematics-interactive.archaeological-dig .cursor-icon-container {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    background-position: 0 -723px;
+    margin-left: 6px;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .cursor-icon-container.dig-animation {
+    position: absolute;
+    background-position: 0 -777px;
+    margin-left: 0px;
+    width: 49px;
+    height: 49px;
+}
+.de-mathematics-interactive.archaeological-dig .type-1-grid-container {
+    position: relative;
+    float: left;
+    top: 10px;
+    left: 100px;
+    width: 432px;
+    height: 432px;
+}
+.de-mathematics-interactive.archaeological-dig .type-2-grid-container {
+    position: relative;
+    float: left;
+    top: 10px;
+    left: 28px;
+    width: 504px;
+    height: 504px;
+}
+.de-mathematics-interactive.archaeological-dig .type-1-grid-container .object-container, .de-mathematics-interactive.archaeological-dig .type-2-grid-container .object-container {
+    position: relative;
+    float: left;
+    margin: 13px;
+    width: 46px;
+    height: 46px;
+    background-position: 100px -545px;
+    z-index: 5;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-container.body {
+    background-position: 0 -280px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.body:hover {
+    background-position: 0 -336px;
+    cursor: pointer;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.sceptre {
+    background-position: 0 -1208px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.sceptre:hover {
+    background-position: 0 -1264px;
+    cursor: pointer;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.crown {
+    background-position: 0 -1096px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.crown:hover {
+    background-position: 0 -1152px;
+    cursor: pointer;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .object-container.box {
+    background-position: 0 -1320px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.box:hover {
+    background-position: 0 -1376px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-container.jack {
+    background-position: 0 -1768px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.jack:hover {
+    background-position: 0 -1824px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-container.crank {
+    background-position: 0 -1656px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.crank:hover {
+    background-position: 0 -1712px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-container.brush-head {
+    background-position: 0 -1432px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.brush-head:hover {
+    background-position: 0 -1488px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-container.handle {
+    background-position: 0 -1544px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.handle:hover {
+    background-position: 0 -1600px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-container.jewel {
+    background-position: 0 -1880px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.jewel:hover {
+    background-position: 0 -1936px;
+    cursor: pointer;
+}
+
+
+
+
+.de-mathematics-interactive.archaeological-dig .object-container.battery {
+    background-position: 0 -168px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.battery:hover {
+    background-position: 0 -224px;
+    cursor: pointer;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.pin {
+    background-position: 0 -616px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.pin:hover {
+    background-position: 0 -672px;
+    cursor: pointer;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.tin {
+    background-position: 0 -392px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.tin:hover {
+    background-position: 0 -448px;
+    cursor: pointer;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.empty {
+    background-position: 0px -503px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.bolt {
+    background-position: 0 -872px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.bolt:hover {
+    background-position: 0 -928px;
+    cursor: pointer;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.cassete {
+    background-position: 0 -984px;
+}
+.de-mathematics-interactive.archaeological-dig .object-container.cassete:hover {
+    background-position: 0 -1040px;
+    cursor: pointer;
+}
+
+
+
+.de-mathematics-interactive.archaeological-dig .win-popup-header-text {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    color: #5f7e0f;
+    padding-bottom: 2px;
+    margin-top: -2px;
+}
+
+.de-mathematics-interactive.archaeological-dig .theme2-pop-up-text.win-popup-body-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #393939;
+    line-height: 24px;
+    font-weight: normal;
+}
+.de-mathematics-interactive.archaeological-dig .theme2-pop-up-body.win-popup-body-text-container {
+    padding: 0px 20px 35px 20px;
+}
+
+.de-mathematics-interactive.archaeological-dig .theme2-pop-up-dialogue.background-color {
+    background-color: #ffffff;
+    height: 315px;
+    border-radius: 3px;
+}
+
+
+
+
+/******************************************************/
+/****************Css For Numbers on Graph************************/
+
+
+
+/**css for type 1 interactive**/
+.de-mathematics-interactive.archaeological-dig .number-font {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.de-mathematics-interactive.archaeological-dig .number-1-1 {
+    position: absolute;
+    right: 442px;
+    bottom: 459px;
+}
+.de-mathematics-interactive.archaeological-dig .number-2-1 {
+    position: absolute;
+    right: 442px;
+    bottom: 387px;
+}
+.de-mathematics-interactive.archaeological-dig .number-3-1 {
+    position: absolute;
+    right: 442px;
+    bottom: 316px;
+}
+.de-mathematics-interactive.archaeological-dig .number-4-1 {
+    position: absolute;
+    right: 442px;
+    bottom: 243px;
+}
+.de-mathematics-interactive.archaeological-dig .number-5-1 {
+    position: absolute;
+    right: 443px;
+    bottom: 171px;
+}
+.de-mathematics-interactive.archaeological-dig .number-6-1 {
+    position: absolute;
+    right: 438px;
+    bottom: 88px;
+}
+.de-mathematics-interactive.archaeological-dig .number-7-1 {
+    position: absolute;
+    right: 359px;
+    bottom: 84px;
+}
+.de-mathematics-interactive.archaeological-dig .number-8-1 {
+    position: absolute;
+    right: 285px;
+    bottom: 84px;
+}
+.de-mathematics-interactive.archaeological-dig .number-9-1 {
+    position: absolute;
+    right: 213px;
+    bottom: 84px;
+}
+.de-mathematics-interactive.archaeological-dig .number-10-1 {
+    position: absolute;
+    right: 141px;
+    bottom: 84px;
+}
+.de-mathematics-interactive.archaeological-dig .number-11-1 {
+    position: absolute;
+    right: 69px;
+    bottom: 84px;
+}
+
+
+
+
+
+/**css for type 2 interactive**/
+
+
+.de-mathematics-interactive.archaeological-dig .number-1-2 {
+    position: absolute;
+    right: 301px;
+    bottom: 458px;
+}
+.de-mathematics-interactive.archaeological-dig .number-2-2 {
+    position: absolute;
+    right: 301px;
+    bottom: 386px;
+}
+.de-mathematics-interactive.archaeological-dig .number-3-2 {
+    position: absolute;
+    right: 302px;
+    bottom: 314px;
+}
+.de-mathematics-interactive.archaeological-dig .number-4-2 {
+    position: absolute;
+    right: 294px;
+    bottom: 231px;
+}
+.de-mathematics-interactive.archaeological-dig .number-5-2 {
+    position: absolute;
+    right: 301px;
+    bottom: 172px;
+}
+.de-mathematics-interactive.archaeological-dig .number-6-2 {
+    position: absolute;
+    right: 301px;
+    bottom: 100px;
+}
+.de-mathematics-interactive.archaeological-dig .number-7-2 {
+    position: absolute;
+    right: 301px;
+    bottom: 29px;
+}
+.de-mathematics-interactive.archaeological-dig .number-8-2 {
+    position: absolute;
+    right: 500px;
+    bottom: 226px;
+}
+.de-mathematics-interactive.archaeological-dig .number-9-2 {
+    position: absolute;
+    right: 428px;
+    bottom: 226px;
+}
+.de-mathematics-interactive.archaeological-dig .number-10-2 {
+    position: absolute;
+    right: 356px;
+    bottom: 226px;
+}
+.de-mathematics-interactive.archaeological-dig .number-11-2 {
+    position: absolute;
+    right: 214px;
+    bottom: 226px;
+}
+.de-mathematics-interactive.archaeological-dig .number-12-2 {
+    position: absolute;
+    right: 141px;
+    bottom: 226px;
+}
+.de-mathematics-interactive.archaeological-dig .number-13-2 {
+    position: absolute;
+    right: 70px;
+    bottom: 226px;
+}
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.tooltip-form-validation-container.tooltip-baseclass {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    color: #614f39;
+    border: none;
+    z-index: 15;
+}
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.tooltip-form-validation-container .arrow-div.tooltip-baseclass-arrow {
+    border-bottom: 10px solid rgba(255, 255, 255, 0.8);
+}
+
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.tooltip-form-validation-container .border-div {
+    border-bottom: none;
+}
+
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.object-info-container .border-div {
+    border-bottom: none;
+}
+
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.tooltip-form-validation-container.tooltip-baseclass .text-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-align: center;
+}
+
+
+
+/*object-info-tooltip*/
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.tooltip-general-container.object-info-container {
+    background-color: rgba(0, 0, 0, 0.72);
+    border: none;
+}
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.tooltip-general-container .arrow-div.object-info-container-arrow {
+    border-bottom: 10px solid rgba(0, 0, 0, 0.72);
+}
+.de-mathematics-interactive.archaeological-dig .theme2-tooltip.tooltip-general-container.object-info-container .text-container {
+    padding: 0px;
+    border-radius: 3px;
+}
+.de-mathematics-interactive.archaeological-dig .tooltip-inner-container {
+    width: 243px;
+    height: 152px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.de-mathematics-interactive.archaeological-dig .tooltip-inner-container .coordinate-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 6px;
+    padding-left: 9px;
+    width: 60px;
+    height: 17px;
+    margin: 0px auto;
+    font-family: Verdana;
+    font-weight: bold;
+}
+.de-mathematics-interactive.archaeological-dig .tooltip-inner-container .close-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-weight: bold;
+    padding-top: 11px;
+    padding-right: 13px;
+    width: 9px;
+    height: 17px;
+}
+.de-mathematics-interactive.archaeological-dig .tooltip-inner-container .close-container-cursor {
+     cursor: pointer;
+}
+
+.de-mathematics-interactive.archaeological-dig .tooltip-inner-container .close-container:active {
+    color: #b6b6b6;
+}
+.de-mathematics-interactive.archaeological-dig .z-index-for-number {
+    z-index: 0;
+}
+.de-mathematics-interactive.archaeological-dig .steper-x .spin-textbox.vertical-aligned, .de-mathematics-interactive.archaeological-dig .steper-y .spin-textbox.vertical-aligned {
+    border-left: 2px solid #af9b73;
+    border-right: 2px solid #af9b73;
+    font-family: Verdana;
+    font-size: 14px;
+    width: 39px;
+    height: 36px;
+    color: #483826;
+}
+.de-mathematics-interactive.archaeological-dig .steper-x .spin-textbox.vertical-aligned span, .de-mathematics-interactive.archaeological-dig .steper-y .spin-textbox.vertical-aligned span {
+    line-height: 35px;
+}
+
+.de-mathematics-interactive.archaeological-dig .spin-up-arrow {
+    top: 1px;
+}
+
+.de-mathematics-interactive.archaeological-dig .spin-down-arrow {
+    top: -1px;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .pop-up-title-found-text {
+    margin-top: 105px;
+    text-align: center;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    color: #694c25;
+}
+
+
+.de-mathematics-interactive.archaeological-dig .check-sign {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-info-container .x-coordinate-text {
+    margin-left: -1px;
+}
+
+.de-mathematics-interactive.archaeological-dig .object-info-container .y-coordinate-text {
+    margin-right: -1px;
+    margin-left: 6px;
+}
+.de-mathematics-interactive.archaeological-dig .help-screen-content {
+    opacity: 0.3;
+}
+.de-mathematics-interactive.archaeological-dig .dummy-focus {
+    width: 0px;
+    height: 0px;
+    z-index:-1;
+}
+.de-mathematics-interactive.archaeological-dig .cross-sign-tooltip {
+    padding: 0px;
+    z-index:1;
+}
+.de-mathematics-interactive.archaeological-dig .cross-sign-tooltip .text-container {
+    padding: 2px 10px;
+    line-height: 22px;
+}

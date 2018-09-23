@@ -1,0 +1,116 @@
+/*---------------- Preloader Section ---------------------*/
+
+.de-mathematics-interactive .preloader {
+    position: absolute;
+    height: 644px;
+    width: 930px;
+    background-color: #4c1787;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.de-mathematics-interactive .progress-box-container {
+    width: 320px;
+    position: relative;
+    display: none;
+}
+
+.de-mathematics-interactive .progress-box {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    /*background-color: #fff;*/
+    /*border-radius: 4px;*/
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive .in-progress-text {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    text-shadow: 1px 2px 1px #322348;
+    color: #fff;
+    top: 2px;
+    /*padding: 5px 0;*/
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.de-mathematics-interactive .progress-bar-container {
+    margin: auto;
+    position: relative;
+    /*padding-top: 13px;*/
+}
+
+.de-mathematics-interactive .progress-bar {
+    height: 15px;
+    position: relative;
+    margin: -15px 12px 0;
+    max-width: 225px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAAAPBAMAAADg07W7AAAAIVBMVEVMF4f///9EFHlKFoTk5ORGFXxIFoD7+/v39/fy8vLr6+sfSGDUAAAAiElEQVQ4y72PsQ2AMAwEATEArBDBBBT0iBUSiQUiKBEFI4QJkBghTIn9ISPYV/ncnL7QpzLEDAwQ1lTs8J7wE1YUrX2BTQgrFXu3Pcztf2SVitZfYMjIKhXdejJHfo+yysWwt0SRYRFUKi6Bjya/y1ZSUYxBbyK0jkFzYoOi6kQUVSeiqDtRnw+d5fdbZq5LHAAAAABJRU5ErkJggg==);
+}
+
+
+/*------------throbber-css-------------------*/
+
+.de-mathematics-interactive .throbber-wrapper {
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    /*outline: 1px solid #f00;*/
+}
+
+.de-mathematics-interactive .throbber-container {
+    width: 22px;
+    height: 22px;
+    /*background-image: url(data:image/png;base64,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);*/
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAD2CAYAAADS8He5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYuSURBVHhe7ZuBdZw6EEXdwS8hJbiEX4JLSAkpISW4hJSQElxCSkgJ7sD+92oHBVYSaAEndr7uOTqgGekhASvEiL372Ly+vv7z8vLyhfTVrflwJd88fxOIfadyxny49gsj8jmpXaE9iuwDga+htUB7FKmC/4n0b2RLdIbWgtVKvSDymfQcgs/mw7UPWzVLirv9FO59KJL6HJC3pcdEBZHiomkLdzfU+WaK7KnCP0nPkX3DUyEI3ZP8Gdv6fT/bLWwt6UtkzwHB+X38Y6v10YjvpPVrouCcrQr4H6OoZe/DXILzZ5RLkE+/PHYdTu2N1yFfWPb9IXmxn8JUhwJeRO9HB5Z8ntnPt6T7YT4OYnmcdj/Mx0Fs3pP2uRwMBv9bGHemIdMB3bHinEEIIaezC7A9hns/iPiIKgh3H4ikZ1jUtWXViaJElT4Q+hb1EuSdhDxFNoPttlMR9a7x4s178Wsa1ct168yH6xho2bpHBd2aD9c7I1qXcD/Mx0DoPjQz2sLdDXXSG0FkL4bQyywKdFIIC4Z8/7of5nOoHvHdw5lIvzKSM8iHMK8SPV1/taDAfFbpBHxr4p3uKLbrYzQF8os6+86VszB5R76iZdicM2/3jkLGKzwd+V5m/9PlcPtuxSaKha7Cx96vr1HwdNHBYPBX4SA0T2E+hkIxsCXIv31czgOQ+npBIQd6WzVVrgqTrnvSnkDizFMtMV8R8KDGL1JQag62evQFR3UaG0I5Lse2mD3JVL4Ax0OUSZgP1wLs+Rk4B3t7FoV/atHWo38Reie/GafrBrHpFNUjix7JFkShcwKmomDqD7gf5pugarmcgdjhuBpVq8IjrlbCqXBQWSxgHUYxRKfAdNe7COW8Ll2jW4ohsz0vnCvR6uLOwLZc5zgLe0L6tc4xGAwGHx5Gtfcbl5sG+jSrNM9+MbPUFr55iL0dZaHO/JmXY0LsF3E5tsW8mU39AYzzehqbAx8KmSJrfvH1iMz9BTjT5JvtjzBVwb+Ijgu2zTDZ5uMcHU9bajXb7jhdN3GA9joJhmpcbQvqtNdJFAzb+gWoQPn2OolikVf4phBYVCsIdxLfFVejzvF1khro5LtD2D9/GvZnsCvRpfNeywRB3/690c8VbsGBzouuzHkz4cFgMPhjMO5Pk5L3F5erglg1LkfWnhgg2f640UIhkFvGfhGXC1uOIetPhVtQIE2ZrBSmKviLSHi46lDBR9D61B8sF3oJ64TrOIhNYV5jyefF6SZs/TyF+RgKXU7GBfLLdRIyu+Jq1CkuorZwpwK74mqbwntBZP1U7EEBhUnT3xDyG+1uFLy08QL54/cxOo4R+ec8YYujSAlOb/rVdwj8i9ZOYG+3Gr+tWQ0b4L99SagF9RbLEYicsyRkpeuK9ozUXhIaDAaDdw8j2K643CoKOuYK++eFFhQLXYUXITTyBq63B3hbRypeCRQ0RTZhuTiYk53100SBYuJdw1ZaboLy6887yvgwteub3aNcjhJaJ8zngKCzoA8WK6LF7XUSu7OnS9RZXyc5IFxMt/boVEHog3y/jFDfktAt2LrofYJ8e0mohoWpVKxzuE2KM7D1nwoKV9c5SLcvCc2hcHWdA+zJ/iWhJFEh3PuhJWOdYzAY/MU4+LzJAITo8e/dEOh6dlHOubTPwr4AHgW7Ql2Um8/Zbv/8pAViTlJ83p0XO/7YcIqnSU25TqLTFNmbUNALKO6H+QK2I8LVdZLDIFask/weONr8XG2+bVLMi7a+JIRz8VWTYGt+hISvb0kIRzFHE+zpFWCeonwR9E9C11CwmEgL9sX8mHwK7pOuZ/T1nzWORdeEvOevaJm2WZ3tJSEKTMOgt026IGybwodApHiJIfW/EqyB0NRlW7/r1zkYDAaHYADKT49TeTPhFnHAc8bnCQT7/uy+B0R9AJz7ifAqPmo4YhFXOwxC7e+Hb4A6y3USMu3vhztRMKrZqMstGfmC5OxEsaim8GVJg51T4moKZlFB5/fE1RB+IHlvdi27U257ScjWXtp9wYOEq4oNiHLtSbqOpDYDW/ONE3ffkhCO2rLDFISurnOw37ckdCVg95wMrq5zsN+3JBRi3pfpgsT+gi6hHhB6L+scd3f/AXkpNO6OmC5SAAAAAElFTkSuQmCC);
+}
+
+.de-mathematics-interactive .throbber-container.throb-0 {
+    background-position: 0 0;
+}
+
+.de-mathematics-interactive .throbber-container.throb-1 {
+    background-position: 0 -32px;
+}
+
+.de-mathematics-interactive .throbber-container.throb-2 {
+    background-position: 0 -96px;
+}
+
+.de-mathematics-interactive .throbber-container.throb-3 {
+    background-position: 0 -128px;
+}
+
+.de-mathematics-interactive .throbber-container.throb-4 {
+    background-position: 0 -160px;
+}
+
+.de-mathematics-interactive .throbber-container.throb-5 {
+    background-position: 0 -192px;
+}
+
+.de-mathematics-interactive .throbber-container.throb-6 {
+    background-position: 0 -224px;
+}
+
+
+/*
+    Temporary hiding of buttons on Zeus interactives on all pages
+    that they appear on the site.
+    Ticket to remove this temporary implementation: MATHTB-2753
+;
+*/
+
+.de-mathematics-interactive .custom-btn-type-save,
+.de-mathematics-interactive .custom-btn-type-camera,
+.de-mathematics-interactive .custom-btn-type-popout {
+    display: none;
+}

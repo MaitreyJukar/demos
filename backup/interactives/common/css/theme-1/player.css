@@ -1,0 +1,5246 @@
+.de-mathematics-interactive {
+    line-height: normal;
+    font-size: 16px;
+    width: 930px;
+    color: #FFFFFF;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: Arial;
+}
+
+
+/*-------------------- font classes ----------------------*/
+
+.de-mathematics-interactive .font-montserrat-bold {
+    font-family: MontserratBold, Arial, sans-serif;
+}
+
+.de-mathematics-interactive .font-montserrat-regular {
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+
+/*-------------------Manager focus rect section----------------*/
+
+.de-mathematics-interactive.math-utilities-manager .acc-read-elem:focus {
+    outline: 2px dotted #000000;
+}
+
+.de-mathematics-interactive.math-utilities-manager .math-utilities-manager-access:focus {
+    outline: 2px dotted #000000;
+}
+
+
+/*-------------------- Header Section --------------------*/
+
+.de-mathematics-interactive .header-container {
+    height: 35px;
+    clear: both;
+    background-color: #250B41;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+/*----------- Header Background ----------*/
+
+.de-mathematics-interactive .header-left {
+    height: 35px;
+    width: 8px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: -767px -362px;
+}
+
+.de-mathematics-interactive .header-middle {
+    height: 35px;
+    width: 914px;
+    float: left;
+    background-position: 0 -2813px;
+}
+
+.de-mathematics-interactive .header-right {
+    height: 35px;
+    width: 8px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: -767px -486px;
+}
+
+
+/*---------- Header Contents ---------*/
+
+.de-mathematics-interactive .header-content {
+    position: absolute;
+    width: 930px;
+    height: 35px;
+}
+
+.de-mathematics-interactive .heading {
+    float: left;
+    font-size: 16px;
+    padding: 8px 18px;
+    letter-spacing: 0.019em;
+    color: #fff;
+    text-shadow: 1px 1px 2px #411571;
+    /*rgba(0, 0, 0, 0.55);*/
+    max-width: 700px;
+}
+
+.de-mathematics-interactive .header-btn {
+    height: 32px;
+    width: 42px;
+    float: right;
+    margin: 2px 5px 0 0;
+    background-position: 0 0;
+    border: 1px solid 4D376F;
+    border-radius: 4px;
+}
+
+.de-mathematics-interactive .header-btn-hover {
+    background-position: 0 -42px;
+}
+
+.de-mathematics-interactive .header-btn-down {
+    background-position: 0 -84px;
+}
+
+.de-mathematics-interactive .header-btn-disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.de-mathematics-interactive .screen-shot-btn {
+    margin-right: 9px;
+}
+
+.de-mathematics-interactive .screen-shot-modal {
+    height: 100%;
+    width: 100%;
+    background-color: #222222;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.de-mathematics-interactive .help-screen {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    z-index: 999;
+}
+
+.de-mathematics-interactive .help-screen-pointer {
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    right: 22px;
+    top: -11px;
+    opacity: 0.6;
+    background-position: -33px -80px;
+}
+
+.de-mathematics-interactive .help-screen-close-btn {
+    position: absolute !important;
+    top: 12px;
+    right: 12px;
+    height: 27px;
+    width: 65px;
+    background-position: 0 0;
+    line-height: 26px;
+}
+
+.de-mathematics-interactive .help-screen-close-btn-hover {
+    background-position: 0 -36px;
+}
+
+.de-mathematics-interactive .help-screen-close-btn-down {
+    background-position: 0 -72px;
+}
+
+.de-mathematics-interactive .help-screen-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 930px;
+    height: inherit;
+}
+
+.de-mathematics-interactive .help-screen-acc-div {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.de-mathematics-interactive .help-screen-content > div:first-child {
+    height: inherit;
+    width: inherit;
+}
+
+
+/*-------------------------- Tab Structure --------------*/
+
+.de-mathematics-interactive .tabs-container {
+    height: 34px;
+    width: 930px;
+    overflow: visible;
+    border-top: 1px solid #250B41;
+    border-right: 1px solid #948AA3;
+    background-color: #7855AD;
+    box-shadow: 0 4px 4px #52377D inset;
+}
+
+
+/*--------- Normal state Tabs --------*/
+
+.de-mathematics-interactive .tabs-container > .tabs {
+    font-family: Montserrat, Arial, sans-serif;
+    height: 36px;
+    float: left;
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+    top: -1px;
+}
+
+.de-mathematics-interactive .tabs-container > .tabs.tab-selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .tabs-container > .tab-disabled {
+    cursor: default;
+}
+
+.de-mathematics-interactive .tabs-container .tab-active {
+    cursor: default;
+}
+
+.de-mathematics-interactive .tab-left {
+    float: left;
+    position: relative;
+    height: 36px;
+    width: 2px;
+    background-position: -734px -1086px;
+}
+
+.de-mathematics-interactive .tab-mid {
+    float: left;
+    position: relative;
+    height: 18px;
+    padding: 9px 21px;
+    color: #5B2994;
+    background-position: 0 -2351px;
+}
+
+.de-mathematics-interactive .tab-right {
+    float: left;
+    position: relative;
+    height: 36px;
+    width: 2px;
+    background-position: -734px -1131px;
+}
+
+
+/*------- Hover state Tabs --------*/
+
+.de-mathematics-interactive .tab-left.tab-hover {
+    background-position: -734px -1176px;
+}
+
+.de-mathematics-interactive .tab-mid.tab-hover {
+    background-position: 0 -2678px;
+}
+
+.de-mathematics-interactive .tab-right.tab-hover {
+    background-position: -734px -1221px;
+}
+
+
+/*-------- Active State Tabs --------*/
+
+.de-mathematics-interactive .tab-left.tab-active {
+    background-position: -734px -1266px;
+}
+
+.de-mathematics-interactive .tab-mid.tab-active {
+    background-position: 0 -2723px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #4C1787;
+}
+
+.de-mathematics-interactive .tab-right.tab-active {
+    background-position: -734px -1311px;
+}
+
+
+/*------ Disabled Tabs -------*/
+
+.de-mathematics-interactive .tab-disabled .tab-left {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive .tab-disabled .tab-mid {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive .tab-disabled .tab-right {
+    opacity: 0.5;
+}
+
+
+/*--------- Normal Steps ----------*/
+
+.de-mathematics-interactive .tab-left.step-left {
+    width: 9px;
+    background-position: -734px 0;
+}
+
+.de-mathematics-interactive .tabs0 .tab-left.step-left {
+    width: 1px;
+}
+
+.de-mathematics-interactive .tabs-container .step-mid {
+    padding: 10px 12px 9px 41px;
+    background-position: 0 -2351px;
+    text-align: left;
+}
+
+.de-mathematics-interactive .tabs-container .tabs0 .step-mid {
+    padding: 10px 12px 9px 36px;
+}
+
+.de-mathematics-interactive .step-right {
+    width: 14px;
+    background-position: -734px -705px;
+}
+
+.de-mathematics-interactive .step-right.last-step {
+    width: 14px;
+    background-position: -734px -423px;
+}
+
+.de-mathematics-interactive .step-circle {
+    width: 22px;
+    /* Keep width 22px to make text center aligned proper wrt image given*/
+    height: 23px;
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    padding-top: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    background-position: -734px -986px;
+    line-height: 21px;
+    text-shadow: none;
+}
+
+.de-mathematics-interactive .tabs-container .tabs0 .step-circle {
+    left: 7px;
+}
+
+
+/*-------- Hover state Steps -------*/
+
+.de-mathematics-interactive .step-left.tab-hover {
+    background-position: -734px -47px;
+}
+
+.de-mathematics-interactive .step-mid.tab-hover {
+    background-position: 0 -2398px;
+}
+
+.de-mathematics-interactive .step-right.tab-hover {
+    background-position: -734px -752px;
+}
+
+.de-mathematics-interactive .step-right.tab-hover.last-step {
+    background-position: -734px -470px;
+}
+
+.de-mathematics-interactive .step-mid.tab-hover .step-circle {
+    background-position: -734px -893px;
+}
+
+
+/*-------- Active Step ----------*/
+
+.de-mathematics-interactive .step-left.tab-active {
+    background-position: -734px -141px;
+}
+
+.de-mathematics-interactive .step-mid.tab-active {
+    background-position: 0 -2492px;
+}
+
+.de-mathematics-interactive .step-right.tab-active {
+    background-position: -734px -846px;
+}
+
+.de-mathematics-interactive .step-right.tab-active.last-step {
+    background-position: -734px -564px;
+}
+
+.de-mathematics-interactive .step-mid.tab-active .step-circle {
+    background-position: -734px -1020px;
+    color: #5B2994;
+}
+
+
+/*------- Disabled steps --------*/
+
+.de-mathematics-interactive .tab-disabled .step-left {
+    opacity: 1;
+    background-position: -734px -235px;
+}
+
+.de-mathematics-interactive .tab-disabled .step-mid {
+    opacity: 1;
+    background-position: 0 -2586px;
+    color: #E5DEEF;
+}
+
+.de-mathematics-interactive .tab-disabled .step-right {
+    opacity: 1;
+    background-position: -734px -940px;
+}
+
+.de-mathematics-interactive .tab-disabled .step-right.last-step {
+    background-position: -734px -658px;
+}
+
+.de-mathematics-interactive .tab-disabled .step-mid .step-circle {
+    background-position: -734px -1053px;
+    color: #FFFFFF;
+}
+
+
+/*-------------------- Activity Area -------------------*/
+
+.de-mathematics-interactive .activity-area-container {
+    background-color: #250B41;
+    background-repeat: repeat;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+    position: relative;
+    height: 499px;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+
+/*---- small layout with or without tabs ----*/
+
+.de-mathematics-interactive .activity-area {
+    background-color: #FFFFFF;
+    height: 499px;
+    width: 914px;
+    border-radius: 4px;
+    display: none;
+    /*overflow: hidden;*/
+}
+
+
+/*---- large layout with tabs ----*/
+
+.de-mathematics-interactive .theme2-tabs {
+    height: 558px;
+}
+
+
+/*---- large layout without tabs ----*/
+
+.de-mathematics-interactive .theme2 {
+    height: 593px;
+}
+
+.de-mathematics-interactive .activity-area-container >:first-child {
+    display: block;
+}
+
+
+/*------------ Left section ------------*/
+
+.de-mathematics-interactive .instructions-area {
+    /*width: 243px;*/
+    /*height: 428px;*/
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 5px;
+}
+
+.de-mathematics-interactive .instructions {
+    line-height: 28px;
+    padding: 20px 20px 20px 17px;
+    width: 213px;
+    font-family: Arial;
+}
+
+.de-mathematics-interactive .header-text {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.de-mathematics-interactive .paragraph-text {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+
+/*----------- Right Section ------------*/
+
+.de-mathematics-interactive .analysis-area {
+    /*width: 672px;*/
+    /*height: 428px;*/
+    float: left;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+/*--------------------- Player Section --------------------*/
+
+.de-mathematics-interactive .player {
+    width: 930px;
+    position: relative;
+}
+
+.de-mathematics-interactive .shell-btns {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+
+/* -------------------------- Shadow Image Css ---------------------------*/
+
+.de-mathematics-interactive .top-left-shadow-image {
+    position: relative;
+    height: 11px;
+    width: 11px;
+    left: 244px;
+    top: -5px;
+}
+
+.de-mathematics-interactive .top-middle-shadow-image {
+    position: relative;
+    height: 11px;
+    width: 659px;
+    left: 255px;
+    top: -16px;
+}
+
+.de-mathematics-interactive .top-right-shadow-image {
+    position: relative;
+    height: 11px;
+    width: 11px;
+    left: 914px;
+    top: -27px;
+}
+
+.de-mathematics-interactive .middle-left-shadow-image {
+    position: relative;
+    height: 416px;
+    width: 11px;
+    left: 244px;
+    top: -27px;
+}
+
+.de-mathematics-interactive .middle-right-shadow-image {
+    position: relative;
+    height: 417px;
+    width: 11px;
+    left: 914px;
+    top: -443px;
+}
+
+.de-mathematics-interactive .bottom-left-shadow-image {
+    position: relative;
+    height: 11px;
+    width: 11px;
+    left: 244px;
+    top: -444px;
+}
+
+.de-mathematics-interactive .bottom-middle-shadow-image {
+    position: relative;
+    height: 11px;
+    width: 659px;
+    left: 255px;
+    top: -455px;
+}
+
+.de-mathematics-interactive .bottom-right-shadow-image {
+    position: relative;
+    height: 11px;
+    width: 11px;
+    left: 914px;
+    top: -465px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* -------------------------- End of Shadow Image Css ---------------------------*/
+
+
+/* -------------------------- Tool-Tip Css ---------------------------*/
+
+.de-mathematics-interactive-tooltip.tooltips {
+    position: absolute;
+    color: #222;
+    font-size: 11px;
+    z-index: 1500;
+    box-sizing: content-box;
+}
+
+.de-mathematics-interactive-tooltip.tooltip-left {
+    float: left;
+    height: 20px;
+    width: 7px;
+    background-position: -764px -230px;
+}
+
+.de-mathematics-interactive-tooltip.tooltip-right {
+    float: left;
+    height: 20px;
+    width: 7px;
+    background-position: -767px -260px;
+}
+
+.de-mathematics-interactive-tooltip.tooltip-mid {
+    float: left;
+    height: 14px;
+    padding: 3px;
+    font-family: Arial;
+    color: #222;
+    background-position: 0 -2960px;
+    line-height: 14px;
+}
+
+.de-mathematics-interactive-tooltip.tooltip-arrow {
+    float: none;
+    height: 9px;
+    width: 7px;
+    margin: auto;
+    margin-top: 19px;
+    position: relative;
+    z-index: 1030;
+    background-position: -767px -192px;
+    border: 0;
+}
+
+.de-mathematics-interactive-tooltip.tooltip-arrow.inverted-tootlip {
+    margin-top: -8px;
+    background-position: -767px -211px;
+}
+
+
+/* -------------------------- ScreenUtils Css ---------------------------*/
+
+.de-mathematics-interactive .transform-none {
+    transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    transform: none !important;
+}
+
+.de-mathematics-interactive .opacity-transperant {
+    opacity: 0 !important;
+}
+
+.de-mathematics-interactive .ForceDisplayNone {
+    display: none !important;
+}
+
+
+/* -------------------------- End of ScreenUtils Css ---------------------------*/
+
+
+/* -------------------------- ContextMenu Css ---------------------------*/
+
+.de-mathematics-interactive .contextMenuHolder {
+    position: absolute;
+    display: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px;
+    padding-bottom: 0;
+    font-family: Arial;
+    z-index: 300;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+.de-mathematics-interactive .contextMenuHolder .ContextMenuItem {
+    margin-bottom: 5px;
+}
+
+.de-mathematics-interactive .contextMenuHolder .menufocussed {
+    background-color: #DAEBF3;
+}
+
+
+/* -------------------------- End of ContextMenu Css ---------------------------*/
+
+
+/* --------------------------------------- Styles as per new UI ---------------------------------------*/
+
+
+/* ------- typography css -------- */
+
+.de-mathematics-interactive .typography-header {
+    color: #4c1787;
+    font-size: 18px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    fill: #4c1787;
+}
+
+.de-mathematics-interactive .typography-header-2 {
+    color: #222;
+    font-size: 18px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive .typography-sub-header {
+    color: #777777;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    fill: #777777;
+}
+
+.de-mathematics-interactive .typography-label {
+    color: #222;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    fill: #222;
+}
+
+.de-mathematics-interactive .typography-label-disabled {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive .typography-body-text {
+    color: #222;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 26px;
+}
+
+.de-mathematics-interactive .typography-body-text-disabled {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive .typography-equation-text {
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+    color: #222222;
+}
+
+.de-mathematics-interactive .typography-equation-italic-text {
+    font-family: arial;
+    font-style: italic;
+    color: #222222;
+}
+
+
+/* -------- text link css ------- */
+
+.de-mathematics-interactive .text-link {
+    color: #1f77b3;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive .text-link-rollover {
+    color: #2b96e0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* -------------- local instructions css -------------- */
+
+.de-mathematics-interactive .local-instructions {
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 3px 7px #8f72bc inset;
+    color: #53218d;
+    font-family: Arial, Sans-Serif;
+    font-size: 16px;
+    height: 30px;
+    position: relative;
+}
+
+.de-mathematics-interactive .local-instructions > div {
+    background-repeat: no-repeat;
+}
+
+.de-mathematics-interactive .instruction-bar-tts-div .tts-sound-button {
+    opacity: 0.9;
+}
+
+.de-mathematics-interactive .local-instructions .local-instruction-left {
+    float: left;
+    width: 4px;
+    height: 30px;
+    background-position: -767px 0;
+    opacity: 0.85;
+}
+
+.de-mathematics-interactive .local-instructions .local-instruction-right {
+    float: left;
+    width: 4px;
+    height: 30px;
+    background-position: -767px -40px;
+    opacity: 0.85;
+}
+
+.de-mathematics-interactive .local-instructions .local-instruction-mid {
+    float: left;
+    width: 906px;
+    height: 30px;
+    background-repeat: repeat-x;
+    background-position: 0 -2875px;
+    opacity: 0.85;
+}
+
+.de-mathematics-interactive .local-instructions .text-div {
+    position: absolute;
+    height: 24px;
+    line-height: 24px;
+    padding-top: 3px;
+    padding-left: 9px;
+    z-index: 1;
+}
+
+
+/* ------------------------------------ End of Styles as per new UI --------------------------------*/
+
+
+/* -------------------------- Hint-Feedback Css ---------------------------*/
+
+.de-mathematics-interactive .hint-panel {
+    opacity: 0.85;
+    background-color: #d5c1f4;
+    border: 1px solid #51198f;
+    border-radius: 4px;
+    color: #53218d;
+    font-family: Arial, Sans-Serif;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 3px 3px 20px #b29ad7 inset, 3px 3px 10px 3px #d7d7d7;
+}
+
+.de-mathematics-interactive .feedback-panel {
+    background-color: #fff7e3;
+    border-radius: 4px;
+    color: #a15700;
+    font-family: Arial, Sans-Serif;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #b55b0d;
+}
+
+
+/*** Hint-Feedback Header starts **/
+
+.de-mathematics-interactive .hintfeedback-header {
+    width: 100%;
+    left: 0;
+    position: relative;
+}
+
+.de-mathematics-interactive .feedback-panel-right-padding .hintfeedback-header {
+    min-height: 11px;
+}
+
+.de-mathematics-interactive .feedback-panel-top-padding .hintfeedback-header {
+    min-height: 30px;
+}
+
+.de-mathematics-interactive .hintfeedback-button-panel {
+    position: absolute;
+    right: 0;
+    max-width: 70px;
+    height: auto;
+}
+
+.de-mathematics-interactive .inner-title-panel {
+    position: relative;
+    font-weight: bold;
+    top: 10px;
+    left: 11px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 17px;
+}
+
+.de-mathematics-interactive .inner-top-button-panel {
+    position: relative;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.de-mathematics-interactive .close-button-panel.inner-top-button-panel {
+    margin: 8px 7px 0 0;
+}
+
+.de-mathematics-interactive .tts-button-panel.inner-top-button-panel.tts-button-panel-without-button {
+    margin: 1px 4px 8px 0;
+}
+
+.de-mathematics-interactive .tts-button-panel.inner-top-button-panel {
+    margin: 1px 6px 8px 0;
+}
+
+
+/*** Hint-Feedback Header ends  **/
+
+.de-mathematics-interactive .inner-text-panel {
+    text-align: left;
+}
+
+.de-mathematics-interactive .panel-button-container {
+    text-align: center;
+}
+
+.de-mathematics-interactive .hintfeedback-content {
+    overflow: hidden;
+    clear: both;
+    margin: 0 10px 13px 9px;
+}
+
+.de-mathematics-interactive .feedback-with-buttons .hintfeedback-content {
+    margin-bottom: 2px;
+}
+
+.de-mathematics-interactive .feedback-scroll-panel {
+    overflow: hidden;
+}
+
+.de-mathematics-interactive .feedback-with-buttons .feedback-scroll-panel {
+    margin-bottom: 8px;
+}
+
+
+/*.de-mathematics-interactive .feedback-panel-top-padding.feedback-with-buttons .feedback-scroll-panel {
+    margin-bottom: 5px;
+}*/
+
+.de-mathematics-interactive .hint-panel .hintfeedback-content {
+    margin-left: 13px;
+}
+
+.de-mathematics-interactive .feedback-panel-right-padding.has-tts-button.has-close-button .feedback-scroll-panel {
+    margin-right: 50px;
+}
+
+.de-mathematics-interactive .feedback-panel-right-padding.has-tts-button .feedback-scroll-panel {
+    margin-right: 35px;
+}
+
+.de-mathematics-interactive .panel-button {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 10px 8px;
+}
+
+.de-mathematics-interactive .feedback-with-buttons,
+.de-mathematics-interactive .feedback-with-modal {
+    z-index: 989;
+}
+
+.de-mathematics-interactive .feedback-modal {
+    position: absolute;
+    width: 914px;
+    top: 8px;
+    opacity: 0.56;
+    background-color: #FFF;
+    z-index: 985;
+}
+
+.de-mathematics-interactive .feedback-modal.CoverTabs {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* -------------------------- End of Hint-Feedback Css ---------------------------*/
+
+
+/* ------------------------------ Feedback Badge Css -----------------------------*/
+
+.de-mathematics-interactive .badge-image {
+    position: relative;
+    height: 26px;
+    width: 25px;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .feedback-badges-textbox {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #aaa inset;
+    border: 1px solid #000000;
+}
+
+.de-mathematics-interactive .score-badges-textbox {
+    position: relative;
+    z-index: 1;
+    width: 57px;
+    height: 39px;
+    border: 1px solid;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.de-mathematics-interactive .warning-badge {
+    height: 25px;
+    width: 28px;
+    background-position: 0 25px;
+}
+
+.de-mathematics-interactive .badge-input-modal {
+    position: absolute;
+}
+
+
+/* ------------------------------ Feedback Group Badge Css -----------------------------*/
+
+.de-mathematics-interactive .feedback-badges-border {
+    border: 2px solid;
+    border-color: #A15F25;
+    border-radius: 5px;
+}
+
+.de-mathematics-interactive .feedback-badges-no-border {
+    border: 2px solid transparent;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+
+/* --------------------------- End of Feedback Badge Css --------------------------*/
+
+
+/*----------------------------Left panel Seperator Css-----------------------------*/
+
+.de-mathematics-interactive .left-panel-seperator {
+    background-position: 0 -342px;
+}
+
+
+/*----------------------------End of Left panel Seperator Css-----------------------*/
+
+
+/* =================================================== BUTTON.CSS ================================================== */
+
+.de-mathematics-interactive .button-common {
+    min-width: 24px;
+}
+
+.de-mathematics-interactive .button-icon {
+    position: absolute;
+}
+
+.de-mathematics-interactive .draggable-icon-div {
+    background-position: -19px -399px;
+    position: absolute;
+    height: 8px !important;
+    width: 16px;
+}
+
+.de-mathematics-interactive .button-icon.disabled {
+    opacity: 0.56;
+}
+
+.de-mathematics-interactive .button-icon.selected {
+    cursor: default;
+}
+
+
+/*======================= BUTTON ICON CLASSES =========================*/
+
+.de-mathematics-interactive .move-icon {
+    background-position: -177px -399px;
+    ;
+}
+
+.de-mathematics-interactive .move-icon.selected {
+    background-position: -378px -401px;
+}
+
+.de-mathematics-interactive .draw-line-icon {
+    background-position: -217px -399px;
+}
+
+.de-mathematics-interactive .zoom-in-icon {
+    background-position: -150px -575px;
+}
+
+.de-mathematics-interactive .zoom-out-icon {
+    background-position: -180px -575px;
+}
+
+.de-mathematics-interactive .action-reset-icon {
+    background-position: -211px -571px;
+}
+
+.de-mathematics-interactive .fit-to-screen-icon {
+    background-position: -211px -571px;
+}
+
+.de-mathematics-interactive .draw-line-icon.selected {
+    background-position: -419px -399px;
+}
+
+.de-mathematics-interactive .hint-icon {
+    background-position: -19px -399px;
+}
+
+.de-mathematics-interactive .camera-icon {
+    background-position: -327px -399px;
+}
+
+.de-mathematics-interactive .full-screen-icon {
+    background-position: -275px -417px;
+}
+
+.de-mathematics-interactive .help-icon {
+    background-position: -73px -399px
+}
+
+.de-mathematics-interactive .save-icon {
+    background-position: -127px -399px;
+}
+
+.de-mathematics-interactive .draggable-icon {
+    background-position: -258px -399px;
+}
+
+
+/*===================================================================*/
+
+
+/*======================= BUTTON TYPE CUSTOM =========================*/
+
+.de-mathematics-interactive .custom-button .custom-button-text {
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .custom-button-first-child {
+    width: 7px;
+    background-position: 0 0;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .custom-button-mid-child {
+    width: 100px;
+    background-position: 0 0;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .custom-button-third-child {
+    width: 7px;
+    background-position: 0 -44px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .custom-button-first-child.disabled,
+.de-mathematics-interactive .custom-button-first-child.selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .custom-button-mid-child.disabled,
+.de-mathematics-interactive .custom-button-mid-child.selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .custom-button-third-child.disabled,
+.de-mathematics-interactive .custom-button-third-child.selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .custom-button .custom-button-text.disabled,
+.de-mathematics-interactive .custom-button .custom-button-text.selected {
+    cursor: default;
+}
+
+
+/*====================================================================*/
+
+
+/*====================== BUTTON TYPE GENERAL =============================*/
+
+.de-mathematics-interactive .general-button div {
+    height: 32px;
+}
+
+.de-mathematics-interactive .general-button .general-button-text {
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px 1px #592992;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .general-button .general-button-text.disabled {
+    opacity: 0.56;
+    cursor: default;
+}
+
+.de-mathematics-interactive .general-button-first-child {
+    width: 7px;
+    background-position: -636px -692px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .general-button-mid-child {
+    width: 100px;
+    background-position: 0 -1200px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .general-button-third-child {
+    width: 7px;
+    background-position: -636px -734px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .general-button .general-button-first-child.hover {
+    background-position: -636px -776px;
+}
+
+.de-mathematics-interactive .general-button .general-button-mid-child.hover {
+    background-position: 0 -1242px;
+}
+
+.de-mathematics-interactive .general-button .general-button-third-child.hover {
+    background-position: -636px -818px;
+}
+
+.de-mathematics-interactive .general-button .general-button-first-child.down {
+    background-position: -636px -860px
+}
+
+.de-mathematics-interactive .general-button .general-button-mid-child.down {
+    background-position: 0 -1284px;
+}
+
+.de-mathematics-interactive .general-button .general-button-third-child.down {
+    background-position: -636px -902px;
+}
+
+.de-mathematics-interactive .general-button .general-button-first-child.selected {
+    cursor: default;
+    background-position: -636px -860px;
+}
+
+.de-mathematics-interactive .general-button .general-button-mid-child.selected {
+    cursor: default;
+    background-position: 0 -1284px;
+}
+
+.de-mathematics-interactive .general-button .general-button-third-child.selected {
+    cursor: default;
+    background-position: -636px -902px;
+}
+
+.de-mathematics-interactive .general-button .general-button-first-child.disabled {
+    background-position: -636px -944px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .general-button .general-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -1326px;
+}
+
+.de-mathematics-interactive .general-button .general-button-third-child.disabled {
+    cursor: default;
+    background-position: -636px -986px;
+}
+
+
+/*==============================================================================*/
+
+
+/*====================== BUTTON TYPE ACTION =============================*/
+
+.de-mathematics-interactive .action-button div {
+    height: 32px;
+}
+
+.de-mathematics-interactive .action-button .action-button-text {
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #591c9d;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .action-button .action-button-text.disabled {
+    opacity: 0.56;
+    cursor: default;
+}
+
+.de-mathematics-interactive .action-button .action-button-text.selected {
+    color: #ffffff;
+    cursor: default;
+}
+
+.de-mathematics-interactive .action-button-first-child {
+    width: 7px;
+    background-position: -209px -1001px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .action-button-mid-child {
+    width: 100px;
+    background-position: 0 0;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .action-button-third-child {
+    width: 7px;
+    background-position: -209px -1043px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .action-button .action-button-first-child.hover {
+    background-position: -209px -1085px;
+}
+
+.de-mathematics-interactive .action-button .action-button-mid-child.hover {
+    background-position: 0 -42px;
+}
+
+.de-mathematics-interactive .action-button .action-button-third-child.hover {
+    background-position: -209px -1127px;
+}
+
+.de-mathematics-interactive .action-button .action-button-first-child.down {
+    background-position: -209px -1169px;
+}
+
+.de-mathematics-interactive .action-button .action-button-mid-child.down {
+    background-position: 0 -84px;
+}
+
+.de-mathematics-interactive .action-button .action-button-third-child.down {
+    background-position: -209px -1211px;
+}
+
+.de-mathematics-interactive .action-button .action-button-first-child.disabled {
+    background-position: -209px -1253px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .action-button .action-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -126px;
+}
+
+.de-mathematics-interactive .action-button .action-button-third-child.disabled {
+    cursor: default;
+    background-position: -209px -1295px;
+}
+
+.de-mathematics-interactive .action-button .action-button-first-child.selected {
+    background-position: -209px -1337px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .action-button .action-button-mid-child.selected {
+    background-position: 0 -168px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .action-button .action-button-third-child.selected {
+    background-position: -209px -1379px;
+    cursor: default;
+}
+
+
+/*==============================================================================*/
+
+
+/*====================== BUTTON TYPE MULTIPLE TOGGLE BLACK =============================*/
+
+.de-mathematics-interactive .multi-toggle-black-button div {
+    height: 39px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-text {
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-text.down {
+    color: #222222;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-text.disabled {
+    color: #222222;
+    opacity: 0.56;
+    cursor: default;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-text.selected {
+    color: #222222;
+    cursor: default;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button-first-child {
+    width: 7px;
+    background-position: -9px -866px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button-mid-child {
+    width: 100px;
+    background-position: 0 -1556px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button-third-child {
+    width: 7px;
+    background-position: -9px -915px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-first-child.hover {
+    background-position: -9px -964px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-mid-child.hover {
+    background-position: 0 -1605px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-third-child.hover {
+    background-position: -9px -1013px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-first-child.down {
+    background-position: -9px -1062px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-mid-child.down {
+    background-position: 0 -1654px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-third-child.down {
+    background-position: -9px -1111px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-first-child.disabled {
+    background-position: -9px -1062px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -1654px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-third-child.disabled {
+    cursor: default;
+    background-position: -9px -1111px;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-first-child.selected {
+    background-position: -9px -1062px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-mid-child.selected {
+    background-position: 0 -1654px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .multi-toggle-black-button .multi-toggle-black-button-third-child.selected {
+    background-position: -9px -1111px;
+    cursor: default;
+}
+
+
+/*==============================================================================*/
+
+
+/*====================== BUTTON TYPE SAVE =============================*/
+
+.de-mathematics-interactive .save-button div {
+    height: 30px;
+}
+
+.de-mathematics-interactive .save-button .save-button-text {
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .save-button .save-button-text.disabled {
+    opacity: 0.56;
+    cursor: default;
+}
+
+.de-mathematics-interactive .save-button-first-child {
+    width: 8px;
+    background-position: -611px -494px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .save-button-mid-child {
+    background-position: 0 -3741px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .save-button-third-child {
+    width: 8px;
+    background-position: -611px -534px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .save-button .save-button-first-child.hover {
+    background-position: -611px -574px;
+}
+
+.de-mathematics-interactive .save-button .save-button-mid-child.hover {
+    background-position: 0 -3781px;
+}
+
+.de-mathematics-interactive .save-button .save-button-third-child.hover {
+    background-position: -611px -614px;
+}
+
+.de-mathematics-interactive .save-button .save-button-first-child.down {
+    background-position: -611px -654px;
+}
+
+.de-mathematics-interactive .save-button .save-button-mid-child.down {
+    background-position: 0 -3821px;
+}
+
+.de-mathematics-interactive .save-button .save-button-third-child.down {
+    background-position: -611px -694px;
+}
+
+.de-mathematics-interactive .save-button .save-button-first-child.disabled {
+    background-position: -611px -734px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .save-button .save-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -3861px;
+}
+
+.de-mathematics-interactive .save-button .save-button-third-child.disabled {
+    cursor: default;
+    background-position: -611px -774px;
+}
+
+
+/*==============================================================================*/
+
+
+/*====================== BUTTON TYPE DRAGGABLE BLUE SMALL=============================*/
+
+.de-mathematics-interactive .draggable-blue-small-button div {
+    height: 40px;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-text {
+    font-size: 16px;
+    font-family: Arial;
+    text-shadow: 1px 1px #006075;
+    font-weight: bold;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .button-icon.disabled {
+    opacity: 1;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-text.selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button-first-child {
+    width: 8px;
+    background-position: -391px -788px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button-mid-child {
+    width: 100px;
+    background-position: 0 -434px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button-third-child {
+    width: 8px;
+    background-position: -391px -828px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-first-child.hover {
+    background-position: -391px -868px;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-mid-child.hover {
+    background-position: 0 -474px;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-third-child.hover {
+    background-position: -391px -1008px;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-first-child.down {
+    background-position: -391px -868px;
+    /*background-position: 0 -224px;*/
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-mid-child.down {
+    background-position: 0 -474px;
+    /*background-position: 0 -112px;*/
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-third-child.down {
+    background-position: -391px -908px;
+    /*background-position: 0 -280px;*/
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-first-child.disabled {
+    background-position: -391px -948px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -514px;
+}
+
+.de-mathematics-interactive .draggable-blue-small-button .draggable-blue-small-button-third-child.disabled {
+    cursor: default;
+    background-position: -391px -988px;
+}
+
+
+/*==============================================================================*/
+
+
+/*====================== BUTTON TYPE DRAGGABLE BLUE =============================*/
+
+.de-mathematics-interactive .draggable-blue-button div {
+    height: 46px;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-text {
+    font-size: 16px;
+    font-family: Arial;
+    text-shadow: 1px 1px #006075;
+    font-weight: bold;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+}
+
+.de-mathematics-interactive .draggable-blue-button .button-icon.disabled {
+    opacity: 1;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-text.selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-blue-button-first-child {
+    width: 8px;
+    background-position: -198px -1001px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-blue-button-mid-child {
+    width: 100px;
+    background-position: 0 -210px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-blue-button-third-child {
+    width: 8px;
+    background-position: -198px -1057px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-first-child.hover {
+    background-position: -198px -1113px;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-mid-child.hover {
+    background-position: 0 -266px;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-third-child.hover {
+    background-position: -198px -1169px;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-first-child.down {
+    background-position: -198px -1113px;
+    ;
+    /*background-position: 0 -224px;*/
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-mid-child.down {
+    background-position: 0 -266px;
+    /*background-position: 0 -112px;*/
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-third-child.down {
+    background-position: -198px -1169px;
+    /*background-position: 0 -280px;*/
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-first-child.disabled {
+    background-position: -198px -1337px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -378px;
+}
+
+.de-mathematics-interactive .draggable-blue-button .draggable-blue-button-third-child.disabled {
+    cursor: default;
+    background-position: -198px -1393px;
+}
+
+
+/*==============================================================================*/
+
+
+/*====================== BUTTON TYPE DRAGGABLE GREEN =============================*/
+
+.de-mathematics-interactive .draggable-green-button div {
+    height: 46px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-text {
+    font-size: 16px;
+    font-family: Arial;
+    text-shadow: 1px 1px #006075;
+    font-weight: bold;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+}
+
+.de-mathematics-interactive .draggable-green-button .button-icon.disabled {
+    opacity: 1;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-text.selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-green-button-first-child {
+    width: 8px;
+    background-position: -187px -1010px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-green-button-mid-child {
+    width: 100px;
+    background-position: 0 -564px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-green-button-third-child {
+    width: 8px;
+    background-position: -187px -1066px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-first-child.hover {
+    background-position: -187px -1122px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-mid-child.hover {
+    background-position: 0 -620px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-third-child.hover {
+    background-position: -187px -1178px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-first-child.down {
+    background-position: -187px -2122px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-mid-child.down {
+    background-position: 0 -620px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-third-child.down {
+    background-position: -187px -1178px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-first-child.disabled {
+    background-position: -187px -4234px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -672px;
+}
+
+.de-mathematics-interactive .draggable-green-button .draggable-green-button-third-child.disabled {
+    cursor: default;
+    background-position: -187px -1290px;
+}
+
+
+/*==============================================================================*/
+
+
+/*====================== BUTTON TYPE DRAGGABLE RED =============================*/
+
+.de-mathematics-interactive .draggable-red-button div {
+    height: 46px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-text {
+    font-size: 16px;
+    font-family: Arial;
+    text-shadow: 1px 1px #006075;
+    font-weight: bold;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+}
+
+.de-mathematics-interactive .draggable-red-button .button-icon.disabled {
+    opacity: 1;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-text.selected {
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-red-button-first-child {
+    width: 8px;
+    background-position: -41px -1058px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-red-button-mid-child {
+    width: 100px;
+    background-position: 0 882px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-red-button-third-child {
+    width: 8px;
+    background-position: -41px -1114px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-first-child.hover {
+    background-position: -41px -1170px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-mid-child.hover {
+    background-position: 0 -938px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-third-child.hover {
+    background-position: -41px -1226px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-first-child.down {
+    background-position: -41px -1170px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-mid-child.down {
+    background-position: 0 -938px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-third-child.down {
+    background-position: -41px -1226px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-first-child.disabled {
+    background-position: -41px -1282px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-mid-child.disabled {
+    cursor: default;
+    background-position: 0 -994px;
+}
+
+.de-mathematics-interactive .draggable-red-button .draggable-red-button-third-child.disabled {
+    cursor: default;
+    background-position: -41px -1338px;
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE TTS_PLAY ===========================*/
+
+.de-mathematics-interactive .tts-play-button {
+    height: 30px;
+    width: 30px;
+    background-position: -17px -947px cursor: default;
+}
+
+.de-mathematics-interactive .tts-play-button-hover {
+    background-position: -17px -987px cursor: pointer;
+}
+
+.de-mathematics-interactive .tts-play-button-down {
+    background-position: -17px -1027px
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE TTS_SOUND ===========================*/
+
+.de-mathematics-interactive .tts-sound-button {
+    height: 30px;
+    width: 30px;
+    background-position: -89px -947px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .tts-sound-button-hover {
+    background-position: -89px -987px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .tts-sound-button-down {
+    background-position: -89px -1027px;
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE TTS_PAUSE ===========================*/
+
+.de-mathematics-interactive .tts-pause-button {
+    height: 30px;
+    width: 30px;
+    background-position: -691px -409px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .tts-pause-button-hover {
+    background-position: -691px -449px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .tts-pause-button-down {
+    background-position: -691px -489px;
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE HINT ===========================*/
+
+.de-mathematics-interactive .hint-button {
+    height: 34px;
+    width: 44px;
+    background-position: -230px -967px;
+}
+
+.de-mathematics-interactive .hint-button-hover {
+    background-position: -230px -1011px;
+}
+
+.de-mathematics-interactive .hint-button-down {
+    background-position: -230px -1055px;
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE HEADER===========================*/
+
+.de-mathematics-interactive .header-button {
+    height: 32px;
+    width: 42px;
+    background-position: -324px -897px;
+}
+
+.de-mathematics-interactive .header-button-hover {
+    background-position: -324px -939px;
+}
+
+.de-mathematics-interactive .header-button-down {
+    background-position: -324px -982px;
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE CLOSE_ORANGE===========================*/
+
+.de-mathematics-interactive .close-orange-button {
+    height: 30px;
+    width: 30px;
+    background-position: -604px -383px;
+}
+
+.de-mathematics-interactive .close-orange-button-hover {
+    background-position: -604px -423px;
+}
+
+.de-mathematics-interactive .close-orange-button-down {
+    background-position: -604px -463px;
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE CLOSE_ORANGE_CROSS===========================*/
+
+.de-mathematics-interactive .close-orange-cross-button {
+    height: 17px;
+    width: 17px;
+    background-position: -635px -383px;
+}
+
+.de-mathematics-interactive .close-orange-cross-button-hover {
+    background-position: -635px -410px;
+}
+
+.de-mathematics-interactive .close-orange-cross-button-down {
+    background-position: -635px -437px;
+}
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE CLOSE_PURPLE_CROSS===========================*/
+
+.de-mathematics-interactive .close-purple-cross-button {
+    height: 17px;
+    width: 17px;
+    background-position: -219px -1090px;
+}
+
+.de-mathematics-interactive .close-purple-cross-button-hover {
+    background-position: -219px -1117px;
+}
+
+.de-mathematics-interactive .close-purple-cross-button-down {
+    background-position: -219px -1144px;
+}
+
+
+/*==============================================================================*/
+
+
+/******************************* TRASH CAN STATES **********************************/
+
+.de-mathematics-interactive .delete-bin-active {
+    background-position: 0 -59px;
+}
+
+.de-mathematics-interactive .delete-bin-hover {
+    background-position: 0 -118px;
+}
+
+.de-mathematics-interactive .delete-bin-disabled {
+    background-position: 0 -118px;
+}
+
+
+/*********************************************************************************/
+
+
+/*============================ BUTTON TYPE ON ===========================*/
+
+.de-mathematics-interactive .on-button div {
+    height: 30px;
+}
+
+.de-mathematics-interactive .on-button .on-button-text {
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+}
+
+.de-mathematics-interactive .on-button-first-child {
+    width: 8px;
+    background-position: -602px -494px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .on-button-mid-child {
+    width: 29px !important;
+    background-position: 0 -1823px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .on-button-third-child {
+    width: 8px;
+    background-position: -602px -534px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .on-button .on-button-first-child.hover {
+    background-position: -602px -574px;
+}
+
+.de-mathematics-interactive .on-button .on-button-mid-child.hover {
+    background-position: 0 -1863px;
+}
+
+.de-mathematics-interactive .on-button .on-button-third-child.hover {
+    background-position: -602px -614px;
+}
+
+.de-mathematics-interactive .on-button .on-button-first-child.down,
+.de-mathematics-interactive .on-button .on-button-first-child.selected {
+    background-position: -602px -654px;
+}
+
+.de-mathematics-interactive .on-button .on-button-mid-child.down,
+.de-mathematics-interactive .on-button .on-button-mid-child.selected {
+    background-position: 0 -1903px;
+}
+
+.de-mathematics-interactive .on-button .on-button-third-child.down,
+.de-mathematics-interactive .on-button .on-button-third-child.selected {
+    background-position: -602px -694px;
+}
+
+
+/*.de-mathematics-interactive .on-button {
+    height: 30px;
+    width: 45px;
+    background-position: 0 0;
+}
+
+.de-mathematics-interactive .on-button-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.de-mathematics-interactive .on-button-hover {
+    background-position: 0 -40px;
+}
+
+.de-mathematics-interactive .on-button-down {
+    background-position: 0 -80px;
+}*/
+
+
+/*==============================================================================*/
+
+
+/*============================ BUTTON TYPE OFF ===========================*/
+
+.de-mathematics-interactive .off-button > div {
+    height: 30px;
+}
+
+.de-mathematics-interactive .off-button .off-button-text {
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #ffffff;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+}
+
+.de-mathematics-interactive .off-button-first-child {
+    width: 8px;
+    background-position: -682px -409px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .off-button-mid-child {
+    width: 29px !important;
+    background-position: 0 -1703px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .off-button-third-child {
+    width: 8px;
+    background-position: -682px -449px;
+    float: left;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .off-button .off-button-first-child.hover {
+    background-position: -682px -489px;
+}
+
+.de-mathematics-interactive .off-button .off-button-mid-child.hover {
+    background-position: 0 -1743px;
+}
+
+.de-mathematics-interactive .off-button .off-button-third-child.hover {
+    background-position: -682px -529px;
+}
+
+.de-mathematics-interactive .off-button .off-button-first-child.down,
+.de-mathematics-interactive .off-button .off-button-first-child.selected {
+    background-position: -682px -569px;
+}
+
+.de-mathematics-interactive .off-button .off-button-mid-child.down,
+.de-mathematics-interactive .off-button .off-button-mid-child.selected {
+    background-position: 0 -1783px;
+}
+
+.de-mathematics-interactive .off-button .off-button-third-child.down,
+.de-mathematics-interactive .off-button .off-button-third-child.selected {
+    background-position: -682px -609px;
+}
+
+
+/*.de-mathematics-interactive .off-button {
+    height: 30px;
+    width: 45px;
+    background-position: 0 0;
+}
+
+.de-mathematics-interactive .off-button-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.de-mathematics-interactive .off-button-hover {
+    background-position: 0 -40px;
+}
+
+.de-mathematics-interactive .off-button-down {
+    background-position: 0 -80px;
+}
+/*==============================================================================*/
+
+
+/* =============================================== END OF BUTTON.CSS =============================================== */
+
+
+/* legend button css */
+
+.de-mathematics-interactive .legendButton {
+    height: 33px;
+    float: left;
+}
+
+.de-mathematics-interactive .legendButtonHolder {
+    height: 33px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.de-mathematics-interactive .legendButtonText {
+    height: 33px;
+    float: left;
+    margin-left: 10px;
+    color: #222;
+    line-height: 33px;
+}
+
+
+/*------------------------------------------------------------ CUSTOM COMBO-BOX -------------------------------------------------------------*/
+
+
+/*********************************** Color and UI styling for combo *************************************/
+
+
+/*.de-mathematics-interactive .custom-drop-down {
+    background: url('../../../../../img/techbook2/tools/lang/en/tools/unit-converter/arrow-up-down.png') no-repeat right #F5F5F5;
+    margin: 0;
+    color: #393939;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: helvetica;
+    border: 1px solid #8D8D8D;
+    border-radius: 6px;
+    overflow: hidden;
+    background-image: linear-gradient(bottom, rgb(247,247,247) 67%, rgb(227,227,227) 38%, rgb(245,245,245) 91%);
+    background-image: -o-linear-gradient(bottom, rgb(247,247,247) 67%, rgb(227,227,227) 38%, rgb(245,245,245) 91%);
+    background-image: -moz-linear-gradient(center bottom, #D6D6D6 21%, #F0F0F0 61%, #F5F5F5 81%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,247,247) 67%, rgb(227,227,227) 38%, rgb(245,245,245) 91%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.67, rgb(247,247,247)), color-stop(0.38, rgb(227,227,227)), color-stop(0.91, rgb(245,245,245)) );
+    background-image: -ms-linear-gradient(bottom, rgb(247, 247, 247) 0%, rgb(227, 227, 227) 41%, rgb(245, 245, 245) 91%);
+    border: 1px solid #2A2A2A;
+}*/
+
+
+/*
+.de-mathematics-interactive .custom-drop-down-hover {
+    border: 1px solid #A8A8A8;
+    background-color: #F8F8F8;
+}
+*/
+
+.de-mathematics-interactive .customCombo {
+    /*     color: #231f20;     font-size: 14px;     height: 20px !important;     z-index: 0;     */
+    height: 32px;
+    border: 1px solid #000000;
+    background-position: -637px -531px;
+}
+
+.de-mathematics-interactive .customComboDefaultText {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    /*width: 90%;*/
+    line-height: 32px;
+    /*padding-left: 8px;*/
+    vertical-align: middle;
+    text-align: center;
+    color: #222;
+}
+
+.de-mathematics-interactive .customComboHolder {
+    color: #222;
+    cursor: default;
+    /*border: 2px inset #EBE9ED;*/
+    /*     border-style: solid;     border-width: 1px;     border-color: #cccccc;     background-color: #ffffff;     */
+    padding-top: 1px;
+    padding-bottom: 1px;
+    /*height: 40px;*/
+    overflow: hidden;
+    /*text-shadow: 1px 1px 1px #CCC;*/
+}
+
+.de-mathematics-interactive .customComboHolderDisabled {
+    background-color: #D4D0C8;
+    cursor: default;
+    color: #b9b9b9;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.de-mathematics-interactive .customComboDisabled {
+    background-color: #D4D0C8;
+    cursor: default;
+    color: #b9b9b9;
+}
+
+.de-mathematics-interactive .customComboItemDisabled {
+    background-color: #D4D0C8;
+    color: #b9b9b9;
+}
+
+.de-mathematics-interactive .customComboItem {
+    color: #222;
+    cursor: default;
+    /*padding: 2px;*/
+    /*padding-left: 2px;*/
+    background-color: transparent;
+    height: 25px;
+    line-height: 25px;
+    /* Change line-height constant in javascript if u change it here */
+    overflow: hidden;
+    word-break: break-all;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    /*padding-right: 15px;*/
+}
+
+.de-mathematics-interactive .customComboSelectedItem {
+    text-align: center;
+    /*margin-top: 8px;*/
+    vertical-align: middle;
+    height: 100%;
+    /*padding-left: 8px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.de-mathematics-interactive .customComboDropDown sup,
+.de-mathematics-interactive .customComboDropDown sub,
+.de-mathematics-interactive .customComboSelectedItem sup,
+.de-mathematics-interactive .customComboSelectedItem sub {
+    vertical-align: 0;
+    position: relative;
+    font-size: 9px;
+}
+
+.de-mathematics-interactive .customComboDropDown sup,
+.de-mathematics-interactive .customComboSelectedItem sup {
+    bottom: 5px;
+}
+
+.de-mathematics-interactive .customComboDropDown sub,
+.de-mathematics-interactive .customComboSelectedItem sub {
+    top: 3px;
+}
+
+.de-mathematics-interactive .customComboButton {
+    width: 17px;
+    /*height: 35px;*/
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+}
+
+.de-mathematics-interactive.math-utilities-manager .customComboButtonImage {
+    background-repeat: no-repeat!important;
+    background-position: -637px -531px
+}
+
+.de-mathematics-interactive.math-utilities-manager .customComboButtonImageHover {
+    background-position: -637px -573px
+}
+
+.de-mathematics-interactive.math-utilities-manager .customComboButtonImageActive {
+    background-position: -637px -616px
+}
+
+.de-mathematics-interactive.math-utilities-manager .customComboButtonImageDisabled {
+    background-position: -637px -158px
+}
+
+
+/*
+.de-mathematics-interactive .customComboButtonImage_Hover {
+    background-position: 0 -64px;
+}
+
+.de-mathematics-interactive .customComboButtonImage_Active {
+    background-position: 0 -32px;
+}
+
+.de-mathematics-interactive .customComboButtonImage_Disabled {
+    background-position: 0 0;
+    cursor: default !important;
+}
+*/
+
+.de-mathematics-interactive .customComboGroup {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.de-mathematics-interactive .customComboDropDown {
+    /*  line-height:15px; */
+    position: absolute;
+    z-index: 10000;
+    margin-top: 5px;
+    border-style: solid;
+    /*border-radius: 5px;*/
+    border-color: #000000;
+    border-width: 1px;
+    background-color: #ffffff;
+    height: 250px;
+    overflow-y: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*box-shadow: 2px 2px 3px 0 #666666;       -moz-box-shadow: 2px 2px 3px 0 #666666;       -webkit-box-shadow: 2px 2px 3px 0 #666666;*/
+}
+
+.de-mathematics-interactive .customComboItemSelected {
+    background-color: highlight;
+    color: #ffffff;
+}
+
+.combo-hint {
+    background-color: #ffffff;
+    color: #808080;
+    position: absolute;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 2px;
+    padding: 4px;
+    font-size: 12px;
+    z-index: 10001;
+    display: none;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/********************* Classes For Spin Box *****************************/
+
+.de-mathematics-interactive .spinBox {
+    position: relative;
+    border: 1px solid #96BCD8;
+    /*     height: 21px;     width: 35px; */
+}
+
+.de-mathematics-interactive .spin-box-container {
+    position: relative;
+    border: 1px solid #96BCD8;
+    margin: 10px;
+}
+
+.de-mathematics-interactive .spinBox.Disabled {
+    border: 1px solid #808080;
+    color: #808080;
+}
+
+.de-mathematics-interactive .spinbox.top-aligned {
+    display: table;
+}
+
+.de-mathematics-interactive .spin-textbox {
+    position: relative;
+    float: left;
+    height: inherit;
+    min-height: 23px;
+    text-align: center;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 3px 0;
+    width: 40px;
+    border: 1px solid;
+    margin-left: 11px;
+    color: #000000;
+}
+
+.de-mathematics-interactive .spin-textbox.editable-textbox {
+    height: 32px;
+    width: 72px;
+    padding: 0;
+    border: none;
+    cursor: text;
+    margin-left: 12px;
+}
+
+.de-mathematics-interactive .spin-textbox.top-aligned {
+    width: 67px;
+    text-align: left;
+    float: none;
+    margin-left: 10px;
+}
+
+.de-mathematics-interactive .spin-textbox .spinner-input-box {
+    position: absolute;
+    width: 72px;
+    z-index: 5;
+}
+
+.de-mathematics-interactive .spinbox.top-aligned .spin-textbox .spinner-input-box {
+    width: 65px;
+}
+
+.de-mathematics-interactive .spin-textbox.center-aligned .spinner-input-box {
+    left: -1px;
+}
+
+.de-mathematics-interactive .spin-textbox.left-aligned .spinner-input-box {
+    left: -1px;
+}
+
+.de-mathematics-interactive .spin-up-arrow {
+    position: relative;
+    top: 0;
+    float: left;
+    background-position: 0 0;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.de-mathematics-interactive .spinbox.top-aligned .spin-up-arrow {
+    margin-left: 3px;
+}
+
+.de-mathematics-interactive .spin-up-arrow.editable-textbox.center-aligned {
+    margin-left: 11px;
+}
+
+.de-mathematics-interactive .spin-up-arrow.editable-textbox.left-aligned {
+    margin-left: 6px;
+}
+
+.de-mathematics-interactive .spin-up-arrow.left-aligned {
+    margin-left: 5px;
+}
+
+.de-mathematics-interactive .spin-down-arrow.left-aligned {
+    margin-left: 4px;
+}
+
+.de-mathematics-interactive .spin-up-arrow_Active {
+    background-position: 0 -140px;
+}
+
+.de-mathematics-interactive .spin-up-arrow_Hover {
+    background-position: 0 -70px;
+}
+
+.de-mathematics-interactive .spin-up-arrow_Disabled {
+    background-position: 0 -210px;
+}
+
+.de-mathematics-interactive .spin-down-arrow {
+    position: relative;
+    left: 1px;
+    float: left;
+    background-position: 0 -280px;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .spin-up-arrow.top-aligned,
+.de-mathematics-interactive .spin-down-arrow.top-aligned {
+    top: 5px;
+    left: 10px;
+}
+
+.de-mathematics-interactive .spin-down-arrow_Active {
+    background-position: 0 -420px;
+}
+
+.de-mathematics-interactive .spin-down-arrow_Hover {
+    background-position: 0 -350px;
+}
+
+.de-mathematics-interactive .spin-down-arrow_Disabled {
+    background-position: 0 -490px;
+}
+
+.de-mathematics-interactive .spin-down-arrow.arrowdisabled {
+    background-position: 0 -490px;
+}
+
+.de-mathematics-interactive .spin-up-arrow.arrowdisabled {
+    background-position: 0 -210px;
+}
+
+.de-mathematics-interactive .disabled-spin-box {
+    color: #808080;
+}
+
+.de-mathematics-interactive .spinner-minus-btn {
+    background-position: -184px -576px;
+    height: 20px !important;
+    width: 20px !important;
+    margin-left: 10px !important;
+}
+
+.de-mathematics-interactive .spinner-plus-btn {
+    background-position: -153px -575px;
+    height: 20px !important;
+    width: 20px !important;
+    margin-left: 10px !important;
+}
+
+
+/********************** ClasseS For Spin Box Ends Here ************************/
+
+
+/***************** Number Line *****************/
+
+.de-mathematics-interactive .graph-pane {
+    position: relative;
+}
+
+.de-mathematics-interactive .point-container {
+    float: left;
+    margin-right: 9px;
+    margin-left: 9px;
+    width: 15px;
+    height: auto;
+}
+
+.de-mathematics-interactive .point-box {
+    width: 14px;
+    height: 11px;
+    text-align: center;
+    color: #757575;
+    margin-bottom: 2px;
+}
+
+.de-mathematics-interactive .point-number {
+    width: 26px;
+    height: 17px;
+    text-align: center;
+    margin-left: -12px;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #757575;
+}
+
+.de-mathematics-interactive .graph-pane-middle-line {
+    width: 630px;
+    height: 15px;
+    position: relative;
+    /* left: 21px; */
+    border-bottom: 3px solid #757575;
+    margin-top: -9px;
+    float: left;
+    margin-left: -10px;
+}
+
+.de-mathematics-interactive .graph-pane-slider-box {
+    height: 13px;
+    position: absolute;
+    width: 800px;
+}
+
+.de-mathematics-interactive .graph-pane-slider {
+    height: 13px;
+    position: absolute;
+    margin-top: 3px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.de-mathematics-interactive .graph-pane-left-arrow {
+    background-position: -622px -666px;
+    width: 13px;
+    height: 14px;
+    position: relative;
+    margin-top: 0;
+    -webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    float: left;
+}
+
+.de-mathematics-interactive .graph-pane-right-arrow-container,
+.de-mathematics-interactive .graph-pane-left-arrow-container {
+    position: relative;
+    float: left;
+    width: 13px;
+    height: 14px;
+}
+
+.de-mathematics-interactive .graph-pane-right-arrow-container {
+    margin-left: -10px;
+}
+
+.de-mathematics-interactive .graph-pane-right-arrow {
+    background-position: -622px -666px;
+    width: 13px;
+    height: 14px;
+    position: absolute;
+    margin-top: 0;
+}
+
+.de-mathematics-interactive .graph-pane-right-arrow-line,
+.de-mathematics-interactive .graph-pane-left-arrow-line {
+    height: 15px;
+    position: absolute;
+    border-bottom: 3px solid #757575;
+    margin-top: -9px;
+}
+
+.de-mathematics-interactive .graph-pane-middle-graph-points {
+    position: absolute;
+    /* left: 21px; */
+    margin-top: 2px;
+    margin-left: -10px;
+    width: 100%;
+}
+
+.de-mathematics-interactive .graph-pane-divider-tick {
+    width: 3px;
+    height: 100%;
+    /* margin-left: 6px;*/
+    background-color: #757575;
+}
+
+.de-mathematics-interactive .line-container .number-line-hit-area {
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    top: 0;
+    left: 32px;
+    background-position: 4px -18px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .line-container .number-line-hit-area-hover {
+    background-position: 4px 0;
+}
+
+.de-mathematics-interactive .line-container .number-line-hit-area-selected,
+.de-mathematics-interactive .line-container .number-line-hit-area-down {
+    background-position: 4px -65px;
+}
+
+.de-mathematics-interactive .line-container .number-line-hit-area-disabled {
+    background-position: 4px -18px;
+}
+
+
+/***************** Number Line Ends Here *****************/
+
+
+/***************** Drag Drop for Advance Number Line  *****************/
+
+.de-mathematics-interactive .drag-drop-dotted-box {
+    position: absolute;
+    left: 332px;
+    top: 170px;
+    border: 2px dashed #7E7B84;
+    width: 257px;
+    height: 54px;
+    border-radius: 4px;
+}
+
+
+/*************Drag Items****/
+
+.de-mathematics-interactive .drag-drop-filled-dot {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    left: 350px;
+    top: 180px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .helper-image {
+    height: 9px;
+    width: 18px;
+    margin-top: 17px;
+    margin-left: -2px;
+    position: absolute;
+}
+
+.de-mathematics-interactive .drag-drop-unfilled-dot {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    left: 410px;
+    top: 180px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .drag-drop-left-indicator {
+    left: 475px;
+    top: 180px;
+    position: absolute;
+    width: 45px;
+    height: 13px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .drag-drop-right-indicator {
+    left: 538px;
+    top: 180px;
+    position: absolute;
+    width: 45px;
+    height: 13px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .drag-arrow-width {
+    height: 13px;
+    width: 27px;
+    margin-top: 2px;
+    background-repeat: repeat-x;
+    float: left;
+}
+
+.de-mathematics-interactive .drag-drop-helper-filled {
+    margin-top: 24px;
+    margin-left: 5px;
+}
+
+.de-mathematics-interactive .drag-drop-helper-unfilled {
+    margin-top: 24px;
+    margin-left: 5px;
+}
+
+.de-mathematics-interactive .drag-drop-helper-left {
+    margin-top: 19px;
+    margin-left: 14px;
+}
+
+.de-mathematics-interactive .drag-drop-helper-right {
+    margin-top: 19px;
+    margin-left: 10px;
+}
+
+
+/*.de-mathematics-interactive .drag-drop-right-indicator .drag-arrow-width {
+    margin-left: 5px;
+}
+
+.de-mathematics-interactive .drag-drop-left-indicator .drag-arrow-width {
+    margin-right: 5px;
+}*/
+
+.de-mathematics-interactive .drag-arrow-image {
+    float: left;
+    width: 13px;
+    height: 17px;
+}
+
+.de-mathematics-interactive .graph-droppable {
+    top: 265px;
+    left: 130px;
+    height: 30px;
+    position: absolute;
+    width: 680px;
+}
+
+.de-mathematics-interactive .drag-drop-check-button {
+    position: absolute;
+    top: 335px;
+    left: 420px;
+    display: none;
+}
+
+.de-mathematics-interactive .graph-pane .hack-div-slot {
+    position: absolute;
+    height: 16px;
+    width: 12px;
+    float: left;
+}
+
+
+/*****************   Drag Drop for Advance Number Line Ends Here *****************/
+
+
+/*****************   Drag Drop Pan Balance ******/
+
+.de-mathematics-interactive .drag-drop-dotted-box-pan {
+    position: absolute;
+    left: 370px;
+    top: 80px;
+    border: 2px dashed #7E7B84;
+    width: 125px;
+    height: 55px;
+    border-radius: 4px;
+}
+
+.de-mathematics-interactive .drag-drop-dot {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    left: 413px;
+    top: 180px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .drag-drop-indicator {
+    left: 391px;
+    top: 92px;
+    position: absolute;
+    width: 87px;
+    height: 17px;
+    margin-top: 4px;
+    cursor: pointer;
+    -webkit-transform-origin: 50% 65%;
+    -moz-transform-origin: 50% 65%;
+    -ms-transform-origin: 50% 65%;
+    -o-transform-origin: 50% 65%;
+    transform-origin: 50% 65%;
+}
+
+.de-mathematics-interactive .drag-drop-helper-dot {
+    margin-top: 24px;
+    margin-left: 5px;
+}
+
+.de-mathematics-interactive .drag-drop-helper-arrow {
+    background-position: -2px -1223px;
+    margin-top: 19px;
+    margin-left: 35px;
+}
+
+.de-mathematics-interactive .drag-left-arrow-image,
+.de-mathematics-interactive .drag-right-arrow-image {
+    float: left;
+    width: 13px;
+    height: 17px;
+    background-position: -439px -750px;
+}
+
+.de-mathematics-interactive .drag-left-arrow-image {
+    background-position: -666px -421px;
+    /*-webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);*/
+}
+
+.de-mathematics-interactive .drag-drop-indicator .drag-arrow-width {
+    height: 13px;
+    width: 60px;
+    margin-top: 2px;
+    background-repeat: repeat-x;
+    float: left;
+}
+
+
+/*******************************/
+
+
+/*********************************Table Css************************************/
+
+#techbook .de-mathematics-interactive table tr td,
+.de-mathematics-interactive table tr td {
+    text-align: center;
+}
+
+.de-mathematics-interactive table.tbl {
+    width: 100%;
+    margin: 0;
+    /*border-collapse: collapse;*/
+    /*Commented to give curved borders to table header*/
+    border-spacing: 0 !important;
+    border: 1px solid #807a88 !important;
+    display: table;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    border-radius: 0 !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    color: #222;
+}
+
+.de-mathematics-interactive .tableMask {
+    position: absolute;
+    top: 0;
+}
+
+.de-mathematics-interactive table.header-table {
+    border-width: 0 1px 1px 0 !important;
+}
+
+.de-mathematics-interactive table.body-table {
+    border-width: 0 1px 0 0 !important;
+}
+
+.de-mathematics-interactive .tbl tr {
+    min-height: 33px;
+    height: 33px;
+}
+
+.de-mathematics-interactive .tbl th,
+.de-mathematics-interactive .tbl td {
+    border: 1px solid #807a88 !important;
+    border-width: 1px 0 0 1px !important;
+    vertical-align: middle;
+}
+
+
+/*table.tbl {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+}*/
+
+
+/* Removed repeated styling. */
+
+.de-mathematics-interactive .tbl-header,
+.de-mathematics-interactive .tbl-sub-header,
+.de-mathematics-interactive .tbl-section-header {
+    background-color: #C6B5E1/*#A66BD3*/
+    /*#f1e9f9*/
+    ;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    line-height: 18px;
+    padding: 5px;
+    /*min-width: 98px;     max-width: 98px;     width: 98px;*/
+    vertical-align: bottom;
+}
+
+.de-mathematics-interactive .header-table-holder .disabled th {
+    color: #807a88 !important;
+}
+
+.de-mathematics-interactive .tbl-sub-header {
+    background-color: #f1e9f9;
+}
+
+.de-mathematics-interactive .tbl-section-header {
+    background-color: #f1e9e9;
+}
+
+.de-mathematics-interactive .tbl-cell {
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    color: #222;
+    text-align: center !important; // to override de.bootstrap.css table test alignment.
+    line-height: 18px;
+    /*padding: 5px;*/
+    /*padding-top:3px;     padding-bottom:3px;*/
+}
+
+.de-mathematics-interactive .tbl tbody {
+    /*max-height: 150px;*/
+    overflow-y: auto;
+}
+
+.de-mathematics-interactive .header-table-holder,
+.de-mathematics-interactive .body-table-holder {
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 0;
+    position: relative;
+    z-index: 1
+}
+
+.de-mathematics-interactive .body-table-holder {
+    /*max-height: 300px;*/
+    /*border-bottom: 1px solid #aaa !important;*/
+}
+
+.de-mathematics-interactive .header-table-holder tr:first-child th:first-child {
+    border-top-left-radius: 4px !important;
+}
+
+.de-mathematics-interactive .header-table-holder tr:first-child th:last-child {
+    border-top-right-radius: 4px !important;
+}
+
+.de-mathematics-interactive .currentRowColor {
+    background-color: #FFF4BB;
+}
+
+.de-mathematics-interactive .oldRowColor {
+    background-color: #FFFFFF;
+}
+
+.de-mathematics-interactive .blinkRowColor {
+    background-color: #FF0000;
+}
+
+.de-mathematics-interactive .table-bottom-border {
+    border-bottom: 1px solid #807a88 !important;
+}
+
+.de-mathematics-interactive .hide-autofill-data {
+    display: none;
+}
+
+.de-mathematics-interactive .table-column-disabled {
+    background-color: #C0C0C0;
+}
+
+.de-mathematics-interactive .complete-table-holder.on-focus-in {
+    border: 2px dotted #000000;
+    margin: -2px 0 -2px -2px;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .comparison-result {
+    float: right;
+    width: 25px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.de-mathematics-interactive .comparison-result.comparison-correct {
+    background-position: 0 0;
+}
+
+.de-mathematics-interactive .comparison-result.comparison-incorrect {
+    background-position: 0 -26px;
+}
+
+
+/********************************************** END OF Table Css ***********************************************/
+
+
+/*------------------------------- Definition Box ------------------------------*/
+
+.de-mathematics-interactive .hint-box-outer-container {
+    /*width: 440px;*/
+}
+
+.de-mathematics-interactive .hint-box-header-buttons {
+    position: absolute;
+    width: 138px;
+    top: 4px;
+}
+
+.de-mathematics-interactive .hint-box-container {
+    position: absolute;
+    background-color: rgba(76, 23, 135, 0.68);
+    width: 440px;
+    /*height: 132px;*/
+    border-radius: 4px;
+    z-index: 999;
+    padding-bottom: 58px;
+    box-shadow: 2px 2px 10px #000;
+}
+
+.de-mathematics-interactive .hint-box-header {
+    position: absolute;
+    /*width: 440px;*/
+}
+
+.de-mathematics-interactive .hint-box-title {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    /*width: 250px;*/
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.de-mathematics-interactive .hint-box-tts-container {
+    /*position: absolute;*/
+    position: relative;
+    display: inline-block;
+    left: 16px;
+    top: 2px;
+    /*left: 215px;     top: 4px;*/
+}
+
+.de-mathematics-interactive .hint-box-close-button {
+    height: 25px;
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 4px;
+    left: 16px;
+    /*position: absolute;*/
+    /*top: 4px;*/
+    /*left: 341px;     cursor: pointer;*/
+    /*background-image: url('../media/image/player/close-btn.png');*/
+}
+
+.de-mathematics-interactive .hint-box-close-button .custom-button-text {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 11px;
+}
+
+.de-mathematics-interactive .hint-box-outer-container .text {
+    margin-left: 9px;
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+}
+
+.de-mathematics-interactive .hint-box-close-button-hover {
+    background-position: 0 -35px;
+}
+
+.hint-box-close-button-down {
+    background-position: 0 -70px;
+}
+
+.de-mathematics-interactive .hint-box-text-container {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 4px;
+    top: 44px;
+    left: 15px;
+    width: 416px;
+}
+
+.de-mathematics-interactive .hint-box-content {
+    padding: 10px;
+    color: #000000;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+
+/*------------------------------- End of Definition Box ------------------------------*/
+
+
+/* ======================================================= POP UP ================================================== */
+
+
+/*------------------------------- Pop Up -Header ------------------------------*/
+
+.de-mathematics-interactive .pop-up-title-bar {
+    height: 35px;
+}
+
+.de-mathematics-interactive .pop-up-title-bar-left {
+    height: 35px;
+    width: 3px;
+    display: inline-block;
+    float: left;
+    background-position: -768px -102px;
+}
+
+.de-mathematics-interactive .pop-up-title-bar-mid {
+    height: 35px;
+    display: inline-block;
+    float: left;
+    background-position: 0 -2915px;
+}
+
+.de-mathematics-interactive .pop-up-title-bar-right {
+    height: 35px;
+    width: 3px;
+    display: inline-block;
+    float: left;
+    background-position: -767px -147px;
+}
+
+.de-mathematics-interactive .pop-up-title {
+    height: 35px;
+    float: left;
+    display: inline-block;
+}
+
+.de-mathematics-interactive .pop-up-header-btns-cont {
+    float: right;
+    display: inline-block;
+    height: 35px;
+}
+
+.de-mathematics-interactive .pop-up-title-image {
+    display: inline-block;
+    background-position: -19px -399px;
+    float: left;
+}
+
+.de-mathematics-interactive .alert-symbol {
+    background-position: -349px -441px;
+    margin-left: 4px;
+}
+
+.de-mathematics-interactive .pop-up-title-text {
+    display: inline-block;
+    height: 35px;
+    color: #FFFFFF;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+.de-mathematics-interactive .pop-up-tts-container {
+    display: inline-block;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    height: 35px;
+    width: 35px;
+    /*left: 157px;     top: 7px;     position: relative;     width: 44px;     height: 39px;*/
+}
+
+.de-mathematics-interactive .pop-up-close-btn {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    /*position: absolute;*/
+    /*margin-top: -31px;     margin-left: 206px;*/
+    cursor: pointer;
+    /*background-image: url('../media/image/player/close-btn.png');*/
+}
+
+
+/*------------------------------- Pop Up ------------------------------*/
+
+.de-mathematics-interactive .pop-up-modal {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 930px;
+    height: 490px;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1500;
+    font-size: 13px;
+}
+
+.de-mathematics-interactive .pop-up-dialogue {
+    /*height: 158px;*/
+    width: 425px;
+    z-index: 100;
+    background-color: #fff;
+    /*position: absolute;*/
+    margin: auto;
+    margin-top: 172px;
+    border-radius: 4px;
+}
+
+.de-mathematics-interactive .pop-up-body {
+    padding: 20px;
+}
+
+.de-mathematics-interactive .pop-up-text-ie9-focusout-fix {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+.de-mathematics-interactive .pop-up-text {
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.de-mathematics-interactive .pop-up-btns-container {
+    text-align: center;
+    overflow: visible;
+}
+
+.de-mathematics-interactive .pop-up-bottom-btn {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 5px;
+}
+
+
+/* ================================================ END OF POP UP ================================================== */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - SCORE METER - - - - - - - - - - - - - - - - - - - - - */
+
+.de-mathematics-interactive .score-meter {
+    width: 200px;
+    height: 10px;
+    position: relative;
+}
+
+.de-mathematics-interactive .score-meter-base {
+    background-color: #ff0000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.de-mathematics-interactive .score-meter-value {
+    background-color: #ffffff;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.de-mathematics-interactive .score-meter-grids-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.de-mathematics-interactive .score-box {
+    height: 100%;
+    position: relative;
+    float: left;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #909090;
+    margin-top: -1px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - END OF SCORE METER - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* ------------------------------------ TTS.CSS ------------------------------------ */
+
+
+/*.de-mathematics-interactive .tts {
+    position: relative;
+    width: 28px;
+    height: 26px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    top: 6px;
+    margin: auto;
+}
+
+.de-mathematics-interactive .pause-tts {
+    position: relative;
+    width: 28px;
+    height: 26px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin: auto;
+    top: 12px;
+    left: 9px;
+}*/
+
+.de-mathematics-interactive .tts-container {
+    /*cursor: pointer;     width: 44px;     height: 38px;     background-position: 0 0;*/
+    position: relative;
+    /*absolute;*/
+}
+
+.de-mathematics-interactive .pause-tts-container {
+    /*cursor: pointer;     width: 44px;     height: 38px;*/
+    position: absolute;
+    display: none;
+}
+
+
+/*.de-mathematics-interactive .hover {
+    background-position: 0 -41px;
+}
+
+.de-mathematics-interactive .down {
+    background-position: 0 -82px;
+}*/
+
+
+/* ---------------------------------- END OF TTS.CSS ------------------------------- */
+
+
+/* - - - - - - - - - - - - - - - - - - CSS FOR INTRO BOX - - - - - - - - - - - - - - - - - - - - - - */
+
+.de-mathematics-interactive .intro-box {
+    background: #e8dcfa;
+    box-shadow: inset 10px 10px 25px rgba(89, 42, 146, 0.3);
+    padding: 20px 30px;
+    /*padding: 15px 20px 30px;*/
+}
+
+.de-mathematics-interactive .intro-box-header {
+    /*position: relative;     top: 20px;*/
+    height: 20px;
+    width: 864px;
+    margin: 0 auto;
+    line-height: 14px;
+}
+
+.de-mathematics-interactive .intro-box-text {
+    color: #000000;
+    width: 800px;
+    margin-top: 10px;
+    width: 864px;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+
+.de-mathematics-interactive .intro-btns-container {
+    float: right;
+}
+
+.de-mathematics-interactive .intro-box-tts-container {
+    position: relative;
+    left: 854px;
+    bottom: 29px;
+}
+
+.de-mathematics-interactive .intro-box .intro-box-tts-container {
+    position: relative;
+    left: 837px;
+    bottom: 22px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - END OF INTRO BOX - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - -CSS FOR PAN BALANCE - - - - - - - - - - - - - - - - - - - - - - */
+
+.de-mathematics-interactive .pan-balance-wrapper-main {
+    position: relative;
+    top: 0;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .left-pan-wrapper {
+    left: -9px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .right-pan-wrapper {
+    left: 576px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .pan-wrapper {
+    top: 0;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .pan-wrapper {
+    position: absolute;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container {
+    position: relative;
+    width: 290px;
+    height: 150px;
+    top: -150px;
+    left: 0;
+}
+
+
+/*CSS For static part*/
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container .static-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container .static-container .pan-table {
+    position: relative;
+    margin: auto;
+    display: table;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container .static-container .pan-row {
+    position: relative;
+    display: table-row;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container .static-container .pan-cell {
+    position: relative;
+    display: table-cell;
+    padding: 2px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container .static-container .pan-cell .coefficients {
+    background-color: #DB490E;
+    border: 1px solid #852703;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    margin: auto;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container .static-container .pan-cell .coefficients-x {
+    background-color: #936ad1;
+    border: 1px solid #552196;
+    width: 52px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    margin: auto;
+}
+
+.de-mathematics-interactive .pan-wrapper .coefficients-x i {
+    line-height: inherit;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .pan {
+    top: 0;
+    background-position: 0 -184px;
+    width: 290px;
+    height: 104px;
+    position: absolute;
+    z-index: 2;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .pan .pan-data {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .italic {
+    font-style: italic;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .left-pan {}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .right-pan {}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .small-rod {
+    background-position: 0 -293px;
+    width: 29px;
+    height: 89px;
+    position: absolute;
+    z-index: 0;
+    top: 42px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .base {
+    background-position: 0 0;
+    width: 733px;
+    height: 154px;
+    position: absolute;
+    top: 21px;
+    z-index: 1;
+    left: 60px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .center-rod {
+    background-position: 0 -159px;
+    width: 608px;
+    height: 20px;
+    position: absolute;
+    top: 52px;
+    left: 124px;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .left-small-rod {
+    /* top: 60px; */
+    left: 121px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .right-small-rod {
+    /* top: 62px; */
+    left: 706px;
+}
+
+
+/*CSS For dynamic part*/
+
+.de-mathematics-interactive .pan-balance-wrapper-main .tile-container .dynamic-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .dynamic-wrapper {
+    position: relative;
+    left: 10px;
+    top: 12px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .dynamic-container .pan-row {
+    height: 46px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .dispenser-container {
+    position: absolute;
+    width: 252px;
+    height: 113px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+    border: 2px dashed #807A88;
+    top: -120px;
+    left: 305px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .pan-draggable-dispenser-tile {
+    min-height: 40px;
+    float: left;
+}
+
+.de-mathematics-interactive .pan-balance-wrapper-main .dispenser-row-1,
+.de-mathematics-interactive .pan-balance-wrapper-main .dispenser-row-2 {
+    display: table;
+    margin: auto;
+    height: 46px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - END OF PAN BALANCE - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - -CSS FOR PAN BALANCE STRUCTURED- - - - - - - - - - - - - - - - - - - - - - */
+
+.de-mathematics-interactive .pan-balance-wrapper-structured-main {
+    position: relative;
+    top: 0;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-pan-wrapper {
+    left: -9px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .right-pan-wrapper {
+    left: 576px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-wrapper {
+    top: 0;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-wrapper {
+    position: absolute;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container {
+    position: relative;
+    width: 290px;
+    height: 150px;
+    top: -150px;
+    left: 0;
+}
+
+
+/*CSS For static part*/
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-table {
+    position: relative;
+    margin: auto;
+    display: table;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-row {
+    position: relative;
+    display: table-row;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell {
+    position: relative;
+    display: table-cell;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients {
+    width: 49px;
+    height: 41px;
+    line-height: 37px;
+    text-align: center;
+    font-family: Arial;
+    color: #ffffff;
+    margin: auto;
+    display: table;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients .static-tile {
+    display: table-cell;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients .static-cell-0 {
+    position: relative;
+    width: 4px;
+    background-position: -52px -1326px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients .static-cell-2 {
+    position: relative;
+    width: 4px;
+    background-position: -53px -1326px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients .static-cell-1 {
+    width: 25px;
+    position: relative;
+    /*height: 41px;*/
+    background-position: 0 -2300px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients .static-cell-2 {
+    background-position: -50px -1377px;
+    /*background-repeat: no-repeat;*/
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients-x {
+    width: 89px;
+    height: 41px;
+    line-height: 36px;
+    text-align: center;
+    font-family: Arial;
+    color: #ffffff;
+    margin: auto;
+    display: table;
+    /*margin-right: 3px;*/
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients-x .static-tile {
+    display: table-cell;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients-x .static-cell-0,
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients-x .static-cell-2 {
+    width: 7px;
+    position: relative;
+    /*height: 41px;*/
+    background-position: -187px -917px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients-x .static-cell-1 {
+    width: 65px;
+    height: 41px;
+    position: relative;
+    background-position: 0 -2096px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .static-container .pan-cell .coefficients-x .static-cell-2 {
+    background-position: -187px -968px;
+    margin-right: 0;
+}
+
+.de-mathematics-interactive .pan-wrapper .coefficients-x i {
+    line-height: inherit;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan {
+    top: 0;
+    background-position: 0 -184px;
+    width: 290px;
+    height: 104px;
+    position: absolute;
+    z-index: 2;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan .pan-data {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .italic {
+    font-style: italic;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-pan {}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .right-pan {}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .small-rod {
+    background-position: 0 -293px;
+    width: 29px;
+    height: 89px;
+    position: absolute;
+    z-index: 0;
+    top: 42px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .base {
+    background-position: 0 0;
+    width: 733px;
+    height: 154px;
+    position: absolute;
+    top: 21px;
+    z-index: 1;
+    left: 60px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .center-rod {
+    background-position: 0 -159px;
+    width: 608px;
+    height: 20px;
+    position: absolute;
+    top: 52px;
+    left: 124px;
+    z-index: 0;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-small-rod {
+    /* top: 60px; */
+    left: 121px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .right-small-rod {
+    /* top: 62px; */
+    left: 706px;
+}
+
+
+/*CSS For dynamic part*/
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .tile-container .dynamic-container {
+    position: relative;
+    width: 100%;
+    height: 130%;
+    top: -46px;
+    left: 0;
+    display: none;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dynamic-wrapper {
+    position: relative;
+    left: 0;
+    top: 18px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .accessibility-dynamic-wrapper {
+    position: absolute;
+    left: 0;
+    top: 18px;
+    height: 178px;
+    width: 100%;
+    display: none;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dynamic-container .pan-table {
+    display: inline-block;
+    /* border:1px solid; */
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dynamic-container .Var-table {
+    width: 28%;
+    margin: 0 5px -10px 15px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dynamic-container .Num-table {
+    width: 62%;
+    margin-bottom: -10px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dynamic-container .pan-row {
+    height: 44px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dispenser-container {
+    position: absolute;
+    width: 149px;
+    height: 102px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+    border: 2px dashed #898989;
+    top: -120px;
+    left: 354px;
+    padding: 9px 9px 11px;
+    border-radius: 5px;
+    margin: auto;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-draggable-dispenser-tile {
+    min-height: 40px;
+    float: left;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dispenser-row-1,
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .dispenser-row-2 {
+    display: table;
+    margin: auto;
+    height: 41px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .temporary-bins-container {
+    position: relative;
+    z-index: 4;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .temporary-bin {
+    display: none;
+    height: 146px;
+    width: 366px;
+    position: absolute;
+    top: 99px;
+    left: -10px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .accessibility-temporary-bin {
+    height: 146px;
+    width: 366px;
+    position: absolute;
+    top: 99px;
+    left: -10px;
+    display: none;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .right-accessibility-temporary-bin {
+    left: 500px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .temporary-bin .pan-table {
+    height: 100%;
+    padding-top: 10px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .temporary-bin .pan-table .pan-row {
+    height: 44px;
+    /* width: 328px; */
+    /* margin: auto; */
+    margin-left: 8px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .temporary-bin .temporary-hover {
+    opacity: 0.5;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-temporary-bin {}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .right-temporary-bin {
+    left: 500px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-wrapper {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-wrapper div.hover {
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-left-shadow {
+    float: left;
+    width: 5px;
+    height: 41px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-right-shadow {
+    position: absolute;
+    width: 8px;
+    height: 41px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-bottom-shadow {
+    height: 41px;
+    position: absolute;
+    left: 5px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-top-container {
+    display: inline-block;
+    height: 37px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-text-container {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 2px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-text {
+    height: 25px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-dots {
+    height: 12px;
+    width: 10px;
+    margin: auto;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-text-container-left-part {
+    float: left;
+    width: 8px;
+    height: 37px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-text-container-middle-part {
+    float: left;
+    width: 21px;
+    height: 37px;
+    text-align: center;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-text-container-right-part {
+    float: left;
+    width: 8px;
+    height: 37px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .text-var-container {
+    width: 77px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .text-var {
+    width: 61px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .var-tile-right-shadow {
+    left: 75px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .var-tile-bottom-shadow {
+    width: 70px;
+    top: 0;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .num-tile-right-shadow {
+    left: 36px;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .num-tile-bottom-shadow {
+    width: 31px;
+    top: 0;
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .pan-balance-draggable-tile-pulse {
+    box-shadow: 0 0.732px 5px 1.5px rgb(71, 192, 47);
+}
+
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-tile-container,
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-pan-wrapper,
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-tile-container,
+.de-mathematics-interactive .pan-balance-structured-wrapper-main .left-pan-wrapper {
+    z-index: 4;
+}
+
+
+/*-------------------------------------ADDED FOR TILES WITHOUT PAN BALANCE--------------------------------------*/
+
+.de-mathematics-interactive .pan-balance-draggable-tile-wrapper {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    /* added because of inline block */
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-wrapper div.hover {
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-top-container {
+    display: inline-block;
+    height: 37px;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-left-shadow {
+    float: left;
+    width: 5px;
+    height: 41px;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-text-container {
+    position: absolute;
+    width: 37px;
+    left: 2px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-text-container-left-part {
+    float: left;
+    width: 8px;
+    height: 37px;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-text-container-middle-part {
+    float: left;
+    width: 21px;
+    height: 37px;
+    text-align: center;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-text {
+    height: 25px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-dots {
+    height: 12px;
+    width: 10px;
+    margin: auto;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-text-container-right-part {
+    float: left;
+    width: 8px;
+    height: 37px;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-right-shadow {
+    position: absolute;
+    width: 8px;
+    height: 41px;
+}
+
+.de-mathematics-interactive .pan-balance-draggable-tile-bottom-shadow {
+    height: 41px;
+    position: absolute;
+    left: 5px;
+}
+
+.de-mathematics-interactive .text-var-container {
+    width: 77px;
+}
+
+.de-mathematics-interactive .text-var {
+    width: 61px;
+}
+
+.de-mathematics-interactive .var-tile-right-shadow {
+    left: 75px;
+}
+
+.de-mathematics-interactive .var-tile-bottom-shadow {
+    width: 70px;
+    top: 0;
+}
+
+.de-mathematics-interactive .num-tile-right-shadow {
+    left: 36px;
+}
+
+.de-mathematics-interactive .num-tile-bottom-shadow {
+    width: 31px;
+    top: 0;
+}
+
+.de-mathematics-interactive .red-tile-border {
+    outline: 2px solid #8a0248;
+}
+
+.de-mathematics-interactive .green-tile-border {
+    outline: 2px solid #11550a;
+}
+
+.de-mathematics-interactive .red-tile-border-shadow {
+    box-shadow: 0 0 0 2px #8a0248;
+}
+
+.de-mathematics-interactive .green-tile-border-shadow {
+    box-shadow: 0 0 0 2px #11550a;
+}
+
+
+/*-------------------------------------END OF TILES WITHOUT PAN BALANCE------------------------------------------*/
+
+
+/* - - - - - - - - - - - - - - - - - - END OF PAN BALANCE STRUCTURED- - - - - - - - - - - - - - - - - - - - - - */
+
+
+/*CSS for iframe added in preloader.js for cross domain communication*/
+
+#de-mathematics-interactive-cross-origin-commuter-frame {
+    position: absolute;
+    top: -999px;
+    left: -999px;
+}
+
+
+/*----------------------------------------------------------- SLIDER  ---------------------------------------------------------------------*/
+
+.de-mathematics-interactive .ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+.de-mathematics-interactive .slider-mouse-over-out {
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 22px;
+    cursor: default;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle span {
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle.slider-handle.slider-handle-dropped {
+    width: 23px;
+    height: 23px;
+    margin-left: -12px;
+    top: -7px;
+    background-position: -52px -1264px;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle.slider-handle.slider-handle-dropped.slider-handle-hover {
+    background-position: -52px -1264px;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+
+/* For IE8 - See #6727 */
+
+.de-mathematics-interactive .ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+
+.de-mathematics-interactive .ui-slider-horizontal {
+    height: 8px;
+    width: 200px;
+    border-radius: 7px;
+}
+
+.de-mathematics-interactive .ui-slider-horizontal .ui-slider-handle {
+    top: -7px;
+    margin-left: -12px;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle.slider-handle-pink.ui-state-active {
+    background-position: -767px -897px !important;
+    height: 28px;
+    width: 27px;
+    margin-left: -13px;
+    top: -10px;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle.slider-handle-pink {
+    background-position: -767px -897px;
+    height: 28px;
+    width: 27px;
+    margin-left: -13px;
+    top: -10px;
+}
+
+.de-mathematics-interactive .ui-slider-handle.slider-handle-pink.slider-handle-hover {
+    background-position: -767px -935px;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle.slider-handle-green {
+    background-position: -767px -972px;
+    height: 28px;
+    width: 27px;
+    margin-left: -13px;
+    top: -10px;
+}
+
+.de-mathematics-interactive .ui-slider .ui-slider-handle.slider-handle-green.ui-state-active {
+    background-position: -767px -972px !important;
+    height: 28px;
+    width: 27px;
+    margin-left: -13px;
+    top: -10px;
+}
+
+.de-mathematics-interactive .ui-slider-handle.slider-handle-green.slider-handle-hover {
+    background-position: -767px -1010px;
+}
+
+.de-mathematics-interactive .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+
+.de-mathematics-interactive .ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+
+.de-mathematics-interactive .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+.de-mathematics-interactive .ui-slider-vertical {
+    width: .8em;
+    height: 100px;
+}
+
+.de-mathematics-interactive .ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-left: 0;
+    margin-bottom: -.6em;
+}
+
+.de-mathematics-interactive .ui-slider-vertical .ui-slider-range {
+    left: 0;
+    width: 100%;
+}
+
+.de-mathematics-interactive .ui-slider-vertical .ui-slider-range-min {
+    bottom: 0;
+}
+
+.de-mathematics-interactive .ui-slider-vertical .ui-slider-range-max {
+    top: 0;
+}
+
+.de-mathematics-interactive .ui-slider-handle:focus {
+    outline: none;
+}
+
+.de-mathematics-interactive .slider-component {
+    position: absolute;
+}
+
+.de-mathematics-interactive .slider-labels {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    height: auto;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .slider-labels-disabled {
+    cursor: default;
+}
+
+.de-mathematics-interactive .slider-left {
+    background-position: -733px -1358px;
+    width: 5px;
+    height: 8px;
+    float: left;
+}
+
+.de-mathematics-interactive .slider-right {
+    background-position: -734px -1376px;
+    width: 5px;
+    height: 8px;
+    float: left;
+}
+
+.de-mathematics-interactive .slider-mid {
+    background-position: 0 -2985px;
+    height: 8px;
+    background-repeat: repeat-x;
+    float: left;
+}
+
+.de-mathematics-interactive .ui-slider-handle.slider-handle {
+    background-position: -734px -1394px;
+    border-radius: 12px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.de-mathematics-interactive canvas {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.de-mathematics-interactive .ui-slider-handle.slider-handle-hover {
+    background-position: -767px -407px;
+    border-radius: 12px;
+}
+
+.de-mathematics-interactive .slider-labels-cont {
+    height: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.de-mathematics-interactive .slider-label-max {
+    float: right;
+}
+
+.de-mathematics-interactive .slider-label-min {
+    float: left;
+}
+
+.de-mathematics-interactive .slider-left-disabled {
+    background-position: -767px -531px;
+}
+
+.de-mathematics-interactive .slider-mid-disabled {
+    background-position: 0 -3003px;
+}
+
+.de-mathematics-interactive .slider-right-disabled {
+    background-position: -767px -549px;
+}
+
+.de-mathematics-interactive .ui-slider-handle.slider-handle-disabled {
+    background-position: -766px -457px;
+    cursor: default !important;
+}
+
+.de-mathematics-interactive .slider-labels-cont label {
+    position: absolute;
+    width: 20px;
+    margin-left: -10px;
+    text-align: center;
+    /*margin-top: 20px;*/
+}
+
+
+/*--------------------------------------------- END OF SLIDER  ---------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------- DRAGGABLE TILE  ---------------------------------------------------------------------*/
+
+.de-mathematics-interactive .draggable-tile-ui {
+    box-shadow: rgb(0, 0, 0) 0.5px 0.866px 3px 0;
+    border-radius: 4px;
+}
+
+.de-mathematics-interactive .draggable-tile-upper-section {
+    border: 1px solid #777;
+    border-bottom: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 7px 8px 0;
+    background-color: #FFF;
+}
+
+.de-mathematics-interactive .draggable-tile-lower-section {
+    height: 23px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.de-mathematics-interactive .tile-bottom-mid {
+    height: 21px;
+    background-repeat: repeat-x;
+    float: left;
+    background-position: 0 -715px;
+}
+
+.de-mathematics-interactive .tile-bottom-left,
+.de-mathematics-interactive .tile-bottom-right {
+    float: left;
+    height: 21px;
+    width: 6px;
+    background-position: -36px -643px;
+}
+
+.de-mathematics-interactive .tile-bottom-right {
+    background-position: -36px -680px;
+    border-bottom-right-radius: 4px;
+}
+
+.de-mathematics-interactive .draggable-tile-dots {
+    height: 8px;
+    width: 16px;
+    margin: auto;
+    background-position: -258px -399px;
+    margin-top: 7px;
+}
+
+.de-mathematics-interactive .tile-bottom-mid-hover {
+    background-position: 0 -757px;
+}
+
+.de-mathematics-interactive .tile-bottom-mid-disabled {
+    background-position: 0 -675px;
+}
+
+.de-mathematics-interactive .tile-bottom-right-hover {
+    background-position: -36px -754px;
+}
+
+.de-mathematics-interactive .tile-bottom-right-disabled {
+    background-position: -36px -607px;
+}
+
+.de-mathematics-interactive .tile-bottom-left-hover {
+    background-position: -36px -717px;
+}
+
+.de-mathematics-interactive .tile-bottom-left-disabled {
+    background-position: -36px -574px;
+}
+
+
+/*----------------------------------------------------- END OF DRAGGABLE TILE  ---------------------------------------------------------------------*/
+
+
+/*******************************************INPUT BOX CSS***************************************************/
+
+.de-mathematics-interactive .input-box-common-component {
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-family: inherit;
+    position: relative;
+}
+
+
+/*******************************************INPUT BOX CSS END***************************************************/
+
+
+/*----------------------------------------------------------- SINGLE TILE COMPONENT ------------------------------------------------------------*/
+
+.de-mathematics-interactive .tile-child {
+    height: 40px;
+    float: left;
+}
+
+.de-mathematics-interactive .general-tile-text-child {
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    font-family: Arial;
+}
+
+.de-mathematics-interactive .general-tile-dots-child {
+    position: relative;
+    margin-top: 28px;
+    background-position: -239px 0;
+}
+
+.de-mathematics-interactive .general-tile-text-child > i {
+    line-height: inherit;
+}
+
+
+/*----------------------------------------------------------- END OF SINGLE TILE COMPONENT -----------------------------------------------------*/
+
+
+/**********************************************RADIO BUTTON STARTS*******************************************************************************/
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .single-radio-container {
+    height: 20px;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .image-container {
+    margin: 3px;
+    width: 12px;
+    height: 12px;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .float-left {
+    float: left;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .cursor-pointer {
+    cursor: pointer;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .image-container.normal {
+    background-position: 0 0;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .image-container.normal.hover {
+    background-position: 0 -17px;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .image-container.normal.selected {
+    background-position: 0 -34px;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .image-container.normal.selected.hover {
+    background-position: 0 -51px;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .image-container.normal.disabled {
+    background-position: 0 -68px;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .image-container.normal.selected.disabled {
+    background-position: 0 -85px;
+}
+
+.de-mathematics-interactive .de-mathematics-interactive-radio-button .text-container.disable-text {
+    color: #C0C0C0;
+}
+
+
+/**********************************************RADIO BUTTON ENDS*********************************************************************************/
+
+
+/********************************************checkbox*******************************************************************/
+
+.de-mathematics-interactive .check-box-outer-common-componenet {
+    display: table-row;
+    color: #222;
+}
+
+.de-mathematics-interactive .check-box-icon-cover-common-componenet {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.de-mathematics-interactive .check-box-inner-icon-common-componenet {
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+}
+
+.de-mathematics-interactive .check-box-inner-label-common-componenet {
+    display: table-cell;
+}
+
+.de-mathematics-interactive .check-box-unchecked-disable {
+    background-position: -800px 0;
+}
+
+.de-mathematics-interactive .check-box-checked-enable {
+    background-position: -800px -17px;
+}
+
+.de-mathematics-interactive .check-box-unchecked-hover {
+    background-position: -800px -34px;
+}
+
+.de-mathematics-interactive .check-box-checked-hover {
+    background-position: -800px -51px;
+}
+
+.de-mathematics-interactive .check-box-unchecked-enable {
+    background-position: -800px -68px;
+}
+
+.de-mathematics-interactive .check-box-checked-disable {
+    background-position: -800px -85px;
+}
+
+.de-mathematics-interactive .hand-cursor {
+    cursor: pointer;
+}
+
+
+/********************************************checkbox END***************************************************************/
+
+
+/*----------------------- TEMP DIV TO CALCULATE HEIGHT WIDTH CSS-----------------------------------------------*/
+
+.de-mathematics-interactive #text-dimentions-hack {
+    position: absolute;
+    z-index: 0;
+}
+
+
+/*----------------------------- GraphIt -------------------------------*/
+
+.graph-it-graph-container .graph-controls {
+    width: 55px;
+    height: 192px;
+    position: absolute;
+    top: 45px;
+    left: 373px;
+}
+
+.graph-it-graph-container .draw-line-btn {
+    position: absolute;
+    top: 0;
+    right: 4px;
+}
+
+.graph-it-graph-container .draw-line-label {
+    position: absolute;
+    top: 7px;
+    left: 56px;
+    width: 80px;
+}
+
+.graph-it-graph-container .move-line-btn {
+    position: absolute;
+    top: 42px;
+    right: 4px;
+}
+
+.graph-it-graph-container .move-line-label {
+    position: absolute;
+    top: 50px;
+    left: 56px;
+    width: 80px;
+}
+
+.graph-it-graph-container .users-graph-btn {
+    position: absolute;
+    top: 118px;
+    left: 0;
+}
+
+.graph-it-graph-container .users-graph-label {
+    position: absolute;
+    top: 118px;
+    left: 61px;
+    line-height: 16px;
+}
+
+.graph-it-graph-container .feedback-graph-btn {
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+
+.graph-it-graph-container .feedback-graph-label {
+    position: absolute;
+    top: 160px;
+    left: 61px;
+    line-height: 16px;
+}
+
+.graph-it-graph-container .clear-graph-btn {
+    position: absolute;
+    top: 297px;
+    right: -73px;
+}
+
+.graph-it-graph-container .draw-graph-title {
+    display: inline-block;
+    position: absolute;
+}
+
+.graph-it-graph-container .draw-graph-x-axis-label {
+    display: inline-block;
+    position: absolute;
+}
+
+.graph-it-graph-container .draw-graph-y-axis-label {
+    display: inline-block;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+}
+
+.draggable-tooltip-left,
+.draggable-tooltip-right {
+    display: inline-block;
+    width: 10px;
+    height: 51px;
+    position: relative;
+    float: left;
+}
+
+.draggable-tooltip-mid {
+    width: auto;
+    height: 44px;
+    background-repeat: repeat;
+    position: relative;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    text-align: left;
+    color: #000000;
+    padding-top: 7px;
+    line-height: 16px;
+}
+
+.draggable-tooltip-container {
+    float: left;
+    /*margin-top: 5px;*/
+    width: inherit;
+    margin-left: -7px;
+    line-height: 27px;
+    text-align: center;
+    position: absolute;
+}
+
+.ui-draggable-dragging .draggable-tooltip-container {
+    float: left;
+    margin-top: 0;
+}
+
+.graph-it-graph-container .hand-cursor {
+    cursor: pointer;
+}
+
+
+/*-----------------------Drag Drop---------------------------*/
+
+.drag-drop-demo-holder {
+    margin: 20px auto;
+    width: 550px;
+    /* height: 200px; */
+    border: 1px solid #000;
+    position: relative;
+}
+
+
+/*-----------------------Drag Drop End-----------------------*/
+
+
+/* ------------------------------------ RATIO BAR ------------------------------------ */
+
+.de-mathematics-interactive .ratio-bar-antecedent-divs {
+    height: inherit;
+    display: inline-block;
+    border: 0 solid #000;
+}
+
+.de-mathematics-interactive .ratio-bar-consequent-divs {
+    height: inherit;
+    display: inline-block;
+    border: 0 solid #000;
+}
+
+.de-mathematics-interactive .ratio-bar-separator {
+    height: inherit;
+    display: inline-block;
+    border: none;
+}
+
+
+/* -------------------------------- END OF RATIO BAR --------------------------------- */
+
+
+/*--------------Sound Button---------------------------------*/
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-play-btn {
+    background-position: 0 -256px;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-play-btn-hover {
+    background-position: 0 -224px;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-play-btn-down {
+    background-position: 0 -192px;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-pause-btn {
+    background-position: 0 -64px;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-pause-btn-hover {
+    background-position: 0 -32px;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-pause-btn-down {
+    background-position: 0 0;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-resume-btn {
+    background-position: 0 -160px;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-resume-btn-hover {
+    background-position: 0 -128px;
+}
+
+.de-mathematics-interactive .sound-mgr-audio-btns.sound-mgr-resume-btn-down {
+    background-position: 0 -96px;
+}
+
+
+/*--------------Sound Button---------------------------------*/
+
+
+/*-------------------------------------------Counter Label------------------------------------------------*/
+
+.de-mathematics-interactive .counter-label {
+    line-height: 20px;
+    text-align: center;
+    background-color: #0086A7;
+    border-radius: 13px;
+    padding-top: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, Sans-Serif;
+    font-weight: bold;
+    fill: #222;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*-------------------------------------------End of Counter Label-----------------------------------------*/
+
+
+/*------------------------------- Accessibility element of tab buttons -----------------------------------*/
+
+.de-mathematics-interactive .tabs .acc-read-elem {
+    z-index: 1;
+}
+
+
+/*---------------------------- End of accessibility element of tab buttons ------------------------------*/
+
+
+/*------------------------------------------------ Ruler ------------------------------------------------*/
+
+.de-mathematics-interactive .ruler-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+.de-mathematics-interactive .ruler-container {
+    position: relative;
+    box-shadow: 0 0 3px #222;
+}
+
+.de-mathematics-interactive .ruler-handle {
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 2px #777978;
+    position: relative;
+    cursor: pointer;
+    border-radius: 23px;
+    display: inline-block;
+    moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.de-mathematics-interactive .ruler-handle-hover:hover {
+    background-color: #DDD8E4;
+}
+
+.de-mathematics-interactive .pivot-point {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+
+/*---------------------------------------------End of Ruler --------------------------------------------*/
+
+
+/**------------------------------------- Draggable tile css -------------------------------------**/
+
+
+/*This css is prevent mouse event on touch and type laptop Bug No:- (#3836)*/
+
+.de-mathematics-interactive .ui-draggable {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+
+/**-------------------------------------End Draggable tile css -------------------------------------**/

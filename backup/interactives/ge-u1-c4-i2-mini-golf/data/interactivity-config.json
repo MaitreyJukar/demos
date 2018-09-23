@@ -1,0 +1,300 @@
+{
+    "config": {
+        "idPrefix": "mini-golf",
+        "isSaveStateAllowed": true,
+        "isTwoStepLoad": true,
+        "model": {
+            "class": "MiniGolfData"
+        },
+        "module": "MiniGolf",
+        "newSaveState": true,
+        "playerTheme": 2,
+        "showMute": true,
+        "tabsData": [
+            {
+                "module": "MiniGolf",
+                "overviewTabData": {
+                    "leftImageContainerID": "overview-background",
+                    "screenID": "overview-tab"
+                },
+                "templateName": "overviewTab",
+                "view": {
+                    "class": "OverviewTab",
+                    "data": {
+                        "el": "#overview-tab-container"
+                    }
+                }
+            },
+            {
+                "templateName": "playGame",
+                "view": {
+                    "class": "PlayGame",
+                    "data": {
+                        "el": "#play-game-container"
+                    }
+                }
+            }
+        ],
+        "themeType": 2
+    },
+    "resources": {
+        "components": [
+        ],
+        "css": [
+            {
+                "isNextStepLoad": null,
+                "url": "course.css"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "mini-golf.css"
+            }
+        ],
+        "isNewJsonType": true,
+        "isSaveStateAllowed": true,
+        "js": [
+            {
+                "basePath": "JQUERY_JS",
+                "isNextStepLoad": false,
+                "url": "jquery.ui.touch.js"
+            },
+            {
+                "basePath": "PAPER_JS",
+                "url": "paper-full.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "initialize.js"
+            },
+            {
+                "isNextStepLoad": null,
+                "url": "views/line-utility.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "models/ball.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "models/obstacle.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "models/course.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "models/mini-golf.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "models/carousel.js"
+            },
+			{
+                "isNextStepLoad": true,
+                "url": "views/canvas-acc-ext.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "views/overview-tab.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/obstacle.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/river-obstacle.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/obstacle-fixed.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/base-canvas.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/base-canvas-acc.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/ball.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/rotation-handle.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/canvas-with-obstacles.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/canvas-with-obstacles-acc.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/canvas-sliding-obs-ext.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/canvas-sliding-obs-ext-acc.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/animation.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/course.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/carousel.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/carousel-container.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/play-game.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/score-card-container.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/confetti.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/course-1.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/course-2.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/course-3.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/course-4.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "views/custom-pop-up.js"
+            }
+        ],
+        "json": [
+            {
+                "id": "baseURL",
+                "isNextStepLoad": false,
+                "url": "base-url.json"
+            }
+        ],
+        "media": {
+            "audio": [
+                {
+                    "data": {
+                        "ball-hit": {
+                            "end": "7.632",
+                            "start": "2.088"
+                        },
+                        "ball-reflects-boundary": {
+                            "end": "7.632",
+                            "start": "2.088"
+                        },
+                        "obstacle-drop-loofa-sound": {
+                            "end": "11.28",
+                            "start": "9.72"
+                        },
+                        "swoosh-sound": {
+                            "end": "13.872",
+                            "start": "13.368"
+                        }
+                    },
+                    "id": "mini-golf-sound-sprite",
+                    "url": "sound.mp3"
+                }
+            ],
+            "cur": [
+                {
+                    "basePath": "COMMON_IMAGE",
+                    "id": "open-hand",
+                    "url": "cursor/openhand.cur"
+                },
+                {
+                    "basePath": "COMMON_IMAGE",
+                    "id": "closed-hand",
+                    "url": "cursor/closedhand.cur"
+                }
+            ],
+            "image": [
+                {
+                    "forceLoad": null,
+                    "id": "course-bg-sprite",
+                    "isNextStepLoad": true,
+                    "url": "course-bg-sprite.png"
+                },
+                {
+                    "forceLoad": null,
+                    "id": "overview-background",
+                    "isNextStepLoad": false,
+                    "url": "overview.jpg"
+                },
+                {
+                    "forceLoad": true,
+                    "id": "sprites",
+                    "isNextStepLoad": true,
+                    "url": "sprites.png"
+                }
+            ],
+            "video": [
+            ]
+        },
+        "templates": [
+            {
+                "isNextStepLoad": null,
+                "url": "carousel.js"
+            },
+            {
+                "isNextStepLoad": true,
+                "url": "carouselContainer.js"
+            },
+            {
+                "isNextStepLoad": null,
+                "url": "course.js"
+            },
+            {
+                "isNextStepLoad": null,
+                "url": "courseScoreCard.js"
+            },
+            {
+                "isNextStepLoad": null,
+                "url": "customPopup.js"
+            },
+            {
+                "isNextStepLoad": false,
+                "url": "overviewTab.js"
+            },
+            {
+                "isNextStepLoad": null,
+                "url": "playGame.js"
+            },
+            {
+                "isNextStepLoad": null,
+                "url": "scoreCard.js"
+            },
+            {
+                "isNextStepLoad": null,
+                "url": "slide.js"
+            }
+        ]
+    }
+}

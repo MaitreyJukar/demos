@@ -1,0 +1,13 @@
+<div id="{{idPrefix}}{{idSuffix}}stepper-{{stepperIndex}}-column-{{colNumber}}-container" class="stepper-column-container">
+  <div id="{{idPrefix}}{{idSuffix}}stepper-{{stepperIndex}}-block-0-{{colNumber}}-container" class="in-card-container stepper-block">
+    <span id="{{idPrefix}}{{idSuffix}}stepper-{{stepperIndex}}-block-0-{{colNumber}}-text" class ="in-card-text stepper-block-text"></span>
+  </div>
+  <div id="{{idPrefix}}{{idSuffix}}stepper-{{stepperIndex}}-block-1-{{colNumber}}-container" class="out-card-container stepper-block">
+    <span id="{{idPrefix}}{{idSuffix}}stepper-{{stepperIndex}}-block-1-{{colNumber}}-text" class ="out-card-text stepper-block-text"></span>
+  </div>
+  {{#if challenge2Data}}
+  <div id="{{idPrefix}}{{idSuffix}}stepper-{{stepperIndex}}-block-2-{{colNumber}}-container" class="guess-card-container stepper-block">
+    <span id="{{idPrefix}}{{idSuffix}}stepper-{{stepperIndex}}-block-2-{{colNumber}}-text" class ="guess-card-text stepper-block-text"></span>
+  </div>
+  {{/if}}
+</div>
