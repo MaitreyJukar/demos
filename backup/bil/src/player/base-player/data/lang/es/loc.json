@@ -1,0 +1,59 @@
+{
+    "base-player": {
+        "check-button": "S-CHECK",
+        "continue-button": "S-Continue",
+        "lang-text-english": "ENGLISH",
+        "finish-button": "S-Done",
+        "show-button": "S-SHOW ME",
+        "lang-text-spanish": "ESPAÑOL",
+        "unmute-button": "S-Unmute audio"
+    },
+    "footer": {
+        "caption-hide-button": "S-Hide caption",
+        "caption-show-button": "S-Show caption",
+        "lang-text-english": "ENGLISH",
+        "mute-button": "S-Mute audio",
+        "pause-button": "S-Pause audio",
+        "play-button": "S-Play audio",
+        "reset-all-button": "S-Refresh",
+        "show-all-button": "S-Show all answers",
+        "lang-text-spanish": "ESPAÑOL",
+        "unmute-button": "S-Unmute audio"
+    },
+    "tooltip": {
+        "play-button" :"S - Play audio",
+        "pause-button" : "S - Pause audio"
+    },
+    "algebra-tiles": {
+        "algebra-tiles-container": "S-This is a draggable algebra tiles container. Press enter or space to enter.",
+        "grid-container": "",
+        "col-header": "",
+        "row-header": "",
+        "canvas-area": "S-droppable canvas area to drop the grabbed tile from algebra tiles column",
+        "plus": "S-plus one",
+        "plus-x-vertical": "S-plus x vertical",
+        "plus-x-horizontal": "S-plus x horizontal",
+        "plus-x-square": "S-plus x square",
+        "minus": "S-minus one",
+        "minus-x-vertical": "S-minus x vertical",
+        "minus-x-horizontal": "S-minus x horizontal",
+        "minus-x-square": "S-minus x square",
+        "draggable-tile": "S-This is a $#tile#$ tile. Press enter or space to start drop selection"
+    },
+    "grid": {
+        "dropped-draggable-tile": "S-This is a dropped $#tile#$ tile in row $#row#$ and column $#col#$. Press enter or space to view options",
+        "droppable": "S-This is a droppable in row $#row#$ and column $#col#$. Press enter or space to move the grabbed tile. Press escape to revert the selection",
+        "plus": "S-plus one",
+        "plus-x-vertical": "S-plus x vertical",
+        "plus-x-horizontal": "S-plus x horizontal",
+        "plus-x-square": "S-plus x square",
+        "minus": "S-minus one",
+        "minus-x-vertical": "S-minus x vertical",
+        "minus-x-horizontal": "S-minus x horizontal",
+        "minus-x-square": "S-minus x square"
+    },
+    "popup": {
+        "text": "Exploración no disponible.",
+        "button-lable1": "DE ACUERDO"
+    }
+}

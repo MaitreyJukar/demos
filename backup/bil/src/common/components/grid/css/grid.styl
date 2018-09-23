@@ -1,0 +1,63 @@
+$padding = 10px
+$hsections = 5
+$vsections = 4
+
+default(values) {
+    background: inherit
+    border: 0
+    color: inherit
+    display: inline-block
+    font-weight: normal
+    position: relative
+    vertical-align: middle
+
+    .droppables {
+        height: values.$side
+        /* outline: 1px dashed rgba(0, 0, 0, .12) */
+        position: absolute
+        width: values.$side
+        z-index: 1
+    }
+
+    .ui-droppable-hover {
+        border: 2px solid rgba(0, 0, 0, .4)
+        border-radius: 10px
+        border-style: dotted
+    }
+
+    .grid-droppable-inactive {
+        /* outline: 1px solid red */
+    }
+
+    .ui-droppable-hover.grid-droppable-inactive, .ui-droppable-hover.grid-droppable-occupied, .ui-droppable-hover.grid-droppable-invalid {
+        border: 0
+    }
+
+    .ui-droppable-hover~.ui-droppable-hover {
+        border: 0
+    }
+
+    .droppables.ui-droppable.grid-droppable-inactive:not(.grid-droppable-dropped) {
+        pointer-events: none
+    }
+
+    .grid-droppable-top {
+        z-index: 9
+    }
+}
+
+.grid-holder {
+    default({
+        $side: 35px
+    })
+}
+
+@media screen and (max-width: 1660px) {
+    .grid-holder {
+        &.scaleDown {
+            default({
+                $side: 20px
+            })
+        }
+    }
+}

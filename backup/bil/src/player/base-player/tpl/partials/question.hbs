@@ -1,0 +1,22 @@
+<div class="question-container hide" id="question{{idx}}">
+    {{#each layouts}} {{#if multi}}
+    <div class="multi-layout layout">
+        <div class="multi-part" {{#if lcomponents.width}}style="width: {{lcomponents.width}};" {{/if}}>
+            {{#each lcomponents.components}}
+            <div class="component-wrapper" quesid="{{../../idx}}">{{&componentsTpl this ../../idx}}</div>
+            {{/each}}
+        </div>
+        <div class="multi-part" {{#if rcomponents.width}}style="width: {{rcomponents.width}};" {{/if}}>
+            {{#each rcomponents.components}}
+            <div class="component-wrapper" quesid="{{../../idx}}">{{&componentsTpl this ../../idx}}</div>
+            {{/each}}
+        </div>
+    </div>
+    {{else}}
+    <div class="single-layout layout" {{#if width}}style="width: {{width}};" {{/if}}>
+        {{#each components}}
+        <div class="component-wrapper" quesid="{{../../idx}}">{{&componentsTpl this ../../idx}}</div>
+        {{/each}}
+    </div>
+    {{/if}} {{/each}}
+</div>

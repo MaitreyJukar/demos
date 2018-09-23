@@ -1,0 +1,7 @@
+<div class="grid" tabindex="0">
+    {{#times rows}}
+    <div class="grid-row" data-row="{{this}}">
+        {{#times ../cols}}<div class="grid-col" data-col="{{this}}"></div>{{/times}}
+    </div>
+    {{/times}}
+</div>

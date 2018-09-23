@@ -1,0 +1,42 @@
+<div class="{{containerClass}}">
+    <div class="description-text">{{{description}}}<i>{{equation}}</i></div>
+    <div class="input-values-container">
+        <div class="input-container">
+            {{#if radioBtnPresent}}
+            <div class="radio-group"> {{#each radioButtons}}
+                <div class="{{radioClass}}">
+                    <input type="radio" name="primary-radio" value="{{radioValue}}" id="{{radioId}}" {{checked}}>
+                    <label for="{{radioId}}"><i>{{radioItalics}}</i><span>{{radioLabel}}</span></label>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+            {{#if inputBoxPresent}}
+            <div class="input-group">{{#each inputBoxes}}
+                {{#if isInputVisible}}
+                <div class="{{inputBoxClass}}">
+                    <div class="input-label"><i>{{italicsText}}</i><span>{{inputLabel}}</span></div>
+                    <input type="number" name="input-value" value="">
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+            {{/if}}
+            {{#if secondaryRadioBtnsPresent}}
+            <div class="radio-group"> {{#each secondaryRadioBtns}}
+                <div class="{{radioClass}}">
+                    <input type="radio" name="secondary-radio" value="" id="{{radioId}}" {{checked}}>
+                    <label for="{{radioId}}">{{radioLabel}}</label>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+        </div>
+        <div class="error-msg hide-msg">Please provide valid input.</div>
+    </div>
+    <div class="buttons-container">
+        {{#each buttonData}}
+        <button class="{{buttonClass}}" data-btn-name="{{dataBtnName}}">{{buttonText}}</button>
+        {{/each}}
+    </div>
+</div>

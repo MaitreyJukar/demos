@@ -1,0 +1,224 @@
+.shell-container {
+    .player-wrapper {
+        .que-showanswer, .que-validated, .finished {
+            .learnosity-item {
+                .lrn_simplechart, .lrn_toolbar, .lrn_numberlineplot, .lrn_widget.lrn_mcq .lrn_mcqgroup, .lrn_widget.lrn_simpleshading .lrn-shading-cell, .lrn_widget.lrn_fillshape svg.lrn-fillshape-container, .lrn_widget.lrn_orderlist .lrn_btn_sort.lrn_inline {
+                    pointer-events: none
+
+                    * {
+                        pointer-events: none
+                    }
+                }
+
+                &.replace-answers {
+                    .lrn_cloze_response {
+                        .mq-root-block {
+                            display: inline-block
+                            text-align: center
+                        }
+                    }
+                }
+            }
+        }
+
+        .learnosity-item {
+            .lrn {
+                color: #000
+            }
+
+            .lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper {
+                margin-top: 0
+            }
+
+            .lrn_widget.lrn_qr.lrn_clozeformula .lrn_question ~ .lrn_response_wrapper {
+                margin-top: 2.2em
+            }
+
+            .lrn_widget .lrn_length_indicator {
+                white-space: nowrap
+            }
+
+            .lrn_widget.lrn_formulaessay .lrn_response_input {
+                border: 1px solid #939393
+            }
+
+            .lrn_widget .lrn-response-validate-wrapper.lrn_correct, .lrn_widget .lrn-response-validate-wrapper.lrn_incorrect, .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct, .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect, .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct, .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect, .lrn_widget .lrn_response_container.lrn_correct, .lrn_widget .lrn_response_container.lrn_incorrect, .lrn_widget .lrn_response_input_wrapper.lrn_correct, .lrn_widget .lrn_response_input_wrapper.lrn_incorrect {
+                border: 0
+                margin-top: 0
+                padding-top: 0
+            }
+
+            .lrn_widget .lrn-response-validate-wrapper.lrn_correct:after, .lrn_widget .lrn-response-validate-wrapper.lrn_incorrect:after, .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct:after, .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect:after, .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct:after, .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect:after, .lrn_widget .lrn_response_container.lrn_correct:after, .lrn_widget .lrn_response_container.lrn_incorrect:after, .lrn_widget .lrn_response_input_wrapper.lrn_correct:after, .lrn_widget .lrn_response_input_wrapper.lrn_incorrect:after {
+                display: none
+            }
+
+            .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
+                border-left: solid #e14747
+                margin-left: 30px
+            }
+
+            .lrn_widget.lrn_clozeassociation .lrn_response_input .lrn_response_container.lrn_dragdrop.lrn_not_attempted_marker .lrn_responseIndex {
+                padding: .5em
+            }
+
+            .lrn_textinput {
+                vertical-align: middle
+            }
+
+            .lrn_hide_cursor {
+                cursor: default
+
+                &.lrn_hide_cursor:hover {
+                    border-color: #939393
+                }
+            }
+
+            .lrn_widget .MathJax {
+                font-size: 16px
+            }
+
+            .lrn input[type=checkbox][disabled]+label {
+                cursor: not-allowed
+            }
+
+            .lrn .lrn_btn_sort {
+                cursor: pointer
+            }
+
+            .lrn-formulaessay-line-container {
+                &.lrn-formulaessay-line-container:hover {
+                    cursor: default
+                }
+            }
+
+            .lrn_widget .lrn_correctAnswerList>li.remove-left-padding {
+                padding-left: 1em
+            }
+
+            .lrn_incorrect.add-left-margin {
+                margin-left: 2em
+            }
+
+            .lrn_validatedResponseList {
+                display: none
+            }
+
+            .lrn-response-validate-wrapper {
+                border: 0
+                margin-top: 0
+            }
+
+            .lrn_response_innerbody.lrn-response-validate-wrapper.lrn_incorrect {
+                margin-left: 0 !important
+            }
+
+            .lrn_response_input {
+                .lrn_responseIndex {
+                    display: inline-block
+                    text-align: center
+                    width: 35px
+                }
+            }
+
+            .lrn_responseText img {
+                max-width: 152px
+            }
+
+            .lrn_widget .lrn_response.lrn_cloze .lrn_combobox select {
+                height: auto
+            }
+
+            .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex {
+                align-items: center
+                display: flex
+                justify-content: center
+            }
+
+            .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_responseIndex {
+                bottom: 0
+                top: 0
+            }
+
+            .lrn_widget.lrn_qr .lrn-clozeformula-input .lrn_math_editable.lrn_bordered_mathinput {
+                align-items: center
+                display: flex
+                justify-content: center
+            }
+
+            .lrn_widget .lrn_response.lrn_cloze .lrn_combobox.lrn_not_attempted .lrn_clozedropdown_answer {
+                cursor: default
+            }
+
+            .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_response_container .lrn_btn_drag .lrn_item {
+                word-wrap: normal
+                -ms-hyphens: none
+            }
+
+            .lrn .lrn_possibilityList .lrn_btn_drag, .lrn .lrn_possibilityListContainer .lrn_btn_drag, .gu-mirror.lrn_drag_mirror {
+                white-space: nowrap
+            }
+
+            .lrn .table>tbody>tr>td {
+                line-height: 1.6
+                white-space: nowrap
+            }
+
+            .lrn_texteditor {
+                .lrn .lrn_btn.lrn_disabled, .lrn .lrn_btn[disabled] {
+                    pointer-events: none
+                }
+            }
+
+            .lrn_widget .lrn_responseIndex {
+                opacity: .7
+            }
+
+            .single-answer.lrn_widget {
+                .lrn_response.lrn_cloze .lrn_combobox .lrn_responseIndex {
+                    display: none
+                }
+
+                .lrn_correct {
+                    .lrn_clozedropdown_answer {
+                        border-left: 3px solid rgb(101, 160, 13)
+                    }
+                }
+
+                .lrn_incorrect {
+                    .lrn_clozedropdown_answer {
+                        border-left: 3px solid rgb(225, 71, 71)
+                    }
+                }
+
+                &.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
+                    margin-left: 0
+
+                    .lrn_responseIndex {
+                        display: none
+                    }
+                }
+            }
+        }
+
+        .question.finished .learnosity-container .lrn_widget .lrn_canvas_drawing .lrn_canvas.lrn_paintable {
+            cursor: default
+        }
+
+        .question-container:not(.finished) {
+            .lrn-formulaessay-line-container {
+                &.lrn-formulaessay-line-container:hover {
+                    // border: 1px solid #3498db
+                    cursor: text
+                }
+            }
+        }
+
+        .lrn_widget .lrn_texteditor_editable[contenteditable=false]:hover {
+            border: 1px solid #939393
+        }
+    }
+}
+
+.lrn_input_ui.lrn.lrn_widget.lrn_absolute_keyboard_parent {
+    z-index: 10
+}

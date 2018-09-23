@@ -1,0 +1,30 @@
+$side = 80px
+$border = 2px
+
+.random-number-container {
+    .number-container {
+        border: 2px solid #f1f1f1
+        border-radius: 4px
+        color: #012955
+        display: inline-block
+        font-size: 3em
+        height: $side
+        line-height: $side - ($border * 2)
+        margin-right: 38px
+        text-align: center
+        vertical-align: top
+        width: $side
+
+        span {
+            transition: opacity 1s ease-out
+        }
+
+        span:empty {
+            opacity: 0
+        }
+
+        &:last-child {
+            margin-right: 0
+        }
+    }
+}

@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Big Ideas Learning</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_HTMLorMML"></script>
+    <script>
+        function renderMathJax() {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        body,
+        body * {
+            box-sizing: border-box;
+        }
+
+        .header-container {
+            display: block;
+            width: 100%;
+        }
+
+        .header-nav-container {
+            background-color: #012955;
+            color: #ebebeb;
+            display: block;
+            height: 30px;
+            width: 100%;
+            padding: 0;
+            border-bottom: 1px solid #3f5880;
+            border-right: 1px solid #3f5880;
+            line-height: 30px;
+        }
+
+        .green .header-nav-container {
+            background-color: #1eaa00;
+            border-bottom: 1px solid #487d3d;
+            border-right: 1px solid #487d3d;
+        }
+
+        .header-nav-title-container {
+            display: inline-block;
+            width: 18%;
+            min-width: 200px;
+            text-align: left;
+            float: left;
+        }
+
+        .header-nav-title {
+            width: 133px;
+            height: 19px;
+            color: #fff;
+            font-size: 14px;
+            padding-left: 16px;
+        }
+
+        .serif {
+            font-family: serif;
+        }
+
+        .sans-serif {
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        .header-nav-option {
+            display: inline-block;
+            max-width: 340px;
+            min-width: 125px;
+            width: 17%;
+            text-align: center;
+            border-left: 0.5px solid #ebebeb;
+            border-right: 0.5px solid #ebebeb;
+            float: left;
+        }
+
+        .exploration-menu {
+            border-left: none;
+        }
+
+        select {
+            width: 100%;
+            height: 29px;
+            position: relative;
+            bottom: 2px;
+            font-family: Source Sans Pro, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0;
+            border: none;
+            text-align: center;
+            text-align-last: center;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        optgroup {
+            color: #000000;
+        }
+
+        optgroup:empty {
+            display: none;
+        }
+
+        option {
+            color: #000000;
+            font-weight: normal;
+            display: block;
+            white-space: pre;
+            min-height: 1.2em;
+            padding: 0px 2px 1px;
+        }
+
+        .header-toolbar-container {
+            background-color: #ebebeb;
+            color: #1e304c;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 60px;
+            width: 100%;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        .green .header-toolbar-container {
+            color: #1eaa00;
+        }
+
+        .header-toolbar-title-container {
+            min-width: 200px;
+            text-align: left;
+            padding-left: 16px;
+            line-height: 60px;
+        }
+
+        .header-toolbar-options {
+            padding: 10px;
+            white-space: nowrap;
+            min-width: 400px;
+        }
+
+        .header-toolbar-resolution {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .header-toolbar-save {
+            display: inline-block;
+        }
+
+        .save-label,
+        .resolution-label {
+            display: inline-block;
+            font-family: serif;
+            color: #012a55;
+            font-size: 18px;
+        }
+
+        select#resolution {
+            display: inline-block;
+            vertical-align: middle;
+            width: auto;
+            color: white;
+            background: #012955;
+            border-radius: 5px;
+        }
+
+        .green select#resolution {
+            background: #1eaa00;
+        }
+
+        select#resolution option {
+            color: white;
+        }
+
+        .green .save-label,
+        .green .resolution-label {
+            color: #1eaa00;
+        }
+
+        .header-toolbar-save .onoffswitch {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #header-toolbar-title {
+            font-family: serif;
+            color: #012a55;
+            font-size: 23px;
+        }
+
+        .green #header-toolbar-title {
+            color: #1eaa00;
+        }
+
+        .iframe-wrapper {
+            height: 100%;
+            width: 100%;
+        }
+
+        .iframe-wrapper.small {
+            padding: calc((100% - 875px)/2);
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .iframe-wrapper.small iframe {
+            width: 875px;
+            border-left: 1px solid rgba(0, 0, 0, 0.12);
+            border-right: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        iframe.hide {
+            display: none;
+        }
+
+        iframe {
+            min-height: calc(100% - 90px);
+            height: 1px;
+            width: 100%;
+            border: 0;
+        }
+
+        .hide {
+            display: none
+        }
+
+        .onoffswitch {
+            position: relative;
+            width: 60px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .onoffswitch-checkbox {
+            display: none;
+        }
+
+        .onoffswitch-label {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+            height: 36px;
+            padding: 0;
+            line-height: 36px;
+            border: 2px solid #E3E3E3;
+            border-radius: 36px;
+            background-color: #FFFFFF;
+            transition: background-color 0.3s ease-in;
+        }
+
+        .onoffswitch-label:before {
+            content: "";
+            display: block;
+            width: 36px;
+            margin: 0px;
+            background: #FFFFFF;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 22px;
+            border: 2px solid #E3E3E3;
+            border-radius: 36px;
+            transition: all 0.3s ease-in 0s;
+        }
+
+        .onoffswitch-checkbox:checked+.onoffswitch-label {
+            background-color: #49E845;
+        }
+
+        .onoffswitch-checkbox:checked+.onoffswitch-label,
+        .onoffswitch-checkbox:checked+.onoffswitch-label:before {
+            border-color: #49E845;
+        }
+
+        .onoffswitch-checkbox:checked+.onoffswitch-label:before {
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-nav-container">
+            <div class="header-nav-title-container">
+                <div class="header-nav-title">
+                    <span class="serif">BIG IDEAS</span>
+                    <span class="sans-serif">MATH</span>
+                </div>
+            </div>
+            <div class="header-nav-option">
+                <select id="user">
+                    <option value="zeususr1" selected>User 1</option>
+                    <option value="zeususr2">User 2</option>
+                    <option value="zeususr3">User 3</option>
+                </select>
+            </div>
+            <div class="header-nav-option hide">
+                <select id="session">
+                    <option value="98fdf775-ef96-251a-062a-2a6099d73ef9" selected>Session 1</option>
+                    <option value="98fdf775-ef96-251a-062a-2a6099d73ef8">Session 2</option>
+                    <option value="98fdf775-ef96-251a-062a-2a6099d73ef7">Session 3</option>
+                </select>
+            </div>
+            <div class="header-nav-option">
+                <select id="expType">
+                    <option value="" selected disabled>Choose Grade</option>
+                    <option value="aga">AGA</option>
+                    <option value="k5">K-5</option>
+                    <option value="fk5">Florida K-5</option>
+                    <option value="fhonors">Florida Grade 6 &amp; Honors</option>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu hide" id="k5">
+                <select class="batches" data-id="k5">
+                    <option value="" selected disabled>Choose Batch</option>
+                    <option value="batch-1">Batch 1</option>
+                    <option value="batch-2">Batch 2</option>
+                    <option value="batch-3">Batch 3</option>
+                    <option value="batch-4">Batch 4</option>
+                    <option value="batch-5">Batch 5</option>
+                    <option value="batch-6">Batch 6</option>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu hide" id="aga">
+                <select class="batches" data-id="aga">
+                    <option value="" selected disabled>Choose Batch</option>
+                    <option value="batch-0">Batch 0</option>
+                    <option value="batch-1">Batch 1</option>
+                    <option value="batch-2">Batch 2</option>
+                    <option value="batch-3">Batch 3</option>
+                    <option value="batch-4">Batch 4</option>
+                    <option value="batch-5">Batch 5</option>
+                    <option value="batch-6">Batch 6</option>
+                    <option value="batch-7">Batch 7</option>
+                    <option value="batch-8">Batch 8</option>
+                    <option value="batch-9">Batch 9</option>
+                    <option value="batch-10">Batch 10</option>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu hide" id="fk5">
+                <select class="batches" data-id="fk5">
+                    <option value="" selected disabled>Choose Batch</option>
+                    <option value="batch-1">Batch 1</option>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu hide" id="fhonors">
+                <select class="batches" data-id="fhonors">
+                    <option value="" selected disabled>Choose Batch</option>
+                    <option value="batch-1">Batch 1</option>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu k5">
+                <select id="batch-1" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade 4">
+                        <option value="19NA04_c10_s04_exp1_int_exploration">10.4 Exploration 1</option>
+                        <option value="19NA04_c10_s06_exp1_int_exploration">10.6 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 5">
+                        <option value="19NA05_c01_s02_exp1_int_exploration">1.2 Exploration 1</option>
+                        <option value="19NA05_c01_s04_exp1_int_exploration">1.4 Exploration 1</option>
+                        <option value="19NA05_c01_s05_exp1_int_exploration">1.5 Exploration 1</option>
+                        <option value="19NA05_c01_s06_exp1_int_exploration">1.6 Exploration 1</option>
+                        <option value="19NA05_c01_s07_exp1_int_exploration">1.7 Exploration 1</option>
+                        <option value="19NA05_c03_s02_exp1_int_exploration">3.2 Exploration 1</option>
+                        <option value="19NA05_c03_s03_exp1_int_exploration">3.3 Exploration 1</option>
+                        <option value="19NA05_c03_s04_exp1_int_exploration">3.4 Exploration 1</option>
+                        <option value="19NA05_c03_s05_exp1_int_exploration">3.5 Exploration 1</option>
+                        <option value="19NA05_c04_s02_exp1_int_exploration">4.2 Exploration 1</option>
+                        <option value="19NA05_c04_s03_exp1_int_exploration">4.3 Exploration 1</option>
+                        <option value="19NA05_c04_s04_exp1_int_exploration">4.4 Exploration 1</option>
+                        <option value="19NA05_c04_s05_exp1_int_exploration">4.5 Exploration 1</option>
+                        <option value="19NA05_c05_s01_exp1_int_exploration">5.1 Exploration 1</option>
+                        <option value="19NA05_c05_s02_exp1_int_exploration">5.2 Exploration 1</option>
+                        <option value="19NA05_c05_s03_exp1_int_exploration">5.3 Exploration 1</option>
+                        <option value="19NA05_c05_s04_exp1_int_exploration">5.4 Exploration 1</option>
+                        <option value="19NA05_c05_s05_exp1_int_exploration">5.5 Exploration 1</option>
+                        <option value="19NA05_c05_s06_exp1_int_exploration">5.6 Exploration 1</option>
+                        <option value="19NA05_c05_s07_exp1_int_exploration">5.7 Exploration 1</option>
+                        <option value="19NA05_c05_s08_exp1_int_exploration">5.8 Exploration 1</option>
+                        <option value="19NA05_c05_s09_exp1_int_exploration">5.9 Exploration 1</option>
+                        <option value="19NA05_c06_s01_exp1_int_exploration">6.1 Exploration 1</option>
+                        <option value="19NA05_c06_s02_exp1_int_exploration">6.2 Exploration 1</option>
+                        <option value="19NA05_c06_s03_exp1_int_exploration">6.3 Exploration 1</option>
+                        <option value="19NA05_c06_s04_exp1_int_exploration">6.4 Exploration 1</option>
+                        <option value="19NA05_c06_s05_exp1_int_exploration">6.5 Exploration 1</option>
+                        <option value="19NA05_c06_s06_exp1_int_exploration">6.6 Exploration 1</option>
+                        <option value="19NA05_c06_s07_exp1_int_exploration">6.7 Exploration 1</option>
+                        <option value="19NA05_c06_s08_exp1_int_exploration">6.8 Exploration 1</option>
+                        <option value="19NA05_c06_s09_exp1_int_exploration">6.9 Exploration 1</option>
+                        <option value="19NA05_c07_s01_exp1_int_exploration">7.1 Exploration 1</option>
+                        <option value="19NA05_c07_s02_exp1_int_exploration">7.2 Exploration 1</option>
+                        <option value="19NA05_c07_s03_exp1_int_exploration">7.3 Exploration 1</option>
+                        <option value="19NA05_c07_s04_exp1_int_exploration">7.4 Exploration 1</option>
+                        <option value="19NA05_c07_s05_exp1_int_exploration">7.5 Exploration 1</option>
+                        <option value="19NA05_c07_s06_exp1_int_exploration">7.6 Exploration 1</option>
+                        <option value="19NA05_c07_s07_exp1_int_exploration">7.7 Exploration 1</option>
+                        <option value="19NA05_c07_s08_exp1_int_exploration">7.8 Exploration 1</option>
+                        <option value="19NA05_c07_s09_exp1_int_exploration">7.9 Exploration 1</option>
+                        <option value="19NA05_c09_s01_exp1_int_exploration">9.1 Exploration 1</option>
+                        <option value="19NA05_c09_s02_exp1_int_exploration">9.2 Exploration 1</option>
+                        <option value="19NA05_c09_s03_exp1_int_exploration">9.3 Exploration 1</option>
+                        <option value="19NA05_c09_s04_exp1_int_exploration">9.4 Exploration 1</option>
+                        <option value="19NA05_c09_s05_exp1_int_exploration">9.5 Exploration 1</option>
+                        <option value="19NA05_c09_s06_exp1_int_exploration">9.6 Exploration 1</option>
+                        <option value="19NA05_c09_s07_exp1_int_exploration">9.7 Exploration 1</option>
+                        <option value="19NA05_c09_s08_exp1_int_exploration">9.8 Exploration 1</option>
+                        <option value="19NA05_c10_s01_exp1_int_exploration">10.1 Exploration 1</option>
+                        <option value="19NA05_c10_s02_exp1_int_exploration">10.2 Exploration 1</option>
+                        <option value="19NA05_c10_s03_exp1_int_exploration">10.3 Exploration 1</option>
+                        <option value="19NA05_c10_s04_exp1_int_exploration">10.4 Exploration 1</option>
+                        <option value="19NA05_c10_s05_exp1_int_exploration">10.5 Exploration 1</option>
+                        <option value="19NA05_c11_s01_exp1_int_exploration">11.1 Exploration 1</option>
+                        <option value="19NA05_c11_s02_exp1_int_exploration">11.2 Exploration 1</option>
+                        <option value="19NA05_c11_s03_exp1_int_exploration">11.3 Exploration 1</option>
+                        <option value="19NA05_c11_s04_exp1_int_exploration">11.4 Exploration 1</option>
+                        <option value="19NA05_c11_s05_exp1_int_exploration">11.5 Exploration 1</option>
+                        <option value="19NA05_c11_s06_exp1_int_exploration">11.6 Exploration 1</option>
+                        <option value="19NA05_c11_s07_exp1_int_exploration">11.7 Exploration 1</option>
+                        <option value="19NA05_c12_s01_exp1_int_exploration">12.1 Exploration 1</option>
+                        <option value="19NA05_c12_s02_exp1_int_exploration">12.2 Exploration 1</option>
+                        <option value="19NA05_c12_s03_exp1_int_exploration">12.3 Exploration 1</option>
+                        <option value="19NA05_c12_s04_exp1_int_exploration">12.4 Exploration 1</option>
+                        <option value="19NA05_c12_s05_exp1_int_exploration">12.5 Exploration 1</option>
+                        <option value="19NA05_c12_s06_exp1_int_exploration">12.6 Exploration 1</option>
+                        <option value="19NA05_c12_s07_exp1_int_exploration">12.7 Exploration 1</option>
+                        <option value="19NA05_c13_s01_exp1_int_exploration">13.1 Exploration 1</option>
+                        <option value="19NA05_c13_s02_exp1_int_exploration">13.2 Exploration 1</option>
+                        <option value="19NA05_c13_s03_exp1_int_exploration">13.3 Exploration 1</option>
+                        <option value="19NA05_c13_s04_exp1_int_exploration">13.4 Exploration 1</option>
+                        <option value="19NA05_c13_s05_exp1_int_exploration">13.5 Exploration 1</option>
+                        <option value="19NA05_c14_s01_exp1_int_exploration">14.1 Exploration 1</option>
+                        <option value="19NA05_c14_s02_exp1_int_exploration">14.2 Exploration 1</option>
+                        <option value="19NA05_c14_s03_exp1_int_exploration">14.3 Exploration 1</option>
+                    </optgroup>
+                </select>
+                <select id="batch-2" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade 2">
+                        <option value="19NA02_c01_s03_exp1_int_exploration">1.3 Exploration 1</option>
+                        <option value="19NA02_c01_s04_exp1_int_exploration">1.4 Exploration 1</option>
+                        <option value="19NA02_c02_s03_exp1_int_exploration">2.3 Exploration 1</option>
+                        <option value="19NA02_c02_s04_exp1_int_exploration">2.4 Exploration 1</option>
+                        <option value="19NA02_c03_s01_exp1_int_exploration">3.1 Exploration 1</option>
+                        <option value="19NA02_c03_s02_exp1_int_exploration">3.2 Exploration 1</option>
+                        <option value="19NA02_c03_s05_exp1_int_exploration">3.5 Exploration 1</option>
+                        <option value="19NA02_c05_s01_exp1_int_exploration">5.1 Exploration 1</option>
+                        <option value="19NA02_c05_s02_exp1_int_exploration">5.2 Exploration 1</option>
+                        <option value="19NA02_c05_s04_exp1_int_exploration">5.4 Exploration 1</option>
+                        <option value="19NA02_c05_s05_exp1_int_exploration">5.5 Exploration 1</option>
+                        <option value="19NA02_c06_s01_exp1_int_exploration">6.1 Exploration 1</option>
+                        <option value="19NA02_c06_s02_exp1_int_exploration">6.2 Exploration 1</option>
+                        <option value="19NA02_c06_s03_exp1_int_exploration">6.3 Exploration 1</option>
+                        <option value="19NA02_c06_s04_exp1_int_exploration">6.4 Exploration 1</option>
+                        <option value="19NA02_c07_s02_exp1_int_exploration">7.2 Exploration 1</option>
+                        <option value="19NA02_c07_s03_exp1_int_exploration">7.3 Exploration 1</option>
+                        <option value="19NA02_c08_s01_exp1_int_exploration">8.1 Exploration 1</option>
+                        <option value="19NA02_c08_s04_exp1_int_exploration">8.4 Exploration 1</option>
+                        <option value="19NA02_c08_s05_exp1_int_exploration">8.5 Exploration 1</option>
+                        <option value="19NA02_c08_s06_exp1_int_exploration">8.6 Exploration 1</option>
+                        <option value="19NA02_c09_s01_exp1_int_exploration">9.1 Exploration 1</option>
+                        <option value="19NA02_c09_s03_exp1_int_exploration">9.3 Exploration 1</option>
+                        <option value="19NA02_c09_s04_exp1_int_exploration">9.4 Exploration 1</option>
+                        <option value="19NA02_c09_s05_exp1_int_exploration">9.5 Exploration 1</option>
+                        <option value="19NA02_c09_s06_exp1_int_exploration">9.6 Exploration 1</option>
+                        <option value="19NA02_c09_s07_exp1_int_exploration">9.7 Exploration 1</option>
+                        <option value="19NA02_c09_s08_exp1_int_exploration">9.8 Exploration 1</option>
+                        <option value="19NA02_c09_s09_exp1_int_exploration">9.9 Exploration 1</option>
+                        <option value="19NA02_c10_s01_exp1_int_exploration">10.1 Exploration 1</option>
+                        <option value="19NA02_c10_s05_exp1_int_exploration">10.5 Exploration 1</option>
+                        <option value="19NA02_c10_s07_exp1_int_exploration">10.7 Exploration 1</option>
+                        <option value="19NA02_c10_s09_exp1_int_exploration">10.9 Exploration 1</option>
+                        <option value="19NA02_c11_s01_exp1_int_exploration">11.1 Exploration 1</option>
+                        <option value="19NA02_c11_s07_exp1_int_exploration">11.7 Exploration 1</option>
+                        <option value="19NA02_c12_s02_exp1_int_exploration">12.2 Exploration 1</option>
+                        <option value="19NA02_c12_s03_exp1_int_exploration">12.3 Exploration 1</option>
+                        <option value="19NA02_c12_s04_exp1_int_exploration">12.4 Exploration 1</option>
+                        <option value="19NA02_c13_s01_exp1_int_exploration">13.1 Exploration 1</option>
+                        <option value="19NA02_c13_s03_exp1_int_exploration">13.3 Exploration 1</option>
+                        <option value="19NA02_c13_s05_exp1_int_exploration">13.5 Exploration 1</option>
+                        <option value="19NA02_c14_s01_exp1_int_exploration">14.1 Exploration 1</option>
+                        <option value="19NA02_c14_s02_exp1_int_exploration">14.2 Exploration 1</option>
+                        <option value="19NA02_c14_s04_exp1_int_exploration">14.4 Exploration 1</option>
+                        <option value="19NA02_c14_s05_exp1_int_exploration">14.5 Exploration 1</option>
+                        <option value="19NA02_c14_s06_exp1_int_exploration">14.6 Exploration 1</option>
+                        <option value="19NA02_c14_s07_exp1_int_exploration">14.7 Exploration 1</option>
+                        <option value="19NA02_c14_s09_exp1_int_exploration">14.9 Exploration 1</option>
+                        <option value="19NA02_c15_s04_exp1_int_exploration">15.4 Exploration 1</option>
+                        <option value="19NA02_c15_s05_exp1_int_exploration">15.5 Exploration 1</option>
+                        <option value="19NA02_c15_s06_exp1_int_exploration">15.6 Exploration 1</option>
+                        <option value="19NA02_c15_s07_exp1_int_exploration">15.7 Exploration 1</option>
+                        <option value="19NA02_c15_s08_exp1_int_exploration">15.8 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 3">
+                        <option value="19NA03_c02_s03_exp1_int_exploration">2.3 Exploration 1</option>
+                        <option value="19NA03_c03_s06_exp1_int_exploration">3.6 Exploration 1</option>
+                        <option value="19NA03_c07_s01_exp1_int_exploration">7.1 Exploration 1</option>
+                        <option value="19NA03_c07_s02_exp1_int_exploration">7.2 Exploration 1</option>
+                        <option value="19NA03_c07_s03_exp1_int_exploration">7.3 Exploration 1</option>
+                        <option value="19NA03_c07_s04_exp1_int_exploration">7.4 Exploration 1</option>
+                        <option value="19NA03_c08_s04_exp1_int_exploration">8.4 Exploration 1</option>
+                        <option value="19NA03_c08_s05_exp1_int_exploration">8.5 Exploration 1</option>
+                        <option value="19NA03_c08_s09_exp1_int_exploration">8.9 Exploration 1</option>
+                        <option value="19NA03_c10_s02_exp1_int_exploration">10.2 Exploration 1</option>
+                        <option value="19NA03_c11_s01_exp1_int_exploration">11.1 Exploration 1</option>
+                        <option value="19NA03_c11_s02_exp1_int_exploration">11.2 Exploration 1</option>
+                        <option value="19NA03_c11_s03_exp1_int_exploration">11.3 Exploration 1</option>
+                        <option value="19NA03_c11_s04_exp1_int_exploration">11.4 Exploration 1</option>
+                        <option value="19NA03_c11_s06_exp1_int_exploration">11.6 Exploration 1</option>
+                        <option value="19NA03_c11_s07_exp1_int_exploration">11.7 Exploration 1</option>
+                        <option value="19NA03_c11_s08_exp1_int_exploration">11.8 Exploration 1</option>
+                        <option value="19NA03_c12_s07_exp1_int_exploration">12.7 Exploration 1</option>
+                        <option value="19NA03_c13_s01_exp1_int_exploration">13.1 Exploration 1</option>
+                        <option value="19NA03_c13_s02_exp1_int_exploration">13.2 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 4">
+                        <option value="19NA04_c01_s01_exp1_int_exploration">1.1 Exploration 1</option>
+                        <option value="19NA04_c01_s02_exp1_int_exploration">1.2 Exploration 1</option>
+                        <option value="19NA04_c02_s02_exp1_int_exploration">2.2 Exploration 1</option>
+                        <option value="19NA04_c02_s03_exp1_int_exploration">2.3 Exploration 1</option>
+                        <option value="19NA04_c04_s02_exp1_int_exploration">4.2 Exploration 1</option>
+                        <option value="19NA04_c04_s05_exp1_int_exploration">4.5 Exploration 1</option>
+                        <option value="19NA04_c04_s07_exp1_int_exploration">4.7 Exploration 1</option>
+                    </optgroup>
+                </select>
+                <select id="batch-3" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade 2">
+                        <option value="19NA02_c03_s07_exp1_int_exploration">3.7 Exploration 1</option>
+                        <option value="19NA02_c05_s07_exp1_int_exploration">5.7 Exploration 1</option>
+                        <option value="19NA02_c11_s04_exp1_int_exploration">11.4 Exploration 1</option>
+                        <option value="19NA02_c11_s08_exp1_int_exploration">11.8 Exploration 1</option>
+                        <option value="19NA02_c13_s07_exp1_int_exploration">13.7 Exploration 1</option>
+                        <option value="19NA02_c14_s03_exp1_int_exploration">14.3 Exploration 1</option>
+                        <option value="19NA02_c14_s10_exp1_int_exploration">14.10 Exploration 1</option>
+                        <option value="19NA02_c15_s01_exp1_int_exploration">15.1 Exploration 1</option>
+                        <option value="19NA02_c15_s02_exp1_int_exploration">15.2 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 3">
+                        <option value="19NA03_c02_s05_exp1_int_exploration">2.5 Exploration 1</option>
+                        <option value="19NA03_c03_s09_exp1_int_exploration">3.9 Exploration 1</option>
+                        <option value="19NA03_c06_s01_exp1_int_exploration">6.1 Exploration 1</option>
+                        <option value="19NA03_c06_s02_exp1_int_exploration">6.2 Exploration 1</option>
+                        <option value="19NA03_c06_s03_exp1_int_exploration">6.3 Exploration 1</option>
+                        <option value="19NA03_c08_s06_exp1_int_exploration">8.6 Exploration 1</option>
+                        <option value="19NA03_c09_s04_exp1_int_exploration">9.4 Exploration 1</option>
+                        <option value="19NA03_c10_s01_exp1_int_exploration">10.1 Exploration 1</option>
+                        <option value="19NA03_c10_s04_exp1_int_exploration">10.4 Exploration 1</option>
+                        <option value="19NA03_c10_s05_exp1_int_exploration">10.5 Exploration 1</option>
+                        <option value="19NA03_c11_s05_exp1_int_exploration">11.5 Exploration 1</option>
+                        <option value="19NA03_c13_s03_exp1_int_exploration">13.3 Exploration 1</option>
+                        <option value="19NA03_c14_s01_exp1_int_exploration">14.1 Exploration 1</option>
+                        <option value="19NA03_c14_s02_exp1_int_exploration">14.2 Exploration 1</option>
+                        <option value="19NA03_c14_s03_exp1_int_exploration">14.3 Exploration 1</option>
+                        <option value="19NA03_c14_s04_exp1_int_exploration">14.4 Exploration 1</option>
+                        <option value="19NA03_c14_s05_exp1_int_exploration">14.5 Exploration 1</option>
+                        <option value="19NA03_c15_s01_exp1_int_exploration">15.1 Exploration 1</option>
+                        <option value="19NA03_c15_s02_exp1_int_exploration">15.2 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 4">
+                        <option value="19NA04_c01_s03_exp1_int_exploration">1.3 Exploration 1</option>
+                        <option value="19NA04_c04_s01_exp1_int_exploration">4.1 Exploration 1</option>
+                        <option value="19NA04_c04_s04_exp1_int_exploration">4.4 Exploration 1</option>
+                        <option value="19NA04_c04_s06_exp1_int_exploration">4.6 Exploration 1</option>
+                        <option value="19NA04_c05_s03_exp1_int_exploration">5.3 Exploration 1</option>
+                        <option value="19NA04_c05_s04_exp1_int_exploration">5.4 Exploration 1</option>
+                        <option value="19NA04_c05_s09_exp1_int_exploration">5.9 Exploration 1</option>
+                        <option value="19NA04_c06_s04_exp1_int_exploration">6.4 Exploration 1</option>
+                        <option value="19NA04_c06_s05_exp1_int_exploration">6.5 Exploration 1</option>
+                        <option value="19NA04_c06_s06_exp1_int_exploration">6.6 Exploration 1</option>
+                        <option value="19NA04_c07_s01_exp1_int_exploration">7.1 Exploration 1</option>
+                        <option value="19NA04_c07_s02_exp1_int_exploration">7.2 Exploration 1</option>
+                        <option value="19NA04_c07_s03_exp1_int_exploration">7.3 Exploration 1</option>
+                        <option value="19NA04_c07_s04_exp1_int_exploration">7.4 Exploration 1</option>
+                        <option value="19NA04_c07_s05_exp1_int_exploration">7.5 Exploration 1</option>
+                        <option value="19NA04_c08_s01_exp1_int_exploration">8.1 Exploration 1</option>
+                        <option value="19NA04_c08_s02_exp1_int_exploration">8.2 Exploration 1</option>
+                        <option value="19NA04_c08_s03_exp1_int_exploration">8.3 Exploration 1</option>
+                        <option value="19NA04_c08_s04_exp1_int_exploration">8.4 Exploration 1</option>
+                        <option value="19NA04_c08_s05_exp1_int_exploration">8.5 Exploration 1</option>
+                        <option value="19NA04_c08_s06_exp1_int_exploration">8.6 Exploration 1</option>
+                        <option value="19NA04_c08_s07_exp1_int_exploration">8.7 Exploration 1</option>
+                        <option value="19NA04_c08_s08_exp1_int_exploration">8.8 Exploration 1</option>
+                        <option value="19NA04_c08_s09_exp1_int_exploration">8.9 Exploration 1</option>
+                        <option value="19NA04_c09_s01_exp1_int_exploration">9.1 Exploration 1</option>
+                        <option value="19NA04_c09_s02_exp1_int_exploration">9.2 Exploration 1</option>
+                        <option value="19NA04_c09_s03_exp1_int_exploration">9.3 Exploration 1</option>
+                        <option value="19NA04_c09_s04_exp1_int_exploration">9.4 Exploration 1</option>
+                        <option value="19NA04_c09_s05_exp1_int_exploration">9.5 Exploration 1</option>
+                        <option value="19NA04_c10_s01_exp1_int_exploration">10.1 Exploration 1</option>
+                        <option value="19NA04_c10_s02_exp1_int_exploration">10.2 Exploration 1</option>
+                        <option value="19NA04_c10_s03_exp1_int_exploration">10.3 Exploration 1</option>
+                        <option value="19NA04_c10_s05_exp1_int_exploration">10.5 Exploration 1</option>
+                        <option value="19NA04_c10_s07_exp1_int_exploration">10.7 Exploration 1</option>
+                        <option value="19NA04_c11_s05_exp1_int_exploration">11.5 Exploration 1</option>
+                        <option value="19NA04_c11_s07_exp1_int_exploration">11.7 Exploration 1</option>
+                        <option value="19NA04_c12_s01_exp1_int_exploration">12.1 Exploration 1</option>
+                        <option value="19NA04_c12_s02_exp1_int_exploration">12.2 Exploration 1</option>
+                        <option value="19NA04_c12_s03_exp1_int_exploration">12.3 Exploration 1</option>
+                        <option value="19NA04_c12_s04_exp1_int_exploration">12.4 Exploration 1</option>
+                        <option value="19NA04_c13_s01_exp1_int_exploration">13.1 Exploration 1</option>
+                        <option value="19NA04_c13_s04_exp1_int_exploration">13.4 Exploration 1</option>
+                        <option value="19NA04_c13_s05_exp1_int_exploration">13.5 Exploration 1</option>
+                        <option value="19NA04_c13_s06_exp1_int_exploration">13.6 Exploration 1</option>
+                        <option value="19NA04_c13_s07_exp1_int_exploration">13.7 Exploration 1</option>
+                        <option value="19NA04_c13_s08_exp1_int_exploration">13.8 Exploration 1</option>
+                        <option value="19NA04_c14_s01_exp1_int_exploration">14.1 Exploration 1</option>
+                        <option value="19NA04_c14_s02_exp1_int_exploration">14.2 Exploration 1</option>
+                        <option value="19NA04_c14_s03_exp1_int_exploration">14.3 Exploration 1</option>
+                        <option value="19NA04_c14_s04_exp1_int_exploration">14.4 Exploration 1</option>
+                        <option value="19NA04_c14_s05_exp1_int_exploration">14.5 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 5">
+                        <option value="19NA05_c02_s03_exp1_int_exploration">2.3 Exploration 1</option>
+                    </optgroup>
+                </select>
+                <select id="batch-4" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade 2">
+                        <option value="19NA02_c02_s05_exp1_int_exploration">2.5 Exploration 1</option>
+                        <option value="19NA02_c02_s07_exp1_int_exploration">2.7 Exploration 1</option>
+                        <option value="19NA02_c05_s03_exp1_int_exploration">5.3 Exploration 1</option>
+                        <option value="19NA02_c05_s08_exp1_int_exploration">5.8 Exploration 1</option>
+                        <option value="19NA02_c08_s02_exp1_int_exploration">8.2 Exploration 1</option>
+                        <option value="19NA02_c09_s02_exp1_int_exploration">9.2 Exploration 1</option>
+                        <option value="19NA02_c10_s04_exp1_int_exploration">10.4 Exploration 1</option>
+                        <option value="19NA02_c10_s08_exp1_int_exploration">10.8 Exploration 1</option>
+                        <option value="19NA02_c12_s01_exp1_int_exploration">12.1 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 3">
+                        <option value="19NA03_c01_s01_exp1_int_exploration">1.1 Exploration 1</option>
+                        <option value="19NA03_c01_s02_exp1_int_exploration">1.2 Exploration 1</option>
+                        <option value="19NA03_c01_s03_exp1_int_exploration">1.3 Exploration 1</option>
+                        <option value="19NA03_c01_s05_exp1_int_exploration">1.5 Exploration 1</option>
+                        <option value="19NA03_c01_s06_exp1_int_exploration">1.6 Exploration 1</option>
+                        <option value="19NA03_c01_s07_exp1_int_exploration">1.7 Exploration 1</option>
+                        <option value="19NA03_c02_s01_exp1_int_exploration">2.1 Exploration 1</option>
+                        <option value="19NA03_c02_s02_exp1_int_exploration">2.2 Exploration 1</option>
+                        <option value="19NA03_c02_s04_exp1_int_exploration">2.4 Exploration 1</option>
+                        <option value="19NA03_c02_s06_exp1_int_exploration">2.6 Exploration 1</option>
+                        <option value="19NA03_c03_s01_exp1_int_exploration">3.1 Exploration 1</option>
+                        <option value="19NA03_c03_s03_exp1_int_exploration">3.3 Exploration 1</option>
+                        <option value="19NA03_c03_s04_exp1_int_exploration">3.4 Exploration 1</option>
+                        <option value="19NA03_c03_s07_exp1_int_exploration">3.7 Exploration 1</option>
+                        <option value="19NA03_c03_s08_exp1_int_exploration">3.8 Exploration 1</option>
+                        <option value="19NA03_c05_s04_exp1_int_exploration">5.4 Exploration 1</option>
+                        <option value="19NA03_c08_s02_exp1_int_exploration">8.2 Exploration 1</option>
+                        <option value="19NA03_c08_s07_exp1_int_exploration">8.7 Exploration 1</option>
+                        <option value="19NA03_c09_s01_exp1_int_exploration">9.1 Exploration 1</option>
+                        <option value="19NA03_c09_s02_exp1_int_exploration">9.2 Exploration 1</option>
+                        <option value="19NA03_c09_s05_exp1_int_exploration">9.5 Exploration 1</option>
+                        <option value="19NA03_c12_s04_exp1_int_exploration">12.4 Exploration 1</option>
+                        <option value="19NA03_c13_s04_exp1_int_exploration">13.4 Exploration 1</option>
+                        <option value="19NA03_c15_s04_exp1_int_exploration">15.4 Exploration 1</option>
+                        <option value="19NA03_c15_s05_exp1_int_exploration">15.5 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 4">
+                        <option value="19NA04_c04_s03_exp1_int_exploration">4.3 Exploration 1</option>
+                        <option value="19NA04_c05_s05_exp1_int_exploration">5.5 Exploration 1</option>
+                        <option value="19NA04_c05_s06_exp1_int_exploration">5.6 Exploration 1</option>
+                        <option value="19NA04_c05_s07_exp1_int_exploration">5.7 Exploration 1</option>
+                        <option value="19NA04_c05_s08_exp1_int_exploration">5.8 Exploration 1</option>
+                        <option value="19NA04_c06_s01_exp1_int_exploration">6.1 Exploration 1</option>
+                        <option value="19NA04_c11_s03_exp1_int_exploration">11.3 Exploration 1</option>
+                        <option value="19NA04_c11_s04_exp1_int_exploration">11.4 Exploration 1</option>
+                        <option value="19NA04_c11_s06_exp1_int_exploration">11.6 Exploration 1</option>
+                        <option value="19NA04_c11_s09_exp1_int_exploration">11.9 Exploration 1</option>
+                        <option value="19NA04_c13_s02_exp1_int_exploration">13.2 Exploration 1</option>
+                        <option value="19NA04_c13_s03_exp1_int_exploration">13.3 Exploration 1</option>
+                    </optgroup>
+                </select>
+                <select id="batch-5" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade 2">
+                        <option value="19NA02_c02_s09_exp1_int_exploration">2.9 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 3">
+                        <option value="19NA03_c06_s04_exp1_int_exploration">6.4 Exploration 1</option>
+                    </optgroup>
+                </select>
+                <select id="batch-6" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade K">
+                        <option value="19NA00_c01_s01_exp1_int_exploration">1.1 Exploration 1</option>
+                        <option value="19NA00_c01_s03_exp1_int_exploration">1.3 Exploration 1</option>
+                        <option value="19NA00_c01_s05_exp1_int_exploration">1.5 Exploration 1</option>
+                        <option value="19NA00_c01_s07_exp1_int_exploration">1.7 Exploration 1</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu aga">
+                <select id="batch-0" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c10_s03_exp1_int_exploration">10.3 Exploration 1</option>
+                        <option value="19NA_A1_c07_s02_exp2_int_exploration">7.2 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c04_s04_exp1_int_exploration">4.4 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Geometry"></optgroup>
+                </select>
+                <select id="batch-1" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1"></optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c09_s01_exp1_int_exploration">9.1 Exploration 1</option>
+                        <option value="19NA_A2_c09_s01_exp2_int_exploration">9.1 Exploration 2</option>
+                        <option value="19NA_A2_c09_s02_exp1_int_exploration">9.2 Exploration 1</option>
+                        <option value="19NA_A2_c09_s02_exp2_int_exploration">9.2 Exploration 2</option>
+                        <option value="19NA_A2_c09_s03_exp1_int_exploration">9.3 Exploration 1</option>
+                        <option value="19NA_A2_c09_s04_exp1_int_exploration">9.4 Exploration 1</option>
+                        <option value="19NA_A2_c09_s04_exp2_int_exploration">9.4 Exploration 2</option>
+                        <option value="19NA_A2_c09_s05_exp1_int_exploration">9.5 Exploration 1</option>
+                        <option value="19NA_A2_c09_s06_exp1_int_exploration">9.6 Exploration 1</option>
+                        <option value="19NA_A2_c09_s07_exp1_int_exploration">9.7 Exploration 1</option>
+                        <option value="19NA_A2_c09_s07_exp2_int_exploration">9.7 Exploration 2</option>
+                        <option value="19NA_A2_c09_s08_exp1_int_exploration">9.8 Exploration 1</option>
+                        <option value="19NA_A2_c09_s08_exp2_int_exploration">9.8 Exploration 2</option>
+                        <option value="19NA_A2_c09_s08_exp3_int_exploration">9.8 Exploration 3</option>
+                    </optgroup>
+                    <optgroup label="Geometry"></optgroup>
+                </select>
+                <select id="batch-2" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c01_s03_exp1_int_exploration">1.3 Exploration 1</option>
+                        <option value="19NA_A1_c01_s03_exp2_int_exploration">1.3 Exploration 2</option>
+                        <option value="19NA_A1_c01_s05_exp1_int_exploration">1.5 Exploration 1</option>
+                        <option value="19NA_A1_c01_s05_exp2_int_exploration">1.5 Exploration 2</option>
+                        <option value="19NA_A1_c06_s02_exp1_int_exploration">6.2 Exploration 1</option>
+                        <option value="19NA_A1_c06_s02_exp2_int_exploration">6.2 Exploration 2</option>
+                        <option value="19NA_A1_c06_s03_exp1_int_exploration">6.3 Exploration 1</option>
+                        <option value="19NA_A1_c06_s03_exp2_int_exploration">6.3 Exploration 2</option>
+                        <option value="19NA_A1_c07_s01_exp1_int_exploration">7.1 Exploration 1</option>
+                        <option value="19NA_A1_c07_s01_exp2_int_exploration">7.1 Exploration 2</option>
+                        <option value="19NA_A1_c07_s02_exp1_int_exploration">7.2 Exploration 1</option>
+                        <option value="19NA_A1_c07_s03_exp1_int_exploration">7.3 Exploration 1</option>
+                        <option value="19NA_A1_c07_s03_exp2_int_exploration">7.3 Exploration 2</option>
+                        <option value="19NA_A1_c07_s08_exp1_int_exploration">7.8 Exploration 1</option>
+                        <option value="19NA_A1_c07_s08_exp2_int_exploration">7.8 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c01_s01_exp1_int_exploration">1.1 Exploration 1</option>
+                        <option value="19NA_A2_c01_s03_exp1_int_exploration">1.3 Exploration 1</option>
+                        <option value="19NA_A2_c01_s03_exp2_int_exploration">1.3 Exploration 2</option>
+                        <option value="19NA_A2_c01_s04_exp1_int_exploration">1.4 Exploration 1</option>
+                        <option value="19NA_A2_c01_s04_exp2_int_exploration">1.4 Exploration 2</option>
+                        <option value="19NA_A2_c04_s01_exp1_int_exploration">4.1 Exploration 1</option>
+                        <option value="19NA_A2_c04_s01_exp2_int_exploration">4.1 Exploration 2</option>
+                        <option value="19NA_A2_c04_s02_exp1_int_exploration">4.2 Exploration 1</option>
+                        <option value="19NA_A2_c04_s02_exp2_int_exploration">4.2 Exploration 2</option>
+                        <option value="19NA_A2_c04_s04_exp2_int_exploration">4.4 Exploration 2</option>
+                        <option value="19NA_A2_c04_s07_exp1_int_exploration">4.7 Exploration 1</option>
+                        <option value="19NA_A2_c04_s07_exp2_int_exploration">4.7 Exploration 2</option>
+                        <option value="19NA_A2_c05_s01_exp1_int_exploration">5.1 Exploration 1</option>
+                        <option value="19NA_A2_c05_s01_exp2_int_exploration">5.1 Exploration 2</option>
+                        <option value="19NA_A2_c05_s01_exp3_int_exploration">5.1 Exploration 3</option>
+                        <option value="19NA_A2_c05_s02_exp1_int_exploration">5.2 Exploration 1</option>
+                        <option value="19NA_A2_c05_s02_exp2_int_exploration">5.2 Exploration 2</option>
+                        <option value="19NA_A2_c05_s02_exp3_int_exploration">5.2 Exploration 3</option>
+                        <option value="19NA_A2_c05_s03_exp1_int_exploration">5.3 Exploration 1</option>
+                        <option value="19NA_A2_c05_s03_exp2_int_exploration">5.3 Exploration 2</option>
+                        <option value="19NA_A2_c06_s03_exp1_int_exploration">6.3 Exploration 1</option>
+                        <option value="19NA_A2_c06_s03_exp2_int_exploration">6.3 Exploration 2</option>
+                        <option value="19NA_A2_c06_s03_exp3_int_exploration">6.3 Exploration 3</option>
+                        <option value="19NA_A2_c06_s04_exp1_int_exploration">6.4 Exploration 1</option>
+                        <option value="19NA_A2_c06_s04_exp2_int_exploration">6.4 Exploration 2</option>
+                        <option value="19NA_A2_c06_s05_exp1_int_exploration">6.5 Exploration 1</option>
+                        <option value="19NA_A2_c06_s05_exp2_int_exploration">6.5 Exploration 2</option>
+                        <option value="19NA_A2_c06_s05_exp3_int_exploration">6.5 Exploration 3</option>
+                        <option value="19NA_A2_c06_s07_exp1_int_exploration">6.7 Exploration 1</option>
+                        <option value="19NA_A2_c06_s07_exp2_int_exploration">6.7 Exploration 2</option>
+                        <option value="19NA_A2_c07_s02_exp1_int_exploration">7.2 Exploration 1</option>
+                        <option value="19NA_A2_c07_s03_exp1_int_exploration">7.3 Exploration 1</option>
+                        <option value="19NA_A2_c07_s03_exp2_int_exploration">7.3 Exploration 2</option>
+                        <option value="19NA_A2_c07_s04_exp1_int_exploration">7.4 Exploration 1</option>
+                        <option value="19NA_A2_c07_s04_exp2_int_exploration">7.4 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Geometry"></optgroup>
+                </select>
+
+                <select id="batch-3" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c03_s03_exp1_int_exploration">3.3 Exploration 1</option>
+                        <option value="19NA_A1_c06_s01_exp1_int_exploration">6.1 Exploration 1</option>
+                        <option value="19NA_A1_c06_s03_exp3_int_exploration">6.3 Exploration 3</option>
+                        <option value="19NA_A1_c06_s04_exp1_int_exploration">6.4 Exploration 1</option>
+                        <option value="19NA_A1_c06_s04_exp2_int_exploration">6.4 Exploration 2</option>
+                        <option value="19NA_A1_c06_s07_exp1_int_exploration">6.7 Exploration 1</option>
+                        <option value="19NA_A1_c06_s07_exp2_int_exploration">6.7 Exploration 2</option>
+                        <option value="19NA_A1_c07_s04_exp1_int_exploration">7.4 Exploration 1</option>
+                        <option value="19NA_A1_c07_s04_exp2_int_exploration">7.4 Exploration 2</option>
+                        <option value="19NA_A1_c07_s04_exp3_int_exploration">7.4 Exploration 3</option>
+                        <option value="19NA_A1_c07_s06_exp1_int_exploration">7.6 Exploration 1</option>
+                        <option value="19NA_A1_c07_s07_exp1_int_exploration">7.7 Exploration 1</option>
+                        <option value="19NA_A1_c08_s01_exp1_int_exploration">8.1 Exploration 1</option>
+                        <option value="19NA_A1_c08_s02_exp1_int_exploration">8.2 Exploration 1</option>
+                        <option value="19NA_A1_c08_s02_exp2_int_exploration">8.2 Exploration 2</option>
+                        <option value="19NA_A1_c08_s03_exp1_int_exploration">8.3 Exploration 1</option>
+                        <option value="19NA_A1_c08_s03_exp2_int_exploration">8.3 Exploration 2</option>
+                        <option value="19NA_A1_c08_s03_exp3_int_exploration">8.3 Exploration 3</option>
+                        <option value="19NA_A1_c08_s04_exp1_int_exploration">8.4 Exploration 1</option>
+                        <option value="19NA_A1_c08_s04_exp2_int_exploration">8.4 Exploration 2</option>
+                        <option value="19NA_A1_c08_s05_exp1_int_exploration">8.5 Exploration 1</option>
+                        <option value="19NA_A1_c08_s06_exp1_int_exploration">8.6 Exploration 1</option>
+                        <option value="19NA_A1_c08_s06_exp2_int_exploration">8.6 Exploration 2</option>
+                        <option value="19NA_A1_c09_s01_exp1_int_exploration">9.1 Exploration 1</option>
+                        <option value="19NA_A1_c09_s01_exp2_int_exploration">9.1 Exploration 2</option>
+                        <option value="19NA_A1_c09_s02_exp1_int_exploration">9.2 Exploration 1</option>
+                        <option value="19NA_A1_c09_s02_exp2_int_exploration">9.2 Exploration 2</option>
+                        <option value="19NA_A1_c09_s03_exp2_int_exploration">9.3 Exploration 2</option>
+                        <option value="19NA_A1_c09_s03_exp3_int_exploration">9.3 Exploration 3</option>
+                        <option value="19NA_A1_c09_s05_exp1_int_exploration">9.5 Exploration 1</option>
+                        <option value="19NA_A1_c09_s05_exp2_int_exploration">9.5 Exploration 2</option>
+                        <option value="19NA_A1_c10_s01_exp2_int_exploration">10.1 Exploration 2</option>
+                        <option value="19NA_A1_c10_s03_exp2_int_exploration">10.3 Exploration 2</option>
+                        <option value="19NA_A1_c11_s03_exp1_int_exploration">11.3 Exploration 1</option>
+                        <option value="19NA_A1_c11_s03_exp2_int_exploration">11.3 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c01_s02_exp1_int_exploration">1.2 Exploration 1</option>
+                        <option value="19NA_A2_c01_s02_exp2_int_exploration">1.2 Exploration 2</option>
+                        <option value="19NA_A2_c01_s02_exp3_int_exploration">1.2 Exploration 3</option>
+                        <option value="19NA_A2_c03_s01_exp1_int_exploration">3.1 Exploration 1</option>
+                        <option value="19NA_A2_c03_s01_exp2_int_exploration">3.1 Exploration 2</option>
+                        <option value="19NA_A2_c03_s02_exp1_int_exploration">3.2 Exploration 1</option>
+                        <option value="19NA_A2_c03_s02_exp2_int_exploration">3.2 Exploration 2</option>
+                        <option value="19NA_A2_c03_s03_exp1_int_exploration">3.3 Exploration 1</option>
+                        <option value="19NA_A2_c03_s03_exp2_int_exploration">3.3 Exploration 2</option>
+                        <option value="19NA_A2_c03_s04_exp1_int_exploration">3.4 Exploration 1</option>
+                        <option value="19NA_A2_c03_s04_exp2_int_exploration">3.4 Exploration 2</option>
+                        <option value="19NA_A2_c03_s05_exp1_int_exploration">3.5 Exploration 1</option>
+                        <option value="19NA_A2_c03_s05_exp2_int_exploration">3.5 Exploration 2</option>
+                        <option value="19NA_A2_c03_s06_exp1_int_exploration">3.6 Exploration 1</option>
+                        <option value="19NA_A2_c03_s06_exp2_int_exploration">3.6 Exploration 2</option>
+                        <option value="19NA_A2_c04_s03_exp1_int_exploration">4.3 Exploration 1</option>
+                        <option value="19NA_A2_c04_s03_exp2_int_exploration">4.3 Exploration 2</option>
+                        <option value="19NA_A2_c04_s05_exp1_int_exploration">4.5 Exploration 1</option>
+                        <option value="19NA_A2_c04_s05_exp2_int_exploration">4.5 Exploration 2</option>
+                        <option value="19NA_A2_c04_s06_exp1_int_exploration">4.6 Exploration 1</option>
+                        <option value="19NA_A2_c04_s06_exp2_int_exploration">4.6 Exploration 2</option>
+                        <option value="19NA_A2_c04_s08_exp1_int_exploration">4.8 Exploration 1</option>
+                        <option value="19NA_A2_c06_s01_exp1_int_exploration">6.1 Exploration 1</option>
+                        <option value="19NA_A2_c06_s01_exp2_int_exploration">6.1 Exploration 2</option>
+                        <option value="19NA_A2_c06_s02_exp1_int_exploration">6.2 Exploration 1</option>
+                        <option value="19NA_A2_c06_s02_exp2_int_exploration">6.2 Exploration 2</option>
+                        <option value="19NA_A2_c06_s02_exp3_int_exploration">6.2 Exploration 3</option>
+                        <option value="19NA_A2_c06_s06_exp1_int_exploration">6.6 Exploration 1</option>
+                        <option value="19NA_A2_c06_s06_exp2_int_exploration">6.6 Exploration 2</option>
+                        <option value="19NA_A2_c07_s05_exp1_int_exploration">7.5 Exploration 1</option>
+                        <option value="19NA_A2_c07_s05_exp2_int_exploration">7.5 Exploration 2</option>
+                        <option value="19NA_A2_c10_s01_exp1_int_exploration">10.1 Exploration 1</option>
+                        <option value="19NA_A2_c10_s01_exp2_int_exploration">10.1 Exploration 2</option>
+                        <option value="19NA_A2_c10_s01_exp3_int_exploration">10.1 Exploration 3</option>
+                        <option value="19NA_A2_c10_s01_exp4_int_exploration">10.1 Exploration 4</option>
+                        <option value="19NA_A2_c10_s03_exp1_int_exploration">10.3 Exploration 1</option>
+                        <option value="19NA_A2_c10_s03_exp2_int_exploration">10.3 Exploration 2</option>
+                        <option value="19NA_A2_c10_s03_exp3_int_exploration">10.3 Exploration 3</option>
+                        <option value="19NA_A2_c10_s04_exp1_int_exploration">10.4 Exploration 1</option>
+                        <option value="19NA_A2_c10_s04_exp2_int_exploration">10.4 Exploration 2</option>
+                        <option value="19NA_A2_c10_s05_exp1_int_exploration">10.5 Exploration 1</option>
+                        <option value="19NA_A2_c10_s05_exp2_int_exploration">10.5 Exploration 2</option>
+                        <option value="19NA_A2_c10_s05_exp3_int_exploration">10.5 Exploration 3</option>
+                        <option value="19NA_A2_c10_s06_exp1_int_exploration">10.6 Exploration 1</option>
+                        <option value="19NA_A2_c10_s06_exp2_int_exploration">10.6 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Geometry"></optgroup>
+                </select>
+
+                <select id="batch-4" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c01_s01_exp1_int_exploration">1.1 Exploration 1</option>
+                        <option value="19NA_A1_c01_s01_exp3_int_exploration">1.1 Exploration 3</option>
+                        <option value="19NA_A1_c01_s02_exp1_int_exploration">1.2 Exploration 1</option>
+                        <option value="19NA_A1_c01_s04_exp1_int_exploration">1.4 Exploration 1</option>
+                        <option value="19NA_A1_c02_s01_exp1_int_exploration">2.1 Exploration 1</option>
+                        <option value="19NA_A1_c02_s01_exp2_int_exploration">2.1 Exploration 2</option>
+                        <option value="19NA_A1_c02_s02_exp1_int_exploration">2.2 Exploration 1</option>
+                        <option value="19NA_A1_c02_s02_exp2_int_exploration">2.2 Exploration 2</option>
+                        <option value="19NA_A1_c02_s03_exp1_int_exploration">2.3 Exploration 1</option>
+                        <option value="19NA_A1_c02_s03_exp2_int_exploration">2.3 Exploration 2</option>
+                        <option value="19NA_A1_c02_s05_exp1_int_exploration">2.5 Exploration 1</option>
+                        <option value="19NA_A1_c02_s05_exp2_int_exploration">2.5 Exploration 2</option>
+                        <option value="19NA_A1_c02_s06_exp2_int_exploration">2.6 Exploration 2</option>
+                        <option value="19NA_A1_c03_s01_exp1_int_exploration">3.1 Exploration 1</option>
+                        <option value="19NA_A1_c03_s01_exp2_int_exploration">3.1 Exploration 2</option>
+                        <option value="19NA_A1_c03_s05_exp1_int_exploration">3.5 Exploration 1</option>
+                        <option value="19NA_A1_c04_s01_exp2_int_exploration">4.1 Exploration 2</option>
+                        <option value="19NA_A1_c04_s02_exp2_int_exploration">4.2 Exploration 2</option>
+                        <option value="19NA_A1_c04_s07_exp1_int_exploration">4.7 Exploration 1</option>
+                        <option value="19NA_A1_c04_s07_exp2_int_exploration">4.7 Exploration 2</option>
+                        <option value="19NA_A1_c05_s01_exp1_int_exploration">5.1 Exploration 1</option>
+                        <option value="19NA_A1_c05_s02_exp1_int_exploration">5.2 Exploration 1</option>
+                        <option value="19NA_A1_c05_s03_exp1_int_exploration">5.3 Exploration 1</option>
+                        <option value="19NA_A1_c05_s03_exp2_int_exploration">5.3 Exploration 2</option>
+                        <option value="19NA_A1_c05_s03_exp3_int_exploration">5.3 Exploration 3</option>
+                        <option value="19NA_A1_c05_s06_exp1_int_exploration">5.6 Exploration 1</option>
+                        <option value="19NA_A1_c05_s07_exp1_int_exploration">5.7 Exploration 1</option>
+                        <option value="19NA_A1_c07_s05_exp1_int_exploration">7.5 Exploration 1</option>
+                        <option value="19NA_A1_c09_s03_exp1_int_exploration">9.3 Exploration 1</option>
+                        <option value="19NA_A1_c09_s06_exp1_int_exploration">9.6 Exploration 1</option>
+                        <option value="19NA_A1_c10_s02_exp2_int_exploration">10.2 Exploration 2</option>
+                        <option value="19NA_A1_c10_s04_exp1_int_exploration">10.4 Exploration 1</option>
+                        <option value="19NA_A1_c11_s01_exp1_int_exploration">11.1 Exploration 1</option>
+                        <option value="19NA_A1_c11_s04_exp1_int_exploration">11.4 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c02_s04_exp1_int_exploration">2.4 Exploration 1</option>
+                        <option value="19NA_A2_c05_s04_exp1_int_exploration">5.4 Exploration 1</option>
+                        <option value="19NA_A2_c07_s01_exp2_int_exploration">7.1 Exploration 2</option>
+                        <option value="19NA_A2_c08_s01_exp1_int_exploration">8.1 Exploration 1</option>
+                        <option value="19NA_A2_c08_s04_exp2_int_exploration">8.4 Exploration 2</option>
+                        <option value="19NA_A2_c08_s04_exp3_int_exploration">8.4 Exploration 3</option>
+                        <option value="19NA_A2_c08_s05_exp2_int_exploration">8.5 Exploration 2</option>
+                        <option value="19NA_A2_c08_s05_exp3_int_exploration">8.5 Exploration 3</option>
+                        <option value="19NA_A2_c10_s02_exp2_int_exploration">10.2 Exploration 2</option>
+                        <option value="19NA_A2_c11_s01_exp1_int_exploration">11.1 Exploration 1</option>
+                        <option value="19NA_A2_c11_s01_exp2_int_exploration">11.1 Exploration 2</option>
+                        <option value="19NA_A2_c11_s03_exp1_int_exploration">11.3 Exploration 1</option>
+                        <option value="19NA_A2_c11_s03_exp2_int_exploration">11.3 Exploration 2</option>
+                        <option value="19NA_A2_c11_s03_exp3_int_exploration">11.3 Exploration 3</option>
+                        <option value="19NA_A2_c11_s04_exp2_int_exploration">11.4 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Geometry">
+                        <option value="19NA_GE_c01_s02_exp3_int_exploration">1.2 Exploration 3</option>
+                        <option value="19NA_GE_c02_s01_exp1_int_exploration">2.1 Exploration 1</option>
+                        <option value="19NA_GE_c02_s01_exp2_int_exploration">2.1 Exploration 2</option>
+                        <option value="19NA_GE_c02_s01_exp3_int_exploration">2.1 Exploration 3</option>
+                        <option value="19NA_GE_c02_s02_exp1_int_exploration">2.2 Exploration 1</option>
+                        <option value="19NA_GE_c02_s02_exp2_int_exploration">2.2 Exploration 2</option>
+                        <option value="19NA_GE_c02_s03_exp1_int_exploration">2.3 Exploration 1</option>
+                        <option value="19NA_GE_c02_s03_exp2_int_exploration">2.3 Exploration 2</option>
+                        <option value="19NA_GE_c02_s04_exp1_int_exploration">2.4 Exploration 1</option>
+                        <option value="19NA_GE_c02_s04_exp2_int_exploration">2.4 Exploration 2</option>
+                        <option value="19NA_GE_c02_s05_exp1_int_exploration">2.5 Exploration 1</option>
+                        <option value="19NA_GE_c02_s05_exp2_int_exploration">2.5 Exploration 2</option>
+                        <option value="19NA_GE_c02_s06_exp1_int_exploration">2.6 Exploration 1</option>
+                        <option value="19NA_GE_c02_s06_exp2_int_exploration">2.6 Exploration 2</option>
+                        <option value="19NA_GE_c09_s01_exp2_int_exploration">9.1 Exploration 2</option>
+                        <option value="19NA_GE_c09_s04_exp2_int_exploration">9.4 Exploration 2</option>
+                        <option value="19NA_GE_c11_s01_exp1_int_exploration">11.1 Exploration 1</option>
+                        <option value="19NA_GE_c11_s01_exp2_int_exploration">11.1 Exploration 2</option>
+                        <option value="19NA_GE_c11_s02_exp1_int_exploration">11.2 Exploration 1</option>
+                        <option value="19NA_GE_c11_s02_exp2_int_exploration">11.2 Exploration 2</option>
+                        <option value="19NA_GE_c11_s03_exp1_int_exploration">11.3 Exploration 1</option>
+                        <option value="19NA_GE_c11_s03_exp2_int_exploration">11.3 Exploration 2</option>
+                        <option value="19NA_GE_c11_s04_exp1_int_exploration">11.4 Exploration 1</option>
+                        <option value="19NA_GE_c11_s05_exp1_int_exploration">11.5 Exploration 1</option>
+                        <option value="19NA_GE_c11_s05_exp2_int_exploration">11.5 Exploration 2</option>
+                        <option value="19NA_GE_c11_s06_exp1_int_exploration">11.6 Exploration 1</option>
+                        <option value="19NA_GE_c11_s06_exp2_int_exploration">11.6 Exploration 2</option>
+                        <option value="19NA_GE_c11_s07_exp1_int_exploration">11.7 Exploration 1</option>
+                        <option value="19NA_GE_c11_s07_exp2_int_exploration">11.7 Exploration 2</option>
+                        <option value="19NA_GE_c11_s08_exp1_int_exploration">11.8 Exploration 1</option>
+                        <option value="19NA_GE_c11_s08_exp2_int_exploration">11.8 Exploration 2</option>
+                    </optgroup>
+                </select>
+
+                <select id="batch-5" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c01_s01_exp2_int_exploration">1.1 Exploration 2</option>
+                        <option value="19NA_A1_c01_s02_exp2_int_exploration">1.2 Exploration 2</option>
+                        <option value="19NA_A1_c01_s04_exp2_int_exploration">1.4 Exploration 2</option>
+                        <option value="19NA_A1_c01_s04_exp3_int_exploration">1.4 Exploration 3</option>
+                        <option value="19NA_A1_c02_s04_exp1_int_exploration">2.4 Exploration 1</option>
+                        <option value="19NA_A1_c02_s06_exp1_int_exploration">2.6 Exploration 1</option>
+                        <option value="19NA_A1_c02_s06_exp3_int_exploration">2.6 Exploration 3</option>
+                        <option value="19NA_A1_c03_s02_exp1_int_exploration">3.2 Exploration 1</option>
+                        <option value="19NA_A1_c03_s04_exp1_int_exploration">3.4 Exploration 1</option>
+                        <option value="19NA_A1_c03_s04_exp2_int_exploration">3.4 Exploration 2</option>
+                        <option value="19NA_A1_c03_s07_exp1_int_exploration">3.7 Exploration 1</option>
+                        <option value="19NA_A1_c09_s06_exp2_int_exploration">9.6 Exploration 2</option>
+                        <option value="19NA_A1_c11_s04_exp2_int_exploration">11.4 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c05_s04_exp2_int_exploration">5.4 Exploration 2</option>
+                        <option value="19NA_A2_c05_s05_exp1_int_exploration">5.5 Exploration 1</option>
+                        <option value="19NA_A2_c05_s06_exp1_int_exploration">5.6 Exploration 1</option>
+                        <option value="19NA_A2_c05_s06_exp2_int_exploration">5.6 Exploration 2</option>
+                        <option value="19NA_A2_c07_s01_exp1_int_exploration">7.1 Exploration 1</option>
+                        <option value="19NA_A2_c08_s02_exp1_int_exploration">8.2 Exploration 1</option>
+                        <option value="19NA_A2_c08_s03_exp2_int_exploration">8.3 Exploration 2</option>
+                        <option value="19NA_A2_c08_s05_exp1_int_exploration">8.5 Exploration 1</option>
+                        <option value="19NA_A2_c10_s02_exp3_int_exploration">10.2 Exploration 3</option>
+                        <option value="19NA_A2_c11_s02_exp1_int_exploration">11.2 Exploration 1</option>
+                        <option value="19NA_A2_c11_s02_exp2_int_exploration">11.2 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Geometry">
+                        <option value="19NA_GE_c01_s01_exp1_int_exploration">1.1 Exploration 1</option>
+                        <option value="19NA_GE_c01_s01_exp3_int_exploration">1.1 Exploration 3</option>
+                        <option value="19NA_GE_c01_s05_exp1_int_exploration">1.5 Exploration 1</option>
+                        <option value="19NA_GE_c01_s06_exp1_int_exploration">1.6 Exploration 1</option>
+                        <option value="19NA_GE_c01_s06_exp2_int_exploration">1.6 Exploration 2</option>
+                        <option value="19NA_GE_c03_s01_exp1_int_exploration">3.1 Exploration 1</option>
+                        <option value="19NA_GE_c03_s01_exp2_int_exploration">3.1 Exploration 2</option>
+                        <option value="19NA_GE_c03_s01_exp3_int_exploration">3.1 Exploration 3</option>
+                        <option value="19NA_GE_c03_s02_exp1_int_exploration">3.2 Exploration 1</option>
+                        <option value="19NA_GE_c03_s02_exp2_int_exploration">3.2 Exploration 2</option>
+                        <option value="19NA_GE_c03_s05_exp1_int_exploration">3.5 Exploration 1</option>
+                        <option value="19NA_GE_c03_s05_exp2_int_exploration">3.5 Exploration 2</option>
+                        <option value="19NA_GE_c04_s01_exp3_int_exploration">4.1 Exploration 3</option>
+                        <option value="19NA_GE_c04_s03_exp3_int_exploration">4.3 Exploration 3</option>
+                        <option value="19NA_GE_c04_s05_exp2_int_exploration">4.5 Exploration 2</option>
+                        <option value="19NA_GE_c05_s01_exp1_int_exploration">5.1 Exploration 1</option>
+                        <option value="19NA_GE_c05_s01_exp2_int_exploration">5.1 Exploration 2</option>
+                        <option value="19NA_GE_c05_s02_exp1_int_exploration">5.2 Exploration 1</option>
+                        <option value="19NA_GE_c05_s06_exp2_int_exploration">5.6 Exploration 2</option>
+                        <option value="19NA_GE_c05_s07_exp1_int_exploration">5.7 Exploration 1</option>
+                        <option value="19NA_GE_c05_s07_exp2_int_exploration">5.7 Exploration 2</option>
+                        <option value="19NA_GE_c05_s08_exp1_int_exploration">5.8 Exploration 1</option>
+                        <option value="19NA_GE_c05_s08_exp2_int_exploration">5.8 Exploration 2</option>
+                        <option value="19NA_GE_c06_s01_exp1_int_exploration">6.1 Exploration 1</option>
+                        <option value="19NA_GE_c06_s01_exp2_int_exploration">6.1 Exploration 2</option>
+                        <option value="19NA_GE_c06_s02_exp1_int_exploration">6.2 Exploration 1</option>
+                        <option value="19NA_GE_c06_s02_exp2_int_exploration">6.2 Exploration 2</option>
+                        <option value="19NA_GE_c06_s03_exp1_int_exploration">6.3 Exploration 1</option>
+                        <option value="19NA_GE_c06_s05_exp1_int_exploration">6.5 Exploration 1</option>
+                        <option value="19NA_GE_c06_s05_exp2_int_exploration">6.5 Exploration 2</option>
+                        <option value="19NA_GE_c07_s01_exp2_int_exploration">7.1 Exploration 2</option>
+                        <option value="19NA_GE_c07_s03_exp1_int_exploration">7.3 Exploration 1</option>
+                        <option value="19NA_GE_c07_s03_exp2_int_exploration">7.3 Exploration 2</option>
+                        <option value="19NA_GE_c07_s04_exp1_int_exploration">7.4 Exploration 1</option>
+                        <option value="19NA_GE_c07_s05_exp2_int_exploration">7.5 Exploration 2</option>
+                        <option value="19NA_GE_c08_s01_exp1_int_exploration">8.1 Exploration 1</option>
+                        <option value="19NA_GE_c08_s02_exp1_int_exploration">8.2 Exploration 1</option>
+                        <option value="19NA_GE_c08_s04_exp1_int_exploration">8.4 Exploration 1</option>
+                        <option value="19NA_GE_c08_s04_exp2_int_exploration">8.4 Exploration 2</option>
+                        <option value="19NA_GE_c09_s01_exp1_int_exploration">9.1 Exploration 1</option>
+                        <option value="19NA_GE_c09_s03_exp1_int_exploration">9.3 Exploration 1</option>
+                        <option value="19NA_GE_c09_s03_exp2_int_exploration">9.3 Exploration 2</option>
+                        <option value="19NA_GE_c09_s04_exp1_int_exploration">9.4 Exploration 1</option>
+                        <option value="19NA_GE_c09_s05_exp1_int_exploration">9.5 Exploration 1</option>
+                        <option value="19NA_GE_c09_s06_exp1_int_exploration">9.6 Exploration 1</option>
+                        <option value="19NA_GE_c09_s06_exp2_int_exploration">9.6 Exploration 2</option>
+                        <option value="19NA_GE_c10_s01_exp1_int_exploration">10.1 Exploration 1</option>
+                        <option value="19NA_GE_c10_s02_exp1_int_exploration">10.2 Exploration 1</option>
+                        <option value="19NA_GE_c10_s03_exp1_int_exploration">10.3 Exploration 1</option>
+                        <option value="19NA_GE_c10_s03_exp2_int_exploration">10.3 Exploration 2</option>
+                        <option value="19NA_GE_c10_s03_exp3_int_exploration">10.3 Exploration 3</option>
+                        <option value="19NA_GE_c10_s04_exp2_int_exploration">10.4 Exploration 2</option>
+                        <option value="19NA_GE_c10_s06_exp1_int_exploration">10.6 Exploration 1</option>
+                        <option value="19NA_GE_c10_s06_exp2_int_exploration">10.6 Exploration 2</option>
+                        <option value="19NA_GE_c10_s07_exp1_int_exploration">10.7 Exploration 1</option>
+                        <option value="19NA_GE_c10_s07_exp2_int_exploration">10.7 Exploration 2</option>
+                    </optgroup>
+                </select>
+
+                <select id="batch-6" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c03_s03_exp2_int_exploration">3.3 Exploration 2</option>
+                        <option value="19NA_A1_c03_s05_exp2_int_exploration">3.5 Exploration 2</option>
+                        <option value="19NA_A1_c03_s06_exp1_int_exploration">3.6 Exploration 1</option>
+                        <option value="19NA_A1_c03_s06_exp2_int_exploration">3.6 Exploration 2</option>
+                        <option value="19NA_A1_c03_s06_exp3_int_exploration">3.6 Exploration 3</option>
+                        <option value="19NA_A1_c04_s01_exp1_int_exploration">4.1 Exploration 1</option>
+                        <option value="19NA_A1_c04_s02_exp1_int_exploration">4.2 Exploration 1</option>
+                        <option value="19NA_A1_c04_s02_exp3_int_exploration">4.2 Exploration 3</option>
+                        <option value="19NA_A1_c04_s03_exp1_int_exploration">4.3 Exploration 1</option>
+                        <option value="19NA_A1_c04_s03_exp2_int_exploration">4.3 Exploration 2</option>
+                        <option value="19NA_A1_c04_s04_exp1_int_exploration">4.4 Exploration 1</option>
+                        <option value="19NA_A1_c04_s04_exp2_int_exploration">4.4 Exploration 2</option>
+                        <option value="19NA_A1_c04_s05_exp1_int_exploration">4.5 Exploration 1</option>
+                        <option value="19NA_A1_c04_s06_exp1_int_exploration">4.6 Exploration 1</option>
+                        <option value="19NA_A1_c05_s01_exp2_int_exploration">5.1 Exploration 2</option>
+                        <option value="19NA_A1_c05_s02_exp2_int_exploration">5.2 Exploration 2</option>
+                        <option value="19NA_A1_c05_s04_exp1_int_exploration">5.4 Exploration 1</option>
+                        <option value="19NA_A1_c05_s05_exp1_int_exploration">5.5 Exploration 1</option>
+                        <option value="19NA_A1_c05_s05_exp2_int_exploration">5.5 Exploration 2</option>
+                        <option value="19NA_A1_c05_s06_exp2_int_exploration">5.6 Exploration 2</option>
+                        <option value="19NA_A1_c05_s06_exp3_int_exploration">5.6 Exploration 3</option>
+                        <option value="19NA_A1_c05_s07_exp2_int_exploration">5.7 Exploration 2</option>
+                        <option value="19NA_A1_c06_s05_exp1_int_exploration">6.5 Exploration 1</option>
+                        <option value="19NA_A1_c06_s05_exp2_int_exploration">6.5 Exploration 2</option>
+                        <option value="19NA_A1_c06_s05_exp3_int_exploration">6.5 Exploration 3</option>
+                        <option value="19NA_A1_c06_s06_exp1_int_exploration">6.6 Exploration 1</option>
+                        <option value="19NA_A1_c06_s06_exp2_int_exploration">6.6 Exploration 2</option>
+                        <option value="19NA_A1_c07_s07_exp2_int_exploration">7.7 Exploration 2</option>
+                        <option value="19NA_A1_c10_s01_exp1_int_exploration">10.1 Exploration 1</option>
+                        <option value="19NA_A1_c10_s02_exp1_int_exploration">10.2 Exploration 1</option>
+                        <option value="19NA_A1_c10_s04_exp2_int_exploration">10.4 Exploration 2</option>
+                        <option value="19NA_A1_c11_s02_exp1_int_exploration">11.2 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c02_s01_exp1_int_exploration">2.1 Exploration 1</option>
+                        <option value="19NA_A2_c02_s02_exp1_int_exploration">2.2 Exploration 1</option>
+                        <option value="19NA_A2_c02_s02_exp2_int_exploration">2.2 Exploration 2</option>
+                        <option value="19NA_A2_c02_s03_exp1_int_exploration">2.3 Exploration 1</option>
+                        <option value="19NA_A2_c02_s03_exp2_int_exploration">2.3 Exploration 2</option>
+                        <option value="19NA_A2_c02_s04_exp2_int_exploration">2.4 Exploration 2</option>
+                        <option value="19NA_A2_c04_s09_exp1_int_exploration">4.9 Exploration 1</option>
+                        <option value="19NA_A2_c08_s03_exp1_int_exploration">8.3 Exploration 1</option>
+                        <option value="19NA_A2_c08_s04_exp1_int_exploration">8.4 Exploration 1</option>
+                        <option value="19NA_A2_c10_s02_exp1_int_exploration">10.2 Exploration 1</option>
+                        <option value="19NA_A2_c11_s05_exp1_int_exploration">11.5 Exploration 1</option>
+                        <option value="19NA_A2_c11_s06_exp1_int_exploration">11.6 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Geometry">
+                        <option value="19NA_GE_c01_s01_exp2_int_exploration">1.1 Exploration 2</option>
+                        <option value="19NA_GE_c01_s02_exp1_int_exploration">1.2 Exploration 1</option>
+                        <option value="19NA_GE_c01_s02_exp2_int_exploration">1.2 Exploration 2</option>
+                        <option value="19NA_GE_c01_s03_exp1_int_exploration">1.3 Exploration 1</option>
+                        <option value="19NA_GE_c01_s03_exp2_int_exploration">1.3 Exploration 2</option>
+                        <option value="19NA_GE_c01_s04_exp1_int_exploration">1.4 Exploration 1</option>
+                        <option value="19NA_GE_c01_s04_exp2_int_exploration">1.4 Exploration 2</option>
+                        <option value="19NA_GE_c01_s05_exp2_int_exploration">1.5 Exploration 2</option>
+                        <option value="19NA_GE_c03_s03_exp1_int_exploration">3.3 Exploration 1</option>
+                        <option value="19NA_GE_c03_s04_exp1_int_exploration">3.4 Exploration 1</option>
+                        <option value="19NA_GE_c03_s04_exp2_int_exploration">3.4 Exploration 2</option>
+                        <option value="19NA_GE_c03_s04_exp3_int_exploration">3.4 Exploration 3</option>
+                        <option value="19NA_GE_c04_s02_exp1_int_exploration">4.2 Exploration 1</option>
+                        <option value="19NA_GE_c04_s04_exp1_int_exploration">4.4 Exploration 1</option>
+                        <option value="19NA_GE_c04_s05_exp1_int_exploration">4.5 Exploration 1</option>
+                        <option value="19NA_GE_c04_s06_exp1_int_exploration">4.6 Exploration 1</option>
+                        <option value="19NA_GE_c05_s06_exp1_int_exploration">5.6 Exploration 1</option>
+                        <option value="19NA_GE_c06_s03_exp2_int_exploration">6.3 Exploration 2</option>
+                        <option value="19NA_GE_c06_s06_exp1_int_exploration">6.6 Exploration 1</option>
+                        <option value="19NA_GE_c07_s02_exp1_int_exploration">7.2 Exploration 1</option>
+                        <option value="19NA_GE_c07_s02_exp2_int_exploration">7.2 Exploration 2</option>
+                        <option value="19NA_GE_c07_s05_exp1_int_exploration">7.5 Exploration 1</option>
+                        <option value="19NA_GE_c08_s01_exp2_int_exploration">8.1 Exploration 2</option>
+                        <option value="19NA_GE_c08_s03_exp2_int_exploration">8.3 Exploration 2</option>
+                        <option value="19NA_GE_c10_s01_exp2_int_exploration">10.1 Exploration 2</option>
+                        <option value="19NA_GE_c10_s07_exp3_int_exploration">10.7 Exploration 3</option>
+                    </optgroup>
+                </select>
+                <select id="batch-7" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c05_s04_exp2_int_exploration">5.4 Exploration 2</option>
+                        <option value="19NA_A1_c11_s01_exp2_int_exploration">11.1 Exploration 2</option>
+                        <option value="19NA_A1_c11_s05_exp1_int_exploration">11.5 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c08_s02_exp2_int_exploration">8.2 Exploration 2</option>
+                        <option value="19NA_A2_c10_s04_exp3_int_exploration">10.4 Exploration 3</option>
+                        <option value="19NA_A2_c11_s06_exp2_int_exploration">11.6 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Geometry">
+                        <option value="19NA_GE_c02_s02_exp3_int_exploration">2.2 Exploration 3</option>
+                        <option value="19NA_GE_c06_s04_exp1_int_exploration">6.4 Exploration 1</option>
+                        <option value="19NA_GE_c06_s04_exp2_int_exploration">6.4 Exploration 2</option>
+                        <option value="19NA_GE_c08_s03_exp1_int_exploration">8.3 Exploration 1</option>
+                    </optgroup>
+                </select>
+                <select id="batch-8" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1">
+                        <option value="19NA_A1_c09_s04_exp1_int_exploration">9.4 Exploration 1</option>
+                        <option value="19NA_A1_c09_s04_exp2_int_exploration">9.4 Exploration 2</option>
+                    </optgroup>
+                    <optgroup label="Algebra 2">
+                        <option value="19NA_A2_c11_s04_exp1_int_exploration">11.4 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Geometry"></optgroup>
+                </select>
+                <select id="batch-9" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1"></optgroup>
+                    <optgroup label="Algebra 2"></optgroup>
+                    <optgroup label="Geometry">
+                        <option value="19NA_GE_c04_s04_exp2_int_exploration">4.4 Exploration 2</option>
+                        <option value="19NA_GE_c05_s04_exp1_int_exploration">5.4 Exploration 1</option>
+                        <option value="19NA_GE_c07_s01_exp1_int_exploration">7.1 Exploration 1</option>
+                        <option value="19NA_GE_c07_s04_exp2_int_exploration">7.4 Exploration 2</option>
+                        <option value="19NA_GE_c09_s02_exp1_int_exploration">9.2 Exploration 1</option>
+                        <option value="19NA_GE_c09_s02_exp2_int_exploration">9.2 Exploration 2</option>
+                    </optgroup>
+                </select>
+                <select id="batch-10" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Algebra 1"></optgroup>
+                    <optgroup label="Algebra 2"></optgroup>
+                    <optgroup label="Geometry">
+                        <option value="19NA_GE_c04_s01_exp1_int_exploration">4.1 Exploration 1</option>
+                        <option value="19NA_GE_c04_s01_exp2_int_exploration">4.1 Exploration 2</option>
+                        <option value="19NA_GE_c04_s02_exp2_int_exploration">4.2 Exploration 2</option>
+                        <option value="19NA_GE_c04_s03_exp1_int_exploration">4.3 Exploration 1</option>
+                        <option value="19NA_GE_c04_s03_exp2_int_exploration">4.3 Exploration 2</option>
+                        <option value="19NA_GE_c04_s06_exp2_int_exploration">4.6 Exploration 2</option>
+                        <option value="19NA_GE_c05_s02_exp2_int_exploration">5.2 Exploration 2</option>
+                        <option value="19NA_GE_c05_s03_exp1_int_exploration">5.3 Exploration 1</option>
+                        <option value="19NA_GE_c05_s05_exp1_int_exploration">5.5 Exploration 1</option>
+                        <option value="19NA_GE_c09_s07_exp1_int_exploration">9.7 Exploration 1</option>
+                        <option value="19NA_GE_c09_s07_exp2_int_exploration">9.7 Exploration 2</option>
+                        <option value="19NA_GE_c10_s04_exp1_int_exploration">10.4 Exploration 1</option>
+                        <option value="19NA_GE_c10_s05_exp1_int_exploration">10.5 Exploration 1</option>
+                        <option value="19NA_GE_c10_s05_exp2_int_exploration">10.5 Exploration 2</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu fk5">
+                <select id="batch-1" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade K">
+                        <option value="20FL00_c13_s04_exp1_int_exploration">13.4 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 1">
+                        <option value="20FL01_c10_s06_exp1_int_exploration">10.6 Exploration 1</option>
+                        <option value="20FL01_c10_s07_exp1_int_exploration">10.7 Exploration 1</option>
+                        <option value="20FL01_c12_s01_exp1_int_exploration">12.1 Exploration 1</option>
+                        <option value="20FL01_c12_s02_exp1_int_exploration">12.2 Exploration 1</option>
+                        <option value="20FL01_c12_s03_exp1_int_exploration">12.3 Exploration 1</option>
+                        <option value="20FL01_c12_s04_exp1_int_exploration">12.4 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 2">
+                        <option value="20FL02_c02_s09_exp1_int_exploration">2.9 Exploration 1</option>
+                        <option value="20FL02_c04_s07_exp1_int_exploration">4.7 Exploration 1</option>
+                        <option value="20FL02_c14_s06_exp1_int_exploration">14.6 Exploration 1</option>
+                    </optgroup>
+                    <optgroup label="Grade 4">
+                        <option value="20FL04_c02_s06_exp1_int_exploration">2.6 Exploration 1</option>
+                        <option value="20FL04_c02_s07_exp1_int_exploration">2.7 Exploration 1</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="header-nav-option exploration-menu fhonors">
+                <select id="batch-1" class="selected-batches hide">
+                    <option value="" selected disabled>Choose Exploration</option>
+                    <optgroup label="Grade 6">
+                        <option value="20FL06_c03_sAT_exp1_int_exploration">3.AT Exploration 1</option>
+                        <option value="20FL06_c03_sAT_exp2_int_exploration">3.AT Exploration 2</option>
+                        <option value="20FL06_c03_sAT_exp3_int_exploration">3.AT Exploration 3</option>
+                    </optgroup>
+                    <optgroup label="Honors">
+                        <option value="20FLHH_c0H_s01_exp1_int_exploration">H.1 Exploration 1</option>
+                        <option value="20FLHH_c0H_s01_exp2_int_exploration">H.1 Exploration 2</option>
+                        <option value="20FLHH_c0H_s03_exp2_int_exploration">H.3 Exploration 2</option>
+                        <option value="20FLHH_c0H_s06_exp2_int_exploration">H.6 Exploration 2</option>
+                        <option value="20FLHH_c0H_s11_exp1_int_exploration">H.11 Exploration 1</option>
+                        <option value="20FLHH_c0H_s11_exp2_int_exploration">H.11 Exploration 2</option>
+                        <option value="20FLHH_c0H_s12_exp1_int_exploration">H.12 Exploration 1</option>
+                        <option value="20FLHH_c0H_s12_exp2_int_exploration">H.12 Exploration 2</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+        <div class="header-toolbar-container">
+            <div class="header-toolbar-title-container">
+                <div id="header-toolbar-title"></div>
+            </div>
+            <div class="header-toolbar-options">
+                <div class="header-toolbar-resolution">
+                    <div class="resolution-label">Set Player Size: </div>
+                    <select id="resolution">
+                        <option value="auto">Auto</option>
+                        <option value="small">870x545</option>
+                    </select>
+                </div>
+                <div class="header-toolbar-save">
+                    <div class="save-label">Save Responses: </div>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="save-response">
+                        <label class="onoffswitch-label" for="save-response"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <script src="dist/js/common.bundle.js"></script> -->
+    <div class="iframe-wrapper">
+        <iframe src="" class="hide" id="bil-player" srolling="no"></iframe>
+    </div>
+    <script>
+        // example URL
+        // sessionId=explorationSessionID&userId=explorationUser&activityId=ExplorationActivityId&state=resume&type=submit_practice
+        var generateSessionID = function () {
+            // /.{8}-.{4}-.{4}-.{4}-.{12}/
+            var randomString = Date.now().toString() + Date.now().toString(); // 26 digits
+            var digitSplitter = /(\d{7})(\d{3})(\d{3})(\d{3})(\d{10})/;
+            return randomString.replace(digitSplitter, "a$1-b$2-c$3-d$4-e$5f");
+        };
+        var generateUserID = function () {
+            return "user" + Math.random().toString().replace(".", "");
+        };
+
+        var CHAPTER_TITLES = {
+            "20FL00_c13_s04_exp1_int_exploration": "Measure Lengths",
+            "20FL01_c10_s06_exp1_int_exploration": "Measure Lengths in Inches",
+            "20FL01_c10_s07_exp1_int_exploration": "Use an Inch Ruler to Measure Lengths",
+            "20FL01_c12_s01_exp1_int_exploration": "Understand Pennies, Nickels, and Dimes",
+            "20FL01_c12_s02_exp1_int_exploration": "Find Total Values of Coins",
+            "20FL01_c12_s03_exp1_int_exploration": "Understand Quarters",
+            "20FL01_c12_s04_exp1_int_exploration": "Show One Dollar in Different Ways",
+            "20FL02_c02_s09_exp1_int_exploration": "Make True Equations",
+            "20FL02_c04_s07_exp1_int_exploration": "Make More True Equations",
+            "20FL02_c14_s06_exp1_int_exploration": "Find Total Values of Bills",
+            "20FL04_c02_s06_exp1_int_exploration": "True or False Equations: Addition",
+            "20FL04_c02_s07_exp1_int_exploration": "True or False Equations: Subtraction",
+
+            "20FL06_c03_sAT_exp1_int_exploration": "Measuring the Diameter of a Circle",
+            "20FL06_c03_sAT_exp2_int_exploration": "Measuring the Circumference of a Circle",
+            "20FL06_c03_sAT_exp3_int_exploration": "Constructing Circles",
+            "20FLHH_c0H_s01_exp1_int_exploration": "Finding the Sum of an Arithmetic Sequence",
+            "20FLHH_c0H_s01_exp2_int_exploration": "Finding the Sum of a Geometric Sequence",
+            "20FLHH_c0H_s03_exp2_int_exploration": "Generalizing Patterns for Cubing a Binomial",
+            "20FLHH_c0H_s06_exp2_int_exploration": "Finding Compositions of Functions",
+            "20FLHH_c0H_s11_exp1_int_exploration": "Drawing an Ellipse",
+            "20FLHH_c0H_s11_exp2_int_exploration": "Graphing Equations of Ellipses",
+            "20FLHH_c0H_s12_exp1_int_exploration": "Graphing Equations of Hyperbolas",
+            "20FLHH_c0H_s12_exp2_int_exploration": "Identifying Hyperbolas",
+
+            "19NA00_c01_s01_exp1_int_exploration": "",
+            "19NA00_c01_s03_exp1_int_exploration": "",
+            "19NA00_c01_s05_exp1_int_exploration": "",
+            "19NA00_c01_s07_exp1_int_exploration": "",
+            "19NA02_c01_s03_exp1_int_exploration": "Equal Groups",
+            "19NA02_c01_s04_exp1_int_exploration": "Use Arrays",
+            "19NA02_c02_s03_exp1_int_exploration": "Add Three Numbers",
+            "19NA02_c02_s04_exp1_int_exploration": "Make a 10 to Add",
+            "19NA02_c02_s05_exp1_int_exploration": "Count On and Count Back to Subtract",
+            "19NA02_c02_s07_exp1_int_exploration": "Get to 10 to Subtract",
+            "19NA02_c02_s09_exp1_int_exploration": "Problem Solving: Addition and Subtraction",
+            "19NA02_c03_s01_exp1_int_exploration": "Add Tens Using a Number Line",
+            "19NA02_c03_s02_exp1_int_exploration": "Add Tens and Ones Using a Number Line",
+            "19NA02_c03_s05_exp1_int_exploration": "Use Compensation to Add",
+            "19NA02_c03_s07_exp1_int_exploration": "Problem Solving: Addition",
+            "19NA02_c05_s01_exp1_int_exploration": "Subtract Tens Using a Number Line",
+            "19NA02_c05_s02_exp1_int_exploration": "Subtract Tens and Ones Using a Number Line",
+            "19NA02_c05_s03_exp1_int_exploration": "Use Addition to Subtract",
+            "19NA02_c05_s04_exp1_int_exploration": "Decompose to Subtract",
+            "19NA02_c05_s05_exp1_int_exploration": "Decompose to Subtract Tens and Ones",
+            "19NA02_c05_s07_exp1_int_exploration": "Practice Subtraction Strategies",
+            "19NA02_c05_s08_exp1_int_exploration": "Problem Solving: Subtraction",
+            "19NA02_c06_s01_exp1_int_exploration": "Model and Regroup to Subtract",
+            "19NA02_c06_s02_exp1_int_exploration": "Use Models to Subtract a One-Digit Number from a Two-Digit Number",
+            "19NA02_c06_s03_exp1_int_exploration": "Use Models to Subtract Two-Digit Numbers",
+            "19NA02_c06_s04_exp1_int_exploration": "Subtract from a Two-Digit Number",
+            "19NA02_c07_s02_exp1_int_exploration": "Model Numbers to 1,000",
+            "19NA02_c07_s03_exp1_int_exploration": "Understand Place Value",
+            "19NA02_c08_s01_exp1_int_exploration": "Count to 120 in Different Ways",
+            "19NA02_c08_s02_exp1_int_exploration": "Count to 1,000 in Different Ways",
+            "19NA02_c08_s04_exp1_int_exploration": "Find More or Less",
+            "19NA02_c08_s05_exp1_int_exploration": "Compare Numbers Using Symbols",
+            "19NA02_c08_s06_exp1_int_exploration": "Compare Numbers Using a Number Line",
+            "19NA02_c09_s01_exp1_int_exploration": "Add 10 and 100",
+            "19NA02_c09_s02_exp1_int_exploration": "Use a Number Line to Add Hundreds and Tens",
+            "19NA02_c09_s03_exp1_int_exploration": "Use a Number Line to Add Three-Digit Numbers",
+            "19NA02_c09_s04_exp1_int_exploration": "Use Compensation to Add Three-Digit Numbers",
+            "19NA02_c09_s05_exp1_int_exploration": "Use Partial Sums to Add Three-Digit Numbers",
+            "19NA02_c09_s06_exp1_int_exploration": "Use Models to Add Three-Digit Numbers",
+            "19NA02_c09_s07_exp1_int_exploration": "Add Three-Digit Numbers",
+            "19NA02_c09_s08_exp1_int_exploration": "Add Up to Four Two-Digit Numbers",
+            "19NA02_c09_s09_exp1_int_exploration": "Explain Addition Strategies",
+            "19NA02_c10_s01_exp1_int_exploration": "Subtract 10 and 100",
+            "19NA02_c10_s04_exp1_int_exploration": "Use Compensation to Subtract Three-Digit Numbers",
+            "19NA02_c10_s05_exp1_int_exploration": "Use Models to Subtract Three-Digit Numbers",
+            "19NA02_c10_s07_exp1_int_exploration": "Subtract from Numbers That Contain Zeros",
+            "19NA02_c10_s08_exp1_int_exploration": "Use Addition to Subtract",
+            "19NA02_c10_s09_exp1_int_exploration": "Explain Subtraction Strategies",
+            "19NA02_c11_s01_exp1_int_exploration": "Measure Lengths in Centimeters",
+            "19NA02_c11_s04_exp1_int_exploration": "Measure Lengths in Inches",
+            "19NA02_c11_s07_exp1_int_exploration": "Measure Objects Using Different Length Units",
+            "19NA02_c11_s08_exp1_int_exploration": "Measure and Compare Lengths",
+            "19NA02_c12_s01_exp1_int_exploration": "Use a Number Line to Add and Subtract Lengths",
+            "19NA02_c12_s02_exp1_int_exploration": "Problem Solving: Length",
+            "19NA02_c12_s03_exp1_int_exploration": "Problem Solving: Missing Measurement",
+            "19NA02_c12_s04_exp1_int_exploration": "Practice Measurement Problems",
+            "19NA02_c13_s01_exp1_int_exploration": "Sort and Organize Data",
+            "19NA02_c13_s03_exp1_int_exploration": "Make Picture Graphs",
+            "19NA02_c13_s05_exp1_int_exploration": "Make Bar Graphs",
+            "19NA02_c13_s07_exp1_int_exploration": "Measure Objects and Make Line Plots",
+            "19NA02_c14_s01_exp1_int_exploration": "Find Total Values of Coins",
+            "19NA02_c14_s02_exp1_int_exploration": "Order to Find Total Values of Coins",
+            "19NA02_c14_s03_exp1_int_exploration": "Show Money Amounts in Different Ways",
+            "19NA02_c14_s04_exp1_int_exploration": "Make One Dollar",
+            "19NA02_c14_s05_exp1_int_exploration": "Make Change from One Dollar",
+            "19NA02_c14_s06_exp1_int_exploration": "Find Total Values of Bills",
+            "19NA02_c14_s07_exp1_int_exploration": "Problem Solving: Money",
+            "19NA02_c14_s09_exp1_int_exploration": "Tell Time Before and After the Hour",
+            "19NA02_c14_s10_exp1_int_exploration": "Relate A.M. and P.M.",
+            "19NA02_c15_s01_exp1_int_exploration": "Describe Two-Dimensional Shapes",
+            "19NA02_c15_s02_exp1_int_exploration": "Identify Angles of Polygons",
+            "19NA02_c15_s04_exp1_int_exploration": "Identify and Draw Cubes",
+            "19NA02_c15_s05_exp1_int_exploration": "Compose Rectangles",
+            "19NA02_c15_s06_exp1_int_exploration": "Identify Two, Three, or Four Equal Shares",
+            "19NA02_c15_s07_exp1_int_exploration": "Partition Shapes Into Equal Shares",
+            "19NA02_c15_s08_exp1_int_exploration": "Analyze Equal Shares of the Same Shape",
+
+            "19NA03_c01_s01_exp1_int_exploration": "Use Equal Groups to Multiply",
+            "19NA03_c01_s02_exp1_int_exploration": "Use Number Lines to Multiply",
+            "19NA03_c01_s03_exp1_int_exploration": "Use Arrays to Multiply",
+            "19NA03_c01_s05_exp1_int_exploration": "Divide: Size of Equal Groups",
+            "19NA03_c01_s06_exp1_int_exploration": "Divide: Number of Equal Groups",
+            "19NA03_c01_s07_exp1_int_exploration": "Use Number Lines to Divide",
+            "19NA03_c02_s01_exp1_int_exploration": "Multiply by 2",
+            "19NA03_c02_s02_exp1_int_exploration": "Multiply by 5",
+            "19NA03_c02_s03_exp1_int_exploration": "Multiply by 10",
+            "19NA03_c02_s04_exp1_int_exploration": "Multiply by 0 or 1",
+            "19NA03_c02_s05_exp1_int_exploration": "Use the Distributive Property",
+            "19NA03_c02_s06_exp1_int_exploration": "Problem Solving: Multiplication",
+            "19NA03_c03_s01_exp1_int_exploration": "Multiply by 3",
+            "19NA03_c03_s03_exp1_int_exploration": "Multiply by 6",
+            "19NA03_c03_s04_exp1_int_exploration": "Multiply by 7",
+            "19NA03_c03_s06_exp1_int_exploration": "Multiply by 9",
+            "19NA03_c03_s07_exp1_int_exploration": "Practice Multiplication Strategies",
+            "19NA03_c03_s08_exp1_int_exploration": "Multiply Three Factors",
+            "19NA03_c03_s09_exp1_int_exploration": "More Problem Solving: Multiplication",
+            "19NA03_c05_s04_exp1_int_exploration": "More Problem Solving",
+            "19NA03_c06_s01_exp1_int_exploration": "Understand Area",
+            "19NA03_c06_s02_exp1_int_exploration": "Measure Area Using Standard Units",
+            "19NA03_c06_s03_exp1_int_exploration": "Finding Area by Multiplying",
+            "19NA03_c06_s04_exp1_int_exploration": "Area and the Distributive Property",
+            "19NA03_c07_s01_exp1_int_exploration": "Place Value",
+            "19NA03_c07_s02_exp1_int_exploration": "Round Numbers Using a Number Line",
+            "19NA03_c07_s03_exp1_int_exploration": "Round Numbers Using Place Value",
+            "19NA03_c07_s04_exp1_int_exploration": "Estimate Sums",
+            "19NA03_c08_s02_exp1_int_exploration": "Use Number Lines to Add",
+            "19NA03_c08_s04_exp1_int_exploration": "Use Partial Sums to Add",
+            "19NA03_c08_s05_exp1_int_exploration": "Add Three Digit Numbers",
+            "19NA03_c08_s06_exp1_int_exploration": "Add Three or More Numbers",
+            "19NA03_c08_s07_exp1_int_exploration": "Use Number Lines to Subtract",
+            "19NA03_c08_s09_exp1_int_exploration": "Subtract Three-Digit Numbers",
+            "19NA03_c09_s01_exp1_int_exploration": "Use Number Lines to Multiply by Multiples of 10",
+            "19NA03_c09_s02_exp1_int_exploration": "Use Place Value to Multiply by Multiples of 10",
+            "19NA03_c09_s04_exp1_int_exploration": "Problem Solving: Multiplication and Division",
+            "19NA03_c09_s05_exp1_int_exploration": "Problem Solving: All Operations",
+            "19NA03_c10_s01_exp1_int_exploration": "Equal Parts of a Whole",
+            "19NA03_c10_s02_exp1_int_exploration": "Understand a Unit Fraction",
+            "19NA03_c10_s04_exp1_int_exploration": "Fractions on a Number Line: Less Than 1",
+            "19NA03_c10_s05_exp1_int_exploration": "Fractions on a Number Line: Greater Than 1",
+            "19NA03_c11_s01_exp1_int_exploration": "Equivalent Fractions",
+            "19NA03_c11_s02_exp1_int_exploration": "Equivalent Fractions on a Number Line",
+            "19NA03_c11_s03_exp1_int_exploration": "Relate Fractions and Whole Numbers",
+            "19NA03_c11_s04_exp1_int_exploration": "Compare Fractions with the Same Denominator",
+            "19NA03_c11_s05_exp1_int_exploration": "Compare Fractions with the Same Numerator",
+            "19NA03_c11_s06_exp1_int_exploration": "Compare Fractions on a Number Line",
+            "19NA03_c11_s07_exp1_int_exploration": "Compare Fractions",
+            "19NA03_c11_s08_exp1_int_exploration": "Compare and Order Fractions",
+            "19NA03_c12_s04_exp1_int_exploration": "Problem Solving: Time Interval Problems",
+            "19NA03_c12_s07_exp1_int_exploration": "Understand and Estimate Mass",
+            "19NA03_c13_s01_exp1_int_exploration": "Identify Sides and Angles of Quadrilaterals",
+            "19NA03_c13_s02_exp1_int_exploration": "Describe Quadrilaterals",
+            "19NA03_c13_s03_exp1_int_exploration": "Classify Quadrilaterals",
+            "19NA03_c13_s04_exp1_int_exploration": "Draw Quadrilaterals",
+            "19NA03_c14_s01_exp1_int_exploration": "Read and Interpret Picture Graphs",
+            "19NA03_c14_s02_exp1_int_exploration": "Make Picture Graphs",
+            "19NA03_c14_s03_exp1_int_exploration": "Read and Interpret Bar Graphs",
+            "19NA03_c14_s04_exp1_int_exploration": "Make Bar Graphs",
+            "19NA03_c14_s05_exp1_int_exploration": "Make Line Plots",
+            "19NA03_c15_s01_exp1_int_exploration": "Understand Perimeter",
+            "19NA03_c15_s02_exp1_int_exploration": "Find Perimeters of Polygons",
+            "19NA03_c15_s04_exp1_int_exploration": "Same Perimeter, Different Areas",
+            "19NA03_c15_s05_exp1_int_exploration": "Same Area, Different Perimeters",
+
+            "19NA04_c01_s03_exp1_int_exploration": "Compare Multi-Digit Numbers",
+            "19NA04_c01_s01_exp1_int_exploration": "Understand Place Value",
+            "19NA04_c01_s02_exp1_int_exploration": "Read and Write Multi-Digit Numbers",
+            "19NA04_c02_s02_exp1_int_exploration": "Add Multi-Digit Numbers",
+            "19NA04_c02_s03_exp1_int_exploration": "Subtract Multi-Digit Numbers",
+            "19NA04_c04_s01_exp1_int_exploration": "Multiply by Tens",
+            "19NA04_c04_s02_exp1_int_exploration": "Estimate Products",
+            "19NA04_c04_s03_exp1_int_exploration": "Use Area Models to Multiply Two-Digit Numbers",
+            "19NA04_c04_s04_exp1_int_exploration": "Use the Distributive Property to Multiply Two-Digit Numbers",
+            "19NA04_c04_s05_exp1_int_exploration": "Use Partial Products to Multiply Two-Digit Numbers",
+            "19NA04_c04_s06_exp1_int_exploration": "Multiply Two-Digit Numbers",
+            "19NA04_c04_s07_exp1_int_exploration": "Practice Multiplication Strategies",
+            "19NA04_c05_s03_exp1_int_exploration": "Understand Division and Remainders",
+            "19NA04_c05_s04_exp1_int_exploration": "Use Partial Quotients",
+            "19NA04_c05_s05_exp1_int_exploration": "Use Partial Quotients with a Remainder",
+            "19NA04_c05_s06_exp1_int_exploration": "Divide Two-Digit Numbers by One-Digit Numbers",
+            "19NA04_c05_s07_exp1_int_exploration": "Divide Multi-Digit Numbers by One-Digit Numbers",
+            "19NA04_c05_s08_exp1_int_exploration": "Divide by One-Digit Numbers",
+            "19NA04_c05_s09_exp1_int_exploration": "Problem Solving: Division",
+            "19NA04_c06_s01_exp1_int_exploration": "Understand Factors",
+            "19NA04_c06_s04_exp1_int_exploration": "Identify Prime and Composite Numbers",
+            "19NA04_c06_s06_exp1_int_exploration": "Shape Patterns",
+            "19NA04_c06_s05_exp1_int_exploration": "Number Patterns",
+            "19NA04_c07_s01_exp1_int_exploration": "Model Equivalent Fractions",
+            "19NA04_c07_s02_exp1_int_exploration": "Generate Equivalent Fractions by Multiplying",
+            "19NA04_c07_s03_exp1_int_exploration": "Generate Equivalent Fractions by Dividing",
+            "19NA04_c07_s04_exp1_int_exploration": "Compare Fractions Using Benchmarks",
+            "19NA04_c07_s05_exp1_int_exploration": "Compare Fractions",
+            "19NA04_c08_s01_exp1_int_exploration": "Use Models to Add Fractions",
+            "19NA04_c08_s02_exp1_int_exploration": "Decompose Fractions",
+            "19NA04_c08_s03_exp1_int_exploration": "Add Fractions with Like Denominators",
+            "19NA04_c08_s04_exp1_int_exploration": "Use Models to Subtract Fractions",
+            "19NA04_c08_s05_exp1_int_exploration": "Subtract Fractions with Like Denominators",
+            "19NA04_c08_s06_exp1_int_exploration": "Model Fractions and Mixed Numbers",
+            "19NA04_c08_s07_exp1_int_exploration": "Add Mixed Numbers",
+            "19NA04_c08_s08_exp1_int_exploration": "Subtract Mixed Numbers",
+            "19NA04_c08_s09_exp1_int_exploration": "Problem Solving: Fractions",
+            "19NA04_c09_s01_exp1_int_exploration": "Understand Multiples of Unit Fractions",
+            "19NA04_c09_s02_exp1_int_exploration": "Understand Multiples of Fractions",
+            "19NA04_c09_s03_exp1_int_exploration": "Multiply Whole Numbers and Fractions",
+            "19NA04_c09_s04_exp1_int_exploration": "Multiply Whole Numbers and Mixed Numbers",
+            "19NA04_c09_s05_exp1_int_exploration": "Problem Solving: Fraction Operation",
+            "19NA04_c10_s01_exp1_int_exploration": "Understand Tenths",
+            "19NA04_c10_s02_exp1_int_exploration": "Understand Hundredths",
+            "19NA04_c10_s03_exp1_int_exploration": "Fractions and Decimals",
+            "19NA04_c10_s04_exp1_int_exploration": "Compare Decimals",
+            "19NA04_c10_s05_exp1_int_exploration": "Add Decimal Fractions and Decimals",
+            "19NA04_c10_s06_exp1_int_exploration": "Fractions, Decimals, and Money",
+            "19NA04_c10_s07_exp1_int_exploration": "Operations with Money",
+            "19NA04_c11_s03_exp1_int_exploration": "Length in Customary Units",
+            "19NA04_c11_s04_exp1_int_exploration": "Weight in Customary Units",
+            "19NA04_c11_s05_exp1_int_exploration": "Capacity in Customary Units",
+            "19NA04_c11_s06_exp1_int_exploration": "Make and Interpret Line Plots",
+            "19NA04_c11_s07_exp1_int_exploration": "Units of Time",
+            "19NA04_c11_s09_exp1_int_exploration": "Mixed Measures",
+            "19NA04_c12_s01_exp1_int_exploration": "Perimeter Formula for a Rectangle",
+            "19NA04_c12_s02_exp1_int_exploration": "Area Formula for a Rectangle",
+            "19NA04_c12_s03_exp1_int_exploration": "Find Unknown Measures",
+            "19NA04_c12_s04_exp1_int_exploration": "Problem Solving: Perimeter and Area",
+            "19NA04_c13_s01_exp1_int_exploration": "Points, Lines, and Rays",
+            "19NA04_c13_s02_exp1_int_exploration": "Identify and Draw Angles",
+            "19NA04_c13_s03_exp1_int_exploration": "Identify Parallel and Perpendicular Lines",
+            "19NA04_c13_s04_exp1_int_exploration": "Understand Degrees",
+            "19NA04_c13_s05_exp1_int_exploration": "Find Angle Measures",
+            "19NA04_c13_s06_exp1_int_exploration": "Measure and Draw Angles",
+            "19NA04_c13_s07_exp1_int_exploration": "Add Angle Measures",
+            "19NA04_c13_s08_exp1_int_exploration": "Find Unknown Angle Measures",
+            "19NA04_c14_s01_exp1_int_exploration": "Line Symmetry",
+            "19NA04_c14_s02_exp1_int_exploration": "Draw Symmetric Shapes",
+            "19NA04_c14_s03_exp1_int_exploration": "Classify Triangles by Sides",
+            "19NA04_c14_s04_exp1_int_exploration": "Classify Triangles by Angles",
+            "19NA04_c14_s05_exp1_int_exploration": "Classify Quadrilaterals",
+
+            "19NA05_c01_s02_exp1_int_exploration": "Place Value with Whole Numbers",
+            "19NA05_c01_s04_exp1_int_exploration": "Decimals to Thousandths",
+            "19NA05_c01_s05_exp1_int_exploration": "Place Value with Decimals",
+            "19NA05_c01_s06_exp1_int_exploration": "Compare Decimals",
+            "19NA05_c01_s07_exp1_int_exploration": "Round Decimals",
+            "19NA05_c02_s03_exp1_int_exploration": "Write Numerical Expressions",
+            "19NA05_c03_s02_exp1_int_exploration": "Use Models to Add or Subtract Decimals",
+            "19NA05_c03_s03_exp1_int_exploration": "Add Decimals",
+            "19NA05_c03_s04_exp1_int_exploration": "Subtract Decimals",
+            "19NA05_c03_s05_exp1_int_exploration": "Add and Subtract Decimals",
+            "19NA05_c04_s02_exp1_int_exploration": "Estimate Products",
+            "19NA05_c04_s03_exp1_int_exploration": "Multiply by One-Digit Numbers",
+            "19NA05_c04_s04_exp1_int_exploration": "Multiply by Two-Digit Numbers",
+            "19NA05_c04_s05_exp1_int_exploration": "Multiply Multi-Digit Whole Numbers",
+            "19NA05_c05_s01_exp1_int_exploration": "Multiplication Patterns With Decimals",
+            "19NA05_c05_s02_exp1_int_exploration": "Estimate Products of Decimals and Whole Numbers",
+            "19NA05_c05_s03_exp1_int_exploration": "Use Models to Multiply Decimals and Whole Numbers",
+            "19NA05_c05_s04_exp1_int_exploration": "Multiply Decimals and Whole Numbers",
+            "19NA05_c05_s05_exp1_int_exploration": "Use Models to Multiply Decimals",
+            "19NA05_c05_s06_exp1_int_exploration": "Use Partial Products to Multiply Decimals",
+            "19NA05_c05_s07_exp1_int_exploration": "Use Strategies to Multiply Decimals",
+            "19NA05_c05_s08_exp1_int_exploration": "Multiply Decimals",
+            "19NA05_c05_s09_exp1_int_exploration": "Problem Solving: Multiply With Money",
+            "19NA05_c06_s01_exp1_int_exploration": "Relate Multiplication And Division",
+            "19NA05_c06_s02_exp1_int_exploration": "Division Patterns",
+            "19NA05_c06_s03_exp1_int_exploration": "Estimate Quotients",
+            "19NA05_c06_s04_exp1_int_exploration": "Divide by One-Digit Number",
+            "19NA05_c06_s05_exp1_int_exploration": "Use Partial Quotients to Divide by Two-Digit Numbers",
+            "19NA05_c06_s06_exp1_int_exploration": "Use Partial Quotients with a Remainder",
+            "19NA05_c06_s07_exp1_int_exploration": "Divide Three-Digit Numbers by Two-Digit Numbers",
+            "19NA05_c06_s08_exp1_int_exploration": "Divide Four-Digit Numbers by Two-Digit Numbers",
+            "19NA05_c06_s09_exp1_int_exploration": "Problem Solving: Division",
+            "19NA05_c07_s01_exp1_int_exploration": "Division Patterns with Decimals",
+            "19NA05_c07_s02_exp1_int_exploration": "Estimate Decimal Quotients",
+            "19NA05_c07_s03_exp1_int_exploration": "Use Models to Divide Decimals by Whole Numbers",
+            "19NA05_c07_s04_exp1_int_exploration": "Divide Decimals by One-Digit Numbers",
+            "19NA05_c07_s05_exp1_int_exploration": "Divide Decimals by Two-Digit Numbers",
+            "19NA05_c07_s06_exp1_int_exploration": "Use Models to Divide Decimals",
+            "19NA05_c07_s07_exp1_int_exploration": "Divide Decimals",
+            "19NA05_c07_s08_exp1_int_exploration": "Insert Zeros in the Dividend",
+            "19NA05_c07_s09_exp1_int_exploration": "Problem Solving: Decimal Operations",
+            "19NA05_c09_s01_exp1_int_exploration": "Multiply Whole Numbers by Fractions",
+            "19NA05_c09_s02_exp1_int_exploration": "Use Models to Multiply Fractions by Whole Numbers",
+            "19NA05_c09_s03_exp1_int_exploration": "Multiply Fractions and Whole Numbers",
+            "19NA05_c09_s04_exp1_int_exploration": "Use Models to Multiply Fractions",
+            "19NA05_c09_s05_exp1_int_exploration": "Multiply Fractions",
+            "19NA05_c09_s06_exp1_int_exploration": "Find Areas of Rectangles",
+            "19NA05_c09_s07_exp1_int_exploration": "Multiply Mixed Numbers",
+            "19NA05_c09_s08_exp1_int_exploration": "Compare Factors and Products",
+            "19NA05_c10_s01_exp1_int_exploration": "Interpret Fractions as Division",
+            "19NA05_c10_s02_exp1_int_exploration": "Mixed Numbers as Quotients",
+            "19NA05_c10_s03_exp1_int_exploration": "Divide Whole Numbers by Unit Fractions",
+            "19NA05_c10_s04_exp1_int_exploration": "Divide Unit Fractions by Whole Numbers",
+            "19NA05_c10_s05_exp1_int_exploration": "Problem Solving: Fraction Division",
+            "19NA05_c11_s01_exp1_int_exploration": "Length in Metric Units",
+            "19NA05_c11_s02_exp1_int_exploration": "Mass and Capacity in Metric Units",
+            "19NA05_c11_s03_exp1_int_exploration": "Length in Customary Units",
+            "19NA05_c11_s04_exp1_int_exploration": "Weight in Customary Units",
+            "19NA05_c11_s05_exp1_int_exploration": "Capacity in Customary Units",
+            "19NA05_c11_s06_exp1_int_exploration": "Make and Interpret Line Plots",
+            "19NA05_c11_s07_exp1_int_exploration": "Problem Solving: Measurement",
+            "19NA05_c12_s01_exp1_int_exploration": "Plot Points in a Coordinate Plane",
+            "19NA05_c12_s02_exp1_int_exploration": "Plot Points in a Coordinate Plane",
+            "19NA05_c12_s03_exp1_int_exploration": "Draw Polygons in a Coordinate Plane",
+            "19NA05_c12_s04_exp1_int_exploration": "Graph Data",
+            "19NA05_c12_s05_exp1_int_exploration": "Make and Interpret Line Graphs",
+            "19NA05_c12_s06_exp1_int_exploration": "Numerical Patterns",
+            "19NA05_c12_s07_exp1_int_exploration": "Graph and Analyze Relationships",
+            "19NA05_c13_s01_exp1_int_exploration": "Understand the Concept of Volume",
+            "19NA05_c13_s02_exp1_int_exploration": "Find Volumes of Right Rectangular Prisms",
+            "19NA05_c13_s03_exp1_int_exploration": "Apply the Volume Formula",
+            "19NA05_c13_s04_exp1_int_exploration": "Find Unknown Dimensions",
+            "19NA05_c13_s05_exp1_int_exploration": "Find Volumes of Composite Figures",
+            "19NA05_c14_s01_exp1_int_exploration": "Classify Triangles",
+            "19NA05_c14_s02_exp1_int_exploration": "Classify Quadrilaterals",
+            "19NA05_c14_s03_exp1_int_exploration": "Relate Quadrilaterals",
+
+
+            "19NA_A1_c10_s03_exp1_int_exploration": "Analyzing a Free-Falling Object",
+            "19NA_A1_c07_s02_exp2_int_exploration": "Multiplying Binomials Using Algebra Tiles",
+            "19NA_A2_c04_s04_exp1_int_exploration": "Factoring Polynomials",
+
+            "19NA_A2_c09_s01_exp1_int_exploration": "Trigonometric Functions of Special Angles",
+            "19NA_A2_c09_s01_exp2_int_exploration": "Exploring Trigonometric Identities",
+            "19NA_A2_c09_s02_exp1_int_exploration": "Writing Radian Measures of Angles",
+            "19NA_A2_c09_s02_exp2_int_exploration": "Writing Degree Measures of Angles",
+            "19NA_A2_c09_s03_exp1_int_exploration": "Writing Trigonometric Functions",
+            "19NA_A2_c09_s04_exp1_int_exploration": "Graphing the Sine Function",
+            "19NA_A2_c09_s04_exp2_int_exploration": "Graphing the Cosine Function",
+            "19NA_A2_c09_s05_exp1_int_exploration": "Graphing the Tangent Function",
+            "19NA_A2_c09_s06_exp1_int_exploration": "Modeling Electric Currents",
+            "19NA_A2_c09_s07_exp1_int_exploration": "Writing a Trigonometric Identity",
+            "19NA_A2_c09_s07_exp2_int_exploration": "Writing Other Trigonometric Identities",
+            "19NA_A2_c09_s08_exp1_int_exploration": "Deriving a Difference Formula",
+            "19NA_A2_c09_s08_exp2_int_exploration": "Deriving a Sum Formula",
+            "19NA_A2_c09_s08_exp3_int_exploration": "Deriving Difference and Sum Formulas",
+
+            "19NA_A1_c01_s03_exp1_int_exploration": "Perimeter",
+            "19NA_A1_c01_s03_exp2_int_exploration": "Perimeter and Area",
+            "19NA_A1_c01_s05_exp1_int_exploration": "Using an Area Formula",
+            "19NA_A1_c01_s05_exp2_int_exploration": "Using Area, Circumference, and Volume Formulas",
+            "19NA_A1_c06_s02_exp1_int_exploration": "Finding Cube Roots",
+            "19NA_A1_c06_s02_exp2_int_exploration": "Estimating n<sup>th</sup> Roots",
+            "19NA_A1_c06_s03_exp1_int_exploration": "Exploring an Exponential Function",
+            "19NA_A1_c06_s03_exp2_int_exploration": "Exploring an Exponential Function",
+            "19NA_A1_c07_s01_exp1_int_exploration": "Adding Polynomials",
+            "19NA_A1_c07_s01_exp2_int_exploration": "Subtracting Polynomials",
+            "19NA_A1_c07_s02_exp1_int_exploration": "Multiplying Monomials Using Algebra Tiles",
+            "19NA_A1_c07_s03_exp1_int_exploration": "Finding a Sum and Difference Pattern",
+            "19NA_A1_c07_s03_exp2_int_exploration": "Finding the Square of a Binomial Pattern",
+            "19NA_A1_c07_s08_exp1_int_exploration": "Writing a Product of Linear Factors",
+            "19NA_A1_c07_s08_exp2_int_exploration": "Matching Standard and Factored Forms",
+            "19NA_A2_c01_s01_exp1_int_exploration": "Identifying Basic Parent Functions",
+            "19NA_A2_c01_s03_exp1_int_exploration": "Modeling with a Linear Function",
+            "19NA_A2_c01_s03_exp2_int_exploration": "Modeling with Linear Functions",
+            "19NA_A2_c01_s04_exp1_int_exploration": "Recognizing Graphs of Linear Systems",
+            "19NA_A2_c01_s04_exp2_int_exploration": "Solving Systems of Linear Equations",
+            "19NA_A2_c04_s01_exp1_int_exploration": "Identifying Graphs of Polynomial Functions",
+            "19NA_A2_c04_s01_exp2_int_exploration": "Identifying x-Intercepts of Polynomial Graphs",
+            "19NA_A2_c04_s02_exp1_int_exploration": "Cubing Binomials",
+            "19NA_A2_c04_s02_exp2_int_exploration": "Generalizing Patterns for Cubing a Binomial",
+            "19NA_A2_c04_s04_exp2_int_exploration": "Factoring Polynomials",
+            "19NA_A2_c04_s07_exp1_int_exploration": "Transforming the Graph of a Cubic Function",
+            "19NA_A2_c04_s07_exp2_int_exploration": "Transforming the Graph of a Quartic Function",
+            "19NA_A2_c05_s01_exp1_int_exploration": "Exploring the Definition of a Rational Exponent",
+            "19NA_A2_c05_s01_exp2_int_exploration": "Writing Expressions in Rational Exponent Form",
+            "19NA_A2_c05_s01_exp3_int_exploration": "Writing Expressions in Radical Form",
+            "19NA_A2_c05_s02_exp1_int_exploration": "Reviewing Properties of Exponents",
+            "19NA_A2_c05_s02_exp2_int_exploration": "Simplifying Expressions with Rational Exponents",
+            "19NA_A2_c05_s02_exp3_int_exploration": "Simplifying Products and Quotients of Radicals",
+            "19NA_A2_c05_s03_exp1_int_exploration": "Identifying Graphs of Radical Functions",
+            "19NA_A2_c05_s03_exp2_int_exploration": "Identifying Graphs of Transformations",
+            "19NA_A2_c06_s03_exp1_int_exploration": "Rewriting Exponential Equations",
+            "19NA_A2_c06_s03_exp2_int_exploration": "Graphing Exponential and Logarithmic Functions",
+            "19NA_A2_c06_s03_exp3_int_exploration": "Characteristics of Graphs of Logarithmic Functions",
+            "19NA_A2_c06_s04_exp1_int_exploration": "Identifying Transformations",
+            "19NA_A2_c06_s04_exp2_int_exploration": "Characteristics of Graphs",
+            "19NA_A2_c06_s05_exp1_int_exploration": "Product Property of Logarithms",
+            "19NA_A2_c06_s05_exp2_int_exploration": "Quotient Property of Logarithms",
+            "19NA_A2_c06_s05_exp3_int_exploration": "Power Property of Logarithms",
+            "19NA_A2_c06_s07_exp1_int_exploration": "Recognizing Different Types of Models",
+            "19NA_A2_c06_s07_exp2_int_exploration": "Exploring Gaussian and Logistic Models",
+            "19NA_A2_c07_s02_exp1_int_exploration": "Identifying Graphs of Rational Functions",
+            "19NA_A2_c07_s03_exp1_int_exploration": "Multiplying and Dividing Rational Expressions",
+            "19NA_A2_c07_s03_exp2_int_exploration": "Writing a Product or Quotient",
+            "19NA_A2_c07_s04_exp1_int_exploration": "Adding and Subtracting Rational Expressions",
+            "19NA_A2_c07_s04_exp2_int_exploration": "Writing a Sum or Difference",
+
+            "19NA_A1_c03_s03_exp1_int_exploration": "Matching Functions with Their Graphs",
+            "19NA_A1_c06_s01_exp1_int_exploration": "Writing Rules for Properties of Exponents",
+            "19NA_A1_c06_s03_exp3_int_exploration": "Graphing Exponential Functions",
+            "19NA_A1_c06_s04_exp1_int_exploration": "Predicting a Future Event",
+            "19NA_A1_c06_s04_exp2_int_exploration": "Describing a Decay Pattern",
+            "19NA_A1_c06_s07_exp1_int_exploration": "Describing a Pattern",
+            "19NA_A1_c06_s07_exp2_int_exploration": "Using a Recursive Equation",
+            "19NA_A1_c07_s04_exp1_int_exploration": "Matching Equivalent Forms of an Equation",
+            "19NA_A1_c07_s04_exp2_int_exploration": "Writing a Conjecture",
+            "19NA_A1_c07_s04_exp3_int_exploration": "Special Properties of 0 and 1",
+            "19NA_A1_c07_s06_exp1_int_exploration": "Finding Binomial Factors",
+            "19NA_A1_c07_s07_exp1_int_exploration": "Factoring Special Products",
+            "19NA_A1_c08_s01_exp1_int_exploration": "Graphing Quadratic Functions",
+            "19NA_A1_c08_s02_exp1_int_exploration": "Graphing <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>c</mi></math>",
+            "19NA_A1_c08_s02_exp2_int_exploration": "Finding <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>-Intercepts of Graphs",
+            "19NA_A1_c08_s03_exp1_int_exploration": "Comparing <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>-Intercepts with the Vertex",
+            "19NA_A1_c08_s03_exp2_int_exploration": "Finding <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>-Intercepts",
+            "19NA_A1_c08_s03_exp3_int_exploration": "Deductive Reasoning",
+            "19NA_A1_c08_s04_exp1_int_exploration": "Graphing <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mi>a</mi><msup><mfenced><mrow><mi>x</mi><mo>-</mo><mi>h</mi></mrow></mfenced><mn>2</mn></msup></math> when <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>h</mi><mo>&#xA0;</mo><mo>&gt;</mo><mo>&#xA0;</mo><mn>0</mn></math>",
+            "19NA_A1_c08_s04_exp2_int_exploration": "Graphing <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mi>a</mi><msup><mfenced><mrow><mi>x</mi><mo>-</mo><mi>h</mi></mrow></mfenced><mn>2</mn></msup></math> when <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>h</mi><mo>&#xA0;</mo><mo>&lt;</mo><mo>&#xA0;</mo><mn>0</mn></math>",
+            "19NA_A1_c08_s05_exp1_int_exploration": "Using Zeros to Write Functions",
+            "19NA_A1_c08_s06_exp1_int_exploration": "Comparing Speeds",
+            "19NA_A1_c08_s06_exp2_int_exploration": "Comparing Speeds",
+            "19NA_A1_c09_s01_exp1_int_exploration": "Operations with Square Roots",
+            "19NA_A1_c09_s01_exp2_int_exploration": "Writing Counterexamples",
+            "19NA_A1_c09_s02_exp1_int_exploration": "Solving a Quadratic Equation by Graphing",
+            "19NA_A1_c09_s02_exp2_int_exploration": "Solving Quadratic Equations by Graphing",
+            "19NA_A1_c09_s03_exp2_int_exploration": "Estimating Solutions",
+            "19NA_A1_c09_s03_exp3_int_exploration": "Using Technology to Estimate Solutions",
+            "19NA_A1_c09_s05_exp1_int_exploration": "Deriving the Quadratic Formula",
+            "19NA_A1_c09_s05_exp2_int_exploration": "Deriving the Quadratic Formula by Completing the Square",
+            "19NA_A1_c10_s01_exp2_int_exploration": "Writing Square Root Functions",
+            "19NA_A1_c10_s03_exp2_int_exploration": "Solving a Square Root Equation",
+            "19NA_A1_c11_s03_exp1_int_exploration": "Analyzing a Famous Symmetric Distribution",
+            "19NA_A1_c11_s03_exp2_int_exploration": "Comparing Two Symmetric Distributions",
+            "19NA_A2_c01_s02_exp1_int_exploration": "Transformations of the Parent Absolute Value Function",
+            "19NA_A2_c01_s02_exp2_int_exploration": "Transformations of the Parent Absolute Value Function",
+            "19NA_A2_c01_s02_exp3_int_exploration": "Transformations of the Parent Absolute Value Function",
+            "19NA_A2_c03_s01_exp1_int_exploration": "Matching a Quadratic Function with Its Graph",
+            "19NA_A2_c03_s01_exp2_int_exploration": "Solving Quadratic Equations",
+            "19NA_A2_c03_s02_exp1_int_exploration": "Classifying Numbers",
+            "19NA_A2_c03_s02_exp2_int_exploration": "Complex Solutions of Quadratic Equations",
+            "19NA_A2_c03_s03_exp1_int_exploration": "Using Algebra Tiles to Complete the Square",
+            "19NA_A2_c03_s03_exp2_int_exploration": "Drawing Conclusions",
+            "19NA_A2_c03_s04_exp1_int_exploration": "Deriving the Quadratic Formula",
+            "19NA_A2_c03_s04_exp2_int_exploration": "Using the Quadratic Formula",
+            "19NA_A2_c03_s05_exp1_int_exploration": "Solving Nonlinear Systems of Equations",
+            "19NA_A2_c03_s05_exp2_int_exploration": "Solving Nonlinear Systems of Equations",
+            "19NA_A2_c03_s06_exp1_int_exploration": "Solving a Quadratic Inequality",
+            "19NA_A2_c03_s06_exp2_int_exploration": "Solving Quadratic Inequalities",
+            "19NA_A2_c04_s03_exp1_int_exploration": "Dividing Polynomials",
+            "19NA_A2_c04_s03_exp2_int_exploration": "Dividing Polynomials",
+            "19NA_A2_c04_s05_exp1_int_exploration": "Cubic Equations and Repeated Solutions",
+            "19NA_A2_c04_s05_exp2_int_exploration": "Quartic Equations and Repeated Solutions",
+            "19NA_A2_c04_s06_exp1_int_exploration": "Cubic Equations and Imaginary Solutions",
+            "19NA_A2_c04_s06_exp2_int_exploration": "Quartic Equations and Imaginary Solutions",
+            "19NA_A2_c04_s08_exp1_int_exploration": "Approximating Turning Points",
+            "19NA_A2_c06_s01_exp1_int_exploration": "Identifying Graphs of Exponential Functions",
+            "19NA_A2_c06_s01_exp2_int_exploration": "Characteristics of Graphs of Exponential Functions",
+            "19NA_A2_c06_s02_exp1_int_exploration": "Approximating the Natural Base <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>e</mi></math>",
+            "19NA_A2_c06_s02_exp2_int_exploration": "Approximating the Natural Base <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>e</mi></math>",
+            "19NA_A2_c06_s02_exp3_int_exploration": "Graphing a Natural Base Function",
+            "19NA_A2_c06_s06_exp1_int_exploration": "Solving Exponentials and Logarithmic Equations",
+            "19NA_A2_c06_s06_exp2_int_exploration": "Solving Exponential and Logarithmic Equations",
+            "19NA_A2_c07_s05_exp1_int_exploration": "Solving Rational Equations",
+            "19NA_A2_c07_s05_exp2_int_exploration": "Solving Rational Equations",
+            "19NA_A2_c10_s01_exp1_int_exploration": "Finding the Sample Space of an Experiment",
+            "19NA_A2_c10_s01_exp2_int_exploration": "Finding the Sample Space of an Experiment",
+            "19NA_A2_c10_s01_exp3_int_exploration": "Finding the Sample Space of an Experiment",
+            "19NA_A2_c10_s01_exp4_int_exploration": "Finding the Sample Space of an Experiment",
+            "19NA_A2_c10_s03_exp1_int_exploration": "Completing and Using a Two-Way Table",
+            "19NA_A2_c10_s03_exp2_int_exploration": "Two-Way Tables and Probability",
+            "19NA_A2_c10_s03_exp3_int_exploration": "Conducting a Survey",
+            "19NA_A2_c10_s04_exp1_int_exploration": "Disjoint Events and Overlapping Events",
+            "19NA_A2_c10_s04_exp2_int_exploration": "Finding the Probability that Two Events Occur",
+            "19NA_A2_c10_s05_exp1_int_exploration": "Reading a Tree Diagram",
+            "19NA_A2_c10_s05_exp2_int_exploration": "Reading a Tree Diagram",
+            "19NA_A2_c10_s05_exp3_int_exploration": "Writing a Conjecture",
+            "19NA_A2_c10_s06_exp1_int_exploration": "Analyzing Histograms",
+            "19NA_A2_c10_s06_exp2_int_exploration": "Determining the Number of Occurrences",
+
+            "19NA_A1_c01_s01_exp1_int_exploration": "Measuring Angles",
+            "19NA_A1_c01_s01_exp3_int_exploration": "Applying Your Conjecture",
+            "19NA_A1_c01_s02_exp1_int_exploration": "Solving for the Angle Measures of a Polygon",
+            "19NA_A1_c01_s04_exp1_int_exploration": "Solving an Absolute Value Equation Algebraically",
+            "19NA_A1_c02_s01_exp1_int_exploration": "Writing and Graphing Inequalities",
+            "19NA_A1_c02_s01_exp2_int_exploration": "Writing Inequalities",
+            "19NA_A1_c02_s02_exp1_int_exploration": "Quarterback Passing Efficiency",
+            "19NA_A1_c02_s02_exp2_int_exploration": "Finding Solutions of Inequalities",
+            "19NA_A1_c02_s03_exp1_int_exploration": "Writing a Rule",
+            "19NA_A1_c02_s03_exp2_int_exploration": "Writing a Rule",
+            "19NA_A1_c02_s05_exp1_int_exploration": "Describing Intervals on the Real Number Line",
+            "19NA_A1_c02_s05_exp2_int_exploration": "Describing Two Infinite Intervals",
+            "19NA_A1_c02_s06_exp2_int_exploration": "Solving an Absolute Value Inequality Graphically",
+            "19NA_A1_c03_s01_exp1_int_exploration": "Describing a Function",
+            "19NA_A1_c03_s01_exp2_int_exploration": "Identifying Functions",
+            "19NA_A1_c03_s05_exp1_int_exploration": "Finding Slopes and y-Intercepts",
+            "19NA_A1_c04_s01_exp2_int_exploration": "Mathematical Modeling",
+            "19NA_A1_c04_s02_exp2_int_exploration": "Writing a Formula",
+            "19NA_A1_c04_s07_exp1_int_exploration": "Writing Equations for a Function",
+            "19NA_A1_c04_s07_exp2_int_exploration": "Writing Equations for a Function",
+            "19NA_A1_c05_s01_exp1_int_exploration": "Writing a System of Linear Equations",
+            "19NA_A1_c05_s02_exp1_int_exploration": "Using Substitution to Solve Systems",
+            "19NA_A1_c05_s03_exp1_int_exploration": "Writing and Solving a System of Equations",
+            "19NA_A1_c05_s03_exp2_int_exploration": "Using Elimination to Solve Systems",
+            "19NA_A1_c05_s03_exp3_int_exploration": "Using Elimination to Solve a System",
+            "19NA_A1_c05_s06_exp1_int_exploration": "Writing a Linear Inequality in Two Variables",
+            "19NA_A1_c05_s07_exp1_int_exploration": "Graphing Linear Inequalities",
+            "19NA_A1_c07_s05_exp1_int_exploration": "Finding Binomial Factors",
+            "19NA_A1_c09_s03_exp1_int_exploration": "The Number of Solutions of <math xmlns='http://www.w3.org/1998/Math/MathML'><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math>",
+            "19NA_A1_c09_s06_exp1_int_exploration": "Solving a System of Equations",
+            "19NA_A1_c10_s02_exp2_int_exploration": "Writing Cube Root Functions",
+            "19NA_A1_c10_s04_exp1_int_exploration": "Exploring Inverse Functions",
+            "19NA_A1_c11_s01_exp1_int_exploration": "Describing the Variation of Data",
+            "19NA_A1_c11_s04_exp1_int_exploration": "Reading a Two-Way Table",
+            "19NA_A2_c02_s04_exp1_int_exploration": "Modeling with a Quadratic Function",
+            "19NA_A2_c05_s04_exp1_int_exploration": "Solving Radical Equations",
+            "19NA_A2_c07_s01_exp2_int_exploration": "Recognizing Inverse Variation",
+            "19NA_A2_c08_s01_exp1_int_exploration": "Writing Rules for Sequences ",
+            "19NA_A2_c08_s04_exp2_int_exploration": "Writing a Conjecture",
+            "19NA_A2_c08_s04_exp3_int_exploration": "Writing a Formula",
+            "19NA_A2_c08_s05_exp2_int_exploration": "Writing a Recursive Rule",
+            "19NA_A2_c08_s05_exp3_int_exploration": "Writing a Recursive Rule",
+            "19NA_A2_c10_s02_exp2_int_exploration": "Finding Experimental Probabilities",
+            "19NA_A2_c11_s01_exp1_int_exploration": "Analyzing a Normal Distribution",
+            "19NA_A2_c11_s01_exp2_int_exploration": "Analyzing a Data Set",
+            "19NA_A2_c11_s03_exp1_int_exploration": "Analyzing Sampling Techniques",
+            "19NA_A2_c11_s03_exp2_int_exploration": "Analyzing Survey Questions",
+            "19NA_A2_c11_s03_exp3_int_exploration": "Analyzing Survey Randomness and Truthfulness",
+            "19NA_A2_c11_s04_exp2_int_exploration": "Analyzing an Experiment",
+            "19NA_GE_c01_s02_exp3_int_exploration": "Measuring Heights Using Nonstandard Units",
+            "19NA_GE_c02_s01_exp1_int_exploration": "Determining Whether a Statement Is True or False",
+            "19NA_GE_c02_s01_exp2_int_exploration": "Determining Whether a Statement Is True or False",
+            "19NA_GE_c02_s01_exp3_int_exploration": "Determining Whether a Statement Is True or False",
+            "19NA_GE_c02_s02_exp1_int_exploration": "Writing a Conjecture",
+            "19NA_GE_c02_s02_exp2_int_exploration": "Using a Venn Diagram",
+            "19NA_GE_c02_s03_exp1_int_exploration": "Looking at a Diagram",
+            "19NA_GE_c02_s03_exp2_int_exploration": "Interpreting a Diagram",
+            "19NA_GE_c02_s04_exp1_int_exploration": "Justifying Steps in a Solution",
+            "19NA_GE_c02_s04_exp2_int_exploration": "Stating Algebraic Properties",
+            "19NA_GE_c02_s05_exp1_int_exploration": "Writing Reasons in a Proof",
+            "19NA_GE_c02_s05_exp2_int_exploration": "Writing Steps in a Proof",
+            "19NA_GE_c02_s06_exp1_int_exploration": "Matching Reasons in a Flowchart Proof",
+            "19NA_GE_c02_s06_exp2_int_exploration": "Matching Reasons in a Flowchart Proof",
+            "19NA_GE_c09_s01_exp2_int_exploration": "Proving the Pythagorean Theorem",
+            "19NA_GE_c09_s04_exp2_int_exploration": "Using a Calculator",
+            "19NA_GE_c11_s01_exp1_int_exploration": "Finding the Length of a Circular Arc",
+            "19NA_GE_c11_s01_exp2_int_exploration": "Using Arc Length",
+            "19NA_GE_c11_s02_exp1_int_exploration": "Finding the Area of a Sector of a Circle",
+            "19NA_GE_c11_s02_exp2_int_exploration": "Finding the Area of a Circular Sector",
+            "19NA_GE_c11_s03_exp1_int_exploration": "Finding the Area of a Regular Polygon",
+            "19NA_GE_c11_s03_exp2_int_exploration": "Writing a Formula for Area",
+            "19NA_GE_c11_s04_exp1_int_exploration": "Analyzing a Property of Polyhedra",
+            "19NA_GE_c11_s05_exp1_int_exploration": "Finding Volume",
+            "19NA_GE_c11_s05_exp2_int_exploration": "Finding Volume",
+            "19NA_GE_c11_s06_exp1_int_exploration": "Finding the Volume of a Pyramid",
+            "19NA_GE_c11_s06_exp2_int_exploration": "Finding the Volume of a Pyramid",
+            "19NA_GE_c11_s07_exp1_int_exploration": "Finding the Surface Area of a Cone",
+            "19NA_GE_c11_s07_exp2_int_exploration": "Finding the Volume of a Cone",
+            "19NA_GE_c11_s08_exp1_int_exploration": "Finding the Surface Area of a Sphere",
+            "19NA_GE_c11_s08_exp2_int_exploration": "Finding the Volume of a Sphere",
+
+
+            "19NA_A1_c01_s01_exp2_int_exploration": "Making a Conjecture",
+            "19NA_A1_c01_s02_exp2_int_exploration": "Writing a Multi-Step Equation",
+            "19NA_A1_c01_s04_exp2_int_exploration": "Solving an Absolute Value Equation Graphically",
+            "19NA_A1_c01_s04_exp3_int_exploration": "Solving an Absolute Value Equation Numerically",
+            "19NA_A1_c02_s04_exp1_int_exploration": "Solving a Multi-Step Inequality",
+            "19NA_A1_c02_s06_exp1_int_exploration": "Solving an Absolute Value Inequality Algebraically",
+            "19NA_A1_c02_s06_exp3_int_exploration": "Solving an Absolute Value Inequality Numerically",
+            "19NA_A1_c03_s02_exp1_int_exploration": "Finding Patterns for Similar Figures",
+            "19NA_A1_c03_s04_exp1_int_exploration": "Using a Table to Plot Points",
+            "19NA_A1_c03_s04_exp2_int_exploration": "Rewriting and Graphing an Equation",
+            "19NA_A1_c03_s07_exp1_int_exploration": "Identifying Graphs of Absolute Value Functions",
+            "19NA_A1_c11_s04_exp2_int_exploration": "Making a Two-Way Table",
+            "19NA_A1_c09_s06_exp2_int_exploration": "Analyzing Systems of Equations",
+            "19NA_A2_c05_s04_exp2_int_exploration": "Solving Radical Equations",
+            "19NA_A2_c05_s05_exp1_int_exploration": "Graphing the Sum of Two Functions",
+            "19NA_A2_c05_s06_exp1_int_exploration": "Graphing Functions and Their Inverses",
+            "19NA_A2_c05_s06_exp2_int_exploration": "Sketching Graphs of Inverse Functions",
+            "19NA_A2_c07_s01_exp1_int_exploration": "Recognizing Direct Variation",
+            "19NA_A2_c08_s02_exp1_int_exploration": "Recognizing Graphs of Arithmetic Sequences",
+            "19NA_A2_c08_s03_exp2_int_exploration": "Finding the Sum of a Geometric Sequence",
+            "19NA_A2_c08_s05_exp1_int_exploration": "Evaluating a Recursive Rule",
+            "19NA_A2_c10_s02_exp3_int_exploration": "Finding Theoretical Probabilities",
+            "19NA_A2_c11_s02_exp1_int_exploration": "Using Sample Data",
+            "19NA_A2_c11_s02_exp2_int_exploration": "Using Sample Data",
+            "19NA_GE_c01_s01_exp1_int_exploration": "Using Dynamic Geometry Software",
+            "19NA_GE_c01_s01_exp3_int_exploration": "Exploring Dynamic Geometry Software",
+            "19NA_GE_c01_s05_exp1_int_exploration": "Measuring and Classifying Angles",
+            "19NA_GE_c01_s06_exp1_int_exploration": "Finding Angle Measures",
+            "19NA_GE_c01_s06_exp2_int_exploration": "Finding Angle Measures",
+            "19NA_GE_c03_s01_exp1_int_exploration": "Points of Intersection",
+            "19NA_GE_c03_s01_exp2_int_exploration": "Classifying Pairs of Lines",
+            "19NA_GE_c03_s01_exp3_int_exploration": "Identifying Pairs of Angles",
+            "19NA_GE_c03_s02_exp1_int_exploration": "Exploring Parallel Lines",
+            "19NA_GE_c03_s02_exp2_int_exploration": "Writing Conjectures",
+            "19NA_GE_c03_s05_exp1_int_exploration": "Writing Equations of Parallel and Perpendicular Lines",
+            "19NA_GE_c03_s05_exp2_int_exploration": "Writing Equations of Parallel and Perpendicular Lines",
+            "19NA_GE_c04_s01_exp3_int_exploration": "Comparing Angles of Translations",
+            "19NA_GE_c04_s03_exp3_int_exploration": "Rotating a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s05_exp2_int_exploration": "Dilating Lines in a Coordinate Plane",
+            "19NA_GE_c05_s01_exp1_int_exploration": "Writing a Conjecture",
+            "19NA_GE_c05_s01_exp2_int_exploration": "Writing a Conjecture",
+            "19NA_GE_c05_s02_exp1_int_exploration": "Describing Rigid Motions",
+            "19NA_GE_c05_s06_exp2_int_exploration": "Determining Valid Congruence Theorems",
+            "19NA_GE_c05_s07_exp1_int_exploration": "Measuring the Width of a River",
+            "19NA_GE_c05_s07_exp2_int_exploration": "Measuring the Width of a River",
+            "19NA_GE_c05_s08_exp1_int_exploration": "Writing a Coordinate Proof",
+            "19NA_GE_c05_s08_exp2_int_exploration": "Writing a Coordinate Proof",
+            "19NA_GE_c06_s01_exp1_int_exploration": "Points on a Perpendicular Bisector",
+            "19NA_GE_c06_s01_exp2_int_exploration": "Points on an Angle Bisector",
+            "19NA_GE_c06_s02_exp1_int_exploration": "Properties of the Perpendicular Bisectors of a Triangle",
+            "19NA_GE_c06_s02_exp2_int_exploration": "Properties of the Angle Bisectors of a Triangle",
+            "19NA_GE_c06_s03_exp1_int_exploration": "Finding Properties of the Medians of a Triangle",
+            "19NA_GE_c06_s05_exp1_int_exploration": "Comparing Angle Measures and Side Lengths",
+            "19NA_GE_c06_s05_exp2_int_exploration": "A Relationship of the Side Lengths of a Triangle",
+            "19NA_GE_c07_s01_exp2_int_exploration": "Measure of One Angle in a Regular Polygon",
+            "19NA_GE_c07_s03_exp1_int_exploration": "Proving That a Quadrilateral Is a Parallelogram",
+            "19NA_GE_c07_s03_exp2_int_exploration": "Proving That a Quadrilateral Is a Parallelogram",
+            "19NA_GE_c07_s04_exp1_int_exploration": "Identifying Special Quadrilaterals",
+            "19NA_GE_c07_s05_exp2_int_exploration": "Discovering a Property of Kites",
+            "19NA_GE_c08_s01_exp1_int_exploration": "Comparing Triangles after a Dilation",
+            "19NA_GE_c08_s02_exp1_int_exploration": "Comparing Triangles",
+            "19NA_GE_c08_s04_exp1_int_exploration": "Discovering a Proportionality Relationship ",
+            "19NA_GE_c08_s04_exp2_int_exploration": "Discovering a Proportionality Relationship",
+            "19NA_GE_c09_s01_exp1_int_exploration": "Proving the Pythagorean Theorem without Words",
+            "19NA_GE_c09_s03_exp1_int_exploration": "Writing a Conjecture",
+            "19NA_GE_c09_s03_exp2_int_exploration": "Comparing Geometric and Arithmetic Means",
+            "19NA_GE_c09_s04_exp1_int_exploration": "Calculating a Tangent Ratio",
+            "19NA_GE_c09_s05_exp1_int_exploration": "Calculating Sine and Cosine Ratios",
+            "19NA_GE_c09_s06_exp1_int_exploration": "Solving Special Right Triangles",
+            "19NA_GE_c09_s06_exp2_int_exploration": "Solving Right Triangles",
+            "19NA_GE_c10_s01_exp1_int_exploration": "Lines and Line Segments That Intersect Circles",
+            "19NA_GE_c10_s02_exp1_int_exploration": "Measuring Circular Arcs",
+            "19NA_GE_c10_s03_exp1_int_exploration": "Drawing Diameters",
+            "19NA_GE_c10_s03_exp2_int_exploration": "Writing a Conjecture about Chords",
+            "19NA_GE_c10_s03_exp3_int_exploration": "A Chord Perpendicular to a Diameter",
+            "19NA_GE_c10_s04_exp2_int_exploration": "A Quadrilateral with Inscribed Angles",
+            "19NA_GE_c10_s06_exp1_int_exploration": "Segments Formed by Two Intersecting Chords",
+            "19NA_GE_c10_s06_exp2_int_exploration": "Secants Intersecting Outside a Circle",
+            "19NA_GE_c10_s07_exp1_int_exploration": "The Equation of a Circle with Center at the Origin",
+            "19NA_GE_c10_s07_exp2_int_exploration": "The Equation of a Circle with Center <math xmlns='http://www.w3.org/1998/Math/MathML'><mo>(</mo><mi>h</mi><mo>,</mo><mi>k</mi><mo>)</mo><mo>&#xA0;</mo></math>",
+
+            "19NA_A1_c03_s03_exp2_int_exploration": "Evaluating a Function",
+            "19NA_A1_c03_s05_exp2_int_exploration": "Writing a Conjecture",
+            "19NA_A1_c03_s06_exp1_int_exploration": "Comparing Graphs of Functions",
+            "19NA_A1_c03_s06_exp2_int_exploration": "Comparing Graphs of Functions",
+            "19NA_A1_c03_s06_exp3_int_exploration": "Matching Functions with Their Graphs",
+            "19NA_A1_c04_s01_exp1_int_exploration": "Writing Equations in Slope-Intercept Form",
+            "19NA_A1_c04_s02_exp1_int_exploration": "Writing Equations of Lines",
+            "19NA_A1_c04_s02_exp3_int_exploration": "Writing an Equation",
+            "19NA_A1_c04_s03_exp1_int_exploration": "Recognizing Parallel Lines",
+            "19NA_A1_c04_s03_exp2_int_exploration": "Recognizing Perpendicular Lines",
+            "19NA_A1_c04_s04_exp1_int_exploration": "Finding a Line of Fit",
+            "19NA_A1_c04_s04_exp2_int_exploration": "Finding a Line of Fit",
+            "19NA_A1_c04_s05_exp1_int_exploration": "Finding a Line of Best Fit",
+            "19NA_A1_c04_s06_exp1_int_exploration": "Describing a Pattern",
+            "19NA_A1_c05_s01_exp2_int_exploration": "Using a Table or Graph to Solve a System",
+            "19NA_A1_c05_s02_exp2_int_exploration": "Writing and Solving a System of Equations",
+            "19NA_A1_c05_s04_exp1_int_exploration": "Using a Table to Solve a System",
+            "19NA_A1_c05_s05_exp1_int_exploration": "Solving an Equation by Graphing",
+            "19NA_A1_c05_s05_exp2_int_exploration": "Solving Equations Algebraically and Graphically",
+            "19NA_A1_c05_s06_exp2_int_exploration": "Using a Graphing Calculator",
+            "19NA_A1_c05_s06_exp3_int_exploration": "Graphing Linear Inequalities in Two Variables",
+            "19NA_A1_c05_s07_exp2_int_exploration": "Graphing a System of Linear Inequalities",
+            "19NA_A1_c06_s05_exp1_int_exploration": "Solving an Exponential Equation Graphically",
+            "19NA_A1_c06_s05_exp2_int_exploration": "The Number of Solutions of an Exponential Equation",
+            "19NA_A1_c06_s05_exp3_int_exploration": "Solving Exponential Equations Graphically",
+            "19NA_A1_c06_s06_exp1_int_exploration": "Describing Calculator Patterns",
+            "19NA_A1_c06_s06_exp2_int_exploration": "Folding a Sheet of Paper",
+            "19NA_A1_c07_s07_exp2_int_exploration": "Factoring Special Products",
+            "19NA_A1_c10_s01_exp1_int_exploration": "Graphing Square Root Functions",
+            "19NA_A1_c10_s02_exp1_int_exploration": "Graphing Cube Root Functions",
+            "19NA_A1_c10_s04_exp2_int_exploration": "Exploring Inverse Functions",
+            "19NA_A1_c11_s02_exp1_int_exploration": "Drawing a Box-and-Whisker Plot",
+            "19NA_A2_c02_s01_exp1_int_exploration": "Identifying Graphs of Quadratic Functions",
+            "19NA_A2_c02_s02_exp1_int_exploration": "Parabolas and Symmetry",
+            "19NA_A2_c02_s02_exp2_int_exploration": "Parabolas and Symmetry",
+            "19NA_A2_c02_s03_exp1_int_exploration": "Analyzing Satellite Dishes",
+            "19NA_A2_c02_s03_exp2_int_exploration": "Analyzing Spotlights",
+            "19NA_A2_c02_s04_exp2_int_exploration": "Modeling with a Graphing Calculator",
+            "19NA_A2_c04_s09_exp1_int_exploration": "Modeling Real-Life Data",
+            "19NA_A2_c08_s03_exp1_int_exploration": "Recognizing Graphs of Geometric Sequences",
+            "19NA_A2_c08_s04_exp1_int_exploration": "Finding Sums of Infinite Geometric Series",
+            "19NA_A2_c10_s02_exp1_int_exploration": "Identifying Independent and Dependent Events",
+            "19NA_A2_c11_s05_exp1_int_exploration": "Making an Inference from a Sample",
+            "19NA_A2_c11_s06_exp1_int_exploration": "Resampling Data",
+            "19NA_GE_c01_s01_exp2_int_exploration": "Intersections of Lines and Planes",
+            "19NA_GE_c01_s02_exp1_int_exploration": "Measuring Line Segments Using Nonstandard Units",
+            "19NA_GE_c01_s02_exp2_int_exploration": "Measuring Line Segments Using Nonstandard Units",
+            "19NA_GE_c01_s03_exp1_int_exploration": "Finding the Midpoint of a Line Segment",
+            "19NA_GE_c01_s03_exp2_int_exploration": "Finding the Length of a Line Segment",
+            "19NA_GE_c01_s04_exp1_int_exploration": "Finding the Perimeter and Area of a Quadrilateral",
+            "19NA_GE_c01_s04_exp2_int_exploration": "Finding the Area of a Polygon",
+            "19NA_GE_c01_s05_exp2_int_exploration": "Drawing a Regular Polygon",
+            "19NA_GE_c03_s03_exp1_int_exploration": "Exploring Converses",
+            "19NA_GE_c03_s04_exp1_int_exploration": "Writing Conjectures",
+            "19NA_GE_c03_s04_exp2_int_exploration": "Exploring a Segment Bisector",
+            "19NA_GE_c03_s04_exp3_int_exploration": "Writing a Conjecture",
+            "19NA_GE_c04_s02_exp1_int_exploration": "Reflecting a Triangle Using a Reflective Device",
+            "19NA_GE_c04_s04_exp1_int_exploration": "Reflections in Parallel Lines",
+            "19NA_GE_c04_s05_exp1_int_exploration": "Dilating a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s06_exp1_int_exploration": "Dilations and Similarity",
+            "19NA_GE_c05_s06_exp1_int_exploration": "Determining Whether SSA Is Sufficient",
+            "19NA_GE_c06_s03_exp2_int_exploration": "Finding Properties of the Altitudes of a Triangle",
+            "19NA_GE_c06_s06_exp1_int_exploration": "Comparing Measures in Triangles",
+            "19NA_GE_c07_s02_exp1_int_exploration": "Discovering Properties of Parallelograms",
+            "19NA_GE_c07_s02_exp2_int_exploration": "Discovering a Property of Parallelograms",
+            "19NA_GE_c07_s05_exp1_int_exploration": "Making a Conjecture about Trapezoids",
+            "19NA_GE_c08_s01_exp2_int_exploration": "Comparing Triangles after a Dilation",
+            "19NA_GE_c08_s03_exp2_int_exploration": "Deciding Whether Triangles Are Similar",
+            "19NA_GE_c10_s01_exp2_int_exploration": "Using String to Draw a Circle",
+            "19NA_GE_c10_s07_exp3_int_exploration": "Deriving the Standard Equation of a Circle",
+
+            "19NA_A1_c05_s04_exp2_int_exploration": "Writing and Analyzing a System",
+            "19NA_A1_c09_s04_exp1_int_exploration": "Solving by Completing the Square",
+            "19NA_A1_c09_s04_exp2_int_exploration": "Solving by Completing the Square",
+            "19NA_A1_c11_s01_exp2_int_exploration": "Describing the Variation of Data",
+            "19NA_A1_c11_s05_exp1_int_exploration": "Displaying Data",
+            "19NA_A2_c08_s02_exp2_int_exploration": "Finding the Sum of an Arithmetic Sequence",
+            "19NA_A2_c10_s04_exp3_int_exploration": "Discovering Probability Formulas",
+            "19NA_A2_c11_s04_exp1_int_exploration": "Using an Experiment",
+            "19NA_A2_c11_s06_exp2_int_exploration": "Evaluating Results",
+            "19NA_GE_c02_s02_exp3_int_exploration": "Reasoning and Venn Diagrams",
+            "19NA_GE_c04_s01_exp1_int_exploration": "Translating a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s03_exp2_int_exploration": "Rotating a Triangle in a Coordinate Plane",
+            "19NA_GE_c06_s04_exp1_int_exploration": "Midsegments of a Triangle",
+            "19NA_GE_c06_s04_exp2_int_exploration": "Midsegments of a Triangle",
+            "19NA_GE_c08_s03_exp1_int_exploration": "Deciding Whether Triangles Are Similar",
+
+            "19NA_GE_c04_s04_exp2_int_exploration": "Reflections in Intersecting Lines",
+            "19NA_GE_c05_s04_exp1_int_exploration": "Writing a Conjecture about Isosceles Triangles",
+            "19NA_GE_c07_s01_exp1_int_exploration": "The Sum of the Angle Measures of a Polygon",
+            "19NA_GE_c07_s04_exp2_int_exploration": "Identifying Special Quadrilaterals",
+            "19NA_GE_c09_s02_exp1_int_exploration": "Side Ratios of an Isosceles Right Triangle",
+            "19NA_GE_c09_s02_exp2_int_exploration": "Side Ratios of a 30°- 60°- 90° Triangle",
+
+            "19NA_GE_c04_s01_exp1_int_exploration": "Translating a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s01_exp2_int_exploration": "Translating a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s02_exp2_int_exploration": "Reflecting a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s03_exp1_int_exploration": "Rotating a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s03_exp2_int_exploration": "Rotating a Triangle in a Coordinate Plane",
+            "19NA_GE_c04_s06_exp2_int_exploration": "Rigid Motions and Similarity",
+            "19NA_GE_c05_s02_exp2_int_exploration": "Finding a Composition of Rigid Motions",
+            "19NA_GE_c05_s03_exp1_int_exploration": "Drawing Triangles",
+            "19NA_GE_c05_s05_exp1_int_exploration": "Drawing Triangles",
+            "19NA_GE_c09_s07_exp1_int_exploration": "Discovering the Law of Sines",
+            "19NA_GE_c09_s07_exp2_int_exploration": "Discovering the Law of Cosines",
+            "19NA_GE_c10_s04_exp1_int_exploration": "Inscribed Angles and Central Angles",
+            "19NA_GE_c10_s05_exp1_int_exploration": "Angles Formed by a Chord and Tangent Line",
+            "19NA_GE_c10_s05_exp2_int_exploration": "Angles Formed by Intersecting Chords"
+
+        };
+
+        $(".batches").val("");
+        $(".selected-batches").val("");
+        $("#resolution").val("auto");
+
+        $(".batches").change(function (event) {
+            $(".selected-batches").val("");
+            $(".selected-batches").addClass("hide");
+            var type = $(event.target).attr("data-id");
+            // $(".batch").addClass("hide");
+            var batchName = this.value;
+            if (batchName != "") {
+                $(".exploration-menu." + type + " #" + batchName).removeClass("hide");
+            }
+        });
+
+        $("#expType").change(function (event) {
+            $("#k5").addClass("hide");
+            $("#aga").addClass("hide");
+            $("#fk5").addClass("hide");
+            $("#fhonors").addClass("hide");
+            $(".batches").val("");
+            $(".selected-batches").val("");
+            $(".selected-batches").addClass("hide");
+            var expType = this.value;
+            if (expType != "") {
+                $("#" + expType).removeClass("hide");
+            }
+            if (expType == "k5" || expType == "fk5") {
+                $(".aga .selected-batches").addClass("hide");
+                $(".header-container").addClass("green");
+            } else {
+                $(".header-container").removeClass("green");
+            }
+        });
+
+        $("#resolution").change(function (event) {
+            var newRes = event.target.value;
+            if (newRes === "auto") {
+                $(".iframe-wrapper").removeClass("small");
+            } else {
+                $(".iframe-wrapper").addClass("small");
+            }
+        });
+
+        $(".selected-batches").change(function (event) {
+            var explorationName = this.value;
+            var sessionID = document.getElementById("session").value; // Fetch from session dropdown
+            var userID = document.getElementById("user").value; // Fetch from user dropdown
+            var type = $("#save-response").prop("checked") ? "submit_practice" : "local_practice";
+            if (explorationName) {
+                var BILPlayer = document.getElementById("bil-player"),
+                    queryParams = [
+                        "type=" + type,
+                        "sessionId=" + (sessionID ? sessionID : "98fdf775-ef96-251a-062a-2a6099d73ef9"),
+                        "userId=" + (userID ? userID : generateUserID()),
+                        "activityId=" + explorationName.replace("19NA_", ""),
+                        "state=" + "resume"
+                    ],
+                    headerToolbarTitle = CHAPTER_TITLES[explorationName];
+
+                var urlToLaunch = "./explorations/" + explorationName + "/index.html?" + queryParams.join("&");
+
+                BILPlayer.className = "";
+                BILPlayer.src = urlToLaunch;
+                $("#header-toolbar-title").html(headerToolbarTitle);
+                renderMathJax();
+            }
+        });
+    </script>
+</body>
+
+</html>

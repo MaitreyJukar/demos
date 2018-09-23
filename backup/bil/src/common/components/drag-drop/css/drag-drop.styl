@@ -1,0 +1,480 @@
+colorTH1 = #8DC43F
+colorTH10 = #F7941D
+colorTH100 = #51C4C8
+colorTH1000 = #ED68A7
+colorBorder = #000
+
+.dnd-component-wrapper {
+    &.model {
+        .buttons {
+            display: none
+        }
+    }
+
+    &.theme-blue {
+        colorTH1 = #aad59b
+        colorTH10 = #aad59b
+        colorTH100 = #aad59b
+        colorTH1000 = #aad59b
+        colorBorder = #4cb848
+
+        .droppable-wrapper.ones {
+            .droppable-title {
+                background-color: colorTH1
+            }
+        }
+
+        .droppable-wrapper.tens {
+            .droppable-title {
+                background-color: colorTH10
+            }
+        }
+
+        .droppable-wrapper.hundreds {
+            .droppable-title {
+                background-color: colorTH100
+            }
+        }
+
+        .droppable-wrapper.thousands {
+            .droppable-title {
+                background-color: colorTH1000
+            }
+        }
+
+        .droppable-title {
+            border-bottom: 2px solid colorBorder
+        }
+
+        .droppable-wrapper {
+            border: 1px solid colorBorder
+            display: inline-block
+        }
+
+        .droppables {
+            border: 1px solid #4cb848
+        }
+    }
+
+    &.subtract-model {
+        .buttons {
+            display: none
+        }
+    }
+
+    .draggables {
+        text-align: center
+    }
+
+    .draggable {
+        display: inline-block
+        padding: 0 20px
+
+        &:not(.ui-draggable-disabled) {
+            cursor: url('./open-hand.cur'), move
+
+            &.ui-draggable-dragging {
+                cursor: url('./closed-hand.cur'), move
+            }
+        }
+    }
+
+    .droppable {
+        height: calc(100% - 50px)
+        min-height: 100px
+        width: 100%
+
+        .draggable {
+            border: 2px solid transparent
+            display: inline-block
+            margin: 1px
+            padding: 5px
+        }
+    }
+
+    .droppable-wrapper {
+        border: 1px solid colorBorder
+        display: inline-block
+    }
+
+    .droppable-wrapper.ones {
+        width: 245px
+
+        .droppable-title {
+            background-color: colorTH1
+        }
+    }
+
+    .droppable-wrapper.tens {
+        width: 195px
+
+        .droppable-title {
+            background-color: colorTH10
+        }
+    }
+
+    .droppable-wrapper.hundreds {
+        .droppable-title {
+            background-color: colorTH100
+        }
+    }
+
+    .droppable-wrapper.thousands {
+        .droppable-title {
+            background-color: colorTH1000
+        }
+    }
+
+    .droppable-title {
+        border-bottom: 2px solid colorBorder
+        font-size: 20px
+        height: 50px
+        padding: 9px
+        text-align: center
+        text-align: center
+    }
+
+    .droppables {
+        display: flex
+        width: 910px
+
+        &.units-2 {
+            width: 441px
+        }
+
+        &.correct {
+            background-color: #ebf6e6
+            border-left: 5px solid #65a00d
+            padding: 5px
+            padding-left: 20px
+        }
+
+        &.incorrect {
+            background-color: #fbe3e3
+            border-left: 5px solid #e14747
+            padding: 5px
+            padding-left: 20px
+        }
+    }
+
+    .draggables-droppables-container {
+        width: 100%
+    }
+
+    .droppable.hover-group-mode .draggable.hovered {
+        border: 2px solid #6aacef
+        cursor: pointer
+    }
+
+    .droppable.hover-ungroup-mode .draggable.hovered {
+        border: 2px solid #6aacef
+        cursor: pointer
+    }
+
+    .group-mode.selected.droppable .draggable.hovered {
+        background: rgba(0, 0, 0, .12)
+    }
+
+    .ungroup-mode.selected.droppable .draggable.hovered {
+        background: rgba(0, 0, 0, .12)
+    }
+
+    .draggables.disabled {
+        opacity: .5
+    }
+
+    #group-elements {
+        margin-left: 150px
+        margin-top: 15px
+        visibility: hidden
+    }
+
+    #ungroup-elements {
+        margin-left: 15px
+        margin-top: 15px
+        visibility: hidden
+    }
+
+    .ui-draggable-dragging {
+        z-index: 3
+    }
+
+    .ui-draggable-disabled {
+        img {
+            -webkit-user-drag: none
+        }
+    }
+
+    .draggable-title {
+        padding-bottom: 10px
+        text-align: center
+    }
+
+    .top-section {
+        align-items: center
+        display: flex
+        justify-content: space-between
+        margin-right: 10px
+        width: 150px
+
+        &.hide {
+            display: none !important
+        }
+    }
+
+    .buttons {
+        &.right {
+            margin-left: 20px
+            text-align: center
+            width: 80px
+
+            #ungroup {
+                margin-top: 15px
+            }
+
+            #confirm {
+                // margin-bottom: 10px
+                margin-top: 40px
+            }
+
+            #cancel {
+                margin-top: 15px
+            }
+        }
+
+        &.bottom {
+            margin-top: 30px
+            width: auto
+
+            #ungroup {
+                margin-left: 15px
+            }
+
+            #confirm {
+                margin-left: 40px
+            }
+        }
+
+        .button-wrapper {
+            display: inline-block
+
+            .hide {
+                display: none !important
+
+                &.validation-btn + .button-label {
+                    display: none
+                }
+            }
+
+            > * {
+                display: inline-block
+            }
+
+            .controlBtn {
+                &.selected {
+                    box-shadow: inset 0 4px 4px #000000
+                }
+
+                [class*='bil-icon-']:before {
+                    vertical-align: middle
+                }
+
+                &.validation-btn {
+                    i:before {
+                        font-size: 1.3em
+                    }
+                }
+            }
+        }
+
+        .button-label {
+            padding-top: 5px
+            text-align: center
+        }
+
+        [disabled] + .button-label {
+            color: #d8d8d8
+        }
+
+        #ungroup {
+            margin-top: 15px
+        }
+
+        #confirm {
+            background: linear-gradient(to bottom, #117cb9, #075987)
+        }
+
+        #cancel {
+            background: linear-gradient(to bottom, #b70c0a, #860707)
+        }
+    }
+
+    .bottom-section {
+        display: inline-flex
+        position: relative
+
+        .validation-holder {
+            position: absolute
+            right: -15px
+            top: 50%
+        }
+    }
+
+    .cross-holder {
+        color: red
+        font-size: 60px
+        position: absolute
+    }
+
+    .tick-holder {
+        color: green
+        font-size: 40px
+        position: absolute
+    }
+
+    .cross-holder.hidden, .tick-holder.hidden {
+        display: none
+    }
+
+    &.group {
+        .bottom-section {
+            .droppables {
+                width: auto
+
+                .droppable-wrapper {
+                    &.hundreds {
+                        width: 300px !important
+                    }
+
+                    &.tens {
+                        width: 300px !important
+                    }
+
+                    &.ones {
+                        width: 210px !important
+                    }
+
+                    .drop-zone {
+                        min-height: 100px
+                    }
+                }
+            }
+        }
+    }
+
+    .headers {
+        margin: 10px 0
+        text-align: center
+    }
+
+    .top-align {
+        margin-top: 48px
+    }
+
+    .trash-area {
+        border: 2px solid #000
+        border-radius: 5px
+        margin-top: 10px
+        min-height: 100px
+        position: relative
+
+        .trashed-droppables {
+            display: inline-block
+            vertical-align: middle
+
+            .draggable {
+                border: 2px solid transparent
+                padding: 5px
+            }
+        }
+
+        &.trash-active {
+            background: rgba(245, 210, 59, .65)
+
+            &.trash-hover {
+                background: rgba(245, 210, 59, .65)
+            }
+        }
+
+        .empty-trash-text {
+            display: none
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: translate(-50%, -50%)
+        }
+
+        &.empty {
+            .empty-trash-text {
+                display: block
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    smallDrags() {
+        .thousands-draggable {
+            width: 78px
+        }
+
+        .hundreds-draggable {
+            width: 78px
+        }
+
+        .tens-draggable {
+            width: 24px
+        }
+
+        .ones-draggable {
+            width: 42px
+        }
+    }
+
+    .dnd-component-wrapper {
+        .droppables {
+            width: 720px
+
+            .droppable {
+                .drop-zone {
+                    smallDrags()
+                }
+            }
+        }
+
+        .trash-area {
+            .trashed-droppables {
+                smallDrags()
+            }
+        }
+
+        .top-section {
+            padding: 0 30px
+        }
+
+        .draggable {
+            padding: 0 10px
+
+            img {
+                height: 100%
+                width: 100%
+            }
+
+            &.thousands-draggable {
+                width: 84px
+            }
+
+            &.hundreds-draggable {
+                width: 84px
+            }
+
+            &.tens-draggable {
+                width: 30px
+            }
+
+            &.ones-draggable {
+                width: 48px
+            }
+        }
+    }
+}

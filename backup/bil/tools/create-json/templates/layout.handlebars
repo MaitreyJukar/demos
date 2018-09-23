@@ -1,0 +1,46 @@
+<div class="layout-wrapper">
+    <h4 class="layout-title">
+        <span>Layout</span>
+        <button class="delete-layout btn btn-danger btn-inline">
+            <span class="fa fa-trash"></span>
+        </button>
+        <button class="exp-col-layout btn btn-primary btn-inline" data-toggle="collapse" data-target="#layout-details-{{modelID}}">
+            <span class="fa fa-chevron-down"></span>
+            <span class="fa fa-chevron-up"></span>
+        </button>
+    </h4>
+    <div class="layout-details collapse show" id="layout-details-{{modelID}}">
+        <div class="control-wrapper form-check">
+            <input class="form-check-input layout-type single" type="radio" name="radio-{{modelID}}" value="single" id="single-radio-{{modelID}}">
+            <label class="form-check-label layout-label single-label" for="single-radio-{{modelID}}">Single</label>
+        </div>
+        <div class="control-wrapper form-check">
+            <input class="form-check-input layout-type multi" type="radio" name="radio-{{modelID}}" value="multi" id="multi-radio-{{modelID}}">
+            <label class="form-check-label layout-label multi-label" for="multi-radio-{{modelID}}">Multi</label>
+        </div>
+        <div class="row multi-component-container-wrapper">
+            <div class="col-md-6">
+                <div class="control-wrapper form-group">
+                    <label class="left-width-label" for="left-width-{{modelID}}">Width: </label>
+                    <input type="text" class="left-width form-control" value="{{_lwidth}}" id="left-width-{{modelID}}" />
+                </div>
+                <div class="left-component-container"></div>
+                <button class="add-new-component l-comp btn btn-success" data-layout-type="left-component">Add Another Component</button>
+            </div>
+            <div class="col-md-6">
+                <div class="control-wrapper form-group">
+                    <label class="right-width-label" for="right-width-{{modelID}}">Width: </label>
+                    <input type="text" class="right-width form-control" value="{{_rwidth}}" id="right-width-{{modelID}}" />
+                </div>
+                <div class="right-component-container"></div>
+                <button class="add-new-component r-comp btn btn-success" data-layout-type="right-component">Add Another Component</button>
+            </div>
+        </div>
+        <div class="row component-container-wrapper">
+            <div class="col-md-12">
+                <div class="component-container"></div>
+                <button class="add-new-component sing-comp btn btn-success" data-layout-type="sing-component">Add Another Component</button>
+            </div>
+        </div>
+    </div>
+</div>

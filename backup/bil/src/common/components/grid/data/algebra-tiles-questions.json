@@ -1,0 +1,15 @@
+{
+    "question": {
+        "type": "multiplication",
+        "equations": [
+            {
+                "x": 1,
+                "c": -2
+            },
+            {
+                "x": 1,
+                "c": 2
+            }
+        ]
+    }
+}

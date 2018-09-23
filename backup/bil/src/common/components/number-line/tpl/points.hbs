@@ -1,0 +1,12 @@
+<div class="point point-{{pointValue}} {{class}}" data-value={{pointValue}} style="background-color:{{color}}; left:{{left}}">
+    {{#if label}}
+    <div class="point-label" style="color:{{color}};">
+        <div class="frac">
+            {{label.integer}}
+            <span>{{label.sup}}</span>
+            <span class="symbol">/</span>
+            <span class="bottom" style="border-color:{{color}};">{{label.sub}}</span>
+        </div>
+    </div>
+    {{/if}}
+</div>

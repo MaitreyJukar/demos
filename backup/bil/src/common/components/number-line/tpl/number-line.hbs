@@ -1,0 +1,43 @@
+<div class="number-line-container {{class}}">
+    <div class="left-section" style="width:{{width}}">
+        <div class="number-line">
+            <div class="left-arrow bil-icon-baseline-arrow_left line-part"></div>
+            <div class="center-line line-part">
+                <div class="line-border"></div>
+            </div>
+            <div class="right-arrow bil-icon-baseline-arrow_right line-part"></div>
+        </div>
+        <div class="ticks-container">
+            {{#each ticks}}
+            <div class="tick tick-{{this.value}}" style="left:{{this.left}}" data-value="{{this.value}}" data-left="{{this.left}}">
+                <div class="tick-icon">|</div>
+                <div class="tick-value">
+                    <div class="frac">
+                        {{this.tickData.value}}
+                        {{#if this.tickData.sup}}<span>{{this.tickData.sup}}</span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">{{this.tickData.sub}}</span>
+                        {{/if}}
+                    </div>
+
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="points-container">
+
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="tool-validation">
+            <div class="validation-mark">
+                <div class="correct-icon validation-icon">
+                    <span class="bil-icon-done"></span>
+                </div>
+                <div class="incorrect-icon validation-icon">
+                    <span class="bil-icon-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

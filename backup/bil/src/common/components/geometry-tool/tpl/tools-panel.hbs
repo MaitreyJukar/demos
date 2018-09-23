@@ -1,0 +1,76 @@
+<div class="tools-wrapper">
+    <div class="btn-slider start-slider bil-icon-arrow-back disabled-btn" data-btn-name="start-slider"></div>
+    <div class="tools-panel-buttons-container">
+        <div class="geometric-figures-button-container">
+            {{#each geometricFiguresButtonData}} {{#if isButtonVisible}}
+            <div class="button-container {{buttonContainerClass}}">
+                <button class="{{buttonClass}}" data-btn-name={{dataBtnName}} data-mode={{mode}}></button>
+                <div>{{buttonText}}</div>
+            </div>
+            {{/if}} {{/each}}
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="object-operations-button-container">
+            {{#each objectOperationButtonData}} {{#if isButtonVisible}}
+            <div class="button-container {{buttonContainerClass}}">
+                <button class="{{buttonClass}}" data-btn-name={{dataBtnName}} data-mode={{mode}}></button>
+                <div>{{buttonText}}</div>
+            </div>
+            {{/if}} {{/each}}
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="data-button-container">
+            {{#each dataButtonContainer}} {{#if isButtonVisible}}
+            <div class="button-container {{buttonContainerClass}}">
+                <button class="{{buttonClass}}" data-btn-name={{dataBtnName}} data-mode={{mode}}></button>
+                <div>{{buttonText}}</div>
+            </div>
+            {{/if}} {{#if isMeasureAlignment}}
+            <div class="measurement-buttons-container hide-measurement">
+                <div class="radio-button-container">
+                    {{#each measureButtonData}} {{#if isButtonVisible}}
+                    <div class="button-container {{buttonContainerClass}}">
+                        <input type="radio" id="{{buttonId}}" name="{{mode}}" value="{{buttonText}}" class="{{buttonClass}}" data-btn-name={{dataBtnName}}
+                            data-mode={{mode}} {{#if isChecked}}checked{{/if}}>
+                        <label for="{{buttonId}}">{{buttonText}}</label>
+                    </div>
+                    {{/if}} {{/each}}
+                </div>
+                <div class="horizontal-bar"></div>
+                {{#if measureCheckBoxButtonData.isButtonVisible}}
+                <div class="checkbox-container">
+                    <input type="checkbox" id="{{measureCheckBoxButtonData.buttonId}}" class="{{buttonClass}}" name="{{measureCheckBoxButtonData.dataBtnName}}" data-btn-name={{measureCheckBoxButtonData.dataBtnName}} value="{{measureCheckBoxButtonData.buttonText}}"
+                        data-mode={{mode}} {{#if measureCheckBoxButtonData.isChecked}}checked{{/if}}>
+                    <label for="measurement-checkbox">{{measureCheckBoxButtonData.buttonText}}</label>
+                </div>
+                {{/if}}
+            </div>
+            {{/if}} {{/each}}
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="transformation-button-container">
+            {{#each transformationButtonsData}} {{#if isButtonVisible}}
+            <div class="button-container {{buttonContainerClass}}">
+                <button class="{{buttonClass}}" data-btn-name={{dataBtnName}} data-mode={{mode}}></button>
+                <div>{{buttonText}}</div>
+            </div>
+            {{/if}} {{/each}}
+        </div>
+    </div>
+    <div class="btn-slider end-slider bil-icon-arrow-next" data-btn-name="end-slider"></div>
+    {{#if isZoomBehaviourAllowed}}
+    <div class="zoom-buttons-panel">
+        <button class="zoom-out-btn tools-btn" data-btn-name="zoom-out" data-mode="action" title="Zoom Out"></button>
+        <button class="default-zoom-btn tools-btn" data-btn-name="default-zoom" data-mode="action" title="Default Zoom"></button>
+        <button class="zoom-in-btn tools-btn" data-btn-name="zoom-in" data-mode="action" title="Zoom In"></button>
+    </div>
+    {{/if}} {{#if isUndoRedoAllowed}}
+    <div class="undo-redo-buttons-panel">
+        <button class="undo-btn tools-btn" data-btn-name="undo" data-mode="action" title="Undo"></button><button class="redo-btn tools-btn"
+            data-btn-name="redo" data-mode="action" title="Redo"></button><button class="clear-btn tools-btn" data-btn-name="clear" data-mode="action" title="Clear"></button>
+    </div>
+    {{/if}}
+    <div class="editable-label hide-editable-label">
+        <input type="text" class="input-editable-label">
+    </div>
+</div>

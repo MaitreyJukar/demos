@@ -1,0 +1,438 @@
+.tools-panel-buttons-container {
+    align-items: start
+    color: #222222
+    display: flex
+    font-family: 'Source Sans Pro'
+    font-size: 14px
+    font-weight: 400
+    height: 88px
+    position: relative
+    text-align: center
+    width: 100%
+    overflow-x: hidden
+    background-color: #dcf0ff
+
+    &.open-measure {
+        height: 163px;
+    }
+
+    .geometric-figures-button-container, .object-operations-button-container, .data-button-container, .transformation-button-container {
+        display: inline-flex
+        margin: 16px 12px 0;
+    }
+
+    .vertical-bar {
+        background-color: rgba(0, 0, 0, .32)
+        height: 69px
+        min-width: 1px
+        margin-top: 10px
+    }
+
+    .button-container {
+        .point-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -62px -114px
+            }
+            background: url('../data/media/images/btn-icons.png') -62px -114px
+        }
+
+        .segment-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -62px -166px
+            }
+            background: url('../data/media/images/btn-icons.png') -62px -166px
+        }
+
+        .line-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -114px -166px
+            }
+            background: url('../data/media/images/btn-icons.png') -114px -166px
+        }
+
+        .polygon-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -114px -114px
+            }
+            background: url('../data/media/images/btn-icons.png') -114px -114px
+        }
+
+        .move-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -10px -114px
+            }
+            background: url('../data/media/images/btn-icons.png') -10px -114px
+        }
+
+        .delete-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -186px -10px
+            }
+            background: url('../data/media/images/btn-icons.png') -186px -10px
+        }
+
+        .label-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -10px -166px
+            }
+            background: url('../data/media/images/btn-icons.png') -10px -166px
+        }
+
+        .measure-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -134px -62px
+            }
+            background: url('../data/media/images/btn-icons.png') -134px -62px
+        }
+
+        .translate-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -72px -62px
+            }
+            background: url('../data/media/images/btn-icons.png') -72px -62px
+            width: 48px
+        }
+
+        .reflect-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -72px -10px
+            }
+            background: url('../data/media/images/btn-icons.png') -72px -10px
+            width: 48px
+        }
+
+        .rotate-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -10px -62px
+            }
+            background: url('../data/media/images/btn-icons.png') -10px -62px
+            width: 48px
+        }
+
+        .dilate-btn {
+            &.selected {
+                background: url('../data/media/images/btn-icons-selected.png') -9px -10px
+            }
+            background: url('../data/media/images/btn-icons.png') -9px -10px
+            width: 48px
+        }
+
+        .tools-btn {
+            background-color: #ffffff
+            border-color: #012955
+            border-radius: 4px
+            border-style: solid
+            border-width: 2px
+            height: 38px
+            margin-bottom: 7px
+            margin-left: 12px
+            margin-right: 12px
+            padding: 0
+            width: 38px
+        }
+
+        .translate-btn {
+            width: 48px
+        }
+
+        .reflect-btn {
+            width: 48px
+        }
+
+        .rotate-btn {
+            width: 48px
+        }
+
+        .dilate-btn {
+            width: 48px
+        }
+    }
+}
+
+.zoom-buttons-panel, .undo-redo-buttons-panel {
+    bottom: 0
+    height: 42px
+    position: absolute
+    width: 132px
+    white-space: nowrap
+}
+
+.zoom-buttons-panel {
+    right: 0
+}
+
+.undo-redo-buttons-panel {
+    left: 0
+}
+
+.zoom-in-btn, .default-zoom-btn, .zoom-out-btn, .undo-btn, .redo-btn, .clear-btn {
+    background-color: #ffffff
+    border-color: #012955
+    border-radius: 4px
+    border-style: solid
+    border-width: 2px
+    box-sizing: border-box
+    cursor: pointer
+    display: inline-block
+    height: 34px
+    width: 34px
+    padding: 1px 2px
+}
+
+.zoom-in-btn, .default-zoom-btn, .zoom-out-btn {
+    margin-right: 8px
+}
+
+.undo-btn, .redo-btn, .clear-btn {
+    margin-left: 8px
+}
+
+.zoom-in-btn {
+    background-image: url('../data/media/images/btn-icons.png')
+    background-position: -238px -10px
+}
+
+.default-zoom-btn {
+    background-image: url('../data/media/images/btn-icons.png')
+    background-position: -186px -114px
+}
+
+.zoom-out-btn {
+    background-image: url('../data/media/images/btn-icons.png')
+    background-position: -238px -62px
+}
+
+.undo-btn {
+    background-image: url('../data/media/images/btn-icons.png')
+    background-position: -166px -166px
+}
+
+.redo-btn {
+    background-image: url('../data/media/images/btn-icons.png')
+    background-position: -134px -10px
+}
+
+.clear-btn {
+    background-image: url('../data/media/images/btn-icons.png')
+    background-position: -186px -62px
+}
+
+.measurement-buttons-container {
+    background-color: #b6e0ff
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
+    box-shadow: 1px 3px 4.7px .3px rgba(0, 0, 0, .24)
+    height: 71px
+    left: 526px
+    position: absolute
+    top: 88px
+    width: 179px
+    z-index: 1
+
+    &.hide-measurement {
+        display: none
+    }
+
+    &.no-slider {
+        left: 506px;
+    }
+}
+
+.horizontal-bar {
+    background-color: rgba(0, 0, 0, .32)
+    height: 1px
+    margin: auto
+    min-height: 1px
+    width: 162px
+}
+
+.checkbox-container *, .checkbox-container *:before, .checkbox-container *:after, .radio-button-container *, .radio-button-container *:before, .radio-button-container *:after {
+    box-sizing: border-box
+}
+
+.radio-button-container {
+    padding: 8px
+}
+
+.measure-btn {
+    &.measure-btn-inline {
+        display: inline-block
+    }
+
+    input[type='radio'] {
+        opacity: 0
+        position: absolute
+
+        &:checked + label:before {
+            border-color: #012955
+        }
+
+        &:checked + label:after {
+            transform: scale(1)
+        }
+    }
+
+    label {
+        cursor: pointer
+        display: inline-block
+        font-size: 14px
+        height: 20px
+        line-height: 20px
+        margin-bottom: 0
+        padding-left: 25px
+        padding-right: 10px
+        position: relative
+        vertical-align: bottom
+
+        &:before, &:after {
+            border-radius: 50%
+            content: ''
+            position: absolute
+            transition: all .3s ease
+            transition-property: transform, border-color
+        }
+
+        &:before {
+            border: 2px solid #012955
+            height: 20px
+            left: 0
+            top: 0
+            width: 20px
+        }
+
+        &:after {
+            background: #012955
+            height: 10px
+            left: 5px
+            top: 5px
+            transform: scale(0)
+            width: 10px
+        }
+    }
+}
+
+.checkbox-container {
+    display: inline-block
+    margin: 8px
+    position: relative
+    text-align: left
+
+    label {
+        cursor: pointer
+        display: inline
+        line-height: 18px
+
+        &:not(:empty) {
+            padding-left: 10px
+        }
+
+        &:before, &:after {
+            content: ''
+            left: 0
+            position: absolute
+            top: 0
+        }
+
+        &:before {
+            background: #b6e0ff
+            border: 2px solid #012955
+            border-radius: 2px
+            cursor: pointer
+            height: 18px
+            transition: background .3s
+            width: 18px
+        }
+    }
+
+    input[type='checkbox'] {
+        display: block
+        float: left
+        font-size: inherit
+        margin: 0
+        outline: 0
+        visibility: hidden
+        width: 18px
+
+        &:checked {
+            + label:before {
+                background: #012955
+                border: none
+            }
+
+            + label:after {
+                border: 2px solid #ffffff
+                border-right-style: none
+                border-top-style: none
+                height: 7px
+                transform: translate(3px, 3px) rotate(-45deg)
+                width: 13px
+            }
+        }
+
+        &:disabled {
+            + label:before {
+                border-color: rgba(0, 0, 0, .26)
+            }
+
+            &:checked {
+                + label:before {
+                    background: rgba(0, 0, 0, .26)
+                }
+            }
+        }
+    }
+}
+
+.editable-label {
+    position: absolute;
+    z-index: 1;
+}
+
+.hide-editable-label {
+    display:none;
+}
+
+.editable-label input {
+    width: 32px;
+    height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #012955;
+}
+
+.btn-slider {
+    background-color: #dcf0ff;
+    min-width: 30px;
+    height: 88px;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 24px;
+    line-height: 88px;
+    cursor: pointer
+    &.start-slider {
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    &.end-slider {
+        left: 100%;
+        top: 0;
+        transform: translateX(-100%);
+    }
+    &.disabled-btn {
+        opacity: 0.3;
+        cursor: default;
+    }
+}
+
+.geometric-figures-button-container {
+    padding-left: 20px;
+}
+
+.transformation-button-container {
+    padding-right: 30px;
+}
+
+.tools-wrapper {
+    height: 88px;
+}

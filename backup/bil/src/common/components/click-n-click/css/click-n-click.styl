@@ -1,0 +1,88 @@
+.click-n-click-container {
+    display: inline-block
+    white-space: nowrap
+
+    > * {
+        white-space: normal
+    }
+
+    .left-section {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .counter-area{
+        width: 500px;
+    }
+    .counter{
+        cursor: pointer;
+        border: 1px solid black;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 7px;
+    }
+    .counter.selected{
+        background-color: red;
+    }
+    &.disabled{
+        pointer-events: none;
+    }
+
+    &.correct {
+        background-color: #ebf6e6
+        border-left: 5px solid #65a00d
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.correct-icon {
+                    color: #0da939
+                    display: block
+                    font-size: 40px
+                    height: 40px
+                    width: 40px
+                }
+            }
+        }
+    }
+
+    &.incorrect {
+        background-color: #fbe3e3
+        border-left: 5px solid #e14747
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.incorrect-icon {
+                    color: #88001b
+                    display: block
+                    font-size: 60px
+                    height: 60px
+                    width: 60px
+                }
+            }
+        }
+    }
+
+    .right-section {
+        display: inline-block
+        margin-left: 20px
+        vertical-align: middle
+
+        .validation-icon {
+            display: none
+            margin-right: 10px
+        }
+    }
+}

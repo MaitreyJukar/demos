@@ -1,0 +1,115 @@
+{
+  "lintOptions": {
+    "typeCheck": true
+  },
+  "extends": "tslint:all",
+  "rules": {
+    "prefer-template": false,
+    "no-import-side-effect": [
+      true,
+      {
+        "ignore-module": "(\\.styl|\\.css)$"
+      }
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "linebreak-style": [
+      true,
+      "CRLF"
+    ],
+    "cyclomatic-complexity": [
+      false
+    ],
+    "newline-before-return": false,
+    "newline-per-chained-call": false,
+    "no-parameter-reassignment": false,
+    "no-parameter-properties": false,
+    "no-unused-variable": false,
+    "align": [
+      true,
+      "parameters",
+      "statements"
+    ],
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "member-access": true,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "completed-docs": [
+      false
+    ],
+    "no-bitwise": false,
+    "no-var-requires": false,
+    "no-any": false,
+    "no-magic-numbers": false,
+    "no-non-null-assertion": false,
+    "no-null-keyword": false,
+    "no-require-imports": false,
+    "no-unbound-method": false,
+    "no-unnecessary-qualifier": false,
+    "no-use-before-declare": false,
+    "no-void-expression": false,
+    "prefer-function-over-method": false,
+    "strict-type-predicates": false,
+    "triple-equals": false,
+    "typedef": [
+      false
+    ],
+    "ban": [
+      true,
+      [
+        "describe",
+        "only"
+      ],
+      [
+        "it",
+        "only"
+      ]
+    ],
+    "interface-name": [
+      false
+    ],
+    "file-header": [
+      false
+    ],
+    "max-classes-per-file": [
+      false
+    ],
+    "max-line-length": [
+      true,
+      140
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": "fields-first"
+      }
+    ],
+    "no-console": [
+      false
+    ],
+    "no-switch-case-fall-through": true,
+    "strict-boolean-expressions": [
+      true,
+      "allow-boolean-or-undefined"
+    ],
+    "switch-default": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ]
+  }
+}

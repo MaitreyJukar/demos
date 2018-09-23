@@ -1,0 +1,18 @@
+{
+    "algebraTiles": "This is a draggable algebra tiles container. Press enter or space to enter.",
+    "grid": "",
+    "colHeader": "",
+    "rowHeader": "",
+    "canvasArea": "droppable canvas area to drop the grabbed tile from algebra tiles column",
+    "tiles": [
+        "plus one tile",
+        "plus x vertical tile",
+        "plus x horizontal tile",
+        "plus x square tile",
+        "minus one tile",
+        "minus x vertical tile",
+        "minus x horizontal tile",
+        "minus x square tile"
+    ],
+    "draggableTile": "This is a $#tile#$. Press enter or space to start drop selection"
+}

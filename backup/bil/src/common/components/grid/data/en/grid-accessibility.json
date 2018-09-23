@@ -1,0 +1,4 @@
+{
+    "droppedDragable": "This is a dropped $#tile#$ in row $#row#$ and column $#col#$. Press enter or space to view options",
+    "droppable": "This is a droppable in row $#row#$ and column $#col#$. Press enter or space to move the grabbed tile. Press escape to revert the selection"
+}

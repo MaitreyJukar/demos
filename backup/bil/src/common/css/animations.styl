@@ -1,0 +1,32 @@
+animation() {
+    -moz-animation: arguments
+    -ms-animation: arguments
+    -webkit-animation: arguments
+    animation: arguments
+}
+
+.fade-out {
+    animation: fadeOut .5s 1
+}
+
+/* Standard syntax */
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+/* Safari 4.0 - 8.0 */
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}

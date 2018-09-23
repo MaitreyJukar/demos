@@ -1,0 +1,102 @@
+#transform-dialogs {
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 40%
+}
+
+.popup-container {
+    background-color: #ffffff
+    border: 3px solid #012955
+    border-radius: 6px
+    min-width: 200px
+    padding: 14px
+}
+
+.description-text {
+    color: #222222
+    font-size: 14px
+    text-align: left
+    &>* {
+        display: inline-block
+    }
+}
+
+.input-values-container {
+    padding: 10px
+    text-align: center
+    
+    input[type="radio"] {
+        width: 15px;
+    }
+
+    .error-msg {
+        color: red
+    }
+
+    .hide-msg{
+        display: none        
+    }
+}
+
+.input-values-container * {
+    display: inline-block
+    vertical-align: middle
+}
+
+.input-values-container input[type=number] {
+    border: 1px solid #c9c9c9
+    border-radius: 4px
+    height: 34px
+    text-align: center
+    width: 34px
+}
+
+.buttons-container button {
+    background-color: #012955
+    border: 1px solid #012955
+    border-radius: 4px
+    color: #ffffff
+    font-size: 14px
+    height: 36px
+    margin: 0 5px
+    text-align: center
+    width: 70px
+}
+
+.input-box {
+    margin: 0 10px
+    .input-label {
+        white-space: pre
+    }
+}
+
+.popup-container {
+    text-align: center
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+.hide {
+    display: none
+}
+
+.dilate-container {
+    .input-box {
+        margin: 10px 0 0;
+    }
+    .input-box:nth-child(2) {
+        margin-right: 20px;
+    }
+}
+
+.input-group {
+    display: block;
+}

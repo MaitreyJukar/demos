@@ -1,0 +1,212 @@
+body {
+    margin: 10px;
+}
+
+body,
+body * {
+    box-sizing: border-box;
+}
+
+.or {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+.json-selector .highlight-over {
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 7px;
+}
+
+.json-selector .highlight-out {
+    font-weight: bold;
+    border: 2px dashed #555;
+    border-radius: 7px;
+    cursor: default;
+}
+
+.json-selector input[type="file"] {
+    width: 400px;
+    height: 145px;
+    position: relative;
+    top: -80px;
+    background: transparent;
+}
+
+.json-selector #file-holder {
+    width: 400px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.json-selector .folder-icon {
+    margin: auto;
+    background-image: url(http://findicons.com/files/icons/1018/pixelicious/32/folder_down.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.json-selector ul {
+    list-style-type: none
+}
+
+.json-selector li {
+    background-image: url(http://cdn1.iconfinder.com/data/icons/CrystalClear/16x16/mimetypes/unknown.png);
+    background-repeat: no-repeat;
+    padding-left: 1.6em;
+}
+
+.templates {
+    display: none;
+}
+
+.control-wrapper {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+.container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75), -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.layout-wrapper,
+.question-wrapper {
+    margin-bottom: 15px;
+}
+
+.d-inline-b {
+    display: inline-block;
+}
+
+.va-middle {
+    vertical-align: middle;
+}
+
+.inner-html {
+    width: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+.btn-inline {
+    margin-top: 0;
+}
+
+.view-ele {
+    margin-bottom: 15px;
+}
+
+[data-toggle]:not(.collapsed) .fa-chevron-down {
+    display: none;
+}
+
+[data-toggle].collapsed .fa-chevron-up {
+    display: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked+label:before {
+    content: "\f205";
+    color: #28a745;
+}
+
+input[type=checkbox]+label {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox]+label:before {
+    content: "\f204";
+    color: #fff;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 30px;
+    vertical-align: middle;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transition: color .15s ease-in-out;
+    margin-right: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked+label:before {
+    content: "\f10c";
+}
+
+input[type=radio]+label {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=radio]+label:before {
+    content: "\f111";
+    color: #fff;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    vertical-align: middle;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transition: color .15s ease-in-out;
+    margin-right: 10px;
+}
+
+.media-wrapper {
+    position: relative;
+}
+
+.media-wrapper .file-data {
+    position: absolute;
+}
+
+.media-wrapper .file-data .btn.btn-primary {
+    margin-top: 0;
+}
+
+.media-wrapper input {
+    opacity: 0 !important;
+    width: auto;
+}
+
+.media-wrapper .file-data .fa,
+.media-wrapper .file-data .data-text {
+    vertical-align: middle;
+}
+
+.media-wrapper .file-data.file-added .fa-cloud-upload {
+    display: none;
+}
+
+.media-wrapper .file-data:not(.file-added) .fa-music {
+    display: none;
+}
+
+.file-data:not(.file-added) .fa-image {
+    display: none;
+}

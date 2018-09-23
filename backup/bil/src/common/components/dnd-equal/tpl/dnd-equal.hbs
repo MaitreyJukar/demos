@@ -1,0 +1,31 @@
+<div class="dnd-tool-container type-{{tooltype}}">
+    <div class="groups-label">
+        <span class="groups-text">Groups:</span>
+        <span class="groupValue">{{dropslots.default}}</span>
+    </div>
+    <div class="components">
+        <div class="draggables">
+            <div class="draggable" tabindex="0"></div>
+        </div>
+        <div class="controls">
+            <button id="clear-all" class="controlBtn">Clear All</button>
+        </div>
+    </div>
+    <div class="work-zone-container">
+        <div class="work-zone">
+            {{#times dropslots.default}}{{> droppable dropZones=../dropZones}}{{/times}}
+            <div class="add-dropslot" tabindex="0">
+                <div class="vertical-bar"></div>
+                <div class="horizontal-bar"></div>
+            </div>
+        </div>
+        <div class="validation-mark">
+            <div class="correct-icon validation-icon">
+                <span class="bil-icon-done"></span>
+            </div>
+            <div class="incorrect-icon validation-icon">
+                <span class="bil-icon-close"></span>
+            </div>
+        </div>
+    </div>
+</div>

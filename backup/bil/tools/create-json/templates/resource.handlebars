@@ -1,0 +1,19 @@
+<div class="added-resource-holder container">
+    <h4>Resource</h4>
+    <div class="control-wrapper">
+        <label class="resource-type-label" for="res-type-{{modelID}}" title="{{typeTitle}}">Type: </label>
+        <select class="resource-type form-control" name="type-{{modelID}}" id="res-type-{{modelID}}">
+            <option value="common">Common</option>
+            <option value="lang">Language specific</option>
+        </select>
+    </div>
+    <div class="control-wrapper form-group">
+        <label class="resource-label" for="res-id-{{modelID}}" title="{{idTitle}}">Resource ID: </label>
+        <input class="resource-id form-control" id="res-id-{{modelID}}" name="id-{{modelID}}" value="{{resourceID}}" placeholder="{{idPlaceholder}}" />
+    </div>
+    <div class="control-wrapper form-group">
+        <label class="resource-label" for="res-name-{{modelID}}" title="{{urlTitle}}">Resource File Name: </label>
+        <input class="resource-name form-control" id="res-name-{{modelID}}" name="name-{{modelID}}" value="{{resourceURL}}" placeholder="{{urlPlaceholder}}" />
+    </div>
+    <button class="delete-media btn btn-success">Delete</button>
+</div>

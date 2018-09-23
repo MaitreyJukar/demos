@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "bil-numbers";
+    src: url('./../font/bil-numbers.eot');
+    src: url('./../font/bil-numbers.eot?#iefix') format('eot'),
+    url('./../font/bil-numbers.woff2') format('woff2'),
+    url('./../font/bil-numbers.woff') format('woff'),
+    url('./../font/bil-numbers.ttf') format('truetype'),
+    url('./../font/bil-numbers.svg#bil-numbers') format('svg');
+}
+
+[class*="bil-number-"]:before {
+    font-family: "bil-numbers";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+}
+
+
+.bil-number-4:before {
+    content: "\E001";
+}
+
+.bil-number-0:before {
+    content: "\E002";
+}
+
+.bil-number-7:before {
+    content: "\E003";
+}
+
+.bil-number-2:before {
+    content: "\E004";
+}
+
+.bil-number-6:before {
+    content: "\E005";
+}
+
+.bil-number-1:before {
+    content: "\E006";
+}
+
+.bil-number-10:before {
+    content: "\E007";
+}
+
+.bil-number-3:before {
+    content: "\E008";
+}
+
+.bil-number-5:before {
+    content: "\E009";
+}
+
+.bil-number-8:before {
+    content: "\E00A";
+}
+
+.bil-number-9:before {
+    content: "\E00B";
+}

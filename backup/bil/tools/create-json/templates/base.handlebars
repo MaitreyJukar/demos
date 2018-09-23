@@ -1,0 +1,139 @@
+<div class="json-creator">
+    <h2>
+        <label>Exploration</label>
+        <button class="exp-col-exploration btn btn-primary btn-inline" data-toggle="collapse" data-target="#exploration-details">
+            <span class="fa fa-chevron-down"></span>
+            <span class="fa fa-chevron-up"></span>
+        </button>
+        <button class="exp-col-all btn btn-primary btn-inline" data-toggle="collapse" data-target=".collapse:not(#exploration-details)">Expand/Collapse All</button>
+    </h2>
+    <div id="exploration-details" class="collapse show">
+        <div class="control-wrapper form-check">
+            <input class="has-custom-css form-check-input" id="has-custom-css" type="checkbox">
+            <label class="form-check-label" for="has-custom-css">
+                Has Custom Styles
+            </label>
+        </div>
+        <div class="control-wrapper form-group">
+            <label for="exp-name" class="exp-name-label">Name: </label>
+            <input type="text" id="exp-name" name="exp-name" class="form-control" value="{{explorationID}}" />
+        </div>
+        <div class="questions-container">
+            <div class="added-questions"></div>
+            <button class="add-new-question btn btn-success">Add Another Question</button>
+        </div>
+        <div class="resource-container">
+            <div class="container json-wrapper">
+                <h3 id="json-res-holder">Resources - JSONS</h3>
+                <div class="added-jsons"></div>
+                <button class="add-new-json btn btn-success">Add Another JSON</button>
+            </div>
+            <div class="container img-wrapper">
+                <h3 id="json-img-holder">Resources - Images</h3>
+                <div class="added-images"></div>
+                <button class="add-new-image btn btn-success">Add Another Image</button>
+            </div>
+            <div class="container audio-wrapper">
+                <h3 id="json-aud-holder">Resources - Audio</h3>
+                <div class="added-audios"></div>
+                <button class="add-new-audio btn btn-success">Add Another Audio</button>
+            </div>
+        </div>
+        <div class="additional-info-container container">
+            <div class="control-wrapper form-check">
+                <input class="has-tooltip form-check-input" id="has-tooltip" type="checkbox">
+                <label class="form-check-label" for="has-tooltip">
+                    Has Tooltip
+                </label>
+            </div>
+            <h3>
+                <label>Tooltip Information</label>
+                <button class="exp-col-tooltip btn btn-primary btn-inline" data-toggle="collapse" data-target="#tooltip-details">
+                    <span class="fa fa-chevron-down"></span>
+                    <span class="fa fa-chevron-up"></span>
+                </button>
+            </h3>
+            <div id="tooltip-details" class="collapse show">
+                <div class="control-wrapper form-group">
+                    <label class="add-title-label" for="add-title">Title: </label>
+                    <input type="text" class="add-info-title form-control" id="add-title" value="{{additionalInfo.title}}" />
+                </div>
+                <div class="control-wrapper form-group">
+                    <label class="add-content-label" for="add-content">Content: </label>
+                    <input type="text" class="add-info-content form-control" id="add-content" value="{{additionalInfo.content}}" />
+                </div>
+                <div class="control-wrapper form-group">
+                    <label class="add-position-label" for="add-position">Position: </label>
+                    <select class="add-info-position form-control" name="component-type" id="add-position">
+                        <option value="top">Top</option>
+                        <option value="left">Left</option>
+                        <option value="right">Right</option>
+                        <option value="bottom">Bottom</option>
+                    </select>
+                </div>
+                <div class="control-wrapper form-check">
+                    <input class="has-add-info-img form-check-input" id="has-add-info-img" type="checkbox">
+                    <label class="form-check-label" for="has-add-info-img">Has image in tooltip</label>
+                </div>
+                {{!--
+                <div class="alert alert-primary" role="alert" style="margin: 10px;">
+                    <i class="fas fa-info-circle"></i> &nbsp; Make sure add an Entry of same ImageID in
+                    <a href="#json-img-holder" class="alert-link">Image resources</a>.
+                </div> --}}
+                <div class="control-wrapper form-group img-file-container">
+                    <label class="add-img-file-label" for="add-img-file">Image File: </label>
+                    <div class="media-wrapper">
+                        <div class="file-data">
+                            <button class="btn btn-primary">
+                                <span class="fa fa-2x fa-cloud-upload"></span>
+                                <span class="fa fa-2x fa-image"></span>
+                                <span class="image-data-text data-text"></span>
+                            </button>
+                        </div>
+                        <input type="file" class="add-img-file form-control" id="add-img-file" />
+                    </div>
+                </div>
+                <div class="control-wrapper form-group">
+                    <label class="tooltip-image-type-label" for="tooltip-image-type-{{modelID}}">Type: </label>
+                    <select class="tooltip-image-type form-control" name="tooltip-type-{{modelID}}" id="tooltip-image-type-{{modelID}}">
+                        <option value="common">Common</option>
+                        <option value="lang">Language specific</option>
+                    </select>
+                </div>
+                <div class="control-wrapper form-group">
+                    <label class="add-img-alt-label" for="add-img-alt">Image Alt Text: </label>
+                    <input type="text" class="add-img-alt form-control" id="add-img-alt" value="{{__addImgAltTxt}}" />
+                </div>
+                <div class="control-wrapper form-group">
+                    <label class="post-image-content-label" for="post-image-content">Post image content: </label>
+                    <input type="text" class="post-image-content form-control" id="post-image-content" value="{{__postImgContent}}" />
+                </div>
+                <div class="audio-holder">
+                    <div class="control-wrapper form-group audio-file-container">
+                        <label class="audio-id-label" for="audio-id-{{modelID}}">Tooltip Audio: </label>
+                        <div class="media-wrapper">
+                            <div class="file-data">
+                                <button class="btn btn-primary">
+                                    <span class="fa fa-2x fa-cloud-upload"></span>
+                                    <span class="fa fa-2x fa-music"></span>
+                                    <span class="audio-data-text data-text"></span>
+                                </button>
+                            </div>
+                            <input type="file" class="audio-id form-control" id="audio-id-{{modelID}}" value="{{audioID}}" />
+                        </div>
+                    </div>
+                    <div class="control-wrapper form-group">
+                        <audio class="audio-tag" id="audio-{{modelID}}" controls="true" />
+                    </div>
+                    <div class="control-wrapper form-group">
+                        <label class="audio-id-label" for="tooltip-audio-{{modelID}}">Type: </label>
+                        <select class="audio-type form-control" name="type-{{modelID}}" id="tooltip-audio-{{modelID}}">
+                            <option value="common">Common</option>
+                            <option value="lang">Language specific</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="True" name="HandheldFriendly">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+	<meta property="og:image" content="http://www.larsontexts.com/images/lti-logo-facebook.png" />
+	<title>BIM Storyboard</title>
+
+	<!--styles-->
+	<link href="https://static.bigideasmath.com/protected/content/storybook/resources/css/storyboard-styles.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	
+
+	<!--scripts-->
+	<script src="https://static.bigideasmath.com/protected/content/storybook/script/storyboard.js"></script>
+	<script  src="https://static.bigideasmath.com/protected/content/storybook/script/vendor/jquery-3.2.1.min.js" ></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script>
+
+	$(document).ready(function(){
+		/*Define the action to take once the end of the story is reached*/
+		var storyCompleteCallback = function(){
+			//for demo purposes just show the button 
+			document.getElementById('next-btn').style.visibility = "visible";
+		};
+
+		/*define configuration options for storyboard player*/
+		var config_opts = {
+			storyboard_key : "toys",
+			language: 'e',
+			image_location : "https://static.bigideasmath.com/protected/content/storybook/resources/images",
+			json_location : "https://static.bigideasmath.com/protected/content/storybook/resources/json/stories.json",
+			allow_tts: true,
+			storyCompleteCallback: storyCompleteCallback,
+			target_id:  "storyboard-player"
+		};
+	
+	$(document).on('click', '.splash-image', function(){
+		//hide splash screen
+		this.style.display = "none";
+		//initialize story board player
+		BIMStories.storyboard = new BIMStories.BimStoryBoard(config_opts);
+		//display some directions to the user
+		document.getElementById('storyboard-prompt-text').style.visibility = "visible";
+	});
+});
+</script>
+</head>
+
+<body>
+		<!--storyboard container-->
+		<div id="storyboard-player"></div>
+	<div>
+		<!--splash screen mockup-->
+		<img class="splash-image"src="https://static.bigideasmath.com/protected/content/storybook/resources/images/splash-new.png">
+	</div>
+
+	<!--external content for demo puposes-->
+	<div id="exploration-mockup">
+		<div id="storyboard-prompt-text">Read the story My Toys then click next when you're done. </div>
+		<button id="next-btn">Next</button>
+	</div>
+
+	<!--some quick demo styling-->
+	<style>
+		.splash-image{
+			position: absolute;
+	    width: 443px;
+	    margin: auto;
+	    right: 40%;
+			top: 25%;
+			cursor:pointer;
+		}
+		#exploration-mockup{
+			visibility: hidden;
+			margin-left: 40%;
+		}
+		#storyboard-prompt-text{
+			margin-top: 25px;
+		}
+		#next-btn{
+	    position: absolute;
+	    right: 25%;
+	    top: 65%;
+	    width: 100px;
+	    background-color: red;
+	    color: white;
+		}
+
+	</style>
+</body>

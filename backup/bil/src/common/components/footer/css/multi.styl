@@ -1,0 +1,236 @@
+#footer-container {
+    background: #FFFFFF
+    border-top: 1px solid rgba(0, 0, 0, .12)
+    bottom: 0
+    box-sizing: border-box
+    left: 0
+    padding: 0
+    position: fixed
+    width: 100%
+    z-index: 11111
+
+    #icon-container {
+        display: block
+        height: 49px
+        padding: 6px
+        position: relative
+        text-align: center
+        white-space: nowrap
+        width: 100%
+
+        .controls-container {
+            display: inline-block
+            text-align: left
+        }
+
+        .font-icons {
+            color: #012a55
+            font-size: 2em
+            font-weight: 900
+        }
+
+        .iconBtn {
+            background-color: transparent
+            border: 0
+        }
+
+        .iconBtn:active {
+            position: relative
+            top: 3px
+        }
+
+        #left-align-controls {
+            min-width: 265px
+            position: relative
+            vertical-align: middle
+            width: 50%
+
+            > * {
+                margin-right: 10px
+            }
+
+            .language {
+                display: inline-block
+                height: 33px
+                margin-left: 20px
+                min-width: 96px
+                position: relative
+                vertical-align: middle
+
+                .language-toggler {
+                    background: #012955
+                    border: 2px solid #012955
+                    border-radius: 10px
+                    bottom: 0
+                    height: 32px
+                    overflow: hidden
+                    position: absolute
+                    transition: height .4s ease-out
+                    width: 100%
+
+                    .language-button {
+                        border-radius: 8px
+                        color: #fff
+                        cursor: pointer
+                        font-family: SourceSansPro-Bold, Source Sans Pro
+                        font-size: 14px
+                        font-stretch: normal
+                        font-style: normal
+                        font-weight: 700
+                        height: 28px
+                        letter-spacing: normal
+                        line-height: 1.71
+                        min-width: 92px
+                        padding-bottom: 3px
+                        padding-top: 3px
+                        position: absolute
+                        text-align: center
+
+                        &.en {
+                            top: 0
+                        }
+
+                        &.es {
+                            bottom: 0
+                        }
+
+                        &.selected {
+                            background-color: #fff
+                            color: #012955
+                            z-index: 2
+                        }
+
+                        &:hover {
+                            // background-color: #dadada
+                        }
+                    }
+                }
+
+                &.open {
+                    .language-toggler {
+                        height: 60px
+                    }
+                }
+            }
+
+            #sound-on {
+                bottom: 0
+                padding: 0
+                position: relative
+                vertical-align: middle
+                width: 40px
+            }
+
+            .caption-icon {
+                display: inline-block
+
+                #audio-text {
+                    bottom: 0
+                    padding: 0
+                    position: relative
+                    vertical-align: middle
+                    width: 40px
+                    z-index: 1
+                }
+
+                .arrow-up {
+                    border-bottom: 16px solid #f5f3f3
+                    border-left: 17px solid transparent
+                    border-right: 17px solid transparent
+                    font-size: 0
+                    height: 0
+                    line-height: 0
+                    position: absolute
+                    top: 30px
+                    width: 0
+                    z-index: 1
+                }
+
+                .arrow-hide {
+                    opacity: 0
+                }
+            }
+
+            #play-button {
+                text-align: center
+                vertical-align: middle
+                width: 40px
+            }
+        }
+
+        #right-align-controls {
+            display: inline-block
+            min-width: 145px
+            position: relative
+            text-align: right
+            vertical-align: middle
+            width: 50%
+
+            button {
+                padding: 0
+            }
+
+            #refresh {
+                bottom: 0
+                margin-right: 25px
+                position: relative
+                vertical-align: middle
+                width: 27px
+            }
+
+            #show-all {
+                bottom: 0
+                margin-right: 27px
+                max-width: 35px
+                position: relative
+                vertical-align: middle
+                width: 35px
+            }
+        }
+
+        .icon {
+            font-size: 2em
+            padding-left: 2%
+        }
+
+        .btn-controls {
+            height: 24px
+            width: 15px
+        }
+    }
+
+    section.speech {
+        background-color: #f5f3f3
+        color: #000000
+        font-family: 'Source Sans Pro', sans-serif
+        font-size: 16px
+        font-stretch: normal
+        font-style: normal
+        height: 50px
+        letter-spacing: normal
+        line-height: 1.25
+        padding-bottom: 5px
+        padding-left: 24px
+        padding-top: 10px
+        position: relative
+        text-align: left
+        transition: height .4s ease-out, padding-top .4s ease-out, padding-bottom .4s ease-out
+        width: 100%
+
+        #text {
+            height: 35px
+            overflow-y: auto
+            padding-right: 10px
+        }
+
+        &.transit {
+            height: 0
+            padding-bottom: 0
+            padding-top: 0
+        }
+    }
+
+    .hide-on-start {
+        display: none
+    }
+}

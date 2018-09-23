@@ -1,0 +1,71 @@
+<div class="shader-holder label-precision-{{labelPrecision}}">
+    <div class="shader {{type}}">
+        {{#if textboxes}}
+        <div class="grid-creator">
+            <div class="grid-create-label">
+                <span>{{text.createGridLabel}}</span>
+            </div>
+            <div class="grid-input-holder">
+                <div class="col-input-holder input-holder">
+                    <input class="col-input grid-input" value="{{this.cols}}" />
+                </div>
+                <div class="cross-holder">
+                    <span class="bil-icon-close" />
+                </div>
+                <div class="row-input-holder input-holder">
+                    <input class="row-input grid-input" value="{{this.rows}}" />
+                </div>
+                <button class="create-grid controlBtn">{{text.createGrid}}</button>
+            </div>
+            <div class="grid-error-label">
+                <span>{{text.errorLabel}}</span>
+            </div>
+        </div>
+        {{/if}}
+        {{#if hslider}}
+        <div class="top-components component-group">
+            {{#if vslider}}
+            <div class="empty-cell component-container"></div>
+            {{/if}}
+            <div class="horizontal-slider-holder component-container">
+                <div class="horizontal-slider"></div>
+            </div>
+        </div>
+        {{/if}}
+        <div class="bottom-components component-group">
+            {{#if vslider}}
+            <div class="vertical-slider-holder component-container">
+                <div class="vertical-slider"></div>
+            </div>
+            {{/if}}
+            <div class="grid-holder component-container"></div>
+        </div>
+        {{#if colors}}
+        <div class="color-buttons">
+            {{#each colors}}
+            <button class="color-button btn-{{this}}" data-value="{{this}}">
+                <div class="color-fill"></div>
+            </button>
+            {{/each}}
+            <button class="color-button btn-white" data-value="white">
+                <i class="bil-icon-eraser color-fill"></i>
+            </button>
+        </div>
+        {{/if}}
+    </div>
+    {{#if validation}}
+    <div class="validation-mark">
+        <div class="correct-icon validation-icon">
+            <span class="bil-icon-done"></span>
+        </div>
+        <div class="incorrect-icon validation-icon">
+            <span class="bil-icon-close"></span>
+        </div>
+    </div>
+    {{/if}}
+    {{#if showMeAns}}
+    <div class="shader-show-me-btn-wrapper">
+        <button class="shader-show-me-btn" disabled>Show Me</button>
+    </div>
+    {{/if}}
+</div>

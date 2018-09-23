@@ -1,0 +1,171 @@
+{
+    "popUpData": {
+        "dilate": {
+            "buttonData": [
+                {
+                    "buttonClass": "dilate-submit-btn popup-btn",
+                    "buttonText": "Ok",
+                    "dataBtnName": "dilate"
+                },
+                {
+                    "buttonClass": "cancel-btn popup-btn",
+                    "buttonText": "Cancel",
+                    "dataBtnName": "cancel"
+                }
+            ],
+            "containerClass": "dilate-container popup-container hide",
+            "description": "Provide the values of <i>k</i> for the dilation",
+            "equation": "(x, y)->(kx, ky)",
+            "inputBoxPresent": true,
+            "inputBoxes": [
+                {
+                    "isInputVisible": true,
+                    "inputLabel": " = ",
+                    "italicsText": "k ",
+                    "inputBoxClass": "input-box"
+                },
+                {
+                    "isInputVisible": false,
+                    "inputLabel": "/",
+                    "italicsText": "",
+                    "inputBoxClass": "input-box hide"
+                }
+            ],
+            "radioBtnPresent": false,
+            "radioButtons": [
+                {
+                    "radioClass": "radio-btn dilate-radio",
+                    "radioLabel": "Integer",
+                    "radioItalics": "",
+                    "radioId": "integer",
+                    "radioValue": "integer",
+                    "checked": "checked"
+                },
+                {
+                    "radioClass": "radio-btn  dilate-radio",
+                    "radioLabel": "Fraction",
+                    "radioItalics": "",
+                    "radioValue": "fraction",
+                    "radioId": "fraction"
+                }
+            ]
+        },
+        "translate": {
+            "buttonData": [
+                {
+                    "buttonClass": "translate-submit-btn popup-btn",
+                    "buttonText": "Ok",
+                    "dataBtnName": "translate"
+                },
+                {
+                    "buttonClass": "cancel-btn popup-btn",
+                    "buttonText": "Cancel",
+                    "dataBtnName": "cancel"
+                }
+            ],
+            "containerClass": "translate-container popup-container hide",
+            "description": "Provide the values of <i>a</i> and <i>b</i> for the translation",
+            "equation": "(x, y)->(x + a, y + b)",
+            "inputBoxPresent": true,
+            "inputBoxes": [
+                {
+                    "isInputVisible": true,
+                    "inputLabel": " = ",
+                    "italicsText": "a ",
+                    "inputBoxClass": "input-box"
+                },
+                {
+                    "isInputVisible": true,
+                    "inputLabel": " = ",
+                    "italicsText": "b ",
+                    "inputBoxClass": "input-box"
+                }
+            ]
+        },
+        "reflect": {
+            "buttonData": [
+                {
+                    "buttonClass": "reflect-submit-btn popup-btn",
+                    "buttonText": "Ok",
+                    "dataBtnName": "reflect"
+                },
+                {
+                    "buttonClass": "cancel-btn popup-btn",
+                    "buttonText": "Cancel",
+                    "dataBtnName": "cancel"
+                }
+            ],
+            "containerClass": "reflect-container popup-container hide",
+            "description": "Reflect in the <i>x</i>-axis or <i>y</i>-axis.",
+            "equation": "",
+            "radioBtnPresent": true,
+            "radioButtons": [
+                {
+                    "radioClass": "radio-btn",
+                    "radioLabel": "-axis",
+                    "radioItalics": "x",
+                    "radioId": "x-axis",
+                    "checked": "checked"
+                },
+                {
+                    "radioClass": "radio-btn",
+                    "radioItalics": "y",
+                    "radioLabel": "-axis",
+                    "radioId": "y-axis"
+                }
+            ]
+        },
+        "rotate": {
+            "buttonData": [
+                {
+                    "buttonClass": "rotate-submit-btn popup-btn",
+                    "buttonText": "Ok",
+                    "dataBtnName": "rotate"
+                },
+                {
+                    "buttonClass": "cancel-btn popup-btn",
+                    "buttonText": "Cancel",
+                    "dataBtnName": "cancel"
+                }
+            ],
+            "containerClass": "rotate-container popup-container hide",
+            "description": "Select the desired rotation",
+            "equation": "",
+            "radioBtnPresent": true,
+            "radioButtons": [
+                {
+                    "radioClass": "radio-btn",
+                    "radioLabel": "90",
+                    "radioItalics": "",
+                    "radioId": "90deg",
+                    "checked": "checked"
+                },
+                {
+                    "radioClass": "radio-btn",
+                    "radioLabel": "180",
+                    "radioItalics": "",
+                    "radioId": "180deg"
+                },
+                {
+                    "radioClass": "radio-btn",
+                    "radioLabel": "270",
+                    "radioItalics": "",
+                    "radioId": "270deg"
+                }
+            ],
+            "secondaryRadioBtnsPresent": true,
+            "secondaryRadioBtns": [
+                {
+                    "radioLabel": "Clockwise",
+                    "radioId": "clock",
+                    "checked": "checked"
+                },
+                {
+                    "radioLabel": "Anticlockwise",
+                    "radioId": "anti-clock"
+                }
+            ]
+        },
+        "custom": {}
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "langs": {
+        "en": [
+            {
+                "text": "Exploration not available.",
+                "buttonLables": [
+                    "OK"
+                ]
+            }
+        ],
+        "es": [
+            {
+                "text": "Exploración no disponible.",
+                "buttonLables": [
+                    "DE ACUERDO"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+<div class="algebra-tiles-template">
+    <h4 title="Make sure to" class="control-wrapper">Tile Details:</h4>
+    <div class="control-wrapper form-group">
+        <label class="alge-type-label" for="alge-type-{{modelID}}">Types: </label>
+        <select class="alge-type form-control" name="alge-type" id="alge-type-{{modelID}}">
+            <option value="Inner">Normal</option>
+            <option value="Scratchpad">Scratchpad</option>
+        </select>
+    </div>
+    <div class="control-wrapper">
+        <label class="x-vert-label" for="x-vert-{{modelID}}">Vertical coeff of X:</label>
+        <input type="text" class="x-vert form-control" id="x-vert-{{modelID}}" />
+    </div>
+    <div class="control-wrapper">
+        <label class="x-vert-const-label" for="x-vert-const-{{modelID}}">Vertical constant:</label>
+        <input type="text" class="x-vert-const form-control" id="x-vert-const-{{modelID}}" />
+    </div>
+    <div class="control-wrapper">
+        <label class="x-horiz-label" for="x-horiz-{{modelID}}">Horizontal coeff of X:</label>
+        <input type="text" class="x-horiz form-control" id="x-horiz-{{modelID}}" />
+    </div>
+    <div class="control-wrapper">
+        <label class="x-horiz-const-label" for="x-horiz-const-{{modelID}}">Horizontal constant:</label>
+        <input type="text" class="x-horiz-const form-control" id="x-horiz-const-{{modelID}}" />
+    </div>
+    <div class="control-wrapper form-check">
+        <input class="show-solution form-check-input" id="show-solution-{{modelID}}" type="checkbox">
+        <label class="form-check-label" for="show-solution-{{modelID}}">
+            Show solution directly when question is loaded.
+        </label>
+    </div>
+</div>

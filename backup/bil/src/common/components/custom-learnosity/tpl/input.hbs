@@ -1,0 +1,7 @@
+<span respid={{respID}} resptype="cl-input" respidx={{idx}} class="lrn_textinput lrn-clozeformula-input lrn_cloze_response custom_lrn_response">
+    <span class="response-idx" aria-hidden="true">{{add idx 1}}</span>
+    <input type="text" class="cl-input" {{#if isTouchDevice}} readonly=true/{{/if}}>
+    <span class="custom-answer lrn_hide" ansid={{respID}}>
+        <span class="lrn_responseText"></span>
+    </span>
+</span>

@@ -1,0 +1,65 @@
+<div class="question-wrapper container">
+    <h3 class="question-title">
+        <label>Question</label>
+        <button class="delete-question btn btn-danger btn-inline">
+            <span class="fa fa-trash"></span>
+        </button>
+        <button class="exp-col-question btn btn-primary btn-inline" data-toggle="collapse" data-target="#question-details-{{modelID}}">
+            <span class="fa fa-chevron-down"></span>
+            <span class="fa fa-chevron-up"></span>
+        </button>
+    </h3>
+    <div class="question-details collapse show" id="question-details-{{modelID}}">
+        <div class="control-wrapper form-check">
+            <input class="validation form-check-input" id="validation-{{modelID}}" type="checkbox">
+            <label class="form-check-label" for="validation-{{modelID}}">Needs validation</label>
+        </div>
+        <div class="container">
+            <h4>
+                <label>Audio Details</label>
+                <button class="clear-audio btn btn-danger btn-inline">
+                    <span class="fa fa-eraser"></span>
+                </button>
+                <button class="exp-col-audio btn btn-primary btn-inline" data-toggle="collapse" data-target="#audio-details-{{modelID}}">
+                    <span class="fa fa-chevron-down"></span>
+                    <span class="fa fa-chevron-up"></span>
+                </button>
+            </h4>
+            <div class="audio-details collapse show" id="audio-details-{{modelID}}">
+                {{!-- <div class="alert alert-primary" role="alert" style="margin: 10px;">
+                    <i class="fas fa-info-circle"></i> &nbsp; Make sure add an Entry with same audio ID in
+                    <a href="#json-aud-holder" class="alert-link">Audio Resource</a>.
+                </div> --}}
+                <div class="control-wrapper form-group">
+                    <label class="audio-id-label" for="audio-id-{{modelID}}">File: </label>
+                    <div class="media-wrapper">
+                        <div class="file-data">
+                            <button class="btn btn-primary">
+                                <span class="fa fa-2x fa-cloud-upload"></span>
+                                <span class="fa fa-2x fa-music"></span>
+                                <span class="audio-data-text data-text"></span>
+                            </button>
+                        </div>
+                        <input type="file" class="audio-id form-control" id="audio-id-{{modelID}}" value="{{audioID}}" />
+                    </div>
+                </div>
+                <div class="control-wrapper form-group">
+                    <audio class="audio-tag" id="audio-{{modelID}}" controls="true" />
+                </div>
+                <div class="control-wrapper form-group">
+                    <label class="audio-id-label" for="res-type-{{modelID}}">Type: </label>
+                    <select class="audio-resource-type form-control" name="type-{{modelID}}" id="res-type-{{modelID}}">
+                        <option value="common">Common</option>
+                        <option value="lang">Language specific</option>
+                    </select>
+                </div>
+                <div class="control-wrapper form-group">
+                    <label class="caption-label" for="caption-{{modelID}}">Caption: </label>
+                    <input type="text" class="caption form-control" id="caption-{{modelID}}" value="{{caption}}" />
+                </div>
+            </div>
+        </div>
+        <div class="layout-container"></div>
+        <button class="add-new-layout btn btn-success">Add Another Layout</button>
+    </div>
+</div>

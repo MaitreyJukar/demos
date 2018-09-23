@@ -1,0 +1,23 @@
+{{#each this}}
+<div class="component-row-container">
+    {{#each this}}
+        <div class="component-col-container"{{#if this.width}} style="width:{{this.width}}"{{/if}}>
+            {{#if components}}
+                {{&componentTable components}}
+            {{else}}
+                <div class="component-wrapper question question{{this.questionID}} component{{this.id}} comp-type-{{this.type}}{{#if this.scroll}} scroll-to-view{{/if}}" id="question{{this.questionID}}" data-compID={{this.id}} data-replace={{this.replace}}>
+                    {{&componentsTpl this ../idx}}
+                    {{#if this.validate}}
+                        {{&controlsTpl this ../idx}}
+                    {{/if}}
+                    {{#if this.save}}
+                        <div class="control-button-container">
+                            <button id="save-btn-{{this.id}}" data-compID={{this.id}} class="controlBtn saveBtn right-align-controls"></button>
+                        </div>
+                    {{/if}}
+                </div>
+            {{/if}}
+        </div>
+    {{/each}}
+</div>
+{{/each}}

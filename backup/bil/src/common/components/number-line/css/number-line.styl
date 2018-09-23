@@ -1,0 +1,159 @@
+.number-line-container {
+    display: inline-block
+    white-space: nowrap
+    padding:20px
+
+    > * {
+        white-space: normal
+    }
+    .left-section{
+        display: inline-block;
+        vertical-align: middle;
+        .frac {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+        }
+        .frac > span {
+            display: block;
+            padding: 0.1em;
+        }
+        .frac span.bottom {
+            border-top: thin solid black;
+        }
+        .frac span.symbol {
+            display: none;
+        } 
+    }
+    .number-line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 60px;
+        .left-arrow, .right-arrow{
+            font-size: 26px;
+            position: absolute
+            top:17px;
+        }
+        .left-arrow{
+            left: -15px;
+        }
+        .right-arrow{
+            right: -15px;
+        }
+        .center-line{
+            width: 100%
+            height: 20px
+            padding 9px 0
+            .line-border{
+                border:1px solid black;
+            }
+        }
+
+    }
+    .points-container{
+        position: relative;
+        top: -37px;
+        .student-placed{
+            cursor: pointer;
+        }
+        .point{
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            margin-left: -7px;
+            .point-label{
+                font-size: 12px;
+                position: relative;
+                top: 17px;
+                text-align: center;
+            }
+        }
+    }
+    .ticks-container{
+        position: relative
+        top:-44px
+        .tick{
+            position: absolute;
+            width: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tick-icon{
+                padding: 2px;
+            }
+        }
+    }  
+    &.answer-shown{
+        pointer-events: none
+    } 
+
+    &.correct {
+        background-color: #ebf6e6;
+        border-left: 5px solid #65a00d;
+        margin-left: -5px;
+        pointer-events: none;
+
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.correct-icon {
+                    color: #0da939
+                    display: block
+                    font-size: 40px
+                    height: 40px
+                    width: 40px
+                }
+            }
+        }
+    }
+
+    &.incorrect {
+        background-color: #fbe3e3
+        border-left: 5px solid #e14747
+        margin-left: -5px
+        pointer-events:none
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.incorrect-icon {
+                    color: #88001b
+                    display: block
+                    font-size: 60px
+                    height: 60px
+                    width: 60px
+                }
+            }
+        }
+    }
+
+    .right-section {
+        display: inline-block
+        margin-left: 20px
+        vertical-align: middle
+
+        .validation-icon {
+            display: none
+            margin-right: 10px
+        }
+    }
+    
+    &.point-on-tick{
+        .tick-icon,.tick-value{
+            cursor: pointer;
+        }
+    }
+    &.point-on-line{
+        .center-line{
+            cursor: pointer;
+        }
+    }
+}

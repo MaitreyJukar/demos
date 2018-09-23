@@ -1,0 +1,10 @@
+{
+    "chit-bag-animation-2-chits": {
+        "id": "lib",
+        "exportFunction": "Chit_baganimation2chits"
+    },
+    "chit-bag-animation-10-chits": {
+        "id": "lib",
+        "exportFunction": "Chit_baganimation10chits"
+    }
+}

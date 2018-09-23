@@ -1,0 +1,105 @@
+.custom-learnosity-item {
+    .custom-keypad {
+        position: absolute !important
+    }
+
+    &.replace-answers {
+        .response-idx {
+            display: none !important
+        }
+    }
+
+    .lrn_cloze .lrn_response_input {
+        .custom_lrn_response {
+            .response-idx {
+                display: none
+            }
+
+            .cl-input {
+                box-sizing: border-box
+                display: inline-block
+                max-height: 44px
+            }
+
+            .custom-answer {
+                border: 1px solid #000
+                padding: 5px 10px
+
+                * {
+                    font-family: 'Muli', sans-serif !important
+                }
+            }
+
+            &.lrn_correct, &.lrn_incorrect {
+                .cl-input {
+                    border: none
+                    cursor: default
+                }
+
+                .response-idx {
+                    background-color: #666
+                    border-bottom-left-radius: 3px
+                    border-top-left-radius: 3px
+                    box-sizing: border-box
+                    color: #fff
+                    display: none
+                    height: 28px
+                    line-height: 28px
+                    padding: 0 7px
+                    vertical-align: top
+                }
+            }
+        }
+    }
+
+    .lrn_correctAnswerList {
+        li.custom-answer {
+            box-sizing: border-box
+            display: none
+            margin: 0
+            margin-right: 20px
+            padding: 0
+            padding-right: 20px
+
+            .response-idx {
+                align-content: center
+                background-color: #666
+                border-bottom-left-radius: 3px
+                border-top-left-radius: 3px
+                box-sizing: border-box
+                color: #fff
+                display: inline-flex
+                height: 100%
+                margin-right: 10px
+                padding: 10px 7px
+                vertical-align: top
+            }
+
+            .lrn_responseText {
+                box-sizing: border-box
+                display: inline-block
+                height: 42px
+                line-height: 42px
+                padding: 0
+            }
+
+            &.answer-incorrect {
+                display: inline-block
+            }
+        }
+    }
+}
+
+.question-container.que-showanswer {
+    .custom-learnosity-item {
+        &:not(.replace-answers) {
+            .custom_lrn_response {
+                border: none !important
+
+                .response-idx {
+                    display: inline-flex !important
+                }
+            }
+        }
+    }
+}

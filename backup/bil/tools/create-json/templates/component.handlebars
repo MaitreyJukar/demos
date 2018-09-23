@@ -1,0 +1,26 @@
+<div class="component-wrapper container">
+    <h5 class="component-title">
+        <span>Component</span>
+        <button class="delete-compo btn btn-danger btn-inline">
+            <span class="fa fa-trash"></span>
+        </button>
+        <button class="exp-col-component btn btn-primary btn-inline" data-toggle="collapse" data-target="#component-details-{{modelID}}">
+            <span class="fa fa-chevron-down"></span>
+            <span class="fa fa-chevron-up"></span>
+        </button>
+    </h5>
+    <div class="component-details collapse show" id="component-details-{{modelID}}">
+        <div class="control-wrapper">
+            <label class="component-type-label" for="type-{{modelID}}">Type: </label>
+            <select class="component-type form-control" name="component-type" id="type-{{modelID}}">
+                <option value="learnosity">Learnosity</option>
+                <option value="desmos">Desmos</option>
+                <option value="html">HTML</option>
+                <option value="grid">Algebra Tiles</option>
+                <option value="controls">Question Controls</option>
+                <option value="image">Image</option>
+            </select>
+        </div>
+        <div class="component-data"></div>
+    </div>
+</div>

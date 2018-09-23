@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "bil-icons";
+    src: url('./../font/bil-icons.eot');
+    src: url('./../font/bil-icons.eot?#iefix') format('eot'),
+    url('./../font/bil-icons.woff2') format('woff2'),
+    url('./../font/bil-icons.woff') format('woff'),
+    url('./../font/bil-icons.ttf') format('truetype'),
+    url('./../font/bil-icons.svg#bil-icons') format('svg');
+}
+
+[class*="bil-icon-"]:before {
+    font-family: "bil-icons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+}
+
+
+.bil-icon-k-5-refresh:before {
+    content: "\E001";
+}
+
+.bil-icon-arrow-back:before {
+    content: "\E002";
+}
+
+.bil-icon-k-5-shape_r:before {
+    content: "\E003";
+}
+
+.bil-icon-tick:before {
+    content: "\E004";
+}
+
+.bil-icon-caption:before {
+    content: "\E005";
+}
+
+.bil-icon-sound-on:before {
+    content: "\E006";
+}
+
+.bil-icon-sound-off:before {
+    content: "\E007";
+}
+
+.bil-icon-show-all:before {
+    content: "\E008";
+}
+
+.bil-icon-refresh:before {
+    content: "\E009";
+}
+
+.bil-icon-plus:before {
+    content: "\E00A";
+}
+
+.bil-icon-pause:before {
+    content: "\E00B";
+}
+
+.bil-icon-minus:before {
+    content: "\E00C";
+}
+
+.bil-icon-arrow-next:before {
+    content: "\E00D";
+}
+
+.bil-icon-fullscreen:before {
+    content: "\E00E";
+}
+
+.bil-icon-k-5-help:before {
+    content: "\E00F";
+}
+
+.bil-icon-close:before {
+    content: "\E010";
+}
+
+.bil-icon-k-5-check:before {
+    content: "\E011";
+}
+
+.bil-icon-done:before {
+    content: "\E012";
+}
+
+.bil-icon-pop-up-play:before {
+    content: "\E013";
+}
+
+.bil-icon-pop-up-pause:before {
+    content: "\E014";
+}
+
+.bil-icon-fit-to-screen:before {
+    content: "\E015";
+}
+
+.bil-icon-k-5-audio-text:before {
+    content: "\E016";
+}
+
+.bil-icon-play:before {
+    content: "\E017";
+}
+
+.bil-icon-k-5-pause:before {
+    content: "\E018";
+}
+
+.bil-icon-k-5-play:before {
+    content: "\E019";
+}
+
+.bil-icon-k-5-sound-off:before {
+    content: "\E01A";
+}
+
+.bil-icon-k-5-sound:before {
+    content: "\E01B";
+}
+
+.bil-icon-k-5-try-again:before {
+    content: "\E01C";
+}
+
+.bil-icon-check:before {
+    content: "\E01D";
+}
+
+.bil-icon-eraser:before {
+    content: "\E01E";
+}
+
+.bil-icon-baseline-arrow_left:before {
+    content: "\E01F";
+}
+
+.bil-icon-baseline-arrow_right:before {
+    content: "\E020";
+}

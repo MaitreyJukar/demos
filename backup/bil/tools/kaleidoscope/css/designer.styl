@@ -1,0 +1,118 @@
+
+$kaleidoscopeWidth = 225
+
+dimensions(angles) {
+    angles = arguments if (length(arguments) > 1)
+
+    for angle in angles {
+        scale = angle[0] > 45 ? (angle[0] == 60 ? 1.5 : 2) : 1
+        $posVdelta = angle[0] > 60 ? 0 : -1
+        $posHdelta = angle[0] > 60 ? -2 : (angle[0] < 2 ? 0 : -1)
+        $height = (angle[2] / scale)
+        $width = (angle[1] / scale)
+
+        &.angle-{angle[0]} {
+            height: $height px
+            width: $width px
+
+            .triangle-outer {
+                border-bottom: ($height / 2)px solid transparent
+                border-right: ($width)px solid rgba(0, 0, 0, .25)
+                border-top: ($height / 2)px solid transparent
+            }
+
+            .triangle-inner {
+                .top-border {
+                    top: $posVdelta px
+                    transform: rotate((-(angle[0]) / 2) deg)
+                    width: ($kaleidoscopeWidth / scale) px
+                }
+
+                .bottom-border {
+                    bottom: $posVdelta px
+                    transform: rotate((angle[0] / 2) deg)
+                    width: ($kaleidoscopeWidth / scale) px
+                }
+
+                .right-border {
+                    right: $posHdelta px
+                }
+            }
+        }
+    }
+}
+
+.designer-section.panel {
+    height: 255px
+}
+
+.designer {
+    .selected-pattern {
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        background-size: 500px 200px
+        border-radius: 2px
+        height: 210px
+        margin-left: 5px
+        margin-top: 5px
+        min-width: 500px
+        overflow: hidden
+        position: relative
+        width: 510px
+
+        .triangle-selector {
+            border: 5px solid transparent
+            box-sizing: content-box
+            cursor: url('./open-hand.cur'), pointer
+            min-height: 2px
+            position: absolute
+            dimensions(1 225 4, 2 225 8, 3 225 12, 4 225 16, 5 225 20, 6 225 24, 9 224 35, 10 224 39, 12 224 47, 15 223 59, 20 222 78, 30 217 116, 45 208 172, 60 195 225, 90 159 318)
+
+            &.ui-draggable-dragging {
+                cursor: url('./closed-hand.cur'), pointer
+            }
+
+            .triangle-outer {
+                height: 0
+                overflow: hidden
+                width: 0
+            }
+
+            .triangle-inner {
+                height: 100%
+                left: 0
+                position: absolute
+                top: 0
+                width: 100%
+
+                .triangle-border {
+                    border-radius: 2px
+                }
+
+                .top-border {
+                    background: white
+                    height: 2px
+                    position: absolute
+                    right: 0
+                    transform-origin: top right
+                }
+
+                .bottom-border {
+                    background: white
+                    height: 2px
+                    position: absolute
+                    right: 0
+                    transform-origin: bottom right
+                }
+
+                .right-border {
+                    background: white
+                    height: 100%
+                    position: absolute
+                    top: 0
+                    width: 2px
+                }
+            }
+        }
+    }
+}

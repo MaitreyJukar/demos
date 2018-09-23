@@ -1,0 +1,344 @@
+#footer-container {
+    background: #FFFFFF
+    border-top: 1px solid rgba(0, 0, 0, .12)
+    bottom: 0
+    box-sizing: border-box
+    left: 0
+    padding: 0
+    position: fixed
+    width: 100%
+    z-index: 11111
+
+    #icon-container {
+        display: block
+        height: 87px
+        padding: 22px 10px
+        position: relative
+        text-align: center
+        white-space: nowrap
+        width: 100%
+
+        .controls-container {
+            display: inline-block
+            text-align: left
+
+            &:before {
+                content: ''
+                display: inline-block
+                height: 45px
+                vertical-align: middle
+            }
+        }
+
+        .font-icons {
+            color: #1eaa00
+            font-size: 2.3em
+            font-weight: 900
+        }
+
+        .iconBtn {
+            background-color: transparent
+            border: 0
+        }
+
+        .iconBtn:active {
+            position: relative
+            top: 3px
+        }
+
+        #left-align-controls {
+            min-width: 265px
+            position: relative
+            text-align: left
+            vertical-align: middle
+            width: 35%
+
+            > * {
+                margin-right: 10px
+            }
+
+            .language {
+                display: inline-block
+                height: 33px
+                margin-left: 20px
+                min-width: 96px
+                position: relative
+                vertical-align: middle
+
+                .language-toggler {
+                    background: #1e8508
+                    border: solid 2px #1eaa00
+                    border-radius: 10px
+                    bottom: 0
+                    height: 32px
+                    overflow: hidden
+                    position: absolute
+                    transition: height .4s ease-out
+                    width: 100%
+
+                    .language-button {
+                        border-radius: 8px
+                        color: #fff
+                        cursor: pointer
+                        font-family: SourceSansPro-Bold, Source Sans Pro
+                        font-size: 14px
+                        font-stretch: normal
+                        font-style: normal
+                        font-weight: 700
+                        height: 28px
+                        letter-spacing: normal
+                        line-height: 1.71
+                        min-width: 92px
+                        padding-bottom: 3px
+                        padding-top: 3px
+                        position: absolute
+                        text-align: center
+
+                        &.en {
+                            top: 0
+                        }
+
+                        &.es {
+                            bottom: 0
+                        }
+
+                        &.selected {
+                            background-color: #fff
+                            color: #1eaa00
+                            z-index: 2
+                        }
+
+                        &:hover {
+                            // background-color: #dadada
+                        }
+                    }
+                }
+
+                &.open {
+                    .language-toggler {
+                        height: 60px
+                    }
+                }
+            }
+
+            #sound-on {
+                bottom: 0
+                font-size: 13px
+                height: 34px
+                padding: 0
+                position: relative
+                vertical-align: middle
+                width: 40px
+
+                .bil-icon-k-5-sound {
+                    display: inline-block
+                    vertical-align: middle
+                }
+            }
+
+            .caption-icon {
+                display: inline-block
+                font-size: 13px
+                height: 34px
+                vertical-align: middle
+
+                #audio-text {
+                    bottom: 0
+                    padding: 0
+                    position: relative
+                    vertical-align: middle
+                    width: 40px
+                    z-index: 1
+
+                    .bil-icon-k-5-audio-text {
+                        display: inline-block
+                        vertical-align: middle
+                    }
+                }
+
+                .arrow-up {
+                    border-bottom: 16px solid #dcf0ff
+                    border-left: 17px solid transparent
+                    border-right: 17px solid transparent
+                    font-size: 0
+                    height: 0
+                    line-height: 0
+                    position: absolute
+                    top: 51px
+                    width: 0
+                    z-index: 1
+                }
+
+                .arrow-hide {
+                    opacity: 0
+                }
+            }
+        }
+
+        #center-align-controls {
+            text-align: center
+            width: 30%
+
+            #play-button {
+                background: linear-gradient(to bottom, #20b700, #1e8508) !important
+                // background-color: #1EAA00
+                border-radius: 11px
+                box-shadow: 0 4px 0 #d9d9d9
+                height: 45px
+                // width: 45px
+                // box-shadow: 0px 4px 0px #d9d9d9;
+                margin-right: 12px
+                position: relative
+                vertical-align: middle
+                width: 48px
+
+                .bil-icon-k-5-pause, .bil-icon-k-5-play {
+                    bottom: 0
+                    color: white
+                    display: inline-block
+                    display: block
+                    float: right
+                    font-size: 1.4em
+                    height: 22px
+                    left: 0
+                    margin: auto
+                    position: absolute
+                    right: 0
+                    top: 0
+                    vertical-align: middle
+                    width: 100%
+                    // padding: 12px 0px 7px 16px
+                    width: 48px
+                }
+            }
+
+            #next-button {
+                border-radius: 11px
+                vertical-align: middle
+                white-space: normal
+
+                .next-align {
+                    display: inline-block
+                    letter-spacing: .15em
+                    vertical-align: middle
+                    // height: 32px;
+                    // font-size: 32px;
+                }
+
+                .bil-icon-k-5-shape_r {
+                    color: #fff
+                    display: inline-block
+                    // height: 32px;
+                    font-size: 1em
+                    height: 20px
+                    padding-left: 10px
+                    vertical-align: middle
+                }
+
+                .bil-icon-done {
+                    color: #fff
+                    display: inline-block
+                    display: block
+                    float: right
+                    font-size: 1.1em
+                    height: 27px
+                    vertical-align: middle
+                    width: 100%
+                    width: 34px
+                }
+            }
+        }
+
+        #right-align-controls {
+            display: inline-block
+            min-width: 145px
+            position: relative
+            text-align: right
+            vertical-align: middle
+            width: 35%
+
+            button {
+                padding: 0
+            }
+
+            #refresh {
+                bottom: 0
+                margin-right: 25px
+                position: relative
+                vertical-align: middle
+                width: 35px
+            }
+
+            .refreshEnabled {
+                width: 40px
+
+                .bil-icon-k-5-refresh {
+                    display: inline-block
+                    // height: 40px;
+                    // font-size: 40px;
+                    vertical-align: middle
+                }
+            }
+
+            #show-all {
+                bottom: 0
+                margin-right: 27px
+                max-width: 35px
+                position: relative
+                vertical-align: middle
+                width: 35px
+            }
+        }
+
+        .icon {
+            font-size: 2em
+            padding-left: 2%
+        }
+
+        .btn-controls {
+            height: 24px
+            width: 15px
+        }
+    }
+
+    section.speech {
+        background-color: #dcf0ff
+        color: #000000
+        font-family: 'Muli', sans-serif
+        font-stretch: normal
+        font-style: normal
+        font-weight: 600
+        height: 52px
+        letter-spacing: normal
+        line-height: 1.25
+        padding: 8px 15px
+        position: relative
+        text-align: left
+        transition: height .4s ease-out, padding-top .4s ease-out, padding-bottom .4s ease-out
+        width: 100%
+
+        #text {
+            height: 36px
+            overflow-y: auto
+            padding-right: 10px
+        }
+
+        &.transit {
+            height: 0
+            padding-bottom: 0
+            padding-top: 0
+        }
+    }
+
+    .hide-on-start {
+        display: none
+    }
+}
+
+.larger-font {
+    #footer-container {
+        section.speech {
+            font-size: 22px
+        }
+    }
+}

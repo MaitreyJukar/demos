@@ -1,0 +1,7 @@
+<div class="popup-wrapper {{#if _shown}}show{{else}}hide{{/if}}">
+    <div class="popup-main" role="dialog" id="{{popupId}}" aria-describedby="text-{{popupId}}" tabindex="-1" aria-modal="true">
+        <div class="close-icon-holder {{#if hasCloseBtn}}showInlineBlock{{else}}hide{{/if}}"><button class="bil-icon-close" aria-label="Close the popup" title="Close"></button></div>
+        <div class="content-holder" style="color: {{textColor}};"><span style="background-color: {{textColor}};" class="pretext-icon-holder {{#if _hasTextIcon}}showInlineBlock{{else}}hide{{/if}}"><span class="{{pretextIcon}}"></span></span><span class="text-node" id="text-{{popupId}}">{{text}}</span></div>
+        <div class="buttons-holder"></div>
+    </div>
+</div>

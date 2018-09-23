@@ -1,0 +1,71 @@
+
+
+.graph-app {
+	position: relative
+}
+
+.grid-graph {
+	left: 0
+	position: absolute
+	top: 0
+}
+
+.drawing-graph {
+	left: 0
+	position: absolute
+	top: 0
+}
+
+.geometry-tool-holder {
+	box-shadow: 1px 3px 4.7px .3px rgba(0, 0, 0, .24)
+	height: 545px
+	width: 100%
+	&.disabled{
+		pointer-events:none;
+		.geometry-tool-playground .tools-panel * {
+    		pointer-events: none;
+		}
+	}
+	.hidden {
+		clip: rect(1px 1px 1px 1px) /* IE 6/7 */
+		clip: rect(1px, 1px, 1px, 1px)
+		clip-path: inset(100%)
+		height: 0
+		height: 1px
+		overflow: hidden
+		overflow: hidden
+		position: absolute
+		white-space: nowrap /* added line */
+		width: 0
+		width: 1px
+	}
+
+	.geometry-tool-playground {
+		height: 100%
+		position: relative
+		width: 100%
+
+		.tools-panel {
+			height: 88px
+			position: relative
+			width: 100%
+			pointer-events: none;
+    		overflow-y: visible;
+		}
+		.tools-panel * {
+    		pointer-events: auto;
+		}
+
+		.graph-container {
+			height: calc(100% - 88px)
+			position: relative
+			width: 100%
+
+			.graph-app {
+				height: 100%
+				position: relative
+				width: 100%
+			}
+		}
+	}
+}

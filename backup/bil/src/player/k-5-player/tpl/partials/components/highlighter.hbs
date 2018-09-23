@@ -1,0 +1,24 @@
+<div class="top-buttons lrn hide">
+    <div class="drag-handle">
+        <div class="drag-dot"></div>
+        <div class="drag-dot"></div>
+        <div class="drag-dot"></div>
+    </div>
+    <div class="lrn_toolbar" role="menubar">
+        <button class="lrn_btn lrn-label lrn_clear" type="button" aria-label="Clear">Clear</button>
+        <button class="lrn_btn lrn-label lrn_undo" type="button" aria-label="Undo">Undo</button>
+        <button class="lrn_btn lrn-label lrn_redo" type="button" aria-label="Redo">Redo</button>
+    </div>
+</div>
+<div class="highlighter-container{{#if hideShowMe}} hide-show-me{{/if}}" {{#if showAnswerFn}}answerfn="{{showAnswerFn}}"
+    {{/if}} {{#if key}}fetchkey="{{key}}" {{/if}}>
+    <div class="learnosity-item learnosity-item-collection highlighter-item" data-reference="{{dataReference}}"></div>
+    <div class="highlight-show-me-answer-wrapper">
+        <div class="highlight-show-me-answer">{{answer}}</div>
+    </div>
+    <div class="highlight-show-me-container">
+        <div class="highlight-show-me-btn-wrapper">
+            <button class="highlight-show-me-btn" disabled>Show Me</button>
+        </div>
+    </div>
+</div>

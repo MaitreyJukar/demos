@@ -1,0 +1,38 @@
+<section id="icon-container">
+    <nav id="left-align-controls" class="controls-container">
+        <div class="language" id="language-toggle">
+            <div class="language-toggler">
+                <div class="language-button en selected" data-id="{{languages.ENGLISH}}" tabindex="0">{{locTextData.engText}}</div>
+                <div class="language-button es" data-id="{{languages.SPANISH}}">{{locTextData.spanishText}}</div>
+            </div>
+        </div>
+        <button id="sound-on" class="iconBtn sound-on" aria-label="{{locTextData.muteBtnAria}}" title="{{locTextData.muteBtnAria}}">
+            <i class="bil-icon-k-5-sound font-icons" id="sound"></i>
+        </button>
+        <div class="caption-icon">
+            <div class="arrow-up arrow-hide"></div>
+            <button id="audio-text" class="iconBtn toggle-button caption-hidden hide-on-start" aria-label="{{locTextData.capsShowBtnAria}}" title="{{locTextData.capsShowBtnAria}}">
+                <i class="bil-icon-k-5-audio-text font-icons"></i>
+                </i>
+            </button>
+        </div>
+    </nav>
+    <nav id="center-align-controls" class="controls-container">
+        <button id="play-button" class="iconBtn hide-on-start" aria-label="{{locTextData.playBtnAria}}" title="{{locTextData.playBtnAria}}">
+            <i class="bil-icon-k-5-play font-icons" id="play" aria-hidden="true"></i>
+        </button>
+        <button id="next-button" class="controlBtn next hide-on-start">
+            <span class="next-align"></span>
+            <i class="bil-icon-k-5-shape_r"></i>
+        </button>
+    </nav>
+    <nav id="right-align-controls" class="controls-container">
+        <button id="refresh" class="iconBtn refreshEnabled hide-on-start" aria-label="{{locTextData.resetAllBtnAria}}" title="{{locTextData.resetAllBtnAria}}">
+            <i class="bil-icon-k-5-refresh font-icons"></i>
+        </button>
+    </nav>
+
+</section>
+<section tabindex="0" id="caption" class="speech transit">
+    <div id="text"></div>
+</section>

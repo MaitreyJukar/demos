@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Create JSON</title>
+    <link rel="stylesheet" type="text/css" href="css/create-json.css">
+    <!-- Vendors -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link href="css/vendor/font-awesome.min.css" rel="stylesheet">
+    <script src="js/vendor/jquery-1.11.2.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/underscore.js"></script>
+    <script src="js/vendor/backbone.js"></script>
+    <script src="js/vendor/handlebars.js"></script>
+    <script src="js/vendor/jszip.js"></script>
+    <script src="js/vendor/FileSaver.js"></script>
+    <!-- Entry file -->
+    <script src="js/initialize.js"></script>
+    <!-- Templates -->
+    <script src="templates/base.js"></script>
+    <script src="templates/question.js"></script>
+    <script src="templates/layout.js"></script>
+    <script src="templates/component.js"></script>
+    <script src="templates/resource.js"></script>
+    <!-- Partials -->
+    <script src="templates/components/algebra-tiles.js"></script>
+    <script src="templates/components/desmos.js"></script>
+    <script src="templates/components/html.js"></script>
+    <script src="templates/components/learnosity.js"></script>
+    <script src="templates/components/controls.js"></script>
+    <script src="templates/components/image.js"></script>
+    <!-- Models -->
+    <script src="js/models/base.js"></script>
+    <script src="js/models/create-json.js"></script>
+    <script src="js/models/question.js"></script>
+    <script src="js/models/layout.js"></script>
+    <script src="js/models/component.js"></script>
+    <script src="js/models/resource.js"></script>
+    <script src="js/models/components/learnosity.js"></script>
+    <script src="js/models/components/html.js"></script>
+    <script src="js/models/components/controls.js"></script>
+    <script src="js/models/components/image.js"></script>
+    <script src="js/models/components/algebra-tiles.js"></script>
+    <script src="js/models/components/desmos.js"></script>
+    <!-- Collections -->
+    <script src="js/collections/base.js"></script>
+    <script src="js/collections/question.js"></script>
+    <script src="js/collections/layout.js"></script>
+    <script src="js/collections/component.js"></script>
+    <script src="js/collections/resource.js"></script>
+    <!-- Views -->
+    <script src="js/views/base.js"></script>
+    <script src="js/views/create-json.js"></script>
+    <script src="js/views/question.js"></script>
+    <script src="js/views/layout.js"></script>
+    <script src="js/views/component.js"></script>
+    <script src="js/views/resource.js"></script>
+    <script src="js/views/components/learnosity.js"></script>
+    <script src="js/views/components/html.js"></script>
+    <script src="js/views/components/controls.js"></script>
+    <script src="js/views/components/image.js"></script>
+    <script src="js/views/components/algebra-tiles.js"></script>
+    <script src="js/views/components/desmos.js"></script>
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container">
+        <a id="downloader" style="display:none"></a>
+        <div class="initial-state">
+            <label for="load-zip" class="hide">Load ZIP: </label>
+            <input class="hide" type="file" id="load-zip" accept=".zip" />
+            <div class="or hide">OR</div>
+            <div class="json-selector">
+                <div class="load-json-wrapper">
+                    <div class="control-wrapper">
+                        <label for="load-json" class="load-json-label">Load Exploration: </label>
+                        <div id="file-holder" class="highlight-out">
+                            <div class="folder-icon">
+                                <span style="margin-left: 40px; ">Drag directory.</span>
+                            </div>
+                            <input type="file" multiple webkitdirectory id="file-URL" style="opacity: 0" />
+                        </div>
+                    </div>
+                </div>
+                <div class="or">OR</div>
+                <div class="control-wrapper">
+                    <button class="new-json btn btn-success">New Exploration</button>
+                </div>
+            </div>
+        </div>
+        <div class="loaded-data hide">
+            <h4>Files to load:</h4>
+            <ul id="file-list"></ul>
+        </div>
+        <div class="main-container"></div>
+        <div class="save-json-wrapper control-wrapper hide">
+            <button class="save-json btn btn-success">Save Exploration</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

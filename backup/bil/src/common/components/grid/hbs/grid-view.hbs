@@ -1,0 +1,29 @@
+<div class="grid_container grid-{{index}}" id="grid_container_{{index}}">
+    <div class="gridRowContainer1">
+        <div class="nullHeader">
+            <div class="nullHeaderContent"></div>
+        </div><!-- Space remover
+        --><div class="colHeader grid grid-{{index}}" data-gridID="{{index}}" id="colHeader-{{index}}"></div>
+    </div>
+    <div class="gridRowContainer2">
+        <div class="rowHeader grid grid-{{index}}" data-gridID="{{index}}" id="rowHeader-{{index}}"></div>
+        <div class="canvasArea grid grid-{{index}}" data-gridID="{{index}}" id="canvasArea-{{index}}" tabindex="0"></div>
+    </div>
+</div>
+{{#if hasRHS}}
+<div class="rhs-section">
+    <div class="equal-to"><img src="./../media/images/equal-sign.png"/></div>
+    <div class="rhs_grid_container grid_container rhs-grid-{{index}}" id="rhs-grid_container_{{index}}">
+        <div class="gridRowContainer1">
+            <div class="nullHeader">
+                <div class="nullHeaderContent"></div>
+            </div>
+            <div class="colHeader rhs-grid-{{index}}" id="rhs-colHeader-{{index}}"></div>
+        </div>
+        <div class="gridRowContainer2">
+            <div class="rowHeader rhs-grid-{{index}}" id="rhs-rowHeader-{{index}}"></div>
+            <div class="canvasArea rhs-grid-{{index}}" id="rhs-canvasArea-{{index}}" tabindex="0"></div>
+        </div>
+    </div>
+</div>
+{{/if}}

@@ -1,0 +1,32 @@
+<section id="icon-container">
+    <nav id="left-align-controls" class="controls-container">
+        <div class="language" id="language-toggle">
+            <div class="language-toggler">
+                <div class="language-button en selected" data-id="{{languages.ENGLISH}}" tabindex="0">{{locTextData.engText}}</div>
+                <div class="language-button es" data-id="{{languages.SPANISH}}">{{locTextData.spanishText}}</div>
+            </div>
+        </div>
+        <button id="sound-on" class="iconBtn sound-on" aria-label="{{locTextData.muteBtnAria}}" title="{{locTextData.muteBtnAria}}">
+            <i class="bil-icon-sound-on font-icons" id="sound"></i>
+        </button>
+        <div class="caption-icon">
+            <div class="arrow-up arrow-hide"></div>
+            <button id="audio-text" class="iconBtn toggle-button hidden hide-on-start" aria-label="{{locTextData.capsShowBtnAria}}" title="{{locTextData.capsShowBtnAria}}">
+                <i class="bil-icon-caption font-icons"></i>
+                </i>
+            </button>
+        </div>
+        <button id="play-button" class="iconBtn hide-on-start" aria-label="{{locTextData.playBtnAria}}" title="{{locTextData.playBtnAria}}">
+            <i class="bil-icon-play font-icons" id="play"></i>
+        </button>
+    </nav>
+    <nav id="right-align-controls" class="controls-container">
+        <button id="refresh" class="iconBtn refreshEnabled hide-on-start" aria-label="{{locTextData.resetAllBtnAria}}" title="{{locTextData.resetAllBtnAria}}">
+            <i class="bil-icon-refresh font-icons"></i>
+        </button>
+    </nav>
+
+</section>
+<section tabindex="0" id="caption" class="speech transit">
+    <div id="text"></div>
+</section>

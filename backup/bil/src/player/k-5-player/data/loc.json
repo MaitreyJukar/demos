@@ -1,0 +1,77 @@
+{
+    "k-5-player": {
+        "check-button": "Check",
+        "continue-button": "CONTINUE",
+        "lang-text-english": "ENGLISH",
+        "finish-button": "Done",
+        "show-button": "Show Me",
+        "lang-text-spanish": "ESPAÑOL",
+        "unmute-button": "Unmute audio",
+        "replay-button": "REPLAY",
+        "save-button": "Save",
+        "try-again-button": "Try Again"
+    },
+    "footer": {
+        "caption-hide-button": "Hide caption",
+        "caption-show-button": "Show caption",
+        "lang-text-english": "ENGLISH",
+        "mute-button": "Mute audio",
+        "pause-button": "Pause audio",
+        "play-button": "Play audio",
+        "reset-all-button": "Refresh",
+        "show-all-button": "Show all answers",
+        "lang-text-spanish": "ESPAÑOL",
+        "unmute-button": "Unmute audio",
+        "done-button": "Done",
+        "next-button": "Next"
+    },
+    "tooltip": {
+        "play-button" :"Play audio",
+        "pause-button" : "Pause audio"
+    },
+    "algebra-tiles": {
+        "algebra-tiles-container": "This is a draggable algebra tiles container. Press enter or space to enter.",
+        "grid-container": "",
+        "col-header": "",
+        "row-header": "",
+        "canvas-area": "droppable canvas area to drop the grabbed tile from algebra tiles column",
+        "plus": "plus one",
+        "plus-x-vertical": "plus x vertical",
+        "plus-x-horizontal": "plus x horizontal",
+        "plus-x-square": "plus x square",
+        "minus": "minus one",
+        "minus-x-vertical": "minus x vertical",
+        "minus-x-horizontal": "minus x horizontal",
+        "minus-x-square": "minus x square",
+        "draggable-tile": "This is a $#tile#$ tile. Press enter or space to start drop selection"
+    },
+    "grid": {
+        "dropped-draggable-tile": "This is a dropped $#tile#$ tile in row $#row#$ and column $#col#$. Press enter or space to view options",
+        "droppable": "This is a droppable in row $#row#$ and column $#col#$. Press enter or space to move the grabbed tile. Press escape to revert the selection",
+        "plus": "plus one",
+        "plus-x-vertical": "plus x vertical",
+        "plus-x-horizontal": "plus x horizontal",
+        "plus-x-square": "plus x square",
+        "minus": "minus one",
+        "minus-x-vertical": "minus x vertical",
+        "minus-x-horizontal": "minus x horizontal",
+        "minus-x-square": "minus x square"
+    },
+    "popup": {
+        "text": "Exploration not available.",
+        "button-lable1": "OK"
+    },
+    "dice": {
+        "label": "Roll ",
+        "times": " times",
+        "btnText": "Roll"
+    },
+    "button": {
+        "label": "Pair ",
+        "btnText": "Generate Numbers"        
+    },
+    "chit": {
+        "label": "Selection ",
+        "btnText": "Select Pieces"        
+    }
+}

@@ -1,0 +1,53 @@
+$trHeight = 42px
+
+.random-numbers-log {
+    color: #012955
+    font-size: 18px
+    height: 3 * $trHeight + 2px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 20px
+    min-width: 214px
+    overflow-y: auto
+    width: 322px
+
+    table {
+        border: solid 2px #f1f1f1
+        border-collapse: collapse
+        width: 100%
+    }
+
+    th, td {
+        background-color: #ffffff
+        border: solid 2px #f1f1f1
+        height: $trHeight
+        padding: 0 7px
+        // text-align: center
+        width: 50%
+
+        &:first-child {
+            width: 98px
+        }
+
+        &:last-child {
+            width: calc(100% - 98px)
+        }
+    }
+}
+
+.hide {
+    display: none
+}
+
+.button-container {
+    margin-top: 15px
+    text-align: center
+}
+
+.align-left {
+    text-align: left
+}
+
+.align-center {
+    text-align: center
+}

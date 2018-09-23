@@ -1,0 +1,148 @@
+.number-addition-container {
+    display: inline-block
+    white-space: nowrap
+
+    &.disabled {
+        pointer-events: none
+    }
+
+    > * {
+        white-space: normal
+    }
+
+    .number-section {
+        align-items: center
+        display: inline-flex
+        height: 185px
+        justify-content: center
+        width: 210px
+    }
+
+    .left-section {
+        background-image: url('./../media/images/number_addition_bg.png')
+        background-repeat: no-repeat
+        background-size: 100% auto
+        display: inline-block
+        height: 396px
+        image-rendering: auto
+        vertical-align: middle
+        width: 450px
+
+        .top-section {
+            .slide {
+                animation-duration: .5s
+                animation-fill-mode: forwards
+            }
+
+            .number-holder {
+                border: 1px solid black
+                cursor: pointer
+                font-size: 57px
+                height: 80px
+                line-height: 92px
+                text-align: center
+                width: 90px
+            }
+
+            .first-number-section {
+                background: url('../media/images/dashed_10.svg')
+                background-position: 50%;
+                background-repeat: no-repeat !important
+                background-size: 27% !important;
+                image-rendering: auto
+
+                .slide {
+                    animation-name: slide1
+                }
+            }
+
+            .second-number-section {
+                margin-left: 25px
+
+                .slide {
+                    animation-name: slide2
+                }
+            }
+        }
+
+        .bottom-section {
+            text-align: center
+        }
+    }
+
+    &.correct {
+        background-color: #ebf6e6
+        border-left: 5px solid #65a00d
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.correct-icon {
+                    color: #0da939
+                    display: block
+                    font-size: 40px
+                    height: 40px
+                    width: 40px
+                }
+            }
+        }
+    }
+
+    &.incorrect {
+        background-color: #fbe3e3
+        border-left: 5px solid #e14747
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.incorrect-icon {
+                    color: #88001b
+                    display: block
+                    font-size: 60px
+                    height: 60px
+                    width: 60px
+                }
+            }
+        }
+    }
+
+    .right-section {
+        display: inline-block
+        margin-left: 20px
+        vertical-align: middle
+
+        .validation-icon {
+            display: none
+            margin-right: 10px
+        }
+    }
+}
+
+@keyframes slide1 {
+    from {
+    }
+
+    to {
+        transform: translateX(110px) translateY(195px)
+    }
+}
+
+@keyframes slide2 {
+    from {
+    }
+
+    to {
+        background-color: white
+        transform: translateX(-100px) translateY(195px)
+    }
+}

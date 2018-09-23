@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Big Ideas Learning</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #preloader {
+            position: fixed;
+            font-family: "Open Sans";
+            z-index: 200;
+            height: 100vh;
+            width: 100vw;
+            z-index: 200;
+            background: #fff;
+            opacity: 1;
+        }
+
+        #preloader.fade-out-trans .loader {
+            opacity: 0;
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        .loader {
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #5cb85c;
+            box-sizing: border-box;
+            height: 120px;
+            left: calc(50% - 60px);
+            overflow: hidden;
+            position: absolute;
+            top: calc(50% - 60px);
+            transition: opacity 1s ease-out;
+            width: 120px;
+            z-index: 1000;
+        }
+
+        .play-btn-container {
+            background: url(./../zeus_common/media/images/play-btn-bg.png) rgb(229, 237, 246);
+            height: calc(100vh - 50px);
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 20;
+        }
+
+        .play-btn-container button.play-button {
+            background: none;
+            border: 0;
+            display: inline-block;
+            left: 50%;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+
+        .play-btn-container button.play-button img.play-btn-img {
+            height: 226px;
+            width: 226px;
+        }
+    </style>
+    <script src="./../zeus_common/dist/js/helper.bundle.js"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <!-- Loading.. -->
+        <div class="loader"></div>
+    </div>
+    <div id="audio-container"></div>
+    <div id="main-player-container" role="main">
+        <div class="play-btn-container">
+            <button class="play-button" id="ipad-play-btn" aria-label="Start exploration" title="Start exploration">
+                <img class="play-btn-img" src="./../zeus_common/media/images/play-button-k-5.png" alt="Start exploration" />
+            </button>
+        </div>
+        <div class="players-container"></div>
+        <div class="popup-na-container"></div>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,600 " rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async src="https://static.bigideasmath.com/lgen/learnosityHandler.js" id="lrn-script"></script>
+    <script async src="./../zeus_common/dist/js/k-5-app.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.buttons {
+    .buttons-holder {
+        .degree-button {
+            padding: 10px;
+            height: 40px;
+            width: 40px;
+            border-radius: 5px;
+            margin: 5px;
+            background: #fff;
+            border: 2px solid #455774;
+            color: #384968;
+            font-weight: bold;
+
+            &:after {
+                content: '°';
+            }
+
+            &.selected {
+                background: #2e405f;
+                color: #fff;
+
+                &:hover {
+                    background: #475a7b;
+                }
+            }
+
+            &:hover {
+                background: #e8e6e6;
+            }
+        }
+    }
+}

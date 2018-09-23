@@ -1,0 +1,34 @@
+<div class="image-template">
+    <div class="control-wrapper form-group">
+        <label class="label container-css-label" for="image-file-{{modelID}}">Image File: </label>
+        <div class="media-wrapper">
+            <div class="file-data">
+                <button class="btn btn-primary">
+                    <span class="fa fa-2x fa-cloud-upload"></span>
+                    <span class="fa fa-2x fa-image"></span>
+                    <span class="image-data-text data-text"></span>
+                </button>
+            </div>
+            <input type="file" class="container-image-file form-control" id="image-file-{{modelID}}" />
+        </div>
+    </div>
+    <div class="control-wrapper form-group">
+        <label class="image-id-label" for="image-res-type-{{modelID}}">Type: </label>
+        <select class="image-resource-type form-control" name="type-{{modelID}}" id="image-res-type-{{modelID}}">
+            <option value="common">Common</option>
+            <option value="lang">Language specific</option>
+        </select>
+    </div>
+    {{!-- <div class="alert alert-primary" role="alert" style="margin: 10px;">
+        <i class="fas fa-info-circle"></i> &nbsp; Make sure add an Entry with same image ID in
+        <a href="#json-img-holder" class="alert-link">Image Resource</a>.
+    </div> --}}
+    <div class="control-wrapper form-group">
+        <label class="label container-css-label" for="css-class-{{modelID}}">CSS Class: </label>
+        <input type="text" class="container-css-class form-control" id="css-class-{{modelID}}" value="{{containerCssClass}}" />
+    </div>
+    <div class="control-wrapper form-group">
+        <label class="label alt-text-label" for="alt-txt-{{modelID}}">Alt Text: </label>
+        <input type="text" class="alt-text-class form-control" id="alt-txt-{{modelID}}" value="{{altText}}" />
+    </div>
+</div>

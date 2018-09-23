@@ -1,0 +1,37 @@
+<div class="custom-learnosity-item learnosity-item-collection lrn lrn-item-processed{{#if replaceAnswers}} replace-answers{{/if}}">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="lrn lrn_widget lrn_qr lrn_clozeformula lrn_clearfix">
+                <div class="lrn_question" data-lrn-widget-component="stimulus">
+                    <div class="lrn_stimulus lrn_clearfix">
+                        <div class="lrn_stimulus_content lrn_clearfix">{{{question}}}</div>
+                    </div>
+                </div>
+                <div class="lrn_response_wrapper" data-lrn-widget-component="interaction">
+                    <div class="lrn_response lrn_clearfix lrn_cloze lrn_cloze_vertical_top_none">
+                        <div class="lrn-accessibility-arialive" aria-live="assertive" aria-atomic="true" aria-hidden="true"></div>
+                        <div class="lrn_cloze_response_container">
+                            <div class="lrn_response_innerbody lrn-response-validate-wrapper">
+                                <div class="lrn_response_input lrn_response_math" aria-label="">{{{response}}}</div>
+                                <div class="lrn_clone custom-keypad">
+                                    <!-- Keyboard -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lrn_correctAnswers lrn_hide">
+                            <span>Correct answers:</span>
+                            <ul class="lrn_correctAnswerList">
+                                {{#each answers}}
+                                <li class="custom-answer" ansid={{ansID}}>
+                                    <span class="response-idx">{{add @index 1}}</span>
+                                    <span class="lrn_responseText"></span>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

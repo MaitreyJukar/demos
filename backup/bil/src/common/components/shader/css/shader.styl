@@ -1,0 +1,695 @@
+cornerBorders($cornerWidth, $colorBorder) {
+    background-image: linear-gradient(to right, $colorBorder $cornerWidth, transparent $cornerWidth), linear-gradient(to right, $colorBorder $cornerWidth, transparent $cornerWidth), linear-gradient(to left, $colorBorder $cornerWidth, transparent $cornerWidth), linear-gradient(to left, $colorBorder $cornerWidth, transparent $cornerWidth), linear-gradient(to bottom, $colorBorder $cornerWidth, transparent $cornerWidth), linear-gradient(to bottom, $colorBorder $cornerWidth, transparent $cornerWidth), linear-gradient(to top, $colorBorder $cornerWidth, transparent $cornerWidth), linear-gradient(to top, $colorBorder $cornerWidth, transparent $cornerWidth)
+}
+
+.shader-holder {
+    @import './ui'
+
+    white-space: nowrap
+
+    * {
+        user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        -webkit-user-select: none
+    }
+
+    &.label-precision-10 {
+        label:nth-child(4n+1) {
+            display: none
+        }
+    }
+
+    .shader {
+        display: inline-table
+        user-select: none
+        vertical-align: middle
+        white-space: normal
+
+        &.correct {
+            background-color: #ebf6e6
+            border-left: 5px solid #65a00d
+            padding: 5px
+        }
+
+        &.incorrect {
+            background-color: #fbe3e3
+            border-left: 5px solid #e14747
+            padding: 5px
+        }
+
+        &.allow-sliders {
+            &.incorrect {
+                padding-left: 40px
+                padding-top: 40px
+            }
+
+            &.correct {
+                padding-left: 40px
+                padding-top: 40px
+            }
+        }
+
+        &.disabled {
+            * {
+                cursor: not-allowed !important
+            }
+
+            .color-buttons {
+                .color-button {
+                    &.btn-blue {
+                        &:hover {
+                            .color-fill {
+                                background: #2da2f1 !important
+                            }
+                        }
+                    }
+
+                    &.btn-yellow {
+                        &:hover {
+                            .color-fill {
+                                background: #ffec6b !important
+                            }
+                        }
+                    }
+
+                    &.btn-orange {
+                        &:hover {
+                            .color-fill {
+                                background: #f3983c !important
+                            }
+                        }
+                    }
+
+                    &.btn-red {
+                        &:hover {
+                            .color-fill {
+                                background: #cd3558 !important
+                            }
+                        }
+                    }
+
+                    &.btn-gray {
+                        &:hover {
+                            .color-fill {
+                                background: #616161 !important
+                            }
+                        }
+                    }
+
+                    &.btn-white {
+                        &:hover {
+                            .color-fill {
+                                color: #cbcccb !important
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .component-group {
+            display: table-row
+
+            .component-container {
+                display: table-cell
+                padding: 10px
+                vertical-align: top
+            }
+        }
+
+        .top-components {
+            .horizontal-slider-holder {
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+                    background: url('./horizontal-handle.png')
+                    border: none
+                    cursor: pointer
+                    height: 36px
+                    margin-top: -8px
+                    width: 20px
+                }
+            }
+
+            .horizontal-slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content {
+                background: #ededed
+                height: 7px
+
+                .ui-slider-range {
+                    background: #2da2f1
+                }
+            }
+
+            label {
+                color: #2da2f1
+                margin-left: -10px
+                margin-top: -40px
+                position: absolute
+                text-align: center
+                width: 20px
+            }
+
+            div.pip-vertical {
+                border-left: 1px solid #2da2f1
+                height: 13px
+                position: absolute
+                top: -3px
+            }
+        }
+
+        .bottom-components {
+            label {
+                color: #ebb700
+                margin-left: -40px
+                margin-top: -10px
+                position: absolute
+                text-align: center
+                width: 20px
+            }
+
+            div.pip-horizontal {
+                border-top: 1px solid #ebb700
+                left: -3px
+                position: absolute
+                width: 13px
+                z-index: 1
+            }
+
+            .grid-holder {
+                .grid {
+                    border: 1px solid #011f3f
+                    display: inline-block
+
+                    .grid-row {
+                        font-size: 0
+                        white-space: nowrap
+
+                        &:last-child {
+                            .grid-col {
+                                border-bottom: 1px solid #011f3f
+                            }
+                        }
+
+                        .grid-col {
+                            background: transparent
+                            border-left: 1px solid #011f3f
+                            border-top: 1px solid #011f3f
+                            display: inline-block
+                            height: 25px
+                            margin: 0
+                            vertical-align: top
+                            width: 25px
+
+                            &:last-child {
+                                border-right: 1px solid #011f3f
+                            }
+
+                            &.hfill {
+                                background: #2da2f1
+
+                                &.vfill {
+                                    background: #18bf93
+                                }
+                            }
+
+                            &.vfill {
+                                background: #ffde6b
+                            }
+                        }
+                    }
+
+                    &.numbered {
+                        font-size: 12px
+                        text-align: center
+
+                        .grid-row {
+                            .grid-col {
+                                font-size: 12px
+                                padding: 4px 0
+                            }
+                        }
+                    }
+                }
+            }
+
+            .vertical-slider-holder {
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+                    background: url('./vertical-handle.png')
+                    border: none
+                    cursor: pointer
+                    height: 22px
+                    margin-left: -6px
+                    width: 34px
+                }
+
+                .vertical-slider.ui-slider.ui-slider-vertical.ui-widget.ui-widget-content {
+                    background: #ebb700
+                    width: 7px
+
+                    .ui-slider-range {
+                        background: #ededed
+                    }
+                }
+            }
+        }
+
+        &.allow-select {
+            .bottom-components {
+                .grid-holder {
+                    .grid-row {
+                        .grid-col {
+                            cursor: pointer
+
+                            &.yellow {
+                                background: #ffec6b
+                            }
+
+                            &.blue {
+                                background: #2da2f1
+                            }
+
+                            &.orange {
+                                background: #f3983c
+                            }
+
+                            &.red {
+                                background: #cd3558
+                            }
+
+                            &.gray {
+                                background: #616161
+                            }
+
+                            &.not-to-be-selected {
+                                pointer-events: none
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.allow-select {
+                .bottom-components {
+                    .grid-holder {
+                        .grid-row {
+                            .grid-col.focused {
+                                background: gray
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.yellow-select {
+                .bottom-components {
+                    .grid-holder {
+                        .grid-row {
+                            .grid-col {
+                                &.selecting {
+                                    background: #ffeba6
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.blue-select {
+                .bottom-components {
+                    .grid-holder {
+                        .grid-row {
+                            .grid-col {
+                                &.selecting {
+                                    background: #9fd8ff
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.orange-select {
+                .bottom-components {
+                    .grid-holder {
+                        .grid-row {
+                            .grid-col {
+                                &.selecting {
+                                    background: #ffc993
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.red-select {
+                .bottom-components {
+                    .grid-holder {
+                        .grid-row {
+                            .grid-col {
+                                &.selecting {
+                                    background: #ffb4c5
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.gray-select {
+                .bottom-components {
+                    .grid-holder {
+                        .grid-row {
+                            .grid-col {
+                                &.selecting {
+                                    background: #d6d6d6
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.white-select {
+                .bottom-components {
+                    .grid-holder {
+                        .grid-row {
+                            .grid-col {
+                                &.selecting {
+                                    background: #e2e2e2
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .color-buttons {
+            .color-button {
+                background-color: transparent
+                background-position: 0 0, 0 100%, 100% 0, 100% 100%, 0 0, 100% 0, 0 100%, 100% 100%
+                background-repeat: no-repeat
+                background-size: 20px 20px
+                border: 0
+                display: inline-block
+                height: 50px
+                margin: 0 10px
+                outline: 0
+                padding: 0
+                vertical-align: middle
+                width: 50px
+
+                .color-fill {
+                    color: #cbcccb
+                    display: inline-block
+                    font-size: 30px
+                    height: 30px
+                    margin: 10px
+                    width: 30px
+                }
+
+                &.selected {
+                    &.btn-blue {
+                        cornerBorders(4px, #469dd6)
+                    }
+
+                    &.btn-yellow {
+                        cornerBorders(4px, #f8ee6b)
+                    }
+
+                    &.btn-orange {
+                        cornerBorders(4px, #f1a354)
+                    }
+
+                    &.btn-gray {
+                        cornerBorders(4px, #353535)
+                    }
+
+                    &.btn-red {
+                        cornerBorders(4px, #c5556f)
+                    }
+
+                    &.btn-white {
+                        cornerBorders(4px, #cbcccb)
+                    }
+                }
+
+                &.btn-blue {
+                    .color-fill {
+                        background: #2da2f1
+                    }
+
+                    &:not(.selected):hover {
+                        .color-fill {
+                            background: #9fd8ff
+                        }
+                    }
+                }
+
+                &.btn-yellow {
+                    .color-fill {
+                        background: #ffec6b
+                    }
+
+                    &:not(.selected):hover {
+                        .color-fill {
+                            background: #ffeba6
+                        }
+                    }
+                }
+
+                &.btn-orange {
+                    .color-fill {
+                        background: #f3983c
+                    }
+
+                    &:not(.selected):hover {
+                        .color-fill {
+                            background: #ffc993
+                        }
+                    }
+                }
+
+                &.btn-red {
+                    .color-fill {
+                        background: #cd3558
+                    }
+
+                    &:not(.selected):hover {
+                        .color-fill {
+                            background: #ffb4c5
+                        }
+                    }
+                }
+
+                &.btn-gray {
+                    .color-fill {
+                        background: #616161
+                    }
+
+                    &:not(.selected):hover {
+                        .color-fill {
+                            background: #d6d6d6
+                        }
+                    }
+                }
+
+                &.btn-white {
+                    .color-fill {
+                        color: #cbcccb
+                    }
+
+                    &:not(.selected):hover {
+                        .color-fill {
+                            color: #e2e2e2
+                        }
+                    }
+                }
+            }
+        }
+
+        &.creation {
+            .grid-creator {
+                .input-holder {
+                    display: inline-block
+                    margin: 0 10px
+                    vertical-align: middle
+                }
+
+                .cross-holder {
+                    display: inline-block
+                    vertical-align: middle
+                }
+
+                input.grid-input {
+                    border: 2px solid rgba(0, 0, 0, .12)
+                    border-radius: 5px
+                    font-size: 24px
+                    height: 50px
+                    text-align: center
+                    width: 80px
+                }
+
+                .grid-error-label {
+                    color: red
+                    visibility: hidden
+
+                    &.error {
+                        visibility: visible
+                    }
+                }
+            }
+        }
+
+        &.addition {
+            .grid-col {
+                text-align: center
+
+                .display-digit {
+                    font-size: 16px
+                }
+            }
+
+            .ui-slider {
+                label {
+                    display: none
+                }
+
+                &.vertical-slider {
+                    margin-top: 38px
+                }
+
+                &.horizontal-slider {
+                    margin-left: 38px
+                }
+            }
+        }
+
+        &.arrows {
+            .top-components {
+                .horizontal-slider-holder {
+                    position: relative
+
+                    .horizontal-slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content {
+                        background: transparent !important
+                        border-color: transparent
+                        height: 0
+                        position: absolute
+                        top: 55px
+
+                        .ui-state-default {
+                            background: url('./arrow.png')
+                            background-repeat: no-repeat
+                            background-size: contain
+                            height: 30px
+                            margin-left: -17px
+                            margin-top: -7px
+                            width: 30px
+                        }
+
+                        .ui-slider-range {
+                            background: transparent
+                        }
+
+                        label {
+                            display: none
+                        }
+
+                        .pip-vertical {
+                            display: none
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .validation-mark {
+        display: inline-block
+        vertical-align: middle
+
+        .validation-icon {
+            display: none
+            margin-left: 10px
+
+            &.correct-icon {
+                color: #008000
+                font-size: 40px
+            }
+
+            &.incorrect-icon {
+                color: #dc1212
+                font-size: 60px
+            }
+        }
+
+        &.correct {
+            .correct-icon {
+                display: block
+            }
+        }
+
+        &.incorrect {
+            .incorrect-icon {
+                display: block
+            }
+        }
+    }
+
+    .shader-show-me-btn-wrapper {
+        display: inline-block
+
+        .shader-show-me-answer-wrapper {
+            color: #000
+            display: none
+            font-family: 'Muli', sans-serif
+            user-select: none
+        }
+
+        .shader-show-me-btn {
+            background-color: #fff
+            border: solid 2px #1e8508
+            border-radius: 1.5vh
+            box-shadow: inset 0 0 5px 0 #d8d8d8
+            color: #1e8508
+            font-family: Signika
+            font-size: 16px
+            font-stretch: normal
+            font-style: normal
+            font-weight: 600
+            height: 40px
+            padding: 1px 6px
+            text-transform: capitalize
+            width: 104px
+
+            &[disabled] {
+                background: #d8d8d8
+                background-color: #d8d8d8
+                box-shadow: 0 4px 0 0 #fff
+                pointer-events: none
+            }
+        }
+    }
+}
+
+.component-wrapper.finished {
+    .shader-holder {
+        .shader-show-me-btn-wrapper {
+            display: none
+        }
+
+        .shader {
+            &.arrows {
+                .top-components {
+                    .horizontal-slider-holder {
+                        .horizontal-slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content {
+                            .ui-state-default {
+                                display: none
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

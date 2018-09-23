@@ -1,0 +1,10 @@
+<div class="questions-container">
+    {{#each questions}} {{&questionsTpl this}} {{/each}}
+</div>
+<div class='finish-button-container hide'>
+    <button id="finish" class="controlBtn finish">
+        <span class="finish-btn-text"></span>
+        <i class="bil-icon-tick"></i>
+    </button>
+    <div class="info-button-container"></div>
+</div>

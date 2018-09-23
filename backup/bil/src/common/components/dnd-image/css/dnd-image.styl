@@ -1,0 +1,314 @@
+.dnd-image-container {
+    display: inline-block
+    white-space: nowrap
+
+    * {
+        user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        -webkit-user-select: none
+    }
+
+    > * {
+        white-space: normal
+    }
+
+    &.correct {
+        background-color: #ebf6e6
+        border-left: 5px solid #65a00d
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.correct-icon {
+                    color: #0da939
+                    display: block
+                    font-size: 40px
+                    height: 40px
+                    width: 40px
+                }
+            }
+        }
+
+        .counter-zone {
+            display: none !important
+        }
+    }
+
+    &.incorrect {
+        background-color: #fbe3e3
+        border-left: 5px solid #e14747
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+
+        .right-section {
+            display: inline-block
+            vertical-align: middle
+
+            .validation-icon {
+                &.incorrect-icon {
+                    color: #88001b
+                    display: block
+                    font-size: 60px
+                    height: 60px
+                    width: 60px
+                }
+            }
+        }
+    }
+
+    &.answer-shown {
+        .counter-zone {
+            display: none !important
+        }
+    }
+
+    &.dispenser-left {
+        .left-section {
+            .counter-zone {
+                margin-right: 50px
+                vertical-align: middle
+
+                &.show {
+                    display: inline-block
+                    margin-right: 50px
+                }
+            }
+        }
+    }
+
+    &.dispenser-right {
+        .left-section {
+            .counter-zone {
+                margin-left: 50px
+                vertical-align: middle
+
+                &.show {
+                    display: inline-block
+                    margin-left: 50px
+                }
+            }
+        }
+    }
+
+    &.dispenser-top {
+        .left-section {
+            .counter-zone {
+                margin-bottom: 10px
+                text-align: center
+
+                &.show {
+                    display: block
+                    margin-bottom: 10px
+                }
+            }
+        }
+    }
+
+    &.dispenser-bottom {
+        .left-section {
+            .counter-zone {
+                margin-top: 10px
+                text-align: center
+
+                &.show {
+                    display: block
+                    margin-top: 10px
+                }
+            }
+        }
+    }
+
+    .left-section {
+        display: inline-block
+        vertical-align: middle
+        white-space: nowrap
+
+        > * {
+            white-space: normal
+        }
+
+        .drop-zone-area {
+            background-repeat: no-repeat
+            background-size: contain
+            display: inline-block
+            position: relative
+            vertical-align: middle
+
+            .drop-zone {
+                position: absolute
+
+                .dropped-counters {
+                    height: 100%
+                    width: 100%
+                }
+
+                svg {
+                    height: 100%
+                    position: absolute
+                    width: 100%
+
+                    path {
+                        fill: transparent
+                    }
+                }
+
+                .is-dragging {
+                    display: none
+                }
+            }
+        }
+
+        .counter-zone {
+            display: none
+
+            .drag-counter {
+                &.na {
+                    display: none
+                }
+            }
+        }
+    }
+
+    .drag-counter {
+        background-color: #f8111a
+        border: 2px solid #9d0a0e
+        border-radius: 50%
+        display: inline-block
+        min-height: 50px
+        min-width: 50px
+        position: relative
+        z-index: 2
+
+        &:not(.ui-draggable-disabled) {
+            &:not(.do-not-drag) {
+                box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .75)
+                cursor: url('./open-hand.cur'), move
+
+                &.ui-draggable-dragging {
+                    cursor: url('./closed-hand.cur'), move
+                    z-index: 5
+                }
+            }
+        }
+
+        .validation-mark {
+            height: 100%
+            position: absolute
+            width: 100%
+        }
+
+        .validation-icon {
+            display: none
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: translate(-50%, -50%)
+        }
+
+        &.correct {
+            .validation-icon {
+                &.correct-icon {
+                    color: #0da939
+                    // display: block
+                    font-size: 40px
+                    height: 40px
+                    width: 40px
+                }
+            }
+        }
+
+        &.incorrect {
+            .validation-icon {
+                &.incorrect-icon {
+                    color: #88001b
+                    // display: block
+                    font-size: 60px
+                    height: 60px
+                    width: 60px
+                }
+            }
+        }
+    }
+
+    .right-section {
+        display: inline-block
+        margin-left: 20px
+        vertical-align: middle
+
+        .validation-icon {
+            display: none
+            margin-right: 10px
+        }
+    }
+
+    .invisible {
+        display: none
+    }
+
+    .dnd-show-me-btn-wrapper {
+        display: inline-block
+
+        .dnd-show-me-answer-wrapper {
+            color: #000
+            display: none
+            font-family: 'Muli', sans-serif
+            user-select: none
+        }
+
+        .dnd-show-me-btn {
+            background-color: #fff
+            border: solid 2px #1e8508
+            border-radius: 1.5vh
+            box-shadow: inset 0 0 5px 0 #d8d8d8
+            color: #1e8508
+            font-family: Signika
+            font-size: 16px
+            font-stretch: normal
+            font-style: normal
+            font-weight: 600
+            height: 40px
+            padding: 1px 6px
+            text-transform: capitalize
+            width: 104px
+
+            &[disabled] {
+                background: #d8d8d8
+                background-color: #d8d8d8
+                box-shadow: 0 4px 0 0 #fff
+                pointer-events: none
+            }
+        }
+    }
+}
+
+.component-wrapper.finished {
+    .dnd-image-container {
+        .dnd-show-me-btn-wrapper {
+            display: none
+        }
+
+        .counter-zone {
+            display: none !important
+        }
+    }
+}
+
+/* Styles to be removed. For testing purposes only */
+.dnd-image-container {
+    .drop-zone-area {
+        min-height: 200px
+        min-width: 200px
+
+        .drop-zone {
+            &.zone-hover {
+            }
+        }
+    }
+}

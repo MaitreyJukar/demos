@@ -1,0 +1,194 @@
+.tooltip {
+    background: #ffffff
+    border: 3px solid #0050a7
+    border-radius: 10px
+    font-family: 'PT Serif'
+    font-size: 16px
+    line-height: 1.5
+    max-height: 500px
+    min-height: 40px
+    min-width: 271px
+    padding: 8px 15px
+    position: absolute
+    text-align: left
+    text-transform: none
+    z-index: 20
+
+    .header-container {
+        white-space: nowrap
+
+        .tts-button-container {
+            display: inline-block
+            vertical-align: middle
+
+            #play-button-tooltip {
+                background-color: white
+                border: 0
+                border-radius: 15px
+                box-sizing: border-box
+                color: #0050A7
+                font-size: 22px
+                height: 22px
+                line-height: 1
+                margin-bottom: 2px
+                padding: 0
+                text-align: center
+                vertical-align: middle
+                width: 22px
+
+                .bil-icon-pause {
+                    padding-left: 0
+                }
+
+                &:active {
+                    position: relative
+                    top: 2px
+                }
+
+                &:hover {
+                    background-color: #dadada
+                }
+            }
+        }
+
+        .title-container {
+            display: inline-block
+            vertical-align: middle
+            white-space: nowrap
+
+            .title {
+                display: inline
+                font-size: 16px
+                font-weight: bold
+                margin-left: 3px
+                text-transform: capitalize
+            }
+        }
+    }
+
+    .content {
+        display: inline-block
+        margin: 0
+        vertical-align: bottom
+    }
+
+    .container {
+        margin-top: 20px
+        text-align: center
+    }
+
+    &.right {
+        bottom: 0
+        left: 100%
+        margin-left: 20px
+
+        &:after, &:before {
+            bottom: 20px
+            right: 100%
+        }
+
+        &:after {
+            border-right-color: #ffffff
+            margin-bottom: -11px
+        }
+
+        &:before {
+            border-right-color: #0050a7
+            margin-bottom: -15px
+        }
+    }
+
+    &.left {
+        bottom: 0
+        margin-right: 20px
+        right: 100%
+
+        &:after, &:before {
+            bottom: 20px
+            left: 100%
+        }
+
+        &:after {
+            border-left-color: #ffffff
+            margin-bottom: -11px
+        }
+
+        &:before {
+            border-left-color: #0050a7
+            margin-bottom: -15px
+        }
+    }
+
+    &.top {
+        bottom: 100%
+        left: 50%
+        margin-bottom: 20px
+        transform: translateX(-50%)
+
+        &:after, &:before {
+            left: 50%
+            top: 100%
+        }
+
+        &:after {
+            border-top-color: #ffffff
+            margin-left: -11px
+        }
+
+        &:before {
+            border-top-color: #0050a7
+            margin-left: -15px
+        }
+    }
+
+    &.bottom {
+        left: 50%
+        margin-top: 20px
+        top: 100%
+        transform: translateX(-50%)
+
+        &:after, &:before {
+            bottom: 100%
+            left: 50%
+        }
+
+        &:after {
+            border-bottom-color: #ffffff
+            margin-left: -11px
+        }
+
+        &:before {
+            border-bottom-color: #0050a7
+            margin-left: -15px
+        }
+    }
+
+    &:after, &:before {
+        border: solid transparent
+        content: ' '
+        height: 0
+        pointer-events: none
+        position: absolute
+        width: 0
+    }
+
+    &:after {
+        border-color: rgba(255, 255, 255, 0)
+        border-width: 11px
+    }
+
+    &:before {
+        border-color: rgba(7, 42, 85, 0)
+        border-width: 15px
+    }
+
+    .bil-icon-pop-up-play, .bil-icon-pop-up-pause {
+        &:before {
+            display: block
+        }
+    }
+}
+
+.hide {
+    display: none
+}

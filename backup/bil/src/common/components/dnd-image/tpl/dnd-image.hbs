@@ -1,0 +1,65 @@
+<div class="dnd-image-container dispenser-{{dispenserPos}}">
+    <div class="left-section">
+        {{#if dispenserOnLeft}}
+        <div class="counter-zone{{#if dispenser}} show{{/if}}">
+            {{#each draggables}}
+            <div class="drag-counter{{#if na}} na{{/if}}" type="{{type}}" title="{{alttext}}">
+                <div class="validation-mark">
+                    <div class="correct-icon validation-icon">
+                        <span class="bil-icon-done"></span>
+                    </div>
+                    <div class="incorrect-icon validation-icon">
+                        <span class="bil-icon-close"></span>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        {{/if}}
+        <div class="drop-zone-area" title="{{alttext}}">
+            {{#each dropZones}}
+            <div class="drop-zone" type="{{type}}" title="{{alttext}}" data-snap={{snap}}>
+                {{#if path}}
+                <svg>
+                    <path d="{{path}}"></path>
+                </svg>
+                {{/if}}
+                <div class="dropped-counters"></div>
+            </div>
+            {{/each}}
+        </div>
+        {{#unless dispenserOnLeft}}
+        <div class="counter-zone{{#if dispenser}} show{{/if}}">
+            {{#each draggables}}
+            <div class="drag-counter{{#if na}} na{{/if}}" type="{{type}}" title="{{alttext}}">
+                <div class="validation-mark">
+                    <div class="correct-icon validation-icon">
+                        <span class="bil-icon-done"></span>
+                    </div>
+                    <div class="incorrect-icon validation-icon">
+                        <span class="bil-icon-close"></span>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        {{/unless}}
+    </div>
+    <div class="right-section">
+        {{#if showMe}}
+        <div class="dnd-show-me-btn-wrapper">
+            <button class="dnd-show-me-btn" disabled>Show Me</button>
+        </div>
+        {{/if}}
+        <div class="tool-validation">
+            <div class="validation-mark">
+                <div class="correct-icon validation-icon">
+                    <span class="bil-icon-done"></span>
+                </div>
+                <div class="incorrect-icon validation-icon">
+                    <span class="bil-icon-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

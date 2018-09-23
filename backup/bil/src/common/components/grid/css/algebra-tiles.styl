@@ -1,0 +1,389 @@
+
+.algebra_tiles_wrapper {
+    white-space: nowrap
+
+    * {
+        user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        -webkit-user-select: none
+    }
+
+    > * {
+        white-space: normal
+    }
+
+    &.correct {
+        background-color: #ebf6e6
+        border-left: 5px solid #65a00d
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+    }
+
+    &.incorrect {
+        background-color: #fbe3e3
+        border-left: 5px solid #e14747
+        margin-left: -10px
+        margin-top: -5px
+        padding: 5px
+    }
+}
+
+default(values) {
+    &.grid-static {
+        .algebra_tiles_container {
+            display: none
+        }
+
+        .grids-container {
+            display: inline-block
+
+            .grid_container {
+                margin: 0
+            }
+        }
+    }
+
+    .algebra_tiles_container {
+        border-right: 4px solid #f2f2f2
+        box-sizing: border-box
+        display: inline-block
+        height: values.$algebraTilesContainerHeight
+        padding: 16px 30px 10px
+        vertical-align: top
+        white-space: normal
+        width: values.$algebraTilesContainerWidth
+
+        // shivani(20px)
+        .tiles-header-text {
+            font-family: 'Source Sans Pro', sans-serif
+            font-size: 15px
+            font-weight: bold
+            text-align: center
+            white-space: nowrap
+        }
+
+        .tileContainer {
+            display: inline-block
+            margin-bottom: values.$tileMargin
+            position: relative
+
+            .plusXSquare {
+                margin-top: values.$tileMargin
+            }
+
+            .plusXVertical, .minus {
+                margin-right: values.$tileMargin
+            }
+        }
+    }
+
+    .draggable {
+        cursor: url('./open-hand.cur'), pointer
+        display: inline-block
+        vertical-align: middle
+    }
+
+    .grids-container {
+        display: inline-block
+
+        .grid_container {
+            box-sizing: border-box
+            display: inline-block
+            margin-left: 30px
+            margin-top: 33px
+            vertical-align: middle
+            white-space: normal
+
+            .nullHeader {
+                border-bottom: 3px solid #222222
+                border-right: 3px solid #222222
+                box-sizing: border-box
+                display: inline-block
+                height: 58px
+                position: relative
+                vertical-align: middle
+                width: 58px
+
+                .nullHeaderContent {
+                    background-color: #008dd4
+                    border-radius: 50%
+                    display: block
+                    height: 10px
+                    left: 50%
+                    position: absolute
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    width: 10px
+                    -ms-transform: translate(-50%, -50%) /* IE 9 */
+                    -webkit-transform: translate(-50%, -50%) /* Safari 3-8 */
+                }
+            }
+
+            .colHeader {
+                border-bottom: 3px solid #222222
+                box-sizing: border-box
+                display: inline-block
+                padding: 10px
+                vertical-align: middle
+            }
+
+            .rowHeader {
+                border-right: 3px solid #222222
+                display: inline-block
+                padding: 10px
+            }
+
+            .canvasArea {
+                display: inline-block
+                padding: 10px
+            }
+        }
+    }
+
+    .rhs-section {
+        display: inline-block
+
+        .equal-to {
+            // background-image: url("./../media/images/equal-sign.png")
+            display: inline-block
+            padding-left: 50px
+        }
+
+        .rhs_grid_container {
+            display: inline-block
+            margin-left: 0
+            margin-top: 0
+
+            .nullHeader {
+                visibility: hidden
+            }
+
+            .colHeader {
+                visibility: hidden
+            }
+
+            .rowHeader {
+                visibility: hidden
+            }
+        }
+    }
+
+    .tile {
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 50%
+        border-radius: values.$borderRadius
+        display: block
+        margin: 0 auto
+        position: relative
+
+        .tile-icon {
+            font-size: 30px
+            left: 50%
+            line-height: 20px
+            position: absolute
+            top: 50%
+            transform: translate(-50%, -50%)
+            -ms-transform: translate(-50%, -50%) /* IE 9 */
+            -webkit-transform: translate(-50%, -50%) /* Safari 3-8 */
+
+            &.bil-icon-plus {
+                color: #251d16
+            }
+
+            &.bil-icon-minus {
+                color: #ffffff
+            }
+        }
+    }
+
+    .minusXVertical {
+        .bil-icon-minus {
+            transform: rotate(90deg)
+            transform-origin: top
+            -ms-transform: rotate(90deg) /* IE 9 */
+            -ms-transform-origin: top /* IE 9 */
+            -webkit-transform: rotate(90deg) /* Safari 3-8 */
+            -webkit-transform-origin: top /* Safari 3-8 */
+        }
+    }
+
+    .plus {
+        background-color: #fded0a
+        box-shadow: 4px 4px 0 0 #958c12
+        display: inline-block
+        height: values.$gridHeight
+        width: values.$gridWidth
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #958c12, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .minus {
+        background-color: #e91d21
+        box-shadow: 4px 4px 0 0 #730c0b
+        display: inline-block
+        height: values.$gridHeight
+        width: values.$gridWidth
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #730c0b, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .plusXVertical {
+        background-color: #02a452
+        box-shadow: 4px 4px 0 0 #125b37
+        height: (values.$gridSizeMultiplier * values.$gridHeight) + values.$gutterSize
+        width: values.$gridWidth
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #125b37, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .minusXVertical {
+        background-color: #e91d21
+        box-shadow: 4px 4px 0 0 #730c0b
+        height: (values.$gridSizeMultiplier * values.$gridHeight) + values.$gutterSize
+        width: values.$gridWidth
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #730c0b, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .plusXHorizontal {
+        background-color: #02a452
+        box-shadow: 4px 4px 0 0 #125b37
+        height: values.$gridHeight
+        margin-bottom: values.$tileMargin
+        width: (values.$gridSizeMultiplier * values.$gridWidth) + values.$gutterSize
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #125b37, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .minusXHorizontal {
+        background-color: #e91d21
+        box-shadow: 4px 4px 0 0 #730c0b
+        height: values.$gridHeight
+        width: (values.$gridSizeMultiplier * values.$gridWidth) + values.$gutterSize
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #730c0b, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .plusXSquare {
+        background-color: #008dd4
+        box-shadow: 4px 4px 0 0 #07547c
+        height: (values.$gridSizeMultiplier * values.$gridHeight) + values.$gutterSize
+        width: (values.$gridSizeMultiplier * values.$gridWidth) + values.$gutterSize
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #07547c, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .minusXSquare {
+        background-color: rgb(231, 34, 34)
+        box-shadow: 4px 4px 0 0 #730c0b
+        height: (values.$gridSizeMultiplier * values.$gridHeight) + values.$gutterSize
+        width: (values.$gridSizeMultiplier * values.$gridWidth) + values.$gutterSize
+
+        &.ui-draggable-dragging {
+            box-shadow: 4px 4px 0 0 #730c0b, 0 13px 18.8px 1.2px rgba(0, 0, 0, .24), 0 5px 26.46px .54px rgba(0, 0, 0, .16)
+        }
+    }
+
+    .draggable.ui-draggable-dragging {
+        cursor: url('./closed-hand.cur'), pointer
+        margin: 0
+        opacity: 1
+        z-index: 10
+    }
+
+    .draggable.ui-draggable-disabled {
+        cursor: default
+    }
+}
+
+.custom_widget_container {
+    default({
+        $gridHeight: 31px,
+        $gridWidth: 31px,
+        $gutterSize: 14px,
+        $borderRadius: 5px,
+        $gridSizeMultiplier: 2,
+        $tileMargin: 10px,
+        $algebraTilesContainerWidth: 144px,
+        $algebraTilesContainerHeight: 450px
+    })
+}
+
+@media screen and (max-width: 1660px) {
+    .custom_widget_container {
+        &.scaleDown {
+            default({
+                $gridHeight: 16px,
+                $gridWidth: 16px,
+                $gutterSize: 5px,
+                $borderRadius: 5px,
+                $gridSizeMultiplier: 2,
+                $tileMargin: 5px,
+                $algebraTilesContainerWidth: 100%,
+                $algebraTilesContainerHeight: 75px
+            })
+
+            .algebra_tiles_container {
+                border-bottom: 4px solid #f2f2f2
+                border-right: 0
+                display: block
+
+                .tiles-header-text {
+                    display: inline-block
+                    vertical-align: middle
+                }
+
+                .tileContainer {
+                    margin-left: 5px
+                    vertical-align: middle
+
+                    .plusXSquare {
+                        margin-top: 0
+                    }
+
+                    .minus {
+                        display: block
+                        margin-bottom: 5px
+                    }
+
+                    .plus {
+                        display: block
+                    }
+                }
+            }
+
+            .grids-container {
+                .grid_container {
+                    .nullHeader {
+                        height: 45px
+                        width: 43px
+                    }
+                }
+            }
+
+            .tile {
+                .tile-icon {
+                    font-size: 15px
+                    line-height: 10px
+                }
+            }
+        }
+    }
+}

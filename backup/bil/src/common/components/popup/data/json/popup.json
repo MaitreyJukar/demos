@@ -1,0 +1,21 @@
+{
+    "popupModels": [
+        {
+            "text": "Exploration not available.",
+            "textColor": "#012955",
+            "dismissOnBtnClick": true,
+            "buttonsData": [
+                {
+                    "id": "popup-ok-button",
+                    "label": "OK"
+                }
+            ]
+        }
+    ],
+    "popupViews": [
+        {
+            "el": ".popup-na-container",
+            "id": "lang-na"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+<section class="tooltip {{position}} hide" aria-hidden="false">
+    <div class="header-container">
+        <div class="tts-button-container">
+            <button id="play-button-tooltip" class="iconBtn hide-on-start" aria-label="{{locTextData.playBtnAria}}" title="{{locTextData.playBtnAria}}"><i class="bil-icon-pop-up-play font-icons" id="tooltip-play"></i></button>
+        </div>
+        <div class="title-container">
+            <h3 class="title">{{title}}</h3>
+        </div>
+    </div>
+    <p class="content">{{{content}}}</p>
+    {{#if image.imgID}}
+    <div class="container {{image.cssClass}}">
+        <img src="{{imgSrc}}" alt="{{image.altText}}" />
+    </div>
+    {{#if postImgContent}}<p class="post-img-content">{{{postImgContent}}}</p>{{/if}}
+    {{/if}}
+</section>

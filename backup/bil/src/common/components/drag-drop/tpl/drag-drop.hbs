@@ -1,0 +1,98 @@
+<div class="dnd-component-wrapper {{activityType}} theme-{{theme}}">
+    <div class="dnd-container">
+        {{!--
+        <div class="total-label">452+654</div> --}}
+        <div class="dnd-wrapper">
+            <div class="draggables-droppables-container">
+
+                <div class="bottom-section">
+                    <div class="top-section{{#if isNotDraggable}} hide{{/if}}">
+                        <div class="draggables">
+                            {{#greaterThan unitNames.length 3}}
+                            <div class="draggable-wrapper">
+                                <div class="thousands-draggable draggable" tabindex="0" data-type=3>
+                                    {{#if blue}}
+                                    <img src="./../media/images/blue-thousand.png" alt="A thousands cube"> 
+                                    {{else}}
+                                    <img src="./../media/images/thousand.png" alt="A thousands cube"> 
+                                    {{/if}}
+                                </div>
+                                <div class="draggable-title">{{revUnitNames.[3]}}</div>
+                            </div>
+                            {{/greaterThan}} {{#greaterThan unitNames.length 2}}
+                            <div class="draggable-wrapper">
+                                <div class="hundreds-draggable draggable" tabindex="0" data-type=2>
+                                    {{#if blue}}
+                                    <img src="./../media/images/blue-hundred.png" alt="A hundreds flat">
+                                    {{else}}
+                                    <img src="./../media/images/hundred.png" alt="A hundreds flat">
+                                    {{/if}}
+                                </div>
+                                <div class="draggable-title">{{revUnitNames.[2]}}</div>
+                            </div>
+                            {{/greaterThan}} {{#greaterThan unitNames.length 1}}
+                            <div class="draggable-wrapper">
+                                <div class="tens-draggable draggable" tabindex="0" data-type=1>
+                                    {{#if blue}}
+                                    <img src="./../media/images/blue-ten.png" alt="A tens rod">
+                                    {{else}}
+                                    <img src="./../media/images/ten.png" alt="A tens rod">
+                                    {{/if}}
+                                </div>
+                                <div class="draggable-title">{{revUnitNames.[1]}}</div>
+                            </div>
+                            {{/greaterThan}} {{#greaterThan unitNames.length 0}}
+                            <div class="draggable-wrapper">
+                                <div class="ones-draggable draggable" tabindex="0" data-type=0>
+                                    {{#if blue}}
+                                    <img src="./../media/images/blue-one.png" alt="A unit cube">
+                                    {{else}}
+                                    <img src="./../media/images/one.png" alt="A unit cube">
+                                    {{/if}}
+                                </div>
+                                <div class="draggable-title">{{revUnitNames.[0]}}</div>
+                            </div>
+                            {{/greaterThan}}
+                        </div>
+                    </div>
+                    <div class="droppables-container">
+                        {{#if headers}}
+                        <div class="headers">
+                            {{{headers.center}}}
+                        </div>
+                        {{/if}}
+                        <div class="droppables units-{{unitNamesLen}}">
+                            {{#each unitNames}}
+                            <div class="droppable-wrapper">
+                                <div class="droppable-title">{{this}}</div>
+                                <div class="droppable" tabindex="0" data-type="{{invIndex @index ../unitNames.length}}"></div>
+                            </div>
+                            {{/each}}
+                        </div>
+                        {{#if hasTrash}}
+                        <div class="trash-area empty">
+                            <div class="empty-trash-text">{{emptyTrashText}}</div>
+                            {{#each unitNames}}
+                            <div class="trashed-droppables" data-trash-type="{{invIndex @index ../unitNames.length}}"></div>
+                            {{/each}}
+                        </div>
+                        {{/if}}
+                    </div>
+                    {{#isEqual buttonPos "right"}}
+                    <div class="buttons {{buttonPos}}"></div>
+                    {{/isEqual}}
+                    <div class="validation-holder">
+                        <div class="cross-holder hidden">
+                            <span class="bil-icon-close" />
+                        </div>
+                        <div class="tick-holder hidden">
+                            <span class="bil-icon-done" />
+                        </div>
+                    </div>
+                </div>
+                {{#isEqual buttonPos "bottom"}}
+                <div class="buttons {{buttonPos}}"></div>{{/isEqual}}
+            </div>
+        </div>
+    </div>
+</div>

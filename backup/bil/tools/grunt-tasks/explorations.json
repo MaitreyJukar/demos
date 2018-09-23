@@ -1,0 +1,3136 @@
+{
+    "explorations": [
+        {
+            "name": "19NA_A1_c01_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s01_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s04_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c01_s05_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "01",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "01",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s05_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s06_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s06_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c02_s06_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "02",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 10,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "02",
+            "desmos": 4,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "03",
+            "desmos": 4,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c03_s07_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "03",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "01",
+            "desmos": 4,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "02",
+            "desmos": 2,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s02_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "03",
+            "desmos": 2,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "03",
+            "desmos": 2,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s06_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "06",
+            "desmos": 3,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s07_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c04_s07_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "04",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 1
+        },
+        {
+            "name": "19NA_A1_c05_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s03_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s05_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "05",
+            "desmos": 6,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s06_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s06_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "06",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s06_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "06",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s07_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c05_s07_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "05",
+            "section": "07",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s03_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s05_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s06_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s07_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c06_s07_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "06",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 10,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 2
+        },
+        {
+            "name": "19NA_A1_c07_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 2
+        },
+        {
+            "name": "19NA_A1_c07_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s04_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 4
+        },
+        {
+            "name": "19NA_A1_c07_s06_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 3
+        },
+        {
+            "name": "19NA_A1_c07_s07_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 4
+        },
+        {
+            "name": "19NA_A1_c07_s07_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s08_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "08",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c07_s08_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "07",
+            "section": "08",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "01",
+            "desmos": 4,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "02",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "02",
+            "desmos": 2,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s03_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "04",
+            "desmos": 2,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "04",
+            "desmos": 2,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s06_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "06",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c08_s06_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "08",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "02",
+            "desmos": 6,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "03",
+            "desmos": 4,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s03_exp3_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 1
+        },
+        {
+            "name": "19NA_A1_c09_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 1
+        },
+        {
+            "name": "19NA_A1_c09_s05_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s05_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s06_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "06",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c09_s06_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "09",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c10_s01_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "10",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c10_s02_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "10",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c10_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c10_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c10_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "10",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c11_s01_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "11",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c11_s02_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "11",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c11_s03_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "11",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c11_s03_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "11",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c11_s04_exp1_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "11",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A1_c11_s04_exp2_int_exploration",
+            "subject": "Algebra 1",
+            "chapter": "11",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s02_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c01_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "01",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c02_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "02",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c02_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "02",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c02_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "02",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c02_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "02",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 1
+        },
+        {
+            "name": "19NA_A2_c03_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 1
+        },
+        {
+            "name": "19NA_A2_c03_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s05_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s06_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c03_s06_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "03",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "01",
+            "desmos": 6,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "03",
+            "desmos": 6,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s05_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s06_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s06_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "06",
+            "desmos": 4,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s07_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "07",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s07_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "07",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c04_s08_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "04",
+            "section": "08",
+            "desmos": 6,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s01_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s02_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 9,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 9,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "05",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s06_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "06",
+            "desmos": 4,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c05_s06_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "05",
+            "section": "06",
+            "desmos": 4,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s02_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "03",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s03_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s05_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s05_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s06_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s06_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s07_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "07",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c06_s07_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "06",
+            "section": "07",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "01",
+            "desmos": 2,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 10,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 10,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c07_s05_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "07",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 11,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s04_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s05_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c08_s05_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "08",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s06_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s07_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s07_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s08_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "08",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s08_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "08",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c09_s08_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "09",
+            "section": "08",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s01_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s01_exp4_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 2
+        },
+        {
+            "name": "19NA_A2_c10_s02_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 2
+        },
+        {
+            "name": "19NA_A2_c10_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s03_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s04_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s05_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s05_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s05_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s06_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c10_s06_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "10",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c11_s01_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c11_s01_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c11_s02_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 1
+        },
+        {
+            "name": "19NA_A2_c11_s02_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 1
+        },
+        {
+            "name": "19NA_A2_c11_s03_exp1_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c11_s03_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c11_s03_exp3_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_A2_c11_s04_exp2_int_exploration",
+            "subject": "Algebra 2",
+            "chapter": "11",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s01_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s02_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s04_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s04_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s05_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 8,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s05_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s06_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c01_s06_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "01",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s01_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s02_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s03_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s03_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 13,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s04_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s04_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s05_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s05_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s06_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c02_s06_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "02",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s01_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s02_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s04_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s04_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s04_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s05_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "05",
+            "desmos": 6,
+            "learnosity": 6,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c03_s05_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "03",
+            "section": "05",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c04_s01_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "04",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c04_s03_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "04",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c04_s05_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "04",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s06_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "06",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s07_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s07_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s08_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "08",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c05_s08_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "05",
+            "section": "08",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c06_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "06",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c06_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "06",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c06_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "06",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c06_s02_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "06",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c06_s03_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "06",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c06_s05_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "06",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c06_s05_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "06",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "01",
+            "desmos": 2,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s02_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s03_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s03_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s04_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s05_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c07_s05_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "07",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c08_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "08",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c08_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "08",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c08_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "08",
+            "section": "02",
+            "desmos": 1,
+            "learnosity": 7,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c08_s03_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "08",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c08_s04_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "08",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c08_s04_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "08",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "01",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s03_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s03_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s04_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s04_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s05_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "05",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s06_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "06",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c09_s06_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "09",
+            "section": "06",
+            "desmos": 2,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "02",
+            "desmos": 4,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s03_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s03_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s03_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "03",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s04_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "04",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s06_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "06",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s06_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "06",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s07_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "07",
+            "desmos": 1,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s07_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "07",
+            "desmos": 1,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c10_s07_exp3_int_exploration",
+            "subject": "Geometry",
+            "chapter": "10",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s01_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s01_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "01",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s02_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s02_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "02",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s03_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "03",
+            "desmos": 4,
+            "learnosity": 5,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s03_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "03",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s04_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "04",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s05_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 4,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s05_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "05",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s06_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s06_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "06",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s07_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 3,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s07_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "07",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s08_exp1_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "08",
+            "desmos": 0,
+            "learnosity": 1,
+            "custom": 0
+        },
+        {
+            "name": "19NA_GE_c11_s08_exp2_int_exploration",
+            "subject": "Geometry",
+            "chapter": "11",
+            "section": "08",
+            "desmos": 0,
+            "learnosity": 2,
+            "custom": 0
+        }
+    ]
+}

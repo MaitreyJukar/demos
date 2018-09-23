@@ -1,0 +1,663 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  /* latin-ext */
+  @font-face {
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Signika Regular'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v8/vEFR2_JTCgwQ5ejvG18mBkho.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Signika Regular'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v8/vEFR2_JTCgwQ5ejvG1EmBg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin-ext */
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Signika SemiBold'), local('Signika-SemiBold'), url(https://fonts.gstatic.com/s/signika/v8/vEFU2_JTCgwQ5ejvE44CE3lJanAd.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Signika SemiBold'), local('Signika-SemiBold'), url(https://fonts.gstatic.com/s/signika/v8/vEFU2_JTCgwQ5ejvE44CE3dJag.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  /* vietnamese */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Muli Light'), local('Muli-Light'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZnkOCr2z3wM.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Muli Light'), local('Muli-Light'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZnkOCv2z3wM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Muli Light'), local('Muli-Light'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZnkOCX2zw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afT3GLRrX.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTzGLRrX.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Muli SemiBold'), local('Muli-SemiBold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-ade3iOCr2z3wM.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Muli SemiBold'), local('Muli-SemiBold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-ade3iOCv2z3wM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Muli SemiBold'), local('Muli-SemiBold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-ade3iOCX2zw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCr2z3wM.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCv2z3wM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCX2zw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Muli ExtraBold'), local('Muli-ExtraBold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCr2z3wM.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Muli ExtraBold'), local('Muli-ExtraBold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCv2z3wM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Muli ExtraBold'), local('Muli-ExtraBold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCX2zw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Muli Black'), local('Muli-Black'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adbHhOCr2z3wM.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Muli Black'), local('Muli-Black'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adbHhOCv2z3wM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Muli Black'), local('Muli-Black'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adbHhOCX2zw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  .lrn_widget .MathJax {
+    font-size: 22px;
+  }
+  .lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper {
+    margin-top: 0;
+  }
+  .lrn_widget.lrn_qr.lrn_clozeformula .lrn_question ~ .lrn_response_wrapper {
+    margin-top: 2.2em;
+  }
+  .lrn_widget .lrn_length_indicator {
+    white-space: nowrap;
+  }
+  .lrn_widget.lrn_formulaessay .lrn_response_input {
+    border: 1px solid #939393;
+  }
+  .lrn_widget .lrn-response-validate-wrapper.lrn_correct,
+  .lrn_widget .lrn-response-validate-wrapper.lrn_incorrect,
+  .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct,
+  .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect,
+  .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct,
+  .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect,
+  .lrn_widget .lrn_response_container.lrn_correct,
+  .lrn_widget .lrn_response_container.lrn_incorrect,
+  .lrn_widget .lrn_response_input_wrapper.lrn_correct,
+  .lrn_widget .lrn_response_input_wrapper.lrn_incorrect {
+    border: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .lrn_widget .lrn-response-validate-wrapper.lrn_correct:after,
+  .lrn_widget .lrn-response-validate-wrapper.lrn_incorrect:after,
+  .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct:after,
+  .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect:after,
+  .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct:after,
+  .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect:after,
+  .lrn_widget .lrn_response_container.lrn_correct:after,
+  .lrn_widget .lrn_response_container.lrn_incorrect:after,
+  .lrn_widget .lrn_response_input_wrapper.lrn_correct:after,
+  .lrn_widget .lrn_response_input_wrapper.lrn_incorrect:after {
+    display: none;
+  }
+  .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
+    border-left: solid #e14747;
+    margin-left: 30px;
+  }
+  .lrn_widget.lrn_clozeassociation .lrn_response_input .lrn_response_container.lrn_dragdrop.lrn_not_attempted_marker .lrn_responseIndex {
+    padding: 0.5em;
+  }
+  .lrn_textinput {
+    vertical-align: middle;
+  }
+  .lrn_hide_cursor {
+    cursor: default;
+  }
+  .lrn_hide_cursor.lrn_hide_cursor:hover {
+    border-color: #939393;
+  }
+  .lrn_widget .MathJax {
+    font-size: 16px;
+  }
+  .lrn input[type=checkbox][disabled]+label {
+    cursor: not-allowed;
+  }
+  .lrn-formulaessay-line-container.lrn-formulaessay-line-container:hover {
+    cursor: default;
+  }
+  .lrn_widget .lrn_correctAnswerList>li.remove-left-padding {
+    padding-left: 1em;
+  }
+  .lrn_incorrect.add-left-margin {
+    margin-left: 2em;
+  }
+  .lrn_validatedResponseList {
+    display: none;
+  }
+  .lrn-response-validate-wrapper {
+    border: 0;
+    margin-top: 0;
+  }
+  .lrn_response_innerbody.lrn-response-validate-wrapper.lrn_incorrect {
+    margin-left: 0 !important;
+  }
+  .lrn_response_input .lrn_responseIndex {
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+  }
+  .lrn_responseText img {
+    max-width: 152px;
+  }
+  .lrn_widget .lrn_response.lrn_cloze .lrn_combobox select {
+    height: auto;
+  }
+  .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_responseIndex {
+    bottom: 0;
+    top: 0;
+  }
+  .lrn_widget.lrn_qr .lrn-clozeformula-input .lrn_math_editable.lrn_bordered_mathinput {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .lrn_widget .lrn_response.lrn_cloze .lrn_combobox.lrn_not_attempted .lrn_clozedropdown_answer {
+    cursor: default;
+  }
+  .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_response_container .lrn_btn_drag .lrn_item {
+    word-wrap: normal;
+    -ms-hyphens: none;
+  }
+  .lrn .lrn_possibilityList .lrn_btn_drag,
+  .lrn .lrn_possibilityListContainer .lrn_btn_drag,
+  .gu-mirror.lrn_drag_mirror {
+    white-space: nowrap;
+  }
+  .lrn .table>tbody>tr>td {
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+  .lrn_texteditor .lrn .lrn_btn.lrn_disabled,
+  .lrn_texteditor .lrn .lrn_btn[disabled] {
+    pointer-events: none;
+  }
+  .single-answer.lrn_widget .lrn_response.lrn_cloze .lrn_combobox .lrn_responseIndex {
+    display: none;
+  }
+  .single-answer.lrn_widget .lrn_correct .lrn_clozedropdown_answer {
+    border-left: 3px solid #65a00d;
+  }
+  .single-answer.lrn_widget .lrn_incorrect .lrn_clozedropdown_answer {
+    border-left: 3px solid #e14747;
+  }
+  .single-answer.lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
+    margin-left: 0;
+  }
+  .single-answer.lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect .lrn_responseIndex {
+    display: none;
+  }
+  .question-container:not(.finished) .lrn-formulaessay-line-container.lrn-formulaessay-line-container:hover {
+    cursor: text;
+  }
+  .lrn_widget .lrn_texteditor_editable[contenteditable=false]:hover {
+    border: 1px solid #939393;
+  }
+  .lrn_input_ui.lrn.lrn_widget.lrn_absolute_keyboard_parent {
+    z-index: 10;
+  }
+  body {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  body .lrn_stimulus_content {
+    font-size: 22px;
+  }
+  body .lrn,
+  body .lrn .mq-math-mode *,
+  body .lrn .mq-math-mode :after,
+  body .lrn .mq-math-mode :before {
+    font-size: 22px;
+  }
+  .lrn_stimulus_content {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.25;
+    text-align: left;
+  }
+  .lrn,
+  .lrn .mq-math-mode *,
+  .lrn .mq-math-mode :after,
+  .lrn .mq-math-mode :before {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* ----------------------------- CSS ----------------------- */
+
+  body #main .lrn_widget.lrn_qr.lrn_clozeformula .lrn_response_wrapper {
+    margin-top: 0;
+  }
+  body #main .lrn_widget.lrn_qr.lrn_clozeformula .lrn_question ~ .lrn_response_wrapper {
+    margin-top: 2.2em;
+  }
+  body #main .lrn_widget .lrn_length_indicator {
+    white-space: nowrap;
+  }
+  body #main .lrn_widget.lrn_formulaessay .lrn_response_input {
+    border: 1px solid #939393;
+  }
+  body #main .lrn_widget .lrn-response-validate-wrapper.lrn_correct,
+  body #main .lrn_widget .lrn-response-validate-wrapper.lrn_incorrect,
+  body #main .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct,
+  body #main .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect,
+  body #main .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct,
+  body #main .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect,
+  body #main .lrn_widget .lrn_response_container.lrn_correct,
+  body #main .lrn_widget .lrn_response_container.lrn_incorrect,
+  body #main .lrn_widget .lrn_response_input_wrapper.lrn_correct,
+  body #main .lrn_widget .lrn_response_input_wrapper.lrn_incorrect {
+    border: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  body #main .lrn_widget .lrn-response-validate-wrapper.lrn_correct:after,
+  body #main .lrn_widget .lrn-response-validate-wrapper.lrn_incorrect:after,
+  body #main .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_correct:after,
+  body #main .lrn_widget.lrn_choicematrix .lrn_response_input.lrn_incorrect:after,
+  body #main .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_correct:after,
+  body #main .lrn_widget.lrn_mcq .lrn_mcqgroup.lrn_incorrect:after,
+  body #main .lrn_widget .lrn_response_container.lrn_correct:after,
+  body #main .lrn_widget .lrn_response_container.lrn_incorrect:after,
+  body #main .lrn_widget .lrn_response_input_wrapper.lrn_correct:after,
+  body #main .lrn_widget .lrn_response_input_wrapper.lrn_incorrect:after {
+    display: none;
+  }
+  body #main .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
+    border-left: solid #e14747;
+    margin-left: 30px;
+  }
+  body #main .lrn_widget.lrn_clozeassociation .lrn_response_input .lrn_response_container.lrn_dragdrop.lrn_not_attempted_marker .lrn_responseIndex {
+    padding: 0.5em;
+  }
+  body #main .lrn_textinput {
+    vertical-align: middle;
+  }
+  body #main .lrn_hide_cursor {
+    cursor: default;
+  }
+  body #main .lrn_hide_cursor.lrn_hide_cursor:hover {
+    border-color: #939393;
+  }
+  body #main .lrn_widget .MathJax {
+    font-size: 16px;
+  }
+  body #main .lrn input[type=checkbox][disabled]+label {
+    cursor: not-allowed;
+  }
+  body #main .lrn-formulaessay-line-container.lrn-formulaessay-line-container:hover {
+    cursor: default;
+  }
+  body #main .lrn_widget .lrn_correctAnswerList>li.remove-left-padding {
+    padding-left: 1em;
+  }
+  body #main .lrn_incorrect.add-left-margin {
+    margin-left: 2em;
+  }
+  body #main .lrn_validatedResponseList {
+    display: none;
+  }
+  body #main .lrn-response-validate-wrapper {
+    border: 0;
+    margin-top: 0;
+  }
+  body #main .lrn_response_innerbody.lrn-response-validate-wrapper.lrn_incorrect {
+    margin-left: 0 !important;
+  }
+  body #main .lrn_response_input .lrn_responseIndex {
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+  }
+  body #main .lrn_responseText img {
+    max-width: 152px;
+  }
+  body #main .lrn_widget .lrn_response.lrn_cloze .lrn_combobox select {
+    height: auto;
+  }
+  body #main .lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input .lrn_responseIndex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  body #main .lrn_widget.lrn_clozeformula .lrn_textinput.lrn-clozeformula-input.lrn_not_attempted .lrn_responseIndex {
+    bottom: 0;
+    top: 0;
+  }
+  body #main .lrn_widget.lrn_qr .lrn-clozeformula-input .lrn_math_editable.lrn_bordered_mathinput {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  body #main .lrn_widget .lrn_response.lrn_cloze .lrn_combobox.lrn_not_attempted .lrn_clozedropdown_answer {
+    cursor: default;
+  }
+  body #main .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input .lrn_dropzones_container .lrn_imagecloze_response .lrn_response_container .lrn_btn_drag .lrn_item {
+    word-wrap: normal;
+    -ms-hyphens: none;
+  }
+  body #main .lrn .lrn_possibilityList .lrn_btn_drag,
+  body #main .lrn .lrn_possibilityListContainer .lrn_btn_drag,
+  body #main .gu-mirror.lrn_drag_mirror {
+    white-space: nowrap;
+  }
+  body #main .lrn .table>tbody>tr>td {
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+  body #main .lrn_texteditor .lrn .lrn_btn.lrn_disabled,
+  body #main .lrn_texteditor .lrn .lrn_btn[disabled] {
+    pointer-events: none;
+  }
+  body #main .single-answer.lrn_widget .lrn_response.lrn_cloze .lrn_combobox .lrn_responseIndex {
+    display: none;
+  }
+  body #main .single-answer.lrn_widget .lrn_correct .lrn_clozedropdown_answer {
+    border-left: 3px solid #65a00d;
+  }
+  body #main .single-answer.lrn_widget .lrn_incorrect .lrn_clozedropdown_answer {
+    border-left: 3px solid #e14747;
+  }
+  body #main .single-answer.lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect {
+    margin-left: 0;
+  }
+  body #main .single-answer.lrn_widget.lrn_clozeformula .lrn_display_correct_answer_enabled .lrn_textinput.lrn-clozeformula-input.lrn_incorrect .lrn_responseIndex {
+    display: none;
+  }
+  body #main .lrn-formulaessay-line-container.lrn-formulaessay-line-container:hover {
+    cursor: text;
+  }
+  body #main .lrn_widget .lrn_texteditor_editable[contenteditable=false]:hover {
+    border: 1px solid #939393;
+  }
+  body #main .lrn_input_ui.lrn.lrn_widget.lrn_absolute_keyboard_parent {
+    z-index: 10;
+  }
+  
+  body #main .lrn_widget .MathJax {
+   font-size: 22px
+  }
+  
+  body #main .lrn_widget.lrn_association .lrn_response_container.lrn_dragdrop .lrn_correct .lrn_responseIndex,
+  body #main .lrn_widget.lrn_association .lrn_response_container.lrn_dragdrop .lrn_incorrect .lrn_responseIndex,
+  body #main .lrn_widget.lrn_association .lrn_response_container.lrn_dragdrop .lrn_responseIndex {
+   top: 0
+   left: 0
+   bottom: 0
+   padding: 0.5em
+  
+  }
+  
+  body #main .lrn .lrn_btn_drag>span {
+   font-size: 22px
+  }
+  
+              
+          
+  body #main .lrn_stimulus_content {
+   font-size: 22px
+  }
+  
+  body #main .lrn .lrn_question,
+  body #main .lrn .lrn_response_input,
+  body #main .lrn .lrn_correctAnswers,
+  body #main .lrn .mq-math-mode *,
+  body #main .lrn .mq-math-mode :after,
+  body #main .lrn .mq-math-mode :before {
+   font-size: 22px
+  }
+  
+  body #main .lrn .lrn_cloze_response {
+   height: 44px !important
+  }
